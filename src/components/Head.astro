@@ -1,0 +1,72 @@
+---
+/* import { ViewTransitions } from "astro:transitions"; */
+const author = "Peter Lundström";
+const website = "https://pharaoh.se";
+const sajt = "Pharaoh.se";
+const tweet = "@PharaohSE";
+const { title, meta1, meta2, bild } = Astro.props;
+const canonical = website + Astro.url.pathname;
+const event = new Date();
+const jsonDate = event.toJSON();
+const schema = {
+	"@context": "http://schema.org",
+	"@type": "Article",
+	name: title,
+	author: {
+		"@type": "Person",
+		name: "Peter Lundström",
+		url: "https://twitter.com/pharaohSE",
+	},
+	datePublished: jsonDate,
+	image: { bild },
+	headline: title + " | " + sajt,
+	articleBody: meta1,
+	url: canonical,
+	publisher: {
+		"@type": "Organization",
+		name: tweet,
+	},
+};
+
+const font1 = "family=Instrument+Sans:ital,wght@0,400..700;1,400..700";
+const font2 = "family=Merriweather:opsz,wght@18..144,300..900";
+const font3 = "family=Noto+Serif:wght@100..900";
+const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` + font3 + `&display=swap`;
+---
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content={meta1} />
+	<meta name="keywords" content={meta2} />
+	<meta name="generator" content={Astro.generator} />
+	<meta name="color-scheme" content="light dark" />
+	<title>{title} | {sajt}</title>
+	<!-- <ViewTransitions /> -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={title} />
+	<meta property="og:site_name" content={sajt} />
+	<meta property="og:description" content={meta1} />
+	<meta property="og:url" content={canonical} />
+	<meta property="og:image" content={bild} />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content={tweet} />
+	<meta name="twitter:creator" content={tweet} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={meta1} />
+	<meta name="twitter:image" content={bild} />
+	<meta name="author" content={author} />
+	<link rel="canonical" href={canonical} />
+	<link rel="sitemap" href="/sitemap-index.xml" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+
+	<!-- <link rel="stylesheet" href="/fonts/inter.css" /> -->
+	<!-- 	<link rel="preconnect" href="https://rsms.me/" />
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<!-- https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Merriweather:opsz,wght@18..144,300..900&family=Noto+Serif:wght@100..900&display=swap
+	/> -->
+	<link href={fonts} rel="stylesheet" />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</head>

@@ -1,43 +1,161 @@
-# Astro Starter Kit: Minimal
+# Modernizing and optimizing the code
 
-```sh
-npm create astro@latest -- --template minimal
+Starting as a number of HTML pages, it slowly grew into a PHP site with a MySQL database.
+Over the years, this became too unwieldy, and evolved into spaghetti code.
+After mucking about with many frameworks like Bootstrap and Foundation, it landed on Astro, which seems to be the best fit so far.
+However, the code is quite fragmented and it is starting to become unwieldy once again.
+
+This time I will be using AI to plan the structure to streamline and make it easy to maintain and update. As it stands, it is a mess when you need to update some things.
+
+# Project Structure
+
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+“	&ldquo;		Left double quotation mark					Alt + 0147
+”	&rdquo;		Right double quotation mark					Alt + 0148
 
-## 🚀 Project Structure
+‘	&lsquo;		Left single quotation mark					Alt + 0145
+’	&rsquo;		Right single quotation mark					Alt + 0146
 
-Inside of your Astro project, you'll see the following folders and files:
+«	&laquo;		Double left angle quotation mark			Alt + 0174
+»	&raquo;		Double right-pointing angle quotation mark	Alt + 0175
+
+‹	&lsaquo;	Single left-pointing angle quotation mark	Alt + 0139
+›	&rsaquo;	Single right-pointing angle quotation mark	Alt + 0155
+```
+
+```
+pharaohSE/
+├── public/                             # Static assets
+│   ├── favicon.ico                     # Website favicon
+│   ├── images/                         # Images for pharaohs, artifacts, etc.
+│   │   ├── pharaohs/                   # Pharaoh-specific images
+│   │   │   ├── khufu.jpg               # Example: Khufu image
+│   │   │   └── hatshepsut.jpg          # Example: Hatshepsut image
+│   │   ├── artifacts/                  # Artifact images
+│   │   │   └── tutankhamun_mask.jpg    # Example: Tutankhamun’s mask
+│   │   └── maps/                       # Historical maps
+│   │       └── ancient_egypt_map.png   # Example: Map of ancient Egypt
+│   ├── pdfs/                           # Downloadable resources
+│   │   ├── kinglist_4th_dynasty.pdf    # Example: 4th Dynasty kinglist
+│   │   └── timeline_egypt.pdf          # Example: Full timeline
+│   ├── videos/                         # Video files or placeholders
+│   │   └── valley_of_kings_tour.mp4    # Example: Virtual tour video
+│   └── fonts/                          # Fonts for hieroglyph rendering (if needed)
+│       └── hieroglyph_font.ttf         # Example: Font for Gardiner codes
+├── src/                                # Source code
+│   ├── components/                     # Reusable Astro components
+│   │   ├── Footer.astro                # Footer with links and contact info
+│   │   ├── Header.astro                # Navigation bar with menu
+│   │   ├── PharaohCard.astro           # Card for pharaoh summaries
+│   │   ├── Timeline.astro              # Interactive timeline component
+│   │   ├── SearchBar.astro             # Search bar for pharaohs/kinglists
+│   │   ├── DynastyFilter.astro         # Filter for dynasty selection
+│   │   ├── GalleryImage.astro          # Image component for media gallery
+│   │   └── TitleVariant.astro          # New: Component for rendering title variants
+│   ├── content/                        # Content collections (JSON/Markdown)
+│   │   ├── pharaohs/                   # Pharaoh data
+│   │   │   ├── hieroglyphs.json        # Single JSON file for all ~300 pharaohs
+│   │   │   └── pharaohs.json           # Single JSON file for all ~300 pharaohs
+│   │   ├── dynasties/                  # Dynasty data
+│   │   │   ├── dynasty_4.md            # Example: 4th Dynasty (Markdown)
+│   │   │   └── dynasty_18.md           # Example: 18th Dynasty (Markdown)
+│   │   ├── kinglists/                  # Kinglist data
+│   │   │   ├── turin_kinglist.json     # Example: Turin Kinglist data
+│   │   │   └── abydos_kinglist.json    # Example: Abydos Kinglist data
+│   │   ├── articles/                   # Blog or thematic articles
+│   │   │   ├── women_pharaohs.md       # Example: Article on women pharaohs
+│   │   │   └── warrior_pharaohs.md     # Example: Article on warrior pharaohs
+│   │   └── config.ts                   # Content collection settings
+│   ├── layouts/                        # Page layouts
+│   │   ├── MainLayout.astro            # Default layout (header, footer, content)
+│   │   ├── PharaohLayout.astro         # Layout for pharaoh profile pages
+│   │   └── DynastyLayout.astro         # Layout for dynasty pages
+│   ├── pages/                          # Routes (Astro pages)
+│   │   ├── index.astro                 # Homepage
+│   │   ├── kinglists/                  # Kinglists section
+│   │   │   └── [kinglist].astro        # Dynamic route for specific kinglist
+│   │   ├── pharaoh/                    # Pharaohs section
+│   │   │   ├── index.astro             # Pharaohs overview with search/filter
+│   │   │   └── [pharaoh].astro         # Dynamic route for pharaoh profiles
+│   │   ├── dynasty/                    # Dynasties section
+│   │   │   └── 1.md                    # markdown for dynasty 1 page
+│   │   │   └── 18.md                   # markdown for dynasty 17 page
+│   │   │   └── 31.md                   # markdown for dynasty 31 page
+│   │   ├── timeline.astro              # Interactive timeline page
+│   │   ├── historical-context/         # Historical context section
+│   │   │   ├── index.astro             # Overview of periods/themes
+│   │   │   ├── periods.astro           # Egyptian historical periods
+│   │   │   ├── religion.astro          # Role of religion
+│   │   │   └── archaeology.astro       # Archaeological evidence
+│   │   ├── resources/                  # Resources section
+│   │   │   ├── index.astro             # Resources overview
+│   │   │   ├── glossary.astro          # Glossary of terms
+│   │   │   ├── bibliography.astro      # Scholarly sources
+│   │   │   └── downloads.astro         # Downloadable charts/PDFs
+│   │   ├── gallery/                    # Media gallery
+│   │   │   ├── index.astro             # Gallery overview
+│   │   │   ├── images.astro            # Image gallery
+│   │   │   ├── videos.astro            # Video gallery
+│   │   │   └── maps.astro              # Map gallery
+│   │   ├── community/                  # Community section
+│   │   │   ├── index.astro             # Community overview
+│   │   │   └── blog.astro              # Blog/articles
+│   │   ├── about.astro                 # About page
+│   │   ├── dynasties.astro             # All the dynasties
+│   │   ├── kinglists.astro             # Kinglists overview
+│   │   ├── pharaohs.astro              # All the known pharaohs listed
+│   │   └── contact.astro               # Contact page
+│   ├── scripts/                        # JavaScript for interactivity
+│   │   ├── timeline.js                 # Timeline interactivity
+│   │   ├── search.js                   # Search/filter functionality
+│   │   └── gallery.js                  # Gallery navigation
+│   └── styles/                         # CSS/SCSS for styling
+│       ├── global.css                  # Global styles
+│       ├── timeline.css                # Timeline-specific styles
+│       ├── pharaoh.css                 # Pharaoh profile styles
+│       └── gallery.css                 # Gallery styles
+├── astro.config.mjs                    # Astro configuration
+├── package.json                        # Node.js dependencies
+├── tsconfig.json                       # TypeScript configuration (if used)
+└── README.md                           # Project documentation
+```
+
+## Well well...
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+Key Points to Prevent Duplicate URLs
+Pharaohs:
+Data: src/content/pharaohs/pharaohs.json contains all ~300 pharaohs, with fields like id, name, titles (Horus name, Nebty name, etc.), and more.
+
+Route: src/pages/pharaohs/[pharaoh].astro generates URLs (e.g., /pharaohs/khufu) by querying pharaohs.json via content collections.
+
+No .md Files: Since we’re using JSON, there are no individual khufu.md files, eliminating the risk of duplicate URLs.
+
+Dynamic Routes: The getStaticPaths function in [pharaoh].astro ensures each pharaoh gets exactly one URL based on the id field (e.g., khufu).
+
+Dynasties:
+Data: Markdown files like src/content/dynasties/dynasty_4.md store dynasty content.
+
+Route: src/pages/dynasties/[dynasty].astro generates URLs (e.g., /dynasties/4th-dynasty) using slugs from the Markdown files’ frontmatter or filenames.
+
+No Overlap: Dynasties have distinct URLs (e.g., /dynasties/4th-dynasty) separate from pharaohs (/pharaohs/khufu). No duplicate routes exist.
+
+Articles:
+Data: Markdown files like src/content/articles/women_pharaohs.md store blog content.
+
+Route: src/pages/community/blog.astro (or a dynamic [article].astro) renders articles with URLs like /community/blog/women-pharaohs.
+
+No Overlap: Articles are under /community/blog/, distinct from pharaohs and dynasties.
+
+Kinglists:
+Data: JSON files like src/content/kinglists/turin_kinglist.json.
+
+Route: src/pages/kinglists/[kinglist].astro generates URLs like /kinglists/turin.
+
+No Overlap: Kinglist URLs are unique and separate.
+
+
+
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

@@ -1,0 +1,35 @@
+---
+import "@/styles/global.css";
+import Head from "@/components/Head.astro";
+export interface Props {
+	title?: string;
+	meta1?: string;
+	meta2?: string;
+	volid?: string;
+	bild?: string;
+	wideImage?: string;
+}
+const { title, meta1, meta2, bild } = Astro.props as Props;
+---
+
+<html lang="en">
+	<Head title={title} meta1={meta1} meta2={meta2} bild={bild} />
+	<body id="body">
+		<!-- <Header /> -->
+		<div class="bg-amber-500 h-12 py-5 mb-10 min-h-20 text-center text-3xl">Sitename and menu</div>
+		<div>
+			<!-- <h1 class="pagetitle" set:html={pagename} /> -->
+		</div>
+		<div class="max-w-5xl mx-auto">
+			<div>
+				<article class="w-full px-4">
+					<slot />
+
+					<!-- <Thoth /> -->
+				</article>
+			</div>
+		</div>
+		<!-- <Footer /> -->
+		<div class="min-h-32 bg-sky-700 h-12 p-8 mt-10 text-center text-2xl">Footer and credits</div>
+	</body>
+</html>

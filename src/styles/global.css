@@ -1,0 +1,49 @@
+@import "tailwindcss";
+/* Distinct characters:
+	O0 8B 1Iil 5S 2Z 6b 9g QG EF pqijr
+*/
+
+@layer base {
+	::selection {
+		color: #701a75;
+		background-color: #f0abfc;
+	}
+
+	:root {
+		interpolate-size: allow-keywords;
+		font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
+		--radius: 0.5rem;
+		--font-size-fluid-0: clamp(0.75rem, 1.5vw, 1rem);
+		--font-size-fluid-00: clamp(1.05rem, 1.5vw, 1.2rem);
+		--font-size-fluid-1: clamp(1rem, 2vw, 1.5rem);
+		--font-size-fluid-2: clamp(1.5rem, 3vw, 2.5rem);
+		--font-size-fluid-3: clamp(2rem, 3.5vw, 3rem);
+		--font-size-fluid-4: clamp(2.5rem, 4vw, 3.5rem);
+
+		/* https://youtu.be/pKO1ktPQByk?t=595 
+	--header-height: 15px;
+	scroll-padding-top: calc(var(--header-height) + 10px);
+	
+	article has 60ch as w
+	
+	*/
+	}
+
+	html {
+		line-height: 1.625;
+		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 0.5s;
+	}
+
+	.pagewidth {
+		--content-size: 600px;
+		--content-padding-inline: 2rem;
+		max-width: var(--content-size);
+		padding-inline: var(--content-padding-inline);
+		margin-inline: auto;
+	}
+	article {
+		width: 100%;
+	}
+}
