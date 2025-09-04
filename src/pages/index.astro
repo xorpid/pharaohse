@@ -1,13 +1,14 @@
 ---
-import BasicLayout from "@/layouts/BasicLayout.astro";
+import Layout from "@/layouts/Layout.astro";
 
-let title = "Title of the page";
+/* Sets the homepage name and meta */
+let title = "Homepage";
 let meta1 = "Description of the page";
 let meta2 = "keywords,comma,separated";
 const bild = "assets/";
 ---
 
-<BasicLayout title={title} meta1={meta1} meta2={meta2} {bild}>
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
 	<h1 class="text-4xl">New Astro project</h1>
 	<p>Project initiated. Coding starts now.</p>
 
@@ -21,6 +22,10 @@ const bild = "assets/";
 		This time I will be using AI to plan the structure to streamline and make it easy to maintain and update. As it stands, it is a mess when you need
 		to update some things.
 	</p>
+
+	<h1 class="text-3xl py-4">Pages</h1>
+	<a href="/pharaohs">Pharaohs</a>
+
 	<h1 class="text-3xl py-4">Project Structure Version 0.1</h1>
 	<pre
 		class="py-8"><code>pharaohSE/
@@ -143,4 +148,4 @@ Route: src/pages/kinglists/[kinglist].astro generates URLs like /kinglists/turin
 
 No Overlap: Kinglist URLs are unique and separate.
 </code></pre>
-</BasicLayout>
+</Layout>

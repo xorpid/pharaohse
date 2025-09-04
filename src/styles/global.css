@@ -35,6 +35,15 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
 	}
+	a {
+		--link-light: hsl(360, 100%, 38%);
+		--link-dark: hsl(41, 85%, 44%);
+		text-decoration: underline;
+		color: light-dark(var(--link-light), var(--link-dark)) !important;
+	}
+	a:hover {
+		color: aqua !important;
+	}
 
 	.pagewidth {
 		--content-size: 600px;
@@ -45,5 +54,14 @@
 	}
 	article {
 		width: 100%;
+	}
+}
+
+@layer components {
+	.card {
+		background-color: var(--color-white);
+		border-radius: var(--radius-lg);
+		padding: --spacing(6);
+		box-shadow: var(--shadow-xl);
 	}
 }

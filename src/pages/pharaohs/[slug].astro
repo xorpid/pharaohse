@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import pharaohs from "../../data/pharaohs.json";
+
+export async function getStaticPaths() {
+	return pharaohs.map((p) => ({
+		params: { slug: p.slug },
+		props: { pharaoh: p },
+	}));
+}
+
+const { pharaoh } = Astro.props;
+
+/* These will be sent to Layout for page name and meta tags */
+const title = pharaoh.name;
+const meta1 = pharaoh.meta1;
+const meta2 = pharaoh.meta2;
+const bild = pharaoh.image;
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<h1 class="text-3xl font-bold">{pharaoh.name}</h1>
+	{pharaoh.dynasty && <p class="text-lg text-gray-600">{pharaoh.dynasty}</p>}
+	{pharaoh.reign && <p class="italic">{pharaoh.reign}</p>}
+	{pharaoh.description && <article class="mt-4">{pharaoh.description}</article>}
+</Layout>

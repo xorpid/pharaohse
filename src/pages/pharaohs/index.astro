@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import pharaohs from "../../data/pharaohs.json";
+---
+
+<Layout title="Pharaohs">
+	<h1 class="text-3xl font-bold mb-4">Pharaohs of Ancient Egypt</h1>
+	<ul class="space-y-2">
+		{
+			pharaohs.map((p) => (
+				<li>
+					<a href={`/pharaohs/${p.slug}`} class="text-blue-600 hover:underline">
+						{p.name}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</Layout>

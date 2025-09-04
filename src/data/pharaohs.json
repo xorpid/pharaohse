@@ -1,0 +1,132 @@
+[
+	{
+		"slug": "ramesses-ii",
+		"name": "Ramesses II",
+		"dynasty": "19th Dynasty",
+		"reign": "1279–1213 BC",
+		"description": "Ramesses II is often regarded as Egypt's greatest pharaoh...",
+		"meta1": "Founder of the 18th Dynasty",
+		"meta2": "Ramses II, 19th Dynasty, New Kingdom",
+		"image": "/images/pharaohs/r2.jpg"
+	},
+	{
+		"slug": "ramesses-iii",
+		"name": "Ramesses III",
+		"dynasty": "20th Dynasty",
+		"reign": "1200–1199 BC",
+		"description": "Ramesses III was a pharaoh...",
+		"meta1": "Founder of the 18th Dynasty",
+		"meta2": "Ramesses III, 20th Dynasty, New Kingdom",
+		"image": "/images/pharaohs/r-iii.jpg"
+	},
+	{
+		"slug": "tutankhamun",
+		"name": "Tutankhamun",
+		"dynasty": "18th Dynasty",
+		"reign": "1332–1323 BC",
+		"description": "Known as the boy king, Tutankhamun is famous for his intact tomb...",
+		"meta1": "Founder of the 18th Dynasty",
+		"meta2": "Tut, 18th Dynasty, New Kingdom",
+		"image": "/images/pharaohs/tut.jpg"
+	},
+	{
+		"slug": "ahmose-i",
+		"name": "Ahmose I",
+		"dynasty": "18th Dynasty",
+		"reign": "c. 1550–1525 BC",
+		"description": "Founder of the 18th Dynasty, Ahmose expelled the Hyksos and reunified Egypt.",
+		"meta1": "Founder of the 18th Dynasty",
+		"meta2": "Ahmose I, Hyksos, reunification, 18th Dynasty, New Kingdom",
+		"image": "/images/pharaohs/ahmose-i.jpg"
+	},
+	{
+		"slug": "hatshepsut",
+		"name": "Hatshepsut",
+		"dynasty": "18th Dynasty",
+		"reign": "c. 1479–1458 BC",
+		"description": "One of the few female pharaohs, known for her prosperous reign and monumental building projects.",
+		"meta1": "Female pharaoh of prosperity",
+		"meta2": "Hatshepsut, female pharaoh, temples, prosperity, 18th Dynasty",
+		"image": "/images/pharaohs/hatshepsut.jpg"
+	},
+	{
+		"slug": "thutmose-iii",
+		"name": "Thutmose III",
+		"dynasty": "18th Dynasty",
+		"reign": "c. 1479–1425 BC",
+		"description": "A great military leader, often called the 'Napoleon of Egypt,' who expanded Egypt’s empire to its greatest extent.",
+		"meta1": "Egypt’s empire builder",
+		"meta2": "Thutmose III, military, empire, expansion, Napoleon of Egypt",
+		"image": "/images/pharaohs/thutmose-iii.jpg"
+	},
+	{
+		"slug": "amenhotep-iii",
+		"name": "Amenhotep III",
+		"dynasty": "18th Dynasty",
+		"reign": "c. 1386–1349 BC",
+		"description": "Presided over an era of peace and artistic flourishing; builder of many temples and monuments.",
+		"meta1": "Pharaoh of peace and art",
+		"meta2": "Amenhotep III, peace, art, monuments, 18th Dynasty",
+		"image": "/images/pharaohs/amenhotep-iii.jpg"
+	},
+	{
+		"slug": "akhenaten",
+		"name": "Akhenaten",
+		"dynasty": "18th Dynasty",
+		"reign": "c. 1353–1336 BC",
+		"description": "Known for his religious revolution, promoting the worship of Aten and moving the capital to Akhetaten.",
+		"meta1": "The heretic king",
+		"meta2": "Akhenaten, Aten, religion, Amarna, heretic king",
+		"image": "/images/pharaohs/akhenaten.jpg"
+	},
+	{
+		"slug": "nefertiti",
+		"name": "Nefertiti",
+		"dynasty": "18th Dynasty",
+		"reign": "Possible co-regent with Akhenaten, 14th century BC",
+		"description": "Famous queen and possible pharaoh, remembered for her beauty and role in Aten worship.",
+		"meta1": "Iconic queen of Egypt",
+		"meta2": "Nefertiti, queen, beauty, Aten, Amarna period",
+		"image": "/images/pharaohs/nefertiti.jpg"
+	},
+	{
+		"slug": "seti-i",
+		"name": "Seti I",
+		"dynasty": "19th Dynasty",
+		"reign": "c. 1290–1279 BC",
+		"description": "Father of Ramesses II, restored Egypt’s power and built the magnificent temple at Abydos.",
+		"meta1": "Father of Ramesses II",
+		"meta2": "Seti I, Abydos, temples, 19th Dynasty, Ramesses II",
+		"image": "/images/pharaohs/seti-i.jpg"
+	},
+	{
+		"slug": "merneptah",
+		"name": "Merneptah",
+		"dynasty": "19th Dynasty",
+		"reign": "c. 1213–1203 BC",
+		"description": "Son of Ramesses II, known for the Merneptah Stele, the earliest known mention of Israel.",
+		"meta1": "Pharaoh of the Merneptah Stele",
+		"meta2": "Merneptah, Israel Stele, Ramesses II, 19th Dynasty",
+		"image": "/images/pharaohs/merneptah.jpg"
+	},
+	{
+		"slug": "psamtik-i",
+		"name": "Psamtik I",
+		"dynasty": "26th Dynasty",
+		"reign": "664–610 BC",
+		"description": "Founder of the Saite Dynasty, restored Egypt’s independence after Assyrian domination.",
+		"meta1": "Restorer of independence",
+		"meta2": "Psamtik I, Saite Dynasty, Assyrians, 26th Dynasty",
+		"image": "/images/pharaohs/psamtik-i.jpg"
+	},
+	{
+		"slug": "cleopatra-vii",
+		"name": "Cleopatra VII",
+		"dynasty": "Ptolemaic Dynasty",
+		"reign": "51–30 BC",
+		"description": "The last active ruler of Ptolemaic Egypt, famous for her alliances with Julius Caesar and Mark Antony.",
+		"meta1": "The last pharaoh",
+		"meta2": "Cleopatra VII, Ptolemaic, Julius Caesar, Mark Antony, last pharaoh",
+		"image": "/images/pharaohs/cleopatra-vii.jpg"
+	}
+]
