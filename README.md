@@ -25,100 +25,49 @@ This time I will be using AI to plan the structure to streamline and make it eas
 ```
 
 ```
-pharaohSE/
-├── public/                             # Static assets
-│   ├── favicon.ico                     # Website favicon
-│   ├── images/                         # Images for pharaohs, artifacts, etc.
-│   │   ├── pharaohs/                   # Pharaoh-specific images
-│   │   │   ├── khufu.jpg               # Example: Khufu image
-│   │   │   └── hatshepsut.jpg          # Example: Hatshepsut image
-│   │   ├── artifacts/                  # Artifact images
-│   │   │   └── tutankhamun_mask.jpg    # Example: Tutankhamun’s mask
-│   │   └── maps/                       # Historical maps
-│   │       └── ancient_egypt_map.png   # Example: Map of ancient Egypt
-│   ├── pdfs/                           # Downloadable resources
-│   │   ├── kinglist_4th_dynasty.pdf    # Example: 4th Dynasty kinglist
-│   │   └── timeline_egypt.pdf          # Example: Full timeline
-│   ├── videos/                         # Video files or placeholders
-│   │   └── valley_of_kings_tour.mp4    # Example: Virtual tour video
-│   └── fonts/                          # Fonts for hieroglyph rendering (if needed)
-│       └── hieroglyph_font.ttf         # Example: Font for Gardiner codes
-├── src/                                # Source code
-│   ├── components/                     # Reusable Astro components
-│   │   ├── Footer.astro                # Footer with links and contact info
-│   │   ├── Header.astro                # Navigation bar with menu
-│   │   ├── PharaohCard.astro           # Card for pharaoh summaries
-│   │   ├── Timeline.astro              # Interactive timeline component
-│   │   ├── SearchBar.astro             # Search bar for pharaohs/kinglists
-│   │   ├── DynastyFilter.astro         # Filter for dynasty selection
-│   │   ├── GalleryImage.astro          # Image component for media gallery
-│   │   └── TitleVariant.astro          # New: Component for rendering title variants
-│   ├── content/                        # Content collections (JSON/Markdown)
-│   │   ├── pharaohs/                   # Pharaoh data
-│   │   │   ├── hieroglyphs.json        # Single JSON file for all ~300 pharaohs
-│   │   │   └── pharaohs.json           # Single JSON file for all ~300 pharaohs
-│   │   ├── dynasties/                  # Dynasty data
-│   │   │   ├── dynasty_4.md            # Example: 4th Dynasty (Markdown)
-│   │   │   └── dynasty_18.md           # Example: 18th Dynasty (Markdown)
-│   │   ├── kinglists/                  # Kinglist data
-│   │   │   ├── turin_kinglist.json     # Example: Turin Kinglist data
-│   │   │   └── abydos_kinglist.json    # Example: Abydos Kinglist data
-│   │   ├── articles/                   # Blog or thematic articles
-│   │   │   ├── women_pharaohs.md       # Example: Article on women pharaohs
-│   │   │   └── warrior_pharaohs.md     # Example: Article on warrior pharaohs
-│   │   └── config.ts                   # Content collection settings
-│   ├── layouts/                        # Page layouts
-│   │   ├── MainLayout.astro            # Default layout (header, footer, content)
-│   │   ├── PharaohLayout.astro         # Layout for pharaoh profile pages
-│   │   └── DynastyLayout.astro         # Layout for dynasty pages
-│   ├── pages/                          # Routes (Astro pages)
-│   │   ├── index.astro                 # Homepage
-│   │   ├── kinglists/                  # Kinglists section
-│   │   │   └── [kinglist].astro        # Dynamic route for specific kinglist
-│   │   ├── pharaoh/                    # Pharaohs section
-│   │   │   ├── index.astro             # Pharaohs overview with search/filter
-│   │   │   └── [pharaoh].astro         # Dynamic route for pharaoh profiles
-│   │   ├── dynasty/                    # Dynasties section
-│   │   │   └── 1.md                    # markdown for dynasty 1 page
-│   │   │   └── 18.md                   # markdown for dynasty 17 page
-│   │   │   └── 31.md                   # markdown for dynasty 31 page
-│   │   ├── timeline.astro              # Interactive timeline page
-│   │   ├── historical-context/         # Historical context section
-│   │   │   ├── index.astro             # Overview of periods/themes
-│   │   │   ├── periods.astro           # Egyptian historical periods
-│   │   │   ├── religion.astro          # Role of religion
-│   │   │   └── archaeology.astro       # Archaeological evidence
-│   │   ├── resources/                  # Resources section
-│   │   │   ├── index.astro             # Resources overview
-│   │   │   ├── glossary.astro          # Glossary of terms
-│   │   │   ├── bibliography.astro      # Scholarly sources
-│   │   │   └── downloads.astro         # Downloadable charts/PDFs
-│   │   ├── gallery/                    # Media gallery
-│   │   │   ├── index.astro             # Gallery overview
-│   │   │   ├── images.astro            # Image gallery
-│   │   │   ├── videos.astro            # Video gallery
-│   │   │   └── maps.astro              # Map gallery
-│   │   ├── community/                  # Community section
-│   │   │   ├── index.astro             # Community overview
-│   │   │   └── blog.astro              # Blog/articles
-│   │   ├── about.astro                 # About page
-│   │   ├── dynasties.astro             # All the dynasties
-│   │   ├── kinglists.astro             # Kinglists overview
-│   │   ├── pharaohs.astro              # All the known pharaohs listed
-│   │   └── contact.astro               # Contact page
-│   ├── scripts/                        # JavaScript for interactivity
-│   │   ├── timeline.js                 # Timeline interactivity
-│   │   ├── search.js                   # Search/filter functionality
-│   │   └── gallery.js                  # Gallery navigation
-│   └── styles/                         # CSS/SCSS for styling
-│       ├── global.css                  # Global styles
-│       ├── timeline.css                # Timeline-specific styles
-│       ├── pharaoh.css                 # Pharaoh profile styles
-│       └── gallery.css                 # Gallery styles
-├── astro.config.mjs                    # Astro configuration
-├── package.json                        # Node.js dependencies
-├── tsconfig.json                       # TypeScript configuration (if used)
-└── README.md                           # Project documentation
+root/
+├── public/								# Static assets
+│	├── favicon.png 					# Website favicon
+│	└── images/ 						# Images for pharaohs, artifacts, etc.
+├── src/								# Source code
+│	├── content.config.ts				# Content Collections config
+│	├── components/						# Reusable Astro components
+│	│	├── Footer.astro				# Footer with links and contact info
+│	│	└── Header.astro				# Rendering the navigation
+│	├── layouts/						# Page layouts
+│	│	└── Layout.astro				# Layout for pages
+│	├── pages/							# Routes (Astro pages)
+│	│	├── kinglists/					#
+│	│	│	└── [kinglist].astro		# Dynamic route for specific kinglist
+│	│	├── pharaohs/
+│	│	│	├── index.astro				# Pharaohs overview
+│	│	│	└── [pharaoh].astro			# Dynamic route for ALL pharaohs, 1 page each
+│	│	├── dynasty/					# Dynasties section
+│	│	│	└── 1.md					# markdown for each dynasty pages 1-30 etc
+│	│	├── resources/
+│	│	│	├── index.astro				# Resources overview
+│	│	│	├── glossary.astro			# Glossary of terms
+│	│	│	└── bibliography.astro		# Scholarly sources
+│	│	├── community/
+│	│	│	├── index.astro				# Community overview
+│	│	│	├── forum.astro				# Forum/messageboard?
+│	│	│	└── blog.astro				# Blog/articles
+│	│	├── index.astro					# Homepage
+│	│	├── about.astro					# About page
+│	│	├── dynasties.astro				# All the dynasties
+│	│	├── kinglists.astro				# Kinglists overview
+│	│	├── pharaohs.astro				# All the known pharaohs listed
+│	│	├── periods.astro				# Egyptian historical periods
+│	│	└── archaeology.astro			# Archaeological evidence
+│	├── scripts/						# JavaScript for interactivity
+│	│	└── scripts.js					# if needed
+│	└── styles/							# CSS/SCSS for styling
+│		 └── global.css					# Gallery styles
+├── astro.config.mjs					# Astro configuration
+├── package.json						# Node.js dependencies
+├── postcss.config.cjs					# PostCSS
+├── tsconfig.json						# TypeScript configuration (if used)
+└── README.md							# Project documentation
 ```
 
 ## Well well...

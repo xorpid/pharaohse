@@ -3,6 +3,22 @@
 	O0 8B 1Iil 5S 2Z 6b 9g QG EF pqijr
 */
 
+/* Global settings like color palette, spacing, typography, breakpoints etc */
+@theme {
+	--font-sans: "Instrument Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
+		"Noto Sans", "sans-serif";
+	--font-serif: "Merriweather", "Harding", "ui-serif", "Cambria", "Georgia", "Times New Roman", "Times", "serif";
+	--font-mono: "Courier New", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Liberation Mono", "Consolas", "monospace";
+	--fontsize: 16px;
+	--fluid-0: clamp(0.75rem, 1.5vw, 1rem);
+	--fluid-00: clamp(1.05rem, 1.5vw, 1.2rem);
+	--fluid-1: clamp(1rem, 2vw, 1.5rem);
+	--fluid-2: clamp(1.5rem, 3vw, 2.5rem);
+	--fluid-3: clamp(2rem, 3.5vw, 3rem);
+	--fluid-4: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+/* Add your own default base styles for specific HTML elements */
 @layer base {
 	::selection {
 		color: #701a75;
@@ -12,28 +28,15 @@
 	:root {
 		interpolate-size: allow-keywords;
 		font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
-		--radius: 0.5rem;
-		--font-size-fluid-0: clamp(0.75rem, 1.5vw, 1rem);
-		--font-size-fluid-00: clamp(1.05rem, 1.5vw, 1.2rem);
-		--font-size-fluid-1: clamp(1rem, 2vw, 1.5rem);
-		--font-size-fluid-2: clamp(1.5rem, 3vw, 2.5rem);
-		--font-size-fluid-3: clamp(2rem, 3.5vw, 3rem);
-		--font-size-fluid-4: clamp(2.5rem, 4vw, 3.5rem);
-
-		/* https://youtu.be/pKO1ktPQByk?t=595 
-	--header-height: 15px;
-	scroll-padding-top: calc(var(--header-height) + 10px);
-	
-	article has 60ch as w
-	
-	*/
 	}
 
 	html {
+		font-size: var(--fontsize);
 		line-height: 1.625;
 		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
+		scroll-padding-top: calc(var(--header-height) + 1rem); /* anchor top fix */
 	}
 	a {
 		--link-light: hsl(360, 100%, 38%);
@@ -54,6 +57,11 @@
 	}
 	article {
 		width: 100%;
+	}
+
+	header {
+		--header-height: calc(var(--spacing) * 16);
+		height: var(--header-height); /* scroll-padding-top in html above (anchor scroll fix) */
 	}
 	input {
 		background-color: initial;
