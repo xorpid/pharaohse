@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import dynastys from "../../data/dynasties.json";
+---
+
+<Layout title="Dynasties">
+	<h1 class="text-3xl font-bold mb-4">Dynasties of Ancient Egypt</h1>
+
+	<ul class="space-y-2">
+		{
+			dynastys.map((p) => (
+				<li>
+					<a href={`/dynasties/${p.slug}`}>{p.name}</a>
+				</li>
+			))
+		}
+	</ul>
+</Layout>

@@ -16,11 +16,13 @@ const title = pharaoh.name;
 const meta1 = pharaoh.meta1;
 const meta2 = pharaoh.meta2;
 const bild = pharaoh.image;
+
+const dynnr = "/dynasties/" + pharaoh.dynasty;
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
-	<h1 class="text-3xl font-bold">{pharaoh.name}</h1>
-	{pharaoh.dynasty && <p class="text-lg text-gray-600">{pharaoh.dynasty}</p>}
-	{pharaoh.reign && <p class="italic">{pharaoh.reign}</p>}
+	<h1 class="text-3xl font-bold pb-4">{pharaoh.name}</h1>
+	<p>Dynasty: <a href={dynnr}>{pharaoh.dynasty}</a></p>
+	{pharaoh.reign && <p>{pharaoh.reign}</p>}
 	{pharaoh.description && <article class="mt-4">{pharaoh.description}</article>}
 </Layout>

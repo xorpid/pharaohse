@@ -1,8 +1,18 @@
 [
 	{
+		"slug": "narmer",
+		"name": "Narmer",
+		"dynasty": "1",
+		"reign": "3200–3299 BC",
+		"description": "Narmer is the founder of Egypt...",
+		"meta1": "Founder of the 1st Dynasty",
+		"meta2": "Narmer, 1st Dynasty, Menes",
+		"image": "/images/pharaohs/narmer.jpg"
+	},
+	{
 		"slug": "ramesses-ii",
 		"name": "Ramesses II",
-		"dynasty": "19th Dynasty",
+		"dynasty": "19",
 		"reign": "1279–1213 BC",
 		"description": "Ramesses II is often regarded as Egypt's greatest pharaoh...",
 		"meta1": "Founder of the 18th Dynasty",
@@ -12,7 +22,7 @@
 	{
 		"slug": "ramesses-iii",
 		"name": "Ramesses III",
-		"dynasty": "20th Dynasty",
+		"dynasty": "20",
 		"reign": "1200–1199 BC",
 		"description": "Ramesses III was a pharaoh...",
 		"meta1": "Founder of the 18th Dynasty",
@@ -22,7 +32,7 @@
 	{
 		"slug": "tutankhamun",
 		"name": "Tutankhamun",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "1332–1323 BC",
 		"description": "Known as the boy king, Tutankhamun is famous for his intact tomb...",
 		"meta1": "Founder of the 18th Dynasty",
@@ -32,7 +42,7 @@
 	{
 		"slug": "ahmose-i",
 		"name": "Ahmose I",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "c. 1550–1525 BC",
 		"description": "Founder of the 18th Dynasty, Ahmose expelled the Hyksos and reunified Egypt.",
 		"meta1": "Founder of the 18th Dynasty",
@@ -42,7 +52,7 @@
 	{
 		"slug": "hatshepsut",
 		"name": "Hatshepsut",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "c. 1479–1458 BC",
 		"description": "One of the few female pharaohs, known for her prosperous reign and monumental building projects.",
 		"meta1": "Female pharaoh of prosperity",
@@ -52,7 +62,7 @@
 	{
 		"slug": "thutmose-iii",
 		"name": "Thutmose III",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "c. 1479–1425 BC",
 		"description": "A great military leader, often called the 'Napoleon of Egypt,' who expanded Egypt’s empire to its greatest extent.",
 		"meta1": "Egypt’s empire builder",
@@ -62,7 +72,7 @@
 	{
 		"slug": "amenhotep-iii",
 		"name": "Amenhotep III",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "c. 1386–1349 BC",
 		"description": "Presided over an era of peace and artistic flourishing; builder of many temples and monuments.",
 		"meta1": "Pharaoh of peace and art",
@@ -72,7 +82,7 @@
 	{
 		"slug": "akhenaten",
 		"name": "Akhenaten",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "c. 1353–1336 BC",
 		"description": "Known for his religious revolution, promoting the worship of Aten and moving the capital to Akhetaten.",
 		"meta1": "The heretic king",
@@ -82,7 +92,7 @@
 	{
 		"slug": "nefertiti",
 		"name": "Nefertiti",
-		"dynasty": "18th Dynasty",
+		"dynasty": "18",
 		"reign": "Possible co-regent with Akhenaten, 14th century BC",
 		"description": "Famous queen and possible pharaoh, remembered for her beauty and role in Aten worship.",
 		"meta1": "Iconic queen of Egypt",
@@ -92,7 +102,7 @@
 	{
 		"slug": "seti-i",
 		"name": "Seti I",
-		"dynasty": "19th Dynasty",
+		"dynasty": "19",
 		"reign": "c. 1290–1279 BC",
 		"description": "Father of Ramesses II, restored Egypt’s power and built the magnificent temple at Abydos.",
 		"meta1": "Father of Ramesses II",
@@ -102,7 +112,7 @@
 	{
 		"slug": "merneptah",
 		"name": "Merneptah",
-		"dynasty": "19th Dynasty",
+		"dynasty": "19",
 		"reign": "c. 1213–1203 BC",
 		"description": "Son of Ramesses II, known for the Merneptah Stele, the earliest known mention of Israel.",
 		"meta1": "Pharaoh of the Merneptah Stele",
@@ -112,7 +122,7 @@
 	{
 		"slug": "psamtik-i",
 		"name": "Psamtik I",
-		"dynasty": "26th Dynasty",
+		"dynasty": "26",
 		"reign": "664–610 BC",
 		"description": "Founder of the Saite Dynasty, restored Egypt’s independence after Assyrian domination.",
 		"meta1": "Restorer of independence",
@@ -122,7 +132,7 @@
 	{
 		"slug": "cleopatra-vii",
 		"name": "Cleopatra VII",
-		"dynasty": "Ptolemaic Dynasty",
+		"dynasty": "ptolemaic",
 		"reign": "51–30 BC",
 		"description": "The last active ruler of Ptolemaic Egypt, famous for her alliances with Julius Caesar and Mark Antony.",
 		"meta1": "The last pharaoh",

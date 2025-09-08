@@ -1,0 +1,47 @@
+[
+	{
+		"slug": "1",
+		"name": "First Dynasty",
+		"period": "3200–3199 BC",
+		"description": "The 1st Dynasty of Ancient Egypt.",
+		"meta1": "1st Dynasty of Ancient Egypt",
+		"meta2": "1st Dynasty, Dynasty I",
+		"image": "/images/dynasty/1.jpg"
+	},
+	{
+		"slug": "18",
+		"name": "Eighteenth Dynasty",
+		"period": "1550–1292 BC",
+		"description": "The 18th Dynasty is one of the most famous dynasties of Ancient Egypt, including pharaohs such as Hatshepsut, Akhenaten, Tutankhamun, and Ramesses I.",
+		"meta1": "18th Dynasty of Ancient Egypt",
+		"meta2": "18th Dynasty, New Kingdom, Dynasty XVIII",
+		"image": "/images/dynasty/18.jpg"
+	},
+	{
+		"slug": "19",
+		"name": "Nineteenth Dynasty",
+		"period": "1292–1189 BC",
+		"description": "The 19th Dynasty is known for pharaohs like Seti I and Ramesses II, and for major building projects.",
+		"meta1": "The 19th Dynasty of Ancient Egypt",
+		"meta2": "19th Dynasty, New Kingdom, Dynasty XIX",
+		"image": "/images/dynasty/19.jpg"
+	},
+	{
+		"slug": "20",
+		"name": "Twentieth Dynasty",
+		"period": "1189–1077 BC",
+		"description": "The 20th Dynasty saw the decline of the New Kingdom and included Ramesses III.",
+		"meta1": "The 18th Dynasty of Ancient Egypt",
+		"meta2": "20th Dynasty, New Kingdom, Dynasty XX",
+		"image": "/images/dynasty/20.jpg"
+	},
+	{
+		"slug": "ptolemaic",
+		"name": "Ptolemaic Dynasty",
+		"period": "323–30 BC",
+		"description": "The Last Dynasty of Ancient Egypt.",
+		"meta1": "The Dynasty of Ancient Egypt",
+		"meta2": "Last Dynasty, New Kingdom, Dynasty XX",
+		"image": "/images/dynasty/ptolemaic.jpg"
+	}
+]
