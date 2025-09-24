@@ -1,0 +1,110 @@
+---
+/* Single obelisk output ✅ */
+import obs from "../data/obelisks.json";
+import farao from "../data/pharaohs.json";
+var u: string;
+var r, g: string, gps, b: string, ph: string;
+
+let p = "/obelisks/";
+let t = "/obelisks/t";
+g = "https://www.google.com/maps?ll=";
+export interface Props {
+	obelisk: any;
+}
+
+const { obelisk } = Astro.props;
+---
+
+<div class="card flex flex-col h-full p-4">
+	<div class="flex flex-row items-start mb-3 gap-4">
+		{obelisk.tumme && <img src={`/obelisks/${obelisk.tumme}`} alt={obelisk.namn} class="w-32 h-32 object-cover rounded mb-2 shrink-0" />}
+		<div class="flex-1">
+			<h2 class="text-lg font-bold mb-1">{obelisk.namn}</h2>
+			{
+				obelisk.aka && (
+					<div class="text-sm">
+						<span class="font-semibold">Also known as:</span> {obelisk.aka}
+					</div>
+				)
+			}
+			{
+				obelisk.plats && (
+					<div class="text-sm mb-1">
+						<span class="font-semibold">Location:</span> {obelisk.plats}
+						{obelisk.GPSx && obelisk.GPSy && (
+							<a
+								href={`https://www.google.com/maps?q=${obelisk.GPSx},${obelisk.GPSy}`}
+								target="_blank"
+								rel="noopener"
+								class="text-red-600 text-xs mt-auto"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="1.5em"
+									height="1.5em"
+									preserveAspectRatio="xMidYMid meet"
+									viewBox="0 0 24 24"
+									class="inline align-middle fill-red-700 hover:fill-green-700 hover:scale-150 transition-all ease-in-out duration-300"
+								>
+									<path d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+								</svg>
+							</a>
+						)}
+					</div>
+				)
+			}
+			{
+				obelisk.provenance && (
+					<div class="text-sm">
+						<span class="font-semibold">Provenance:</span> {obelisk.provenance}
+					</div>
+				)
+			}
+			{
+				obelisk.height && (
+					<div class="text-sm">
+						<span class="font-semibold">Height:</span> {obelisk.height} m
+					</div>
+				)
+			}
+			{
+				obelisk.inscription && (
+					<div class="text-sm">
+						<span class="font-semibold">Inscription:</span> {obelisk.inscription}
+					</div>
+				)
+			}
+		</div>
+	</div>
+
+	<div class="text-sm mb-2">{obelisk.description}</div>
+	<div class="flex flex-wrap gap-4 justify-center my-2">
+		{
+			Array.from({ length: 8 }, (_, i) => {
+				const imgKey = `image${i + 1}`;
+				const altKey = `img${i + 1}text`;
+				const img = obelisk[imgKey];
+				const alt = obelisk[altKey] || obelisk.namn;
+				if (!img) return null;
+				// Derive thumbnail filename: t01-01.webp for 01-01.jpg
+				const thumb = img.replace(/^(\d{2}-\d{2})\.jpg$/, "t$1.webp");
+				return (
+					<a data-fancybox={obelisk.namn} data-caption={obelisk[altKey]} href={`/obelisks/${img}`} target="_blank" rel="noopener">
+						<span class="hidden">image</span>
+						<img src={`/obelisks/${thumb}`} alt={alt} class="max-w-[120px] rounded shadow" loading="lazy" />
+					</a>
+				);
+			})
+		}
+	</div>
+	{/* Sources at the bottom */}
+	<div class="mt-4 pt-4 border-t border-stone-200 dark:border-neutral-700">
+		{
+			Array.from({ length: 8 }, (_, i) => {
+				const srcKey = `src${i + 1}`;
+				const src = obelisk[srcKey];
+				return src ? <div class="text-xs text-gray-500 dark:text-gray-400 mb-1" set:html={src} /> : null;
+			})
+		}
+	</div>
+</div>

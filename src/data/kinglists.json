@@ -1,0 +1,75 @@
+[
+	{
+		"slug": "abydos-canon",
+		"name": "Abydos Canon",
+		"period": "19th Dynasty",
+		"meta1": "Abydos Canon",
+		"meta2": "Abydos Canon, Abydos king list",
+		"image": "/images/kinglist/abydos.jpg",
+		"intro": "",
+		"bibliography": [
+			"Mariette, Auguste., 1869. Abydos description des fouilles, I. Paris: plate 43",
+			"Dümichen, Johannes., 1869. Historische inschriften altägyptischer Denkmäler, Vol II. Leipzig: plate XLV"
+		]
+	},
+	{
+		"slug": "karnak-canon",
+		"name": "Karnak Canon",
+		"period": "18th Dynasty",
+		"meta1": "Karnak Canon",
+		"meta2": "Karnak Canon, Karnak king list",
+		"image": "/images/kinglist/karnak.jpg",
+		"intro": "",
+		"bibliography": []
+	},
+	{
+		"slug": "saqqara-canon",
+		"name": "Saqqara Canon",
+		"period": "19th Dynasty",
+		"meta1": "Saqqara Canon",
+		"meta2": "Saqqara Canon, Saqqara king list",
+		"image": "/images/kinglist/saqqara.jpg",
+		"intro": "",
+		"bibliography": ["ENtry 1", "Entry 2"]
+	},
+	{
+		"slug": "ramesseum-canon",
+		"name": "Ramesseum Canon",
+		"period": "19th Dynasty",
+		"meta1": "Ramesseum Canon",
+		"meta2": "Ramesseum Canon, Ramesseum king list",
+		"image": "/images/kinglist/ramesseum.jpg",
+		"intro": "",
+		"bibliography": []
+	},
+	{
+		"slug": "medinet-habu-canon",
+		"name": "Medinet Habu Canon",
+		"period": "20th Dynasty",
+		"meta1": "Medinet Habu Canon",
+		"meta2": "Medinet Habu Canon, Medinet Habu king list",
+		"image": "/images/kinglist/medinet.jpg",
+		"intro": "",
+		"bibliography": []
+	},
+	{
+		"slug": "marseille",
+		"name": "Marseille table",
+		"period": "18th Dynasty",
+		"meta1": " Marseille table",
+		"meta2": " Marseille table,  Marseille table king list",
+		"image": "/images/kinglist/marseille.jpg",
+		"intro": "",
+		"bibliography": []
+	},
+	{
+		"slug": "turin",
+		"name": "Turin King List",
+		"period": "19th Dynasty",
+		"meta1": "Turin King List",
+		"meta2": "Turin King List, Royal Turin Canon, Turin king list",
+		"image": "/images/kinglist/turin.jpg",
+		"intro": "",
+		"bibliography": []
+	}
+]

@@ -1,0 +1,22 @@
+---
+// src/pages/dynasty/[id].astro
+export async function getStaticPaths() {
+	const paths = [];
+	for (let i = 1; i <= 31; i++) {
+		paths.push({ params: { id: `${i}` } });
+	}
+	return paths;
+}
+
+const { id } = Astro.params;
+// Hardcoded or programmatically defined dynasty metadata
+const dynastyData = {
+	title: `Dynasty ${id}`,
+	period: `Period for Dynasty ${id}`, // Replace with actual data if needed
+	description: `Description for Dynasty ${id}.`, // Replace with actual data
+};
+---
+
+<h1>{dynastyData.title}</h1>
+<p>{dynastyData.period}</p>
+<div>{dynastyData.description}</div>

@@ -1,0 +1,233 @@
+[
+	{
+		"id": 1,
+		"name": "Giza",
+		"bild": "01",
+		"builtby": "Khufu, Khafra, Menkaura, Amenhotep II and many more",
+		"aka": null,
+		"text": "The Pyramid Fields, stretching from Giza to Dahshur, is the massive necropolis of Memphis and contain various outstanding funerary monuments, including the colossal pyramids, rock tombs, elegant mastabas, and temples. The most impressive and iconic of these are, of course, the three pyramids of Khufu (Cheops), Khafra (Chephren) and Menkaura (Mycineros).",
+		"biblio": null,
+		"gpsN": 29.975921,
+		"gpsE": 31.13087
+	},
+	{
+		"id": 5,
+		"name": "Karnak Temple Complex",
+		"bild": "02",
+		"builtby": "Senusret I, Thutmose I, Thutmose II, Hatshepsut, Thutmose III, Amenhotep II and many more. The largest temple complex in Egypt.",
+		"aka": null,
+		"text": "Even though the majority of the still-standing structures date from the New Kingdom, construction actually started during Senusret I's reign during the Middle Kingdom and continued for about 2000 years, far into the Ptolemaic Kingdom. The temple complex, was unique in its size, intricacy, and diversity, dominated of the enormous city of Thebes. The magnitude and variety of features are astounding, but already in ancient times, parts were dismantled, or “quarried”, for use in other structures.",
+		"biblio": "Champollion, <i>Monuments</i>, III, plates 277-299; IV, 300-317<br><i>Description de l'Égypte</i>, III, plates 16-67",
+		"gpsN": 25.718828,
+		"gpsE": 32.657404
+	},
+	{
+		"id": 9,
+		"name": "Valley of the Kings",
+		"bild": "03",
+		"builtby": "New Kingdom pharaohs",
+		"aka": null,
+		"text": "The valley, which is located on the west bank of the Nile and is across from Thebes, served as the primary burial location for the pharaohs of the Beautifully painted illustrations from Egyptian mythology decorate the royal tombs, and while almost all of the tombs have been robbed and left open to the public since antiquity, they nonetheless provide insight into the pharaohs’ enormous wealth and authority. Most famous of them all is, of course, the tomb of Tutankhamun, discovered in 1922.<br />The impressive <a href=\"https://thebanmappingproject.com/valley-kings\" target=\"_blank\">Theban Mapping Project</a> website is highly recommended and is filled with all the detailed information about the valley you need.",
+		"biblio": "1739: Pococke, Richard. <i>A description of the East</i>, pl.30-34.<br>1799: Napoleon's Egyptian Expedition, published in <i>Description de l'Égypte</i>, Vol. 2, pl. 77-92<br>1825: James Burton, <i>Hieroplyphica</i><br>1829: Jean-François Champollion, <i>Monuments</i> II, pl. 149-191bis, III 231-276<br>1844-45: Lepsius <i>Denkmaeler</i><br>1816: Giovanni Battista Belzoni<br>1820/30: Robert Hay",
+		"gpsN": 25.740696,
+		"gpsE": 32.601784
+	},
+	{
+		"id": 11,
+		"name": "Abu Simbel",
+		"bild": "04",
+		"builtby": "Ramesses II",
+		"aka": null,
+		"text": "In the 13th century BC, Ramesses II had the four massive 20-meter-tall seated statues of the pharaoh at the Abu Simbel temple cut out of the mountainside to commemorate his victory at the Battle of Kadesh. The temple was completely buried beneath the desert sand when Napoleon's Egyptian expedition passed by in 1800 and remained unknown until rediscovered and excavated some 15 years later. It was relocated in the 1960s to save it from being submerged by the Aswan dam.",
+		"biblio": "Champollion, <i>Monuments</i>, I, plates 3-38bis<br>Lepsius, <i>Denkmaeler</i>, III 185-196 and more.",
+		"gpsN": 22.336956,
+		"gpsE": 31.62615
+	},
+	{
+		"id": 13,
+		"name": "Philae",
+		"bild": "05",
+		"builtby": "Necho I, Psamtik II, Ptolemy II, Ptolemy III, Ptolemy V, Ptolemy VI, Trajanus and other Roman emperors",
+		"aka": null,
+		"text": "Late Period pharaohs and Roman Emperors erected monuments that span nearly the entire island, with the principal constructions being on the island's southern side. When the Great Dam of Assuan inundated everything upstream, the temples were transferred to the adjacent island of Agilkia.",
+		"biblio": "Description d’Égypte, I, plates 1-29<br>Champollion, <i>Monuments</i>, I, plates 75-94<br>Lepsius, <i>Denkmaeler</i>, IV",
+		"gpsN": 24.025205,
+		"gpsE": 32.883939
+	},
+	{
+		"id": 6,
+		"name": "Luxor Temple",
+		"bild": "06",
+		"builtby": "Amenhotep III, Amenhotep IV, Tutankhamun, Horemhab, Ramesses II, Nectanebo I, Alexander the Great ",
+		"aka": null,
+		"text": "The Luxor Temple Complex was built during the New Kingdom in ancient Thebes and is situated on the east bank of the Nile. In contrast to the other temples, this complex is not devoted to a king or a god, but rather to the restoration of kingship; possibly used for the coronation of the pharaohs.",
+		"biblio": "Champollion, <i>Monuments</i>, IV, plates 318-349<br><i>Description de l'Égypte</i>, III, plates 1-15",
+		"gpsN": 25.700056,
+		"gpsE": 32.639395
+	},
+	{
+		"id": 16,
+		"name": "Colossii of Memnon",
+		"bild": "07",
+		"builtby": "Amenhotep III",
+		"aka": null,
+		"text": "Two enormous 18 meters tall stone statues located in front of Amenhotep III’s ruined mortuary temple at Thebes. Greek inscriptions on the northernmost statue refer to the legendary Greek ruler Memnon, who the statue was then mistakenly believed to depict, and are linked to the Greek name for the entire Theban Necropolis, <em>the Memnonium.</em>",
+		"biblio": "Pococke, <i>A Description of the East</i>, pl. 36-37<br> <i>Description de l'Égypte</i>, II, plates 20-22<br>Lepsius, <i>Denkmaeler</i>, I 91; VI <i>passim</i>; Text III, 140-147",
+		"gpsN": 25.720455,
+		"gpsE": 32.610539
+	},
+	{
+		"id": 17,
+		"name": "Mortuary Temple of Hatshepsut",
+		"bild": "08",
+		"builtby": "Hatshepsut",
+		"aka": null,
+		"text": "Hatshepsut’s mortuary temple at Thebes is regarded as a masterpiece of ancient architecture because of the way its three enormous terraces soar above the desert floor and into the Deir el-Bahari cliffs.",
+		"biblio": "<i>Description de l'Égypte</i>, II, plates 38-39<br>",
+		"gpsN": 25.738278,
+		"gpsE": 32.606583
+	},
+	{
+		"id": 19,
+		"name": "Edfu",
+		"bild": "09",
+		"builtby": "Ptolemaic dynasty",
+		"aka": null,
+		"text": "The Ptolemaic temple of Horus at Edfu, erected between 237 BC and 57 BC, is Egypt's best preserved temple. The massive temple was built from sandstone blocks on the site of a smaller New Kingdom temple. ",
+		"biblio": "<i>Description de l'Égypte</i>, I, plates 48-65<br>Champollion, <i>Monuments</i> II, plates 123-139ter",
+		"gpsN": 24.977301,
+		"gpsE": 32.87341
+	},
+	{
+		"id": 8,
+		"name": "Ramesseum",
+		"bild": "10",
+		"builtby": "Ramesses II",
+		"aka": null,
+		"text": "The tomb temple of Ramesses II is known as the Ramesseum. On the west bank of the Nile, in Upper Egypt's Theban Necropolis, is where you can find it. When Jean-François Champollion visited the ruins in 1829, he recognised the hieroglyphs on the walls that make up Ramesses' names and titles.",
+		"biblio": "<i>Description de l'Égypte</i>, II, plates 23-33",
+		"gpsN": 25.727402,
+		"gpsE": 32.610717
+	},
+	{
+		"id": 10,
+		"name": "Dendera Temple complex",
+		"bild": "11",
+		"builtby": "Pepi I, Mentuhotep II, Amenemhat I, Thutmose III, Amenhotep III, Ramesses II, Ramses III, Ptolemaios XII Auletes, Tiberius, Caligula, Claudius, Nero, Trajanus, Antonius Pius and more",
+		"aka": null,
+		"text": "The Temple of Hathor is the primary structure of the Dendera temple complex, built during the Ptolemaic dynasty's final years in the first century BC. However, there has been a temple there since the Middle Kingdom, and it underwent improvements until the reign of the Roman emperor Trajan.",
+		"biblio": "Mariette, <i>Dendérah</i>, 6 volumes, (Paris: 1870-75)<br><i>Description de l'Égypte</i>, IV, plates 2-34",
+		"gpsN": 26.142,
+		"gpsE": 32.6699
+	},
+	{
+		"id": 7,
+		"name": "Medinet Habu Temple",
+		"bild": "12",
+		"builtby": "Ramesses III",
+		"aka": null,
+		"text": "The mortuary temple of Ramesses III is strikingly similar and much better preserved than the Ramesseum.",
+		"biblio": "<i>Description de l'Égypte</i>, II, plates 2-18<br>Champollion, <i>Monuments</i>, II, plates 195-200; III, 201-228",
+		"gpsN": 25.719258,
+		"gpsE": 32.60136
+	},
+	{
+		"id": 12,
+		"name": "Kom Ombo Temple",
+		"bild": "13",
+		"builtby": "Ptolemaic dynasty",
+		"aka": null,
+		"text": "The remarkable double temples known as the Temple of Kom Ombo were built during the Ptolemaic dynasty with addition in Roman times.",
+		"biblio": null,
+		"gpsN": 24.451747,
+		"gpsE": 32.928077
+	},
+	{
+		"id": 3,
+		"name": "Saqqara",
+		"bild": "14",
+		"builtby": "Djoser, Userkaf, Djedkara Isesi, Menkauhor, Unas, Teti, Pepi I, Merenra, Pepi II, and many more",
+		"aka": null,
+		"text": "Saqqara contains ancient Egyptian royal burial grounds and served as the necropolis for Memphis, the ancient Egyptian capital. Saqqara is home to multiple pyramids, notably Djoser's Step Pyramid, as well as a number of mastaba tombs and can be seen to the south from the Giza plateau.",
+		"biblio": null,
+		"gpsN": 29.871984,
+		"gpsE": 31.219163
+	},
+	{
+		"id": 2,
+		"name": "Abusir",
+		"bild": "15",
+		"builtby": "Sahura, Niuserra, Neferirkara",
+		"aka": null,
+		"text": "Served as the royal necropolis in the Fifth Dynasty, with the pyramids of Neferirkara Kakai, Niuserra, and Sahura.",
+		"biblio": null,
+		"gpsN": 29.895801,
+		"gpsE": 31.202808
+	},
+	{
+		"id": 4,
+		"name": "Dashur",
+		"bild": "16",
+		"builtby": "Sneferu, Senusret III, Amenemhat III",
+		"aka": null,
+		"text": "The Bent pyramid and the Red pyramid, both erected by Sneferu in the Fourth Dynasty, are part of a necropolis containing other pyramids. Amenemhat II (the White Pyramid) and Amenemhat III (the Black Pyramid), as well as Senusret III, erected pyramids nearby.",
+		"biblio": null,
+		"gpsN": 29.795678,
+		"gpsE": 31.215815
+	},
+	{
+		"id": 18,
+		"name": "Abydos",
+		"bild": "17",
+		"builtby": "Seti I, Ramesses II",
+		"aka": null,
+		"text": "The Mortuary Temple of Seti I at Abydos was discovered buried by desert sand in the mid 1800's and excavated in 1859 under Auguste Mariette.",
+		"biblio": "Calverley, The Temple of King Sethos at Abydos, 5 volumes<br>Mariette, <i>Abydos</i>, 2 volumes.",
+		"gpsN": 26.184521,
+		"gpsE": 31.919237
+	},
+	{
+		"id": 21,
+		"name": "Valley of the Queens",
+		"bild": "18",
+		"builtby": "New Kingdom queens",
+		"aka": null,
+		"text": "Many New Kingdom princesses and queens of the Pharaohs were buried in the Valley of the Queens.",
+		"biblio": null,
+		"gpsN": 25.727693,
+		"gpsE": 32.593112
+	},
+	{
+		"id": 15,
+		"name": "Temple of Amada and Derr",
+		"bild": "19",
+		"builtby": "Thutmose III, Amenhotep II, Ramesses II, Merenptah, Siptah",
+		"aka": null,
+		"text": "Thutmose III built the Temple of Amada, the oldest Egyptian temple in Nubia, which was dedicated to of Amun and Re-Horakhty. Ramesses II constructed the rock-cut Egyptian temple known as the Temple of Derr in Nubia. The 1960s saw the construction of the Aswan Dam, luckily efforts to preserve ancient temples allowed for the dismantling, and relocation of both temples.",
+		"biblio": "Champollion, <i>Monuments</i>, I, plates 44-49",
+		"gpsN": 22.731666,
+		"gpsE": 32.262159
+	},
+	{
+		"id": 14,
+		"name": "Temple of Hibis",
+		"bild": "20",
+		"builtby": "Darius I, Darius II, Akoris, Necho I, Necho II, and several Ptolemaic pharaohs",
+		"aka": null,
+		"text": "The Temple of Hibis is the largest and best preserved ancient Egyptian temple in the Kharga Oasis, and the only surviving monument in Egypt dating to the Persian period.",
+		"biblio": "Winlock, The Temple of Hibis, 3 volumes. 1941-53.",
+		"gpsN": 25.476538,
+		"gpsE": 30.55597
+	},
+	{
+		"id": 14,
+		"name": "Elephantine",
+		"bild": "45",
+		"builtby": "",
+		"aka": null,
+		"text": "The island of Elephantine stood at the border between Egypt and Nubia and held two impressive temples. However, they were deliberately demolished in 1822 during the attempt to conquer Sudan by Muhammad Ali, who had assumed control in Egypt.",
+		"biblio": "<i>Description de l'Égypte</i>, I, plates 31-38",
+		"gpsN": 24.085668,
+		"gpsE": 32.886326
+	}
+]

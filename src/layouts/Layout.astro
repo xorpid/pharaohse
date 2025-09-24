@@ -1,9 +1,9 @@
 ---
 import "@/styles/global.css";
 import Head from "@/components/Head.astro";
-
 import pharaohs from "../data/pharaohs.json";
-
+import Footer from "@/components/footer.astro";
+const currentPath = Astro.url.pathname;
 export interface Props {
 	title?: string;
 	meta1?: string;
@@ -11,7 +11,7 @@ export interface Props {
 	volid?: string;
 	bild?: string;
 }
-const sitename = "PHARAOHS";
+const sitename = "Egypt";
 const { title, meta1, meta2, bild } = Astro.props as Props;
 ---
 
@@ -54,17 +54,33 @@ const { title, meta1, meta2, bild } = Astro.props as Props;
 		<div>
 			<!-- <h1 class="pagetitle" set:html={pagename} /> -->
 		</div>
-		<div class="max-w-5xl mx-auto min-h-96">
+		<div class="max-w-4xl mx-auto min-h-96">
 			<div>
 				<article class="w-full px-4">
 					<slot />
 
-					<!-- <Thoth /> -->
+					<div class="py-10 my-5 print:hidden" aria-hidden="true">
+						<img
+							src="/svg/thoth.svg"
+							loading="lazy"
+							class="mx-auto h-28 opacity-50 transition duration-300 hover:opacity-100"
+							alt="Thoth"
+							title="You have reached the end of the page. This is Thoth, the wise God of writing and hieroglyphs."
+							srcset=""
+						/>
+						<p class="text-center uppercase font-sans text-xs pt-3">
+							<abbr class="text-stone-400 dark:text-shark-700 no-underline" title="Latin for: Nothing comes from nothing">Ex nihilo nihil fit</abbr>
+						</p>
+					</div>
+					<div class="hidden print:block print:py-20 text-center">
+						<h3>Original text from:</h3><a href="https://pharaoh.se{currentPath}" class="font-mono text-sm text-black"
+							><img src="/svg/pharaohse.svg" alt="Pharaoh.SE" class="w-60 mx-auto block" />https://pharaoh.se{currentPath}</a
+						>
+					</div>
 				</article>
 			</div>
 		</div>
-		<!-- <Footer /> -->
-		<div class="min-h-32 bg-slate-950 h-12 p-8 mt-10 text-center text-2xl">Footer and credits</div>
+		<Footer />
 	</body>
 </html>
 

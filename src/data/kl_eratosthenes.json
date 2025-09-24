@@ -1,0 +1,382 @@
+[
+	{
+		"dyn": 99,
+		"ph": 8,
+		"ordna": 1,
+		"ch": "1",
+		"greek": "Μηνης",
+		"tlit": "Menes",
+		"reign": "62",
+		"descr": "Menes, the Theban of This, whose name means \"eternal\". He reigned for 62 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 9,
+		"ordna": 2,
+		"ch": "2",
+		"greek": "Aθωθης",
+		"tlit": "Athothes",
+		"reign": "59",
+		"descr": "The second king of the Thebans was Athothes, the son of Menes, 59 years. His name means &quot;born from Hermes&quot;."
+	},
+	{
+		"dyn": 99,
+		"ph": 10,
+		"ordna": 3,
+		"ch": "3",
+		"greek": "Aθωθης",
+		"tlit": "Athothes",
+		"reign": "32",
+		"descr": "The third king of the Thebans in Egypt had the same name Athothes, 32 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 13,
+		"ordna": 4,
+		"ch": "4",
+		"greek": "Μιαβιης",
+		"tlit": "Miabies",
+		"reign": "19",
+		"descr": "The fourth king of the Thebans was Miabaes, son of Athothes, 19 years. His name means &quot;friend of comrades&quot;."
+	},
+	{
+		"dyn": 99,
+		"ph": 14,
+		"ordna": 5,
+		"ch": "5",
+		"greek": "Πεμφως",
+		"tlit": "Pemphos",
+		"reign": "18",
+		"descr": "The fifth king of the Thebans was Pemphos, son of Athothes. His name is &quot;descendant of Heracles&quot;. He reigned for 18 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 6,
+		"ch": "6",
+		"greek": "Μομχειρι",
+		"tlit": "Momkheiri",
+		"reign": "79",
+		"descr": "The sixth king of the Thebans in Egypt was Momkheiri the Memphite, reigning for 79 years. His name means &quot;exceedingly large limbs of the man&quot;; he was therefore irresistible."
+	},
+	{
+		"dyn": 99,
+		"ph": 17,
+		"ordna": 7,
+		"ch": "7",
+		"greek": "Στοιχος",
+		"tlit": "Stoikhos",
+		"reign": "6",
+		"descr": "The seventh king of the Thebans in Egypt was his son, Stoikhos; his name means &quot;Ares the unfeeling&quot;. He reigned 6 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 8,
+		"ch": "8",
+		"greek": "Γοσορμιης",
+		"tlit": "Gosormies",
+		"reign": "30",
+		"descr": "The eight king of the Thebans in Egypt was Gosormies, his name is &quot;all-demanding&quot;. He reigned 30 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 9,
+		"ch": "9",
+		"greek": "Μαρης",
+		"tlit": "Mares",
+		"reign": "26",
+		"descr": "The ninth king of Thebes in Egypt was his son Mares; his name is &quot;gift of the Sun&quot;. He reigned 26 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 10,
+		"ch": "10",
+		"greek": "Aνωυφις",
+		"tlit": "Anouphis",
+		"reign": "20",
+		"descr": "The tenth king of the Thebans in Egypt was Anoyphis, his name is &quot;revelling&quot;. He reigned 20 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 11,
+		"ch": "11",
+		"greek": "Σίριος",
+		"tlit": "Sirios",
+		"reign": "18",
+		"descr": "The eleventh king of the Thebans in Egypt was Sirios; his name is &quot;son of the pupil of the eye&quot;, but according to others,  &quot;secure from enchantments&quot;. He reigned 18 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 12,
+		"ch": "12",
+		"greek": "Χνουβος η Γνευρος",
+		"tlit": "Khnoubos e Gneuros",
+		"reign": "22",
+		"descr": "The twelfth king of the Thebans in Egypt was Khnoubos Gneuros, his name is &quot;Khryses, son of Khryses&quot;. He reigned for 22 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 37,
+		"ordna": 13,
+		"ch": "13",
+		"greek": "Ραυωσις",
+		"tlit": "Rhauosis",
+		"reign": "13",
+		"descr": "The thirteenth king of the Thebans in Egypt was Rhauosis; his name is &quot;arch-ruler&quot;. He reigned for 13 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 39,
+		"ordna": 14,
+		"ch": "14",
+		"greek": "Βιυρης",
+		"tlit": "Biures",
+		"reign": "10",
+		"descr": "The fourteenth king of the Thebans in Egypt was Biyres. He reigned for 10 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 36,
+		"ordna": 15,
+		"ch": "15",
+		"greek": "Σαωφις",
+		"tlit": "Saophis",
+		"reign": "29",
+		"descr": "The fifteenth king of the Thebans in Egypt was Saophis, &quot;reveller&quot;, or, according others, &quot;money-getter&quot;. He reigned for 29 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 38,
+		"ordna": 16,
+		"ch": "16",
+		"greek": "Σαωφις β",
+		"tlit": "Saophis II",
+		"reign": "27",
+		"descr": "The sixteenth king of the Thebans was Saophis II. He reigned for 27 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 40,
+		"ordna": 17,
+		"ch": "17",
+		"greek": "Μοσχερως",
+		"tlit": "Moskheres",
+		"reign": "31",
+		"descr": "The seventeenth king of the Thebans was Moskheres Heliodotos; <small>(Lit. Gift of Helios)</small>. He reigned for 31 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 52,
+		"ordna": 18,
+		"ch": "18",
+		"greek": "Μοσθης",
+		"tlit": "Mosthes",
+		"reign": "33",
+		"descr": "The eighteenth king of the Thebans was Mosthes. He reigned for 33 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 54,
+		"ordna": 19,
+		"ch": "19",
+		"greek": "Παμμης Aρχουδης",
+		"tlit": "Pammes Arkhondes",
+		"reign": "35",
+		"descr": "The nineteenth king of Thebes was Pammes Arkhondes. He reigned for 35 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 56,
+		"ordna": 20,
+		"ch": "20",
+		"greek": "Aπαππους",
+		"tlit": "Apappous",
+		"reign": "100",
+		"descr": "The twentieth king of the Thebans was Apappous the Most Great; it is said that he ruled for 100 years but for one hour."
+	},
+	{
+		"dyn": 99,
+		"ph": 57,
+		"ordna": 21,
+		"ch": "21",
+		"greek": "Εχεσκοσοκαρας",
+		"tlit": "Ekheskosokaras",
+		"reign": "1",
+		"descr": "The twenty-first king of the Thebans was Ekheskosokaras, for 1 year."
+	},
+	{
+		"dyn": 99,
+		"ph": 58,
+		"ordna": 22,
+		"ch": "22",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitokris",
+		"reign": "6",
+		"descr": "The twenty-second ruler of the Thebans was Nitokris, a wife in place of her husband; her name is &quot;Athena the Victorious&quot;. She reigned for 6 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 23,
+		"ch": "23",
+		"greek": "Μυρταιος Aμμωνοδοτος",
+		"tlit": "Myrtaios Ammonodotos",
+		"reign": "22",
+		"descr": "The twenty-third king of the Thebans was Myrtaios Ammonodotos <small>(Lit. Gift of Ammon)</small>, for 22 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 24,
+		"ch": "24",
+		"greek": "Oυωσιμαρης",
+		"tlit": "Ouosimares",
+		"reign": "12",
+		"descr": "The twenty-fourth king of the Thebans was Ouosimares 'the mighty'; his name is &quot;Sun&quot; Ruled for 12 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 25,
+		"ch": "25",
+		"greek": "Σεθινιλος",
+		"tlit": "Sethinilos",
+		"reign": "8",
+		"descr": "The twenty-fifth king of the Thebans was Sethinilos; his name is &quot;having increased his inherited power&quot;, for 8 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 26,
+		"ch": "26",
+		"greek": "Σεμφρουκρατης",
+		"tlit": "Semphroukrates",
+		"reign": "18",
+		"descr": "The twenty-sixth king of the Thebans was Semphroukrates; his name is &quot;Heracles Harpokrates&quot;. Reigned 18 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 27,
+		"ch": "27",
+		"greek": "Χουθηρ Ταυρος",
+		"tlit": "Khouther Tauros",
+		"reign": "7",
+		"descr": "The twenty-seventh king of the Thebans was Khouther Tauros, for 7 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 28,
+		"ch": "28",
+		"greek": "Μευρης Φιλοσκορος",
+		"tlit": "Meures Philoskoros",
+		"reign": "12",
+		"descr": "The twenty-eight king of the Thebans was Meures Philoskoros, for 12 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 29,
+		"ch": "29",
+		"greek": "Χωμαεφαιστος",
+		"tlit": "Khomaephaestos",
+		"reign": "11",
+		"descr": "The twenty-ninth king of the Thebans was Khomaephtha, &quot;the world&quot;, Philephaistos&quot;, for 11 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 30,
+		"ch": "30",
+		"greek": "Σοικουνιος",
+		"tlit": "Soikounios",
+		"reign": "60",
+		"descr": "The thirtieth king of the Thebans was Soikounios, for 60 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 31,
+		"ch": "31",
+		"greek": "Πετεαθυρης",
+		"tlit": "Peteathyres",
+		"reign": "16",
+		"descr": "The thirty-first king of the Thebans was Peteathyres, for 16 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 89,
+		"ordna": 32,
+		"ch": "32",
+		"greek": "Σταμμενεμης α",
+		"tlit": "Stammenemes I",
+		"reign": "26",
+		"descr": "The thirty-second king of the Thebans was Stammenemes, for 26 years.\n"
+	},
+	{
+		"dyn": 99,
+		"ph": 91,
+		"ordna": 33,
+		"ch": "33",
+		"greek": "Σταμμενεμης β",
+		"tlit": "Stammenemes II",
+		"reign": "23",
+		"descr": "The thirty-third king of the Thebans was Stammenemes II, for 23 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 93,
+		"ordna": 34,
+		"ch": "34",
+		"greek": "Σιστοσιχερμης",
+		"tlit": "Sistosikhermes",
+		"reign": "55",
+		"descr": "The thirty-fourth king of the Thebans was Sistosikhermes Herkles 'the mighty', for 55 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 94,
+		"ordna": 35,
+		"ch": "35",
+		"greek": "Μαρης",
+		"tlit": "Mares",
+		"reign": "43",
+		"descr": "The thirty-fifth king of the Thebans was Mares, for 43 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 36,
+		"ch": "36",
+		"greek": "Σιφθας",
+		"tlit": "Siphthas",
+		"reign": "5",
+		"descr": "The thirty-sixth king of the Thebans was Siphthas, also known as Hermes, 'son of Hephaistos', for 5 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ordna": 37,
+		"ch": "37",
+		"greek": "Φρουορω",
+		"tlit": "Phruoro",
+		"reign": "5",
+		"descr": "The thirty-seventh king of the Thebans was Phrouoro or \"the Nile,\" for 5 years."
+	},
+	{
+		"dyn": 99,
+		"ph": 260,
+		"ordna": 38,
+		"ch": "38",
+		"greek": "Aμουθαρταιος",
+		"tlit": "Amouthartaios",
+		"reign": "63",
+		"descr": "The thirty-eight king of the Thebans was Amourthartaios, for 63 years."
+	}
+]

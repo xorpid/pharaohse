@@ -1,0 +1,142 @@
+[
+	{
+		"id": 1,
+		"farao": 178,
+		"namn": "Aa kheper ka Ra",
+		"tlit": "ꜤꜢ-ḫpr-kꜢ-rꜤ",
+		"meaning": "Great is the manifestation of the soul of Ra",
+		"mdc": "",
+		"nr": "1",
+		"bild": "01"
+	},
+	{
+		"id": 2,
+		"farao": 177,
+		"namn": "Djoser ka Ra",
+		"tlit": "ḏsr-kꜢ-rꜤ",
+		"meaning": "Holy is the soul of Ra",
+		"mdc": "",
+		"nr": "2",
+		"bild": "02"
+	},
+	{
+		"id": 3,
+		"farao": 176,
+		"namn": "Neb pehty Ra",
+		"tlit": "nb-pḥti-rꜤ",
+		"meaning": "The Lord of the might is Ra",
+		"mdc": "",
+		"nr": "3",
+		"bild": "03"
+	},
+	{
+		"id": 4,
+		"farao": 86,
+		"namn": "Neb hapet Ra",
+		"tlit": "nb-ḥꜢpt-rꜤ",
+		"meaning": "The Lord of the rudder is Ra",
+		"mdc": "",
+		"nr": "4",
+		"bild": "04"
+	},
+	{
+		"id": 5,
+		"farao": 8,
+		"namn": "Meni",
+		"tlit": "mni",
+		"meaning": "The established one(?)",
+		"mdc": "",
+		"nr": "5",
+		"bild": "05"
+	},
+	{
+		"id": 6,
+		"farao": 193,
+		"namn": "User Maat Ra, setep en Ra",
+		"tlit": "wsr-mꜢꜤt-rꜤ stp.n-rꜤ",
+		"meaning": "The justice of Ra is powerful, chosen of Ra",
+		"mdc": "",
+		"nr": "6",
+		"bild": "06"
+	},
+	{
+		"id": 7,
+		"farao": 192,
+		"namn": "Men Maat Ra",
+		"tlit": "mn-mꜢꜤt-rꜤ",
+		"meaning": "Eternal is the Truth of Ra",
+		"mdc": "",
+		"nr": "7",
+		"bild": "07"
+	},
+	{
+		"id": 8,
+		"farao": 191,
+		"namn": "Men pehty Ra",
+		"tlit": "mn-pḥti-rꜤ",
+		"meaning": "Eternal is the Strength of Ra",
+		"mdc": "",
+		"nr": "8",
+		"bild": "08"
+	},
+	{
+		"id": 9,
+		"farao": 190,
+		"namn": "Djoser kheperu Ra, setep en Ra",
+		"tlit": "ḏsr-ḫprw stp-n-rꜤ",
+		"meaning": "Holy are of the manifestations of Ra, chosen of Ra",
+		"mdc": "",
+		"nr": "9, 15",
+		"bild": "09"
+	},
+	{
+		"id": 10,
+		"farao": 184,
+		"namn": "Neb Maat Ra",
+		"tlit": "nb-mꜢꜤt-rꜤ",
+		"meaning": "The possessor of the Maat of Ra",
+		"mdc": "",
+		"nr": "10, 16",
+		"bild": "10"
+	},
+	{
+		"id": 11,
+		"farao": 183,
+		"namn": "Men kheperu Ra",
+		"tlit": "mn-ḫprw-rꜤ",
+		"meaning": "Established manifestations of Ra",
+		"mdc": "",
+		"nr": "11, 17",
+		"bild": "11"
+	},
+	{
+		"id": 12,
+		"farao": 182,
+		"namn": "Aa kheperu Ra",
+		"tlit": "ꜤꜢ-ḫprw-rꜤ",
+		"meaning": "Great are the manifestations of Ra",
+		"mdc": "",
+		"nr": "12, 18",
+		"bild": "12"
+	},
+	{
+		"id": 13,
+		"farao": 181,
+		"namn": "Men kheper Ra",
+		"tlit": "mn-ḫpr-rꜤ",
+		"meaning": "Lasting is the Manifestation of Ra",
+		"mdc": "",
+		"nr": "13, 19",
+		"bild": "13"
+	},
+	{
+		"id": 14,
+		"farao": 179,
+		"namn": "Aa kheper en Ra",
+		"tlit": "ꜤꜢ-ḫpr-n-rꜤ",
+		"meaning": "Great is the manifestation of Ra",
+		"mdc": "",
+		"nr": "14",
+		"bild": "14"
+	}
+]

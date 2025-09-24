@@ -6,13 +6,19 @@ import dynastys from "../../data/dynasties.json";
 <Layout title="Dynasties">
 	<h1 class="text-3xl font-bold mb-4">Dynasties of Ancient Egypt</h1>
 
-	<ul class="space-y-2">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
 		{
 			dynastys.map((p) => (
-				<li>
-					<a href={`/dynasties/${p.slug}`}>{p.name}</a>
-				</li>
+				<div class="bg-white dark:bg-stone-800 shadow rounded-lg p-4 border border-gray-200 dark:border-stone-700 flex flex-col items-center">
+					<a href={`/dynasty/${p.slug}`} class="text-7xl font-bold mb-2 hover:no-underline">
+						{p.char}
+					</a>
+					<div class="text-base">{p.name}</div>
+					{p.period && <div class="text-sm text-gray-600 dark:text-gray-400 mb-1">{p.period}</div>}
+					<div class="text-sm">{p.kings}</div>
+					{/* {p.description && <div class="text-sm text-gray-700 dark:text-gray-300">{p.description}</div>} */}
+				</div>
 			))
 		}
-	</ul>
+	</div>
 </Layout>

@@ -1,0 +1,170 @@
+[
+	{
+		"dyn": 99,
+		"ph": 8,
+		"ch": "99.2",
+		"greek": "Μινα",
+		"tlit": "Min",
+		"tscript": "Min"
+	},
+	{
+		"dyn": 99,
+		"ph": 58,
+		"ch": "100.2",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitocris",
+		"tscript": "Nitocris"
+	},
+	{
+		"dyn": 99,
+		"ph": 94,
+		"ch": "101.1",
+		"greek": "Μοιριος",
+		"tlit": "Moerius",
+		"tscript": "Moerius"
+	},
+	{
+		"dyn": 99,
+		"ph": 93,
+		"ch": "102.1",
+		"greek": "Σεσωστρις",
+		"tlit": "Sesostris",
+		"tscript": "Sesostris"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "111.1",
+		"greek": "Φερων",
+		"tlit": "Pheron",
+		"tscript": "Pheron"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "112.1",
+		"greek": "Πρωτεα",
+		"tlit": "Proteus",
+		"tscript": "Proteus"
+	},
+	{
+		"dyn": 99,
+		"ph": 200,
+		"ch": "121.1",
+		"greek": "Pαμψινιτον",
+		"tlit": "Rhampsinitos",
+		"tscript": "Rhampsinitus"
+	},
+	{
+		"dyn": 99,
+		"ph": 36,
+		"ch": "124",
+		"greek": "Χεοπα",
+		"tlit": "Kheops",
+		"tscript": "Cheops"
+	},
+	{
+		"dyn": 99,
+		"ph": 38,
+		"ch": "127",
+		"greek": "Χεφρηνα",
+		"tlit": "Chephren",
+		"tscript": "Chephren"
+	},
+	{
+		"dyn": 99,
+		"ph": 40,
+		"ch": "129",
+		"greek": "Μυκερινον",
+		"tlit": "Mycerinus",
+		"tscript": "Mycerinos"
+	},
+	{
+		"dyn": 99,
+		"ph": 216,
+		"ch": "136.1",
+		"greek": "Aσυχιν",
+		"tlit": "Asychis",
+		"tscript": "Asychis"
+	},
+	{
+		"dyn": 99,
+		"ph": 240,
+		"ch": "137",
+		"greek": "Σαβακων",
+		"tlit": "Sabacon",
+		"tscript": "Sabacon"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "137",
+		"greek": "Aνυσιν",
+		"tlit": "Anysis",
+		"tscript": "Anysis"
+	},
+	{
+		"dyn": 99,
+		"ph": 260,
+		"ch": "140.2",
+		"greek": "Aμυρταιου",
+		"tlit": "Amurtaiou",
+		"tscript": "Amyrtaeus"
+	},
+	{
+		"dyn": 99,
+		"ph": 241,
+		"ch": "141.1",
+		"greek": "Σεθων",
+		"tlit": "Sethos",
+		"tscript": "Sethus"
+	},
+	{
+		"dyn": 99,
+		"ph": 245,
+		"ch": "151.2",
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"tscript": "Psammetichus"
+	},
+	{
+		"dyn": 99,
+		"ph": 244,
+		"ch": "152.1",
+		"greek": "Νεκων",
+		"tlit": "Necon",
+		"tscript": "Necon"
+	},
+	{
+		"dyn": 99,
+		"ph": 246,
+		"ch": "158.1",
+		"greek": "Νεκως",
+		"tlit": "Necos",
+		"tscript": "Necos"
+	},
+	{
+		"dyn": 99,
+		"ph": 247,
+		"ch": "159.3",
+		"greek": "Ψαμμι",
+		"tlit": "Psammi",
+		"tscript": "Psammis"
+	},
+	{
+		"dyn": 99,
+		"ph": 248,
+		"ch": "161",
+		"greek": "Aπριης",
+		"tlit": "Apries",
+		"tscript": "Apries"
+	},
+	{
+		"dyn": 99,
+		"ph": 249,
+		"ch": "172",
+		"greek": "Aμασις",
+		"tlit": "Amasis",
+		"tscript": "Amasis"
+	}
+]

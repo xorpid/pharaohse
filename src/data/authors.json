@@ -1,0 +1,82 @@
+[
+	{
+		"slug": "herodotus",
+		"name": "Herodotus of Halicarnassos",
+		"period": "c. 450 BC",
+		"meta1": "Herodotus",
+		"meta2": "Herodotus, king list",
+		"image": "/images/kinglist/herodotus.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "manetho",
+		"name": "Manetho of Sebennytos",
+		"period": "c. 275 BC +/- 30 years",
+		"meta1": "Manetho",
+		"meta2": "Manetho, king list",
+		"image": "/images/kinglist/manetho.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "africanus",
+		"name": "Julius Africanus",
+		"period": "c. 220 AD",
+		"meta1": "Africanus",
+		"meta2": "Africanus, king list, Manetho",
+		"image": "/images/kinglist/africanus.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "eusebius",
+		"name": "Eusebius of Caesarea",
+		"period": "c. 325 AD",
+		"meta1": "Eusebius",
+		"meta2": "Eusebius, king list, Manetho",
+		"image": "/images/kinglist/eusebius.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "josephus",
+		"name": "Josephus",
+		"period": "c. 95 AD",
+		"meta1": "Josephus",
+		"meta2": "Josephus, king list, Manetho",
+		"image": "/images/kinglist/josephus.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "syncellus",
+		"name": "George Syncellus",
+		"period": "c. 800 AD",
+		"meta1": "Syncellus",
+		"meta2": "Syncellus, king list, Manetho",
+		"image": "/images/kinglist/syncellus.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "diodorus",
+		"name": "Diodorus Siculus",
+		"period": "c. 40 BC",
+		"meta1": "Diodorus",
+		"meta2": "Diodorus, king list, Manetho",
+		"image": "/images/kinglist/diodorus.jpg",
+		"intro": "",
+		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+	},
+	{
+		"slug": "eratosthenes",
+		"name": "Eratosthenes",
+		"period": "c. 225 BC",
+		"meta1": "Eratosthenes",
+		"meta2": "Eratosthenes, king list, forgery",
+		"image": "/images/kinglist/eratosthenes.jpg",
+		"intro": "",
+		"bibliography": []
+	}
+]

@@ -1,0 +1,154 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import authors from "../../data/authors.json";
+import africanus from "../../data/kl_africanus.json";
+import eusebius from "../../data/kl_eusebius.json";
+import herodotus from "../../data/kl_herodotus.json";
+import diodorus from "../../data/kl_diodorus.json";
+import syncellus from "../../data/kl_syncellus.json";
+import josephus from "../../data/kl_josephus.json";
+import eratosthenes from "../../data/kl_eratosthenes.json";
+import faraos from "../../data/pharaohs.json";
+
+export async function getStaticPaths() {
+	return authors.map((p) => ({
+		params: { slug: p.slug },
+		props: { author: p },
+	}));
+}
+
+// Map slug to data array
+const authorData = {
+	africanus: africanus,
+	eusebius: eusebius,
+	herodotus: herodotus,
+	diodorus: diodorus,
+	syncellus: syncellus,
+	josephus: josephus,
+	eratosthenes: eratosthenes,
+};
+
+const { author } = Astro.props;
+const { slug } = Astro.params as { slug: keyof typeof authorData };
+
+const title = author.name;
+const meta1 = author.meta1;
+const meta2 = author.meta2;
+const bild = author.image;
+
+const items = authorData[slug] ?? [];
+
+// Dynamically import Markdown intro for the kinglist
+let IntroComponent = null;
+let hasMarkdown = false;
+try {
+	const mdModule = await import(`../../data/intros/${slug}.md`);
+	IntroComponent = mdModule.Content;
+	hasMarkdown = true;
+} catch (e) {
+	// fallback to JSON intro if Markdown is missing
+}
+
+// Group items by dynasty (string keys)
+const dynGroups: Record<string, any[]> = {};
+for (const item of items) {
+	if ("dyn" in item && typeof item.dyn !== "undefined") {
+		const dynKey = String(item.dyn);
+		if (!dynGroups[dynKey]) dynGroups[dynKey] = [];
+		dynGroups[dynKey].push(item);
+	}
+}
+const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) - Number(b));
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<h1 class="text-3xl font-bold">{author.name}</h1>
+	<p class="text-lg">{author.period}</p>
+
+	{
+		hasMarkdown && IntroComponent && (
+			<article class="mt-4">
+				<IntroComponent />
+			</article>
+		)
+	}
+
+	<section class="mt-8">
+		<h2 class="text-xl font-bold mb-4">Entries Grouped by Dynasty</h2>
+		{
+			dynKeys.map((dyn) => (
+				<div class="mb-12">
+					<h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>
+					<div class="overflow-x-auto">
+						<table class="min-w-full border border-gray-300">
+							<thead>
+								<tr class="bg-gray-100 dark:bg-stone-800">
+									<th class="px-2 py-1 border">Order</th>
+									<th class="px-2 py-1 border">Pharaoh</th>
+									<th class="px-2 py-1 border">Chapter</th>
+									<th class="px-2 py-1 border">Greek</th>
+									<th class="px-2 py-1 border">Translit</th>
+									<th class="px-2 py-1 border">Transcription</th>
+									<th class="px-2 py-1 border">Reign</th>
+									<th class="px-2 py-1 border">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								{dynGroups[dyn]
+									.slice()
+									.sort((a, b) => a.ordna - b.ordna)
+									.map((item) => (
+										<tr>
+											<td class="px-2 py-1 border">{item.ordna}</td>
+											<td class="px-2 py-1 border">
+												{(() => {
+													const phEntry = faraos.find((ph) => ph.no === String(item.ph));
+													if (phEntry) {
+														if (phEntry.no === "888") {
+															return " ";
+														}
+														if (phEntry.no === "999") {
+															return "—";
+														}
+														// Use slug from pharaohs.json if available, else generate from name
+														const slug =
+															phEntry.slug ||
+															phEntry.name
+																.toLowerCase()
+																.replace(/[^a-z0-9]+/g, "-")
+																.replace(/^-+|-+$/g, "");
+														return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
+													} else {
+														return item.ph;
+													}
+												})()}
+											</td>
+											<td class="px-2 py-1 border">{item.ch}</td>
+											<td class="px-2 py-1 border">{item.greek}</td>
+											<td class="px-2 py-1 border">{item.tlit}</td>
+											<td class="px-2 py-1 border">{item.tscript}</td>
+											<td class="px-2 py-1 border">{item.reign}</td>
+											<td class="px-2 py-1 border">{item.descr ?? ""}</td>
+										</tr>
+									))}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			))
+		}
+	</section>
+
+	{
+		author.bibliography && author.bibliography.length > 0 && (
+			<section class="mt-12">
+				<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
+				<ul class="list-none list-inside space-y-2">
+					{author.bibliography.map((title) => (
+						<li>{title}</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+</Layout>

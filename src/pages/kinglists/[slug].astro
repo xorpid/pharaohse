@@ -1,0 +1,102 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import kinglists from "../../data/kinglists.json";
+
+import abydos from "../../data/kl_abydos.json";
+import saqqara from "../../data/kl_saqqara.json";
+import karnak from "../../data/kl_karnak.json";
+import ramesseum from "../../data/kl_ramesseum.json";
+import marseille from "../../data/kl_marseille.json";
+import medinet from "../../data/kl_medinet.json";
+//import turin from "../../data/kl_turin.json";
+
+export async function getStaticPaths() {
+	return kinglists.map((p) => ({
+		params: { slug: p.slug },
+		props: { kinglist: p },
+	}));
+}
+
+// Map slug to data array
+const kinglistData = {
+	"abydos-canon": abydos,
+	"saqqara-canon": saqqara,
+	"karnak-canon": karnak,
+	marseille: marseille,
+	"ramesseum-canon": ramesseum,
+	"medinet-habu-canon": medinet,
+	//turin: turin,
+};
+
+const { kinglist } = Astro.props;
+const { slug } = Astro.params as { slug: keyof typeof kinglistData };
+
+const title = kinglist.name;
+const meta1 = kinglist.meta1;
+const meta2 = kinglist.meta2;
+const bild = kinglist.image;
+
+const items = kinglistData[slug] ?? [];
+
+// Dynamically import Markdown intro for the kinglist
+let IntroComponent = null;
+let hasMarkdown = false;
+try {
+	const mdModule = await import(`../../data/intros/${slug}.md`);
+	IntroComponent = mdModule.Content;
+	hasMarkdown = true;
+} catch (e) {
+	// fallback to JSON intro if Markdown is missing
+}
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<h1 class="text-3xl font-bold">{kinglist.name}</h1>
+	<p class="text-lg">{kinglist.period}</p>
+
+	{
+		hasMarkdown && IntroComponent && (
+			<article class="mt-4">
+				<IntroComponent />
+			</article>
+		)
+	}
+	{
+		items.length > 0 && (
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+				{items.map((item) => (
+					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-2">
+						<div class="font-bold text-xl">{item.namn}</div>
+						{item.meaning && <div class="text-sm">{item.meaning}</div>}
+						{item.tlit && (
+							<div class="text-sm">
+								<span class="font-semibold">Translit:</span> {item.tlit}
+							</div>
+						)}
+						{item.mdc && (
+							<div class="text-sm">
+								<span class="font-semibold">MDC:</span> {item.mdc}
+							</div>
+						)}
+						{item.nr && <div class="text-xs">No: {item.nr}</div>}
+						{/* If you have images, you can display them here: */}
+						{/* {item.bild && <img src={`/path/to/images/${item.bild}.jpg`} alt={item.namn} class="w-24 h-24 object-contain" />} */}
+					</div>
+				))}
+			</div>
+		)
+	}
+
+	{
+		kinglist.bibliography && kinglist.bibliography.length > 0 && (
+			<section class="mt-12">
+				<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
+				<ul class="list-none list-inside space-y-2">
+					{kinglist.bibliography.map((title) => (
+						<li>{title}</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+</Layout>

@@ -1,0 +1,563 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import lang from "../assets/languages.webp";
+
+const title = "Script and Language of Ancient Egypt";
+let meta1 = "Information about the Egyptian hieroglyphs and how read and write them, and how to learn more";
+let meta2 = "hieroglyphs,how to write hieroglyphs,how to read hieroglyphs,hieroglyphics,ancient egypt";
+const bild = "/images/pharaohse-hieroglyphs.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<p class="lead">
+		Before the hieroglyphs were understood, the strange animal-headed gods depicted alongside the mysterious hieroglyphs were thought to be divine
+		messages or magical formulas, rather than the language of a vanished civilization.
+	</p>
+	<img src="/svg/hieroglyphs/anx.svg" class="drop-shadow-[0_0_5px] drop-shadow-emerald-500 float-right h-48 pb-3 pl-5" alt="Ankh symbol" />
+	<p>
+		The language of ancient Egypt spoken by the pharaohs of ancient Egypt is simply referred to as “Ancient Egyptian.” The language has been extinct
+		for 1500 years and is no longer used for everyday communication. The last vestiges of the language have been preserved in Coptic, but this too has
+		not been spoken for centuries. The modern inhabitants of the Nile Valley speak Arabic &mdash; a completely different language.
+	</p>
+	<p>
+		Ancient Egyptian was based on an alphabet of 24 consonants, not all of which correspond to European alphabets. As in Arabic and Hebrew, the vowels
+		were not written but had to be provided by the reader or speaker. However, there are a number of indications regarding the vowel sounds in Coptic,
+		which is a late form of the Egyptian language that has survived to the present day. When transcribing Egyptian words, the general rule used by
+		Egyptologists was that if there were clues in Coptic, use them, otherwise add an ‘e’ to the words until you get something pronounceable to
+		European ears. The transcriptions were made mostly by English, French and German Egyptologists using their own language, resulting in wide
+		variations of the names of the pharaohs.
+	</p>
+	<p>
+		<a href="/ancient-egypt/scribes">Scribes</a> were highly educated individuals who were responsible for record-keeping, drafting legal documents, and
+		maintaining religious texts. For the majority of Egypt's history, three distinct scripts were in use. The most common was <i>Hieratic</i>, used
+		for everyday transactions like inventory, wages and tax records. Artisans also used hieratic to mark their finished products.
+		<i>Cursive Hieroglyphs</i> were reserved for religious texts, while <i>Hieroglyphs</i> were used for inscriptions on monuments erected in honour of
+		kings and other prominent figures. Hieratic writing was mostly done in ink on <a href="/ancient-egypt/papyrus">papyrus</a>, while hieroglyphs were
+		carved onto more durable materials such as stone, metal, wood, and so on.
+	</p>
+	<p>
+		The art style of Ancient Egypt is very distinctive, always depicting humans in profile, except for the torso, which is seen from the front. This
+		art was almost always accompanied by smaller symbols of animals, tools, plants and more. However, these were not just symbols, but a highly
+		formalized script and language: <em>the hieroglyphs</em>.
+	</p>
+
+	<!-- MARK: Hieroglyphs
+-->
+	<section>
+		<h2>Hieroglyphs</h2>
+
+		<p>
+			<img src="/images/scriptKV17scene.webp" class="float-left pb-3 pr-5" alt="KV17 scene with Horus and Seti I" />
+			Thanks to a large collection of preserved writings, the deciphering of the hieroglyphs in the early 19th century revealed that the mysterious hieroglyphs
+			were actually an extinct language. The Ancient Egyptian language went through several stages of development known as <i
+				>Old Egyptian, Middle Egyptian, Late Egyptian,</i
+			> and <i>Demotic</i>. These stages correspond to different historical periods.
+		</p>
+		<p>
+			The ancient Egyptian hieroglyphs were primarily used for monumental purposes, carved in stone, and often very ornate and painted in vivid
+			colors. This was not at all suited for everyday purposes as it often required artistic skills and production was both cumbersome and
+			time-consuming.
+		</p>
+		<p>
+			The word ‘hieroglyph’ comes from the Greek <gr>ἱερογλυφικός</gr>, <i>hieroglyphikos</i>, and literally means ‘sacred inscription’. This explains
+			the almost exclusive use of hieroglyphs in ‘sacred’ contexts, i.e. in temples built for the gods, in monuments dedicated to the king and in
+			royal and private tombs. For the ancient Egyptians, the hieroglyphs were known as <tlit>mdw nṯr</tlit>, <i>medu netjer</i>, literally ‘divine
+			words’. This is the writing of the gods, as created by Ptah.
+		</p>
+		<p>
+			The texts can be divided into two stages: <em>Earlier Egyptian</em>, basically all written texts from before 1400 BCE, and <em
+				>Later Egyptian</em
+			>, i.e. all later texts, including most surviving papyri. Earlier Egyptian can be subdivided into <em>Old</em> and <em>Middle Egyptian</em>,
+			while Later Egyptian can be subdivided into <em>Late Egyptian, Demotic</em> and ultimately <em>Coptic</em>.
+		</p>
+
+		<p>
+			Writing on stone is unforgiving of mistakes and time-consuming in the long run, and a growing government was demanding something a lot easier
+			and faster. The papyrus plant was abundant in the Nile delta, and already used to make baskets, rope and much more. The idea of using papyrus as
+			a writing medium was nothing short of revolutionary. A system was soon devised, using a reed brush dipped in ink to write hieroglyphs on the
+			papyrus. Writing elaborate hieroglyphs in ink is very impractical, and a simplified script that retained the form of the hieroglyphs, but was
+			easier and faster to write soon emerged: <em>Cursive Hieroglyphs</em>. But even this was still slow, and not suited for everyday administrative
+			purposes, so an even faster and more simplified system came into being: <em>Hieratic</em>.
+		</p>
+		<figure class="py-10">
+			<img src="/images/script-A.webp" alt="Egyptian scripts" class="w-full" />
+			<figcaption class="mt-1 pt-3 text-center font-sans text-sm text-stone-700 dark:text-stone-300">
+				Fig 1: <i>Hieroglyphs</i> (left) and <i>Cursive Hieroglyphs</i> (right)
+			</figcaption>
+		</figure>
+		<p>
+			As papyrus and ink were much better suited to the increasing daily volume of documents required by the administration of the kingdom, hieratic
+			writing was undoubtedly one of the most important developments in ancient Egypt. Cursive hieroglyphs continued to be used, but mainly for
+			important religious texts such as the Book of the Dead.
+		</p>
+
+		<p>
+			Hieratic was written horizontally, from the right side to the left. Hieroglyphs could be written vertically, facing left or right, <i>or</i> horizontally,
+			from left to right, or from right to left. Hieratic continued to be used throughout Egyptian history, but by the seventh century BC, changes to the
+			Egyptian language demanded and required a script with standardized sign groups, which turned into <em>Demotic</em>. Both were used, Hieratic for
+			religious purposes and Demotic for everyday use, such as letters, legal papers, and invoices.
+		</p>
+		<p>
+			Throughout the long history of Egypt natural variations appeared in the hieratic signs themselves, but they were still similar and
+			understandable. As time went on, hieratic came to feature more and more insignificant flourishes and ornamental parts used only to fill empty
+			spaces.
+		</p>
+		<figure class="py-10">
+			<img src="/images/script-B.webp" alt="Egyptian scripts" class="w-full" />
+			<figcaption class="mt-1 pt-3 text-center font-sans text-sm text-stone-700 dark:text-stone-300">
+				Fig 2: <i>Hieratic</i> (left) and <i>Demotic</i> (right)
+			</figcaption>
+		</figure>
+		<p>
+			Later dynasties revered the language of the Old Kingdom and strived to imitate the monumental texts, resulting in a highly formalized archaic
+			language that saw very little change throughout Egyptian history. After the conquest by Alexander the Great, hieratic and Demotic were slowly
+			supplanted by transcriptions of Greek characters incorporating Demotic signs for Egyptian phonemes. This final version of the Egyptian language
+			is known as <em>Coptic</em>. The Coptic alphabet (<span lang="cop">ⲁⲃⲅⲇⲉ ⲍⲏⲑⲓⲕⲗⲙ ⲛⲟⲡⲣ ⲥⲧⲩⲫ ⲭⲯⲱϣ ϥϧϩϫϭϯ</span>) remained in use in Egypt until
+			the Muslim conquest of the seventh century, when it was replaced by Arabic as the written language of daily life. The spoken language itself
+			proved somewhat more resilient, surviving for centuries despite the Arabic hegemony.
+		</p>
+
+		<figure class="py-10">
+			<Image src={lang} class="dark:invert" alt="Langs" />
+			<figcaption class="mt-1 pt-3 text-center font-sans text-sm text-stone-700 dark:text-stone-300">
+				Fig 3: Spoken languages and scripts timeline of ancient Egypt.
+			</figcaption>
+		</figure>
+
+		<!-- MARK: Deciphering
+-->
+		<h2 class="pb-5 pt-10">Deciphering the hieroglyphs</h2>
+
+		<p>
+			In the fifth century BC, <a href="https://en.wikipedia.org/wiki/Herodotus" target="_blank">Herodotus</a> wrote in <i>Histories</i> 2.36 that
+			<blockquote>
+				<span
+					>“The Greeks write and calculate from left to right; the Egyptians do the opposite; yet they say that their way of writing is towards the
+					right, and the Greek way towards the left. They [the Egyptians] use two kinds of writing; one is called sacred (<gr>ἱρὰ</gr>, <i>hira</i>),
+					the other common (<gr>δημοτικὰ</gr>, <i>demotika</i>)”</span
+				>
+			</blockquote>
+			From these Greek words, we derive the terms <i>hieratic</i> and <i>Demotic</i>. At the time, it was not known that Demotic was a simplified form
+			of Hieratic, which was used only from the latter part of the Twenty-fifth Dynasty onwards. Four centuries later, <a
+				href="https://en.wikipedia.org/wiki/Diodorus_Siculus"
+				target="_blank">Diodorus</a
+			> wrote in <i>Bibliotheka</i> 1.81:
+			<blockquote>
+				<span
+					>“In the education of their sons the priests teach them two kinds of writing, that which is called <em>sacred</em> (<gr>ἱερὰ</gr>, <i
+						>hiera</i
+					>) and that which is used in the more <em>common</em> (<gr>κοινοτέραν</gr>, <i>koinoteran</i>) instruction.”</span
+				>
+			</blockquote>
+		</p>
+		<p>
+			and expanded upon it slightly in <i>Bibliotheka</i> 3.1.5:
+			<blockquote>
+				<span
+					>“... for of the two kinds of writing which the Egyptians have, that which is known as <em>popular</em> (<gr>δημώδη</gr>, <i>demodi</i>) is
+					learned by everyone, while that which is called <em>sacred</em> (<gr>ἱερὰ</gr>, <i>hiera</i>) is understood only by the priests of the
+					Egyptians, who learn it from their fathers as one of the things which are not divulged.”</span
+				>
+			</blockquote>
+		</p>
+		<p>
+			It is evident that there has been a failure to communicate accurate knowledge of the scripts. The precise cause of this failure is unclear,
+			though it is likely to have resulted from a misunderstanding or misinterpretation:
+		</p>
+		<blockquote>
+			We must now speak about the Ethiopian<sup>sic</sup> writing which is called hieroglyphic among the Egyptians, in order that we may omit nothing in
+			our discussion of their antiquities. Now it is found that the forms of their letters take the shape of animals of every kind, and of the members
+			of the human body, and of implements and especially carpenters' tools; for their writing does not express the intended concept by means of syllables
+			joined one to another, but by means of the significance of the objects which have been copied and by its figurative meaning which has been impressed
+			upon the memory by practice. (<i>Bibliotheca Historica</i> 3.4.1)
+		</blockquote>
+		<p>
+			More than four centuries later, <a href="https://en.wikipedia.org/wiki/Ammianus_Marcellinus" target="_blank">Ammian</a> wrote about the hieroglyphs
+			on obelisks in <i>Res gestae</i>, showing that true knowledge about the hieroglyphs was still available, although it was slowly slipping into
+			obscurity.
+		</p>
+		<blockquote>
+			Now the infinite carvings of characters called hieroglyphs, which we see cut into it on every side, have been made known by an ancient authority
+			of primeval wisdom. For by engraving many kinds of birds and beasts, even of another world, in order that the memory of their achievements might
+			the more widely reach generations of a subsequent age, they registered the vows of kings, either promised or performed. For not as nowadays,
+			when a fixed and easy series of letters expresses whatever the mind of man may conceive, did the ancient Egyptian also write; but individual
+			characters stood for individual nouns and verbs; and sometimes they meant whole phrases. (<i>Res gestae</i> XVII.4)
+		</blockquote>
+		<p>
+			By the middle of the fifth century, when the last (mostly inaccurate) vestiges of knowledge were collected in Horapollo's <i>Hieroglyphica</i>,
+			the Egyptian language was no longer understood. This meant that the ability to read and write hieroglyphs, together with hieratic and demotic,
+			was completely lost. Knowledge about the hieroglyphs faded from memory during the Middle Ages, and when interest was revived during the
+			Renaissance, scholars relied on faulty information from Greek and Roman sources. These sources portrayed Egyptian writing systems, particularly
+			hieroglyphs, as mystical symbols rather than a way to record spoken language. This assumption made deciphering any attempts destined for
+			failure. That changed in the mid-1600s, when the German scholar Athanasius Kircher made the first attempt to translate hieroglyphs, assuming
+			that they were phonetic characters.
+		</p>
+		<p>
+			When the <a href="/ancient-egypt/curiosities/rosetta-stone" target="_blank">Rosetta Stone</a> was uncovered in Egypt in 1799, it looked like decipherment
+			was only a few steps away, as it contained <a href="http://rosettastone.hieroglyphic-texts.net/" target="_blank">a trilingual text</a> in hieroglyphs,
+			Demotic and Greek. At the time, it was not understood that hieroglyphs, hieratic, Demotic, and Coptic represented distinct stages of the Egyptian
+			language. Moreover, early 19th century researchers were forced to rely on transcriptions of the ancient scripts that were of an extremely poor quality.
+			Indeed, the majority of reproductions were not accurate representations of the original texts.
+		</p>
+		<p>
+			Several researchers contributed to the consolidation of information about the ancient Egyptian language and associated scripts throughout the
+			course of the following 25 years. As noted above, according to the historians of antiquity there were two Egyptian scripts, hieratic and
+			Demotic.
+		</p>
+		<p>
+			In 1821, the French scholar <a href="https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion" target="_blank">Jean-François Champollion</a>
+			noticed that some of the texts thought to be Demotic were in fact written in a similar but different script. After extensive research he proved that
+			it had to be hieratic, as it was similar to both hieroglyphs and Demotic, but distinct from both. The discovery was a very important step in solving
+			the mystery of hieroglyphs, as hieratic papyri would provide a secondary source for many texts from Egypt.
+		</p>
+		<p>
+			Champollion published his <i>Summary of the hieroglyphic system</i> in 1824 providing the key to reading hieroglyphs, and establishing beyond doubt
+			that the hieroglyphs themselves were composed of both phonetic and ideographic elements. Over the next few decades scholars verified and improved
+			on Champollion's system, finally revealing the exact nature of the hieroglyphs. The next generation of explorers understood and embraced the importance
+			of accurately reproducing the ancient texts.
+		</p>
+		<p>Egyptian hieroglyphs consist of three types of glyphs:</p>
+		<ul class="py-5 pl-3">
+			<li>
+				<span class="italic">Phonetic signs</span> &mdash; including alphabetic characters.
+			</li>
+			<li>
+				<span class="italic">Logographic signs</span> &mdash; representing a word, or part of a word; like how the <b>%</b> sign equals the word 'percent'.
+			</li>
+			<li>
+				<span class="italic">Determinative signs</span> &mdash; placed at the end of logographic or phonetic words, narrowing down the meaning.
+			</li>
+		</ul>
+		<p>
+			The <a href="/ancient-egypt/titles-and-epithets">titulary of the pharaohs</a> were almost never reused, but created specifically for each king upon
+			ascension.
+		</p>
+
+		<!-- MARK: Transliteration
+-->
+
+		<h2 class="pb-5 pt-10">Transliteration</h2>
+
+		<p>
+			In transcription, (a written representation of a spoken language) a, i, and u all represent consonants; for example, the name Ramesses was
+			written in Egyptian as <i>Ra-msi-sw</i>. As a matter of convenience, experts have assigned generic sounds to <em>a</em>, <em>i</em>, and <em
+				>u</em
+			>, which is an artificial pronunciation that should not be confused with how Egyptian was actually pronounced at the time. As the hieroglyphs
+			contain no vowels (as such), an &quot;e&quot; is generally inserted between the consonants to form readable words.
+		</p>
+
+		<p>
+			It is not possible to translate hieroglyphs directly; first, the hieroglyphs must be converted into alphabetic writing, a process known as
+			transliteration, which employs numerous letters not typically found on keyboards: &nbsp; <tlit
+				>&#42786;&nbsp; &#42788;&nbsp; &#x1E25;&nbsp; &#x1E2B;&nbsp; &#x1E96;&nbsp; &#x161;&nbsp; &#x1E33;&nbsp;&#x1E6F;&nbsp;</tlit
+			> and &nbsp;<tlit>&#x1E0F;</tlit>.
+		</p>
+
+		<p>
+			Since there is no easy way to write them, <i>Manuel de Codage</i> (MdC) was developed, which is a standarized system for transliteration of hieroglyphic
+			texts on computers makes this much simpler, by converting the characters above and substituting them with normal alphabetic characters.
+		</p>
+		<div class="py-5">
+			<table class="w-fit mx-auto">
+				<tr class="border-t border-smoke-500/50 dark:border-shark-500/50">
+					<td class="px-4 py-1">Transliteration</td>
+					<td class="px-4 py-1"><tlit>&#42786;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#42788;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E25;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E2B;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E96;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x161;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E33;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E6F;</tlit></td>
+					<td class="px-4 py-1"><tlit>&#x1E0F;</tlit></td>
+				</tr>
+				<tr>
+					<td class="px-4 py-1">Manuel de Codage</td>
+					<td class="px-4 py-1">A</td>
+					<td class="px-4 py-1">a</td>
+					<td class="px-4 py-1">H</td>
+					<td class="px-4 py-1">x</td>
+					<td class="px-4 py-1">X</td>
+					<td class="px-4 py-1">S</td>
+					<td class="px-4 py-1">q</td>
+					<td class="px-4 py-1">T</td>
+					<td class="px-4 py-1">D</td>
+				</tr>
+			</table>
+		</div>
+		<p>
+			<a href="http://hiero.ulrix.com/hiero/listGardiner.php" target="_blank">Gardiner’s Sign List</a> is a comprehensive list of 763 commonly used hieroglyphic
+			signs ordered into 26 categories for occupations, birds, mammals, trees, furniture etc. It was initially compiled by renowned Egyptologist <a
+				href="https://en.wikipedia.org/wiki/Alan_Gardiner"
+				target="_blank">Sir Alan Gardiner</a
+			> in 1927, and is still in use today. Manuel de Codage incorporate Gardiner’s list to reference specific hieroglyphs.
+		</p>
+		<p>The hieroglyph for the sun, ⊙ (Ra) is designated as N5, part of Gardiner category N which relates to the sky, earth and water.</p>
+		<p>
+			Hieroglyphs, unlike alphabetic scripts, can be placed above each other, or form groups of signs called ligatures. They can be written from left
+			to right, or right to left, or even vertically from the top. The reading direction always follow the direction the signs are facing, left or
+			right. Manuel de Codage also incorporates features to change size, orientation, colour and placement of signs. This is necessary to be able to
+			place the signs exactly in their correct position in relation to each other.
+		</p>
+
+		<div class="py-3"></div><p><b>An example.</b></p>
+		To translate hieroglyphs there are a couple steps to go through. Consider these hieroglyphs:<br /><br />
+		<img class="h-12 w-auto md:h-16 dark:invert" src="/svg/hieroglyphs/example.svg" loading="lazy" alt="" /><br /><br />
+		Firstly we need to separate each of the 13 signs, then we can begin the translation process:
+		<div class="p-5">
+			<p class="py-0.5">
+				<strong>Hieroglyphs</strong> &nbsp; <span class="arr">&rarr;</span> &nbsp; <img
+					class="inline h-7 w-auto dark:invert"
+					src="/svg/hieroglyphs/imnhtp.svg"
+					loading="lazy"
+					alt=""
+				/>
+			</p>
+			<p class="py-0.5">
+				<b>Transliteration</b> &nbsp; <span class="arr">&rarr;</span> &nbsp;<tlit
+					>nṯr-nfr-z&#42786;-r&#42788;-imn-&#7717;tp-&#42788;n&#x1E2B;-w&#x1E0F;&#42786;-snb</tlit
+				>
+			</p>
+			<p class="py-0.5">
+				<b>Transcription</b> &nbsp; <span class="arr">&rarr;</span> &nbsp;
+				<span class="font-mono">netjer-nefer za-Ra imn-Htp ankh wedja seneb</span>
+			</p>
+			<p class="py-0.5">
+				<b>Translation</b> &nbsp; <span class="arr">&rarr;</span> &nbsp;
+				<i>The Good God, Son of Ra, Amenhotep, Life, Prosperity and Health</i>
+			</p>
+		</div>
+
+		<p>
+			As Manuel de Codage includes options to add cartouches, grouped signs, 2-dimensional positioning of signs, and much more, the encoded text above
+			becomes:
+		</p>
+
+		<div class="p-5">
+			<p class="py-0.5">
+				<strong>Manuel de Codage</strong>&nbsp; &rarr; &nbsp; <span class="glows font-mono">nTr-nfr-zA&amp;ra-&lt;-i-mn:n-Htp:t*p-&gt;-anx-DA-s</span>
+			</p>
+			<p class="py-0.5">
+				<strong>Gardiner numbers</strong>&nbsp; &rarr; &nbsp; <span class="glows font-mono"
+					>R8-F35-G39&amp;N5-&lt;-M17-Y5:N35-R4:X1*Q3-&gt;-S34-U28-S29</span
+				>
+			</p>
+		</div>
+
+		<p>
+			Amenhotep is transliterated <tlit>imn-&#7717;tp</tlit>, but written in MdC <span class="glows font-mono">&nbsp;i-m:n-Htp:t*p</span>. This is
+			because MdC preserves the position of individual signs where the colon ( : ) and the asterisk ( * ) modifies the placement of signs or grouped
+			signs. Furthermore, MdC allows text to be written with alphabetic characters, or using Gardiner’s sign list, or a mix of both (for example: <span
+				class="glows font-mono">&nbsp;i-Y5:n-R4:t*p&nbsp;</span
+			> is valid). Link to the documentation can be found below.
+		</p>
+
+		<h2 class="pb-5 pt-10">Software</h2>
+		<p>
+			I recommend <a href="http://jsesh.qenherkhopeshef.org" rel="nofollow" target="_blank">JSesh Hieroglyphic Editor</a> by Serge Rosmorduc, which, in
+			my opinion, is the best editor to use for hieroglyphic texts of any kind, and it is not very hard to learn to use. It is available for Windows, Mac
+			and Linux and is completely free! You can even copy and paste the hieroglyphs straight into your Word documents, or, export them as JPG, PNG or SVG
+			files or many other formats.
+		</p>
+		<!-- MARK: MdC
+-->
+		<h2 class="pb-5 pt-10">Manuel de Codage</h2>
+		<p>
+			The first printed version of MdC was published in 1988, basically the Stone Age of computing. A slightly altered version was published online in
+			1997 at Utrecht University Centre of Computer-aided Egyptological Research (CCER), a project which no longer exists, though the Internet Archive
+			have snapshots of the page from 2001 <a
+				href="https://web.archive.org/web/20010809050750/http://www.ccer.ggl.ruu.nl/CODAGE/CODAGE.HTM"
+				target="_blank"
+				rel="nofollow">here</a
+			>. A copy of the page can be found <a href="http://www.catchpenny.org/codage/" target="_blank" rel="nofollow">here</a>, and if that vanishes
+			too, it is archived <a href="https://archive.is/Z86B" target="_blank" rel="nofollow">here</a>.<br /><br />Manuel de Codage is far from perfect
+			however, there are a number of minor annoyances that has been rectified in an updated specification called the <i
+				>Revised Encoding Scheme for hieroglyphic</i
+			> (RES) which has been under (stalled?) development since 2002, but I have found no indication that it has been accepted as the &quot;new&quot; standard.
+			The documentation can be found at <a rel="nofollow" href="https://mjn.host.cs.st-andrews.ac.uk/egyptian/res/index.html" target="_blank"
+				>The RES-project</a
+			>. There have been several projects over the year, but sadly it always lead nowhere.
+		</p>
+
+		<h2 class="pb-5 pt-10" id="hieroglyphicmarkup">How early Egyptologists preserved hieroglyphs</h2>
+		<p>
+			For some reason, the following information is difficult to find described in the academic reference works about hieroglyphs—instead, it is
+			assumed that you already know it.
+		</p>
+		<p>
+			Scribes used black ink on papyrus, with certain (important) signs written in red ink. When Egyptology was still young (i.e. in the 1800s), books
+			and journals were almost universally printed in black and white, and the early Egyptologists often wrote journals by hand. To differentiate red
+			signs, they came up with an elegant solution: by simply underlining them. They quickly realized that dealing with crumbling monuments or papyri,
+			exact annotation is crucial to preserve the text to minimize any ambiguity. This is extremely important since numerous hieroglyphic texts
+			suffered damage or were lost following their discovery, making older publications crucial to preserving the content.
+		</p>
+		<p>
+			The special brackets described below were used for copying and transcribing hieroglyphs. This allows us to notice the nuances in texts copied by
+			early pioneers, especially since their work preserves texts that have deteriorated beyond readability or been lost entirely.
+		</p>
+		<div class="my-10 grid grid-cols-12 gap-8">
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp00.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">Hieroglyphic text sample, to visualize the hieroglyphic markup below. These hieroglyphs appear exactly as written.</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp01.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Underlined</em> words or signs indicate <u>red ink</u>. Used to differentiate red signs from black when printing texts in black and white.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp03.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Square brackets</em> indicate that the original text is [broken] at the point in question and one or more signs are missing or erased. When
+				the identity of the missing signs can be reasonably inferred, the proposed signs are inserted between square brackets.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp04.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Double brackets</em> indicate signs that were ⟦previously readable⟧ but has since been lost.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp05.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Half brackets</em> indicate a dubious reading of one or more damaged signs that perhaps can be ⸢recons⸣tructed from what remains.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp06.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Angle brackets</em> indicate that the scribe has &lt;missed&gt; one or more signs at this place in the text.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp08.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Parentheses</em> indicate words (and expressions not) in the original text but is semantically necessary to indicate meaning.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp07.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Curly braces</em> are used where the scribe has written down a superfluous sign or signs. This most often arises in cases of duplication when
+				&lcub;when&rcub; copying another section of a text.
+			</div>
+
+			<div class="col-span-3">
+				<img src="/svg/hieroglyphs/imnHtp09.svg" class="h-10 md:h-12 dark:invert" loading="lazy" alt="Hieroglyphs" />
+			</div>
+			<div class="col-span-9">
+				<em>Delimiter</em> that indicate words or signs added by the 'magnificent' scribe.
+			</div>
+		</div>
+
+		<p>
+			When comparing two similar texts, horizontal arrows pointing left and right <span class="font-mono">&larr;&rarr;</span> in place of hieroglyphs indicate
+			that the missing signs were intentionally omitted.
+		</p>
+
+		<!-- MARK: Hieratic
+-->
+
+		<h2 id="hieratic" class="pt-10">Hieratic</h2>
+
+		<p>
+			Hieratic writing was a cursive script of simplified and connected characters used in ancient Egypt. It could be written quickly on papyrus,
+			making it practical and very suitable for everyday use, unlike hieroglyphs, which took a long time to write. It was mainly used for religious,
+			administrative and literary texts.
+		</p>
+
+		<figure class="mx-auto block w-[300px] caption-bottom pl-8 pr-0 pt-1 text-center font-sans text-sm sm:float-right sm:my-0">
+			<img src="/images/hieratic.webp" alt="Hieratic script" class="mx-auto border border-stone-400" loading="lazy" srcset="" /><figcaption
+				class="italic"
+			>
+				Hieratic script on papyrus
+			</figcaption>
+		</figure>
+
+		<p>
+			The scribe would carefully copy the text from the original source onto the prepared papyrus following a predetermined layout and formatting,
+			replicating the organization of the original text. This process required precision and attention to detail to avoid errors and might involve the
+			use of columns, headings, and other structural elements.
+		</p>
+		<p>
+			In some cases, especially for religious or important texts, the scribe might include decorative elements and illustrations. These could range
+			from simple designs to elaborate scenes. After completing the copy, the scribe might review the text for errors. Corrections could be made
+			directly on the papyrus, and in some cases additional notes. Once the copying and corrections were done, the papyrus sheet could be rolled into
+			a scroll if the text was lengthy.
+		</p>
+		<p>
+			The production of copies involved manual reproduction by scribes. Each copy was produced individually, and skilled scribes were valued for their
+			ability to create accurate and aesthetically pleasing duplicates. In some cases, workshops specialized in the reproduction of texts. Multiple
+			scribes could collaborate in such workshops to produce copies more efficiently. Copies of texts were distributed to various locations, including
+			temples, libraries, and private collections. This dissemination contributed to the preservation and accessibility of important literary,
+			religious, and administrative texts.
+		</p>
+
+		<p>
+			Copying manuscripts by hand is a meticulous task, and scribes could make unintentional mistakes. These errors might include misspelling words,
+			omitting or duplicating lines, or misinterpreting the original text. Over time, papyri deteriorate due to exposure to the elements, pests, or
+			simple aging. This can lead to the loss or distortion of text, making it difficult to accurately interpret the original content. In some cases,
+			individuals may intentionally alter or forge a manuscript to serve a particular agenda or to create a more valuable document. This could involve
+			adding or removing content, changing the wording, or modifying details to suit the forger’s purposes.
+		</p>
+
+		<p>
+			Papyri are also vulnerable to damage from water or fire, which can result in the destruction or alteration of the text. Water damage may cause
+			ink to run or pages to stick together, while fire damage can char or consume portions of the manuscript. The quality of ink used can affect its
+			longevity. If the ink fades or bleeds over time, it can make the text illegible or altered.
+		</p>
+
+		<p>
+			Insects can damage papyri by feeding on it, leading to the loss of content. Additionally, their excrement can stain or obscure the text. Mold
+			and mildew can grow on papyri, especially if stored in damp conditions. This can result in the decay of the material and make the text difficult
+			to read for example, tearing, folding, or creasing pages can result in the loss of text or make it challenging to decipher.
+		</p>
+
+		<h2 class="pb-5 pt-10">Learning to read &amp; write hieroglyphs</h2><p>
+			Manley’s <em>Egyptian Hieroglyphs for Complete Beginners</em> is an excellent place to start to learn to read hieroglyphs. It will give you a peek
+			into hieroglyphics, to see if learning to read hieroglyphs is something you <i>really</i> want to do. It will require a lot of time&mdash;the books
+			are listed in order of difficulty, each step becoming more difficult, but also more detailed and illuminating. The last two volumes are purely academic
+			work, and require a good understanding of hieroglyphics.
+		</p>
+		<ol class="ml-3 list-decimal p-5">
+			<li>
+				Bill Manley. <i>Egyptian Hieroglyphs for Complete Beginners.</i>
+				2012.
+			</li>
+			<li>
+				Mark Collier and Bill Manley. <i>How to Read Egyptian Hieroglyphs: A Step-by-Step Guide to Teach Yourself.</i> 1998.
+			</li>
+			<li>
+				Janice Kimrin. <i>Ancient Egyptian Hieroglyphs : A Practical Guide.</i> 2004.
+			</li>
+			<li>
+				James P. Allen. <i>Middle Egyptian An Introduction to the Language and Culture of Hieroglyphs.</i> 2010.
+			</li>
+			<li>James A. Hoch. <i>Middle Egyptian Grammar.</i> 1997.</li>
+		</ol>
+
+		<p class="text-balance px-3 py-5 text-center">
+			<a href="https://www.bibalex.org/learnhieroglyphs/Lesson/Introduction_En.aspx" target="_blank" rel="noopener nofollow"
+				>Bibliotheca Alexandrina</a
+			> is recommended for more detailed information, including lessons on reading hieroglyphs.
+		</p>
+		<p class="text-balance px-3 pb-5 text-center">
+			Even more details and information on all things Egyptology can be found at the<br /><a
+				href="http://www.egyptologyforum.org/glyphs.html"
+				target="_blank"
+				rel="noopener nofollow">Egyptologists’ Electronic Forum</a
+			> (EEF).
+		</p>
+	</section>
+</Layout>

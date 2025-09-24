@@ -1,0 +1,218 @@
+[
+	{
+		"dyn": 99,
+		"ph": 146,
+		"ch": "77",
+		"greek": "Σαλιτις",
+		"tlit": "Salitis",
+		"tscript": "Salitis",
+		"reign": "13 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 147,
+		"ch": "80",
+		"greek": "Βηων",
+		"tlit": "Beon",
+		"tscript": "Beon",
+		"reign": "44 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 148,
+		"ch": "80",
+		"greek": "Aπαχνας",
+		"tlit": "Apakhnas",
+		"tscript": "Apachnas",
+		"reign": "36 years, 7 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 150,
+		"ch": "80",
+		"greek": "Aπωφις",
+		"tlit": "Apophis",
+		"tscript": "Apophis",
+		"reign": "61 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 149,
+		"ch": "81",
+		"greek": "Iαννας",
+		"tlit": "Iannas",
+		"tscript": "Jannas",
+		"reign": "50 years, 1 month"
+	},
+	{
+		"dyn": 99,
+		"ph": 151,
+		"ch": "81",
+		"greek": "Aσσις",
+		"tlit": "Assis",
+		"tscript": "Assis",
+		"reign": "49 years, 2 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 176,
+		"ch": "94",
+		"greek": "Τεθμωσις",
+		"tlit": "Tethmosis",
+		"tscript": "Tethmosis",
+		"reign": "25 years, 4 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 179,
+		"ch": "95",
+		"greek": "Χεβρων",
+		"tlit": "Khebron",
+		"tscript": "Chebron",
+		"reign": "13 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 177,
+		"ch": "95",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "20 years, 7 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 180,
+		"ch": "95",
+		"greek": "Aμεσσης",
+		"tlit": "Amesses ♀",
+		"tscript": "Amesses ♀",
+		"reign": "21 years, 9 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 178,
+		"ch": "95",
+		"greek": "Μηφρης",
+		"tlit": "Mephres",
+		"tscript": "Mephres",
+		"reign": "12 years, 9 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 181,
+		"ch": "96",
+		"greek": "Μηφραμουθωσις",
+		"tlit": "Mephramouthosis",
+		"tscript": "Mephramuthosis",
+		"reign": "25 years, 10 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 183,
+		"ch": "96",
+		"greek": "Θμωσις",
+		"tlit": "Thmosis",
+		"tscript": "Thmosis",
+		"reign": "9 years, 8 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 182,
+		"ch": "96",
+		"greek": "Aμένωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "30 years, 10 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 184,
+		"ch": "96",
+		"greek": "Ωρος",
+		"tlit": "Oros",
+		"tscript": "Orus",
+		"reign": "36 years, 5 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 186,
+		"ch": "96",
+		"greek": "Aκεγχερης",
+		"tlit": "Akenkheres ♀",
+		"tscript": "Acencheres ♀",
+		"reign": "12 years, 1 month"
+	},
+	{
+		"dyn": 99,
+		"ph": 188,
+		"ch": "96",
+		"greek": "Pαθωτις",
+		"tlit": "Rhathotis",
+		"tscript": "Rathotis",
+		"reign": "9 years"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "97",
+		"greek": "Aκεγχηρης",
+		"tlit": "Akenkheres",
+		"tscript": "Acencheres",
+		"reign": "12 years, 5 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "97",
+		"greek": "Aκεγχηρης",
+		"tlit": "Akenkheres",
+		"tscript": "Acencheres",
+		"reign": "12 years, 3 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 190,
+		"ch": "97",
+		"greek": "Aρμαις",
+		"tlit": "Armais",
+		"tscript": "Armais",
+		"reign": "4 years, 1 month"
+	},
+	{
+		"dyn": 99,
+		"ph": 191,
+		"ch": "97",
+		"greek": "Pαμεσσης",
+		"tlit": "Rhamesses",
+		"tscript": "Ramesses",
+		"reign": "1 year, 4 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 193,
+		"ch": "97",
+		"greek": "Aρμεσσης Μιαμουν",
+		"tlit": "Armesses Miamun",
+		"tscript": "Armesses Miamun",
+		"reign": "66 years, 2 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "97",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "19 years, 6 months"
+	},
+	{
+		"dyn": 99,
+		"ph": 192,
+		"ch": "97",
+		"greek": "Σεθως",
+		"tlit": "Sethos",
+		"tscript": "Sethus",
+		"reign": "59 years"
+	}
+]

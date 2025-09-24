@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import turinData from "../../data/kl_turin.json";
+
+const cols = Array.from(new Set(turinData.map((item) => item.col))).sort((a, b) => a - b);
+const pageParam = Astro.url.searchParams.get("page");
+const page = pageParam ? Number(pageParam) : 1;
+const currentCol = cols[page - 1] ?? cols[0];
+//const rows = turinData.filter((item) => item.col === currentCol);
+---
+
+<Layout title="Turin Kinglist">
+	<h1 class="text-3xl font-bold mb-6">Turin Kinglist</h1>
+
+	<nav class="text-center">
+		Column navigation
+		<div class="mb-4 flex flex-wrap gap-2 w-fit mx-auto">
+			{
+				cols.map((col, idx) => (
+					<a
+						href={`/kinglists/turin/column-${idx + 1}`}
+						class={`px-3 py-1 rounded ${currentCol === col ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-stone-700 dark:text-white"}`}
+					>
+						{col}
+					</a>
+				))
+			}
+		</div>
+	</nav>
+</Layout>

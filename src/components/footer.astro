@@ -1,0 +1,42 @@
+---
+import "@/styles/fancybox.css";
+---
+
+<div class="min-h-32 bg-slate-950 h-12 p-8 mt-10 text-center text-2xl">
+	<script is:inline src="/scripts/fancybox.js"></script>
+	<button onclick="topFunction()" id="toppen" title="Go to top" class="print:hidden"
+		><svg class="inline print:hidden my-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+			><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"
+			></path></svg
+		> Back to top</button
+	>
+
+	<script is:inline>
+		// Select elements
+		let butt = document.getElementById("toppen");
+		let header = document.querySelector("header"); // Adjust selector as needed for your header element
+
+		// Single scroll event listener
+		window.addEventListener("scroll", () => {
+			// Handle button visibility
+			if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+				butt.style.display = "block";
+			} else {
+				butt.style.display = "none";
+			}
+
+			// Toggle scrolled class on header
+			if (window.scrollY > 10) {
+				header.classList.add("scrolled");
+			} else {
+				header.classList.remove("scrolled");
+			}
+		});
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+		}
+	</script>
+</div>

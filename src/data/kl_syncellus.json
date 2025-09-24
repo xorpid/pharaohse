@@ -1,0 +1,690 @@
+[
+	{
+		"ordna": 1,
+		"greek": "Μηνης",
+		"tlit": "Menes",
+		"tscript": "Menes",
+		"reign": "35",
+		"descr": "Dyn. 1: Menes"
+	},
+	{
+		"ordna": 2,
+		"greek": "Κουρωδης",
+		"tlit": "Kourodes",
+		"tscript": "Courodes",
+		"reign": "63",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 3,
+		"greek": "Aρισταρχος",
+		"tlit": "Aristarkhos",
+		"tscript": "Aristarchus",
+		"reign": "34",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 4,
+		"greek": "Σπανιος",
+		"tlit": "Spanios",
+		"tscript": "Spanius",
+		"reign": "36",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 5,
+		"greek": "&ndash;",
+		"tlit": "&ndash;",
+		"tscript": "&ndash;",
+		"reign": "72",
+		"descr": "unrecorded"
+	},
+	{
+		"ordna": 6,
+		"greek": "&ndash;",
+		"tlit": "&ndash;",
+		"tscript": "&ndash;",
+		"reign": "72",
+		"descr": "unrecorded"
+	},
+	{
+		"ordna": 7,
+		"greek": "Ωσιροπις",
+		"tlit": "Osiropis",
+		"tscript": "Osiropis",
+		"reign": "23",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 8,
+		"greek": "Σεσονχωσις",
+		"tlit": "Sesonkhosis",
+		"tscript": "Sesonchosis",
+		"reign": "49",
+		"descr": "Dyn. 12: E = Sesonkhosis (Senusret I)"
+	},
+	{
+		"ordna": 9,
+		"greek": "Aμενεμης",
+		"tlit": "Amenemes",
+		"tscript": "Amenemes",
+		"reign": "29",
+		"descr": "Dyn. 12: E = Ammanemes (Amenemhat II)"
+	},
+	{
+		"ordna": 10,
+		"greek": "Aπασις",
+		"tlit": "Amasis",
+		"tscript": "Amasis",
+		"reign": "2",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 11,
+		"greek": "Aκεσεφθρης",
+		"tlit": "Akesephthres",
+		"tscript": "Acesephthres",
+		"reign": "13",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 12,
+		"greek": "Aνχορευς",
+		"tlit": "Ankhoreus",
+		"tscript": "Anchoreus",
+		"reign": "9",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 13,
+		"greek": "Aρμιυσης",
+		"tlit": "Armiuses",
+		"tscript": "Armiyses",
+		"reign": "4",
+		"descr": "Corruption of Ramesses I?"
+	},
+	{
+		"ordna": 14,
+		"greek": "Χαμοις",
+		"tlit": "Khamois",
+		"tscript": null,
+		"reign": "12",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 15,
+		"greek": "Μιαμους",
+		"tlit": "Miamous",
+		"tscript": null,
+		"reign": "14",
+		"descr": "Corruption of the epithet <tlit>mi-imn</tlit> (like Amun)?"
+	},
+	{
+		"ordna": 16,
+		"greek": "Aμεσησις",
+		"tlit": "Amesesis",
+		"tscript": null,
+		"reign": "65",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 17,
+		"greek": "Ουσης",
+		"tlit": "Ouses",
+		"tscript": null,
+		"reign": "50",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 18,
+		"greek": "Ραμεσης",
+		"tlit": "Rhameses",
+		"tscript": null,
+		"reign": "29",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 19,
+		"greek": "Ραμεσσομενης",
+		"tlit": "Rhamessomenes",
+		"tscript": null,
+		"reign": "15",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 20,
+		"greek": "Ουσιμαρης",
+		"tlit": "Ousimares",
+		"tscript": "Usimares",
+		"reign": "31",
+		"descr": "Dyn. 20: perhaps Ramesses III"
+	},
+	{
+		"ordna": 21,
+		"greek": "Ραμεσσησεως",
+		"tlit": "Rhamesseseos",
+		"tscript": "Ramessesus",
+		"reign": "23",
+		"descr": "Dyn. 20: perhaps Ramesses VIII"
+	},
+	{
+		"ordna": 22,
+		"greek": "Ραμεσσαμενω",
+		"tlit": "Rhamessameno",
+		"tscript": "Ramessameno",
+		"reign": "19",
+		"descr": "Dyn. 20: perhaps Ramesses IX"
+	},
+	{
+		"ordna": 23,
+		"greek": "Ραμεσση Ιουβασση",
+		"tlit": "Rhamesse Ioubasse",
+		"tscript": "Ramesse Iubasse",
+		"reign": "38",
+		"descr": "Dyn. 20: perhaps Ramesses X"
+	},
+	{
+		"ordna": 24,
+		"greek": "Ραμεσση Ουαφρον",
+		"tlit": "Rhamesse Ouaphron",
+		"tscript": "Ramesse Uaphron",
+		"reign": "29",
+		"descr": "Dyn. 20: S: Ramesses, son of Ouaphres. (Dyn. 26 king.)"
+	},
+	{
+		"ordna": 25,
+		"greek": "Κονχαρις",
+		"tlit": "Konkharis",
+		"tscript": "Concharis",
+		"reign": "5",
+		"descr": "Belongs to Dyn. 16 according to Syncellus."
+	},
+	{
+		"ordna": 26,
+		"greek": "Σιλιτης",
+		"tlit": "Silites",
+		"tscript": "Silites",
+		"reign": "19",
+		"descr": "Dyn. 15: J = Salitis"
+	},
+	{
+		"ordna": 27,
+		"greek": "Βαιων",
+		"tlit": "Baion",
+		"tscript": null,
+		"reign": "44",
+		"descr": "Dyn. 15: J = Beon"
+	},
+	{
+		"ordna": 28,
+		"greek": "Aπαχνας",
+		"tlit": "Apakhnas",
+		"tscript": null,
+		"reign": "36",
+		"descr": "Dyn. 15: J = Apakhnas"
+	},
+	{
+		"ordna": 29,
+		"greek": "Aφωφις",
+		"tlit": "Aphophis",
+		"tscript": null,
+		"reign": "61",
+		"descr": "Dyn. 15: J = Apophis"
+	},
+	{
+		"ordna": 30,
+		"greek": "Σεθως",
+		"tlit": "Sethos",
+		"tscript": null,
+		"reign": "50",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 31,
+		"greek": "Κηρτως",
+		"tlit": "Kertos",
+		"tscript": null,
+		"reign": "29",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 32,
+		"greek": "Aσηθ",
+		"tlit": "Aseth",
+		"tscript": null,
+		"reign": "20",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 33,
+		"greek": "Aμωσις / Τεθμωσις",
+		"tlit": "Amosis / Tethmosis",
+		"tscript": null,
+		"reign": "26",
+		"descr": "Dyn. 18: J = Tethmosis. E = Amosis"
+	},
+	{
+		"ordna": 34,
+		"greek": "Χεβρων",
+		"tlit": "Khebron",
+		"tscript": "Chebron",
+		"reign": "13",
+		"descr": "Dyn. 18: J and E = Khebron"
+	},
+	{
+		"ordna": 35,
+		"greek": "Aμεμφις",
+		"tlit": "Amemphis",
+		"tscript": null,
+		"reign": "15",
+		"descr": "Dyn. 18: J = Amenophis. E = Ammenophis"
+	},
+	{
+		"ordna": 36,
+		"greek": "Aμενσης",
+		"tlit": "Amenses",
+		"tscript": null,
+		"reign": "11",
+		"descr": "Dyn. 18: J = Amesses. A = Amensis"
+	},
+	{
+		"ordna": 37,
+		"greek": "Μισφραγμουθωσις",
+		"tlit": "Misphragmouthosis",
+		"tscript": null,
+		"reign": "16",
+		"descr": "Dyn. 18: J = Mephramouthosis. E = Misphragmouthosis"
+	},
+	{
+		"ordna": 38,
+		"greek": "Μισφρης",
+		"tlit": "Misphres",
+		"tscript": null,
+		"reign": "23",
+		"descr": "Dyn. 18: J = Mephres. E = Miphres"
+	},
+	{
+		"ordna": 39,
+		"greek": "Τουθμωσις",
+		"tlit": "Touthmosis",
+		"tscript": null,
+		"reign": "39",
+		"descr": "Dyn. 18: J = Thmosis"
+	},
+	{
+		"ordna": 40,
+		"greek": "Αμενωφθις",
+		"tlit": "Amenophthis",
+		"tscript": null,
+		"reign": "34",
+		"descr": "Dyn. 18: J = Amenothis"
+	},
+	{
+		"ordna": 41,
+		"greek": "Ωρος",
+		"tlit": "Oros",
+		"tscript": "Horus",
+		"reign": "48",
+		"descr": "Dyn. 18: J = Oros"
+	},
+	{
+		"ordna": 42,
+		"greek": "Αχενχερης",
+		"tlit": "Akhenkheres",
+		"tscript": "Achencheres",
+		"reign": "25",
+		"descr": "Dyn. 18: J = Akenkheres, female"
+	},
+	{
+		"ordna": 43,
+		"greek": "Αθωρις",
+		"tlit": "Athoris",
+		"tscript": "Athoris",
+		"reign": "29",
+		"descr": "Dyn. 18: J = Rhatortis"
+	},
+	{
+		"ordna": 44,
+		"greek": "Χενχερης",
+		"tlit": "Khenkheres",
+		"tscript": "Chencheres",
+		"reign": "26",
+		"descr": "Dyn. 18: J = Akenkheres"
+	},
+	{
+		"ordna": 45,
+		"greek": "Αχερρης",
+		"tlit": "Akherres",
+		"tscript": "Acherres",
+		"reign": "8",
+		"descr": "Dyn. 18: J = another Akenkheres"
+	},
+	{
+		"ordna": 46,
+		"greek": "Aρμαιος / Δανος",
+		"tlit": "Armaios / Danaos",
+		"tscript": "Armaeus / Danaus",
+		"reign": "9",
+		"descr": "Dyn. 18: J = Armais (Horemheb)"
+	},
+	{
+		"ordna": 47,
+		"greek": "Ραμεσσης / Αιγυπτος",
+		"tlit": "Rhamesses / Aigyptos",
+		"tscript": "Ramesses / Aegyptus",
+		"reign": "68",
+		"descr": "Dyn. 19: J = Ramesses (II)"
+	},
+	{
+		"ordna": 48,
+		"greek": "Αμενωφις",
+		"tlit": "Amenophis",
+		"tscript": null,
+		"reign": "8",
+		"descr": "Dyn. 19: E = Ammenephthis (Merenptah)"
+	},
+	{
+		"ordna": 49,
+		"greek": "Θουωρις",
+		"tlit": "Thouoris",
+		"tscript": null,
+		"reign": "17",
+		"descr": "Dyn. 19: E = Thouris (Tausret)"
+	},
+	{
+		"ordna": 50,
+		"greek": "Νεχεψως",
+		"tlit": "Nekhepsos",
+		"tscript": null,
+		"reign": "19",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 51,
+		"greek": "Ψαμμουθις",
+		"tlit": "Psammouthis",
+		"tscript": null,
+		"reign": "13",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 52,
+		"greek": "&ndash;",
+		"tlit": "&ndash;",
+		"tscript": null,
+		"reign": "4",
+		"descr": "Name missing in original (lacuna)"
+	},
+	{
+		"ordna": 53,
+		"greek": "Κηρτως",
+		"tlit": "Kertos",
+		"tscript": "Certus",
+		"reign": "16",
+		"descr": "Dyn. 19: might be variant name of Sethos"
+	},
+	{
+		"ordna": 54,
+		"greek": "Ραμψις",
+		"tlit": "Rhampsis",
+		"tscript": null,
+		"reign": "45",
+		"descr": "Dyn. 19: might be Ramesses II repeated (see 47)"
+	},
+	{
+		"ordna": 55,
+		"greek": "Aμενσης / Aμμενεμης",
+		"tlit": "Amenses / Ammenemes",
+		"tscript": null,
+		"reign": "26",
+		"descr": "Dyn. 19: E = Ammenemes (Amenmesse)"
+	},
+	{
+		"ordna": 56,
+		"greek": "Οχυρας",
+		"tlit": "Okhuras",
+		"tscript": "Ochyras",
+		"reign": "14",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 57,
+		"greek": "Aμενδης",
+		"tlit": "Amendes",
+		"tscript": null,
+		"reign": "27",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 58,
+		"greek": "Θουωρις",
+		"tlit": "Thouoris",
+		"tscript": null,
+		"reign": "50",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 59,
+		"greek": "Aθωθις / Φουσανος",
+		"tlit": "Athothis / Phousanos",
+		"tscript": null,
+		"reign": "28",
+		"descr": "Dyn. 1: Athothis also known as Phousanos"
+	},
+	{
+		"ordna": 60,
+		"greek": "Κενκενης",
+		"tlit": "Kenkenes",
+		"tscript": null,
+		"reign": "39",
+		"descr": "Dyn. 1"
+	},
+	{
+		"ordna": 61,
+		"greek": "Ουεννεφις",
+		"tlit": "Ouennephis",
+		"tscript": null,
+		"reign": "42",
+		"descr": "Dyn. 1"
+	},
+	{
+		"ordna": 62,
+		"greek": "Σουσακειμ",
+		"tlit": "Sousakeim",
+		"tscript": null,
+		"reign": "34",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 63,
+		"greek": "Ψουενος",
+		"tlit": "Psouenos",
+		"tscript": null,
+		"reign": "25",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 64,
+		"greek": "Αμμενωφις",
+		"tlit": "Ammenophis",
+		"tscript": null,
+		"reign": "9",
+		"descr": "&nbsp;"
+	},
+	{
+		"ordna": 65,
+		"greek": "Νεφεχερης",
+		"tlit": "Nephekheres",
+		"tscript": null,
+		"reign": "6",
+		"descr": "Dyn. 21: A = Nephelkheres. E = Nepherkheres"
+	},
+	{
+		"ordna": 66,
+		"greek": "Σαιτης",
+		"tlit": "Saites",
+		"tscript": null,
+		"reign": "15",
+		"descr": "Dyn. 15"
+	},
+	{
+		"ordna": 67,
+		"greek": "Ψιναχης",
+		"tlit": "Psinakhes",
+		"tscript": null,
+		"reign": "9",
+		"descr": "Dyn. 21"
+	},
+	{
+		"ordna": 68,
+		"greek": "Πετουβαστης",
+		"tlit": "Petoubastes",
+		"tscript": null,
+		"reign": "44",
+		"descr": "Dyn. 23"
+	},
+	{
+		"ordna": 69,
+		"greek": "Oσωρθων",
+		"tlit": "Osorthon",
+		"tscript": null,
+		"reign": "9",
+		"descr": "Dyn. 23: A = Osorkho"
+	},
+	{
+		"ordna": 70,
+		"greek": "Ψαμμος",
+		"tlit": "Psammos",
+		"tscript": null,
+		"reign": "10",
+		"descr": "Dyn. 23: A = Psammous"
+	},
+	{
+		"ordna": 71,
+		"greek": "Κονχαρις",
+		"tlit": "Konkkharis",
+		"tscript": null,
+		"reign": "21",
+		"descr": "Dyn. 22: E = Sesonkhosis"
+	},
+	{
+		"ordna": 72,
+		"greek": "Oσορθων",
+		"tlit": "Osorthon",
+		"tscript": null,
+		"reign": "15",
+		"descr": "Dyn. 22"
+	},
+	{
+		"ordna": 73,
+		"greek": "Τακαλωθις",
+		"tlit": "Takalophis",
+		"tscript": null,
+		"reign": "13",
+		"descr": "Dyn. 22: A and E = Takelothis"
+	},
+	{
+		"ordna": 74,
+		"greek": "Βοκχωρις",
+		"tlit": "Bokkhoris",
+		"tscript": null,
+		"reign": "44",
+		"descr": "Dyn. 24: A and E = Bokhkhoris"
+	},
+	{
+		"ordna": 75,
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"tscript": null,
+		"reign": "12",
+		"descr": "Dyn. 25: A and E = Sabakon"
+	},
+	{
+		"ordna": 76,
+		"greek": "Σεβηχων",
+		"tlit": "Sebekhon",
+		"tscript": null,
+		"reign": "12",
+		"descr": "Dyn. 25: A and E = Sebikhos"
+	},
+	{
+		"ordna": 77,
+		"greek": "Ταρακης",
+		"tlit": "Tarakes",
+		"tscript": null,
+		"reign": "20",
+		"descr": "Dyn. 25: E = Tarakos. A = Tarkos"
+	},
+	{
+		"ordna": 78,
+		"greek": "Aμαης",
+		"tlit": "Amaes",
+		"tscript": null,
+		"reign": "38",
+		"descr": "Dyn. 26: E = Ammeris"
+	},
+	{
+		"ordna": 79,
+		"greek": "Στεφιναθης",
+		"tlit": "Stephinathes",
+		"tscript": null,
+		"reign": "27",
+		"descr": "Dyn. 26: A = Stephinates"
+	},
+	{
+		"ordna": 80,
+		"greek": "Νεχεψος",
+		"tlit": "Nekhepsos",
+		"tscript": null,
+		"reign": "13",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 81,
+		"greek": "Νεχαω",
+		"tlit": "Nekhao",
+		"tscript": null,
+		"reign": "8",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 82,
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"tscript": null,
+		"reign": "14",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 83,
+		"greek": "Νεχαω β",
+		"tlit": "Nekhao II",
+		"tscript": null,
+		"reign": "9",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 84,
+		"greek": "Ψαμουθης / Ψαμμητιχος",
+		"tlit": "Psammouthis / Psammetikhos",
+		"tscript": null,
+		"reign": "17",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 85,
+		"greek": "Ουαφρις",
+		"tlit": "Ouaphris",
+		"tscript": null,
+		"reign": "34",
+		"descr": "Dyn. 26"
+	},
+	{
+		"ordna": 86,
+		"greek": "Aμωσις",
+		"tlit": "Amosis",
+		"tscript": null,
+		"reign": "50",
+		"descr": "Dyn. 26"
+	}
+]

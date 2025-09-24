@@ -1,0 +1,410 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import cities from "../../data/cities.json";
+const title = "Cartography of Egypt";
+let meta1 = "Maps of Egypt from antiquity and forward to the modern age.";
+let meta2 = "maps of egypt,old maps of egypt,modern maps of egypt";
+const bild = "https://pharaoh.se/images/pharaohse-cartography.webp";
+const nu = new Date().getFullYear();
+const geodate = nu - 150;
+
+const city = new Array();
+var namn, coptic, egyptian, greek, text, gps, pleiades;
+for (let i = 0; i < cities.length; i++) {
+	namn = cities[i].name;
+	//bild = q01;
+	coptic = cities[i].coptic;
+	greek = cities[i].greek;
+	egyptian = cities[i].egyptian;
+	text = cities[i].text;
+	const p = "https://pleiades.stoa.org/places/";
+	pleiades = p + cities[i].pleiades;
+	//var g = "https://www.google.com/maps/@?api=1&map_action=map&center=";
+	var g = "https://www.google.com/maps?ll=";
+	gps = g + cities[i].gpsN + "," + cities[i].gpsE + "&t=h&z=16";
+
+	city.push({
+		namn: namn,
+		coptic: coptic,
+		egyptian: egyptian,
+		greek: greek,
+		text: text,
+		gps: gps,
+		pleiades: pleiades,
+	});
+}
+const svg =
+	'<svg xmlns="http://www.w3.org/2000/svg" width="1.75em" height="1.75em" style="vertical-align:middle" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"> <path d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" /><title>View external map</title></svg>';
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<div class="container">
+			<p class="pb-5 text-lg">
+				Maps of Egypt were primarily based on Claudius Ptolemy's written directions from antiquity, which, while lacking in detail, aided early
+				explorers in discovering the main sites of ancient Egypt.
+			</p>
+
+			<figure class="float-right w-full pl-3 sm:w-1/3">
+				<a
+					data-fancybox="Theb"
+					data-caption="Clavdii Ptholemei Alexandrini by Arnold Buckinck, Rome 1478"
+					href="/images/1478-L.webp"
+					title="Arnold Buckinck 1478"
+				>
+					<picture>
+						<img loading="lazy" src="/images/1478-S.webp" alt="Arnold Buckinck 1478" class="mx-auto" />
+					</picture>
+				</a>
+				<figcaption>
+					<div class="figtitle">Egypt (1478)</div>
+					<div class="figauthor">A. Buckinck after Ptolemy</div>
+				</figcaption>
+			</figure>
+
+			<p>
+				Before the 1700s, maps of the ancient world were notoriously untrustworthy, incorrect, and imprecise, frequently lacking features and
+				ornamented with fanciful monsters and imaginary things. Surviving manuscripts are full of descriptive texts of places, but very seldom do they
+				include anything but the most rudimentary maps.
+			</p>
+			<p>
+				As with the transmission of manuscripts we must keep in mind is that maps, like books, had to be meticulously reproduced by hand, which
+				naturally resulted in (often significant) discrepancies. The quality of new copies depended very much on the skill of the copyist, and how
+				faithfully the original was duplicated. Some authors could not resist the impulse to add details from their own imagination, as people often
+				do.
+			</p>
+
+			<p>
+				Claudius Ptolemy (<gr>Κλαύδιος Πτολεμαῖος</gr>) flourished in the second century in Alexandria where he wrote <i>“Geographia”</i> around 150 CE,
+				a book that gathered the geographical knowledge of the Roman Empire at that time. Each city was given coordinates and a description so that a new
+				map could be created by simply reading the instructions, if the maps themselves were lost or destroyed. The maps in Geographia and its descendants
+				remained in use for the next 1,500 years.
+			</p>
+
+			<p>
+				His work fell into obscurity and was unnoticed in the West during the Middle Ages. Ptolemy's maps and geographical treatise proved to be a
+				fundamental element in the study of geography and mapping during the Middle Ages, inspiring Islamic and Christian scholars alike. The impact
+				of Ptolemy's cartography is evident in the <i>Tabula Rogeriana</i>, an atlas produced by the Muslim geographer Al-Idrisi in for the Norman
+				king Roger II of Sicily in 1154.
+			</p>
+			<p class="pb-5">
+				It was not until around 1300 that copies of Ptolemy's maps by Byzantine scholars started circulating in Italy. In 1406, Jacopo d'Angelo, an
+				Italian scholar, translated Ptolemy's original work into Latin. However, the first printed edition of the translation did not appear until
+				1477 in Rome.
+			</p>
+
+			<figure class="float-right w-full pl-3 sm:w-1/3">
+				<a
+					data-fancybox="Theb"
+					data-caption="Details of a map by father Claude Sicard 1722"
+					href="/images/1722-Sicard.webp"
+					title="Details of a map by father Claude Sicard 1722"
+				>
+					<picture>
+						<img loading="lazy" src="/images/1722-SicardSm.webp" alt="Details of a map by father Claude Sicard 1722" class="mx-auto" />
+					</picture>
+				</a>
+				<figcaption>
+					<div class="figtitle">Thebes and the Valley of Kings</div>
+					<div class="figauthor">First map with correct locations</div>
+				</figcaption>
+			</figure>
+
+			<p>
+				Even though it is obvious from Ptolemy’s map that Thebes is located deep south in Upper Egypt, the location was completely forgotten, other
+				remains close to the delta being mistakenly referred to as Thebes. It was not until the Jesuit priest <b>Claude Sicard</b> (around 1710-20) noticed
+				and marked the vast ruins around Karnak and Luxor as ancient Thebes.
+			</p>
+
+			<p>
+				The ancient Egyptian craftsmen were able to build the pyramids and other impressive structures, which would have required, at a minumum,
+				detailed drawings of what was to be built. These plans were presumably written and drawn on papyri, none of which survives. Accordingly,
+				selected sites must have been surveyed before construction even began, and maps drawn up. There is only one surviving map - the Turin Papyrus
+				Map, showing a 15 km (10 mile) stretch of Wadi Hammamat, with topographical and geological details.
+			</p>
+
+			<p class="pb-5">
+				In 1737-1738, <i>Frederic Norden</i>, an exceptionally gifted Danish naval commander and explorer travelled up the Nile. Along the way he
+				created the first detailed maps of the whole Nile valley, mostly drawn from the boat. While sailing upriver he encountered another explorer, <i
+					>Richard Pococke</i
+				>, an Englishman who also had journeyed up the Nile and wrote about his adventures.
+			</p>
+
+			<figure class="float-left w-full sm:w-1/3">
+				<a data-fancybox="Theb" data-caption="Map showing Thebes from 1738" href="/images/1738thebes.webp" title="Map showing Thebes from 1738">
+					<picture>
+						<img loading="lazy" src="/images/1738thebest.webp" alt="Map showing Thebes from 1738" class="mx-auto" />
+					</picture>
+				</a>
+				<figcaption>
+					<div class="figtitle">Thebes and surroundings</div>
+					<div class="figauthor">Frederic Norden 1738</div>
+				</figcaption>
+			</figure>
+
+			<p>
+				Instead of replicating Ptolemy, as had long been the practice, French cartographer <i>Jean-Baptiste Bourguignon d’Anville</i> (1697&ndash;1782)
+				sought reliable data and was content to leave spaces blank rather than fill them with imaginary features. He stressed the significance of utilizing
+				primary sources and meticulously examined and assessed the available geographical data, such as travel records, astronomical observations, and
+				surveys. He diligently corrected errors in existing maps and incorporated new information, resulting in maps that were considered the most accurate
+				of their time and created the first modern map of the Egypt. D'Anville was a pioneer of thematic cartography that concentrate on specific themes
+				that illustrate physical characteristics, political and historical borders.
+			</p>
+
+			<p>
+				In the 19th century, cartography underwent a significant transformation due to technological advancements, increased international
+				collaboration, and the growing recognition of accurate and detailed maps' significance for military, economic, scientific, and educational
+				purposes. These developments formed the basis for further evolution of cartography in the 20th century onwards when highly accurate atlases
+				began to appear.
+			</p>
+			<div id="geo" class="clear-both mx-auto mt-20 w-11/12">
+				<h2 class="text-center">
+					Claudius Ptolemy’s <em>“Geography”</em>
+				</h2>
+				<p class="text-center text-lg">Excerpts from Book IV, Chapter 5</p>
+				<p class="pb-5 text-center text-sm/relaxed">
+					Written in Alexandria around 150 AD when Antoninus Pius was the Roman emperor.<br />That is <b>{geodate}</b> years ago.
+				</p>
+				<hr class="my-5" />
+				<p>
+					<b>§ 10</b> &ndash;The seven mouths of the Nile: the Herakleotikon or <em
+						>Kanobic, Bolbitinon, Sebennytikon, Pathmitikon, Mendesion, Tanitikon</em
+					> and <em>Pelousiakon</em> mouths.
+				</p>
+
+				<p>
+					In Kassiotis: Kassion, Outlet of the <em>Sirbonis lake, Ostrakine, Rhinokoroura, Anthedon</em>
+				</p>
+
+				<p>
+					It is bounded on the east by part of Ioudaias (Judaea) which runs from Anthedonos city to Arabia rock as far as the inmost point in the
+					Arabian gulf at Heroon city and by a part of the Arabian gulf, described as follows:
+				</p>
+
+				<p>
+					After the above-mentioned inmost point of the gulf: Arsinoe, Klysma fortress, Cape Drepanon, Myos Reef, Philoteras Harbour, Mount Aias,
+					Leukos harbour, Mount Akabe, Nekhesia, Mount Samaragdos, Point Lepte, Berenike, Mount Pentadaktylon, Point Bazion.
+				</p>
+
+				<p class="py-5 text-center">The principal cities and areas along the Nile river are as follows:</p>
+
+				<p>
+					The so-called Great Delta begins where the Agathodaimon branches off from the Great river and flows through the Herakleotic mouth into the
+					so-called Boubastiakon, which flows out through the Pelusiac mouth.
+				</p>
+
+				<p>
+					The so-called Small Delta is where the Boubastiakos river splits into the Bousiritikos river, which flows out through the Pathmitic mouth.
+				</p>
+
+				<p>
+					There is a third delta between the two aforementioned, where the Bubastis forks into one that flows through Athribis city and the Pineptimi
+					mouth. At the Great Delta two rivers branch off toward the north from the river Agathodaimon.<br /> The first is called the Thermouthiakos river,
+					which flows out through the Sebennytic mouth; the second is the so-called Taly river, which flows through the Bolbitic mouth.
+				</p>
+
+				<p>
+					The Boutikos river which runs along at a nearly equal distance from the seacoast joins the Thermouthiakos, the Athribitikos, the
+					Bousiritikos and the Boubastiakos, from which others springing from adjacent marshes and lakes flow into the sea through the remaining
+					mouths, some of which are connected, as we have said, with the Great river.
+				</p>
+
+				<p class="py-5 text-center text-lg">
+					The area around these rivers is commonly called the<br /><strong>Lower Country</strong>, with the following nomes and cities:
+				</p>
+
+				<!--§46-->
+				<p>
+					West of the Great river starting from the sea, in the <u>Alexandria nome</u>:<br />
+					the city of <i>Hermopolis Mikra</i><br />
+					in the <u>Andropolites nome</u>, the city of <i>Andropolis</i><br />
+					In the <u>Letopolites nome</u>, the inland city of <i>Letopolis</i>.
+				</p>
+
+				<p>
+					Between the Great river and Taly river in the <u>Metelites nome</u>, the city of <i>Metelis</i>.
+				</p>
+
+				<p>
+					Between the Great river and the Thermouthiakos river these cities:<br />
+					in the <u>Phthenotes nome</u>, the city of <i>Buto</i><br />
+					in the <u>Kabasites nome</u>, the city of <i>Kabasa</i><br />
+					in the <u>Saites nome</u>, the city of <i>Saïs</i><br />
+					Toward the Great river from the west: the city of <i>Naucratis</i>.<br />
+					From the east toward the Great river: in the <u>Prosopites nome</u>, the city of <i>Nikiou</i>.
+				</p>
+
+				<p>
+					Between the Thermouthiakos and the Athribitikos rivers:<br />
+					in Sebennytes of the Lower Places, the city of <i>Pakhneumounis</i><br />
+					in the <u>Xoites nome</u>, the city of <i>Xois</i><br />
+					in the <u>Phthemphonthis</u>, the city of <i>Tava</i>.
+				</p>
+
+				<p>
+					Between the Athribitikon and the Bousiritikou rivers:<br />
+					In the <u>Onouphites nome</u>, the city <i>Onouphis</i><br />
+					in the <u>Athribites nome</u>, the city <i>Athribis</i><br />
+					in the <u>Mendesios nome</u>, the city <i>Thmouis</i><br />
+					in the <u>Sebennytes of the Upper Places</u>, the city <i>Sebennytos</i><br />
+					in the <u>Bousirites nome</u>, the city <i>Busiris</i><br />
+					in the <u>Leontopolites nome</u>, the city <i>Leontopolis</i>.
+				</p>
+
+				<p>
+					Between the Bousiritikos and Boubastiakos rivers:<br />
+					in the <u>Neout</u> or <u>Nesog nome</u>, the city <i>Panephysis</i><br />
+					in the <u>Tanites nome</u>, the city of <i>Tanis</i><br />
+					in the <u>Pharbaithites nome</u>, the city of <i>Pharbaethos</i>.
+				</p>
+
+				<p>
+					From the east of the Boubastikon river is the <u>Sethroites nome</u>: the city of <i>Herakleopolis Mikra</i><br />
+					in the <u>Arabias nome</u>, the city of <i>Phakoussa</i><br />
+					in the <u>Boubastites nome</u>, the city of <i>Bubastis</i><br />
+					in the <u>Heliopolites nome</u>, the city of <i>Heliou/Oniou</i>.
+				</p>
+
+				<p>
+					In the border area of Arabias and Aphroditopolis, the Traianos river flows through <i>Babylon</i>, <i>Heliopolis</i>, and <i>Heroonpolis</i>
+				</p>
+
+				<p>
+					The area further south from the Great Delta and the Low Country is called the Seven Nomes. The first nome west of the river is Memphites,
+					and the city of <i>Memphis</i><br />
+					Inland on the same side of the river, the town <i>Akanthon</i>.
+				</p>
+
+				<p>
+					Then where the river divides, the <u>Herakleopoliten nome</u> forms an island and inland on this island the city of <i>Nilopolis</i>.
+				</p>
+
+				<p>
+					The city at the westerly section of the river, <i>Herakleopolis</i><br />
+					The west side of the island, the <u>Arsinoites nome</u>, the inland city of <i>Arsinoe</i> and Ptolemais harbour.<br />
+					The east side of the island, <u>Aphroditopolites nome</u>, the city of <i>Aphroditopolis</i><br />
+					Also on the east side of the island, the city of <i>Ankyronpolis</i>.
+				</p>
+
+				<p>
+					Adjoining to the west of the river is the <u>Oxyrynkhites nome</u>, and the inland city of <i>Oxyrynkhos(polis)</i><br />
+					Then likewise the <u>Kynopolites nome</u>, the city west of the river, <i>Ko</i><br />Opposite which on the island lies <i>Kynonpolis</i><br
+					/>and then on the east bank of the river, <i>Akoris</i><br />and in the interior, <i>Alabastron</i>
+				</p>
+
+				<p>
+					Then in the <u>Hermopolites nome</u>, inland, west of the river, the city of <i>Hermopolis (Magna)</i><br />
+					East of the river in the <u>Antinoites nome</u>, the city of <i>Antinoöpolis</i>
+				</p>
+
+				<!-- UPPER -->
+				<p class="py-5 text-center text-lg">
+					Further south is Thebes and<br />the <strong>Upper Country</strong>.
+				</p>
+
+				<p>
+					There, from west of the river, is the <u>Lykopolites nome</u>, the inland city <i>Lykonpolis</i><br />
+					in the <u>Hypselites nome</u>, the city of <i>Hypsele</i><br />
+					in the <u>Aphroditopolites nome</u>, the inland city of <i>Aphroditespolis</i><br />
+					then, <i>Krokodeilonpolis</i><br />
+					in the <u>Thinites nome</u>, the city <i>Ptolemais</i> or <i>Hermeiou</i><br />
+					then inland, likewise west of the river, <i>Abydos</i><br />
+					in the <u>Diopolites nome of the Upper Places</u>, the city of <i>Diospolis Mikra</i><br />
+					in the <u>Tentyrites nome</u>, the city of <i>Tentyra</i><br />
+					and the inland village <i>Pampanis</i><br />
+					Next <u>Memnon</u>, in the interior, the village <i>Tathyris</i>.<br />
+					in the <u>Hermouthites</u> (or <u>Hermonthites</u>) <u>nome</u>, the city of <i>Hermouthis</i> or <i>Hermonthis</i><br />
+					and next <i>Latonpolis</i><br />
+					then <i>Apollonospolis</i><br />
+					then the inland village <i>Phthonthis</i><br />
+					and the island of <i>Elephantine</i>.
+				</p>
+
+				<p>
+					East of the river: in the <u>Antaiopolites nome</u>, the inland city of <i>Antaioupolis</i><br />
+					and next <i>Passalos</i> or <i>Passalon</i><br />
+					in the <u>Panopolites nome</u>, the city of <i>Panopolis</i>
+					(or <i>Panonpolis</i>)<br />
+					next, <i>Lepidotonpolis</i><br />
+					then <i>Khenoboskia</i><br />
+					next, <i>Kainepolis</i><br />
+					in the <u>Koptites nome</u>, the inland city of <i>Koptos</i> or <i>Koptospolis</i><br />
+					next, <i>Apollonospolis Mikra</i><br />
+					in the <u>Theban nome</u>, <i>Diospolis Megale</i><br />
+					then <i>Touphion</i><br />
+					then <i>Khnoubis</i><br />
+					then <i>Eilethyiaspolis</i><br />
+					then inland, <i>Toou</i><br />
+					then <i>Omboi</i> or <i>Ombroi</i><br />
+					then <i>Syene</i>.
+				</p>
+				<p class="py-5 text-center text-lg">
+					End of <em>Geographia</em>.
+				</p>
+			</div><!-- ptol -->
+			<div class="py-5">
+				<h2 class="dark:text-white text-black">Cities of ancient Egypt</h2>
+				<p class="py-8">
+					The incredibly long history of Egypt saw cities prosper for long periods, only to be abandoned centuries later after being sacked or buried
+					by the ever present sand of the desert. The names also changed with the times, and foreigners approximated the native name into their own
+					language. Most names we know today come from the Greek variants used in antiquity, but can often be traced back to their original name in
+					ancient Egyptian.
+				</p>
+
+				<div>
+					<table class="mx-auto my-10 w-11/12 min-w-[75%] text-base">
+						<tr class="border-b-2 font-sans">
+							<th class="text-left dark:text-white">City</th>
+							<th class="text-left dark:text-white">Greek</th>
+							<th class="text-left dark:text-white">Coptic</th>
+							<th class="text-left dark:text-white">Egyptian</th>
+							<th class="text-left dark:text-white">Map</th>
+						</tr>
+
+						{
+							city.map((n) => (
+								<>
+									<tr>
+										<td class="border-t border-stone-400 dark:border-shark-800">
+											<a href={n.gps} target="_blank" title="View map on Google Maps">
+												{n.namn}
+											</a>
+										</td>
+										<td class="border-t border-stone-400 dark:border-shark-800">
+											<gr>{n.greek}</gr>
+										</td>
+										<td class="border-t border-stone-400 dark:border-shark-800">
+											<coptic>{n.coptic}</coptic>
+										</td>
+										<td class="border-t border-stone-400 dark:border-shark-800">
+											<tlit>{n.egyptian}</tlit>
+										</td>
+										<td class="border-t border-stone-400 dark:border-shark-800">
+											<a class="fill-red-700 hover:fill-green-700" href={n.pleiades} target="_blank" set:html={svg} />
+										</td>
+									</tr>
+									<tr>
+										<td class="px-5 pb-8" colspan="5">
+											{n.text}
+										</td>
+									</tr>
+								</>
+							))
+						}
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	u {
+		font-variant: small-caps;
+		text-decoration: none;
+	}
+	#geo u,
+	#geo i {
+		color: light-dark(var(--color-red-900), var(--color-yellow-50));
+	}
+</style>

@@ -1,0 +1,223 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import kinglists from "../../data/kinglists.json";
+---
+
+<Layout title="kinglists">
+	<h1 class="text-3xl font-bold mb-4">Kinglists of Ancient Egypt</h1>
+
+	<p>
+		Chronological information about the rulers of Ancient Egypt is extremely scarce. The time span is enormous; Ancient Egypt vanished more than 2000
+		years ago, and the origin of the kingdom goes back to 3000 BC. There are three categories of king lists:
+	</p>
+	<div>
+		<ul class="py-3 pl-10">
+			<li><b>Monuments</b> &ndash; inscriptions in a temple or tomb.</li>
+			<li><b>Annals</b> &ndash; inscriptions of events on a year-by-year basis.</li>
+			<li><b>Archives</b> &ndash; records <i>on papyrus</i> concerning earlier rulers.</li>
+		</ul>
+	</div>
+	<div>
+		<img class="float-left mr-5 mt-6 h-20 pb-3 sm:h-44 dark:invert" src="/svg/nswbit.svg" alt="The Dual King" title="The Dual King" loading="eager" />
+		<p>
+			The government and priesthood kept records of previous kings for administrative, political and religious reasons. As time passed and new
+			generations of administrators took over from the previous ones, it became increasingly likely that these documents would be lost, destroyed or
+			corrupted because they were written on papyrus, which is susceptible to deterioration. Papyrus thrives in Egypt's dry climate, but it is fragile
+			and vulnerable to insects and both wet and dry conditions. Handling alone caused deterioration, especially when it was repeatedly unrolled. When
+			discovered in modern times, the ageing process, sudden exposure to moisture and careless handling often caused irreparable damage to fragile
+			papyri.
+		</p>
+	</div>
+	<figure>
+		<img class="j" loading="eager" src="/images/ph4.webp" alt="Pharaoh" />
+	</figure>
+	<p class="py-3">
+		Ancient scribes had to constantly make copies of the older text to preserve damaged or old, brittle papyri. Copying texts by hand is a laborious
+		process and changes are inevitable, most of them unintentional. It is almost impossible to reproduce a handwritten text accurately; omission of
+		letters or whole words, spelling errors, or incorrect grammar or syntax are common. The quality of the copy is influenced by the clarity of the
+		original text and the competence and literacy of the scribe. Scribes may also make their own corrections if they believe the original to be
+		incorrect, despite misreading the text, and if the scribe was fluent in the language, they would be less likely to make copying errors.
+	</p>
+	<p>
+		The largest and most influential temples would have kept their own records, while it is possible that there was a formal 'master list' of
+		ancestral kings written on papyrus. Most of the documents were probably lost over time, as the prosperity of individual temples fluctuated over
+		the centuries. The Turin List of Kings is the only such list that survives today, and although it is the most comprehensive list of ancient
+		Egyptian kings, it is incomplete and in very poor condition, having been written on papyrus.
+	</p>
+	<p>
+		The rows of kings inscribed in stone were organised for religious and political purposes: to honour revered ancestors and to emphasise the
+		legitimacy of the reigning king as the latest in a long line of rulers dating back to the time of the gods, rather than for historical accuracy.
+		Certain ancestors on the inscribed lists were deliberately excluded, and the varying names of some kings confirm that there must have been more
+		than one master list of kings.
+	</p>
+
+	<table class="w-fit mx-auto my-10">
+		<caption class="my-3 bg-transparent">Table 1: The king lists of Ancient Egypt by number of kings</caption>
+		<tr>
+			<th class="px-2 py-2">King list</th>
+			<th class="py-2 pr-3">Kings</th>
+			<th class="py-2">Remarks</th>
+			<th class="py-2">Dyn.</th>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/turin">Turin king list</a></td>
+			<td>223</td>
+			<td><i>Royal Canon of Turin</i>, (Turin, Italy)</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/abydos-canon">Abydos Canon</a></td>
+			<td>76</td>
+			<td><i>Temple of Seti I</i>, Abydos</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/karnak-canon">Karnak Canon</a></td>
+			<td>61</td>
+			<td><i>Temple of Thutmose III</i>, Karnak</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/saqqara-canon">Saqqara Canon</a></td>
+			<td>58</td>
+			<td><i>Tomb of Tjunery</i>, Saqqara (Cairo)</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#abydos">Abydos Table</a></td>
+			<td>30</td>
+			<td><i>Temple of Ramesses II</i>, Abydos</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#annals">Royal Annals</a></td>
+			<td>26</td>
+			<td>Memphis?</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#genealogy">Genealogy of Ankhefensekhmet</a></td>
+			<td>26</td>
+			<td>Memphis?</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/marseille">Table of Qenhirkhopshef</a></td>
+			<td>17</td>
+			<td><i>Karnak Temple Complex</i>, (Marseille)</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/ramesseum-canon">Ramesseum Canon</a></td>
+			<td>14</td>
+			<td><i>Ramesseum Temple</i>, Thebes</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#amenmose">Tomb of Amenmose</a></td>
+			<td>12</td>
+			<td><i>TT 19</i>, Thebes</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/medinet-habu-canon">Medinet Habu Canon</a></td>
+			<td>9</td>
+			<td><i>Medinet Habu Temple</i>, Thebes</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#qaa">Seal of Qaa</a></td>
+			<td>8</td>
+			<td><i>Tomb Q</i>, Abydos</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#inherkhau">Tomb of Inherkhau</a></td>
+			<td>7</td>
+			<td><i>TT 359</i>, Thebes</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#giza">Giza writing board</a></td>
+			<td>6</td>
+			<td>Cedar wood and gypsum</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#netjerpunesut">Tomb of Netjerpunesut</a></td>
+			<td>6</td>
+			<td><i>Giza, central field</i>, small mastaba.</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#den">Seal of Den</a></td>
+			<td>5</td>
+			<td>Abydos tomb T</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#sekhemkara">Tomb of Sekhemkara</a></td>
+			<td>5</td>
+			<td><i>G 8146</i>, Giza</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#wadi">Wadi Hammamat king list</a></td>
+			<td>5</td>
+			<td><i>Rock inscription</i>, Wadi Hammamat</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td class="p-1"><a href="/kinglists/other#ssaqqara">South Saqqara Stone</a></td>
+			<td>4</td>
+			<td><i>Erased</i> annals, sarcophagus lid, Saqqara</td>
+			<td>6</td>
+		</tr>
+	</table>
+
+	<p>
+		Attempting to establish an <a href="/chronology">absolute chronology</a> of dates in terms of the Gregorian calendar based on the available information
+		from the king lists is a challenging endeavour, primarily due to the fragmentary nature of the king lists and the scarcity of contemporary records
+		that have survived. The surviving astronomical records enable us to determine the precise dates of specific events, thus corroborating the assertion
+		that a particular king reigned during a specific period — provided these records are reliable, of course. The king lists agree only on a
+		<a href="/kinglists/compare-canons">small number of kings</a>, which is to be expected, given that there were more than two hundred kings and that
+		the lists themselves were most likely derived from different sources and periods.
+	</p>
+	<h2 class="py-3">King lists of Antiquity</h2>
+	<img
+		class="float-left mt-6 w-24 pl-3 pr-6 sm:w-40"
+		loading="lazy"
+		src="/images/heka.webp"
+		alt="The shepherd's crook was a symbol of the kingship"
+		title="The shepherd's crook was a symbol of kingship"
+	/>
+	<p>
+		Greek historians visiting Egypt in antiquity were the first to share information about the Egyptian kings, but the accounts were incomplete and
+		suffered by the transcription of the foreign Egyptian language into Greek. For example, Herodotus heard the priests talk about pharaoh <i>Khufu</i
+		>, yet wrote down it as <i>Cheops</i>, which to his ears was the closest approximation. It should be noted that throughout the 2,500 years that
+		followed Khufu's passing, the pronunciation of his name changed as the Egyptian language evolved. Due to the nature of the <a
+			href="/hieroglyphs"
+			class="it">hieroglyphs</a
+		>, we can only speculate as to the precise names that the pharaohs were known by to their contemporaries.
+	</p>
+	<p>
+		The Ptolemaic Dynasty ushered in a new era of interest in ancient Egypt, repairing and restoring many of the ancient crumbling temples and
+		monuments, while also building new ones over the next centuries. It also inspired an Egyptian priest named <a href="/kinglists/manetho" class="it"
+			>Manetho</a
+		> to address the many inaccuracies and misconceptions about the long history of the kingdom in his book <em>Aegyptiaca</em> (the History of Egypt),
+		sourced from the three categories above; the original was probably the most complete source for the names of the kings ever compiled. We only have
+		indirect knowledge of the original Aegyptiaca, and in subsequent centuries it was replaced by Epitomes (summaries). The extent to which the epitomes
+		preserved Manetho’s original writing is unclear, but each subsequent <i>hand-written</i> copy undoubtedly introduced some further corruption of the
+		original. The authors whose works have survived clearly only had access to epitomes of Aegyptiaca.
+	</p>
+
+	<ul class="space-y-2">
+		{
+			kinglists.map((p) => (
+				<li>
+					<a href={`/kinglists/${p.slug}`}>{p.name}</a>
+				</li>
+			))
+		}
+	</ul>
+</Layout>

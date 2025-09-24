@@ -1,0 +1,178 @@
+[
+	{
+		"dyn": 99,
+		"ph": 8,
+		"ch": "1.45.1",
+		"greek": "Μηναν / Μηνα",
+		"tlit": "Menan / Mena",
+		"descr": "Introduced his people to luxury"
+	},
+	{
+		"dyn": 99,
+		"ph": 237,
+		"ch": "1.45.2",
+		"greek": "Τνεφαχθον",
+		"tlit": "Tnephachthon",
+		"descr": "Denounced luxury and cursed Menes, which is why his name was almost forgotten"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.45.2",
+		"greek": "Βοκχοριδος",
+		"tlit": "Bokkhoridos",
+		"descr": " "
+	},
+	{
+		"dyn": 99,
+		"ph": 193,
+		"ch": "1.47.4",
+		"greek": "Οσυμανδυας",
+		"tlit": "Osymandyas",
+		"descr": " "
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.50.3",
+		"greek": "Ουχορευς",
+		"tlit": "Oukhoreus",
+		"descr": "The eight king, founded Memphis"
+	},
+	{
+		"dyn": 99,
+		"ph": 94,
+		"ch": "1.51.5",
+		"greek": "Μοιρις",
+		"tlit": "Moiris",
+		"descr": "Succeeded to the throne 12 generations after Uchoreus"
+	},
+	{
+		"dyn": 99,
+		"ph": 93,
+		"ch": "1.53.1",
+		"greek": "Σεσοωσις",
+		"tlit": "Seso&ouml;sis",
+		"descr": "Seven generations after Moeris, a great king. Killed himself after becoming blind after 33 years reign"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.60.1",
+		"greek": "Aμασις",
+		"tlit": "Amasis",
+		"descr": "Ruled with great harshness and contempt"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.60.2",
+		"greek": "Aκτισανης",
+		"tlit": "Aktisanes",
+		"descr": "King of Ethiopia, defeated Amasis"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.61.1",
+		"greek": "Μενδην",
+		"tlit": "Menden",
+		"descr": "Who some call Μάρρον (Marron), built the Labyrinth"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.62.1",
+		"greek": "Κετηνα",
+		"tlit": "Cetes",
+		"descr": "Thought by Greeks to be Πρωνεύς (Proneus)"
+	},
+	{
+		"dyn": 99,
+		"ph": 200,
+		"ch": "1.62.5",
+		"greek": "Pεμφις",
+		"tlit": "Rhemphis",
+		"descr": "Amassed riches and left a treasure larger than that of any king before him"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.63.1",
+		"greek": "Νειλέως",
+		"tlit": "Neileos",
+		"descr": "After whom the Nile river is named"
+	},
+	{
+		"dyn": 99,
+		"ph": 36,
+		"ch": "1.63.2",
+		"greek": "Χεμμις",
+		"tlit": "Khemmis",
+		"descr": "Eight king of Memphis, ruled 50 years, and built the largest pyramid"
+	},
+	{
+		"dyn": 99,
+		"ph": 38,
+		"ch": "1.64.1",
+		"greek": "Κεφρην",
+		"tlit": "Kephren",
+		"descr": "Brother of Χέμμις who succeded him. Built the second pyramid."
+	},
+	{
+		"dyn": 99,
+		"ph": 37,
+		"ch": "1.64.1",
+		"greek": "Χαβρυην",
+		"tlit": "Khabryen",
+		"descr": "Son of Chemmis who some say took the throne after him, not Cephren."
+	},
+	{
+		"dyn": 99,
+		"ph": 40,
+		"ch": "1.64.6",
+		"greek": "Μυκερινος",
+		"tlit": "Mukerinos",
+		"descr": "Who some call Μεγχερῖνον (Mencherinon), a son of Chemmis"
+	},
+	{
+		"dyn": 99,
+		"ph": 240,
+		"ch": "1.65.2",
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"descr": "By birth an Ethiopian, yet in piety and uprightness far surpassed his predecessors"
+	},
+	{
+		"dyn": 99,
+		"ph": 999,
+		"ch": "1.66.8",
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"descr": " "
+	},
+	{
+		"dyn": 99,
+		"ph": 248,
+		"ch": "1.68.1",
+		"greek": "Aπριης",
+		"tlit": "Apries",
+		"descr": "King for 22 years, strangled by the men of Amasis"
+	},
+	{
+		"dyn": 99,
+		"ph": 249,
+		"ch": "1.68.3",
+		"greek": "Aμασις",
+		"tlit": "Amasis",
+		"descr": "Ruled for 55 years until Cambyses conquered Egypt"
+	},
+	{
+		"dyn": 99,
+		"ph": 267,
+		"ch": "15.92.2",
+		"greek": "Ταχως",
+		"tlit": "Takhos",
+		"descr": "King Tachos of Egypt received 500 talents of silver and 50 warships"
+	}
+]

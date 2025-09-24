@@ -1,0 +1,202 @@
+[
+	{
+		"id": 1,
+		"namn": "User Maat Ra, setep en Ra",
+		"farao": "193",
+		"tlit": "wsr-mꜢꜤt-rꜤ stp.n-rꜤ",
+		"mdc": "ra-wsr-C10A-stp&n&ra",
+		"meaning": "—",
+		"nr": "1, 21",
+		"bild": "01"
+	},
+	{
+		"id": 2,
+		"namn": "Ramessu mery Amun",
+		"farao": "193",
+		"tlit": "rꜤ-msi-sw mri-imn",
+		"mdc": "i-mn:n:N36-wsr-C1-v/",
+		"meaning": "—",
+		"nr": "2",
+		"bild": "02"
+	},
+	{
+		"id": 3,
+		"namn": "Senakht en Ra",
+		"farao": "173",
+		"tlit": "snḫt.n-rꜤ",
+		"mdc": "ra-z:n:xt-x:t-D40:n",
+		"meaning": "—",
+		"nr": "3",
+		"bild": "03"
+	},
+	{
+		"id": 4,
+		"namn": "Seqen en Ra",
+		"farao": "174",
+		"tlit": "sḳn.n-rꜤ",
+		"mdc": "ra-z:q-n:n:D40:n",
+		"meaning": "—",
+		"nr": "4",
+		"bild": "04"
+	},
+	{
+		"id": 5,
+		"namn": "Wadj kheper Ra",
+		"farao": "175",
+		"tlit": "wꜢḏ-ḫpr-rꜤ",
+		"mdc": "ra-wAD-xpr",
+		"meaning": "—",
+		"nr": "5",
+		"bild": "05"
+	},
+	{
+		"id": 6,
+		"namn": "Neb hapet Ra",
+		"farao": "86",
+		"tlit": "nb-ḥꜢpt-rꜤ",
+		"mdc": "ra:nb-P8",
+		"meaning": "—",
+		"nr": "6, 31",
+		"bild": "06"
+	},
+	{
+		"id": 7,
+		"namn": "Neb pehty Ra",
+		"farao": "176",
+		"tlit": "nb-pḥti-rꜤ",
+		"mdc": "ra-F9-nb",
+		"meaning": "—",
+		"nr": "7",
+		"bild": "07"
+	},
+	{
+		"id": 8,
+		"namn": "Aa kheper ka Ra",
+		"farao": "178",
+		"tlit": "ꜤꜢ-ḫpr-kꜢ-rꜤ",
+		"mdc": "ra:aA-xpr-kA",
+		"meaning": "—",
+		"nr": "10, 30",
+		"bild": "08"
+	},
+	{
+		"id": 9,
+		"namn": "Men kheper Ra",
+		"farao": "181",
+		"tlit": "mn-ḫpr-rꜤ",
+		"mdc": "ra:mn-xpr",
+		"meaning": "—",
+		"nr": "11, 23",
+		"bild": "09"
+	},
+	{
+		"id": 10,
+		"namn": "Aa kheper en Ra",
+		"farao": "179",
+		"tlit": "ꜤꜢ-ḫpr-n-rꜤ",
+		"mdc": "ra:aA-xpr:n",
+		"meaning": "—",
+		"nr": "12, 24",
+		"bild": "10"
+	},
+	{
+		"id": 11,
+		"namn": "Djoser ka Ra",
+		"farao": "177",
+		"tlit": "ḏsr-kꜢ-rꜤ",
+		"mdc": "ra-Dsr-kA",
+		"meaning": "—",
+		"nr": "13",
+		"bild": "11"
+	},
+	{
+		"id": 12,
+		"namn": "Aa kheperu en Ra",
+		"farao": "182",
+		"tlit": "ꜤꜢ-ḫprw-n-rꜤ",
+		"mdc": "ra:aA-xpr:Z2-n",
+		"meaning": "—",
+		"nr": "14",
+		"bild": "12"
+	},
+	{
+		"id": 13,
+		"namn": "Men kheperu en Ra",
+		"farao": "183",
+		"tlit": "mn-ḫprw-n-rꜤ",
+		"mdc": "ra:mn-xpr:Z2-n",
+		"meaning": "—",
+		"nr": "15, 25",
+		"bild": "13"
+	},
+	{
+		"id": 14,
+		"namn": "Neb Maat Ra",
+		"farao": "184",
+		"tlit": "nb-mꜢꜤt-rꜤ",
+		"mdc": "ra-mAat-nb",
+		"meaning": "—",
+		"nr": "16, 29",
+		"bild": "14"
+	},
+	{
+		"id": 15,
+		"namn": "Djoser kheperu en Ra",
+		"farao": "190",
+		"tlit": "ḏsr-ḫprw-n-rꜤ",
+		"mdc": "ra:Dsr-xpr:Z2-n",
+		"meaning": "—",
+		"nr": "17, 26",
+		"bild": "15"
+	},
+	{
+		"id": 16,
+		"namn": "Men pehty Ra",
+		"farao": "191",
+		"tlit": "mn-pḥti-rꜤ",
+		"meaning": "—",
+		"mdc": "ra:mn-F9",
+		"nr": "18, 27",
+		"bild": "16"
+	},
+	{
+		"id": 17,
+		"namn": "Men Maat Ra",
+		"farao": "192",
+		"tlit": "mn-mꜢꜤt-rꜤ",
+		"meaning": "—",
+		"mdc": "ra-mn-C10A",
+		"nr": "19, 28",
+		"bild": "17"
+	},
+	{
+		"id": 18,
+		"namn": "Usiri Seti mery en Ptah",
+		"farao": "195",
+		"tlit": "wsiri sti mri.n-ptḥ",
+		"mdc": "C46A-i-i-p:t-H-N36:n",
+		"meaning": "—",
+		"nr": "20",
+		"bild": "18"
+	},
+	{
+		"id": 19,
+		"namn": "Amenhotep",
+		"farao": "177",
+		"tlit": "imn-ḥtp",
+		"mdc": "i-mn:n-Htp:t*p",
+		"meaning": "—",
+		"nr": "22",
+		"bild": "19"
+	},
+	{
+		"id": 20,
+		"namn": "Ramessu mery Amun",
+		"farao": "193",
+		"tlit": "rꜤ-msi-sw mri-imn",
+		"mdc": "i-mn:n:N36-C1-ms-s-s",
+		"meaning": "—",
+		"nr": "32",
+		"bild": "20"
+	}
+]

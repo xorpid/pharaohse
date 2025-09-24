@@ -1,0 +1,136 @@
+---
+import "@/styles/global.css";
+import Head from "@/components/Head.astro";
+
+import pharaohs from "../data/pharaohs.json";
+
+export interface Props {
+	title?: string;
+	meta1?: string;
+	meta2?: string;
+	volid?: string;
+	bild?: string;
+}
+const sitename = "Egypt";
+const { title, meta1, meta2, bild } = Astro.props as Props;
+---
+
+<html lang="en">
+	<Head title={title} meta1={meta1} meta2={meta2} bild={bild} />
+	<body id="body">
+		<!-- <Header /> -->
+		<header class="bg-sky-700 dark:bg-orange-950 mb-10 text-center text-3xl grid grid-cols-2 items-center px-4">
+			<div class="justify-self-start"><a href="/" class="no-underline"> &#x1F3E0; </a> &nbsp; {sitename}</div>
+			<div class="justify-self-end w-full max-w-[12ch]">
+				<div class="relative">
+					<input
+						id="search"
+						type="text"
+						placeholder="Search for pharaoh..."
+						class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white dark:bg-black text-black dark:text-white z-10 relative text-base text-left"
+						oninput="filterPharaohs()"
+						onkeydown="handleListKey(event)"
+						onfocus="showList()"
+						onblur="hideList()"
+						autocomplete="off"
+					/>
+					<ul
+						id="pharaoh-list"
+						class="absolute top-full left-0 right-0 bg-white dark:bg-black border text-inherit shadow-lg z-10 max-h-64 overflow-y-auto m-0 p-0 list-none space-y-0 hidden text-base text-left"
+					>
+						{
+							pharaohs.map((p) => (
+								<li data-name={p.name.toLowerCase()} class="px-4 py-2 cursor-pointer">
+									<a href={`/pharaohs/${p.slug}`} class="text-blue-600 hover:underline block w-full">
+										{p.name}
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div>
+			<!-- <h1 class="pagetitle" set:html={pagename} /> -->
+		</div>
+		<div class="max-w-5xl mx-auto min-h-96">
+			<div>
+				<article class="w-full px-4">
+					<slot />
+
+					<!-- <Thoth /> -->
+				</article>
+			</div>
+		</div>
+		<!-- <Footer /> -->
+		<div class="min-h-32 bg-slate-950 h-12 p-8 mt-10 text-center text-2xl">Footer and credits</div>
+	</body>
+</html>
+
+<script is:inline>
+	let listIndex = -1;
+	function fuzzyMatch(str, query) {
+		return str.includes(query) && query.length > 0;
+	}
+	function filterPharaohs() {
+		const searchElem = document.getElementById("search");
+		const input = searchElem.value.toLowerCase();
+		const list = document.getElementById("pharaoh-list");
+		const items = list.querySelectorAll("li");
+		let visibleCount = 0;
+		let shown = 0;
+		items.forEach((item, i) => {
+			const name = item.dataset.name || "";
+			const match = fuzzyMatch(name, input) && input && shown < 10; /* max found entries */
+			item.style.display = match ? "" : "none";
+			item.classList.remove("bg-blue-100");
+			if (match) {
+				visibleCount++;
+				shown++;
+			}
+		});
+		listIndex = -1;
+		updateListHighlight(Array.from(items).filter((item) => item.style.display !== "none"));
+		list.style.display = searchElem === document.activeElement && input ? "block" : "none";
+	}
+	function showList() {
+		const searchElem = document.getElementById("search");
+		const list = document.getElementById("pharaoh-list");
+		const input = searchElem.value.toLowerCase();
+		list.style.display = input ? "block" : "none";
+	}
+	function hideList() {
+		setTimeout(() => {
+			const list = document.getElementById("pharaoh-list");
+			list.style.display = "none";
+		}, 100);
+	}
+	function handleListKey(event) {
+		const items = Array.from(document.querySelectorAll("#pharaoh-list li")).filter((item) => item.style.display !== "none");
+		if (items.length === 0) return;
+		if (event.key === "ArrowDown") {
+			listIndex = Math.min(listIndex + 1, items.length - 1);
+			updateListHighlight(items);
+			event.preventDefault();
+		} else if (event.key === "ArrowUp") {
+			listIndex = Math.max(listIndex - 1, 0);
+			updateListHighlight(items);
+			event.preventDefault();
+		} else if (event.key === "Enter" && listIndex >= 0) {
+			const link = items[listIndex].querySelector("a");
+			if (link) {
+				window.location.href = link.getAttribute("href");
+			}
+		}
+	}
+	function updateListHighlight(items) {
+		items.forEach((el, i) => {
+			if (i === listIndex) {
+				el.classList.add("bg-blue-100");
+			} else {
+				el.classList.remove("bg-blue-100");
+			}
+		});
+	}
+</script>

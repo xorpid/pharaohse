@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import authors from "../../data/authors.json";
+---
+
+<Layout title="authors">
+	<h1 class="text-3xl font-bold mb-4">Authors</h1>
+
+	<ul class="space-y-2">
+		{
+			authors.map((p) => (
+				<li>
+					<a href={`/authors/${p.slug}`}>{p.name}</a>
+				</li>
+			))
+		}
+	</ul>
+</Layout>

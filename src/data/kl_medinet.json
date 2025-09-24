@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"farao": 200,
+		"namn": "User Maat Ra, mery Amun",
+		"tlit": "wsr-mꜢꜤt-rꜤ mri-imn",
+		"meaning": "Strong is the Maat of Ra, beloved of Amun",
+		"mdc": "",
+		"nr": "1, 5, 8",
+		"bild": "01"
+	},
+	{
+		"id": 2,
+		"farao": 199,
+		"namn": "User khau Ra, mery Amun",
+		"tlit": "wsr-ḫꜤw-rꜤ mri-imn",
+		"meaning": "Powerful are the forms of Ra, beloved of Amun",
+		"mdc": "",
+		"nr": "2, 6, 9",
+		"bild": "02"
+	},
+	{
+		"id": 3,
+		"farao": 193,
+		"namn": "User Maat Ra, setep en Ra",
+		"tlit": "wsr-mꜢꜤt-rꜤ stp.n-rꜤ",
+		"meaning": "The justice of Ra is powerful, chosen of Ra",
+		"mdc": "",
+		"nr": "3, 12",
+		"bild": "03"
+	},
+	{
+		"id": 4,
+		"farao": 194,
+		"namn": "Ba en Ra, mery Amun",
+		"tlit": "bꜢ-n-rꜤ mri-imn",
+		"meaning": "The soul of Ra, beloved of Amun",
+		"mdc": "",
+		"nr": "4, 11",
+		"bild": "04"
+	},
+	{
+		"id": 5,
+		"farao": 195,
+		"namn": "User kheperu Ra, setep en Ra",
+		"tlit": "wsr-ḫprw-rꜤ stp.n-ra",
+		"meaning": "Powerful are the manifestations of Ra, chosen of Ra",
+		"mdc": "",
+		"nr": "7, 10",
+		"bild": "05"
+	},
+	{
+		"id": 6,
+		"farao": 192,
+		"namn": "Men Maat Ra",
+		"tlit": "mn-mꜢꜤt-rꜤ",
+		"meaning": "Eternal is the Truth of Ra",
+		"mdc": "",
+		"nr": "13",
+		"bild": "06"
+	},
+	{
+		"id": 7,
+		"farao": 191,
+		"namn": "Men pehty Ra",
+		"tlit": "mn-pḥti-rꜤ",
+		"meaning": "Eternal is the Strength of Ra",
+		"mdc": "",
+		"nr": "14",
+		"bild": "07"
+	},
+	{
+		"id": 8,
+		"farao": 190,
+		"namn": "Djoser kheperu Ra, setep en Ra",
+		"tlit": "ḏsr-ḫprw stp-n-rꜤ",
+		"meaning": "Holy are of the manifestations of Ra, chosen of Ra",
+		"mdc": "",
+		"nr": "15",
+		"bild": "08"
+	},
+	{
+		"id": 9,
+		"farao": 184,
+		"namn": "Neb Maat Ra",
+		"tlit": "nb-mꜢꜤt-rꜤ",
+		"meaning": "The possessor of the Maat of Ra",
+		"mdc": "",
+		"nr": "16",
+		"bild": "09"
+	}
+]

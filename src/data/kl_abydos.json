@@ -1,0 +1,762 @@
+[
+	{
+		"id": 1,
+		"farao": 8,
+		"meaning": "The established one(?)",
+		"namn": "Meni",
+		"tlit": "mni",
+		"mdc": "mn:n-i",
+		"nr": 1,
+		"bild": "01"
+	},
+	{
+		"id": 2,
+		"farao": 9,
+		"meaning": "Teti",
+		"namn": "Teti",
+		"tlit": "tti",
+		"mdc": "t:t-i",
+		"nr": 2,
+		"bild": "02"
+	},
+	{
+		"id": 3,
+		"farao": 10,
+		"meaning": "The sovereign(?)",
+		"namn": "Ateti",
+		"tlit": "itti",
+		"mdc": "i-t-ti",
+		"nr": 3,
+		"bild": "03"
+	},
+	{
+		"id": 4,
+		"farao": 11,
+		"meaning": "Ita",
+		"namn": "Ita",
+		"tlit": "it&#42786;",
+		"mdc": "i-t-A",
+		"nr": 4,
+		"bild": "04"
+	},
+	{
+		"id": 5,
+		"farao": 12,
+		"meaning": "He of the two districts",
+		"namn": "Sepati",
+		"tlit": "sp&#42786;ti",
+		"mdc": "N24-N24",
+		"nr": 5,
+		"bild": "05"
+	},
+	{
+		"id": 6,
+		"farao": 13,
+		"meaning": "The eternally beloved of the throne(?)",
+		"namn": "Meribiap",
+		"tlit": "mri-bi&#42786;-p",
+		"mdc": "U7-r:N42*p",
+		"nr": 6,
+		"bild": "06"
+	},
+	{
+		"id": 7,
+		"farao": 14,
+		"meaning": "The eldest",
+		"namn": "Semsu",
+		"tlit": "smsw",
+		"mdc": "A23D",
+		"nr": 7,
+		"bild": "07"
+	},
+	{
+		"id": 8,
+		"farao": 15,
+		"meaning": "He from the north",
+		"namn": "Qebeh",
+		"tlit": "&#7731;b&#7717;",
+		"mdc": "q-b-H",
+		"nr": 8,
+		"bild": "08"
+	},
+	{
+		"id": 9,
+		"farao": 16,
+		"meaning": "The smelter",
+		"namn": "Bedjau",
+		"tlit": "b&#7695;&#42788;w",
+		"mdc": "b-DA-w-P11",
+		"nr": 9,
+		"bild": "09"
+	},
+	{
+		"id": 10,
+		"farao": 17,
+		"meaning": "Bull of bulls",
+		"namn": "Kakau",
+		"tlit": "k&#42786;-k&#42786;w",
+		"mdc": "kA-D52:D52:D52",
+		"nr": 10,
+		"bild": "10"
+	},
+	{
+		"id": 11,
+		"farao": 18,
+		"meaning": "The spirit of the god",
+		"namn": "Ba netjer",
+		"tlit": "b&#42786;-n&#7791;r",
+		"mdc": "W10A*E11-nTr:n",
+		"nr": 11,
+		"bild": "11"
+	},
+	{
+		"id": 12,
+		"farao": 19,
+		"meaning": "Fresh of tongue",
+		"namn": "Wadj nes",
+		"tlit": "w&#42786;&#7695;ns",
+		"mdc": "wAD-n-s",
+		"nr": 12,
+		"bild": "12"
+	},
+	{
+		"id": 13,
+		"farao": 20,
+		"meaning": "The frightful one",
+		"namn": "Senedj",
+		"tlit": "sndi",
+		"mdc": "s-n:d-i",
+		"nr": 13,
+		"bild": "13"
+	},
+	{
+		"id": 14,
+		"farao": 26,
+		"meaning": "The head-man (?)",
+		"namn": "Djadjay",
+		"tlit": "ḏꜢ-ḏꜢ-y",
+		"mdc": "DA-DA-D1-i-i",
+		"nr": 14,
+		"bild": "14"
+	},
+	{
+		"id": 15,
+		"farao": 27,
+		"meaning": "Lord of the ka(?)",
+		"namn": "Neb ka",
+		"tlit": "nb-k&#42786;",
+		"mdc": "nb-kA-Z1",
+		"nr": 15,
+		"bild": "15"
+	},
+	{
+		"id": 16,
+		"farao": 28,
+		"meaning": "The sublime protector",
+		"namn": "Djoser sa",
+		"tlit": "ḏsr-sꜢ",
+		"mdc": "Dsr-V17",
+		"nr": 16,
+		"bild": "16"
+	},
+	{
+		"id": 17,
+		"farao": 29,
+		"meaning": "Teti",
+		"namn": "Teti",
+		"tlit": "tti",
+		"mdc": "t:t-i",
+		"nr": 17,
+		"bild": "17"
+	},
+	{
+		"id": 18,
+		"farao": 30,
+		"meaning": "“Omitted” <small>(i.e. name missing)</small>",
+		"namn": "Sedjes",
+		"tlit": "sḏs",
+		"mdc": "z:D-s",
+		"nr": 18,
+		"bild": "18"
+	},
+	{
+		"id": 19,
+		"farao": 33,
+		"meaning": "The appearance of the perfection of Ra",
+		"namn": "Nefer ka Ra",
+		"tlit": "nfr-kꜢ-rꜤ",
+		"mdc": "ra:nfr-kA",
+		"nr": 19,
+		"bild": "19"
+	},
+	{
+		"id": 20,
+		"farao": 35,
+		"meaning": "He has perfected me",
+		"namn": "Sneferu",
+		"tlit": "s-nfr-w",
+		"mdc": "s-nfr-w",
+		"nr": 20,
+		"bild": "20"
+	},
+	{
+		"id": 21,
+		"farao": 36,
+		"meaning": "He protects me",
+		"namn": "Khufu",
+		"tlit": "ḫfw",
+		"mdc": "x:f-w",
+		"nr": 21,
+		"bild": "21"
+	},
+	{
+		"id": 22,
+		"farao": 37,
+		"meaning": "Ra is his stability",
+		"namn": "Djedef Ra",
+		"tlit": "ḏd-f-rꜤ",
+		"mdc": "ra-Dd-f",
+		"nr": 22,
+		"bild": "22"
+	},
+	{
+		"id": 23,
+		"farao": 38,
+		"meaning": "He appears (as) Ra",
+		"namn": "Khaf Ra",
+		"tlit": "ḫꜤ-f-rꜤ",
+		"mdc": "ra-xa-a:f",
+		"nr": 23,
+		"bild": "23"
+	},
+	{
+		"id": 24,
+		"farao": 40,
+		"meaning": "The established one of the kas of Ra",
+		"namn": "Men kau Ra",
+		"tlit": "mn-k&#42786;w-r&#42788;",
+		"mdc": "ra-mn:n-kA:Z2",
+		"nr": 24,
+		"bild": "24"
+	},
+	{
+		"id": 25,
+		"farao": 41,
+		"meaning": "His soul is noble",
+		"namn": "Shepses kaf",
+		"tlit": "&scaron;ps-s-k&#42786;-f",
+		"mdc": "A51-z:z-kA:f",
+		"nr": 25,
+		"bild": "25"
+	},
+	{
+		"id": 26,
+		"farao": 43,
+		"meaning": "His ka is strong",
+		"namn": "User kaf",
+		"tlit": "wsr-k&#42786;-f",
+		"mdc": "wsr-s-kA-f",
+		"nr": 26,
+		"bild": "26"
+	},
+	{
+		"id": 27,
+		"farao": 44,
+		"meaning": "Ra has endowed me",
+		"namn": "Sahu Ra",
+		"tlit": "sꜢḥw-rꜤ",
+		"mdc": "ra-sAH-w",
+		"nr": 27,
+		"bild": "27"
+	},
+	{
+		"id": 28,
+		"farao": 45,
+		"meaning": "My ka is a (true) ka (?)",
+		"namn": "Kakai",
+		"tlit": "k&#42786;-k&#42786;-i",
+		"mdc": "kA-kA-i",
+		"nr": 28,
+		"bild": "28"
+	},
+	{
+		"id": 29,
+		"farao": 47,
+		"meaning": "The perfection of Ra",
+		"namn": "Nefer ef Ra",
+		"tlit": "nfr.f-r&#42788;",
+		"mdc": "ra-nfr-f",
+		"nr": 29,
+		"bild": "29"
+	},
+	{
+		"id": 30,
+		"farao": 48,
+		"meaning": "Who belongs to the power of Ra",
+		"namn": "Ni user Ra",
+		"tlit": "ni-wsr-r&#42788;",
+		"mdc": "ra-n-wsr*s:r",
+		"nr": 30,
+		"bild": "30"
+	},
+	{
+		"id": 31,
+		"farao": 49,
+		"meaning": "The established one of the kas of Horus",
+		"namn": "Men kau Hor",
+		"tlit": "mn-k&#42786;w-&#7717;r",
+		"mdc": "G5-mn:n-kA*kA:kA",
+		"nr": 31,
+		"bild": "31"
+	},
+	{
+		"id": 32,
+		"farao": 50,
+		"meaning": "The enduring one of the ka of Ra",
+		"namn": "Djed ka Ra",
+		"tlit": "ḏd-kꜢ-rꜤ",
+		"mdc": "ra-Dd-kA",
+		"nr": 32,
+		"bild": "32"
+	},
+	{
+		"id": 33,
+		"farao": 51,
+		"meaning": "Unas",
+		"namn": "Unas",
+		"tlit": "wnis",
+		"mdc": "wn:n-i*s",
+		"nr": 33,
+		"bild": "33"
+	},
+	{
+		"id": 34,
+		"farao": 52,
+		"meaning": "Teti",
+		"namn": "Teti",
+		"tlit": "tti",
+		"mdc": "t:t-i",
+		"nr": 34,
+		"bild": "34"
+	},
+	{
+		"id": 35,
+		"farao": 53,
+		"meaning": "The strong one belonging to the ka of Ra",
+		"namn": "User ka Ra",
+		"tlit": "wsr-k&#42786;-r&#42788;",
+		"mdc": "ra-wsr*s-kA",
+		"nr": 35,
+		"bild": "35"
+	},
+	{
+		"id": 36,
+		"farao": 54,
+		"meaning": "Beloved of Ra",
+		"namn": "Mery Ra",
+		"tlit": "mry-r&#42788;",
+		"mdc": "ra-U7\\:r-i-i",
+		"nr": 36,
+		"bild": "36"
+	},
+	{
+		"id": 37,
+		"farao": 55,
+		"meaning": "The one whom Ra has loved",
+		"namn": "Mer en Ra",
+		"tlit": "mr-n-r&#42788;",
+		"mdc": "ra:U7-r:n",
+		"nr": 37,
+		"bild": "37"
+	},
+	{
+		"id": 38,
+		"farao": 56,
+		"meaning": "The perfect one of the ka of Ra",
+		"namn": "Nefer ka Ra",
+		"tlit": "nfr-k&#42786;-r&#42788;",
+		"mdc": "ra-nfr-kA",
+		"nr": 38,
+		"bild": "38"
+	},
+	{
+		"id": 39,
+		"farao": 57,
+		"meaning": "Loved by Re, <small>[lacuna]</small> is his protection",
+		"namn": "Mer en Ra em saf",
+		"tlit": "mr.n-rꜤ sꜢ-m-sꜢ.f",
+		"mdc": "ra-U7:n-wSA-m-V16:f",
+		"nr": 39,
+		"bild": "39"
+	},
+	{
+		"id": 40,
+		"farao": 58,
+		"meaning": "The divine one of the ka of Ra",
+		"namn": "Netjer ka Ra",
+		"tlit": "nṯri-kꜢ-rꜤ",
+		"mdc": "ra-nTr-kA",
+		"nr": 40,
+		"bild": "40"
+	},
+	{
+		"id": 41,
+		"farao": 59,
+		"meaning": "The established one of the ka of Ra",
+		"namn": "Men ka Ra",
+		"tlit": "mn-kꜢ-rꜤ",
+		"mdc": "ra-mn:n-kA",
+		"nr": 41,
+		"bild": "41"
+	},
+	{
+		"id": 42,
+		"farao": 60,
+		"meaning": "The perfect one of the ka of Ra",
+		"namn": "Nefer ka Ra",
+		"tlit": "nfr-kꜢ-rꜤ",
+		"mdc": "ra-nfr-kA",
+		"nr": 42,
+		"bild": "42"
+	},
+	{
+		"id": 43,
+		"farao": 61,
+		"meaning": "The perfect one of the ka of Ra, who belongs to his lord",
+		"namn": "Nefer ka Ra Neby",
+		"tlit": "nfr-kꜢ-rꜤ nb-y",
+		"mdc": "ra-nfr-kA-nb-b-i-i",
+		"nr": 43,
+		"bild": "43"
+	},
+	{
+		"id": 44,
+		"farao": 62,
+		"meaning": "The enduring one of the ka of Ra, the foreigner",
+		"namn": "Djed ka Ra Shemay",
+		"tlit": "ḏd-kꜢ-rꜤ-šmꜤi",
+		"mdc": "ra-Dd-kA-U4-A33",
+		"nr": 44,
+		"bild": "44"
+	},
+	{
+		"id": 45,
+		"farao": 63,
+		"meaning": "The perfect one of the ka of Ra, the wanderer",
+		"namn": "Nefer ka rRa Khendu",
+		"tlit": "nfr-kꜢ-rꜤ ḫndw",
+		"mdc": "ra-nfr-kA-x:n:d-w-D56",
+		"nr": 45,
+		"bild": "45"
+	},
+	{
+		"id": 46,
+		"farao": 64,
+		"meaning": "Beloved of Horus",
+		"namn": "Mer en Hor",
+		"tlit": "mr-n-ḥr",
+		"mdc": "G5-U7:r:n",
+		"nr": 46,
+		"bild": "46"
+	},
+	{
+		"id": 47,
+		"farao": 65,
+		"meaning": "The one who makes the ka of Ra perfect",
+		"namn": "Snefer ka",
+		"tlit": "s-nfr-kꜢ",
+		"mdc": "z-nfr-kA",
+		"nr": 47,
+		"bild": "47"
+	},
+	{
+		"id": 48,
+		"farao": 66,
+		"meaning": "Who belongs to the ka of Ra",
+		"namn": "Ni ka Ra",
+		"tlit": "ni-kꜢ-rꜤ",
+		"mdc": "ra-n-kA",
+		"nr": 48,
+		"bild": "48"
+	},
+	{
+		"id": 49,
+		"farao": 67,
+		"meaning": "The perfect one of the ka of Ra, the respected one",
+		"namn": "Nefer ka Ra Tereru",
+		"tlit": "nfr-kꜢ-rꜤ tr-r-rw",
+		"mdc": "ra-nfr-kA:t-r:r:rw",
+		"nr": 49,
+		"bild": "49"
+	},
+	{
+		"id": 50,
+		"farao": 68,
+		"meaning": "The perfect one of the ka of Horus",
+		"namn": "Nefer ka Hor",
+		"tlit": "nfr-k&#42786;-&#7717;r",
+		"mdc": "G5-nfr-kA",
+		"nr": 50,
+		"bild": "50"
+	},
+	{
+		"id": 51,
+		"farao": 69,
+		"meaning": "The perfect one of the ka of Ra, Pepi is healthy",
+		"namn": "Nefer ka Ra Pepi senbu",
+		"tlit": "nfr-kꜢ-rꜤ pi-pi-snb(.w)",
+		"mdc": "ra-nfr-kA-p:p-i-i-s:n-b",
+		"nr": 51,
+		"bild": "51"
+	},
+	{
+		"id": 52,
+		"farao": 70,
+		"meaning": "The perfect one of the ka of Min, the beautiful one",
+		"namn": "Nefer ka Min Anu",
+		"tlit": "s-nfr-kꜢ-Ꜥnw",
+		"mdc": "z:nfr*kA-a:n-nw*w",
+		"nr": 52,
+		"bild": "52"
+	},
+	{
+		"id": 53,
+		"farao": 71,
+		"meaning": "The exalted one of the ka of Ra",
+		"namn": "Qa ka Ra",
+		"tlit": "ḳꜢ-kꜢw-rꜤ",
+		"mdc": "ra-A28-kA:Z2",
+		"nr": 53,
+		"bild": "53"
+	},
+	{
+		"id": 54,
+		"farao": 72,
+		"meaning": "The perfect one of the kas of Ra",
+		"namn": "Nefer kau Ra",
+		"tlit": "nfr-k&#42786;w-r&#42788;",
+		"mdc": "ra-nfr-kA:Z2",
+		"nr": 54,
+		"bild": "54"
+	},
+	{
+		"id": 55,
+		"farao": 73,
+		"meaning": "The perfect one of the kas of Horus",
+		"namn": "Nefer kau Hor",
+		"tlit": "nfr-kꜢw-ḥr",
+		"mdc": "G5-nfr-kA:Z2",
+		"nr": 55,
+		"bild": "55"
+	},
+	{
+		"id": 56,
+		"farao": 74,
+		"meaning": "The perfect one is the one whom the ka of Ra has made",
+		"namn": "Nefer ir ka Ra",
+		"tlit": "nfr-ir-kꜢ-rꜤ",
+		"mdc": "ra-nfr-ir-kA",
+		"nr": 56,
+		"bild": "56"
+	},
+	{
+		"id": 57,
+		"farao": 86,
+		"meaning": "The Lord of the rudder is Ra",
+		"namn": "Neb hapet Ra",
+		"tlit": "nb-ḥꜢpt-rꜤ",
+		"mdc": "ra:nb-P8",
+		"nr": 57,
+		"bild": "57"
+	},
+	{
+		"id": 58,
+		"farao": 87,
+		"meaning": "The one whom the ka of Ra has sustained",
+		"namn": "Sankh ka Ra",
+		"tlit": "s-Ꜥnḫ-kꜢ-rꜤ",
+		"mdc": "ra-s-anx-kA",
+		"nr": 58,
+		"bild": "58"
+	},
+	{
+		"id": 59,
+		"farao": 89,
+		"meaning": "The heart of Ra is content",
+		"namn": "Sehotep ib Ra",
+		"tlit": "s-ḥtp-ib-rꜤ",
+		"mdc": "ra-s-Htp:t*p-ib",
+		"nr": 59,
+		"bild": "59"
+	},
+	{
+		"id": 60,
+		"farao": 90,
+		"meaning": "The Ka of Ra is created",
+		"namn": "Kheper ka Ra",
+		"tlit": "ḫpr-kꜢ-rꜤ",
+		"mdc": "ra-xpr-kA",
+		"nr": 60,
+		"bild": "60"
+	},
+	{
+		"id": 61,
+		"farao": 91,
+		"meaning": "Golden are the souls of Ra",
+		"namn": "Nebu kau Ra",
+		"tlit": "nbw-kꜢw-rꜤ",
+		"mdc": "ra:nbw-kA*kA:kA",
+		"nr": 61,
+		"bild": "61"
+	},
+	{
+		"id": 62,
+		"farao": 92,
+		"meaning": "The appearance of the manifestation of Ra",
+		"namn": "Kha kheper Ra",
+		"tlit": "ḫꜤ-ḫpr-rꜤ",
+		"mdc": "ra-xa-xpr",
+		"nr": 62,
+		"bild": "62"
+	},
+	{
+		"id": 63,
+		"farao": 93,
+		"meaning": "The appearance of the kas of Ra",
+		"namn": "Kha kau Ra",
+		"tlit": "ḫꜤ-kꜢw-rꜤ",
+		"mdc": "ra-xa-kA*kA:kA",
+		"nr": 63,
+		"bild": "63"
+	},
+	{
+		"id": 64,
+		"farao": 94,
+		"meaning": "He who belongs to the Maat of Ra",
+		"namn": "Ni Maat Ra",
+		"tlit": "ni-mꜢꜤt-rꜤ",
+		"mdc": "",
+		"nr": 64,
+		"bild": "64"
+	},
+	{
+		"id": 65,
+		"farao": 95,
+		"meaning": "The righteous one of Ra",
+		"namn": "Maa kheru Ra",
+		"tlit": "mꜢꜤ-ḫrw-rꜤ",
+		"mdc": "",
+		"nr": 65,
+		"bild": "65"
+	},
+	{
+		"id": 66,
+		"farao": 176,
+		"meaning": "The Lord of the might is Ra",
+		"namn": "Neb pehty Ra",
+		"tlit": "nb-pḥti-rꜤ",
+		"mdc": "",
+		"nr": 66,
+		"bild": "66"
+	},
+	{
+		"id": 67,
+		"farao": 177,
+		"meaning": "Holy is the soul of Ra",
+		"namn": "Djoser ka Ra",
+		"tlit": "ḏsr-kꜢ-rꜤ",
+		"mdc": "",
+		"nr": 67,
+		"bild": "67"
+	},
+	{
+		"id": 68,
+		"farao": 178,
+		"meaning": "",
+		"namn": "Aa kheper ka Ra",
+		"tlit": "ꜤꜢ-ḫpr-kꜢ-rꜤ",
+		"mdc": "Great is the manifestation of the soul of Ra",
+		"nr": 68,
+		"bild": "68"
+	},
+	{
+		"id": 69,
+		"farao": 179,
+		"meaning": "Great is the manifestation of Ra",
+		"namn": "Aa kheper en Ra",
+		"tlit": "ꜤꜢ-ḫpr-n-rꜤ",
+		"mdc": "",
+		"nr": 69,
+		"bild": "69"
+	},
+	{
+		"id": 70,
+		"farao": 181,
+		"meaning": "Lasting is the Manifestation of Ra",
+		"namn": "Men kheper Ra",
+		"tlit": "mn-ḫpr-rꜤ",
+		"mdc": "",
+		"nr": 70,
+		"bild": "70"
+	},
+	{
+		"id": 71,
+		"farao": 182,
+		"meaning": "Great are the manifestations of Ra",
+		"namn": "Aa kheperu Ra",
+		"tlit": "ꜤꜢ-ḫprw-rꜤ",
+		"mdc": "",
+		"nr": 71,
+		"bild": "71"
+	},
+	{
+		"id": 72,
+		"farao": 183,
+		"meaning": "Established manifestations of Ra",
+		"namn": "Men kheperu Ra",
+		"tlit": "mn-ḫprw-rꜤ",
+		"mdc": "",
+		"nr": 72,
+		"bild": "72"
+	},
+	{
+		"id": 73,
+		"farao": 184,
+		"meaning": "The possessor of the Maat of Ra",
+		"namn": "Neb Maat Ra",
+		"tlit": "nb-mꜢꜤt-rꜤ",
+		"mdc": "",
+		"nr": 73,
+		"bild": "73"
+	},
+	{
+		"id": 74,
+		"farao": 190,
+		"meaning": "Holy are of the manifestations of Ra, chosen of Ra",
+		"namn": "Djoser kheperu Ra setep en Ra",
+		"tlit": "ḏsr-ḫprw stp.n-rꜤ",
+		"mdc": "",
+		"nr": 74,
+		"bild": "74"
+	},
+	{
+		"id": 75,
+		"farao": 191,
+		"meaning": "Eternal is the Strength of Ra",
+		"namn": "Men pehty Ra",
+		"tlit": "mn-pḥti-rꜤ",
+		"mdc": "",
+		"nr": 75,
+		"bild": "75"
+	},
+	{
+		"id": 76,
+		"farao": 192,
+		"meaning": "Eternal is the Truth of Ra",
+		"namn": "Men Maat Ra",
+		"tlit": "mn-mꜢꜤt-rꜤ",
+		"mdc": "",
+		"nr": 76,
+		"bild": "76"
+	}
+]

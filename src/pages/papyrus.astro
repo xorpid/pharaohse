@@ -1,0 +1,115 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const title = "Papyrus";
+const meta1 = "Papyrus manufacture and use in ancient Egypt";
+const meta2 = "Papyrus,papyrus scroll,hieratic,hieroglyph,egypt,egyptian papyrus";
+const bild = "https://pharaoh.se/images/pharaohse-turin.webp";
+const pic1 = "/images/papyrus-plant.webp";
+const pic2 = "/images/hieratic.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<!-- hyphens-auto -->
+
+		<p class="lead">
+			Ancient Egyptian papyrus was made into rolls by overlapping and gluing strips of the papyrus plant, creating durable and easily transportable
+			scrolls for written texts that were vital for administrative, religious, and literary purposes. Easy and cheap to produce, papyrus was one of
+			the most important cornerstones of the government of ancient Egypt.
+		</p>
+
+		<figure class="mx-auto my-5 block w-[400px] caption-bottom p-0 text-center font-sans text-sm sm:float-right sm:my-0">
+			<img src={pic1} alt="Papyrus plant" class="mx-auto border border-zinc-400" loading="eager" srcset="" /><figcaption class="italic">
+				Papyrus plant
+			</figcaption>
+		</figure>
+		<p>
+			Writing <a href="/ancient-egypt/hieroglyphs">hieroglyphs</a> on papyrus was cumbersome and time consuming, so the much easier and faster to write
+			<i>cursive hieroglyphs</i> were developed. However, it was still relatively slow, which ultimately lead to the very fast <i>hieratic script</i>.
+		</p>
+		<p>
+			The manufacturing of papyrus involves several steps, from harvesting the raw material to creating the final writing surface. Pliny the elder
+			wrote about the process already in the first century (<small><i>Natural History</i>, 13.23</small>). Papyrus is made from the <i
+				>Cyperus papyrus</i
+			> plant <img
+				src="/svg/hiero/papyrusM13.svg"
+				loading="eager"
+				class="inline h-6 cursor-help transition-all duration-700 hover:scale-[5] dark:invert"
+				alt="Papyrus plant (Gardiner sign M13)"
+			/> (<tlit>wꜢḏ</tlit>) or <img
+				src="/svg/hiero/papyrusM15.svg"
+				loading="eager"
+				class="inline h-6 cursor-help transition-all duration-700 hover:scale-[5] dark:invert"
+				alt="Papyrus plant (Gardiner sign M15)"
+			/> (<tlit>dyt</tlit>), which still grows in marshy areas along the Nile. The traditional process of making papyrus went something like this:
+		</p>
+
+		<p>
+			The outer green layer of the stem is removed, leaving the inner white pith or stalk. The white pith is cut into long strips that are then split
+			into thinner layers using a sharp tool, creating long, flexible ribbons that are soaked in water to soften the fibers and makes them more
+			pliable. The soaked strips are laid out side by side, slightly overlapping, on a flat surface. The arrangement of the strips forms a layer for
+			the width of the desired papyrus sheet.
+		</p>
+
+		<p>
+			Another layer of strips is placed perpendicular to the first layer, creating a crosshatch pattern. Using a mallet, the layers are then hammered
+			to further facilitate bonding. The sheet is left to dry in the sun where the natural sugars in the papyrus act as a glue, binding the strips
+			together. Once dried, the papyrus sheet is polished with a smooth, hard object, such as a shell or a piece of ivory, to create a smooth and even
+			surface for writing. The resulting papyrus was pure white in colour and, if carefully produced, free of spots, stains, and other flaws.
+		</p>
+		<p>
+			The process of making papyrus rolls <img
+				src="/svg/hiero/papyrusroll-Y1.svg"
+				loading="lazy"
+				class="inline h-8 cursor-help align-super transition-all duration-700 hover:scale-[5] dark:invert"
+				alt="Tied papyrus roll (Gardiner sign Y1)"
+			/> or <img
+				src="/svg/hiero/papyrusroll-Y2.svg"
+				loading="lazy"
+				class="inline h-8 cursor-help align-super transition-all duration-700 hover:scale-[5] dark:invert"
+				alt="Open papyrus roll (Gardiner sign Y2)"
+			/> (<tlit>mḏꜢt</tlit>) involved taking individual sheets of papyrus and joining the longer sides together to create a continuous scroll. While
+			still fresh, they employed a sort of glue to join and reinforce the bond between the sheets. This adhesive substance helped create a stronger
+			and more durable connection between the overlapping papyrus sheets. The process involved beating or tapping the surface to ensure that the
+			sheets were firmly joined. The resulting papyrus sheets serve as the writing material <a href="/ancient-egypt/scribes">scribes</a> would use reed
+			pens and ink to write on.
+		</p>
+
+		<p class="pb-5">
+			The number of sheets on a roll and the size of each sheet were regulated but varied across the kingdom’s different periods. Up to 20 of these
+			sheets were then pasted together to make a roll.
+		</p>
+
+		<figure class="mx-auto block w-[300px] caption-bottom pl-0 pr-8 pt-1 text-center font-sans text-sm sm:float-left sm:my-0">
+			<img src={pic2} alt="Hieratic script" class="mx-auto border border-zinc-400" loading="lazy" srcset="" /><figcaption class="italic">
+				Hieratic script on papyrus
+			</figcaption>
+		</figure>
+
+		<p>
+			The combination of glue and the use of mallets played a crucial role in creating a sturdy and well-bonded papyrus sheet. This was especially
+			important for scrolls that needed to withstand handling, rolling, and unrolling without significant wear and tear. The production of papyrus
+			scrolls required a skilled artisan who understood the properties of papyrus and the techniques needed to create a high-quality writing surface.
+			The use of glue and mallets demonstrated the Egyptians’ ingenuity in developing methods to enhance the durability of their writing material.
+		</p>
+
+		<p>
+			While the specific details of these techniques might not be fully preserved in historical records, archaeological evidence and studies of
+			ancient papyri have provided insights into the sophisticated methods employed by the Egyptians in crafting their scrolls. These practices
+			contributed to the longevity of many surviving ancient Egyptian papyrus texts. The ink used by ancient Egyptian scribes was typically made from
+			a mixture of water, soot, and gum. The gum served as a binder, and the soot provided the black colour. The Egyptian scribes also used red ink,
+			and had both practical and symbolic uses, appearing in administrative documents as well as in religious and ritual contexts. Scribes used reed
+			pens, which were crafted from the stems of certain plants. The reed was shaped into a pen, and the scribe would dip it into the ink to write on
+			the papyrus.
+		</p>
+
+		<p>
+			Papyrus had already begun to be displaced in Europe by the less expensive vellum, or parchment, by the third century, but the use of papyrus for
+			books and papers continued intermittently until the 12th century.
+		</p>
+	</section>
+</Layout>
+
+<style></style>

@@ -1,0 +1,958 @@
+---
+import Layout from "@/layouts/Layout.astro";
+const nu = new Date().getFullYear();
+const title = "Chronology of Ancient Egypt";
+let meta1 = "The sources of chronology for Ancient Egypt, and how to synchronize it with the modern world. Not as easy as it sounds.";
+let meta2 = "Chronology,timeline of Egypt,sources for Egyptian chronology,egyptian king lists, pharaohs,Manetho,Eusebius,Africanus,Egyptology";
+
+const bild = "https://pharaoh.se/images/pharaohse-chronology.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<div class="spacep container">
+			<p class="lead">
+				Although there is consensus among scholars regarding the fundamental sequence of major chronological periods in ancient Egypt, the precise
+				dates and relationships remain a matter of ongoing research and debate.
+			</p>
+
+			<h2>Introduction</h2>
+			<div>
+				<p>
+					Ancient records are often a singular reference without any other verifiable source. The provided information is basically all that have
+					survived, making the reliability questionable. Some sort of calendar became essential to anticipate the seasons and planning planting and
+					harvesting of crops. Keeping track of when markets, fairs, and especially religious ceremonies and festivals were planned helped to create a
+					sense of community and shared understanding of time.
+				</p>
+				<p>
+					Nevertheless, it is frequently uncertain which type of calendar was employed and whether the presented information is to be regarded as
+					reliable. It is notable that historical dates which have survived were often documented decades or even centuries after the event in
+					question took place. It is similarly conceivable that such sources may have been corrupted, invented, or otherwise altered or added
+					subsequent to the event in question in order to align with a specific narrative.
+				</p>
+				<div
+					class="text-red-800 float-right m-5 hidden w-1/2 text-balance p-3 text-center font-sans text-2xl font-bold uppercase tracking-wider md:block dark:text-amber-200"
+				>
+					The further back in time we go, the less verifiable the historical record.
+				</div>
+
+				<p class="pt-5">
+					Moving back in time, the accuracy of dates inevitably declines. The absence of sound chronological standards in the past, makes it basically
+					guesswork. The ancients lack of contemporary recording methods and understanding of historical time further complicate the matter. In small
+					villages there was no need to know the exact time and dates. However, as small villages grew into towns, civilization slowly appeared in the
+					Nile valley. People has noted that certain stars appeared at specific places in the sky year after year, so astronomy became of great
+					importance, as it enabled keeping track of time over longer periods. Nevertheless, dating historical events is challenging, as there was no
+					single system for numbering years in the ancient world. The best we can do is to attempt to create a timeline of events from historical
+					records, inscriptions, and archaeological finds.
+				</p>
+
+				<!-- MARK: Egyp Cal
+-->
+
+				<h2 class="pt-10">The Egyptian calendar</h2>
+
+				<p>
+					Strangely enough, whether the Egyptian day began at dawn or at sunrise is controversial. The difference affects the Egyptian date assigned
+					to a Heliacal rising of Sothis, and hence the conversion of that date to a Julian year.
+				</p>
+
+				<p>
+					The Egyptian <i>civil year</i> consisted of 12 months each with 30 days. To this five extra days were added, making a year 365 days. This was
+					divided into three "seasons" each consisting of four months: <strong>Akhet</strong> (Inundation or Flood), <strong>Peret</strong> (Emergence
+					or Growth) and <strong>Shomu</strong> (Harvest or Low Water). However, <i>a solar year</i> is 365.2425 days, which is why we add an extra day
+					every four years. The ancient Egyptians did not do this, so their calendar lost a quarter of a day every year. After a century this would amount
+					to the same date occuring 25 days earlier, which would completely ruin the seasons, a fact well known to the ancients. They probably corrected
+					the calendar <i>informally</i> so that the seasons didn't move too far out of sync with the sun, perhaps at a particular festival. The Islamic
+					calendar is still <i>lunar</i>, which means that a year is only 354.367 days. This cause its dates to shift almost 11 days each year, making
+					seasons shift from year-to-year.
+				</p>
+				<p>
+					Dates were usually expressed by the regnal year of a pharaoh, followed by the month, followed by the day, like so: <em
+						>reign of Ramesses II, year 38, III Akhet, day 19</em
+					>. For much of Egyptian history, the months were not referred to by individual names, but were numbered within the three seasons. By the
+					Middle Kingdom, however, each month had its own name that were probably used in daily speech.
+				</p>
+
+				<table class="leading-4">
+					<caption class="pt-3 text-sm">Table 1: The months of the Egyptian calendar</caption>
+					<tr>
+						<th>#</th>
+						<th>Season</th>
+						<th>Month name</th>
+						<th>Coptic</th>
+						<th>Greek</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>I Akhet</td>
+						<td><tlit>ḏḥwty</tlit><small><br />The one of Thōth</small></td>
+						<td><ar>Ⲑⲱⲟⲩⲧ</ar><small><br />Tôut</small></td>
+						<td><gr>Θωθ</gr><small><br />Thōth</small></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>II Akhet</td>
+						<td><tlit>pꜢ n-ip.t</tlit><small><br />The one of the Opet feast</small></td>
+						<td><ar>Ⲡⲁⲱⲡⲉ</ar><small><br />Baôba</small></td>
+						<td><gr>Φαωφί</gr><small><br />Phaōphí</small></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>III Akhet</td>
+						<td><tlit>ḥwt-ḥr</tlit><small><br />[The one of] Hathor</small></td>
+						<td><ar>Ϩⲁⲑⲱⲣ</ar><small><br />Hatûr</small></td>
+						<td><gr>Ἀθύρ</gr><small><br />Athúr</small></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>IV Akhet</td>
+						<td><tlit>kꜢ-ḥr-kꜢ</tlit><small><br />The joining of kas</small></td>
+						<td><ar>Ⲕⲟⲓⲁⲕ</ar><small><br />Koiak</small></td>
+						<td><gr>Χοιάκ</gr><small><br />Khoiák</small></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>I Peret</td>
+						<td><tlit>tꜢ-Ꜥb</tlit><small><br />The offering</small></td>
+						<td><ar>Ⲧⲱⲃⲓ</ar><small><br />Tôbi</small></td>
+						<td><gr>Τυβί</gr><small><br />Tubí</small></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>II Peret</td>
+						<td><tlit>mḫr</tlit><small><br />[The one of] the basket?</small></td>
+						<td><ar>Ⲙⲉϣⲓⲣ</ar><small><br />Meshir</small></td>
+						<td><gr>Μεχίρ</gr><small><br />Mekhír</small></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>III Peret</td>
+						<td><tlit>pꜢ n-imn-ḥtp.w</tlit><small><br />The one of Amenhotep</small></td>
+						<td><ar>Ⲡⲁⲣⲉⲙϩⲁⲧ</ar><small><br />Baramhat</small></td>
+						<td><gr>Φαμενώθ</gr><small><br />Phamenoth</small></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>IV Peret</td>
+						<td><tlit>pꜢ n-rnn.t</tlit><small><br />The one of Renenutet</small></td>
+						<td><ar>Ⲡⲁⲣⲙⲟⲩⲧⲉ</ar><small><br />Barmoda</small></td>
+						<td><gr>Φαρμουθί</gr><small><br />Pharmouthí</small></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>I Shomu</td>
+						<td><tlit>pꜢ n-ḫns.w</tlit><small><br />The one of Khonsu</small></td>
+						<td><ar>Ⲡⲁϣⲟⲛⲥ</ar><small><br />Bashons</small></td>
+						<td><gr>Παχών</gr><small><br />Pakhōn</small></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>II Shomu</td>
+						<td><tlit>pꜢ n-in.t</tlit><small><br />The one of the Valley</small></td>
+						<td><ar>Ⲡⲁⲱⲛⲓ</ar><small><br />Baôni</small></td>
+						<td><gr>Παϋνί</gr><small><br />Pauni</small></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>III Shomu</td>
+						<td><tlit>ipip</tlit><small><br />Uncertain meaning</small></td>
+						<td><ar>Ⲉⲡⲓⲡ</ar><small><br />Apip</small></td>
+						<td><gr>Ἐπιφί</gr><small><br />Epiphi</small></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>IV Shomu</td>
+						<td><tlit>mswt-rꜤ</tlit><small><br />The birth of Ra</small></td>
+						<td><ar>Ⲙⲉⲥⲱⲣⲓ</ar><small><br />Masôri</small></td>
+						<td><gr>Μεσορή</gr><small><br />Mesore</small></td>
+					</tr>
+				</table>
+
+				At the end of the year, five days were added to the year, known as <tlit>hrw 5 ḥry rnpt</tlit>, or <em>Five Days upon the Year</em>, bringing
+				the number of days in a year to 365. These five days are often referred to as the <i>intercalary month</i> or <i>epagomenal days</i>.
+
+				<table class="w-5/6 leading-4">
+					<caption class="pt-3 text-sm">Table 2: The epagomenal days</caption>
+					<tr>
+						<th>Day</th>
+						<th>Name</th>
+						<th>Meaning</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><tlit>mswt wsir</tlit></td>
+						<td>The Birthday of <b>Osiris</b></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><tlit>mswt ḥr</tlit></td>
+						<td>The Birthday of <b>Horus</b></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><tlit>mswt stẖ</tlit></td>
+						<td>The Birthday of <b>Set</b></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><tlit>mswt Ꜣst</tlit></td>
+						<td>The Birthday of <b>Isis</b></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><tlit>mswt nbt-ḥwt</tlit></td>
+						<td>The Birthday of <b>Nephthys</b></td>
+					</tr>
+				</table>
+
+				<p>
+					To adjust their calendar they used <em>the Sothic cycle</em> as a long-term framework to keep it aligned with the seasons. This cycle was based
+					on the rising of the star Sirius (Greek: <gr>Σωθις</gr>, <i>Sothis</i>) and would have emerged later rather than earlier as the Egyptians
+					tracked the calendar’s drift against Sirius’s rising. Every 1460 years, Sirius would appear to rise above the eastern horizon on the same
+					day according to their calendar, marking a cyclical ‘reset’ of their calendar year with the astronomical phenomena. For most of Egypt's
+					history, a year began on <i>I Akhet, day 1</i>. In Ptolemaic times, the first day was <i>1 Thoth</i>.
+				</p>
+
+				<!-- MARK: Chrono
+-->
+
+				<h2 class="pt-10">Chronology in the ancient world</h2>
+
+				<p>
+					The concept of chronology in the ancient world is not as straightforward as it is today, due to the presence of several inherent
+					complications. In order to establish a chronology, a number of different techniques must be employed.
+				</p>
+
+				<div class="py-10 px-10 md:px-20 text-justify">
+					<h3 class="shine font-light">Regnal years</h3>
+					<p>
+						Administrative documents, production dates, and inscriptions were dated by the regnal year: <em
+							>Reign of King Usermaatra, Year 38, III Akhet, day 20.</em
+						> Regnal years were counted from the day of accession of the king, thus not the same as a civil year. Many ancient cultures used regnal year
+						dating because it provided the most immediate and important dates needed. It was not necessary to know when a particular ancestor ruled, especially
+						legendary ones from centuries ago. When one pharaoh succeeded another, the civil year would change in the middle of the year, overlapping the
+						last year of the previous king with the first year of the new ruler, which meant that Year 1 could range from a few days to almost a whole
+						year.
+					</p>
+
+					<!-- MARK: Sync
+-->
+					<h3 class="shine font-light">Synchronisms</h3>
+					<p>
+						Ancient cultures used a wide variety of calendars, the simplest and most common being the lunar calendar. Because each culture had its own
+						system, it is very difficult to convert and synchronise dates between two or more calendars, especially as the accuracy of the records was
+						of varying quality &ndash; where such records exist at all. An example of a synchronism, diplomatic correspondence between kings, was
+						unearthed in the ruins of Akhetaten, buried when the ephemeral capital was razed and abandoned. The correspondence provides the names of
+						the kings of two kingdoms and establishes a chronological starting point, thereby allowing the texts to be synchronised to a specific
+						time.
+					</p>
+					<!-- MARK: Kinglists
+-->
+					<h3 class="shine font-light">King lists</h3>
+					<p>
+						Documented sequences of kings are very rare, and dated chronological lists even more so, as chronology in the modern sense was unheard of
+						in the ancient world. One of the earliest known lists is <em>Ptolemy's Canon of Kings</em>, a chronological list of the Kings of
+						Mesopotamia, collected in the 3rd century BC from older sources. The foundation of Egyptian chronology is provided by the very fragmentary <a
+							href="/ancient-egypt/kinglist/turin">Turin King List</a
+						>, a papyrus roll from the 12th century BC detailing the order and duration of the reigns of more than 200 Egyptian pharaohs.
+					</p>
+					<p>
+						Temple and tomb inscriptions frequently include the date of the ruling pharaoh when it was made. However, but this only indicate a minimum
+						duration of that reign. For instance, the <a href="/ancient-egypt/curiosities/battle-of-kadesh">Battle of Kadesh</a> inscription begin with:
+						<em>“Year 5, third month of the harvest season, day 9, under the Majesty of Ramesses II ...”</em><br />
+						Furthermore, labelled goods (wine jars etc.) often included the date of production in a similar manner.
+					</p>
+
+					<!-- MARK: Genea
+-->
+
+					<h3 class="shine font-light">Genealogies</h3>
+					<p>
+						Tombs of highly ranked officials often included a record of their ancestry and under which king they served. Furthermore, administrative
+						documents allows scholars to map out families that can verify or act as controls for disputed or lesser known reigns.
+					</p>
+
+					<h3 class="shine font-light">Archaeological records</h3>
+					<p>
+						Archaeology provides an invaluable archive of human history, offering tangible evidence that links objects, structures, and other cultural
+						materials to specific time periods and civilisations. The application of scientific techniques, such as radiocarbon dating, enhances the
+						accuracy of these records by establishing more precise timelines, thus enabling archaeologists to situate discoveries within a broader
+						historical context. It is important to note that archaeology only provides the physical evidence, while scientific methods and historical
+						context offer the precise dating.
+					</p>
+
+					<h3 class="shine font-light">Astronomical records</h3>
+					<p>
+						Astronomical records were a crucial step in planning and preparing for important future events, including festivals dedicated to the gods,
+						and played an important role in agriculture, helping to predict the seasons, plan planting and harvesting crops, and thus ensuring
+						survival. Modern techniques have made it possible to accurately date descriptions of ancient astronomical events.
+					</p>
+				</div>
+
+				<h2 class="pt-10">Ptolemy's Canon of Kings</h2>
+				<!-- https://en.wikipedia.org/wiki/Canon_of_Kings https://www.british-israel.us/418.html -->
+				<p>
+					<a href="https://en.wikipedia.org/wiki/Ptolemy" target="_blank">Ptolemy of Alexandria</a>, who flourished under Roman rule in the second
+					century AD, compiled a list of kings, noting the length of their reigns. It is likely that this list was based on even older lists. This
+					important list ancient kings was used by astronomers as a practical manner of dating astronomical events. Known as <em>Ptolemy’s Canon</em
+					>,<button popovertarget="pop01">1</button> it has been preserved by multiple succeeding authors, who often supplemented it with up-to-date knowledge
+					from their own times. Historians generally regard the Canon to be accurate, and it forms the foundation of ancient chronology from 747 BC forward,
+					to which all other datings are synchronised.<br />
+				</p>
+				<p class="font-sans">
+					<b>The Canon is divided into four sections:</b>
+					<br />20 <i>Babylonian Kings</i> were followed by 10 <i>Persian Kings</i> (538–332 BC) that conquered Mesopotamia. The list was continued by
+					astronomers in Alexandria, detailing first the <i>Macedonian Kings</i> (331–305 BC), followed by the 10 <i>Ptolemies of Egypt</i> (304–30 BC).
+				</p>
+
+				<!-- MARK: Table
+-->
+				<table class="tbl my-10 w-full">
+					<tbody>
+						<tr>
+							<th class="font-sans !font-light">Name (in Greek)</th>
+							<th class="font-sans !font-light">Transliteration</th>
+							<th class="!text-center font-sans !font-light">Reign</th>
+							<th class="!text-center font-sans !font-light">Total</th>
+							<th class="!text-center font-sans !font-light">Year <small>(BC)</small></th>
+						</tr>
+						<tr>
+							<td colspan="5" class="text-red-900 h-14 text-center text-xl dark:text-amber-200">Babylonian Kings</td>
+						</tr>
+						<tr>
+							<td class="gr">Ναβονασσάρου</td>
+							<td>Nabonassaros</td>
+							<td> 14 </td>
+							<td>14</td>
+							<td> 747–734 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ναδίου</td>
+							<td>Nadios</td>
+							<td> 2 </td>
+							<td>16</td>
+							<td> 733–732 </td>
+						</tr>
+						<tr>
+							<td class="gr">Χινζηρος και Πώρου</td>
+							<td>Khinzer and Poros</td>
+							<td> 5 </td>
+							<td>21</td>
+							<td> 731–727 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ιλουλαίου</td>
+							<td>Iloulaios</td>
+							<td> 5 </td>
+							<td>26</td>
+							<td> 726–722 </td>
+						</tr>
+						<tr>
+							<td class="gr">Μαρδοκεμπάδου</td>
+							<td>Mardokempados</td>
+							<td> 12 </td>
+							<td>38</td>
+							<td> 721–710 </td>
+						</tr>
+						<tr>
+							<td class="gr">Αρκεανου</td>
+							<td>Sargon II <i>(Arkeanos)</i></td>
+							<td> 6 </td>
+							<td>43</td>
+							<td> 709–704 </td>
+						</tr>
+						<tr>
+							<td class="gr italic">άβασίλευτα</td>
+							<td class="italic">Without a king</td>
+							<td> 2 </td>
+							<td>45</td>
+							<td> 704–703 </td>
+						</tr>
+						<tr>
+							<td class="gr">Βιλίβου</td>
+							<td>Bilibos</td>
+							<td> 3 </td>
+							<td>48</td>
+							<td> 702–700 </td>
+						</tr>
+						<tr>
+							<td class="gr">Απαραναδίου</td>
+							<td>Aparanadios</td>
+							<td> 6 </td>
+							<td>54</td>
+							<td> 699–694 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ρηγεβήλου</td>
+							<td>Rhegebelos</td>
+							<td> 1 </td>
+							<td>55</td>
+							<td> 693 </td>
+						</tr>
+						<tr>
+							<td class="gr">Μεσησιμορδάκου</td>
+							<td>Mesesimordakos</td>
+							<td> 4 </td>
+							<td>59</td>
+							<td> 692–689 </td>
+						</tr>
+						<tr>
+							<td class="gr italic">άβασίλευτα</td>
+							<td class="italic">Without a king</td>
+							<td> 8 </td>
+							<td>67</td>
+							<td> 688–681 </td>
+						</tr>
+						<tr>
+							<td class="gr">Aσαραδινού</td>
+							<td>Esarhaddon <i>(Asaradinos)</i></td>
+							<td> 13 </td>
+							<td>80</td>
+							<td> 680–668 </td>
+						</tr>
+						<tr>
+							<td class="gr">Σαοσδουχίνου</td>
+							<td>Saosdouchinos</td>
+							<td> 20 </td>
+							<td>100</td>
+							<td> 667–648 </td>
+						</tr>
+						<tr>
+							<td class="gr">Κινηλαδάνου</td>
+							<td>Kineladanos</td>
+							<td> 22 </td>
+							<td>122</td>
+							<td> 647–626 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ναβοττολασσάρου</td>
+							<td>Nabopolassaros</td>
+							<td> 21 </td>
+							<td>143</td>
+							<td> 625–605 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ναβοκολασσάρου</td>
+							<td>Nabokolassaros <i>(Nebuchadnezzar II)</i></td>
+							<td> 43 </td>
+							<td>186</td>
+							<td> 604–562 </td>
+						</tr>
+						<tr>
+							<td class="gr">Iλλοαρουδάμου</td>
+							<td>Illoaroudamos</td>
+							<td> 2 </td>
+							<td>188</td>
+							<td> 561–560 </td>
+						</tr>
+						<tr>
+							<td class="gr">Νηριγασολασσάρου</td>
+							<td>Nerigasolassaros</td>
+							<td> 4 </td>
+							<td>192</td>
+							<td> 559–556 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ναβοναδίου</td>
+							<td>Nabonadios</td>
+							<td> 17 </td>
+							<td>209</td>
+							<td> 555–539 </td>
+						</tr>
+						<tr>
+							<td colspan="5" class="text-red-900 h-14 border-t-4 text-center text-xl dark:text-amber-200">Persian Kings</td>
+						</tr>
+						<tr>
+							<td class="gr">Κυρου</td>
+							<td>Kyros <i>(Cyrus the Great)</i></td>
+							<td> 9 </td>
+							<td>218</td>
+							<td> 538–530 </td>
+						</tr>
+						<tr>
+							<td class="gr">Καμβύσου</td>
+							<td>Kambysos <i>(Cambyses II)</i></td>
+							<td> 8 </td>
+							<td>226</td>
+							<td> 529–522 </td>
+						</tr>
+						<tr>
+							<td class="gr">Δαρείου πρώτου</td>
+							<td>Dareios the First <i>(Darius the Great)</i></td>
+							<td> 36 </td>
+							<td>262</td>
+							<td> 521–486 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ξερζου</td>
+							<td>Xerxes <i>(Xerxes I)</i></td>
+							<td> 21 </td>
+							<td>283</td>
+							<td> 485–465 </td>
+						</tr>
+						<tr>
+							<td class="gr">Aρταζερξου πρώτου</td>
+							<td>Artaxerxes I</td>
+							<td> 41 </td>
+							<td>324</td>
+							<td> 464–424 </td>
+						</tr>
+						<tr>
+							<td class="gr">Δαρείου δευτέρου</td>
+							<td>Dareios <i>(Darius II)</i></td>
+							<td> 19 </td>
+							<td>343</td>
+							<td> 423–405 </td>
+						</tr>
+						<tr>
+							<td class="gr">Αρταξερξου δευτέρου</td>
+							<td>Artaxerxes II</td>
+							<td> 46 </td>
+							<td>389</td>
+							<td> 404–359 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ωχου</td>
+							<td>Ochos <i>(Artaxerxes III)</i></td>
+							<td> 21 </td>
+							<td>410</td>
+							<td> 358–338 </td>
+						</tr>
+						<tr>
+							<td class="gr">Αρωγού</td>
+							<td>Arogos <i>(Artaxerxes IV)</i></td>
+							<td> 2 </td>
+							<td>412</td>
+							<td> 337–336 </td>
+						</tr>
+						<tr>
+							<td class="gr">Δαρείου τρίτου</td>
+							<td>Dareios the Third <i>(Darius III)</i></td>
+							<td> 4 </td>
+							<td>416</td>
+							<td> 335–332 </td>
+						</tr>
+						<tr>
+							<td class="gr">Αλεξάνδρου Μακεδόνος</td>
+							<td>Alexander the Great</td>
+							<td> 8 </td>
+							<td>424</td>
+							<td> 331–324 </td>
+						</tr>
+						<tr>
+							<td colspan="5" class="text-red-900 h-14 border-t-4 text-center text-xl dark:text-amber-200">Macedonian Kings</td>
+						</tr>
+						<tr>
+							<td class="gr">Φιλίππου</td>
+							<td>Philippos <i>(Philip III Arridaeus)</i></td>
+							<td> 7 </td>
+							<td>7</td>
+							<td> 323–317 </td>
+						</tr>
+						<tr>
+							<td class="gr">Αλεξάνδρου ετερου</td>
+							<td>The other Alexandros <i>(Alexander IV)</i></td>
+							<td> 12 </td>
+							<td>19</td>
+							<td> 316–305 </td>
+						</tr>
+
+						<tr>
+							<td class="gr">Πτολεμαίου Λάγου</td>
+							<td>Ptolemaios Lagos <i>(Ptolemy I Soter)</i></td>
+							<td> 20 </td>
+							<td>39</td>
+							<td> 304–285 </td>
+						</tr>
+						<tr>
+							<td class="gr">Φιλαδελφου</td>
+							<td>Ptolemy II Philadelphus</td>
+							<td> 38 </td>
+							<td>77</td>
+							<td> 284–247 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ευεργέτου</td>
+							<td>Ptolemy III Euergetes</td>
+							<td> 25 </td>
+							<td>102</td>
+							<td> 246–222 </td>
+						</tr>
+						<tr>
+							<td class="gr">Φιλοπάτορος</td>
+							<td>Ptolemy IV Philopator</td>
+							<td> 17 </td>
+							<td>119</td>
+							<td> 221–205 </td>
+						</tr>
+						<tr>
+							<td class="gr">Επιφανούς</td>
+							<td>Ptolemy V Epiphanes</td>
+							<td> 24 </td>
+							<td>143</td>
+							<td> 204–181 </td>
+						</tr>
+						<tr>
+							<td class="gr">Φιλομητορος</td>
+							<td>Ptolemy VI Philometor</td>
+							<td> 35 </td>
+							<td>178</td>
+							<td> 180–146 </td>
+						</tr>
+						<tr>
+							<td class="gr">Ευεργέτου δευτέρου</td>
+							<td>Ptolemy VIII Euergetes II</td>
+							<td> 29 </td>
+							<td>207</td>
+							<td> 145–117 </td>
+						</tr>
+						<tr>
+							<td class="gr">Σωτηρος</td>
+							<td>Ptolemy IX Soter</td>
+							<td> 36 </td>
+							<td>243</td>
+							<td> 116–81 </td>
+						</tr>
+						<tr>
+							<td class="gr">Διονύσου νέου</td>
+							<td>Ptolemy XII Auletes Dionysos Neos</td>
+							<td> 29 </td>
+							<td>272</td>
+							<td> 80–52 </td>
+						</tr>
+						<tr>
+							<td class="gr">Κλεοπάτρας</td>
+							<td>Kleopatra <i>(Cleopatra VII)</i></td>
+							<td> 22 </td>
+							<td>294</td>
+							<td> 51–30 </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<img src="/images/VAT4956.webp" class="float-right w-full py-3 pl-3 sm:w-80 dark:invert" alt="Cuneiform tablet VAT 4956" />
+			<p>
+				<em>The Astronomical Tablet of Nebuchadnezzar II</em><button popovertarget="pop02">2</button> is a cuneiform tablet that details a series of astronomical
+				observations during the 37th year of the Babylonian king's reign. Modern astronomy shows that the only year that matches the dates within centuries
+				is 567 BC. This would mean that the first year of Nebuchadnezzar's reign was 604 BC, which is perfectly consistent with the canon. There are several
+				biblical references to the reign of Nebuchadnezzar II that provide a link with Hebrew chronology, which together with other contemporary king lists
+				further confirm the validity of Ptolemy's sequence of kings, providing reasonably accurate dates as going back to 747 BC.
+			</p>
+
+			<!-- MARK: Julian
+-->
+
+			<h2 class="pt-10">The Julian calendar</h2>
+
+			<p>
+				When administering the rapidly expanding Roman Empire, it became clear that a calendar was needed to coordinate the many local calendars in
+				use. This calendar would be used throughout the Empire. The Romans recognised the Julian calendar's greater accuracy compared to the old
+				Egyptian calendar and adopted it as their primary calendar, which later became the standard for most of the Western world. The Julian calendar
+				added an extra day every four years.
+			</p>
+			<p>
+				Like the Egyptians, the Romans did not number each year sequentially from a specific year, but instead differentated years by naming the two
+				elected consuls in Rome serving a specific year. For example: in the <i>Year of Braccus and Cassius</i>, the Consuls were Cassius and Braccus,
+				and if Cassius served multiple times, the second time his name would have an additional number, <i>Braccus and Cassius II</i>, the third time, <i
+					>Probus and Cassius III</i
+				>, and so on.
+			</p>
+
+			<p>
+				The lists of the elected consuls, <em>the Fasti consulares</em>,<button popovertarget="pop03">3</button> were originally engraved on marble tablets
+				erected in the Roman forum, and survive in the writings of several historical accounts, along with fragments from various places throughout the
+				Empire.
+			</p>
+
+			<!-- MARK: AUC
+-->
+			<p>
+				In the middle of the first century BC, the Roman scholar <a href="https://en.wikipedia.org/wiki/Marcus_Terentius_Varro" target="_blank"
+					>Terentius Varro</a
+				> established a system that place the traditional foundation of Rome as year 1 <em>ab urbe condita</em> (A.U.C.). The year of the founding of the
+				Republic was available from the fasti, and Varro simply added seven generations before that, counting each generation as 35 years (7 × 35 = 245).<button
+					popovertarget="pop04">4</button
+				>
+
+				From <a href="https://en.wikipedia.org/wiki/Cicero" target="_blank">Cicero</a> we learn that <i
+					>according to the annals of the Greeks, Rome was founded in the second year of the seventh Olympiad</i
+				>.<button popovertarget="pop05">5</button>
+			</p>
+			<p>
+				Eratosthenes of Cyrene established the use of the Olympiad and the individually numbered years between them in the third century BC. Olympic
+				dates survive in Eusebius' <i>Chronicon</i>, which attempted to reconcile the events of biblical history with classical historical material,
+				and was only used for historical purposes, never for everyday use. The second part of Chronicon, <i>the Canons</i>, puts the historical
+				material into a parallel timeline, listing the reigning rulers of each nation side-by-side, for every year. Jerome's Latin translation,
+				written in Constantinople around 380, preserves the chonological tables. The original is lost, but survives in copies made by later writers.
+			</p>
+
+			<!-- MARK: Anno
+-->
+			<p>
+				The <em>Anno Domini</em> (AD) was developed by the monk <a href="https://en.wikipedia.org/wiki/Dionysius_Exiguus" target="_blank"
+					>Dionysius Exiguus</a
+				> in 525 AD (A.U.C. 1278), as a result of his work on calculating the date of Easter, but was not widely used until the 9th century. He produced
+				tables with a 19-year cycle for calculating Easter but also years since the birth of Christ, which is the basis of the AD system:
+			</p>
+			<blockquote>
+				<strong>Nineteen year cycle of Dionysius</strong>
+				<small>(Cyclus decemnovennalis Dionysii)</small><br />
+				<i>First Argumentum.</i> On the years of Christ. If you want to find out which year it is since the incarnation of our Lord Jesus Christ, compute
+				fifteen times 34, yielding 510; to these always add the correction 12, yielding 522; also add the indiction of the year you want, say in the consulship
+				of <i>Probus Junior</i>, a 3, yielding 525 years altogether. These are the years since the incarnation of the Lord.
+			</blockquote>
+
+			<p>
+				Consulting Dionysius’ Easter table, which includes years in the era of the Roman emperor Diocletian, we see that Probus was consul in the year
+				241 of Diocletian. Subtracting 241 from 525 gives 284, the year in which Diocletian became emperor.
+			</p>
+
+			<p>
+				Although Moses was a first-hand witness to what he wrote, the Bible is not very helpful as it does not name the Pharaohs in the time of Moses
+				and Joseph. However, a few Late Period pharaohs were named: <i>Shishak</i> (1 Kings 11:40), <i>Tirhakah</i> (2 Kings 19:9), <i>Hophra</i> (Jeremiah
+				44.30), and <i>Neco</i> (2 Kings 23:29).
+
+				<!--
+				<p>
+					https://en.wikipedia.org/wiki/Egyptian_chronology
+					https://en.wikipedia.org/wiki/Chronology_of_the_ancient_Near_East
+					http://adamoh.org/TreeOfLife.wan.io/OTCh/PtolemysCanonAndAlmagestQuestioned.htm
+
+					https://en.wikipedia.org/wiki/Egyptian_calendar
+					https://creation.com/egypt-chronology#syncing-other-cultures
+					https://creation.com/fall-of-the-sothic-theory-egyptian-chronology-revisited
+
+					http://www.gautschy.ch/~rita/archast/sirius/siriuseng.htm
+				</p>
+				-->
+
+				<!-- MARK: Sync events
+-->
+				<h2 class="pt-10">Syncronizing events and calendars</h2>
+				<p class="lead">
+					So, with that out of the way, how do we go about to establish a chronological link between today and a pharaoh? We could simply look it up
+					in a book on the subject, but that does not actually teach us anything. Instead, we will trace the path and then actually walk that path.
+					It's important to acknowledge the role of Roman influence in the study of ancient chronology, as most surviving texts have passed through a
+					Roman "filter", influencing the development of our understanding of ancient history.
+				</p>
+
+				<h3>Chronology</h3>
+				<ul class="relative mx-auto mb-10 w-5/6 border-l border-stone-300 font-sans dark:border-shark-700">
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">{nu}</span><br />
+						<p class="timetxt">The current year.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">1582</span><br />
+						<p class="timetxt">The Gregorian calendar adopted. All dates before this use the Julian calendar.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">643</span><br />
+						<p class="timetxt">
+							Arabic-Greek <i>Papyrus PERF 558</i> is dated by Islamic (1 Jumada al-Thani 22 AH) and Coptic (30 Baramudah I, 360 AM) dates, corresponding
+							to 25 April 643.
+						</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">525</span><br />
+						<p class="timetxt">
+							Dionysius developed <i>Anno Domini</i> in 525 = A.U.C. 1278 = 241 <i>Anno Martyrum.</i>
+						</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">284</span><br />
+						<p class="timetxt">
+							The Alexandrian calendar used by the Coptic church start in 284 AD, and is year 1 Anno Martyrum &ndash; the year Diocletian became Roman
+							Emperor.
+						</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">27 BC</span><br />
+						<p class="timetxt">Octavian becomes Augustus, the first Roman emperor.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">30 BC</span><br />
+						<p class="timetxt">The last pharaoh of Egypt, Cleopatra, is defeated by Octavian and commits suicide.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">509 BC</span><br />
+						<p class="timetxt">Rome becomes a republic = A.U.C. 245.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">747 BC</span><br />
+						<p class="timetxt">
+							The first Babylonian king Nabonassaros of Ptolemy's Canon of Kings started his reign 696 years before Cleopatra started hers.
+						</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">753 BC</span><br />
+						<p class="timetxt">The traditional foundation of Rome = A.U.C. 1.</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">763 BC</span><br />
+						<p class="timetxt">
+							June 15 solar eclipse in Sicily is used to fix the chronology of the Ancient Near East. <small>(Diod. 20.5.5)</small>
+						</p>
+					</li>
+					<li class="mb-3 ml-6">
+						<div class="timebtn"></div>
+						<span class="text-lg font-bold dark:text-shark-100">776 BC</span><br />
+						<p class="timetxt">First Olympiad.</p>
+					</li>
+				</ul>
+
+				<p>
+					Chronology becomes increasingly unreliable the further back in time you go, as records become scarce or sketchy. This is not to say that it
+					is impossible &ndash; historians are some very clever people and they have managed to find very elusive evidence to form a coherent and
+					working chronology for very ancient times. However, it is not always possible or necessary to establish exact dates.
+				</p>
+
+				<!--	
+						http://thelatinlibrary.com/livius/	 
+						https://en.wikipedia.org/wiki/List_of_Roman_consuls
+						http://thelatinlibrary.com/hydatiusfasti.html
+				-->
+				<!-- MARK: Cleopatra
+-->
+				<h2 class="pt-10"><b class="font-serif italic">Cleopatra</b>, the last of the Pharaohs</h2>
+				<p>
+					We know from Plutarch that during Octavian's fifth consulship, which he shared with Antony, Octavian defeated Cleopatra and Antony in Egypt.<button
+						popovertarget="pop06">6</button
+					> This was <i>before</i> he was given the title Augustus, which is clear as he was still known simply as (Imperator) Caesar.
+				</p>
+
+				<div
+					class="text-red-800 float-right m-5 hidden w-1/2 text-balance p-3 text-center font-sans text-2xl font-bold uppercase tracking-wider md:block dark:text-amber-200"
+				>
+					Ancient chronology is linked to ours by direct or indirect synchronisms with Roman dates.
+				</div>
+
+				<!--
+	https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html
+	Merton Codex 315 at Bodleian at Oxford
+	https://tinyurl.com/merton315
+	https://www.tertullian.org/fathers/jerome_chronicle_02_part1.htm
+-->
+
+				<p>
+					<i>The Fasti Capitolini</i> have a gap for the years around the fifth consulship, but the <i>The Chronograph of 354</i> records it in AUC 725,
+					but with Appuleius, as do the <i>Fasti of Hydatius</i>, but with Pulchro (alt. Appuleius). This is typical of antiquity - conflicting and/or
+					incomplete information.
+				</p>
+				<p>
+					<i>The Chronicon Paschale</i> tells us that Augustus (Octavian) landed in Egypt AUC 727 (<i>Anno Mundi</i> 5477) and halted the reign of the
+					Ptolemies, which had lasted 296 years, <!--(p. 364) -->
+					which according to <i>Ptolemy's Canon of Kings</i> lasted 294 years.
+				</p>
+
+				<p>
+					As we have learned above, AUC 1278 = 525 AD. There are 553 years between AUC 725 and AUC 1278. Subtracting 525 AD from those 553 years yield
+					-28. Since there was no year zero, we have to increase it by one, and thus we arrive at -29 = 29 BC ≈ 30 BC, the date commonly used by
+					historians.
+				</p>
+
+				<!-- CIL = Corpus Inscriptionum Latinarum -->
+				<p>
+					<!--
+						It is well known that Julius Caesar was murdered on the <i>Ides of March</i> in AUC 710. From this we can extrapolate the years of Cleopatra, AUC 702 = 51 BCE, and AUC 724 = 30 BCE. (The consuls for AUC 702 were Servius Sulpicius Rufus and Marcus Claudius Marcellus, and for AUC 702 Octavian and Marcus Tullius Cicero.) But hold on, we have not determined how we arrive at the BCE.
+					Strabo and Plutarch
+					https://en.wikipedia.org/wiki/Anno_Mundi
+					https://en.wikipedia.org/wiki/Era_of_the_Martyrs
+					https://en.wikipedia.org/wiki/Ab_urbe_condita
+
+					https://archive.org/details/oxfordcompaniont00blac/page/778/mode/2up?view=theater
+					https://archive.org/details/timecalendars0000onei/page/69/mode/1up
+
+					Dionysius Exiguus: Liber de pascate sive cyclus paschalis
+					in: Patrologiae cursus completus, Series Latina,
+					vol. LXVII, col. 453 sqq., ed. J.-P. Migne, Paris 1848
+					https://archive.org/details/patrologiaecursu67mign/page/246/mode/2up
+					https://www.fh-augsburg.de/~harsch/Chronologia/Lspost06/DionysiusExiguus/dio_lp00.html
+					https://web.archive.org/web/20000925105639/http://hermes.ulaval.ca/~sitrau/calgreg/denys.html
+					-->
+				</p>
+
+				<p>
+					<!-- <br />
+					From the <i>fasti consulares</i> we get the corresponding Christian year, AD 284. Petavius proceeded in this manner in 1627.<br
+					/><br />
+					Ideler, instead, made use of an astronomical observation which is dated synchronistically: 81 years from Diocletian = 1,112 years from Nabonassar (Canon of the Kings). The equation gives AD 284 as the first year of Diocletian’s rule.<br /><br />
+					In order to fix the first year of the emperor, Scaliger (<i>De emendatione temporum</i>, V) in 1582 established that the Coptic church, in continuing to calculate the era of Diocletian, equated AD 1582 (from 29 August) with the 1299th year of Diocletian.<br
+					/><br /> -->
+					All Roman dates, if they are complete and reliable, can be directly expressed in Julian years. All the other datings of ancient chronology are
+					linked to our reckoning by direct or indirect synchronisms with Roman dates.
+				</p>
+			</p>
+		</div>
+
+		<h3 class="shine hidden text-wrap print:block">References</h3>
+		<div id="pop01" popover>
+			<p>1</p>
+			<a href="https://www.livius.org/articles/concept/ptolemys-canon/" target="_blank">Ptolemy's Canon</a> at livius.org.
+		</div>
+		<div id="pop02" popover>
+			<p>2</p> Cuneiform astronomical tablet <a href="https://www.lavia.org/english/Archivo/VAT4956en.htm" target="_blank">VAT 4956<a></a></a>
+		</div>
+		<div id="pop03" popover>
+			<p>3</p> List of preserved consuls in the mid-16th century manuscript <b>Codex Vindobonensis 3416</b> in Vienna, aka. <a
+				href="https://www.tertullian.org/fathers/chronography_of_354_08_fasti.htm"
+				target="_blank">The Chronography of 354.</a
+			>
+		</div>
+		<div id="pop04" popover><p>4</p> Cornell, Tim. J., 1995. <i>The beginnings of Rome.</i> London: Routledge. p. 73.</div>
+		<div id="pop05" popover><p>5</p> Cicero, <i>The Republic</i>, 2.18</div>
+		<div id="pop06" popover><p>6</p> Plutarch, <i>Life of Antony</i> 11 &amp; 30.</div>
+	</section>
+</Layout>
+
+<style>
+	.tbl td:nth-child(3),
+	.tbl td:nth-child(4),
+	.tbl td:nth-child(5) {
+		font-family: var(--sans);
+		font-size: 90%;
+		font-feature-settings: "tnum" 1;
+		text-align: right;
+		padding-right: 0.75rem;
+	}
+	.timebtn {
+		position: absolute;
+		left: calc(var(--spacing) * -2) /* -0.5rem = -8px */;
+		margin-top: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+		height: calc(var(--spacing) * 4) /* 1rem = 16px */;
+		width: calc(var(--spacing) * 4) /* 1rem = 16px */;
+		border-radius: calc(infinity * 1px);
+		border-style: var(--tw-border-style);
+		border-width: 1px;
+	}
+	.timetxt {
+		padding-bottom: calc(var(--spacing) * 5) /* 1.25rem = 20px */;
+		padding-left: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+		padding-top: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+		text-align: justify;
+		font-family: var(--font-serif);
+		font-size: var(--text-base) /* 1rem = 16px */;
+		line-height: var(--tw-leading, var(--text-base--line-height) /* calc(1.5 / 1) ≈ 1.5 */);
+		--tw-leading: calc(var(--spacing) * 6) /* 1.5rem = 24px */;
+		line-height: calc(var(--spacing) * 6) /* 1.5rem = 24px */;
+	}
+
+	.text-upright {
+		text-orientation: upright;
+	}
+	.text-vertical {
+		writing-mode: vertical-lr;
+	}
+</style>
