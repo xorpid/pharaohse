@@ -75,7 +75,7 @@ Traces have been found of a number of predynastic kings of ancient Egypt, many o
 	</tbody>
 </table>
 
-<h2 class="mt-10 text-wrap">The Predynastic kings according to <a href="/kinglists/manetho">Manetho</a></h3>
+<h2 class="mt-10 text-wrap">The Predynastic kings according to <a href="/authors/manetho">Manetho</a></h3>
 
 Neither Africanus nor Eusebius preserve any predynastic names or dates. According to Syncellus, the <a href="/kinglists/syncellus">Book of Sothis</a> was written by Manetho, though modern scholars consider it a much later forgery, and it only names Gods and demigods.
 

@@ -1,6 +1,25 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import pharaohs from "../../data/pharaohs.json";
+import hieroglyphs from "../../data/hieroglyphics.json";
+
+// Transliterate function
+function Translit(inn: string): string {
+	const translitMap: Record<string, string> = {
+		A: "Ꜣ",
+		a: "Ꜥ",
+		D: "ḏ",
+		x: "ḫ",
+		X: "ẖ",
+		q: "ḳ",
+		T: "ṯ",
+		S: "š",
+		H: "ḥ",
+		j: "ꞽ",
+		ii: "y",
+	};
+	return Object.keys(translitMap).reduce((str, key) => str.replaceAll(key, (translitMap as Record<string, string>)[key]), inn);
+}
 
 export async function getStaticPaths() {
 	return pharaohs.map((p) => ({
@@ -10,6 +29,18 @@ export async function getStaticPaths() {
 }
 
 const { pharaoh } = Astro.props;
+
+// Find all hieroglyphs for this pharaoh (matching 'no' to 'farao')
+const phNo = Number(pharaoh.no);
+const glyphs = hieroglyphs.filter((h) => h.farao === phNo);
+
+// Group by 'titel'
+const glyphGroups: Record<string, any[]> = {};
+for (const glyph of glyphs) {
+	const key = glyph.titel;
+	if (!glyphGroups[key]) glyphGroups[key] = [];
+	glyphGroups[key].push(glyph);
+}
 
 /* These will be sent to Layout for page name and meta tags */
 const title = pharaoh.name;
@@ -24,5 +55,82 @@ const dynnr = "/dynasty/" + pharaoh.dynasty;
 	<h1 class="text-3xl font-bold pb-4">{pharaoh.name}</h1>
 	<p>Dynasty: <a href={dynnr}>{pharaoh.dynasty}</a></p>
 	{pharaoh.reign && <p>{pharaoh.reign}</p>}
-	{pharaoh.description && <article class="mt-4">{pharaoh.description}</article>}
+	{pharaoh.description && <article class="mt-4" set:html={pharaoh.description} />}
+
+	{
+		Object.keys(glyphGroups).length > 0 && (
+			<section class="mt-8">
+				<h2 class="text-xl font-bold mb-4">Hieroglyphs</h2>
+				{Object.entries(glyphGroups).map(([titel, glyphs]) => {
+					const titelMap = [
+						"", // 0 (unused)
+						"Horus", // 1
+						"Nebty", // 2
+						"Golden Falcon", // 3
+						"Prenomen", // 4
+						"Nomen", // 5
+						"none", // 6
+						"Throne & Nomen", // 7
+						"Autokrator", // 8
+						"Kaisaros", // 9
+						"Autokaisaros", // 10
+					];
+					const titelLabel = titelMap[Number(titel)] || titel;
+					return (
+						<div class="mb-6">
+							<h3 class="text-lg font-semibold mb-2"> {titelLabel}</h3>
+							<div class="grid gap-4">
+								{((glyphs as any[]) ?? []).map((g) => (
+									<div class="card">
+										<div class="mt-1">
+											<img src={`/svg/pharaoh/${g.hiero}.svg`} alt={g.name} class="dark:invert h-14 max-h-24 my-2" />
+										</div>
+										{g.name && (
+											<div
+												class="hieroname"
+												set:html={
+													g.name.endsWith("*")
+														? `${g.name.slice(0, -1)}<abbr class="opacity-50" title=\"Not contemporaneous, later designation.\">*</abbr>`
+														: g.name
+												}
+											/>
+										)}
+										{g.tlit && <div class="text-sm tlit" set:html={Translit(g.tlit)} />}
+										{g.translation && <div class="text-sm">{g.translation}</div>}
+										<div
+											class="border-t mt-2 pt-2 text-xs"
+											set:html={[
+												g.source,
+												g.lepsius && `Lepsius: ${g.lepsius}`,
+												g.beckerath && `Beckerath: ${g.beckerath}`,
+												g.baker && `Baker: ${g.baker}`,
+												g.turin && `Turin: ${g.turin}`,
+												g.gardiner && `Gardiner: ${g.gardiner}`,
+												g.abydos && `Abydos Canon No. ${g.abydos}`,
+												g.saqqara && `Saqqara Canon No. ${g.saqqara}`,
+												g.karnak && `Karnak Canon No. ${g.karnak}`,
+											]
+												.filter(Boolean)
+												.join("<br>")}
+										/>
+									</div>
+								))}
+							</div>
+						</div>
+					);
+				})}
+			</section>
+		)
+	}
 </Layout>
+<style>
+	.hieroname {
+		font-size: var(--text-2xl);
+		font-weight: var(--font-weight-light);
+		i {
+			font-style: italic;
+			font-size: var(--text-xl);
+			color: light-dark(var(--dim), var(--dark-dim));
+		}
+	}
+</style>

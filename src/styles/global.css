@@ -11,6 +11,7 @@
 		"Noto Sans", "sans-serif";
 	--font-serif: "Merriweather", "Harding", "ui-serif", "Cambria", "Georgia", "Times New Roman", "Times", "serif";
 	--font-mono: "Courier New", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Liberation Mono", "Consolas", "monospace";
+	--font-tlit: "Noto Serif", Cambria, serif;
 
 	--fontsize: 20px;
 	--content-max-width: 960px;
@@ -32,6 +33,7 @@
 	--bg: var(--color-stone-200);
 	--bg-dark: var(--color-stone-300);
 	--tx: var(--color-stone-800);
+	--dim: var(--color-stone-600);
 	--link: var(--color-red-900);
 	--link-hover: var(--color-red-800);
 	--link-visited: var(--color-stone-500);
@@ -44,6 +46,7 @@
 	--dark-bg: var(--color-neutral-900);
 	--dark-bg-dark: var(--color-neutral-950);
 	--dark-tx: var(--color-neutral-200);
+	--dark-dim: var(--color-neutral-400);
 	--dark-link: var(--color-sky-300);
 	--dark-link-hover: var(--color-sky-400);
 	--dark-link-visited: var(--color-neutral-400);
@@ -140,6 +143,18 @@
 	.text {
 		color: light-dark(var(--text), var(--dark-text));
 	}
+	.dim {
+		color: light-dark(var(--dim), var(--dark-dim));
+	}
+	.primary {
+		color: light-dark(var(--primary), var(--dark-primary));
+	}
+	.secondary {
+		color: light-dark(var(--secondary), var(--dark-secondary));
+	}
+	.highlight {
+		color: light-dark(var(--highlight), var(--dark-highlight));
+	}
 
 	h1 {
 		font-size: var(--text-5xl);
@@ -156,6 +171,10 @@
 	h3 {
 		font-size: var(--text-2xl);
 		line-height: var(--text-2xl--line-height);
+	}
+	abbr {
+		cursor: pointer;
+		text-decoration: none;
 	}
 }
 
@@ -175,9 +194,9 @@
 		--tlit-dark: var(--color-orange-300);
 
 		color: light-dark(var(--tlit-light), var(--tlit-dark));
+		font-family: var(--font-tlit);
 		font-style: italic;
-		letter-spacing: 0.05em;
-		font-family: "Noto Serif", Cambria, serif;
+		letter-spacing: 0.08em;
 	}
 
 	d {
