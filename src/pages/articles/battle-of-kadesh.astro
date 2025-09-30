@@ -1,0 +1,471 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import img01 from "/images/Kadesh-iMonumenti-087.webp";
+import img01t from "/images/Kadesh-iMonumenti-087t.webp";
+import img02 from "/images/Kadesh-iMonumenti-087b.webp";
+import img03 from "/images/Kadesh-1832.webp";
+import img03t from "/images/Kadesh-1832t.webp";
+import img04 from "/images/Kadesh-1838.webp";
+import img04t from "/images/Kadesh-1838t.webp";
+import img05 from "/images/Kadesh-1849-LD3-187cd.webp";
+import img05t from "/images/Kadesh-1849-LD3-187cdt.webp";
+import img06 from "/images/Kadesh-Atlas-176.webp";
+import img06t from "/images/Kadesh-Atlas-176t.webp";
+import img07 from "/images/Kadesh-LD-Text5-151.webp";
+import img07t from "/images/Kadesh-LD-Text5-151t.webp";
+import img08 from "/images/Kadesh-AbuSimbel-cutting.webp";
+import img09 from "/images/Kadesh-1968-a.webp";
+import img09t from "/images/Kadesh-1968-at.webp";
+import img10 from "/images/Kadesh-2019-Luxor.webp";
+import img10t from "/images/Kadesh-2019-Luxort.webp";
+import img11 from "/images/Kadesh-2021-AbuSimbel-3D1.webp";
+import img12 from "/images/Kadesh-2021-AbuSimbel-3D2.webp";
+
+const title = "The Battle of Kadesh";
+
+const nu = new Date().getFullYear();
+const da = 1274;
+const age = nu + da - 1; /* there was no Year 0, so da minus 1 */
+
+let meta1 =
+	"The Battle of Kadesh took place in 1274 BC and was led personally by pharaoh Ramesses II. This is the information directly from the hieroglyphic record, and where to find the sources.";
+let meta2 = "battle of Kadesh,battle of Qadesh,quadesh,1274 BC,ramesses ii,hieroglyphs,sources,bibliography";
+const bild = "https://pharaoh.se/images/pharaohse-kadesh.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<p class="lead">
+			The <i>Battle of Kadesh</i>, led by <a href="/pharaohs/Ramesses-II">Ramesses II</a>, took place <b>{age} years ago</b> (1274 BC) and is the first
+			battle where the strategies and forces are known.
+		</p>
+
+		<p>
+			The inscriptions are preserved on the walls of ancient Egyptian monuments depicting details of the conflict between Egypt and the Hittites,
+			culminating in the battle of Kadesh, a walled city that was located near the modern Lebanon-Syria border. The reliefs are obviously composed
+			from an Egyptian perspective, glorifying pharaoh Ramesses II, and proclaim victory though the battle likely ended in a draw. Only the <i
+				>Battle of Megiddo</i
+			> (1479 BC), led by <a href="/pharaohs/Thutmose-III">Thutmose III</a>, is older, but without much detail.
+		</p>
+
+		<figure class="py-10">
+			<a href="/images/Kadesh-iMonumenti-087.webp" data-fancybox="gallery" data-caption="Battle of Kadesh"
+				><img src="/images/Kadesh-iMonumenti-087t.webp" alt="scene" class="w-full" />
+			</a>
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 1: Rosellini, <i>I Monumenti</i>, plate 87. Battle of Kadesh.
+			</figcaption>
+		</figure>
+
+		<p>
+			The battle is documented in two primary accounts known as <i>the Poem</i> and <i>the Bulletin</i>, both of which are supplemented by pictorial
+			reliefs depicting scenes from the battle with explanatory captions close-by. In the Ramesses II temples at Abu Simbel, Abydos, Luxor, Karnak,
+			and the Ramesseum, the Bulletin appears seven times and the Poem eight times. The texts are not identical, some parts were omitted at the
+			various temples due space constraints.
+		</p>
+
+		<div class="">
+			<div class="">
+				<h3>The Poem</h3>
+				<p>
+					In the so-called Poem (which is not really a poem) Ramesses II is shown as a fearless warrior-king who wins the battle versus the Hittites
+					and their allies solely due to bravery and wits. It is present at Karnak, the Ramesseum, Luxor and Abydos, but absent at Abu Simbel due to
+					limited available space.
+				</p>
+				<ul class="px-2 py-7">
+					<li>
+						<span class="uppercase font-sans">Abydos</span> (A) &mdash; Outer walls. 96 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Karnak</span> (K1) &mdash; 73 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Karnak</span> (K2) &mdash; 134 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Ramesseum</span> (R) &mdash; Pylon II, North tower, front face. Few remains of 60 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (L1) &mdash; Pylon I, front face. 90 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (Lp) &mdash; Partial remains of columns 37-52.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (L2) &mdash; East wall. 81 columns.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (L3) &mdash; West wall. 100 columns. Almost entirely lost.
+					</li>
+				</ul>
+
+				<h3>The Bulletin</h3>
+				<p>
+					A campaign record, essentially a lengthy caption accompanying the reliefs describing the major events. Tells how Ramesses II single-handedly
+					defeats the Hittites when his troops abandon him on the battlefield. Also referred to as <em>the Record</em>.
+				</p>
+				<ul class="px-2 py-7">
+					<li>
+						<span class="uppercase font-sans">Abydos</span> (A) &mdash; Partial remains of columns 16 to 19.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Abu Simbel</span> (I) &mdash; The Great Hall, northern wall. 45 col.
+					</li>
+					<!--Sources: LD, Mon, Mon., Stor, Wrez.-->
+					<li>
+						<span class="uppercase font-sans">Ramesseum</span> (R1) &mdash; Pylon I, North tower, rear face. 25 col.
+					</li>
+					<!--Sources: LD III 153. [PM II 433 (3 1)]-->
+					<li>
+						<span class="uppercase font-sans">Ramesseum</span> (R2) &mdash; Second court, North wall. Almost entirely lost.
+					</li>
+					<!-- Quibell, Ramesseum, pl. IV. Kuentz, p. 181-->
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (L1) &mdash; Pylon I, Outer (front) face, southern tower, lower part. 28 col.
+					</li>
+					<!--Sources: <u>No primary source.</u> [PM II 304 (13)]-->
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (Lp) &mdash; Partial remains of 37 col.
+					</li>
+					<li>
+						<span class="uppercase font-sans">Luxor Temple</span> (L2) &mdash; East wall. 25 col.
+					</li>
+				</ul>
+
+				<h3>The campaign reliefs</h3>
+				<p>
+					The prominently displayed and distinct illustrations depicting the campaign are supplemented with short explanatory inscriptions throughout
+					the scenes. The pictorial reliefs are present in the temples at Ramesseum, Karnak, Luxor, Abu Simbel, Derr, and in Ramesses II Temple at
+					Abydos.
+				</p>
+			</div>
+		</div>
+		<h2 class="pt-10">Abu Simbel Great Temple</h2>
+		<p>
+			<i>Great Hall, northern wall. Battle of Kadesh scene.</i>
+		</p>
+		<p>Second scene. The Battle-record run in columns on both sides of Ramesses II seated on throne with fan-bearers, officers and chariots.</p>
+		<p>
+			The <a href="/book-series#champollion">Franco-Tuscan Expedition</a> travelled Egypt in 1828-29, led by Champollion and his good friend Rosellini.
+			On their way back north from visiting Nubia, they stopped at Abu Simbel on 3-12 January 1829, and made detailed copies of the scenes and texts on
+			the walls in the temple. In all, six large paintings of the scenes on the northern wall, and a number of drawings. <small
+				>(<i>Lettres II</i>, 209-214)</small
+			> The scene of the Battle of Kadash is found on Rosellini plates 87 to 102, and on Champollion plates 17bis to 29.
+		</p>
+		<p>
+			The <a href="/book-series#lepsius">Prussian Expedition</a> led by Lepsius visited Abu Simbel in December 1843 but only concerned itself with the
+			hieroglyphics, which can be found on plate III, 187c-d. Egyptologist Walter Wreszinski visited Abu Simbel in March 1926 photographing the temple
+			scenes.
+		</p>
+		<p>
+			Unlike the colourised plates of Champollion and Rosellini, the scene in the temple today show only traces of colours. Two hundred years of
+			exposure to humans have most certainly all but removed most traces of paint, not to mention the dismantling and move of the entire temple in the
+			1964-68.
+		</p>
+
+		<h3>The Bulletin</h3>
+		<p>It is recorded in 45 columns with Ramesses II sitting enthroned in the middle.</p>
+
+		<figure class="py-10">
+			<img src="/images/Kadesh-iMonumenti-087b.webp" alt="scene" class="w-full" />
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 2: The location of the Bulletin in the scene
+			</figcaption>
+		</figure>
+
+		<p>
+			The entire text consists of 45 columns of hieroglyphs, read from right to left, from top to bottom &ndash; 28 before the seated king, and 17
+			behind. Champollion &amp; Rosellini both managed to overlook columns 6 and 33, while Lepsius recorded all 45 columns, but some minor errors
+			crept in that were later corrected in <i>LD Text V, 151</i> (see Fig. 7).
+		</p>
+
+		<div><h2>The facsimiles</h2></div>
+
+		<figure class="py-10">
+			<a href="/images/Kadesh-1832.webp" data-fancybox="gallery" data-caption="Battle of Kadesh 1832"
+				><img src="/images/Kadesh-1832t.webp" alt="Battle of Kadesh 1832" class="w-full" />
+			</a>
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 3: Composite of Rosellini, <em>I Monumenti</em>, plates 100-102.
+			</figcaption>
+		</figure>
+
+		<figure class="py-10">
+			<a href="/images/Kadesh-1838.webp" data-fancybox="gallery" data-caption="Battle of Kadesh 1838"
+				><img src="/images/Kadesh-1838t.webp" alt="Battle of Kadesh 1838" class="w-full" />
+			</a>
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 4: Composite of Champollion, <em>Monuments</em>, i. 27-29
+			</figcaption>
+		</figure>
+
+		<figure class="py-10">
+			<a href="/images/Kadesh-1849-LD3-187cd.webp" data-fancybox="gallery" data-caption="Battle of Kadesh 1849"
+				><img src="/images/Kadesh-1849-LD3-187cdt.webp" alt="Battle of Kadesh 1849" class="w-full" />
+			</a>
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 5: Composite of Lepsius, <em>Denkmäler</em>, iii. 187 c/d
+			</figcaption>
+		</figure>
+
+		<figure class="py-10">
+			<a href="/images/Kadesh-Atlas-176.webp" data-fancybox="gallery" data-caption="Battle of Kadesh scene photo 1935"
+				><img src="/images/Kadesh-Atlas-176t.webp" alt="Battle of Kadesh scene 1935" class="w-full" />
+			</a>
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 6: Photo from Wreszinski, <em>Atlas</em>, ii. 176
+			</figcaption>
+		</figure>
+
+		<div class="text-center">
+			<figure class="py-10">
+				<a href="/images/Kadesh-LD-Text5-151.webp" data-fancybox="gallery" data-caption="Denkmäler corrections by Lepsius"
+					><img src="/images/Kadesh-LD-Text5-151t.webp" alt="Denkmäler corrections by Lepsius" class="mx-auto w-1/2" />
+				</a>
+				<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+					Fig. 7: Corrections to pl. 187 c/d by Lepsius, <em>Denkmäler</em>, Text V, 151
+				</figcaption>
+			</figure>
+		</div>
+
+		<h2>The relocation of Abu Simbel</h2>
+		<p>
+			When the temples of Abu Simbel were relocated in the 1960s, it was necessary to cut the temples and its scenes into large blocks of stone. This
+			was done by using hand saws no thicker than 8 mm; the blocks were then moved and reassembled at the new site, about 200 meters further inland
+			and at 65 meters higher elevation. The alignment to the cardinal directions is exactly the same as before the move.
+		</p>
+
+		<figure class="pt-3 pb-5">
+			<img src="/images/Kadesh-AbuSimbel-cutting.webp" alt="scene" class="w-full" />
+			<figcaption class="font-sans text-sm text-center text-stone-700 dark:text-shark-300 pt-3">
+				Fig. 8: How the northern wall was cut to pieces when dismantled <small>(UNESCO 1968)</small>
+			</figcaption>
+		</figure>
+
+		<div>
+			<h2>The Bulletin text</h2>
+			<p>Ramesseum Bulletin: 25 columns. Kuentz 155-161, LD III pl. 153.</p>
+
+			<p>
+				On the rear face (west face) of the north pylon, above and to the right of the bas-reliefs representing the Egyptian camp and the council of
+				war, is engraved a copy of the Bulletin, in columns (hieroglyphs looking to the right). The east face of the pylon has collapsed on the east
+				side and the west face leans towards the same side and has also partly collapsed: three blocks are currently missing at the top and to the
+				right of this inscription (see fig. 4): block B was already lost at the time of Lepsius, who saw blocks A and C in place; these blocks had in
+				turn disappeared by the time of Bonomi. Block A is the only one visible in the ruins of the pylon on the east side.
+			</p>
+		</div>
+
+		<div class="w-10/12 mx-auto py-12 font-sans">
+			<!-- 				<p>
+					The “line-numbers” given in the text are the modern Bulletin
+					paragraph-numbers used since Kuentz’s edition.
+				</p>
+				-->
+			<p>
+				<b>Year 5, III Shemu, day 9,</b> under the Majesty of: Horus-Falcon, Strong Bull, Beloved of Maat; The Dual King, Usimare Setepenra, Son of Ra,
+				Ramesses II, given life forever. Now, His Majesty was in Syria (Djahy) on his 2nd victorious campaign. A happy awakening in life, prosperity and
+				health, in His Majesty’s tent, on the ridge South of Qadesh.
+			</p>
+			<p>
+				After this, in the early morning, His Majesty appeared as when Ra shines, and he assumed the accoutrements of his father Montu. The Lord <small
+					>[=the King]</small
+				> proceeded North, and (His Majesty) reached the area South of the town of Shabtuna. There came two Shasu, from the Shasu tribesfolk, to say to
+				His Majesty: <i class="glows"
+					>“It is our brothers, who are tribal chiefs with the Fallen One of Hatti, who have sent us to His Majesty, saying: ‘We shall become servants
+					of Pharaoh, LPH, and we shall separate ourselves from the Ruler of Hatti.’”</i
+				>
+			</p>
+			<p>
+				Then said His Majesty to them: <i class="glows">“Where are they, your brothers who [se]nt you to speak of this matter to His Majesty?”</i> Then
+				said they to His Majesty: <i class="glows"
+					>“They are where the despicable Chief of Hatti is, for the Fallen One of Hatti is in the land of Aleppo, to the North of Tunip. He feared
+					Pharaoh, LPH, too much to come southward, when he heard that Pharaoh, LPH, was coming northward.”</i
+				>
+			</p>
+
+			<p>
+				Now, these (two) Shasu said these things, and lied to His Majesty. (For) it was the Fallen One of Hatti who had sent them, to find out ("see")
+				where His Majesty was, so as to prevent His Majesty’s army from being prepared to fight with the Fallen One of Hatti. Now, the Fallen One of
+				Hatti had sent the Shasu to say these things to His Majesty, having come with his troops and chariotry, along with the rulers of every land
+				that was in the territory of the land of Hatti, and their troops and chariotry, which he had brought with him as allies, to fight with His
+				Majesty’s army, he standing ready and prepared behind Old Qadesh - but His Majesty did not know that they were there. The two Shasu who were
+				in the (royal) presence were interrogated(?)
+			</p>
+
+			<p>
+				So, His Majesty travelled on northward, arriving at the north-west of Qadesh. The camp of His Majesty’s army was pitched there, and His
+				Majesty sat on the throne of electrum, to the North of Qadesh, on the West side of the (river) Orontes. Then came a scout who was in His
+				Majesty’s service, bringing in two scouts of the Fallen One of Hatti; they were ushered into the (royal) presence.
+			</p>
+
+			<p>
+				Then said His Majesty to them: <i class="glows">“What are you?”</i><br />
+				What they said: <i class="glows">“We belong to the Ruler of Hatti - he it is who sent us, to see where His Majesty is.”</i><br />
+				His Majesty said to them: <i class="glows"
+					>“Where is he himself, the Ruler of Hatti? See, I have heard that he is in the land of Aleppo, to the North of Tunip.”</i
+				>
+			</p>
+			<p>
+				They said [to] His Majesty: <i class="glows"
+					>“See, the despicable Ruler of Hatti has (already) come, along with the many foreign lands that accompany him, whom he has brought with him
+					as allies, (from all the foreign lands who belong to the area of Hatti):<br />
+					&nbsp; the land of Dardanaya, the land of Naharina;<br />
+					&nbsp; that of Gasgas, those of Masa, those of Pidassa;<br />
+					&nbsp; the land of Qarqisa, and Lukku, (and) the land of Carchemish;<br />
+					&nbsp; the land of Arzawa, the land of Ugarit, that of Arwanna;<br />
+					&nbsp; the land of Alshe, Mushnatu, and Qadesh;<br />
+					&nbsp; (Aleppo,) and the entire land of Qode.<br />
+					They are furnished with their infantry and chariotry, (bearing their combat-weapons); they are more numerous than the sands of the seashore.
+					See, they stand equipped, ready to fight, behind Old Qadesh!”</i
+				>
+			</p>
+
+			<p>
+				Then His Majesty had the high officers summoned into the (royal) presence, to let them hear all the words that the Fallen One of Hatti’s two
+				spies had spoken.
+			</p>
+
+			<p>
+				His Majesty then said to them: <i class="glows"
+					>“You see the situation (in) which are the garrison-commanders and governors of foreign territories, together with the chiefs of the lands
+					of Pharaoh,</i
+				> LPH, <i class="glows">(that) they stand (there) saying daily to Pharaoh,</i> LPH: <i class="glows"
+					>’The despicable Ruler of Hatti is in the land of Aleppo, north of Tunip, having fled before His Majesty, when he heard (the report)’: “See,
+					Pharaoh has come!” - so they say, speaking to His Majesty daily! But see, I have heard this very hour, from these two spies from the Fallen
+					One of Hatti, that the despicable Fallen One of Hatti has (already) come, with the numerous foreign countries accompanying him, with men and
+					chariotry, as many as the sand (of the shore). See, they stand hidden behind Old Qadesh - so, it is said - and my governors of foreign
+					territories and my chiefs, in whose charge are the lands of Pharaoh, LPH, could not tell us that they [=Hatti] had arrived!”</i
+				>
+			</p>
+
+			<p>
+				The high officers who were in the (royal) presence spoke and replied to the Good [god] thus: <i class="glows"
+					>“(This is) a great crime that the governors of foreign territories and chiefs (of Pharaoh, LPH) have committed, (in) not causing (the
+					location) of the Fallen One of Hatti, wherever he is, to be reported to them, that they might report it to Pharaoh, LPH, daily.”</i
+				><br />
+				Then the Vizier was ordered to hurry-up His Majesty’s army that was (still) marching (from) south of the town of Shabtuna, in order to fetch them
+				to where His Majesty was.
+			</p>
+
+			<p>
+				But (even) as His Majesty sat talking with the high officers, the despicable Fallen One of Hatti came with his troops and his chariotry, and
+				also the numerous foreign lands that were accompanying him. They crossed the ford (just) South of Qadesh, then they entered in amongst His
+				Majesty’s troops as they marched unawares.
+			</p>
+			<p>
+				Then His Majesty’s troops and chariotry quailed before them, on their way North, to where His Majesty was. Then the foes from the Fallen One
+				of Hatti surrounded His Majesty’s subordinates who were by his side.
+			</p>
+
+			<p>
+				Then His Majesty caught sight of them, so he arose quickly. (Then) he raged against them, like his father Montu (Lord of Thebes). He took up
+				his panoply of war, he girded himself with his coat of mail,<br />
+				&nbsp; &nbsp; - he was like Sutekh <small>[Abu Simbel: Baal]</small> in his moment of power. Then he mounted (“Victory-in-Thebes”), his chariot-span,
+				<br />
+				&nbsp; &nbsp; he setting off quickly, being all alone. His Majesty was strong, and his heart firm,<br />
+				&nbsp; &nbsp; none could stand before him. All his patch blazed with fire,<br />
+				&nbsp; &nbsp; he burnt up every foreign land with his hot breath. His eyes became savage when he saw them,<br />
+				&nbsp; &nbsp; his might flared like fire against them. He paid no heed to (even) a million aliens,<br />
+				&nbsp; &nbsp; he looked upon them as on chaff. Then His Majesty entered into the hostile ranks of the fallen ones of Hatti,<br />
+				&nbsp; &nbsp; along with the many foreign lands who were with them,<br />
+				His Majesty being like Sutekh great in strength,<br />
+				&nbsp; &nbsp; like Sekhmet in the moment of her fury.<br />
+				His Majesty slew all the hostile ranks of the despicable Fallen One of Hatti,<br />
+				&nbsp; &nbsp; along with all of his great chiefs and his brothers,<br />
+				&nbsp;&nbsp; likewise all the rulers of all the foreign lands that came with him,<br />
+				&nbsp;&nbsp;&nbsp; and their troops and chariotry, fallen on their faces, one upon another. His Majesty slaughtered and slew them, fallen on the
+				spot,<br />
+				&nbsp; as they (lay) sprawling before his horses,<br />
+				&nbsp;&nbsp; His Majesty being alone, none other with him.<br />
+				So His Majesty forced the hostile ranks of the fallen ones of Hatti to plunge on their faces,<br />
+				&nbsp; sprawling, one upon another, plunging like crocodiles, into the waters of Orontes.
+			</p>
+			<p>
+				<i class="glows"
+					>“I was after them like a griffon, I defeated all the foreign lands, being alone, my troops and chariotry abandoned me, none of them stood
+					looking back. As Ra lives for me and loves me, and as my father Atum favours me, regarding everything of which My Majesty has spoken, - I
+					truly did them, in the presence of my troops and my chariotry.”</i
+				>
+			</p>
+			<p class="font-sans text-center">The text ends here.</p>
+		</div>
+
+		<h2 class="text-center pt-3">Photos of the Bulletin</h2>
+		<div class="content grid grid-cols-12 gap-10">
+			<figure class="col-span-12 md:col-span-6">
+				<a href="/images/Kadesh-1968-a.webp" data-fancybox="gallery" data-caption="Abu Simbel, the Bulletin (UNESCO 1968 photo)"
+					><img src="/images/Kadesh-1968-at.webp" alt="scene" class="img-fluid" />
+				</a>
+				<figcaption>Fig. 9. Abu Simbel, the Bulletin (UNESCO 1968)</figcaption>
+			</figure>
+			<figure class="col-span-12 md:col-span-6">
+				<a href="/images/Kadesh-2019-Luxor.webp" data-fancybox="gallery" data-caption="Luxor Temple, the Bulletin behind the leftmost statue (2019)"
+					><img src="/images/Kadesh-2019-Luxort.webp" alt="scene" class="img-fluid" />
+				</a>
+				<figcaption>Fig. 10. The Bulletin at Luxor Temple</figcaption>
+			</figure>
+
+			<figure class="col-span-12 md:col-span-6">
+				<a
+					href="/images/Kadesh-2021-AbuSimbel-3D1.webp"
+					data-fancybox="gallery"
+					data-caption="The Bulletin: Abu Simbel, northern wall behind the pillars (2021)"
+					><img src="/images/Kadesh-2021-AbuSimbel-3D1.webp" alt="scene" class="img-fluid" />
+				</a>
+				<figcaption>Fig. 11. Abu Simbel, northern wall (2021)</figcaption>
+			</figure>
+			<figure class="col-span-12 md:col-span-6">
+				<a href="/images/Kadesh-2021-AbuSimbel-3D2.webp" data-fancybox="gallery" data-caption="Battle of Kadesh (Abu Simbel)"
+					><img src="/images/Kadesh-2021-AbuSimbel-3D2.webp" alt="scene" class="img-fluid" />
+				</a>
+				<figcaption>Fig. 12. Abu Simbel, the Bulletin (2021)</figcaption>
+			</figure>
+		</div>
+
+		<div class="py-10">
+			<h2>Bibliography</h2>
+
+			<ul id="biblio">
+				<li>
+					<b>Rosellini, Ippolito.</b>, 1838. <i>Monumenti storici</i>, Vol. 1. Pisa: pl. 87-103.
+				</li>
+				<li>
+					<b>Champollion, J. F.</b>, 1835. <i>Monuments de l'Égypte et de la Nubie</i>, Vol. 1. Paris: pl. 17<small>bis</small>-33.
+				</li>
+				<li>
+					<b>Lepsius, Karl Richard.</b>, <i>Denkmäler aus Aegypten und Aethiopien</i>, III: pl. 187.
+				</li>
+				<li>
+					<b>Brugsch, Heinrich.</b>, 1862. <i>Receuil de Monuments Égyptiens</i>. Leipzig: pls. 29-31.
+				</li>
+				<li>
+					<b>Breasted, James H.</b>, 1904. The Battle of Kadesh. <abbr title="American Journal of Semitic Languages and Literatures"
+						><i>AJSL</i> V</abbr
+					>: 79-126.
+				</li>
+				<li>
+					<b>Breasted, James H.</b>, 1906. <i>Ancient Records of Egypt</i>, Vol. 3. Chicago: §§ 316-327.
+				</li>
+				<li>
+					<b>Wreszinski, Walter.</b>, 1935. <i>Atlas zur altaegyptischen Kulturgeschichte</i>, Vol. 2. Leipzig: pls. 169-178.
+				</li>
+				<li>
+					<b>Kuentz, Charles.</b>, 1928. La Bataille de Qadech. <abbr
+						title="Mémoires publiés par les membres de l'Institut français d'archéologie orientale"><i>MIFAO</i> 55</abbr
+					>. Cairo.
+				</li>
+				<li>
+					<b>Kitchen, Kenneth A.</b>, 1999. <i>Ramesside Inscriptions Translated and Annotated: Notes and Comments</i> II, 2-147. <!--("Poem", II: 2-101; "Bulletin", II: 102-124; "Reliefs", II: 124-147. Bulletin text: RITA II, 14-18.)-->
+				</li>
+			</ul>
+			<p class="pt-10 text-center">
+				There is a 3D version of the Great Temple of Abu Simbel created in 2021<br />
+				<a class="text-2xl" href="https://my.matterport.com/show/?m=VxYAEMXh6dW&sr=-3.13&ss=62" target="_blank">You can visit it here</a><br />
+				<small class="font-sans">(accessed October 2023)</small>
+				<!-- https://nav-3d.com/abu-simbel-temple/     https://bit.ly/3JaDAq8     -->
+				<!-- direct link: https://my.matterport.com/show/?m=VxYAEMXh6dW&sr=-3.13&ss=62 -->
+			</p>
+		</div>
+	</section>
+</Layout>

@@ -23,7 +23,7 @@ function Translit(inn: string): string {
 
 export async function getStaticPaths() {
 	return pharaohs.map((p) => ({
-		params: { slug: p.slug },
+		params: { king: p.slug },
 		props: { pharaoh: p },
 	}));
 }
@@ -52,7 +52,7 @@ const dynnr = "/dynasty/" + pharaoh.dynasty;
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
-	<h1 class="text-3xl font-bold pb-4">{pharaoh.name}</h1>
+	<!-- <h1 class="text-3xl font-bold pb-4">{pharaoh.name}</h1> -->
 	<p>Dynasty: <a href={dynnr}>{pharaoh.dynasty}</a></p>
 	{pharaoh.reign && <p>{pharaoh.reign}</p>}
 	{pharaoh.description && <article class="mt-4" set:html={pharaoh.description} />}

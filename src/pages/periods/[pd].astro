@@ -1,0 +1,845 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import periods from "../../data/periods.json";
+
+/******************************************** 
+You can opt-out of the default rendering 
+behavior (server) with an export statement 
+in any page or route:
+*/
+/* export const prerender = true; */
+
+export async function getStaticPaths() {
+	const pages = [
+		{
+			pd: "archaic",
+			title: "The Archaic period",
+			id: 1,
+		},
+		{
+			pd: "old-kingdom",
+			title: "Old Kingdom",
+			id: 2,
+		},
+		{
+			pd: "first-intermediate-period",
+			title: "First Intermediate Period",
+			id: 3,
+		},
+		{
+			pd: "middle-kingdom",
+			title: "Middle Kingdom",
+			id: 4,
+		},
+		{
+			pd: "second-intermediate-period",
+			title: "Second Intermediate Period",
+			id: 5,
+		},
+		{
+			pd: "new-kingdom",
+			title: "New Kingdom",
+			id: 6,
+		},
+		{
+			pd: "third-intermediate-period",
+			title: "Third Intermediate Period",
+			id: 7,
+		},
+		{
+			pd: "late-period",
+			title: "Late Period",
+			id: 8,
+		},
+		{
+			pd: "roman-emperors",
+			title: "Roman province",
+			id: 9,
+		},
+		{
+			pd: "unplaced-kings",
+			title: "Unplaced kings",
+			id: 10,
+		},
+	];
+	return pages.map(({ pd, title, id }) => {
+		return {
+			params: { pd },
+			props: { title, id },
+		};
+	});
+}
+
+const { title, id } = Astro.props;
+const newInfo = `<p class="my-12 p-4 border rounded-xl text-sm shadow-2xl w-1/2 mx-auto leading-6 secondary bg-light dark:dark-bg-light text-center">The order of Egyptian pharaohs is always subject to change, as new discoveries may alter the accepted order. This applies to all Egyptian dynasties.</p><img class="opacity-25 my-6 w-2/3 mx-auto" src="/svg/fl.svg" alt="fl" />`;
+var t = " ";
+var tt = t + title;
+var ut: string, dyns: string, dynNr: number;
+var dynNr: number;
+
+ut =
+	"<p>The dynasties of stable periods of strong government in ancient Egypt are classified as <i>‘kingdoms,’</i> whereas the dynasties of unstable periods with waning or disputed authority are referred to as <i>‘intermediate periods,’</i>.</p>";
+let meta1 = "The dynasties of the " + title + " with hieroglyphic names of the pharaohs.";
+let meta2 = "ancient egyptian periods,egyptian kingdom timeline," + title + " of ancient Egypt";
+
+if (id == 1) {
+	ut = `<p>The Early Dynastic Period of Egypt immediately follows the unification of Lower and Upper Egypt c. 3100 BC. It is generally include the first two dynasties, lasting from the Protodynastic Period of Egypt until about 2686 BCE, or the beginning of the <a href="/periods/old-kingdom">Old Kingdom</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Predynastic kings</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+			<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+			<tr><td>1</td><td><a href="/pharaohs/Seka">Seka</a></td><td><em>Hsekiu</em></td><td></td></tr>
+			<tr><td>2</td><td><a href="/pharaohs/Khayu">Khayu</a></td><td><em>Iukha</em></td><td></td></tr>
+			<tr><td>3</td><td><a href="/pharaohs/Tiu">Tiu</a></td><td><em>Teyew</em></td><td></td></tr>
+			<tr><td>4</td><td><a href="/pharaohs/Tjesh">Tjesh</a></td><td><em>Thesh, Tesh</em></td><td></td></tr>
+			<tr><td>5</td><td><a href="/pharaohs/Neheb">Neheb</a></td><td><em>Niheb</em></td><td></td></tr>
+			<tr><td>6</td><td><a href="/pharaohs/Wenegbu">Wenegbu</a></td><td><em>Wazner, Wadjenedj</em></td><td></td></tr>
+			<tr><td>7</td><td><a href="/pharaohs/Mekh">Mekh</a></td><td><em>Imykhet</em></td><td></td></tr>
+		</table>
+		</div>
+		
+		<h2 class="text-center py-3">Dynasty I</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Narmer">Narmer</a></td><td><em>Menes</em></td><td>2900–</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Aha">Aha</a></td><td><em>Hor-Aha</em></td><td>?–2870</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Djer">Djer</a></td><td><em>Hor-Djer</em></td><td>2870–2823</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Djet">Djet</a></td><td><em>Wadj, Zet, Uadji</em></td><td>2822–2815</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Den">Den</a></td><td><em>Dewen, Udimu</em></td><td>2814–2772</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Adjib">Adjib</a></td><td><em>Anedjib, Enezib</em></td><td>2771–2764</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Semerkhet">Semerkhet</a></td><td><em></em></td><td>2763–2756</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Qaa">Qaa</a></td><td><em>Kaa</em></td><td>2755–2732</td></tr>
+		</table>
+		</div>
+		
+		<h2 class="text-center py-3">Dynasty II</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Hotepsekhemwy">Hotepsekhemwy</a></td><td><em>Hetepsekhemwy, Hotepsekhemui</em></td><td>2730–?</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Nebra">Nebra</a></td><td><em>Raneb, Kakau</em></td><td>?–2700</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Ninetjer">Ninetjer</a></td><td><em>Nynetjer, Banetjer</em></td><td>2700–2660</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Wadjenes">Wadjenes</a></td><td><em></em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Senedj">Senedj</a></td><td><em>Sened</em></td><td>?–2610</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Sekhemib">Sekhemib</a></td><td><em></em></td><td>2650–?</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Peribsen">Peribsen</a></td><td><em>Seth-Peribsen, Perabsen</em></td><td>2660–2650</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Sneferka">Sneferka</a></td><td><em>Sekanefer, Neferseka, Seneferka</em></td><td></td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Neferkasokar">Neferkasokar</a></td><td><em></em></td><td></td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Hudjefa-I">Hudjefa I</a></td><td><em></em></td><td></td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Khasekhemwy">Khasekhemwy</a></td><td><em>Khasekhemui</em></td><td>2610–2593</td></tr>
+		</table>
+		</div>
+		`;
+}
+
+// Old Kingdom
+if (id == 2) {
+	ut = `
+		<p>After the breakdown of the Second Dynasty, Egypt left the <a href="/periods/archaic">Archaic Period</a> behind and entered the Old Kingdom and the <em>Age of the Pyramid Builders</em>. The revolutionary change in architecture was accompanied by a number of effects on Egyptian society and the economy, particularly in relation to large-scale building projects.</p><p>The revolutionary change in architecture, accompanied by the effects on Egyptian society and the economy of large-scale building projects, is regarded as a pivotal period in the history of architecture. However, information from the Fourth to the Sixth Dynasties of Egypt is scarce, and historians have therefore focused on the Third and Fourth Dynasties. Indeed, it is through the monuments and their inscriptions that scholars have been able to construct a history of this period, which is commonly regarded as the period from the Third to Sixth Dynasty. The period is regarded as a time of stability, which was followed by a period of disunity and relative cultural decline, known as the <a href="/periods/first-intermediate-period">First Intermediate Period</a>.
+		</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty III</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Nebka">Nebka</a></td><td><em>Hen Nekht (not in use anymore)</em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Djoser">Djoser</a></td><td><em>Zezer, Zozer, Djeser</em></td><td>2592&ndash;2566</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Sekhemkhet">Sekhemkhet</a></td><td><em>Djosertety, Djoserteti, Djoserty</em></td><td>2565&ndash;2559</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Hudjefa-II">Hudjefa II</a></td><td><em></em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Mesochris">Mesochris</a></td><td><em></em></td><td></td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Nebkara">Nebkara</a></td><td><em>Nebkare</em></td><td></td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Neferkara">Neferkara</a></td><td><em>Neferkare</em></td><td></td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Huni">Huni</a></td><td><em></em></td><td>?–2544</td></tr>
+		</table>
+		</div>
+		
+		<h2 class="text-center py-3">Dynasty IV</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Sneferu">Sneferu</a></td><td><em>Snefru, Snofru</em></td><td>2543&ndash;2510</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Khufu">Khufu</a></td><td><em>Cheops</em></td><td>2509&ndash;2483</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Radjedef">Radjedef</a></td><td><em>Djedefra, Djedefre</em></td><td>2482&ndash;2475</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Khafra">Khafra</a></td><td><em>Khafre, Chephren, Khefren</em></td><td>2472&ndash;2448</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Menkaura">Menkaura</a></td><td><em>Menkaure, Mykerinos, Mycerinus</em></td><td>2447&ndash;2442</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Shepseskaf">Shepseskaf</a></td><td><em></em></td><td>2441&ndash;2436</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Baufra">Baufra</a></td><td><em>Baefra, Baufre, Baka, Bicheris, Bikka</em></td><td>2474&ndash;2473</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Thamphthis">Thamphthis</a></td><td><em>Djedefptah, Ptahdjedef</em></td><td></td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Hordjedef">Hordjedef</a></td><td><em>Djedefhor</em></td><td></td></tr>
+		</table>
+		</div>
+		
+		<h2 class="text-center py-3">Dynasty V</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Userkaf">Userkaf</a></td><td><em></em></td><td>2435&ndash;2429</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Sahura">Sahura</a></td><td><em>Sahure</em></td><td>2428&ndash;2416</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Neferirkara-I-Kakai">Neferirkara I Kakai</a></td><td><em>Nerferirkare I</em></td><td>2415&ndash;2405</td></tr><tr><td>4</td><td><a href="/pharaohs/Shepseskara-Netjeruser">Shepseskara Netjeruser</a></td><td><em>Shepseskare</em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Neferefra-Isi">Neferefra Isi</a></td><td><em>Neferefre, Raneferef</em></td><td>2403</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Niuserra-Ini">Niuserra Ini</a></td><td><em>Niuserre</em></td><td>2402&ndash;2374</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Menkauhor-Kaiu">Menkauhor Kaiu</a></td><td><em>Horikau, Ikauhor</em></td><td>2373&ndash;2366</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Djedkara-Isesi">Djedkara Isesi</a></td><td><em>Djedkare Isesi</em></td><td>2365&ndash;2322</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Unas">Unas</a></td><td><em>Wenis, Unis</em></td><td>2321&ndash;2306</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty VI</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Teti">Teti</a></td><td><em></em></td><td>2305&ndash;2279</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Userkara">Userkara</a></td><td><em>Userkare, Woserkare</em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Pepi-I">Pepi I</a></td><td><em>Pepy I</em></td><td>2276&ndash;2228</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Nemtiemsaf-I">Nemtiemsaf I</a></td><td><em>Nemtyemsaf I, Merenre I</em></td><td>2227&ndash;2217</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Pepi-II">Pepi II</a></td><td><em>Pepy II, Neferkare</em></td><td>2216&ndash;2153</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Nemtiemsaf-II">Nemtiemsaf II</a></td><td><em>Nemtyemsaf II, Merenre II</em></td><td>2152</td></tr>
+		</table>
+		</div>
+		`;
+}
+
+/** FIP */
+if (id == 3) {
+	ut = `
+		<p class="lead">The end of the Old Kingdom was followed by a period long regarded as one of chaos and turmoil.</p>
+		
+		The entirety of the <i>First Intermediate Period</i> represents a particularly challenging historical epoch, spanning approximately 125 years. The few historical records are incomplete and scarce, which makes it challenging to draw definitive conclusions. Manethonian tradition divides the period into four dynasties, which ruled for an impossibly long period. The varying records of the transmission of the <i>Aegyptiaca</i> indicate corrupted or lost administrative records. 
+		</p>
+		<figure class="float-right pl-5 w-80" ><img src="/images/FIP.webp" loading="eager" alt="" /><figcaption class="font-sans pt-2 text-sm text-center">Stela of Djemi</figcaption></figure>
+		The Sixth Dynasty pharaoh <a href="/pharaohs/Pepi-II">Pepi II</a>’s protracted rule and lack of a heir undermined the central government, and after his passing, the <a href="/periods/old-kingdom">Old Kingdom</a> collapsed and the nation descended into anarchy. Two opposing cities contended for control of a decentralised Egypt: northern Heracleopolis and southern Thebes. Although this period has long been considered to be a “dark age,” recent studies show that it was actually an era of change and transition when local nomarchs replaced the central monarchy at Memphis with local authority and customs.</p>
+		The lack of reliable documents adds to the image as a dark age, as does the lack of art and architecture. The almost complete absence of historical records is perhaps the most significant barrier to understanding this period. The Old Kingdom had preserved Egypt’s past in stone by building pyramids and mortuary complexes that recounted their stories. With no central administration during this time, preserving history was not a top priority for the local rulers.</p>
+		
+			The <a href="/kinglists/abydos-canon">Abydos Canon</a> is a broadly chronological compilation of kings, but it omits numerous kings. In contrast, the <em>Turin King List</em>, is the sole surviving example of a clearly chronological list of Egyptian kings. While the majority of the list aligns with other chronological evidence, there are some inconsistencies that render the veracity of its content challenging to ascertain, especially the numerous lacunae. However, it is likely to remain the most reliable source of information on this topic.
+		</p>
+		
+		The <i>Abydos Canon</i> contains 17 cartouches (nos. 40-44) between the last king of the Sixth Dynasty, Nemtiemsaf II, and Mentuhotep II of the Eleventh Dynasty, while the <a href="/kinglists/turin">Turin King List</a> contains a total of 25 kings. The Manethonian king lists give four dynasties (7-10), yet the total number of kings is not consistent with the data presented in the New Kingdom lists. This discrepancy is a clear indication that the sources for the information must have been significantly disparate.
+		</p>
+		
+			<table class="text-center w-fit mx-auto my-10">
+				<caption class="text-sm pt-2">Number of kings by source</caption>
+				<tr class="">
+					<td>Dynasty</td>
+					<td>Africanus</td>
+					<td>Eusebius</td>
+					<td>Turin King List</td>
+					<td>Abydos Canon</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>70</td>
+					<td>5</td>
+					<td rowspan="4">25</td>
+					<td rowspan="4">17</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>27</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>19</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>19</td>
+					<td>19</td>
+				</tr>
+				<tr class="border-t-2">
+					<td>Kings</td>
+					<td>135</td>
+					<td>33</td>
+					<td>25</td>
+					<td>17</td>
+				</tr>
+			</table>
+		
+		<p>After this period, the Two Lands was once again reunited into the <a href="/periods/middle-kingdom">Middle Kingdom</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty VII</h2><div class="text-center pt-3 pb-1">There is no evidence of a seventh dynasty.</div><div class="text-center py-3 pb-5">Africanus wrote that 70 kings ruled for 70 days,<br>while Eusebius wrote that 5 kings of ruled for 75 days.</div>
+		<h2 class="text-center py-3">Dynasty VIII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Netjerikara">Netjerikara</a></td><td><em>Netjerikare, Nitocris</em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Menkara">Menkara</a></td><td><em>Menkare</em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Neferkara-II">Neferkara II</a></td><td><em>Neferkare II</em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Neferkara-Neby">Neferkara Neby</a></td><td><em>Neferkare Neby</em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Djedkara-Shemai">Djedkara Shemai</a></td><td><em>Djedkare Shemay</em></td><td></td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Neferkara-Khendu">Neferkara Khendu</a></td><td><em>Neferkare Khendu</em></td><td></td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Merenhor">Merenhor</a></td><td><em></em></td><td></td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Neferkamin-I">Neferkamin I</a></td><td><em>Seneferka</em></td><td></td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Nikara">Nikara</a></td><td><em>Nikare</em></td><td></td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Neferkara-Tereru">Neferkara Tereru</a></td><td><em>Neferkare Tereru</em></td><td></td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Neferkahor">Neferkahor</a></td><td><em></em></td><td></td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Neferkara-Pepiseneb">Neferkara Pepiseneb</a></td><td><em>Neferkare Pepiseneb</em></td><td></td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Neferkamin-Anu">Neferkamin Anu</a></td><td><em></em></td><td></td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Qakara-Ibi">Qakara Ibi</a></td><td><em></em></td><td></td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Neferkaura">Neferkaura</a></td><td><em>Neferkaure</em></td><td></td></tr>
+		<tr><td>16</td><td><a href="/pharaohs/Neferkauhor">Neferkauhor</a></td><td><em></em></td><td></td></tr>
+		<tr><td>17</td><td><a href="/pharaohs/Neferirkara-II">Neferirkara II</a></td><td><em>Neferirkare II</em></td><td></td></tr>
+		</table>
+		</div>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<h2 class="text-center py-3 col-12">Dynasty IX</h2>
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Meribra-Khety-I">Meribra Khety I</a></td><td><em>Meribre Khety I</em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Neferkara-III">Neferkara III</a></td><td><em>Neferkare III</em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Wahkara-Khety-II">Wahkara Khety II</a></td><td><em>Wahkare Khety II</em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Senen">Senen</a></td><td><em></em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Neferkara-Khety-III">Neferkara Khety III</a></td><td><em>Neferkare Khety I</em></td><td></td></tr>
+		</table>
+		</div>
+
+		<h2 class="text-center py-3">Dynasty X</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Nebkaura-Khety-IV">Nebkaura Khety IV</a></td><td><em>Nebkaure Khety IV, Khety V</em></td><td>between 2160 and 2130</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Merikara">Merikara</a></td><td><em>Merykare</em></td><td>c. 2075–2040</td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Sekhemkara-I">Sekhemkara I</a></td><td><em>Sekhemkare I</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Wadjkara">Wadjkara</a></td><td><em>Wadjkare</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Ity">Ity</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Imhotep">Imhotep</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Hotep">Hotep</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Khui">Khui</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Isu">Isu</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Iytenu">Iytenu</a></td><td><em></em></td><td></td></tr>
+		</table>
+		</div>
+		`;
+}
+
+// Middle Kingdom
+if (id == 4) {
+	ut = `<p>After the conflict between the rulers of Thebes and Heracleopolis during the <a href="/periods/first-intermediate-period">First Intermediate Period</a>, the Two Lands were once again united after the king re-established his power by taking direct control of the military and by appointing important administrative positions to trusted and loyal members of the family. This limited the power of the nomarchs and priests that had grown ever more powerful since the collapse of the Old Kingdom, and brought wealth and power back to the king. The stability of the government allowed production to increase manifold. The improvements to infrastructure ushered in an era of flourishing trade, and the stability of the time allowed arts and literature to reach new heights. It was a prosperous era, where the pharaos tried to emulate those of the Old Kingdom.</p>
+		<p>Around 1780 BCE, the immigrant Hyksos had amassed wealth and power in Lower Egypt, ultimately resulting in the <a href="/periods/second-intermediate-period">Second Intermediate Period</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty XI</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Mentuhotep-I">Mentuhotep I</a></td><td><em>Mentuhotep-aa</em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Intef-I">Intef I</a></td><td><em>Antef I, Anjotef I, Inyotef I</em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Intef-II">Intef II</a></td><td><em>Antef II, Anjotef II, Inyotef II</em></td><td>2066&ndash;2017</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Intef-III">Intef III</a></td><td><em>Antef III, Anjotef III, Inyotef III</em></td><td>2016&ndash;2009</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Mentuhotep-II">Mentuhotep II</a></td><td><em>Montuhotep II</em></td><td>2009&ndash;1959</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Mentuhotep-III">Mentuhotep III</a></td><td><em>Montuhotep III</em></td><td>1958&ndash;1947</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Mentuhotep-IV">Mentuhotep IV</a></td><td><em>Montuhotep IV</em></td><td>1947&ndash;1940</td></tr>
+		</table>
+		</div>
+
+		<h2 class="text-center py-3">Dynasty XII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Amenemhat-I">Amenemhat I</a></td><td><em>Amenemhet I</em></td><td>1939&ndash;1910</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Senusret-I">Senusret I</a></td><td><em>Senusret I, Senwosret I</em></td><td>1920&ndash;1875</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Amenemhat-II">Amenemhat II</a></td><td><em>Amenemhet II</em></td><td>1878&ndash;1843</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Senusret-II">Senusret II</a></td><td><em>Senusret II, Senwosret II</em></td><td>1845&ndash;1837</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Senusret-III">Senusret III</a></td><td><em>Senusret III, Senwosret III, Sesostris</em></td><td>1837&ndash;1819</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Amenemhat-III">Amenemhat III</a></td><td><em>Amenemhet III</em></td><td>1818&ndash;1773</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Amenemhat-IV">Amenemhat IV</a></td><td><em>Amenemhet IV</em></td><td>1772&ndash;1764</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Neferusobek">Neferusobek</a></td><td><em>Sobekneferu</em></td><td>1763&ndash;1760</td></tr>
+		</table>
+		</div>
+		`;
+}
+
+/** SIP */
+if (id == 5) {
+	ut = `<p>After the death of Queen <a href="/pharaohs/Neferusobek">Neferusobek</a>, the decision was made to move the capital to Thebes in the south, which had the effect of reducing northern control. This was the beginning of the end for the <a href="/periods/middle-kingdom">Middle Kingdom</a>. There are still many unknowns about the history of the <i>Second Intermediate Period</i>, the duration of which has not yet been definitively determined, but ranges from 150 to 250 years.</p><p>Increased trade and immigration led to a wave of Semitic peoples settling in Avaris in the Delta, eventually exerting political influence throughout the kingdom. Referred to by Greek historians as ‘Hyksos’, this name has persisted in the historical record, marking their rule in the north and the continued Egyptian rule of the Thirteenth Dynasty at Thebes in the south. The records of this period are confused or absent.</p>
+		<p>The Hyksos were driven out of Egypt by Ahmose I and the Two Lands united once again, marking the beginning of the <a href="/periods/new-kingdom">New Kingdom</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty XIII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Sobekhotep-I">Sobekhotep I</a></td><td><em>Sekhemre Khutawy Sobekhotep</em></td><td>1803&ndash;1800</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Sonbef">Sonbef</a></td><td><em>Sekhemkare Amenemhat Sonbef</em></td><td>1800&ndash;1796</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Nerikara">Nerikara</a></td><td><em>Nerikare</em></td><td>1796</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Sekhemkara-Amenemhat">Sekhemkara Amenemhat</a></td><td><em>Amenemhat V</em></td><td>1796&ndash;1793</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Ameny-Qemau">Ameny Qemau</a></td><td><em></em></td><td>1793&ndash;1791</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Qemau-Siharnedjheritef">Qemau Siharnedjheritef</a></td><td><em>Amenemhat VI</em></td><td>1791&ndash;1788</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Iufni">Iufni</a></td><td><em></em></td><td>1788</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Sankhibra-Amenemhat">Sankhibra Amenemhat</a></td><td><em></em></td><td>1788&ndash;1785</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Nebnun">Nebnun</a></td><td><em>Semenkare Nebnun, Nebennu</em></td><td>1785&ndash;1783</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Sewesekhtawy-Sehotepibra">Sewesekhtawy Sehotepibra</a></td><td><em></em></td><td>1783&ndash;1781</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Sewadjkara">Sewadjkara</a></td><td><em></em></td><td>1781</td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Nedjemibra">Nedjemibra</a></td><td><em></em></td><td>1780</td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Sobekhotep-II">Sobekhotep II</a></td><td><em>Khaankhre Sobekhotep</em></td><td>1780&ndash;1777</td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Ranisonb">Ranisonb</a></td><td><em></em></td><td>1777</td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Hor-I">Hor I</a></td><td><em></em></td><td>1777&ndash;1775</td></tr>
+		<tr><td>16</td><td><a href="/pharaohs/Sekhemra-Khutawy">Sekhemra Khutawy</a></td><td><em></em></td><td>1775&ndash;1772</td></tr>
+		<tr><td>17</td><td><a href="/pharaohs/Djedkheperu">Djedkheperu</a></td><td><em></em></td><td>1772&ndash;1770</td></tr>
+		<tr><td>18</td><td><a href="/pharaohs/Sebkay">Sebkay</a></td><td><em></em></td><td>1770&ndash;1769</td></tr>
+		<tr><td>19</td><td><a href="/pharaohs/Sedjefakara-Kay-Amenemhat">Sedjefakara Kay-Amenemhat</a></td><td><em>Amenemhat VII</em></td><td>1769&ndash;1766</td></tr>
+		<tr><td>20</td><td><a href="/pharaohs/Wegaf">Wegaf</a></td><td><em></em></td><td>1766&ndash;1764</td></tr>
+		<tr><td>21</td><td><a href="/pharaohs/Khendjer">Khendjer</a></td><td><em></em></td><td>1764&ndash;1759</td></tr>
+		<tr><td>22</td><td><a href="/pharaohs/Imyremeshaw">Imyremeshaw</a></td><td><em>Smenkhkare Emramesha</em></td><td>1759</td></tr>
+		<tr><td>23</td><td><a href="/pharaohs/Intef-IV">Intef IV</a></td><td><em>Intef V, Sehotepkare Intef</em></td><td></td></tr>
+		<tr><td>24</td><td><a href="/pharaohs/Meribra-Seth">Meribra Seth</a></td><td><em></em></td><td>1749</td></tr>
+		<tr><td>25</td><td><a href="/pharaohs/Sobekhotep-III">Sobekhotep III</a></td><td><em>Sekhemre Sewadjtawy Sobkhotep</em></td><td>1749&ndash;1742</td></tr>
+		<tr><td>26</td><td><a href="/pharaohs/Neferhotep-I">Neferhotep I</a></td><td><em>Khasekhemre Neferhotep</em></td><td>1742&ndash;1731</td></tr>
+		<tr><td>27</td><td><a href="/pharaohs/Sihathor">Sihathor</a></td><td><em>Menwadjre Sihathor, Sahathor</em></td><td>1733</td></tr>
+		<tr><td>28</td><td><a href="/pharaohs/Sobekhotep-IV">Sobekhotep IV</a></td><td><em>Khaneferre Sobekhotep</em></td><td>1732&ndash;1720</td></tr>
+		<tr><td>29</td><td><a href="/pharaohs/Sobekhotep-V">Sobekhotep V</a></td><td><em>Merhotepre Sobekhotep</em></td><td>1720&ndash;1717</td></tr>
+		<tr><td>30</td><td><a href="/pharaohs/Sobekhotep-VI">Sobekhotep VI</a></td><td><em>Khahotepre Sobekhotep, Sobekhotep V</em></td><td>1717&ndash;1712</td></tr>
+		<tr><td>31</td><td><a href="/pharaohs/Wahibra-Jaib">Wahibra Jaib</a></td><td><em>Wahibre Iaib, Wahibre Ibiau</em></td><td>1712&ndash;1701</td></tr>
+		<tr><td>32</td><td><a href="/pharaohs/Aya">Aya</a></td><td><em>Merneferre Ay</em></td><td>1701&ndash;1677</td></tr>
+		<tr><td>33</td><td><a href="/pharaohs/Ini-I">Ini</a></td><td><em>Merhotepre</em></td><td>1677&ndash;1675</td></tr>
+		<tr><td>34</td><td><a href="/pharaohs/Sewadjtu">Sewadjtu</a></td><td><em>Sankhenre</em></td><td>1675&ndash;1672</td></tr>
+		<tr><td>35</td><td><a href="/pharaohs/Ined">Ined</a></td><td><em>Mersekhemre</em></td><td>1672&ndash;1669</td></tr>
+		<tr><td>36</td><td><a href="/pharaohs/Sewadjkara-Hori">Sewadjkara Hori</a></td><td><em></em></td><td>1669&ndash;1664</td></tr>
+		<tr><td>37</td><td><a href="/pharaohs/Sobekhotep-VII">Sobekhotep VII</a></td><td><em>Merkaure Sobekhotep</em></td><td>1664&ndash;1662</td></tr>
+		<tr><td>46</td><td><a href="/pharaohs/Merkheperra">Merkheperra</a></td><td><em>Merkheperre</em></td><td></td></tr>
+		<tr><td>47</td><td><a href="/pharaohs/Merkara">Merkara</a></td><td><em>Merkare</em></td><td></td></tr>
+		<tr><td>49</td><td><a href="/pharaohs/Mentuhotep-V">Mentuhotep V</a></td><td><em>Sewadjare Mentuhotep, Mentuhotep VI</em></td><td></td></tr>
+		<tr><td>51</td><td><a href="/pharaohs/Ibi">Ibi</a></td><td><em></em></td><td></td></tr>
+		<tr><td>52</td><td><a href="/pharaohs/Hor-II">Hor II</a></td><td><em></em></td><td></td></tr>
+		<tr><td>53</td><td><a href="/pharaohs/Se--kara">Se...kara</a></td><td><em>Sekare</em></td><td></td></tr>
+		<tr><td>54</td><td><a href="/pharaohs/Sankhptahi">Sankhptahi</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Sekhaenra">Sekhaenra</a></td><td><em>Yakbim, Yakobmu</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Maara-Sobekhotep">Maara Sobekhotep</a></td><td><em>Sobekhotep IX</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Senebmiu">Senebmiu</a></td><td><em></em></td><td></td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XIV</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Yakbim">Yakbim</a></td><td><em></em></td><td>1805&ndash;1780</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Yammu">Yammu</a></td><td><em>Ya’amu, Jamu, Jaam, Nubwoserre Ya’ammu</em></td><td>1780&ndash;1770</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Qareh">Qareh</a></td><td><em></em></td><td>1770&ndash;1760</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Aahotepra">Aahotepra</a></td><td><em>Aahotepre</em></td><td>1760&ndash;1745</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Sheshi">Sheshi</a></td><td><em>Sheshy</em></td><td>1745&ndash;1705</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Nehesi">Nehesi</a></td><td><em>Nehesy, Nehsy</em></td><td>1705</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Khakherura">Khakherura</a></td><td><em>Khakherure</em></td><td></td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Nebfaura">Nebfaura</a></td><td><em>Nebfaure</em></td><td>1704</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Sehabra">Sehabra</a></td><td><em>Sehabre</em></td><td></td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Merdjefara">Merdjefara</a></td><td><em>Merdjefare</em></td><td>1694</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Sewadjkara-III">Sewadjkara III</a></td><td><em>Sewadjkare III</em></td><td></td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Nebdjefara">Nebdjefara</a></td><td><em>Nebdjefare</em></td><td></td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Webenra">Webenra</a></td><td><em>Webenre, Ubenre</em></td><td></td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/--djefara">..djefara</a></td><td><em></em></td><td></td></tr>
+		<tr><td>16</td><td><a href="/pharaohs/--webenra">..webenra</a></td><td><em></em></td><td>1690</td></tr>
+		<tr><td>17</td><td><a href="/pharaohs/Awibra">Awibra</a></td><td><em>Awibre, Auibra</em></td><td></td></tr>
+		<tr><td>18</td><td><a href="/pharaohs/Heribra">Heribra</a></td><td><em>Heribre</em></td><td></td></tr>
+		<tr><td>19</td><td><a href="/pharaohs/Nebsenra">Nebsenra</a></td><td><em>Nebsenre</em></td><td></td></tr>
+		<tr><td>22</td><td><a href="/pharaohs/Sekheperenra">Sekheperenra</a></td><td><em>Sekheperenre</em></td><td></td></tr>
+		<tr><td>23</td><td><a href="/pharaohs/Djedkherura">Djedkherura</a></td><td><em>Djedkherewre</em></td><td></td></tr>
+		<tr><td>24</td><td><a href="/pharaohs/Sankhibra-II">Sankhibra II</a></td><td><em>Seankibre, Sankhibre</em></td><td></td></tr>
+		<tr><td>25</td><td><a href="/pharaohs/Nefertum--ra">Nefertum..ra</a></td><td><em>Kanefertemre</em></td><td></td></tr>
+		<tr><td>26</td><td><a href="/pharaohs/Sekhem--ra">Sekhem..ra</a></td><td><em></em></td><td></td></tr>
+		<tr><td>27</td><td><a href="/pharaohs/Kakemura">Kakemura</a></td><td><em>Kakemure, Kakemetre</em></td><td></td></tr>
+		<tr><td>28</td><td><a href="/pharaohs/Neferibra">Neferibra</a></td><td><em>Neferibre</em></td><td></td></tr>
+		<tr><td>29</td><td><a href="/pharaohs/I--ra">I..ra</a></td><td><em></em></td><td></td></tr>
+		<tr><td>30</td><td><a href="/pharaohs/Khakara">Khakara</a></td><td><em>Khakare</em></td><td></td></tr>
+		<tr><td>31</td><td><a href="/pharaohs/Akara">Akara</a></td><td><em>Akare, Aakare</em></td><td></td></tr>
+		<tr><td>32</td><td><a href="/pharaohs/Hapu">Hapu</a></td><td><em>Semenenra, Semenenre, Hepu</em></td><td></td></tr>
+		<tr><td>33</td><td><a href="/pharaohs/Anati">Anati</a></td><td><em>Djedkara</em></td><td></td></tr>
+		<tr><td>34</td><td><a href="/pharaohs/Babnum">Babnum</a></td><td><em>Bebnem, Bebnum</em></td><td></td></tr>
+		<tr><td>43</td><td><a href="/pharaohs/Senefer--ra">Senefer..ra</a></td><td><em></em></td><td></td></tr>
+		<tr><td>44</td><td><a href="/pharaohs/Men--ra">Men..ra</a></td><td><em></em></td><td></td></tr>
+		<tr><td>45</td><td><a href="/pharaohs/Djed--ra">Djed..ra</a></td><td><em></em></td><td></td></tr>
+		<tr><td>49</td><td><a href="/pharaohs/Inek--">Inek..</a></td><td><em></em></td><td></td></tr>
+		<tr><td>50</td><td><a href="/pharaohs/A--">A..</a></td><td><em>Ineb...</em></td><td></td></tr>
+		<tr><td>51</td><td><a href="/pharaohs/Ap--">Ap..</a></td><td><em>Apophis</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Wazad">Wazad</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Sheneh">Sheneh</a></td><td><em></em></td><td></td></tr>
+		</table>
+		</div>
+		
+		<h2 class="text-center py-3">Dynasty XV</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Salitis">Salitis</a></td><td><em></em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Sakir-Har">Sakir-Har</a></td><td><em>Sakarher, Seker-Her</em></td><td>1621&ndash;</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Khyan">Khyan</a></td><td><em>Khian, Khayan</em></td><td>1621&ndash;1581</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Apepi">Apepi</a></td><td><em>Nebkhepeshre, Aqenenre, Aweserre, Apophis</em></td><td>1581&ndash;1541</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Khamudy">Khamudy</a></td><td><em>Khamudi</em></td><td>1541&ndash;1540</td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Aperanat">Aperanat</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Semqen">Semqen</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Apachnas">Apachnas</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Sharek">Sharek</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Beon">Beon</a></td><td><em>Bnon</em></td><td></td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XVI</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>2</td><td><a href="/pharaohs/Djehuty">Djehuty</a></td><td><em></em></td><td>1649&ndash;1648</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Sobekhotep-VIII">Sobekhotep VIII</a></td><td><em>Sekhemre Seusertawy Sobekhotep</em></td><td>1645&ndash;1629</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Neferhotep-III">Neferhotep III</a></td><td><em></em></td><td>1629</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Mentuhotepi">Mentuhotepi</a></td><td><em>Sankhenre Mentuhotepi, Mentuhotep VII</em></td><td>1628&ndash;1627</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Nebirau-I">Nebirau I</a></td><td><em>Nebiryraw I, Sewadjenre</em></td><td>1627&ndash;1601</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Nebirau-II">Nebirau II</a></td><td><em>Nebiryraw II</em></td><td>1601</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Semenenra">Semenenra</a></td><td><em></em></td><td>1601&ndash;1600</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Bebiankh">Bebiankh</a></td><td><em>Sewoserenre, Seuserenre</em></td><td>1600&ndash;1588</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Sekhemra-Shedwaset">Sekhemra Shedwaset</a></td><td><em></em></td><td>1588</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Dedumose-I">Dedumose I</a></td><td><em>Djedhotepre</em></td><td></td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Dedumose-II">Dedumose II</a></td><td><em>Djedneferre</em></td><td></td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Mentuemsaf">Mentuemsaf</a></td><td><em>Djedankhre</em></td><td></td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Mentuhotep-VI">Mentuhotep VI</a></td><td><em>Merankhre</em></td><td></td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Senusret-IV">Senusret IV</a></td><td><em>Seneferibre</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Pepi-III">Pepi III</a></td><td><em>Seneferankhre</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Nebmaatra">Nebmaatra</a></td><td><em>Nebmaatre</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Anetjerira">Anetjerira</a></td><td><em></em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Meribra">Meribra</a></td><td><em>Meribre</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Nubankhra">Nubankhra</a></td><td><em>Nubankhre</em></td><td></td></tr>
+		<tr><td>?</td><td><a href="/pharaohs/Nikara-II">Nikara II</a></td><td><em></em></td><td></td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XVII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Rahotep">Rahotep</a></td><td><em>Rehotep</em></td><td>1580&ndash;1576</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Sobekemsaf-I">Sobekemsaf I</a></td><td><em></em></td><td>1576&ndash;1573</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Sobekemsaf-II">Sobekemsaf II</a></td><td><em></em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Intef-V">Intef V</a></td><td><em>Sekhemra-Wepmaat Intef</em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Intef-VI">Intef VI</a></td><td><em>Nubkheperra Intef</em></td><td></td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Intef-VII">Intef VII</a></td><td><em>Sekhemra Heruhirmaat Intef</em></td><td></td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Senakhtenra">Senakhtenra</a></td><td><em>Senakhtenre Tao in older texts</em></td><td>1559&ndash;1558</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Seqenenra">Seqenenra</a></td><td><em>Seqenenre Tao</em></td><td>1558&ndash;1554</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Kamose">Kamose</a></td><td><em>Kamesiu</em></td><td>1555&ndash;1550</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3 col-12">Abydos or Thinite Dynasty</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Senebkay">Senebkay</a></td><td><em></em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Wepwawetemsaf">Wepwawetemsaf</a></td><td><em></em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Pantjeny">Pantjeny</a></td><td><em></em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Snaaib">Snaaib</a></td><td><em></em></td><td></td></tr>
+		</table>
+		</div>
+		`;
+}
+
+// New Kingdom
+if (id == 6) {
+	ut = `<p>The Hyksos domination of the <a href="/periods/second-intermediate-period">Second Intermediate Period</a> was brought to an end by Ahmose I, the founder of the Eighteenth Dynasty. Egypt’s borders were secured and neglected settlements were fortified and expanded to provide a buffer zone against further encroachment. The New Kingdom saw Egypt flourish for centuries at the height of its power, but that power began to diminish after the death of Ramses II, as the priests of Amun gained greater wealth and influence and the status of the pharaoh waned.</p>
+		<p>Finally, the weak Ramesside pharaohs and a weak central government was destroyed when the powerful priests of Amun usurped the throne, ushering in the <a href="/periods/third-intermediate-period">Third Intermediate Period</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty XVIII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Ahmose-I">Ahmose I</a></td><td><em>Amasis, Amosis</em></td><td>1550&ndash;1525</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Amenhotep-I">Amenhotep I</a></td><td><em>Amenophis I</em></td><td>1541&ndash;1520</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Thutmose-I">Thutmose I</a></td><td><em>Tuthmosis I, Thutmosis I</em></td><td>1520&ndash;1492</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Thutmose-II">Thutmose II</a></td><td><em>Tuthmosis II, Thutmosis II</em></td><td>1492&ndash;1479</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Hatshepsut">Hatshepsut</a></td><td><em>Hatchepsut</em></td><td>1473&ndash;1458</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Thutmose-III">Thutmose III</a></td><td><em>Tuthmosis III, Thutmosis III</em></td><td>1479&ndash;1425</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Amenhotep-II">Amenhotep II</a></td><td><em>Amenophis II</em></td><td>1425&ndash;1400</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Thutmose-IV">Thutmose IV</a></td><td><em>Tuthmosis IV, Thutmosis IV</em></td><td>1400&ndash;1390</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Amenhotep-III">Amenhotep III</a></td><td><em>Amenophis III</em></td><td>1390&ndash;1352</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Amenhotep-IV">Amenhotep IV</a></td><td><em>Akhenaten, Akhenaton, Echnaton, Amenophis IV</em></td><td>1352&ndash;1334</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Neferneferuaten">Neferneferuaten</a></td><td><em>Nefertiti, Meritaten</em></td><td>1334&ndash;1332</td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Smenkhkara">Smenkhkara</a></td><td><em>Smenkhare, Smenkare</em></td><td>1332&ndash;</td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Tutankhamun">Tutankhamun</a></td><td><em>Tutankhamon, King Tut, Tutankhamen</em></td><td>1332&ndash;1323</td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Ay">Ay</a></td><td><em>Aja, Aya</em></td><td>1322&ndash;1320</td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Horemheb">Horemheb</a></td><td><em>Horemhab, Haremhab</em></td><td>1320&ndash;1292</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XIX</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Ramesses-I">Ramesses I</a></td><td><em>Ramses I</em></td><td>1292&ndash;1290</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Seti-I">Seti I</a></td><td><em>Sethos I</em></td><td>1290&ndash;1279</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Ramesses-II">Ramesses II</a></td><td><em>Rameses II, Ramses II</em></td><td>1279&ndash;1213</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Merenptah">Merenptah</a></td><td><em>Merneptah</em></td><td>1213&ndash;1203</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Seti-II">Seti II</a></td><td><em>Sethos II</em></td><td>1203&ndash;1200</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Amenmesse">Amenmesse</a></td><td><em>Amenmesses, Amenmose</em></td><td>1203&ndash;1197</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Siptah">Siptah</a></td><td><em>Merenptah Siptah</em></td><td>1197&ndash;1191</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Tausret">Tausret</a></td><td><em>Tawosret, Twosret</em></td><td>1191&ndash;1190</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XX</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Setnakht">Setnakht</a></td><td><em>Setnakhte</em></td><td>1190&ndash;1186</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Ramesses-III">Ramesses III</a></td><td><em>Rameses III, Ramses III</em></td><td>1186&ndash;1155</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Ramesses-IV">Ramesses IV</a></td><td><em></em></td><td>1155&ndash;1149</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Ramesses-V">Ramesses V</a></td><td><em></em></td><td>1149&ndash;1145</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Ramesses-VI">Ramesses VI</a></td><td><em></em></td><td>1145&ndash;1137</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Ramesses-VII">Ramesses VII</a></td><td><em></em></td><td>1137&ndash;1130</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Ramesses-VIII">Ramesses VIII</a></td><td><em></em></td><td>1130&ndash;1129</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Ramesses-IX">Ramesses IX</a></td><td><em></em></td><td>1129&ndash;1111</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Ramesses-X">Ramesses X</a></td><td><em></em></td><td>1111&ndash;1107</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Ramesses-XI">Ramesses XI</a></td><td><em></em></td><td>1107&ndash;1077</td></tr>
+		</table>
+		</div>
+		`;
+}
+
+if (id == 7) {
+	ut = `<p>Following the breakdown of the <a href="/periods/new-kingdom">New Kingdom</a>, Lower Egypt was claimed by a new dynasty in Tanis, while the High Priest of Thebes took power in Upper Egypt. The two governing houses were frequently related. <i>Third Intermediate Period</i> is the modern designation for the third interruption of stable dynastic administrations in Egypt, which lasted for about 550 years (c. 1069-525 BCE).</p>
+		<p>Late in the Twenty-second Dynasty, civil war broke out, resulting in self-styled monarchs from Herakleopolis, Tanis, Hermopolis, Thebes, Memphis, and Sais taking power. Egypt was unable to organise a coherent defence as a result of this fragmentation when the Nubians invaded from the south and established the Twenty-Fifth Dynasty.</p>
+		<p>After being weakened by the Assyrians in the preceding century, the Persian invasion in 525 BCE ended Egyptian rule the <a href="/periods/late-period">Late period</a>.</p>
+		${newInfo}
+		<h2 class="text-center py-3">Dynasty XXI</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Smendes-I">Smendes I</a></td><td><em></em></td><td>1077&ndash;1051</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Amenemnesut">Amenemnesut</a></td><td><em>Amenemnisu</em></td><td>1051&ndash;1047</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Psusennes-I">Psusennes I</a></td><td><em></em></td><td>1047&ndash;1001</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Amenemope">Amenemope</a></td><td><em></em></td><td>1101&ndash;992</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Osochor">Osochor</a></td><td><em>Osorkon the Elder</em></td><td>992&ndash;986</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Siamun">Siamun</a></td><td><em></em></td><td>986&ndash;967</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Psusennes-II">Psusennes II</a></td><td><em></em></td><td>967&ndash;943</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Shoshenq-I">Shoshenq I</a></td><td><em>Sheshonq I, Sheshonk I</em></td><td>943&ndash;922</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Osorkon-I">Osorkon I</a></td><td><em></em></td><td>922&ndash;887</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Shoshenq-II">Shoshenq II</a></td><td><em>Sheshonq II, Sheshonk II</em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Shoshenq-IIb">Shoshenq IIb</a></td><td><em>Sheshonq IIb, Sheshonk IIb</em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Takelot-I">Takelot I</a></td><td><em></em></td><td>885&ndash;872</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Osorkon-II">Osorkon II</a></td><td><em></em></td><td>872&ndash;837</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Shoshenq-III">Shoshenq III</a></td><td><em>Sheshonq III, Sheshonk III</em></td><td>837&ndash;798</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Shoshenq-IV">Shoshenq IV</a></td><td><em></em></td><td>798&ndash;785</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Pami">Pami</a></td><td><em></em></td><td>785&ndash;778</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Shoshenq-V">Shoshenq V</a></td><td><em>Sheshonq V, Sheshonk V</em></td><td>778&ndash;740</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Pedubast-II">Pedubast II</a></td><td><em></em></td><td></td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Osorkon-IV">Osorkon IV</a></td><td><em></em></td><td>740&ndash;720</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXIII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Takelot-II">Takelot II</a></td><td><em></em></td><td>840&ndash;815</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Pedubast-I">Pedubast I</a></td><td><em></em></td><td>829&ndash;804</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Iuput-I">Iuput I</a></td><td><em></em></td><td>829&ndash;804</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Shoshenq-VI">Shoshenq VI</a></td><td><em>Previously known as Shoshenq IV</em></td><td>804&ndash;798</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Osorkon-III">Osorkon III</a></td><td><em></em></td><td>798&ndash;769</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Takelot-III">Takelot III</a></td><td><em></em></td><td>774&ndash;759</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Rudamun">Rudamun</a></td><td><em>Rudamon</em></td><td>759&ndash;755</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXIV</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Tafnakht">Tafnakht</a></td><td><em></em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Bakenrenef">Bakenrenef</a></td><td><em></em></td><td></td></tr></table><h2 class="text-center py-3">Dynasty XXV</h2><table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Piye">Piye</a></td><td><em>Piankhi, Piankhy, Pije, Pianchy</em></td><td>752&ndash;721</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Shabaka">Shabaka</a></td><td><em>Sabacon</em></td><td>721&ndash;707</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Shebitko">Shebitko</a></td><td><em>Shebitku</em></td><td>707&ndash;690</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Taharqa">Taharqa</a></td><td><em>Taharka, Taharqo</em></td><td>690&ndash;664</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Tenutamen">Tenutamen</a></td><td><em>Tantamani</em></td><td>664&ndash;656</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXVI</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaoh/Necho-I">Necho I</a></td><td><em>Nekao I</em></td><td></td></tr>
+		<tr><td>2</td><td><a href="/pharaoh/Psamtik-I">Psamtik I</a></td><td><em>Psammetichus I</em></td><td></td></tr>
+		<tr><td>3</td><td><a href="/pharaoh/Necho-II">Necho II</a></td><td><em>Nekao II</em></td><td></td></tr>
+		<tr><td>4</td><td><a href="/pharaoh/Psamtik-II">Psamtik II</a></td><td><em>Psammetichus II</em></td><td></td></tr>
+		<tr><td>5</td><td><a href="/pharaoh/Apries">Apries</a></td><td><em>Hophra</em></td><td></td></tr>
+		<tr><td>6</td><td><a href="/pharaoh/Amasis">Amasis</a></td><td><em>Ahmose II, Ahmose III</em></td><td></td></tr>
+		<tr><td>7</td><td><a href="/pharaoh/Psamtik-III">Psamtik III</a></td><td><em>Psammecherites, Psammetichus III</em></td><td></td></tr>
+		</table>
+		</div>
+		`;
+}
+
+if (id == 8) {
+	ut = `<p>This period is sometimes grouped with the <a href="/periods/third-intermediate-period">Third Intermediate Period</a> as it represents the final decline of Egyptian culture following the Persian invasion of 525 BC. It sometimes also include the Ptolemaic Dynasty, which ruled Egypt for three centuries until becoming a <a href="/periods/roman-emperors">province of the Roman Empire</a> in 30 BC.</p>
+		${newInfo}
+		<h2 class="text-center pt-3">Dynasty XXVII</h2>
+		<p class="text-lg text-center font-serif pb-3">First Persian satrapy</p>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Cambyses-II">Cambyses II</a></td><td></td><td>525&ndash;522</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Darius-I">Darius I</a></td><td></td><td>522&ndash;486</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Xerxes-I">Xerxes I</a></td><td></td><td>486&ndash;465</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Artaxerxes-I">Artaxerxes I</a></td><td></td><td>465&ndash;424</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Darius-II">Darius II</a></td><td></td><td>424&ndash;405</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Artaxerxes-II">Artaxerxes II</a></td><td></td><td>405&ndash;404</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXVIII</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Amyrtaeus">Amyrtaeus</a></td><td></td><td>404&ndash;399</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3 col-12">Dynasty XXIX</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Neferites-I">Neferites I</a></td><td></td><td>398&ndash;393</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Akoris">Akoris</a></td><td></td><td>393&ndash;380</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Psammuthis">Psammuthis</a></td><td></td><td>393</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Neferites-II">Neferites II</a></td><td></td><td>380</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Muthis">Muthis</a></td><td></td><td></td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Dynasty XXX</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Nectanebo-I">Nectanebo I</a></td><td></td><td>380&ndash;362</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Djedhor-Teos-I">Djedhor Teos I</a></td><td></td><td>362&ndash;360</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Nectanebo-II">Nectanebo II</a></td><td></td><td>360&ndash;343</td></tr>
+		</table>
+		</div>
+		<h3 class="mt-10 mb-20 text-center shine">Here ends the native Egyptian pharaohs.</h3>
+		<h2 class="text-center py-3">Dynasty XXXI</h2>
+		<p class="text-lg text-center font-serif pb-3">Second Persian satrapy</p>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Artaxerxes-III">Artaxerxes III</a></td><td></td><td>343&ndash;338</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Arses">Arses</a></td><td></td><td>338&ndash;336</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Darius-III">Darius III</a></td><td></td><td>336&ndash;332</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Argead Dynasty</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Alexander-the-Great">Alexander the Great</a></d><td></td><td>332&ndash;323</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Philip-III-Arrhidaeus">Philip III Arrhidaeus</></td><td></td><td>323&ndash;317</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Alexander-IV">Alexander IV Aegus</a></td><td></td><td>317&ndash;309</td></tr>
+		</table>
+		</div>
+		<h2 class="text-center py-3">Ptolemaic Dynasty</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table><thead>
+		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Ptolemy-I">Ptolemy I</a></td><td><em>Ptolemaios Soter</em></td><td>305&ndash;285</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Ptolemy-II">Ptolemy II</a></td><td><em>Ptolemaios Philadelphos</em></td><td>288&ndash;246</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Ptolemy-III">Ptolemy III</a></td><td><em>Ptolemaios Euergetes</em></td><td>246&ndash;222</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Ptolemy-IV">Ptolemy IV</a></td><td><em>Ptolemaios Philopator</em></td><td>222&ndash;204</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Ptolemy-V">Ptolemy V</a></td><td><em>Ptolemaios Epiphanes</em></td><td>204&ndash;180</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Ptolemy-VI">Ptolemy VI</a></td><td><em>Ptolemaios Philometor</em></td><td>180&ndash;145</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Ptolemy-VII">Ptolemy VII</a></td><td><em>Ptolemaios Neos Philopator</em></td><td>145</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Ptolemy-VIII">Ptolemy VIII</a></td><td><em>Ptolemaios Euergetes Physcon</em></td><td>169–164,<br>144–132,<br>126–116</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Ptolemy-IX">Ptolemy IX</a></td><td><em>Ptolemaios Soter Lathyrus</em></td><td>116–110,<br>109–107,<br>88–81</td></tr>
+		<tr><td>10</td><td><a href="/pharaohs/Ptolemy-X">Ptolemy X</a></td><td><em>Ptolemaios Alexander</em></td><td>110–109,<br>107–88</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Ptolemy-XI">Ptolemy XI</a></td><td><em>Ptolemaios Alexander II</em></td><td>80</td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Ptolemy-XII">Ptolemy XII</a></td><td><em>Ptolemaios Neos Dionysus Auletes</em></td><td>80&ndash;58</td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Ptolemy-XIII">Ptolemy XIII</a></td><td><em>Ptolemaios Philopator II</em></td><td>51&ndash;47</td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Ptolemy-XIV">Ptolemy XIV</a></td><td><em>Ptolemaios Philopator Philadelphus</em></td><td>47&ndash;44</td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Cleopatra-VII">Cleopatra VII</a></td><td><em>Kleopatra</em></td><td>51&ndash;30</td></tr>
+		<tr><td>16</td><td><a href="/pharaohs/Ptolemy-XV">Ptolemy XV</a></td><td><em>Ptolemaios Philopator Philometor Caesarion</em></td><td>44&ndash;30</td></tr>
+		</table>
+		</div>
+		`;
+}
+
+if (id == 9) {
+	ut = `Egypt became a province of the Roman Empire after <b>Octavian</b> (Augustus) defeated Cleopatra in 30 BCE. They are included here because locally, the Emperors continued the use of hieroglyphics for another 300 years, until it finally stopped as the knowledge was eventually lost.</p>
+		<h2 class="text-center py-3">Roman Emperors</h2>
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead>
+		<tr><th>#</th><th>Emperor</th><th>Latin names</th><th>Reign (CE)</th></tr></thead>
+		<tr><td>1</td><td><a href="/pharaohs/Augustus">Augustus</a></td><td class="italic">Imperator Caesar Divi Filius Augustus</td><td>27 BC–14 CE</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Tiberius">Tiberius</a></td><td class="italic">Tiberius Caesar Divi Augusti Fīlius Augustus</td><td>14&ndash;37</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Caligula">Caligula</a></td><td class="italic">Gaius Julius Caesar Augustus Germanicus</td><td>37&ndash;41</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Claudius">Claudius</a></td><td class="italic">Tiberius Claudius Caesar Augustus Germanicus</td><td>41&ndash;54</td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Nero">Nero</a></td><td class="italic">Nero Claudius Caesar Augustus Germanicus</td><td>54&ndash;68</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Galba">Galba</a></td><td class="italic">Servius Sulpicius Galba Caesar Augustus</td><td>68&ndash;69</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Otho">Otho</a></td><td> class="italic"Marcus Salvius Otho Caesar Augustus</td><td>69</td></tr>
+		<tr><td>8</td><td><a href="/pharaohs/Vespasianus">Vespasianus</a></td><td class="italic">Vespsian, Titus Flavius Caesar Vespasianus Augustus</td><td>69&ndash;79</td></tr>
+		<tr><td>9</td><td><a href="/pharaohs/Titus">Titus</a></td><td class="italic">Titus Flavius Sabinus Vespasianus Augustus</td><td>79&ndash;81</td></tr>
+		<tr><td class="pr-4">10</td><td><a href="/pharaohs/Domitianus">Domitianus</a></td><td class="italic">Domitian, Titus Flavius Caesar Domitianus Augustus</td><td>81&ndash;96</td></tr>
+		<tr><td>11</td><td><a href="/pharaohs/Nerva">Nerva</a></td><td class="italic">Marcus Cocceius Nerva Caesar Augustus</td><td>96&ndash;98</td></tr>
+		<tr><td>12</td><td><a href="/pharaohs/Trajanus">Trajanus</a></td><td class="italic">Trajan, Imperator Caesar Nerva Traianus Divi Nervae filius Augustus</d><td>98&ndash;117</td></tr>
+		<tr><td>13</td><td><a href="/pharaohs/Hadrianus">Hadrianus</a></td><td class="italic">Hadrian, Publius Aelius Hadrianus Augustus</td><td>117&ndash;138</td></tr>
+		<tr><td>14</td><td><a href="/pharaohs/Antoninus-Pius">Antoninus Pius</a></td><td class="italic">Titus Fulvus Aelius Hadrianus Antoninus Augustus Pius</td><td>138&ndash;161</td></tr>
+		<tr><td>15</td><td><a href="/pharaohs/Marcus-Aurelius">Marcus Aurelius</a></td><td class="italic">Marcus Aurelius Antoninus Augustus</td><td>161&ndash;180</td></tr>
+		<tr><td>16</td><td><a href="/pharaohs/Lucius-Verus">Lucius Verus</a></td><td class="italic">Lucius Aurelius Verus Augustus</td><td>161&ndash;169</td></tr>
+		<tr><td>17</td><td><a href="/pharaohs/Commodus">Commodus</a></td><td class="italic">Marcus Aurelius Commodus Antoninus Augustus</td><td>177&ndash;192</td></tr>
+		<tr><td>18</td><td><a href="/pharaohs/Septimius-Severus">Septimius Severus</a></td><td class="italic">Lucius Septimius Severus Augustus</td><td>193&ndash;211</td></tr>
+		<tr><td>19</td><td><a href="/pharaohs/Caracalla">Caracalla</a></td><td class="italic">Marcus Aurelius Severus Antoninus Augustus</td><td>217&ndash;218</td></tr>
+		<tr><td>20</td><td><a href="/pharaohs/Geta">Geta</a></td><td class="italic">Publius Septimius Geta Augustus</td><td>217&ndash;218</td></tr>
+		<tr><td>21</td><td><a href="/pharaohs/Macrinus">Macrinus</a></td><td class="italic">Marcus Opellius Severus Macrinus Augustus</td><td>244&ndash;249</td></tr>
+		<tr><td>22</td><td><a href="/pharaohs/Diadumenianus">Diadumenianus</a></td><td class="italic">Diadumenian, Marcus Opellius Antoninus Diadumenianus</td><td>249&ndash;251</td></tr>
+		<tr><td>23</td><td><a href="/pharaohs/Philippus-Arabs">Philippus Arabs</a></td><td class="italic">Philip the Arab, Marcus Julius Philippus Augustus</td><td>253&ndash;260</td></tr>
+		<tr><td>24</td><td><a href="/pharaohs/Trajanus-Decius">Trajanus Decius</a></td><td class="italic">Decius, Caesar Gaius Messius Quintus Traianus Decius Augustus</td><td>276&ndash;282</td></tr>
+		<tr><td>25</td><td><a href="/pharaohs/Valerianus">Valerianus</a></td><td class="italic">Valerian, Publius Licinius Valerianus Augustus</td><td>284&ndash;305</td></tr>
+		<tr><td>26</td><td><a href="/pharaohs/Probus">Probus</a></td><td class="italic">Marcus Aurelius Probus Augustus</td><td>276&ndash;282</td></tr>
+		<tr><td>27</td><td><a href="/pharaohs/Diocletianus">Diocletianus</a></td><td class="italic">Diocletian, Gaius Aurelius Valerius Diocletianus Augustus</td><td>284&ndash;305</td></tr>
+		<tr><td>28</td><td><a href="/pharaohs/Maximianus">Maximianus</a></td><td class="italic">Maximian, Marcus Aurelius Valerius Maximianus Herculius Augustus</td><td>286&ndash;305</td></tr>
+		<tr><td>29</td><td><a href="/pharaohs/Galerius">Galerius</a></td><td class="italic">Gaius Galerius Valerius Maximianus Augustus</td><td>305&ndash;311</td></tr>
+		<tr><td>30</td><td><a href="/pharaohs/Maximinus-Daia">Maximinus Daia</a></td><td class="italic">Maximinus II, Gaius Valerius Galerius Maximinus Daia Augustus</td><td>311&ndash;313</td></tr>
+		</table>
+		</div>
+		`;
+}
+if (id == 10) {
+	ut = `
+		<p>History is full of fascinating mysteries, and ancient Egypt has its fair share. Among them are the unplaceable pharaohs - rulers whose reigns and identities remain shrouded in mystery. Whether controversial or completely unknown, archaeologists and historians alike tries to unlock their secrets.</p>
+		${newInfo}
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<table>
+		<thead><tr><th>#</th><th>King</th><th>Also known as</th><th>Remarks</th></tr></head>
+		<tr><td>1</td><td><a href="/pharaohs/Anather">Anather</a></td><td>-</td><td>Contemporary with Dynasty XII?</td></tr>
+		<tr><td>2</td><td><a href="/pharaohs/Harsiese-A">Harsiese A</a></td><td>-</td><td>Ruled at Thebes during Dynasty XXIII</td></tr>
+		<tr><td>3</td><td><a href="/pharaohs/Ini-II">Ini II</a></td><td>-</td><td>Ruled at Thebes during Dynasty XXIII</td></tr>
+		<tr><td>4</td><td><a href="/pharaohs/Peftjauawybast">Peftjauawybast</a></td><td>Peftjaubast</td><td>Governor(?) at Herakleopolis installed by <a href="/pharaohs/Piye">Piye</a></td></tr>
+		<tr><td>5</td><td><a href="/pharaohs/Pedubast-III">Pedubast III</a></td><td>Petubastis IV</td><td>Revolted against the Persian Domination of Dynasty XXVII</td></tr>
+		<tr><td>6</td><td><a href="/pharaohs/Psamtik-IV">Psamtik IV</a></td><td>Psammetichus IV</td><td>Probably rebelled against the Persian Domination</td></tr>
+		<tr><td>7</td><td><a href="/pharaohs/Inaros">Inaros</a></td><td>Inarus, Inaros II</td><td>Rebelled against the Persian Domination</td></tr>
+		</table>
+		</div>
+		`;
+}
+var period = false;
+const pd = new Array();
+let jj = 37;
+for (let i = 1; i < periods.length; i++) {
+	if (periods[i].period === jj) {
+		let pp = periods[i].period;
+		let dd = periods[i].dynasti;
+		let nn = periods[i].namn;
+		let dx = periods[i].dynasti_order;
+		let ak = periods[i].aka;
+		// Coerce possible string/undefined fields to numbers before summing.
+		let rg = (Number(periods[i].reg_start) || 0) + (Number(periods[i].reg_slut) || 0) + (Number(periods[i].reign_special) || 0);
+		pd.push({
+			perioden: pp,
+			faraonr: dd,
+			namn: nn,
+			ordning: dx,
+			annat: ak,
+			regerade: rg,
+		});
+		period = true;
+	}
+}
+console.log(periods[1].period);
+
+const bild = "/images/fp-pharaoh.webp";
+---
+
+<Layout title={tt + " of Ancient Egypt"} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<div class="container">
+			<div set:html={ut} />
+		</div>
+	</section>
+</Layout>

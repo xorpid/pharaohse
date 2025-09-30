@@ -1,5 +1,5 @@
 ---
-import Layout from "@/layouts/base.astro";
+import Layout from "@/layouts/Layout.astro";
 
 const title = "Titles and epithets in Ancient Egypt";
 let meta1 = "Titles and Epithets used by the pharaohs";
@@ -10,7 +10,7 @@ const bild = "/images/pharaohse-titles.webp";
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
 	<section class="page-content">
 		<p class="lead">
-			The most common <a href="/ancient-egypt/hieroglyphs">hieroglyphic</a>
+			The most common <a href="/hieroglyphs">hieroglyphic</a>
 			<b>titles</b> and <b>epithets</b> of the pharaohs.
 		</p>
 
@@ -38,7 +38,8 @@ const bild = "/images/pharaohse-titles.webp";
 		<h3 class="shine border-b pt-8 dark:border-shark-700">The Horus name</h3>
 		<p>
 			<img class="float-left my-2 h-36 pr-5 dark:invert" src="/svg/hiero/serekh2.svg" loading="lazy" alt="Horus name" />
-			The Horus name, the first and oldest of the five titularies, consists of a falcon with a rectangular <i>serekh</i>, representing the god Horus and the royal palace, respectively. <!--<img class="inline my-2 h-8 dark:invert" src="/svg/hiero/t_horus.svg" alt="Horus" /> -->
+			The Horus name, the first and oldest of the five titularies, consists of a falcon with a rectangular <i>serekh</i>, representing the god Horus
+			and the royal palace, respectively. <!--<img class="inline my-2 h-8 dark:invert" src="/svg/hiero/t_horus.svg" alt="Horus" /> -->
 			<!--<img class="inline my-2 h-8 dark:invert" src="/svg/hiero/serekh.svg" alt="Serekh" /> -->
 			<br />
 			The symbolism of Horus perched upon the palace establish a close relationship between the divine Horus and the earthly might of the King. The king’s
@@ -291,14 +292,14 @@ const bild = "/images/pharaohse-titles.webp";
 		flex-grow: 1;
 		flex-basis: calc(var(--spacing) * 60) /* 15rem = 240px */;
 		/* background-color: var(--default-bg-1); */
-		background-color: light-dark(var(--color-white),var(--color-shark-900));
-		padding: calc(var(--spacing)*4);
+		background-color: light-dark(var(--color-white), var(--color-shark-900));
+		padding: calc(var(--spacing) * 4);
 		border-radius: var(--radius-lg);
 	}
 	.wkard {
 		flex-basis: 100%;
 		border-radius: var(--radius-lg);
-		padding: calc(var(--spacing)*4);
+		padding: calc(var(--spacing) * 4);
 		background-color: var(--default-bg-1);
 	}
 </style>

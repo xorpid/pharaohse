@@ -3,9 +3,12 @@ import Layout from "../../layouts/Layout.astro";
 import kinglists from "../../data/kinglists.json";
 ---
 
-<Layout title="kinglists">
-	<h1 class="text-3xl font-bold mb-4">Kinglists of Ancient Egypt</h1>
-
+<Layout
+	title="Kinglists of Ancient Egypt"
+	meta1="The kinglists that were created in Ancient Egypt containing the names of the pharaohs"
+	meta2="king lists,egyptian king lists,minor king lists,Egyptian chronology"
+	bild="/images/pharaohse-kinglists.webp"
+>
 	<p>
 		Chronological information about the rulers of Ancient Egypt is extremely scarce. The time span is enormous; Ancient Egypt vanished more than 2000
 		years ago, and the origin of the kingdom goes back to 3000 BC. There are three categories of king lists:
@@ -84,19 +87,19 @@ import kinglists from "../../data/kinglists.json";
 			<td>19</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#abydos">Abydos Table</a></td>
+			<td class="p-1"><a href="/kinglists/minor#abydos">Abydos Table</a></td>
 			<td>30</td>
 			<td><i>Temple of Ramesses II</i>, Abydos</td>
 			<td>19</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#annals">Royal Annals</a></td>
+			<td class="p-1"><a href="/kinglists/minor#annals">Royal Annals</a></td>
 			<td>26</td>
 			<td>Memphis?</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#genealogy">Genealogy of Ankhefensekhmet</a></td>
+			<td class="p-1"><a href="/kinglists/minor#genealogy">Genealogy of Ankhefensekhmet</a></td>
 			<td>26</td>
 			<td>Memphis?</td>
 			<td>5</td>
@@ -114,7 +117,7 @@ import kinglists from "../../data/kinglists.json";
 			<td>19</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#amenmose">Tomb of Amenmose</a></td>
+			<td class="p-1"><a href="/kinglists/minor#amenmose">Tomb of Amenmose</a></td>
 			<td>12</td>
 			<td><i>TT 19</i>, Thebes</td>
 			<td>19</td>
@@ -126,49 +129,49 @@ import kinglists from "../../data/kinglists.json";
 			<td>20</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#qaa">Seal of Qaa</a></td>
+			<td class="p-1"><a href="/kinglists/minor#qaa">Seal of Qaa</a></td>
 			<td>8</td>
 			<td><i>Tomb Q</i>, Abydos</td>
 			<td>1</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#inherkhau">Tomb of Inherkhau</a></td>
+			<td class="p-1"><a href="/kinglists/minor#inherkhau">Tomb of Inherkhau</a></td>
 			<td>7</td>
 			<td><i>TT 359</i>, Thebes</td>
 			<td>20</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#giza">Giza writing board</a></td>
+			<td class="p-1"><a href="/kinglists/minor#giza">Giza writing board</a></td>
 			<td>6</td>
 			<td>Cedar wood and gypsum</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#netjerpunesut">Tomb of Netjerpunesut</a></td>
+			<td class="p-1"><a href="/kinglists/minor#netjerpunesut">Tomb of Netjerpunesut</a></td>
 			<td>6</td>
 			<td><i>Giza, central field</i>, small mastaba.</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#den">Seal of Den</a></td>
+			<td class="p-1"><a href="/kinglists/minor#den">Seal of Den</a></td>
 			<td>5</td>
 			<td>Abydos tomb T</td>
 			<td>1</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#sekhemkara">Tomb of Sekhemkara</a></td>
+			<td class="p-1"><a href="/kinglists/minor#sekhemkara">Tomb of Sekhemkara</a></td>
 			<td>5</td>
 			<td><i>G 8146</i>, Giza</td>
 			<td>5</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#wadi">Wadi Hammamat king list</a></td>
+			<td class="p-1"><a href="/kinglists/minor#wadi">Wadi Hammamat king list</a></td>
 			<td>5</td>
 			<td><i>Rock inscription</i>, Wadi Hammamat</td>
 			<td>12</td>
 		</tr>
 		<tr>
-			<td class="p-1"><a href="/kinglists/other#ssaqqara">South Saqqara Stone</a></td>
+			<td class="p-1"><a href="/kinglists/minor#ssaqqara">South Saqqara Stone</a></td>
 			<td>4</td>
 			<td><i>Erased</i> annals, sarcophagus lid, Saqqara</td>
 			<td>6</td>
@@ -221,3 +224,38 @@ import kinglists from "../../data/kinglists.json";
 		}
 	</ul>
 </Layout>
+
+<style>
+	figure {
+		/* float: left; */
+		caret-color: aliceblue;
+		padding-inline: 0;
+	}
+	figure img {
+		height: 150px;
+		width: auto;
+		padding: 0.5rem 1.2rem;
+		color: var(--svg);
+		filter: var(--invert) opacity(0.33);
+	}
+	figure img.j {
+		display: inline-block;
+		float: right;
+		height: auto !important;
+		shape-outside: polygon(112px 349px, 100.31% 99.43%, 100.04% 0.19%, 40.85% 0.88%, 38.15% 36.98%, 6.82% 46.98%, -0.39% 66%, 30.56% 69.71%);
+		filter: drop-shadow(0px 0px 6px #2b7093);
+		animation: anymate 20s ease alternate infinite;
+		padding: 0;
+	}
+	@keyframes anymate {
+		0% {
+			filter: drop-shadow(0px 0px 6px #0547d4);
+		}
+		50% {
+			filter: drop-shadow(0px 0px 12px #f0cd07);
+		}
+		100% {
+			filter: drop-shadow(0px 0px 6px #2bc0a3);
+		}
+	}
+</style>

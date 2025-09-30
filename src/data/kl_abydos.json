@@ -34,7 +34,7 @@
 		"farao": 11,
 		"meaning": "Ita",
 		"namn": "Ita",
-		"tlit": "it&#42786;",
+		"tlit": "itA",
 		"mdc": "i-t-A",
 		"nr": 4,
 		"bild": "04"
@@ -44,7 +44,7 @@
 		"farao": 12,
 		"meaning": "He of the two districts",
 		"namn": "Sepati",
-		"tlit": "sp&#42786;ti",
+		"tlit": "spAti",
 		"mdc": "N24-N24",
 		"nr": 5,
 		"bild": "05"
@@ -54,7 +54,7 @@
 		"farao": 13,
 		"meaning": "The eternally beloved of the throne(?)",
 		"namn": "Meribiap",
-		"tlit": "mri-bi&#42786;-p",
+		"tlit": "mri-biA-p",
 		"mdc": "U7-r:N42*p",
 		"nr": 6,
 		"bild": "06"
@@ -74,7 +74,7 @@
 		"farao": 15,
 		"meaning": "He from the north",
 		"namn": "Qebeh",
-		"tlit": "&#7731;b&#7717;",
+		"tlit": "qbH",
 		"mdc": "q-b-H",
 		"nr": 8,
 		"bild": "08"
@@ -84,7 +84,7 @@
 		"farao": 16,
 		"meaning": "The smelter",
 		"namn": "Bedjau",
-		"tlit": "b&#7695;&#42788;w",
+		"tlit": "bDaw",
 		"mdc": "b-DA-w-P11",
 		"nr": 9,
 		"bild": "09"
@@ -94,7 +94,7 @@
 		"farao": 17,
 		"meaning": "Bull of bulls",
 		"namn": "Kakau",
-		"tlit": "k&#42786;-k&#42786;w",
+		"tlit": "kA-kAw",
 		"mdc": "kA-D52:D52:D52",
 		"nr": 10,
 		"bild": "10"
@@ -104,7 +104,7 @@
 		"farao": 18,
 		"meaning": "The spirit of the god",
 		"namn": "Ba netjer",
-		"tlit": "b&#42786;-n&#7791;r",
+		"tlit": "bA-nTr",
 		"mdc": "W10A*E11-nTr:n",
 		"nr": 11,
 		"bild": "11"
@@ -114,7 +114,7 @@
 		"farao": 19,
 		"meaning": "Fresh of tongue",
 		"namn": "Wadj nes",
-		"tlit": "w&#42786;&#7695;ns",
+		"tlit": "wADns",
 		"mdc": "wAD-n-s",
 		"nr": 12,
 		"bild": "12"
@@ -144,7 +144,7 @@
 		"farao": 27,
 		"meaning": "Lord of the ka(?)",
 		"namn": "Neb ka",
-		"tlit": "nb-k&#42786;",
+		"tlit": "nb-kA",
 		"mdc": "nb-kA-Z1",
 		"nr": 15,
 		"bild": "15"
@@ -234,7 +234,7 @@
 		"farao": 40,
 		"meaning": "The established one of the kas of Ra",
 		"namn": "Men kau Ra",
-		"tlit": "mn-k&#42786;w-r&#42788;",
+		"tlit": "mn-kAw-ra",
 		"mdc": "ra-mn:n-kA:Z2",
 		"nr": 24,
 		"bild": "24"
@@ -244,7 +244,7 @@
 		"farao": 41,
 		"meaning": "His soul is noble",
 		"namn": "Shepses kaf",
-		"tlit": "&scaron;ps-s-k&#42786;-f",
+		"tlit": "Sps-s-kA-f",
 		"mdc": "A51-z:z-kA:f",
 		"nr": 25,
 		"bild": "25"
@@ -254,7 +254,7 @@
 		"farao": 43,
 		"meaning": "His ka is strong",
 		"namn": "User kaf",
-		"tlit": "wsr-k&#42786;-f",
+		"tlit": "wsr-kA-f",
 		"mdc": "wsr-s-kA-f",
 		"nr": 26,
 		"bild": "26"
@@ -274,7 +274,7 @@
 		"farao": 45,
 		"meaning": "My ka is a (true) ka (?)",
 		"namn": "Kakai",
-		"tlit": "k&#42786;-k&#42786;-i",
+		"tlit": "kA-kA-i",
 		"mdc": "kA-kA-i",
 		"nr": 28,
 		"bild": "28"
@@ -284,7 +284,7 @@
 		"farao": 47,
 		"meaning": "The perfection of Ra",
 		"namn": "Nefer ef Ra",
-		"tlit": "nfr.f-r&#42788;",
+		"tlit": "nfr.f-ra",
 		"mdc": "ra-nfr-f",
 		"nr": 29,
 		"bild": "29"
@@ -294,7 +294,7 @@
 		"farao": 48,
 		"meaning": "Who belongs to the power of Ra",
 		"namn": "Ni user Ra",
-		"tlit": "ni-wsr-r&#42788;",
+		"tlit": "ni-wsr-ra",
 		"mdc": "ra-n-wsr*s:r",
 		"nr": 30,
 		"bild": "30"
@@ -304,7 +304,7 @@
 		"farao": 49,
 		"meaning": "The established one of the kas of Horus",
 		"namn": "Men kau Hor",
-		"tlit": "mn-k&#42786;w-&#7717;r",
+		"tlit": "mn-kAw-Hr",
 		"mdc": "G5-mn:n-kA*kA:kA",
 		"nr": 31,
 		"bild": "31"
@@ -344,7 +344,7 @@
 		"farao": 53,
 		"meaning": "The strong one belonging to the ka of Ra",
 		"namn": "User ka Ra",
-		"tlit": "wsr-k&#42786;-r&#42788;",
+		"tlit": "wsr-kA-ra",
 		"mdc": "ra-wsr*s-kA",
 		"nr": 35,
 		"bild": "35"
@@ -354,7 +354,7 @@
 		"farao": 54,
 		"meaning": "Beloved of Ra",
 		"namn": "Mery Ra",
-		"tlit": "mry-r&#42788;",
+		"tlit": "mry-ra",
 		"mdc": "ra-U7\\:r-i-i",
 		"nr": 36,
 		"bild": "36"
@@ -364,7 +364,7 @@
 		"farao": 55,
 		"meaning": "The one whom Ra has loved",
 		"namn": "Mer en Ra",
-		"tlit": "mr-n-r&#42788;",
+		"tlit": "mr-n-ra",
 		"mdc": "ra:U7-r:n",
 		"nr": 37,
 		"bild": "37"
@@ -374,7 +374,7 @@
 		"farao": 56,
 		"meaning": "The perfect one of the ka of Ra",
 		"namn": "Nefer ka Ra",
-		"tlit": "nfr-k&#42786;-r&#42788;",
+		"tlit": "nfr-kA-ra",
 		"mdc": "ra-nfr-kA",
 		"nr": 38,
 		"bild": "38"
@@ -494,7 +494,7 @@
 		"farao": 68,
 		"meaning": "The perfect one of the ka of Horus",
 		"namn": "Nefer ka Hor",
-		"tlit": "nfr-k&#42786;-&#7717;r",
+		"tlit": "nfr-kA-Hr",
 		"mdc": "G5-nfr-kA",
 		"nr": 50,
 		"bild": "50"
@@ -534,7 +534,7 @@
 		"farao": 72,
 		"meaning": "The perfect one of the kas of Ra",
 		"namn": "Nefer kau Ra",
-		"tlit": "nfr-k&#42786;w-r&#42788;",
+		"tlit": "nfr-kAw-ra",
 		"mdc": "ra-nfr-kA:Z2",
 		"nr": 54,
 		"bild": "54"

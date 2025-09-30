@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/Markdown.astro
+layout: /src/layouts/Layout.astro
 title: "Ptolemaic Dynasty of ancient Egypt"
 pagename: Ptolemaic Dynasty of Egypt
 pubDate: 2024-09-18

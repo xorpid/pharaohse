@@ -1,0 +1,128 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+/* For @components/Head via @layouts/Layout */
+const title = "Codex of Curiosities";
+const meta1 = "A short note about these pages and purpose";
+const meta2 = "about,introduction,help";
+const ogimg = "/images/other.webp";
+const { frontmatter } = Astro.props;
+
+const bas = Astro.url;
+const shorts = [
+	{
+		url: bas + "/cg",
+		titel: "Cairo Museum Catalogue",
+		text: `This inventory of items provides detailed information about virtually all objects originating in Ancient Egypt. It often includes sketches of scenes and transcriptions of hieroglyphs. Although it is over a century old, it is still in use.`,
+		buttonText: "Read more",
+	},
+	{
+		url: bas + "/battle-of-kadesh",
+		titel: "The Battle of Kadesh",
+		text: `This is a description of the Battle of Kadesh, fought between Egypt and the Hittites in 1274 BC. It is inscribed on monuments all over Egypt. Kadesh was a walled city located near the modern-day border between Lebanon and Syria.`,
+		buttonText: "Read more",
+	},
+	{
+		url: bas + "/hatshepsut-obelisk",
+		titel: "Hatshepsut's obelisk",
+		text: "Queen Hatshepsut's obelisk at Karnak praises her divine lineage and legitimacy as ruler, while also commemorating her contribution of two obelisks to honour her father.",
+		buttonText: "Read it here",
+	},
+	{
+		url: bas + "/historical-hall-berlin",
+		titel: "The Historical Hall",
+		text: `150 years ago Berlin had a brand new museum with its Historical Hall, plastered with Pharaonic frescoes; think vibrant colours, enough headgear to make an ostrich jealous... But then, WW2 came along.`,
+		buttonText: "Check it out",
+	},
+	/*{
+		url: bas + "/manetho",
+		titel: "The Fragments of Manetho",
+		text: "The structure of Manetho’s the books of <i>Aegyptiaca</i> from the fragments preserved by Syncellus. Based on W.G. Waddells <i>Manetho</i> from 1940. The original content was created by Bill Thayer, this is all three pages in one document.",
+		buttonText: "Read it here",
+	},
+	{
+		url: bas + "/manetho3",
+		titel: "The Chronicle of Syncellus",
+		text: '<span class="uppercase text-[90%]">The Egyptian part</span> of the Chronicle of Syncellus. The descriptions of the dynasties by Africanus and Eusebius are shown side by side for easy comparison. From the 2002 book by Adler and Tuffin.',
+		buttonText: "Read more",
+	},
+	{
+		url: bas + "/_ancient-olympiads",
+		titel: "Ancient Olympiads",
+		text: "The part of the Armenian translation of Eusebius describing the ancient Olympiads. Basically a list of the winners of 249 consecutive games.",
+		buttonText: "Learn more",
+	},
+		{
+		url: bas + "/champollion",
+		titel: "Champollion",
+		text: "The most important scholar in the process of deciphering the hieroglyphs was Jean François Champollion. His groundbreaking studies launched the field of Egyptology.",
+		buttonText: "More ...",
+	},
+	{
+		url: bas + "/armenian",
+		titel: "Eusebios book I (Egypt only)",
+		text: `The Chronicle of Eusebius was translated from <i>Greek</i> into Armenian before 600 A.D., but the oldest manuscript which has survived was written in the twelfth or thirteenth century. This is <span class="uppercase text-[90%]">the Egyptian part</span> only. `,
+		buttonText: "Read more",
+	},
+	{
+		url: bas + "/eusebius",
+		titel: "Eusebios book I",
+		text: "The Armenian translation (in English) of Eusebios first book, including the kings of the Babylonians, Assyrians, Medes, Lydians, Persians, Jews, Israel and Judah, Egyptians, Alexandria, Sicyonians, Argives, Athenians, Corinthians, Spartans, Macedonians, Thessalians, Syria, Romans, and Olympic victors.",
+		buttonText: "Read more",
+	},
+ */
+	{
+		url: bas + "/rosetta-stone",
+		titel: "Rosetta Stone",
+		text: `In 1799, during Napoleon’s expedition to Egypt, French soldiers unearthed the trilingual Rosetta Stone while rebuilding a crumbling 15th-century fort against an expected Ottoman attack.`,
+		buttonText: "More inside",
+	},
+	{
+		url: bas + "/dionysius",
+		titel: "The book of Easter",
+		text: "Dionysius the Humble is best known as the inventor of the Anno Domini dating system. He used this system to identify several Easters. Presented here is fruit of the labour of Michael Deckers in 2003, who entered all this text with a translation from Latin.",
+		buttonText: "Archived page",
+	},
+];
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={ogimg}>
+	<main class="flow content-grid">
+		<section class="mx-auto max-w-prose pb-20 text-lg">
+			<p>
+				These articles may not be entirely complete, but they are readable. <strong>Caveat emptor.</strong>
+				Any of them could be be abandoned or expanded at any time. It is a digital laboratory or collection housing a variety of articles and concepts
+				in various stages of development. Some articles represent completed studies, while others offer preliminary insights. Some merely safeguard a text
+				from disappearing from the internet. It's kind of like inscribing texts in stone, but digitally.
+			</p>
+			<p>
+				As with all electronic texts, this website could disappear at any time due to ignorance, censorship, bankruptcy, physical destruction or even
+				death or an alien invasion. <em>Nothing lasts forever.</em>
+			</p>
+		</section>
+
+		<section>
+			<div class="grid grid-cols-1 justify-items-stretch gap-5 md:grid-cols-2">
+				{
+					shorts.map((short) => (
+						<div class="max-w-full rounded-lg text-1 default-bg-1 text-sm p-3 shadow flex flex-col">
+							<a href={short.url}>
+								<h5 class="mb-2 text-left text-2xl font-bold tracking-tight">{short.titel}</h5>
+							</a>
+							<p class="ptext" set:html={short.text} />
+							<a
+								href={short.url}
+								class="inline-flex items-center self-end rounded py-1 px-2 text-sm/relaxed bg-smoke-500 dark:bg-shark-600 text-white dark:text-shark-200 font-medium hover:bg-smoke-300 hover:dark:bg-shark-400 transition duration-300"
+							>
+								{short.buttonText}
+								<svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+									<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+								</svg>
+							</a>
+						</div>
+					))
+				}
+			</div>
+		</section>
+	</main>
+</Layout>

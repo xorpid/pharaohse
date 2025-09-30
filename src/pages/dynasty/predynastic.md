@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/Markdown.astro
+layout: /src/layouts/Layout.astro
 title: "Predynastic kings of ancient Egypt"
 pagename: Predynastic kings of Egypt
 pubDate: 2024-08-28

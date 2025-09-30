@@ -1,10 +1,10 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import dynastys from "../../data/dynasties.json";
+import Layout from "@/layouts/Layout.astro";
+import dynastys from "@/data/dynasties.json";
 
 export async function getStaticPaths() {
 	return dynastys.map((p) => ({
-		params: { slug: p.slug },
+		params: { dynasti: p.slug },
 		props: { dynasty: p },
 	}));
 }

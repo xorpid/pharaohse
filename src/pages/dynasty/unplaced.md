@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/Markdown.astro
+layout: /src/layouts/Layout.astro
 title: "Unplaced kings of Ancient Egypt"
 pagename: Unplaced kings of Egypt
 pubDate: 2024-08-28

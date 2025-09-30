@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/Markdown.astro
+layout: /src/layouts/Layout.astro
 title: "The Argead Dynasty of ancient Egypt"
 pagename: Argead Dynasty of Egypt
 pubDate: 2024-08-28

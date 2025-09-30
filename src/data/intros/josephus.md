@@ -1,0 +1,14 @@
+<p class="lead px-3"><a href="https://en.wikipedia.org/wiki/Josephus" target="_blank">Titus Flavius Josephus</a> (37 – c. 100) was a first century Jewish historian who wrote <i>Against Apion</i> (Contra Apionem), which is a polemical work written as a defense of Judaism, stressing its antiquity against what he perceived as more recent traditions of the Greeks.</p>
+<p>As Josephus himself notes, it does not contain quotations from Manetho’s original, but rather cites from one or perhaps even two epitomized and altered version of Manetho’s Aegyptiaca. Written as a narrative, it covers only a portion of Manetho’s history, roughly from the Fifteenth through the Nineteenth dynasties, but it does describe shifts in control from one faction to another, consistent with dynastic divisions. There is no mention of numbered dynasties, and only 24 rulers are named.<br><br>The original Greek manuscript is lost, and is only preserved in a single imperfect copy: <i>Codex Laurentianus LXIX.22</i>, a copy from the 11th century, from which all other existing manuscripts are descended.<br><br>The pharaohs are mentioned in Book 1, 1.14 to 1.16 (§§ 77—97) and the kings of the New Kingdom are listed without any mention of dynastic breaks:</p>
+<div class="mb-3">
+<div class="m-3 py-3">
+<blockquote class="italic text-sm w-3/4 mx-auto">
+<p><b class="not-italic pr-4 secondary">93</b> At the moment, I am presenting the Egyptians as witnesses to antiquity; so, I shall resume citing sections from Manetho as they relate to the sequence of time.</p>
+<p><b class="not-italic pr-4 secondary">94</b> He says the following: After the shepherd people left Egypt for Jerusalem, Tethmosis, the king who expelled them from Egypt, subsequently reigned for 25 years and 4 months, and died; and his son, Chebron, inherited his rule, for 13 years.</p>
+<p><b class="not-italic pr-4 secondary">95</b> After him, Amenophis for 20 years and 7 months, and his sister Amesses for 21 years and 9 months, and her son Mephres for 12 years and 9 months, and his son Mephramouthosis for 25 years and 10 months.</p>
+<p><b class="not-italic pr-4 secondary">96</b> And his son, Thmosis for 9 years and 8 months, and his son Amenophis for 30 years and 10 months, and his son Oros for 36 years and 5 months, and his daughter Akencheres for 12 years and 1 month, and her brother Rathotis for 9 years.</p>
+<p><b class="not-italic pr-4 secondary">97</b> And his son, Kencheres for 12 years and 5 months, and his son Akencheres for 12 years and 3 months, and his son Harmais for 4 years and 1 month, and his son Ramesses for 1 year and 4 months, and his son Harmesses Miamoun for 66 years and 2 months, and his son Amenophis for 19 years and 6 months</p>
+</blockquote>
+</div>
+Here is this list (with additional kings) in table form:
+</div>

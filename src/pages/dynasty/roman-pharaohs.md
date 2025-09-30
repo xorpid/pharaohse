@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/Markdown.astro
+layout: /src/layouts/Layout.astro
 title: "The Roman Pharaohs of Ancient Egypt"
 pagename: Roman emperors attested in Egypt
 pubDate: 2024-08-28

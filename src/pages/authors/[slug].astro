@@ -1,14 +1,14 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import authors from "../../data/authors.json";
-import africanus from "../../data/kl_africanus.json";
-import eusebius from "../../data/kl_eusebius.json";
-import herodotus from "../../data/kl_herodotus.json";
-import diodorus from "../../data/kl_diodorus.json";
-import syncellus from "../../data/kl_syncellus.json";
-import josephus from "../../data/kl_josephus.json";
-import eratosthenes from "../../data/kl_eratosthenes.json";
-import faraos from "../../data/pharaohs.json";
+import Layout from "@/layouts/Layout.astro";
+import authors from "@/data/authors.json";
+import africanus from "@/data/kl_africanus.json";
+import eusebius from "@/data/kl_eusebius.json";
+import herodotus from "@/data/kl_herodotus.json";
+import diodorus from "@/data/kl_diodorus.json";
+import syncellus from "@/data/kl_syncellus.json";
+import josephus from "@/data/kl_josephus.json";
+import eratosthenes from "@/data/kl_eratosthenes.json";
+import faraos from "@/data/pharaohs.json";
 
 export async function getStaticPaths() {
 	return authors.map((p) => ({
@@ -78,19 +78,19 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 		{
 			dynKeys.map((dyn) => (
 				<div class="mb-12">
-					<h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>
-					<div class="overflow-x-auto">
-						<table class="min-w-full border border-gray-300">
-							<thead>
-								<tr class="bg-gray-100 dark:bg-stone-800">
-									<th class="px-2 py-1 border">Order</th>
-									<th class="px-2 py-1 border">Pharaoh</th>
-									<th class="px-2 py-1 border">Chapter</th>
-									<th class="px-2 py-1 border">Greek</th>
-									<th class="px-2 py-1 border">Translit</th>
-									<th class="px-2 py-1 border">Transcription</th>
-									<th class="px-2 py-1 border">Reign</th>
-									<th class="px-2 py-1 border">Description</th>
+					{dyn !== "99" && <h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>}
+					<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+						<table class="min-w-full text-sm">
+							<thead class="border-b-2 mb-4">
+								<tr class="text-left">
+									<th>Order</th>
+									<th>Pharaoh</th>
+									<th>Chapter</th>
+									<th>Greek</th>
+									<th>Transliteration</th>
+									{/* <th>Transcription</th> */}
+									<th>Reign</th>
+									<th>Description</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -99,8 +99,8 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 									.sort((a, b) => a.ordna - b.ordna)
 									.map((item) => (
 										<tr>
-											<td class="px-2 py-1 border">{item.ordna}</td>
-											<td class="px-2 py-1 border">
+											<td class="px-2 py-1">{item.ordna}</td>
+											<td class="px-2 py-1">
 												{(() => {
 													const phEntry = faraos.find((ph) => ph.no === String(item.ph));
 													if (phEntry) {
@@ -123,12 +123,14 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 													}
 												})()}
 											</td>
-											<td class="px-2 py-1 border">{item.ch}</td>
-											<td class="px-2 py-1 border">{item.greek}</td>
-											<td class="px-2 py-1 border">{item.tlit}</td>
-											<td class="px-2 py-1 border">{item.tscript}</td>
-											<td class="px-2 py-1 border">{item.reign}</td>
-											<td class="px-2 py-1 border">{item.descr ?? ""}</td>
+											<td class="px-2 py-1">{item.ch}</td>
+											<td class="px-2 py-1">
+												<span lang="grc">{item.greek}</span>
+											</td>
+											<td class="px-2 py-1">{item.tlit}</td>
+											{/* <td class="px-2 py-1">{item.tscript}</td> */}
+											<td class="px-2 py-1">{item.reign}</td>
+											<td class="px-2 py-1">{item.descr ?? ""}</td>
 										</tr>
 									))}
 							</tbody>
@@ -152,3 +154,11 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 		)
 	}
 </Layout>
+
+<style>
+	td {
+		padding-inline: 0.5rem;
+		vertical-align: top;
+		border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
+	}
+</style>

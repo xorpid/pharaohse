@@ -1,25 +1,27 @@
 ---
 /* import { ViewTransitions } from "astro:transitions"; */
+const { frontmatter } = Astro.props;
 const author = "Peter Lundström";
 const website = "https://pharaoh.se";
 const sajt = "Pharaoh.se";
 const tweet = "@PharaohSE";
 const { title, meta1, meta2, bild } = Astro.props;
+const resolvedTitle = frontmatter && frontmatter.title ? frontmatter.title : title;
 const canonical = website + Astro.url.pathname;
 const event = new Date();
 const jsonDate = event.toJSON();
 const schema = {
 	"@context": "http://schema.org",
 	"@type": "Article",
-	name: title,
+	name: resolvedTitle,
 	author: {
 		"@type": "Person",
 		name: "Peter Lundström",
-		url: "https://twitter.com/pharaohSE",
+		url: "https://x.com/pharaohSE",
 	},
 	datePublished: jsonDate,
 	image: { bild },
-	headline: title + " | " + sajt,
+	headline: resolvedTitle + " | " + sajt,
 	articleBody: meta1,
 	url: canonical,
 	publisher: {
@@ -41,10 +43,10 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="keywords" content={meta2} />
 	<meta name="generator" content={Astro.generator} />
 	<meta name="color-scheme" content="light dark" />
-	<title>{title} | {sajt}</title>
+	<title>{resolvedTitle} | {sajt}</title>
 	<!-- <ViewTransitions /> -->
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={title} />
+	<meta property="og:title" content={resolvedTitle} />
 	<meta property="og:site_name" content={sajt} />
 	<meta property="og:description" content={meta1} />
 	<meta property="og:url" content={canonical} />
@@ -52,7 +54,7 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content={tweet} />
 	<meta name="twitter:creator" content={tweet} />
-	<meta name="twitter:title" content={title} />
+	<meta name="twitter:title" content={resolvedTitle} />
 	<meta name="twitter:description" content={meta1} />
 	<meta name="twitter:image" content={bild} />
 	<meta name="author" content={author} />

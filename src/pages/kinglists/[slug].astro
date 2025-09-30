@@ -17,6 +17,24 @@ export async function getStaticPaths() {
 	}));
 }
 
+// Transliterate function
+function Translit(inn: string): string {
+	const translitMap: Record<string, string> = {
+		A: "Ꜣ",
+		a: "Ꜥ",
+		D: "ḏ",
+		x: "ḫ",
+		X: "ẖ",
+		q: "ḳ",
+		T: "ṯ",
+		S: "š",
+		H: "ḥ",
+		j: "ꞽ",
+		ii: "y",
+	};
+	return Object.keys(translitMap).reduce((str, key) => str.replaceAll(key, (translitMap as Record<string, string>)[key]), inn);
+}
+
 // Map slug to data array
 const kinglistData = {
 	"abydos-canon": abydos,
@@ -38,6 +56,18 @@ const bild = kinglist.image;
 
 const items = kinglistData[slug] ?? [];
 
+// Map kinglist slug -> svg subfolder
+const svgFolderMap = {
+	"abydos-canon": "ac",
+	"saqqara-canon": "sc",
+	"karnak-canon": "kc",
+	"ramesseum-canon": "rs",
+	marseille: "ms",
+	"medinet-habu-canon": "mh",
+};
+
+const svgFolder = svgFolderMap[slug] ?? "misc";
+
 // Dynamically import Markdown intro for the kinglist
 let IntroComponent = null;
 let hasMarkdown = false;
@@ -51,7 +81,7 @@ try {
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
-	<h1 class="text-3xl font-bold">{kinglist.name}</h1>
+	<!-- <h1 class="text-3xl font-bold">{kinglist.name}</h1> -->
 	<p class="text-lg">{kinglist.period}</p>
 
 	{
@@ -63,24 +93,20 @@ try {
 	}
 	{
 		items.length > 0 && (
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
 				{items.map((item) => (
 					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-2">
-						<div class="font-bold text-xl">{item.namn}</div>
+						{item.bild && <img src={`/svg/${svgFolder}/${item.bild}.svg`} alt={item.namn} class=" h-20 dark:invert object-contain" />}
+						<div class="font-bold text-xl" set:html={item.namn} />
 						{item.meaning && <div class="text-sm">{item.meaning}</div>}
-						{item.tlit && (
-							<div class="text-sm">
-								<span class="font-semibold">Translit:</span> {item.tlit}
-							</div>
-						)}
-						{item.mdc && (
+						{item.tlit && <div class="text-sm tlit">{Translit(item.tlit)}</div>}
+						{/* 						{item.mdc && (
 							<div class="text-sm">
 								<span class="font-semibold">MDC:</span> {item.mdc}
 							</div>
 						)}
+ */}{" "}
 						{item.nr && <div class="text-xs">No: {item.nr}</div>}
-						{/* If you have images, you can display them here: */}
-						{/* {item.bild && <img src={`/path/to/images/${item.bild}.jpg`} alt={item.namn} class="w-24 h-24 object-contain" />} */}
 					</div>
 				))}
 			</div>
