@@ -8,7 +8,7 @@
 	{
 		"farao": 8,
 		"titel": 4,
-		"gname": "Meni*",
+		"gname": "Meni",
 		"glyph": "01-01-04"
 	},
 	{
@@ -20,7 +20,7 @@
 	{
 		"farao": 9,
 		"titel": 4,
-		"gname": "Teti*",
+		"gname": "Teti",
 		"glyph": "01-02-02"
 	},
 	{
@@ -32,7 +32,7 @@
 	{
 		"farao": 10,
 		"titel": 4,
-		"gname": "Iteti*",
+		"gname": "Iteti",
 		"glyph": "01-03-02"
 	},
 	{
@@ -44,7 +44,7 @@
 	{
 		"farao": 11,
 		"titel": 4,
-		"gname": "Ita*",
+		"gname": "Ita",
 		"glyph": "01-04-03"
 	},
 	{
@@ -56,7 +56,7 @@
 	{
 		"farao": 12,
 		"titel": 4,
-		"gname": "Sepati*",
+		"gname": "Sepati",
 		"glyph": "01-05-02"
 	},
 	{
@@ -68,7 +68,7 @@
 	{
 		"farao": 13,
 		"titel": 4,
-		"gname": "Mery biap*",
+		"gname": "Mery biap",
 		"glyph": "01-06-03"
 	},
 	{
@@ -80,7 +80,7 @@
 	{
 		"farao": 14,
 		"titel": 4,
-		"gname": "Semsu*",
+		"gname": "Semsu",
 		"glyph": "01-07-02"
 	},
 	{
@@ -92,7 +92,7 @@
 	{
 		"farao": 15,
 		"titel": 4,
-		"gname": "Qebeh*",
+		"gname": "Qebeh",
 		"glyph": "01-08-03"
 	},
 	{
@@ -104,7 +104,7 @@
 	{
 		"farao": 16,
 		"titel": 4,
-		"gname": "Bedjau*",
+		"gname": "Bedjau",
 		"glyph": "02-01-03"
 	},
 	{
@@ -116,7 +116,7 @@
 	{
 		"farao": 17,
 		"titel": 4,
-		"gname": "Kakau*",
+		"gname": "Kakau",
 		"glyph": "02-02-03"
 	},
 	{
@@ -128,19 +128,19 @@
 	{
 		"farao": 18,
 		"titel": 4,
-		"gname": "Ba netjer*",
+		"gname": "Ba netjer",
 		"glyph": "02-03-03"
 	},
 	{
 		"farao": 19,
 		"titel": 4,
-		"gname": "Wadjenes*",
+		"gname": "Wadjenes",
 		"glyph": "02-04-01"
 	},
 	{
 		"farao": 20,
 		"titel": 4,
-		"gname": "Senedj*",
+		"gname": "Senedj",
 		"glyph": "02-05-01"
 	},
 	{
@@ -176,7 +176,7 @@
 	{
 		"farao": 23,
 		"titel": 5,
-		"gname": "Nefer ka Ra*",
+		"gname": "Nefer ka Ra",
 		"glyph": "02-08-02"
 	},
 	{
@@ -188,7 +188,7 @@
 	{
 		"farao": 26,
 		"titel": 4,
-		"gname": "Bebety*",
+		"gname": "Bebety",
 		"glyph": "02-11-08"
 	},
 	{
@@ -200,7 +200,7 @@
 	{
 		"farao": 28,
 		"titel": 4,
-		"gname": "Djoser*",
+		"gname": "Djoser",
 		"glyph": "03-02-05"
 	},
 	{
@@ -212,7 +212,7 @@
 	{
 		"farao": 29,
 		"titel": 4,
-		"gname": "Teti*",
+		"gname": "Teti",
 		"glyph": "03-03-04"
 	},
 	{
@@ -482,7 +482,7 @@
 	{
 		"farao": 56,
 		"titel": 4,
-		"gname": "Nefer ka Ra*",
+		"gname": "Nefer ka Ra",
 		"glyph": "06-05-05"
 	},
 	{
@@ -884,7 +884,7 @@
 	{
 		"farao": 116,
 		"titel": 4,
-		"gname": "Khu tawy Ra*",
+		"gname": "Khu tawy Ra",
 		"glyph": "13-20-04"
 	},
 	{

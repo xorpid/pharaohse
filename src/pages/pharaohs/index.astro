@@ -1,18 +1,172 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import pharaohs from "../../data/pharaohs.json";
+import dynasties from "../../data/dynasties.json";
+import { Image } from "astro:assets";
+import ph2 from "./public/images/ph2.webp";
+// Build dynasty grouping and ordering
+const specialChar: Record<string, string> = {
+	"32": "AR",
+	"33": "PT",
+	"34": "R",
+	"35": "AB",
+	"36": "U",
+	"0": "P",
+};
+
+// map dynasties.json by char for lookup of names
+const dynastyByChar: Record<string, any> = {};
+for (const d of dynasties) dynastyByChar[String(d.char)] = d;
+
+// group pharaohs by dynasty char
+const groups: Record<string, any[]> = {};
+for (const p of pharaohs) {
+	// ignore pharaohs with no higher than 500
+	if (Number(p.no) > 500) continue;
+	const raw = String(p.dynasty);
+	const char = specialChar[raw] ?? raw;
+	if (!groups[char]) groups[char] = [];
+	groups[char].push(p);
+}
+
+// sort pharaohs within each dynasty by their `order` field (numerically)
+for (const k of Object.keys(groups)) {
+	groups[k].sort((a, b) => Number(a.order ?? a.no) - Number(b.order ?? b.no));
+}
+
+// desired dynasty display order per requirements
+const orderedDynChars: string[] = [];
+// predynastic P first
+orderedDynChars.push("P");
+// 1..16
+for (let i = 1; i <= 16; i++) orderedDynChars.push(String(i));
+// insert Abydos (35 -> AB) between 16 and 17
+orderedDynChars.push("AB");
+// 17..31
+for (let i = 17; i <= 31; i++) orderedDynChars.push(String(i));
+// remaining special dynasties after 31
+orderedDynChars.push("AR", "PT", "R", "U");
+
+// Also include any dynasty chars present in data but not in our list (append at end)
+for (const k of Object.keys(groups)) {
+	if (!orderedDynChars.includes(k)) orderedDynChars.push(k);
+}
 ---
 
-<Layout title="Pharaohs">
-	<h1 class="text-3xl font-bold mb-4">Pharaohs of Ancient Egypt</h1>
+<Layout
+	title="Pharaohs of Ancient Egypt"
+	meta1="The hieroglyphs of the pharaohs, their titles and names."
+	meta2="pharaohs,names of pharaohs,hieroglyphic names,pharaoh hieroglyphs,all pharaohs,hieroglyphics"
+	bild="/images/fp-pharaoh.webp"
+>
+	<div class="">
+		<p class="lead py-4">
+			<em>The royal titulary</em> of the Egyptian pharaohs was the standard naming convention adopted by the kings of ancient Egypt, symbolising their
+			supremacy and sacred power.
+		</p>
+		<Image src={ph2} class="ph mx-auto block md:float-left md:mx-0" loading="eager" alt="A drawing of a pharaoh" srcset="" />
 
-	<ul class="space-y-2 columns-5">
-		{
-			pharaohs.map((p) => (
-				<li>
-					<a href={`/pharaohs/${p.slug}`}>{p.name}</a>
-				</li>
-			))
-		}
-	</ul>
+		<p>
+			The knowledge to read and write <a href="/hieroglyphs">hieroglyphs</a> was lost by 450 CE, and would remain so until the 1820s, when the Rosetta
+			Stone was deciphered. Like in Arabic and Hebrew, hieroglyphic writing does not normally indicate vowels, and use sounds not common in most European
+			languages. Since the ancient Egyptian language has been dead for two millennia, the knowledge of how the writing was actually pronounced can only
+			be <em>estimated</em>. When transcribing Egyptian words, the general rule among Egyptologists was to use the pronunciation clues provided by <i
+				>Coptic</i
+			>, otherwise they would add an ‘e’ between consonants until they got something pronounceable to European ears.
+		</p>
+		<p>
+			Early Egyptology was dominated by French, English and German scholars, who naturally wrote mainly in their own languages. The transcription of
+			names was still new and was done individually by each scholar, which meant that names were read and transcribed differently. As knowledge of the
+			Egyptian language grew, so did the names. For example, a pharaoh first known as <i>Amuntuankh</i> evolved into the name <i>Tutankhamun</i>, and
+			is still spelt slightly differently in various languages (Toutânkhamon, Tutanchamun, Tutankamón etc).
+		</p>
+		<p>
+			For the sake of consistency, the hieroglyphic sun-disk <span class="dark:text-amber-50">⊙</span> (Gardiner-sign N5), symbolising the sun-god Ra,
+			is transliterated as <strong>Ra</strong> in these pages. Jean-François Champollion, the first to decipher hieroglyphs, used "Rê" in his transcriptions,
+			perhaps at least partially based on the ancient Greek transliteration of pharaohs' names that often end with <i>-res</i>. This meant that "Re"
+			became dominant instead of the more correct "Ra". For example, the sun sign is written as <i>"Ra"</i> in Ramesses, but as <i>"Re"</i> in Neferkare.
+		</p>
+		<p>
+			<a href="/titles-and-epithets">The fivefold royal titulary</a> consisted of the <i>Horus</i>, <i>Nebty</i>, <i>Golden Horus</i>, <i>Throne</i>,
+			and <i>Birth names</i>. It established the king's authority and legitimacy and served as a mission statement for his reign. Many pharaohs are
+			known by only one or two of the five names, and many have yet to be assigned to the correct king. There are also several pharaohs whose names
+			have not yet been identified.
+		</p>
+
+		<div class="">
+			<h2 class="py-8 text-center">List of the Pharaohs</h2>
+			<p>
+				The pharaohs of ancient Egypt, from predynastic times up to and including the roman emperors, who were not pharaohs as such, but are included
+				here because some of their names were inscribed on monuments using hieroglyphs.<br />The <a href="/chronology">chronological order</a> of the pharaohs
+				is difficult to determine because it has been more than 2,000 years since the last one ruled. Establishing a solid timeline in the ancient world
+				is a very complicated matter, made all the more so by the fact that ancient records are often incomplete, contain errors or omissions, and are
+				of questionable reliability and compatibility. Moreover, as new research is conducted, the order may be subject to change. This is a fundamental
+				principle that applies to <i>all</i> Egyptian dynasties.
+			</p>
+		</div>
+	</div>
+
+	{
+		orderedDynChars.map((dchar) => {
+			const list = groups[dchar];
+			if (!list || list.length === 0) return null;
+			const d = dynastyByChar[dchar] ?? { name: dchar };
+			return (
+				<section class="mb-8">
+					<h2 class="text-2xl font-semibold my-10 text-center secondary">{d.name}</h2>
+					<table class="w-full table-auto border-collapse">
+						<thead>
+							<tr class="text-left leading-4">
+								<th class="px-2 py-1 align-top w-[3ch]">No</th>
+								<th class="px-2 py-1 align-top">Name</th>
+								<th class="px-2 py-1 align-top">Alternate names</th>
+								<th class="px-2 py-1 align-top w-[10ch]">{dchar === "R" ? "Reign (AD)" : "Reign (BC)"}</th>
+							</tr>
+						</thead>
+						<tbody>
+							{list.map((p) => (
+								<tr class="border-t">
+									<td class="px-2 py-1 align-top">{Number(p.order ?? p.no) > 60 ? "?" : (p.order ?? p.no)}</td>
+									<td class="px-2 py-1 align-top w-[30%]">
+										<a href={`/pharaohs/${p.slug}`}>{p.name}</a>
+									</td>
+									<td class="px-2 py-1 align-top italic">{p.aka}</td>
+									<td class="px-2 py-1 align-top tabular-nums">{p.reign ?? p.reigns?.[0]?.r_consensus ?? ""}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</section>
+			);
+		})
+	}
 </Layout>
+
+<style>
+	.pht {
+		animation-name: initial;
+	}
+	.ph {
+		/* float: left; */
+		max-width: 100%;
+		shape-outside: polygon(0px 413px, 97.8% 100%, 84.99% 61.62%, 99.93% 30.02%, 99.28% 20.7%, 70.23% 20.98%, 77.17% 0%, 0% 0%);
+		padding-right: 1rem;
+		margin-bottom: 1rem;
+		filter: drop-shadow(0px 0px 6px #2b7093);
+		animation: animate 30s ease alternate infinite;
+	}
+	@keyframes animate {
+		0% {
+			filter: drop-shadow(0px 0px 6px #0547d4);
+		}
+		50% {
+			filter: drop-shadow(0px 0px 12px #d40b0b);
+		}
+		100% {
+			filter: drop-shadow(0px 0px 6px #2bc0a3);
+		}
+	}
+	table {
+		font-feature-settings: "tnum" 1;
+	}
+</style>

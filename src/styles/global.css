@@ -171,7 +171,6 @@
 	abbr {
 		cursor: help;
 		font-style: italic;
-
 		text-decoration-style: dotted;
 		color: light-dark(var(--secondary), var(--dark-secondary)) !important;
 	}
@@ -250,7 +249,9 @@
 	.highlight {
 		color: light-dark(var(--highlight), var(--dark-highlight));
 	}
-
+	.bordercolor {
+		border-color: light-dark(var(--border), var(--dark-border));
+	}
 	d {
 		/* dim */
 		color: --alpha(light-dark(var(--tx), var(--dark-tx)) / 0.5);

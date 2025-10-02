@@ -151,7 +151,11 @@ const reignLabels: Record<string, string> = {
 	}
 	{pharaoh.description && <article class="mt-4" set:html={pharaoh.description} />}
 
-	{/* Render titulary images + names (Horus=1, Throne/"Dual King"=4, Birth/Son of Ra=5) */}
+	<section class="clear-both mt-8">
+		<h2 class="text-4xl font-bold text-center border-t bordercolor pt-4">The Royal Titulary</h2>
+		<p class="mt-0 text-center pb-6">From the hieroglyphic records</p>
+	</section>
+
 	{
 		(() => {
 			const myTitulary = titulary.filter((t) => Number(t.farao) === phNo);
@@ -160,9 +164,8 @@ const reignLabels: Record<string, string> = {
 			const t5 = myTitulary.find((t) => Number(t.titel) === 5);
 			if (!t1 && !t4 && !t5) return null;
 			return (
-				<section class="mt-20 clear-both">
-					<h2 class="text-xl font-bold text-center mt-4">The Royal Titulary</h2>
-					<p class="mt-0 text-center pb-6">From the hieroglyphic records</p>
+				<section class="mt-10 clear-both">
+					
 					<div class="flex items-center justify-center gap-2 mb-2">
 						{t1 && <img src={`/svg/pharaoh/${t1.glyph}.svg`} alt={t1.gname} class="h-12 dark:invert" />}
 						{t4 && <img src="/svg/hiero/t_nesut.svg" alt="nesut" class="h-12 dark:invert pl-4" />}
@@ -172,8 +175,8 @@ const reignLabels: Record<string, string> = {
 					</div>
 					<div class="text-center space-y-1">
 						{t1 && <span class="font-light text-xs italic">Horus</span> <span>{t1.gname}&nbsp; &nbsp;</span>}
-						{t4 && <span class="font-light text-xs italic">Dual King</span> <span>{t4.gname}&nbsp; &nbsp;</span>}
-						{t5 && <span class="font-light text-xs italic">Son of Ra</span> <span>{t5.gname}</span>}
+						{t4 && <span class="font-light text-xs italic pl-4">The Dual King</span> <span set:html={t4.gname} />}
+						{t5 && <span class="font-light text-xs italic pl-4">Son of Ra</span> <span set:html={t5.gname} />}
 					</div>
 				</section>
 			);
@@ -185,16 +188,16 @@ const reignLabels: Record<string, string> = {
 				{Object.entries(glyphGroups).map(([titel, glyphs]) => {
 					const titelMap = [
 						"", // 0 (unused)
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Horus</h2><img src="/svg/hiero/t_horus.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The oldest form of the name of a pharaoh, a falcon representing Horus is perched on the palace facade.</p></div>`, // 1
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Nebty</h2><img src="/svg/hiero/t_nebty.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nebty name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The “Two Ladies”, the <i>goddesses Nekhbet and Wadjet</i>, representing Upper and Lower Egypt respectively.</p></div>`, // 2
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Golden Horus</h2><img src="/svg/hiero/t_gold.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Golden Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Horus perched on Gold, which was associated with eternity, but its meaning is disputed.</p></div>`, // 3
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Throne name</h2><img src="/svg/hiero/t_nesut.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Prenomen or throne name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Announced at the coronation and always written in a cartouche. The “official” name of the pharaoh. Also known as the <i>Prenomen</i>.</p></div>`, // 4
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Birth name</h2><img src="/svg/hiero/t_sara.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nomen or birth name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Personal name given at birth. Also known as the <i>Nomen</i>.</p></div>`, // 5
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Horus</h2><img src="/svg/hiero/t_horus.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The oldest form of the name of a pharaoh, a falcon representing Horus is perched on the palace facade.</p></div>`, // 1
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Nebty</h2><img src="/svg/hiero/t_nebty.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nebty name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The “Two Ladies”, the <i>goddesses Nekhbet and Wadjet</i>, representing Upper and Lower Egypt respectively.</p></div>`, // 2
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Golden Horus</h2><img src="/svg/hiero/t_gold.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Golden Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Horus perched on Gold, which was associated with eternity, but its meaning is disputed.</p></div>`, // 3
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Throne name</h2><img src="/svg/hiero/t_nesut.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Prenomen or throne name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Announced at the coronation and always written in a cartouche. The “official” name of the pharaoh. Also known as the <i>Prenomen</i>.</p></div>`, // 4
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Birth name</h2><img src="/svg/hiero/t_sara.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nomen or birth name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Personal name given at birth. Also known as the <i>Nomen</i>.</p></div>`, // 5
 						``, // 6
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Throne + Birth name</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Combined Throne and Birth name.</p>`, // 7
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Autokrator</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek epithet <i class="font-semibold">Autokrator</i> is the equivalent of the Latin epithet <i class="font-semibold">Imperator</i> (Commander).<br>It was always written in the cartouche.</p></div>`, // 8
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title Kaisaros is the equivalent of the Latin title <i class="font-semibold">Caesar</i>.<br />It was always written in a cartouche.</p>`, // 9
-						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Autokrator & Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title <i>Kaisaros</i> = the Latin title <i>Caesar</i>.<br>The Greek epithet <i>Autokrator</i> = the Latin <i>Imperator</i>.</p>`, // 10
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Throne + Birth name</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Combined Throne and Birth name.</p>`, // 7
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Autokrator</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek epithet <i class="font-semibold">Autokrator</i> is the equivalent of the Latin epithet <i class="font-semibold">Imperator</i> (Commander).<br>It was always written in the cartouche.</p></div>`, // 8
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title Kaisaros is the equivalent of the Latin title <i class="font-semibold">Caesar</i>.<br />It was always written in a cartouche.</p>`, // 9
+						`<div><h2 class="text-center pt-10 pb-2 text-2xl text-red-800 dark:text-amber-200">Autokrator & Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title <i>Kaisaros</i> = the Latin title <i>Caesar</i>.<br>The Greek epithet <i>Autokrator</i> = the Latin <i>Imperator</i>.</p>`, // 10
 					];
 					const titelLabel = titelMap[Number(titel)] || titel;
 					return (
@@ -211,7 +214,7 @@ const reignLabels: Record<string, string> = {
 												class="hieroname"
 												set:html={
 													g.name.endsWith("*")
-														? `${g.name.slice(0, -1)}<abbr class="opacity-50" title=\"Not contemporaneous, later designation.\">*</abbr>`
+														? `${g.name.slice(0, -1)}<abbr class="opacity-50 no-underline" title=\"Not contemporaneous, later designation.\">*</abbr>`
 														: g.name
 												}
 											/>
