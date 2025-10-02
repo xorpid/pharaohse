@@ -35,6 +35,7 @@
 	--bg-dark: var(--color-stone-300);
 	--tx: var(--color-stone-800);
 	--dim: var(--color-stone-600);
+	--bright: var(--color-stone-950);
 	--link: var(--color-red-900);
 	--link-hover: var(--color-red-800);
 	--link-visited: var(--color-stone-500);
@@ -48,6 +49,7 @@
 	--dark-bg-dark: var(--color-neutral-950);
 	--dark-tx: var(--color-neutral-200);
 	--dark-dim: var(--color-neutral-400);
+	--dark-bright: var(--color-neutral-100);
 	--dark-link: var(--color-sky-300);
 	--dark-link-hover: var(--color-sky-400);
 	--dark-link-visited: var(--color-neutral-400);
@@ -148,11 +150,23 @@
 		font-size: var(--text-3xl);
 		font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
 		line-height: var(--text-3xl--line-height);
+		color: light-dark(var(--bright), var(--dark-bright));
 	}
 
 	h3 {
 		font-size: var(--text-2xl);
 		line-height: var(--text-2xl--line-height);
+		color: light-dark(var(--bright), var(--dark-bright));
+	}
+	h1,
+	h2,
+	h3 {
+		padding-left: 0.25em;
+	}
+	h1,
+	h2 {
+		font-weight: bold;
+		margin-top: 1em;
 	}
 	abbr {
 		cursor: help;
@@ -163,7 +177,24 @@
 	}
 	blockquote {
 		quotes: "“" "”" "‘" "’";
+		color: light-dark(var(--dim), var(--dark-dim));
+		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
+		border-left: 14px solid light-dark(var(--highlight), var(--dark-highlight));
+		font-size: 90%;
+		font-style: normal;
+		font-weight: 400;
+		line-height: var(--leading-snug);
+		max-width: 60ch;
+		margin-inline: auto;
+		margin-block: calc(var(--spacing) * 8);
+		padding: calc(var(--spacing) * 5) calc(var(--spacing) * 4);
+		border-radius: 0 calc(var(--spacing) * 3) calc(var(--spacing) * 3) 0;
+		box-shadow: var(--shadow-lg);
+		overflow: clip;
 	}
+	/* blockquote .text-right {
+		color: var(--default-color-2);
+	} */
 }
 
 @layer components {
@@ -370,25 +401,6 @@
 		color: light-dark(var(--text), var(--dark-text));
 		background-color: light-dark(var(--bg-dark), var(--dark-bg-dark));
 		cursor: pointer;
-	}
-	blockquote {
-		color: var(--default-color-2);
-		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
-		border-left: 14px solid light-dark(var(--highlight), var(--dark-highlight));
-		font-size: 90%;
-		font-style: normal;
-		font-weight: 400;
-		line-height: var(--leading-snug);
-		max-width: 60ch;
-		margin-inline: auto;
-		margin-block: calc(var(--spacing) * 8);
-		padding: calc(var(--spacing) * 5) calc(var(--spacing) * 4);
-		border-radius: 0 calc(var(--spacing) * 3) calc(var(--spacing) * 3) 0;
-		box-shadow: var(--shadow-lg);
-		overflow: clip;
-	}
-	blockquote .text-right {
-		color: var(--default-color-2);
 	}
 	mid {
 		font-size: var(--text-xs);

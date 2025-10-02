@@ -11,8 +11,13 @@
 		"meta1": "",
 		"meta2": "",
 		"image": "",
-		"description": "<b>Seka</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "360"
+		"description": "<b>Seka</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical, or perhaps only a local governor or king",
+		"DDB": "360",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "2",
@@ -27,7 +32,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Khayu</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "180"
+		"DDB": "180",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "3",
@@ -42,7 +52,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Tiu</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "477–478"
+		"DDB": "477–478",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "4",
@@ -57,7 +72,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Tjesh</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "478"
+		"DDB": "478",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "5",
@@ -72,7 +92,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Neheb</b> name is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "276"
+		"DDB": "276",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "6",
@@ -87,7 +112,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Wenegbu</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "487–488"
+		"DDB": "487–488",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "7",
@@ -102,7 +132,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "<b>Mekh</b> is found on the Palermo Stone as ruler of a predynastic Lower Egypt. As this is the only known record of the name, it is impossible to know whether he was a real or mythical.",
-		"DDB": "196"
+		"DDB": "196",
+		"reigns": [
+			{
+				"r_consensus": "4th millenium BCE"
+			}
+		]
 	},
 	{
 		"no": "8",
@@ -121,7 +156,15 @@
 		"G17": "1–3; 17–19",
 		"VON": "36–37",
 		"DDB": "237–240",
-		"LPR": "22"
+		"LPR": "22",
+		"reigns": [
+			{
+				"r_hornung": "c. 2900",
+				"r_grimal": "3150–3125",
+				"r_africanus": "62 years",
+				"r_eusebius": "30 years"
+			}
+		]
 	},
 	{
 		"no": "9",
@@ -140,7 +183,17 @@
 		"G17": "3–4; 29–30",
 		"VON": "38–39",
 		"DDB": "7–8",
-		"LPR": "25"
+		"LPR": "25",
+		"reigns": [
+			{
+				"r_hornung": "c. 2870",
+				"r_beckerath": "3007–2925",
+				"r_malek": "2792–2939",
+				"r_grimal": "3125–3100",
+				"r_africanus": "57 years",
+				"r_eusebius": "27 years"
+			}
+		]
 	},
 	{
 		"no": "10",
@@ -159,7 +212,17 @@
 		"G17": "30–31",
 		"VON": "38–39",
 		"DDB": "92–94",
-		"LPR": "25"
+		"LPR": "25",
+		"reigns": [
+			{
+				"r_hornung": "2870–2823",
+				"r_beckerath": "2974–2927",
+				"r_malek": "2939–2892",
+				"r_grimal": "3100–3055",
+				"r_africanus": "31 years",
+				"r_eusebius": "39 years"
+			}
+		]
 	},
 	{
 		"no": "11",
@@ -178,7 +241,17 @@
 		"G17": "31–32",
 		"VON": "38–39",
 		"DDB": "94–96",
-		"LPR": "25"
+		"LPR": "25",
+		"reigns": [
+			{
+				"r_hornung": "2822–2815",
+				"r_beckerath": "2927–2914",
+				"r_malek": "2892–2879",
+				"r_grimal": "3055–3050",
+				"r_africanus": "23 years",
+				"r_eusebius": "42 years"
+			}
+		]
 	},
 	{
 		"no": "12",
@@ -198,7 +271,17 @@
 		"G17": "6–9",
 		"VON": "38–39",
 		"DDB": "78–80",
-		"LPR": "26"
+		"LPR": "26",
+		"reigns": [
+			{
+				"r_hornung": "2814–2772",
+				"r_beckerath": "2914–2867",
+				"r_malek": "2879–2832",
+				"r_grimal": "3050–2995",
+				"r_turin": "74 years",
+				"r_manetho": "20 years"
+			}
+		]
 	},
 	{
 		"no": "13",
@@ -218,7 +301,16 @@
 		"G17": "9–11",
 		"VON": "40–41",
 		"DDB": "55–56",
-		"LPR": "26"
+		"LPR": "26",
+		"reigns": [
+			{
+				"r_hornung": "2771–2764",
+				"r_beckerath": "2867–2861",
+				"r_malek": "2832–2826",
+				"r_turin": "72 (years?)",
+				"r_manetho": "26 years"
+			}
+		]
 	},
 	{
 		"no": "14",
@@ -238,7 +330,16 @@
 		"G17": "11–14",
 		"VON": "40–41",
 		"DDB": "376–378",
-		"LPR": "26–27"
+		"LPR": "26–27",
+		"reigns": [
+			{
+				"r_hornung": "2763–2756",
+				"r_beckerath": "2861–2853",
+				"r_malek": "2826–2818",
+				"r_turin": "63 (years?)",
+				"r_manetho": "18 years"
+			}
+		]
 	},
 	{
 		"no": "15",
@@ -257,7 +358,17 @@
 		"G17": "14–15",
 		"VON": "40–41",
 		"DDB": "299–301",
-		"LPR": "27"
+		"LPR": "27",
+		"reigns": [
+			{
+				"r_hornung": "2775–2732",
+				"r_beckerath": "2853–2828",
+				"r_malek": "2818–2793",
+				"r_grimal": "2960–2926",
+				"r_turin": "95 (years?)",
+				"r_manetho": "26 years"
+			}
+		]
 	},
 	{
 		"no": "16",
@@ -276,7 +387,16 @@
 		"G17": "37",
 		"VON": "42–43",
 		"DDB": "124–126",
-		"LPR": "27–28"
+		"LPR": "27–28",
+		"reigns": [
+			{
+				"r_hornung": "c. 2730",
+				"r_beckerath": "2828–2800",
+				"r_redford": "2850–2820",
+				"r_malek": "2765–2750",
+				"r_africanus": "38 years"
+			}
+		]
 	},
 	{
 		"no": "17",
@@ -295,7 +415,16 @@
 		"G17": "38",
 		"VON": "42–43",
 		"DDB": "246–247",
-		"LPR": "28"
+		"LPR": "28",
+		"reigns": [
+			{
+				"r_hornung": "c. 2700",
+				"r_beckerath": "2800–2785",
+				"r_redford": "2820–2790",
+				"r_turin": "95 (years?)",
+				"r_africanus": "39 years"
+			}
+		]
 	},
 	{
 		"no": "18",
@@ -314,7 +443,17 @@
 		"G17": "20, 38–39",
 		"VON": "42–43",
 		"DDB": "281–284",
-		"LPR": "28"
+		"LPR": "28",
+		"reigns": [
+			{
+				"r_hornung": "2700–2660",
+				"r_beckerath": "2785–2742",
+				"r_redford": "2790–2754",
+				"r_malek": "2750–2707",
+				"r_turin": "70 (years?)",
+				"r_africanus": "47 years"
+			}
+		]
 	},
 	{
 		"no": "19",
@@ -333,7 +472,16 @@
 		"G17": "20–21",
 		"VON": "42–43",
 		"DDB": "495–496",
-		"LPR": "28"
+		"LPR": "28",
+		"reigns": [
+			{
+				"r_beckerath": "2742–2735",
+				"r_redford": "2754–2734",
+				"r_malek": "2707–2700",
+				"r_turin": "54 (years?)",
+				"r_africanus": "17 years"
+			}
+		]
 	},
 	{
 		"no": "20",
@@ -352,7 +500,16 @@
 		"G17": "21–22",
 		"VON": "42–43",
 		"DDB": "383–384",
-		"LPR": "28"
+		"LPR": "28",
+		"reigns": [
+			{
+				"r_hornung": "c. 2610",
+				"r_beckerath": "2735–2724",
+				"r_malek": "2700–2690",
+				"r_turin": "70 (years?)",
+				"r_africanus": "41 years"
+			}
+		]
 	},
 	{
 		"no": "21",
@@ -370,7 +527,14 @@
 		"G17": "22–23, 40",
 		"VON": "44–45",
 		"DDB": "362–365",
-		"LPR": "29"
+		"LPR": "29",
+		"reigns": [
+			{
+				"r_hornung": "2660–2650",
+				"r_redford": "2734–2714",
+				"r_malek": "2700–2674"
+			}
+		]
 	},
 	{
 		"no": "22",
@@ -389,7 +553,12 @@
 		"G17": "23–24",
 		"VON": "44–45",
 		"DDB": "362–365",
-		"LPR": "29"
+		"LPR": "29",
+		"reigns": [
+			{
+				"r_redford": "2660–2650"
+			}
+		]
 	},
 	{
 		"no": "23",
@@ -410,7 +579,12 @@
 		"G17": "26",
 		"VON": "44–45",
 		"DDB": "384–385",
-		"LPR": "30"
+		"LPR": "30",
+		"reigns": [
+			{
+				"r_malek": "2690–2682"
+			}
+		]
 	},
 	{
 		"no": "24",
@@ -429,7 +603,15 @@
 		"G17": "27",
 		"VON": "44–45",
 		"DDB": "270–271",
-		"LPR": "30"
+		"LPR": "30",
+		"reigns": [
+			{
+				"r_beckerath": "2719–2711",
+				"r_malek": "2682–2674",
+				"r_turin": "8y 3m.",
+				"r_africanus": "26 years"
+			}
+		]
 	},
 	{
 		"no": "25",
@@ -447,7 +629,14 @@
 		"description": "The name <em>Hudjefa</em> appears in the Saqqara and Turin king lists. Both describe Hudjefa as the immediate successor of Neferkasokar and the predecessor of Khasekhemwy. Hudjefa is not a proper name, but instead describes that the original name was unreadable to the scribe compiling the list.",
 		"VON": "44–45",
 		"DDB": "126–127",
-		"LPR": "30"
+		"LPR": "30",
+		"reigns": [
+			{
+				"r_beckerath": "2711–2709",
+				"r_turin": "11y 8m 4d",
+				"r_africanus": "48 years"
+			}
+		]
 	},
 	{
 		"no": "26",
@@ -466,7 +655,17 @@
 		"G17": "34–36, 47–48",
 		"VON": "44–45",
 		"DDB": "177–179",
-		"LPR": "29"
+		"LPR": "29",
+		"reigns": [
+			{
+				"r_hornung": "2610–2593",
+				"r_beckerath": "2709–2682",
+				"r_redford": "2714–2687",
+				"r_malek": "2674–2647",
+				"r_turin": "27y 2m 1d",
+				"r_manetho": "30 years"
+			}
+		]
 	},
 	{
 		"no": "27",
@@ -485,7 +684,19 @@
 		"G17": "48–49",
 		"VON": "50–51",
 		"DDB": "347–348",
-		"LPR": "33"
+		"LPR": "33",
+		"reigns": [
+			{
+				"r_beckerath": "2686–2665",
+				"r_shaw": "2686–2667",
+				"r_redford": "2688–2682",
+				"r_dodson": "2565–2556",
+				"r_allen": "2649–2630",
+				"r_malek": "2647–2628",
+				"r_turin": "19 (years)",
+				"r_africanus": "28 years"
+			}
+		]
 	},
 	{
 		"no": "28",
@@ -504,7 +715,20 @@
 		"G17": "50–53",
 		"VON": "48–49",
 		"DDB": "96–100",
-		"LPR": "32"
+		"LPR": "32",
+		"reigns": [
+			{
+				"r_hornung": "2592–2566",
+				"r_beckerath": "2665–2645",
+				"r_shaw": "2667–2648",
+				"r_redford": "2687–2668",
+				"r_dodson": "2584–2565",
+				"r_allen": "2630–2611",
+				"r_malek": "2628–2609",
+				"r_turin": "19y 1m",
+				"r_africanus": "29 years"
+			}
+		]
 	},
 	{
 		"no": "29",
@@ -523,7 +747,18 @@
 		"G17": "55",
 		"VON": "48–49",
 		"DDB": "367–368",
-		"LPR": "32"
+		"LPR": "32",
+		"reigns": [
+			{
+				"r_hornung": "2565–2559",
+				"r_beckerath": "2645–2638",
+				"r_dodson": "2556–2550",
+				"r_allen": "2611–2605",
+				"r_malek": "2609–2603",
+				"r_turin": "6 (years)",
+				"r_africanus": "7 years"
+			}
+		]
 	},
 	{
 		"no": "30",
@@ -541,7 +776,8 @@
 		"G17": "57",
 		"VON": "48–49",
 		"DDB": "127–128",
-		"LPR": "33–34"
+		"LPR": "33–34",
+		"reigns": [{}]
 	},
 	{
 		"no": "31",
@@ -557,7 +793,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "The name Mesochris was according to Africanus, the fourth king of Manetho's third dynasty. No hieroglyphic name is know or can easily be connected to this king. Another possibility is that the third dynasty could inadvertedly have been mixed together with the fourth dynasty, and Mesochris could be a variant of king Menkaura, also known as Mycerinus.",
-		"VON": "48–49"
+		"VON": "48–49",
+		"reigns": [{}]
 	},
 	{
 		"no": "32",
@@ -576,7 +813,8 @@
 		"G17": "53–54",
 		"VON": "48–49",
 		"DDB": null,
-		"LPR": "34"
+		"LPR": "34",
+		"reigns": [{}]
 	},
 	{
 		"no": "33",
@@ -594,7 +832,8 @@
 		"description": "The last king of the second dynasty on the Abydos king list is <em>Neferkara</em>, but the name is absent on the other New Kingdom king lists. There is no archaeological evidence for this name, and the name was likely a constructed by later scribes. Another possibility is that it belonged to the fourth dynasty founder Snoferu's predecessor, Huni. It is unclear under which name Africanus could have listed him in Manetho's king list of the third dynasty.",
 		"VON": "48–49",
 		"DDB": "264–265",
-		"LPR": "34"
+		"LPR": "34",
+		"reigns": [{}]
 	},
 	{
 		"no": "34",
@@ -612,7 +851,19 @@
 		"G17": "57–58",
 		"VON": "48–51",
 		"DDB": "128–130",
-		"LPR": "33"
+		"LPR": "33",
+		"reigns": [
+			{
+				"r_hornung": "c. 2544",
+				"r_shaw": "2637–2613",
+				"r_redford": "2673–2649",
+				"r_dodson": "2544–2520",
+				"r_allen": "2599–2575",
+				"r_malek": "2597–2573",
+				"r_turin": "24 years",
+				"r_africanus": "26 years"
+			}
+		]
 	},
 	{
 		"no": "35",
@@ -631,7 +882,21 @@
 		"G17": "61–71",
 		"VON": "52–53",
 		"DDB": "386–389",
-		"LPR": "35"
+		"LPR": "35",
+		"reigns": [
+			{
+				"r_hornung": "2543–2510",
+				"r_beckerath": "2614–2579",
+				"r_shaw": "2613–2589",
+				"r_redford": "2649–2609",
+				"r_dodson": "2520–2470",
+				"r_allen": "2575–2551",
+				"r_malek": "2573–2549",
+				"r_arnold": "2600–2555",
+				"r_turin": "24 years",
+				"r_africanus": "29 years"
+			}
+		]
 	},
 	{
 		"no": "36",
@@ -650,7 +915,21 @@
 		"G17": "72–83",
 		"VON": "52–53",
 		"DDB": "189–191",
-		"LPR": "35"
+		"LPR": "35",
+		"reigns": [
+			{
+				"r_hornung": "2509–2483",
+				"r_beckerath": "2579–2556",
+				"r_shaw": "2589–2566",
+				"r_redford": "2609–2584",
+				"r_dodson": "2470–2447",
+				"r_allen": "2551–2528",
+				"r_malek": "2549–2526",
+				"r_arnold": "2555–2520",
+				"r_turin": "23 years",
+				"r_africanus": "63 years"
+			}
+		]
 	},
 	{
 		"no": "37",
@@ -669,7 +948,21 @@
 		"G17": "83–85",
 		"VON": "52–53",
 		"DDB": "81–83",
-		"LPR": "35–36"
+		"LPR": "35–36",
+		"reigns": [
+			{
+				"r_hornung": "2482–2475",
+				"r_beckerath": "2556–2547",
+				"r_shaw": "2566–2558",
+				"r_redford": "2584–2576",
+				"r_dodson": "2447–2439",
+				"r_allen": "2528–2520",
+				"r_malek": "2526–2518",
+				"r_arnold": "2520–2512",
+				"r_turin": "8 years",
+				"r_africanus": "25 years"
+			}
+		]
 	},
 	{
 		"no": "38",
@@ -688,7 +981,21 @@
 		"G17": "86–94",
 		"VON": "54–55",
 		"DDB": "169–171",
-		"LPR": "36"
+		"LPR": "36",
+		"reigns": [
+			{
+				"r_hornung": "2472–2448",
+				"r_beckerath": "2547–2521",
+				"r_shaw": "2558–2532",
+				"r_redford": "2576–2551",
+				"r_dodson": "2437–2414",
+				"r_allen": "2520–2494",
+				"r_malek": "2518–2493",
+				"r_arnold": "2512–2477",
+				"r_turin": "... years",
+				"r_africanus": "66 years"
+			}
+		]
 	},
 	{
 		"no": "39",
@@ -705,7 +1012,18 @@
 		"image": "",
 		"description": "<p>According to Africanus, Manetho named <b>Bicheres</b> as the successor to Suphis (Khafra) but there is no archaeological evidence for a king by that name. Herodotus and Diodorus writes that after Khufu died, his brother<sup>sic</sup> Chephren (Khafra) took the throne, but Diodorus correctly adds that it was Khufu's son Chabryen (Radjedef) who ascended the throne. Khafra and Radjedef were in fact brothers, which shows that Herodotus and Diodorus simply misunderstood the relation told by the Egyptian priests, or that there were inconsistencies in the traditions about the fourth dynasty even in ancient Egypt. Maybe the earlier records (on papyrus) were corrupted and only partially readable.</p><p>After the reign of Radjedef, his son Setka was set to rule but something must have happened to him, and perhaps his younger brother Baka (Hellenised to Bicheris) was appointed as the new king. Somewhow the uncle Khafra managed to manouver himself to assume the throne.</p><p>The Turin papyrus and Manetho both list <i>eight</i> Fourth Dynasty kings, the Abydos Canon names only <i>six</i>, but the Saqqara Canon lists <i>nine</i>. This source discrepancy is extremely difficult to reconcile or interpret. Following the cartouche of Khafra, the list of Saqqara is destroyed, leaving five consecutive unreadable names (numbers 35-39). The Turin papyrus, by coincidence(?), is also damaged in the same place (4.13-16), leaving four unreadable names after Khafra.</p><p>Turin 4.14 and 4.15 can with good confidence be assigned to Menkaura and Shepseskaf respectively, which leaves 4.13 and 4.15 as possible placements for Baufra. Logically Baufra must have ruled before Menkaura, just like Ratoises (Radjedef,) his name was displaced in Manetho's dynasty, and should thus be in 4.13. This give the succession Baufra → Menkaura → Shepseskaf → Djedefhor. This might have been the tradition about the pyramid builders during the New Kingdom, and would solve the Turin problem.</p><p>However, the Saqqara list still have one empty cartouche to account for, and there seems to be no solution to this problem.</p>",
 		"DDB": "68–69",
-		"LPR": "36"
+		"LPR": "36",
+		"reigns": [
+			{
+				"r_hornung": "2474–2473",
+				"r_beckerath": "2521–2514",
+				"r_allen": "2494–2490",
+				"r_malek": "2493–2488",
+				"r_arnold": "2477–2472",
+				"r_turin": "... years",
+				"r_africanus": "22 years"
+			}
+		]
 	},
 	{
 		"no": "40",
@@ -724,7 +1042,21 @@
 		"G17": "95–100",
 		"VON": "54–55",
 		"DDB": "200–202",
-		"LPR": "36"
+		"LPR": "36",
+		"reigns": [
+			{
+				"r_hornung": "2447–2442",
+				"r_beckerath": "2514–2486",
+				"r_shaw": "2532–2503",
+				"r_redford": "2551–2523",
+				"r_dodson": "2414–2396",
+				"r_allen": "2490–2472",
+				"r_malek": "2488–2460",
+				"r_arnold": "2472–2454",
+				"r_turin": "28+ years",
+				"r_africanus": "63 years"
+			}
+		]
 	},
 	{
 		"no": "41",
@@ -742,7 +1074,21 @@
 		"G17": "101–103",
 		"VON": "54–55",
 		"DDB": "425–426",
-		"LPR": "37"
+		"LPR": "37",
+		"reigns": [
+			{
+				"r_hornung": "2441–2436",
+				"r_beckerath": "2486–2479",
+				"r_shaw": "2503–2498",
+				"r_redford": "2523–2519",
+				"r_dodson": "2396–2392",
+				"r_allen": "2472–2467",
+				"r_malek": "2460–2456",
+				"r_arnold": "2454–2450",
+				"r_turin": "4 years",
+				"r_africanus": "7 years"
+			}
+		]
 	},
 	{
 		"no": "42",
@@ -759,7 +1105,17 @@
 		"image": "",
 		"description": "Thamphthis is possibly a hellenized version of Djedefptah or Ptahdjedef. Most likely he never ruled the kingdom, but Middle Kingdom tradition seem to venerate his name and somewhere along the line, his name was included among the already then ancient kings. There are no attestations and no archaeological records whatsoever of this king, if he ever existed. The name is only mentioned as the last king in Africanus list of Manetho's fourth dynasty.",
 		"VON": "53–54",
-		"DDB": "80"
+		"DDB": "80",
+		"reigns": [
+			{
+				"r_beckerath": "2479–2477",
+				"r_redford": "2519–2513",
+				"r_allen": "2467–2465",
+				"r_malek": "2456–2454",
+				"r_turin": "2 years",
+				"r_africanus": "9 years"
+			}
+		]
 	},
 	{
 		"no": "43",
@@ -777,7 +1133,20 @@
 		"G17": "105–108",
 		"VON": "56–57",
 		"DDB": "484–486",
-		"LPR": "38"
+		"LPR": "38",
+		"reigns": [
+			{
+				"r_hornung": "2435–2429",
+				"r_beckerath": "2479–2471",
+				"r_shaw": "2494–2487",
+				"r_redford": "2513–2506",
+				"r_dodson": "2392–2385",
+				"r_allen": "2465–2458",
+				"r_malek": "2454–2447",
+				"r_turin": "7 years",
+				"r_africanus": "28 years"
+			}
+		]
 	},
 	{
 		"no": "44",
@@ -796,7 +1165,20 @@
 		"G17": "109–113",
 		"VON": "56–57",
 		"DDB": "343–345",
-		"LPR": "38"
+		"LPR": "38",
+		"reigns": [
+			{
+				"r_hornung": "2428–2416",
+				"r_beckerath": "2471–2458",
+				"r_shaw": "2487–2475",
+				"r_redford": "2506–2492",
+				"r_dodson": "2385–2373",
+				"r_allen": "2458–2446",
+				"r_malek": "2447–2435",
+				"r_turin": "12 years",
+				"r_africanus": "13 years"
+			}
+		]
 	},
 	{
 		"no": "45",
@@ -816,7 +1198,20 @@
 		"G17": "116–119",
 		"VON": "56–57",
 		"DDB": "258–260",
-		"LPR": "39"
+		"LPR": "39",
+		"reigns": [
+			{
+				"r_hornung": "2415–2405",
+				"r_beckerath": "2458–2438",
+				"r_shaw": "2475–2455",
+				"r_redford": "2492–2482",
+				"r_dodson": "2373–2363",
+				"r_allen": "2446–2438",
+				"r_malek": "2435–2425",
+				"r_turin": "... years",
+				"r_africanus": "20 years"
+			}
+		]
 	},
 	{
 		"no": "46",
@@ -836,7 +1231,19 @@
 		"G17": "119",
 		"VON": "56–57",
 		"DDB": "427–428",
-		"LPR": "39"
+		"LPR": "39",
+		"reigns": [
+			{
+				"r_beckerath": "2438–2431",
+				"r_shaw": "2455–2448",
+				"r_redford": "2482–2475",
+				"r_dodson": "2363–2362",
+				"r_allen": "2438–2431",
+				"r_malek": "2425–2418",
+				"r_turin": "7 years",
+				"r_africanus": "7 years"
+			}
+		]
 	},
 	{
 		"no": "47",
@@ -856,7 +1263,20 @@
 		"G17": "120–122",
 		"VON": "58–59",
 		"DDB": "249–251",
-		"LPR": "39"
+		"LPR": "39",
+		"reigns": [
+			{
+				"r_hornung": "2403",
+				"r_beckerath": "2431–2420",
+				"r_shaw": "2448–2445",
+				"r_redford": "2475–2474",
+				"r_dodson": "2362–2359",
+				"r_allen": "2431–2420",
+				"r_malek": "2418–2408",
+				"r_turin": "1 year",
+				"r_africanus": "20 years"
+			}
+		]
 	},
 	{
 		"no": "48",
@@ -876,7 +1296,20 @@
 		"G17": "124–129",
 		"VON": "58–59",
 		"DDB": "284–286",
-		"LPR": "40"
+		"LPR": "40",
+		"reigns": [
+			{
+				"r_hornung": "2402–2374",
+				"r_beckerath": "2420–2380",
+				"r_shaw": "2445–2421",
+				"r_redford": "2474–2444",
+				"r_dodson": "2359–2348",
+				"r_allen": "2420–2389",
+				"r_malek": "2404–2377",
+				"r_turin": "11–34 years",
+				"r_africanus": "44 years"
+			}
+		]
 	},
 	{
 		"no": "49",
@@ -896,7 +1329,20 @@
 		"G17": "130–132",
 		"VON": "58–59",
 		"DDB": "198–199",
-		"LPR": "40"
+		"LPR": "40",
+		"reigns": [
+			{
+				"r_hornung": "2373–2366",
+				"r_beckerath": "2389–2380",
+				"r_shaw": "2421–2414",
+				"r_redford": "2444–2436",
+				"r_dodson": "2348–2340",
+				"r_allen": "2389–2381",
+				"r_malek": "2377–2369",
+				"r_turin": "8 years",
+				"r_africanus": "9 years"
+			}
+		]
 	},
 	{
 		"no": "50",
@@ -916,7 +1362,20 @@
 		"G17": "133–138",
 		"VON": "60–61",
 		"DDB": "83–85",
-		"LPR": "40"
+		"LPR": "40",
+		"reigns": [
+			{
+				"r_hornung": "2365–2322",
+				"r_beckerath": "2380–2342",
+				"r_shaw": "2414–2375",
+				"r_redford": "2436–2404",
+				"r_dodson": "2340–2312",
+				"r_allen": "2381–2353",
+				"r_malek": "2369–2341",
+				"r_turin": "28 years ",
+				"r_africanus": "44 years"
+			}
+		]
 	},
 	{
 		"no": "51",
@@ -936,7 +1395,20 @@
 		"G17": "138–142",
 		"VON": "60–61",
 		"DDB": "482–484",
-		"LPR": "40–41"
+		"LPR": "40–41",
+		"reigns": [
+			{
+				"r_hornung": "2321–2306",
+				"r_beckerath": "2342–2322",
+				"r_shaw": "2375–2345",
+				"r_redford": "2404–2374",
+				"r_dodson": "2312–2282",
+				"r_allen": "2353–2323",
+				"r_malek": "2341–2311",
+				"r_turin": "30 years",
+				"r_africanus": "33 years"
+			}
+		]
 	},
 	{
 		"no": "52",
@@ -954,7 +1426,20 @@
 		"G17": "146–150",
 		"VON": "62–63",
 		"DDB": "461–63",
-		"LPR": "42"
+		"LPR": "42",
+		"reigns": [
+			{
+				"r_hornung": "2305–2279",
+				"r_beckerath": "2322–2312",
+				"r_shaw": "2345–2323",
+				"r_redford": "2374–2354",
+				"r_dodson": "2282–2270",
+				"r_allen": "2323–2291",
+				"r_malek": "2311–2281",
+				"r_franke": "2318–2300",
+				"r_turin": "?y 6m 21d"
+			}
+		]
 	},
 	{
 		"no": "53",
@@ -974,7 +1459,17 @@
 		"G17": "145",
 		"VON": "62–63",
 		"DDB": "486–487",
-		"LPR": "42"
+		"LPR": "42",
+		"reigns": [
+			{
+				"r_hornung": "",
+				"r_beckerath": "2312–2310",
+				"r_shaw": "2323–2301",
+				"r_dodson": "2270–2265",
+				"r_allen": "2291–2289",
+				"r_franke": "2300"
+			}
+		]
 	},
 	{
 		"no": "54",
@@ -994,7 +1489,21 @@
 		"G17": "150–162",
 		"VON": "62–63",
 		"DDB": "292–295",
-		"LPR": "42"
+		"LPR": "42",
+		"reigns": [
+			{
+				"r_hornung": "2276–2228",
+				"r_beckerath": "2310–2260",
+				"r_shaw": "2321–2287",
+				"r_redford": "2354–2310",
+				"r_dodson": "2265–2219",
+				"r_allen": "2289–2255",
+				"r_malek": "2280–2243",
+				"r_franke": "2295–2250",
+				"r_turin": "44 years",
+				"r_africanus": "53 years"
+			}
+		]
 	},
 	{
 		"no": "55",
@@ -1014,7 +1523,21 @@
 		"G17": "163–168",
 		"VON": "62–63",
 		"DDB": "209–211",
-		"LPR": "43"
+		"LPR": "43",
+		"reigns": [
+			{
+				"r_hornung": "2227–2217",
+				"r_beckerath": "2260–2254",
+				"r_shaw": "2287–2278",
+				"r_redford": "2310–2300",
+				"r_dodson": "2219–2212",
+				"r_allen": "2255–2246",
+				"r_malek": "2242–2237",
+				"r_franke": "2250–2245",
+				"r_turin": "20 years",
+				"r_africanus": "7 years"
+			}
+		]
 	},
 	{
 		"no": "56",
@@ -1034,7 +1557,22 @@
 		"G17": "169–176",
 		"VON": "64–65",
 		"DDB": "295–297",
-		"LPR": "43"
+		"LPR": "43",
+		"reigns": [
+			{
+				"r_hornung": "2216–2153",
+				"r_beckerath": "2254–2194",
+				"r_shaw": "2278–2184",
+				"r_redford": "2300–2206",
+				"r_dodson": "2212–2118",
+				"r_allen": "2246–2152",
+				"r_malek": "2236–2143",
+				"r_franke": "2245–2180",
+				"r_turin": "90+x years",
+				"r_africanus": "94 years",
+				"r_highestyear": "Year 62"
+			}
+		]
 	},
 	{
 		"no": "57",
@@ -1054,7 +1592,20 @@
 		"G17": "176",
 		"VON": "64–65",
 		"DDB": "211–213",
-		"LPR": "43"
+		"LPR": "43",
+		"reigns": [
+			{
+				"r_hornung": "2152",
+				"r_beckerath": "2194–2193",
+				"r_redford": "2206",
+				"r_dodson": "2118–2117",
+				"r_allen": "2152",
+				"r_malek": "2142–2141",
+				"r_franke": "2180",
+				"r_turin": "1y 1m",
+				"r_africanus": "1 year"
+			}
+		]
 	},
 	{
 		"no": "58",
@@ -1076,7 +1627,18 @@
 		"G17": "177–178, 180",
 		"VON": "64–65",
 		"DDB": "279–280",
-		"LPR": "43–44"
+		"LPR": "43–44",
+		"reigns": [
+			{
+				"r_beckerath": "2193–2191",
+				"r_shaw": "2184–2181",
+				"r_redford": "2205–2200",
+				"r_allen": "2152–2150",
+				"r_malek": "2141–2140",
+				"r_turin": "...",
+				"r_africanus": "12 years"
+			}
+		]
 	},
 	{
 		"no": "59",
@@ -1098,7 +1660,8 @@
 		"G17": "181",
 		"VON": "66–67",
 		"DDB": "197",
-		"LPR": "44"
+		"LPR": "44",
+		"reigns": [{}]
 	},
 	{
 		"no": "60",
@@ -1118,7 +1681,8 @@
 		"G17": "181",
 		"VON": "66–67",
 		"DDB": "265",
-		"LPR": "44"
+		"LPR": "44",
+		"reigns": [{}]
 	},
 	{
 		"no": "61",
@@ -1138,7 +1702,8 @@
 		"G17": "182–184",
 		"VON": "66–67",
 		"DDB": "267–268",
-		"LPR": "45"
+		"LPR": "45",
+		"reigns": [{}]
 	},
 	{
 		"no": "62",
@@ -1158,7 +1723,8 @@
 		"G17": "184",
 		"VON": "66–67",
 		"DDB": "86",
-		"LPR": "45"
+		"LPR": "45",
+		"reigns": [{}]
 	},
 	{
 		"no": "63",
@@ -1178,7 +1744,8 @@
 		"G17": "185",
 		"VON": "66–67",
 		"DDB": "266–267",
-		"LPR": "45"
+		"LPR": "45",
+		"reigns": [{}]
 	},
 	{
 		"no": "64",
@@ -1197,7 +1764,8 @@
 		"G17": "185–186",
 		"VON": "66–67",
 		"DDB": "204",
-		"LPR": "45"
+		"LPR": "45",
+		"reigns": [{}]
 	},
 	{
 		"no": "65",
@@ -1217,7 +1785,8 @@
 		"G17": "186",
 		"VON": "66–67",
 		"DDB": "262–263",
-		"LPR": "45"
+		"LPR": "45",
+		"reigns": [{}]
 	},
 	{
 		"no": "66",
@@ -1237,7 +1806,8 @@
 		"G17": "187",
 		"VON": "66–67",
 		"DDB": "280–281",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [{}]
 	},
 	{
 		"no": "67",
@@ -1257,7 +1827,8 @@
 		"G17": "188",
 		"VON": "68–69",
 		"DDB": "269–270",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [{}]
 	},
 	{
 		"no": "68",
@@ -1277,7 +1848,8 @@
 		"G17": "188",
 		"VON": "68–69",
 		"DDB": "261–262",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [{}]
 	},
 	{
 		"no": "69",
@@ -1297,7 +1869,8 @@
 		"G17": "189",
 		"VON": "68–69",
 		"DDB": "268–269",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [{}]
 	},
 	{
 		"no": "70",
@@ -1317,7 +1890,8 @@
 		"G17": "190",
 		"VON": "68–69",
 		"DDB": "263–264",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [{}]
 	},
 	{
 		"no": "71",
@@ -1337,7 +1911,12 @@
 		"G17": "190",
 		"VON": "68–69",
 		"DDB": "302–303",
-		"LPR": "46"
+		"LPR": "46",
+		"reigns": [
+			{
+				"r_turin": "2y 1m 1d"
+			}
+		]
 	},
 	{
 		"no": "72",
@@ -1357,7 +1936,13 @@
 		"G17": "190",
 		"VON": "68–69",
 		"DDB": "272–273",
-		"LPR": "47"
+		"LPR": "47",
+		"reigns": [
+			{
+				"r_hornung": "2126–2113",
+				"r_turin": "4y 2m"
+			}
+		]
 	},
 	{
 		"no": "73",
@@ -1376,7 +1961,13 @@
 		"G17": "190",
 		"VON": "68–69",
 		"DDB": "271–272",
-		"LPR": "47"
+		"LPR": "47",
+		"reigns": [
+			{
+				"r_hornung": "2122–2120",
+				"r_turin": "2y 1m 1d"
+			}
+		]
 	},
 	{
 		"no": "74",
@@ -1392,7 +1983,13 @@
 		"meta2": "",
 		"image": "",
 		"description": "Neferirkara (the roman numeral II is used to differentiate him from his namesake, Neferirkara Kakai) was probably the last king before Herkleopolitan Dynasty IX overthrew the already weak regime.",
-		"DDB": "260–261"
+		"DDB": "260–261",
+		"reigns": [
+			{
+				"r_hornung": "2119–2118",
+				"r_turin": "1&frac12; year"
+			}
+		]
 	},
 	{
 		"no": "75",
@@ -1409,7 +2006,8 @@
 		"image": "",
 		"description": "",
 		"VON": "74–75",
-		"DDB": "183–185"
+		"DDB": "183–185",
+		"reigns": [{}]
 	},
 	{
 		"no": "76",
@@ -1425,7 +2023,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "",
-		"DDB": "266"
+		"DDB": "266",
+		"reigns": [{}]
 	},
 	{
 		"no": "77",
@@ -1441,7 +2040,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "",
-		"DDB": "185–186"
+		"DDB": "185–186",
+		"reigns": [{}]
 	},
 	{
 		"no": "78",
@@ -1456,7 +2056,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "",
-		"DDB": "389–390"
+		"DDB": "389–390",
+		"reigns": [{}]
 	},
 	{
 		"no": "79",
@@ -1472,7 +2073,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "",
-		"DDB": "186–187"
+		"DDB": "186–187",
+		"reigns": [{}]
 	},
 	{
 		"no": "80",
@@ -1488,7 +2090,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "188–189"
+		"DDB": "188–189",
+		"reigns": [{}]
 	},
 	{
 		"no": "81",
@@ -1504,7 +2107,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "",
-		"DDB": "219–220"
+		"DDB": "219–220",
+		"reigns": [{}]
 	},
 	{
 		"no": "82",
@@ -1522,7 +2126,13 @@
 		"description": "Mentuhotep I is likely present on the Karnak king list, with both his Horus and Birth names, though both are damaged. He was most likely considered the founder of the eleventh dynasty and given the pharaonic title posthumously. His throne name is unknown, and he likely didn't have one as there are no archeological evidence he actually ruled as king.",
 		"VON": "76–77",
 		"DDB": "222–223",
-		"LPR": "53"
+		"LPR": "53",
+		"reigns": [
+			{
+				"r_hornung": "c. 1980–?",
+				"r_beckerath": "2119–2103"
+			}
+		]
 	},
 	{
 		"no": "83",
@@ -1541,7 +2151,17 @@
 		"G17": "204–205",
 		"VON": "76–77",
 		"DDB": "143–144",
-		"LPR": "53"
+		"LPR": "53",
+		"reigns": [
+			{
+				"r_hornung": "?–2067",
+				"r_shaw": "2125–2112",
+				"r_redford": "2134–2118",
+				"r_dodson": "2160–2123",
+				"r_malek": "2124–2107",
+				"r_franke": "2077–2065"
+			}
+		]
 	},
 	{
 		"no": "84",
@@ -1560,7 +2180,20 @@
 		"G17": "225–227",
 		"VON": "76–77",
 		"DDB": "144–147",
-		"LPR": "53"
+		"LPR": "53",
+		"reigns": [
+			{
+				"r_hornung": "2066–2017",
+				"r_beckerath": "2103–2054",
+				"r_shaw": "2112–2063",
+				"r_redford": "2118–2060",
+				"r_dodson": "2123–2074",
+				"r_malek": "2107–2058",
+				"r_grimal": "2118–2069",
+				"r_franke": "2065–2016",
+				"r_turin": "49 (years)"
+			}
+		]
 	},
 	{
 		"no": "85",
@@ -1579,7 +2212,20 @@
 		"G17": "227",
 		"VON": "76–77",
 		"DDB": "147–148",
-		"LPR": "53"
+		"LPR": "53",
+		"reigns": [
+			{
+				"r_hornung": "2016–2009",
+				"r_beckerath": "2054–2046",
+				"r_shaw": "2063–2055",
+				"r_redford": "2068–2061",
+				"r_dodson": "2074–2066",
+				"r_malek": "2058–2050",
+				"r_grimal": "2069–2061",
+				"r_franke": "2016–2008",
+				"r_turin": "x+8 (years?)"
+			}
+		]
 	},
 	{
 		"no": "86",
@@ -1599,7 +2245,20 @@
 		"G17": "228–237",
 		"VON": "78–79",
 		"DDB": "223–227",
-		"LPR": "55"
+		"LPR": "55",
+		"reigns": [
+			{
+				"r_hornung": "2009–1959",
+				"r_beckerath": "2046–1995",
+				"r_shaw": "2055–2004",
+				"r_redford": "2061–2000",
+				"r_dodson": "2066–2014",
+				"r_malek": "2050–1999",
+				"r_grimal": "2061–2009",
+				"r_franke": "2008–1957",
+				"r_turin": "51 years"
+			}
+		]
 	},
 	{
 		"no": "87",
@@ -1619,7 +2278,20 @@
 		"G17": "243–246",
 		"VON": "80–81",
 		"DDB": "227–229",
-		"LPR": "55"
+		"LPR": "55",
+		"reigns": [
+			{
+				"r_hornung": "1958–1947",
+				"r_beckerath": "1995–1983",
+				"r_shaw": "2004–1992",
+				"r_redford": "2000–1998",
+				"r_dodson": "2014–2001",
+				"r_malek": "1999–1987",
+				"r_grimal": "2009–1997",
+				"r_franke": "1957–1945",
+				"r_turin": "12 (years)"
+			}
+		]
 	},
 	{
 		"no": "88",
@@ -1639,7 +2311,18 @@
 		"G17": "222–225",
 		"VON": "80–81",
 		"DDB": "229–230",
-		"LPR": "56"
+		"LPR": "56",
+		"reigns": [
+			{
+				"r_hornung": "1947–1940",
+				"r_beckerath": "1983–1976",
+				"r_shaw": "1992–1985",
+				"r_dodson": "2001–1994",
+				"r_malek": "1987–1980",
+				"r_grimal": "1997–1991",
+				"r_franke": "1945–1938"
+			}
+		]
 	},
 	{
 		"no": "89",
@@ -1659,7 +2342,21 @@
 		"G17": "253–265",
 		"VON": "82–83",
 		"DDB": "19–23",
-		"LPR": "57–58"
+		"LPR": "57–58",
+		"reigns": [
+			{
+				"r_hornung": "1939–1910",
+				"r_beckerath": "1976–1947",
+				"r_shaw": "1985–1956",
+				"r_redford": "1991–1962",
+				"r_dodson": "1994–1964",
+				"r_malek": "1980–1951",
+				"r_arnold": "1991–1962",
+				"r_grimal": "1991–1962",
+				"r_franke": "1938–1909",
+				"r_eusebius": "16 years"
+			}
+		]
 	},
 	{
 		"no": "90",
@@ -1679,7 +2376,22 @@
 		"G17": "265–284",
 		"VON": "82–83",
 		"DDB": "390–394",
-		"LPR": "58"
+		"LPR": "58",
+		"reigns": [
+			{
+				"r_hornung": "1920–1875",
+				"r_beckerath": "1956–1911",
+				"r_shaw": "1956–1911",
+				"r_redford": "1971–1928",
+				"r_dodson": "1974–1929",
+				"r_malek": "1960–1916",
+				"r_arnold": "1971–1926",
+				"r_grimal": "1962–1928",
+				"r_franke": "1919–1875",
+				"r_turin": "45 (years)",
+				"r_manetho": "46 years"
+			}
+		]
 	},
 	{
 		"no": "91",
@@ -1699,7 +2411,24 @@
 		"G17": "284–294",
 		"VON": "84–85",
 		"DDB": "23–25",
-		"LPR": "58–59"
+		"LPR": "58–59",
+		"reigns": [
+			{
+				"r_hornung": "1878–1843",
+				"r_beckerath": "1914–1879",
+				"r_shaw": "1911–1877",
+				"r_redford": "1929–1895",
+				"r_dodson": "1932–1896",
+				"r_malek": "1918–1884",
+				"r_arnold": "1929–1892",
+				"r_grimal": "1928–1895",
+				"r_franke": "1877–1843",
+				"r_turin": "10+x years",
+				"r_africanus": "38 years",
+				"r_eusebius": "68 years",
+				"r_highestyear": "Year 35"
+			}
+		]
 	},
 	{
 		"no": "92",
@@ -1719,7 +2448,22 @@
 		"G17": "295–301",
 		"VON": "84–85",
 		"DDB": "394–397",
-		"LPR": "59"
+		"LPR": "59",
+		"reigns": [
+			{
+				"r_hornung": "1845–1837",
+				"r_beckerath": "1882–1872",
+				"r_shaw": "1877–1870",
+				"r_redford": "1897–1877",
+				"r_dodson": "1900–1880",
+				"r_malek": "1886–1878",
+				"r_arnold": "1897–1878",
+				"r_grimal": "1895–1878",
+				"r_franke": "1845–1837",
+				"r_turin": "19 years",
+				"r_highestyear": "Year 8"
+			}
+		]
 	},
 	{
 		"no": "93",
@@ -1739,7 +2483,23 @@
 		"G17": "302–316",
 		"VON": "84–85",
 		"DDB": "397–401",
-		"LPR": "59"
+		"LPR": "59",
+		"reigns": [
+			{
+				"r_hornung": "1837–1819",
+				"r_beckerath": "1872–1853",
+				"r_shaw": "1870–1831",
+				"r_redford": "1878–1843",
+				"r_dodson": "1881–1840",
+				"r_malek": "1878–1859",
+				"r_arnold": "1878–1841",
+				"r_grimal": "1878–1842",
+				"r_franke": "1837–1818",
+				"r_turin": "30+x years",
+				"r_manetho": "48 years",
+				"r_highestyear": "Year 39"
+			}
+		]
 	},
 	{
 		"no": "94",
@@ -1759,7 +2519,22 @@
 		"G17": "319–337",
 		"VON": "86–87",
 		"DDB": "26–29",
-		"LPR": "59"
+		"LPR": "59",
+		"reigns": [
+			{
+				"r_hornung": "1818–1773",
+				"r_shaw": "1831–1786",
+				"r_redford": "1843–1797",
+				"r_dodson": "1842–1794",
+				"r_malek": "1859–1814",
+				"r_arnold": "1844–1797",
+				"r_grimal": "1842–1797",
+				"r_franke": "1818–1773",
+				"r_turin": "40+x years",
+				"r_manetho": "8 years",
+				"r_highestyear": "Year 46"
+			}
+		]
 	},
 	{
 		"no": "95",
@@ -1779,7 +2554,21 @@
 		"G17": "337–341",
 		"VON": "86–87",
 		"DDB": "30–32",
-		"LPR": "59–60"
+		"LPR": "59–60",
+		"reigns": [
+			{
+				"r_hornung": "1772–1764",
+				"r_beckerath": "1807–1798",
+				"r_shaw": "1786–1777",
+				"r_redford": "1798–1790",
+				"r_dodson": "1798–1785",
+				"r_malek": "1814–1805",
+				"r_arnold": "1799–1787",
+				"r_grimal": "1797–1790",
+				"r_franke": "1773–1764",
+				"r_turin": "9y 3m 27d"
+			}
+		]
 	},
 	{
 		"no": "96",
@@ -1799,7 +2588,22 @@
 		"G17": "341–343",
 		"VON": "86–87",
 		"DDB": "455–457",
-		"LPR": "60"
+		"LPR": "60",
+		"reigns": [
+			{
+				"r_hornung": "1763–1760",
+				"r_beckerath": "1798–1794",
+				"r_shaw": "1777–1773",
+				"r_redford": "1790–1786",
+				"r_dodson": "1785–1781",
+				"r_malek": "1805–1801",
+				"r_arnold": "1787–1783",
+				"r_grimal": "1790–1785",
+				"r_franke": "1763–1759",
+				"r_turin": "3y 10m 24d",
+				"r_africanus": "4 years"
+			}
+		]
 	},
 	{
 		"no": "97",
@@ -1807,7 +2611,6 @@
 		"name": "Sobekhotep I",
 		"dynasty": "13",
 		"order": "1",
-
 		"reg_start": "1803",
 		"reg_slut": "1800",
 		"reign": "",
@@ -1821,7 +2624,14 @@
 		"G18": "14–16",
 		"VON": "92–93",
 		"DDB": "443–444",
-		"LPR": "61"
+		"LPR": "61",
+		"reigns": [
+			{
+				"r_franke": "1724–1718",
+				"r_ryholt": "1803–1800",
+				"r_turin": "2y 3m 24d"
+			}
+		]
 	},
 	{
 		"no": "98",
@@ -1829,7 +2639,6 @@
 		"name": "Sonbef",
 		"dynasty": "13",
 		"order": "2",
-
 		"reg_start": "1800",
 		"reg_slut": "1796",
 		"reign": "",
@@ -1844,7 +2653,15 @@
 		"G18": "11",
 		"VON": "88–89",
 		"DDB": "457–458",
-		"LPR": "61"
+		"LPR": "61",
+		"reigns": [
+			{
+				"r_redford": "1782–1780",
+				"r_franke": "1757–1752",
+				"r_ryholt": "1800–1796",
+				"r_turin": "x years"
+			}
+		]
 	},
 	{
 		"no": "99",
@@ -1852,7 +2669,6 @@
 		"name": "Nerikara",
 		"dynasty": "13",
 		"order": "3",
-
 		"reg_start": null,
 		"reg_slut": "1796",
 		"reign": "",
@@ -1866,7 +2682,13 @@
 		"G18": "96",
 		"VON": "106–107",
 		"DDB": "278–279",
-		"LPR": "61"
+		"LPR": "61",
+		"reigns": [
+			{
+				"r_ryholt": "1796",
+				"r_turin": "(lacuna)"
+			}
+		]
 	},
 	{
 		"no": "100",
@@ -1874,7 +2696,6 @@
 		"name": "Sekhemkara Amenemhat",
 		"dynasty": "13",
 		"order": "4",
-
 		"reg_start": "1796",
 		"reg_slut": "1793",
 		"reign": "",
@@ -1887,7 +2708,14 @@
 		"description": null,
 		"VON": "88–89",
 		"DDB": null,
-		"LPR": "62"
+		"LPR": "62",
+		"reigns": [
+			{
+				"r_franke": "1746–1743",
+				"r_ryholt": "1796–1793",
+				"r_turin": "3 years"
+			}
+		]
 	},
 	{
 		"no": "101",
@@ -1895,7 +2723,6 @@
 		"name": "Ameny Qemau",
 		"dynasty": "13",
 		"order": "5",
-
 		"reg_start": "1793",
 		"reg_slut": "1791",
 		"reign": "",
@@ -1908,7 +2735,12 @@
 		"description": null,
 		"VON": "102–103",
 		"DDB": "304–305",
-		"LPR": "62"
+		"LPR": "62",
+		"reigns": [
+			{
+				"r_ryholt": "1793–1791"
+			}
+		]
 	},
 	{
 		"no": "102",
@@ -1916,7 +2748,6 @@
 		"name": "Qemau Siharnedjheritef",
 		"dynasty": "13",
 		"order": "6",
-
 		"reg_start": "1791",
 		"reg_slut": "1788",
 		"reign": "",
@@ -1931,7 +2762,12 @@
 		"G18": "92",
 		"VON": "90–91",
 		"DDB": null,
-		"LPR": "62"
+		"LPR": "62",
+		"reigns": [
+			{
+				"r_ryholt": "1791–1788"
+			}
+		]
 	},
 	{
 		"no": "103",
@@ -1939,7 +2775,6 @@
 		"name": "Iufni",
 		"dynasty": "13",
 		"order": "7",
-
 		"reg_start": null,
 		"reg_slut": "1788",
 		"reign": "",
@@ -1953,7 +2788,13 @@
 		"G18": "7",
 		"VON": "90–91",
 		"DDB": "101",
-		"LPR": "62"
+		"LPR": "62",
+		"reigns": [
+			{
+				"r_franke": "1741",
+				"r_ryholt": "1788"
+			}
+		]
 	},
 	{
 		"no": "104",
@@ -1961,7 +2802,6 @@
 		"name": "Sankhibra Amenemhat",
 		"dynasty": "13",
 		"order": "8",
-
 		"reg_start": "1788",
 		"reg_slut": "1785",
 		"reign": "",
@@ -1975,7 +2815,13 @@
 		"G18": "8–10",
 		"VON": "90–91",
 		"DDB": null,
-		"LPR": "63"
+		"LPR": "63",
+		"reigns": [
+			{
+				"r_franke": "1730–1724",
+				"r_ryholt": "1788–1785"
+			}
+		]
 	},
 	{
 		"no": "105",
@@ -1983,7 +2829,6 @@
 		"name": "Nebnun",
 		"dynasty": "13",
 		"order": "9",
-
 		"reg_start": "1785",
 		"reg_slut": "1783",
 		"reign": "",
@@ -1998,7 +2843,13 @@
 		"G18": "10",
 		"VON": "90–91",
 		"DDB": "245",
-		"LPR": "63"
+		"LPR": "63",
+		"reigns": [
+			{
+				"r_franke": "c. 1738/39",
+				"r_ryholt": "1785–1783"
+			}
+		]
 	},
 	{
 		"no": "106",
@@ -2006,7 +2857,6 @@
 		"name": "Sewesekhtawy Sehotepibra",
 		"dynasty": "13",
 		"order": "10",
-
 		"reg_start": "1783",
 		"reg_slut": "1781",
 		"reign": "",
@@ -2019,7 +2869,12 @@
 		"description": null,
 		"VON": "88–89",
 		"DDB": null,
-		"LPR": "63"
+		"LPR": "63",
+		"reigns": [
+			{
+				"r_ryholt": "1783–1781"
+			}
+		]
 	},
 	{
 		"no": "107",
@@ -2027,7 +2882,6 @@
 		"name": "Sewadjkara",
 		"dynasty": "13",
 		"order": "11",
-
 		"reg_start": null,
 		"reg_slut": "1781",
 		"reign": "",
@@ -2040,7 +2894,12 @@
 		"description": null,
 		"VON": "90–91",
 		"DDB": "417",
-		"LPR": "63–64"
+		"LPR": "63–64",
+		"reigns": [
+			{
+				"r_ryholt": "1781"
+			}
+		]
 	},
 	{
 		"no": "108",
@@ -2048,7 +2907,6 @@
 		"name": "Nedjemibra",
 		"dynasty": "13",
 		"order": "12",
-
 		"reg_start": null,
 		"reg_slut": "1780",
 		"reign": "",
@@ -2062,7 +2920,12 @@
 		"G18": "11–12",
 		"VON": "90–91",
 		"DDB": "248–249",
-		"LPR": "64"
+		"LPR": "64",
+		"reigns": [
+			{
+				"r_ryholt": "1780"
+			}
+		]
 	},
 	{
 		"no": "109",
@@ -2070,7 +2933,6 @@
 		"name": "Sobekhotep II",
 		"dynasty": "13",
 		"order": "13",
-
 		"reg_start": "1780",
 		"reg_slut": "1777",
 		"reign": "",
@@ -2084,7 +2946,12 @@
 		"G18": "40–41",
 		"VON": "90–91",
 		"DDB": "444–446",
-		"LPR": "64"
+		"LPR": "64",
+		"reigns": [
+			{
+				"r_ryholt": "1780–1777"
+			}
+		]
 	},
 	{
 		"no": "110",
@@ -2092,7 +2959,6 @@
 		"name": "Ranisonb",
 		"dynasty": "13",
 		"order": "14",
-
 		"reg_start": null,
 		"reg_slut": "1777",
 		"reign": "",
@@ -2106,7 +2972,12 @@
 		"G18": "13",
 		"VON": "92–93",
 		"DDB": "337",
-		"LPR": "64"
+		"LPR": "64",
+		"reigns": [
+			{
+				"r_ryholt": "1777"
+			}
+		]
 	},
 	{
 		"no": "111",
@@ -2114,7 +2985,6 @@
 		"name": "Hor I",
 		"dynasty": "13",
 		"order": "15",
-
 		"reg_start": "1777",
 		"reg_slut": "1775",
 		"reign": "",
@@ -2128,7 +2998,12 @@
 		"G17": "317–319",
 		"VON": "92–93",
 		"DDB": "112–114",
-		"LPR": "64"
+		"LPR": "64",
+		"reigns": [
+			{
+				"r_ryholt": "1777–1775"
+			}
+		]
 	},
 	{
 		"no": "112",
@@ -2136,7 +3011,6 @@
 		"name": "Sekhemra Khutawy",
 		"dynasty": "13",
 		"order": "16",
-
 		"reg_start": "1775",
 		"reg_slut": "1772",
 		"reign": "",
@@ -2149,7 +3023,13 @@
 		"description": null,
 		"VON": "88–89",
 		"DDB": "373",
-		"LPR": "64–65"
+		"LPR": "64–65",
+		"reigns": [
+			{
+				"r_franke": "1752–1746",
+				"r_ryholt": "1775–1772"
+			}
+		]
 	},
 	{
 		"no": "113",
@@ -2157,7 +3037,6 @@
 		"name": "Djedkheperu",
 		"dynasty": "13",
 		"order": "17",
-
 		"reg_start": "1772",
 		"reg_slut": "1770",
 		"reign": "",
@@ -2170,7 +3049,12 @@
 		"description": null,
 		"VON": "94–95",
 		"DDB": "86–87",
-		"LPR": "65"
+		"LPR": "65",
+		"reigns": [
+			{
+				"r_ryholt": "1772–1770"
+			}
+		]
 	},
 	{
 		"no": "114",
@@ -2178,7 +3062,6 @@
 		"name": "Sebkay",
 		"dynasty": "13",
 		"order": "18",
-
 		"reg_start": "1770",
 		"reg_slut": "1769",
 		"reign": "",
@@ -2192,7 +3075,12 @@
 		"G18": "93",
 		"VON": "106–107",
 		"DDB": "354–355",
-		"LPR": "65"
+		"LPR": "65",
+		"reigns": [
+			{
+				"r_ryholt": "1770–1769"
+			}
+		]
 	},
 	{
 		"no": "115",
@@ -2200,7 +3088,6 @@
 		"name": "Sedjefakara Kay-Amenemhat",
 		"dynasty": "13",
 		"order": "19",
-
 		"reg_start": "1769",
 		"reg_slut": "1766",
 		"reign": "",
@@ -2213,7 +3100,12 @@
 		"description": null,
 		"VON": "92–93",
 		"DDB": null,
-		"LPR": "65"
+		"LPR": "65",
+		"reigns": [
+			{
+				"r_ryholt": "1769–1766"
+			}
+		]
 	},
 	{
 		"no": "116",
@@ -2221,7 +3113,6 @@
 		"name": "Wegaf",
 		"dynasty": "13",
 		"order": "20",
-
 		"reg_start": "1766",
 		"reg_slut": "1764",
 		"reign": "",
@@ -2235,7 +3126,15 @@
 		"G18": "2–3",
 		"VON": "88–89",
 		"DDB": null,
-		"LPR": "66"
+		"LPR": "66",
+		"reigns": [
+			{
+				"r_hornung": "1759–1757",
+				"r_redford": "1786–1783",
+				"r_franke": "1759–1757",
+				"r_ryholt": "1766–1764"
+			}
+		]
 	},
 	{
 		"no": "117",
@@ -2243,7 +3142,6 @@
 		"name": "Khendjer",
 		"dynasty": "13",
 		"order": "21",
-
 		"reg_start": "1764",
 		"reg_slut": "1759",
 		"reign": "",
@@ -2259,7 +3157,16 @@
 		"G18": "138–139",
 		"VON": "94–95",
 		"DDB": "180–182",
-		"LPR": "66"
+		"LPR": "66",
+		"reigns": [
+			{
+				"r_hornung": "1732–1728",
+				"r_redford": "1756–1751",
+				"r_franke": "1718–1723",
+				"r_ryholt": "1764–1759",
+				"r_highestyear": "Year 5"
+			}
+		]
 	},
 	{
 		"no": "118",
@@ -2267,7 +3174,6 @@
 		"name": "Imyremeshaw",
 		"dynasty": "13",
 		"order": "22",
-
 		"reg_start": null,
 		"reg_slut": "1759",
 		"reign": "",
@@ -2281,7 +3187,13 @@
 		"G18": "17–18",
 		"VON": "94–95",
 		"DDB": "134–135",
-		"LPR": "66"
+		"LPR": "66",
+		"reigns": [
+			{
+				"r_franke": "1711",
+				"r_ryholt": "1759"
+			}
+		]
 	},
 	{
 		"no": "119",
@@ -2289,7 +3201,6 @@
 		"name": "Intef IV",
 		"dynasty": "13",
 		"order": "23",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2303,7 +3214,12 @@
 		"description": null,
 		"VON": "94–95",
 		"DDB": "148–149",
-		"LPR": "66"
+		"LPR": "66",
+		"reigns": [
+			{
+				"r_franke": "1710"
+			}
+		]
 	},
 	{
 		"no": "120",
@@ -2311,7 +3227,6 @@
 		"name": "Meribra Seth",
 		"dynasty": "13",
 		"order": "24",
-
 		"reg_start": null,
 		"reg_slut": "1749",
 		"reign": "",
@@ -2324,7 +3239,12 @@
 		"description": null,
 		"VON": "94–95",
 		"DDB": null,
-		"LPR": "66–67"
+		"LPR": "66–67",
+		"reigns": [
+			{
+				"r_ryholt": "1749"
+			}
+		]
 	},
 	{
 		"no": "121",
@@ -2332,7 +3252,6 @@
 		"name": "Sobekhotep III",
 		"dynasty": "13",
 		"order": "25",
-
 		"reg_start": "1749",
 		"reg_slut": "1742",
 		"reign": "",
@@ -2346,7 +3265,13 @@
 		"G18": "19–22",
 		"VON": "92–95",
 		"DDB": "446–448",
-		"LPR": "67"
+		"LPR": "67",
+		"reigns": [
+			{
+				"r_hornung": "1725–1722",
+				"r_ryholt": "1749–1742"
+			}
+		]
 	},
 	{
 		"no": "122",
@@ -2354,7 +3279,6 @@
 		"name": "Neferhotep I",
 		"dynasty": "13",
 		"order": "26",
-
 		"reg_start": "1742",
 		"reg_slut": "1731",
 		"reign": "",
@@ -2369,7 +3293,13 @@
 		"G18": "22–30",
 		"VON": "96–97",
 		"DDB": "252–254",
-		"LPR": "67"
+		"LPR": "67",
+		"reigns": [
+			{
+				"r_hornung": "1721–1710",
+				"r_ryholt": "1742–1731"
+			}
+		]
 	},
 	{
 		"no": "123",
@@ -2377,7 +3307,6 @@
 		"name": "Sihathor",
 		"dynasty": "13",
 		"order": "27",
-
 		"reg_start": null,
 		"reg_slut": "1733",
 		"reign": "",
@@ -2392,7 +3321,12 @@
 		"G18": "31",
 		"VON": "96–97",
 		"DDB": "430–431",
-		"LPR": "67"
+		"LPR": "67",
+		"reigns": [
+			{
+				"r_ryholt": "1733"
+			}
+		]
 	},
 	{
 		"no": "124",
@@ -2400,7 +3334,6 @@
 		"name": "Sobekhotep IV",
 		"dynasty": "13",
 		"order": "28",
-
 		"reg_start": "1732",
 		"reg_slut": "1720",
 		"reign": "",
@@ -2415,7 +3348,16 @@
 		"G18": "31–38",
 		"VON": "96–97",
 		"DDB": "448–450",
-		"LPR": "67–68"
+		"LPR": "67–68",
+		"reigns": [
+			{
+				"r_hornung": "1709–1701",
+				"r_redford": "1734–1724",
+				"r_malek": "1727–1720",
+				"r_franke": "1694–1685",
+				"r_ryholt": "1732–1720"
+			}
+		]
 	},
 	{
 		"no": "125",
@@ -2423,7 +3365,6 @@
 		"name": "Sobekhotep V",
 		"dynasty": "13",
 		"order": "29",
-
 		"reg_start": "1720",
 		"reg_slut": "1717",
 		"reign": "",
@@ -2438,7 +3379,16 @@
 		"G18": "90–91",
 		"VON": "98–99",
 		"DDB": "450–451",
-		"LPR": "68"
+		"LPR": "68",
+		"reigns": [
+			{
+				"r_hornung": "1700–1695",
+				"r_redford": "1725–1721",
+				"r_malek": "1720–1716",
+				"r_franke": "1685–1680",
+				"r_ryholt": "1720–1717"
+			}
+		]
 	},
 	{
 		"no": "126",
@@ -2446,7 +3396,6 @@
 		"name": "Sobekhotep VI",
 		"dynasty": "13",
 		"order": "30",
-
 		"reg_start": "1717",
 		"reg_slut": "1712",
 		"reign": "",
@@ -2461,7 +3410,14 @@
 		"G18": "42",
 		"VON": "96–97",
 		"DDB": "452–453",
-		"LPR": "68"
+		"LPR": "68",
+		"reigns": [
+			{
+				"r_franke": "1656–1654",
+				"r_ryholt": "1717–1712",
+				"r_turin": "4y 8m 9d"
+			}
+		]
 	},
 	{
 		"no": "127",
@@ -2469,7 +3425,6 @@
 		"name": "Wahibra Jaib",
 		"dynasty": "13",
 		"order": "31",
-
 		"reg_start": "1712",
 		"reg_slut": "1701",
 		"reign": "",
@@ -2484,7 +3439,14 @@
 		"G18": "43–44",
 		"VON": "96–97",
 		"DDB": "130–132",
-		"LPR": "68"
+		"LPR": "68",
+		"reigns": [
+			{
+				"r_hornung": "1695–1685",
+				"r_ryholt": "1712–1701",
+				"r_turin": "10y 8m 28d"
+			}
+		]
 	},
 	{
 		"no": "128",
@@ -2492,7 +3454,6 @@
 		"name": "Aya",
 		"dynasty": "13",
 		"order": "32",
-
 		"reg_start": "1701",
 		"reg_slut": "1677",
 		"reign": "",
@@ -2507,7 +3468,14 @@
 		"G18": "44–45",
 		"VON": "98–99",
 		"DDB": "65–66",
-		"LPR": "68–69"
+		"LPR": "68–69",
+		"reigns": [
+			{
+				"r_hornung": "1684–1661",
+				"r_ryholt": "1701–1677",
+				"r_turin": "23y 8m 14d"
+			}
+		]
 	},
 	{
 		"no": "129",
@@ -2515,7 +3483,6 @@
 		"name": "Ini I",
 		"dynasty": "13",
 		"order": "33",
-
 		"reg_start": "1677",
 		"reg_slut": "1675",
 		"reign": "",
@@ -2530,7 +3497,14 @@
 		"G18": "45–46",
 		"VON": "98–99",
 		"DDB": "137–138",
-		"LPR": "69"
+		"LPR": "69",
+		"reigns": [
+			{
+				"r_hornung": "1660–1659",
+				"r_ryholt": "1677–1675",
+				"r_turin": "2y 2m 9d"
+			}
+		]
 	},
 	{
 		"no": "130",
@@ -2538,7 +3512,6 @@
 		"name": "Sewadjtu",
 		"dynasty": "13",
 		"order": "34",
-
 		"reg_start": "1675",
 		"reg_slut": "1672",
 		"reign": "",
@@ -2553,7 +3526,15 @@
 		"G18": "46",
 		"VON": "98–99",
 		"DDB": "419–420",
-		"LPR": "69"
+		"LPR": "69",
+		"reigns": [
+			{
+				"r_redford": "1698–1695",
+				"r_franke": "1654–1651",
+				"r_ryholt": "1675–1672",
+				"r_turin": "3y 2m"
+			}
+		]
 	},
 	{
 		"no": "131",
@@ -2561,7 +3542,6 @@
 		"name": "Ined",
 		"dynasty": "13",
 		"order": "35",
-
 		"reg_start": "1672",
 		"reg_slut": "1669",
 		"reign": "",
@@ -2576,7 +3556,13 @@
 		"G18": "46",
 		"VON": "98–99",
 		"DDB": "135–136",
-		"LPR": "69"
+		"LPR": "69",
+		"reigns": [
+			{
+				"r_ryholt": "1672–1669",
+				"r_turin": "3y 1–4m"
+			}
+		]
 	},
 	{
 		"no": "132",
@@ -2584,7 +3570,6 @@
 		"name": "Sewadjkara Hori",
 		"dynasty": "13",
 		"order": "36",
-
 		"reg_start": "1669",
 		"reg_slut": "1664",
 		"reign": "",
@@ -2598,7 +3583,13 @@
 		"G18": "47",
 		"VON": "98–99",
 		"DDB": null,
-		"LPR": "69"
+		"LPR": "69",
+		"reigns": [
+			{
+				"r_ryholt": "1669–1664",
+				"r_turin": "5y ... 8d"
+			}
+		]
 	},
 	{
 		"no": "133",
@@ -2606,7 +3597,6 @@
 		"name": "Sobekhotep VII",
 		"dynasty": "13",
 		"order": "37",
-
 		"reg_start": "1664",
 		"reg_slut": "1662",
 		"reign": "",
@@ -2620,7 +3610,15 @@
 		"G18": "49",
 		"VON": "98–99",
 		"DDB": "453–454",
-		"LPR": "70"
+		"LPR": "70",
+		"reigns": [
+			{
+				"r_redford": "1690–1688",
+				"r_franke": "1646–1644",
+				"r_ryholt": "1664–1662",
+				"r_turin": "2y ?m 4d"
+			}
+		]
 	},
 	{
 		"no": "134",
@@ -2628,7 +3626,6 @@
 		"name": "Merkheperra",
 		"dynasty": "13",
 		"order": "46",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2642,7 +3639,8 @@
 		"G18": "48",
 		"VON": "100–101",
 		"DDB": "214",
-		"LPR": "70"
+		"LPR": "70",
+		"reigns": [{}]
 	},
 	{
 		"no": "135",
@@ -2650,7 +3648,6 @@
 		"name": "Merkara",
 		"dynasty": "13",
 		"order": "47",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2664,7 +3661,8 @@
 		"G18": "48",
 		"VON": "100–101",
 		"DDB": "213",
-		"LPR": "70"
+		"LPR": "70",
+		"reigns": [{}]
 	},
 	{
 		"no": "136",
@@ -2672,7 +3670,6 @@
 		"name": "Yakbim",
 		"dynasty": "14",
 		"order": "1",
-
 		"reg_start": "1805",
 		"reg_slut": "1780",
 		"reign": "",
@@ -2685,7 +3682,12 @@
 		"description": null,
 		"VON": "118–119",
 		"DDB": null,
-		"LPR": "74"
+		"LPR": "74",
+		"reigns": [
+			{
+				"r_ryholt": "1805–1780"
+			}
+		]
 	},
 	{
 		"no": "137",
@@ -2693,7 +3695,6 @@
 		"name": "Yammu",
 		"dynasty": "14",
 		"order": "2",
-
 		"reg_start": "1780",
 		"reg_slut": "1770",
 		"reign": "",
@@ -2707,7 +3708,12 @@
 		"description": null,
 		"VON": "118–119",
 		"DDB": null,
-		"LPR": "74"
+		"LPR": "74",
+		"reigns": [
+			{
+				"r_ryholt": "1780–1770"
+			}
+		]
 	},
 	{
 		"no": "138",
@@ -2715,7 +3721,6 @@
 		"name": "Qareh",
 		"dynasty": "14",
 		"order": "3",
-
 		"reg_start": "1770",
 		"reg_slut": "1760",
 		"reign": "",
@@ -2728,7 +3733,12 @@
 		"description": null,
 		"VON": "120–121",
 		"DDB": "303–304",
-		"LPR": "74"
+		"LPR": "74",
+		"reigns": [
+			{
+				"r_ryholt": "1770–1760"
+			}
+		]
 	},
 	{
 		"no": "139",
@@ -2736,7 +3746,6 @@
 		"name": "Aahotepra",
 		"dynasty": "14",
 		"order": "4",
-
 		"reg_start": "1760",
 		"reg_slut": "1745",
 		"reign": "",
@@ -2750,7 +3759,12 @@
 		"G17": "211",
 		"VON": "118–119",
 		"DDB": "52–53",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_ryholt": "1760–1745"
+			}
+		]
 	},
 	{
 		"no": "140",
@@ -2758,7 +3772,6 @@
 		"name": "Sheshi",
 		"dynasty": "14",
 		"order": "5",
-
 		"reg_start": "1745",
 		"reg_slut": "1705",
 		"reign": "",
@@ -2772,7 +3785,12 @@
 		"G17": "206–207",
 		"VON": "116–117",
 		"DDB": "428–429",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_ryholt": "1745–1705"
+			}
+		]
 	},
 	{
 		"no": "141",
@@ -2780,7 +3798,6 @@
 		"name": "Nehesi",
 		"dynasty": "14",
 		"order": "6",
-
 		"reg_start": null,
 		"reg_slut": "1705",
 		"reign": "",
@@ -2794,7 +3811,13 @@
 		"G18": "54–55",
 		"VON": "108–109",
 		"DDB": "276–278",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_ryholt": "1705",
+				"r_turin": "0y ?m 3d"
+			}
+		]
 	},
 	{
 		"no": "142",
@@ -2802,7 +3825,6 @@
 		"name": "Khakherura",
 		"dynasty": "14",
 		"order": "7",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2816,7 +3838,12 @@
 		"G18": "56",
 		"VON": "108–109",
 		"DDB": "173",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_turin": "0y ?m 3d"
+			}
+		]
 	},
 	{
 		"no": "143",
@@ -2824,7 +3851,6 @@
 		"name": "Nebfaura",
 		"dynasty": "14",
 		"order": "8",
-
 		"reg_start": null,
 		"reg_slut": "1704",
 		"reign": "",
@@ -2838,7 +3864,13 @@
 		"G18": "56",
 		"VON": "108–109",
 		"DDB": "240",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_ryholt": "1704",
+				"r_turin": "1y 5m 15d"
+			}
+		]
 	},
 	{
 		"no": "144",
@@ -2846,7 +3878,6 @@
 		"name": "Sehabra",
 		"dynasty": "14",
 		"order": "9",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2860,7 +3891,12 @@
 		"G18": "57",
 		"VON": "108–109",
 		"DDB": "358",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_turin": "3y ?m 1d"
+			}
+		]
 	},
 	{
 		"no": "145",
@@ -2868,7 +3904,6 @@
 		"name": "Merdjefara",
 		"dynasty": "14",
 		"order": "10",
-
 		"reg_start": null,
 		"reg_slut": "1694",
 		"reign": "",
@@ -2882,7 +3917,13 @@
 		"G18": "58",
 		"VON": "108–109",
 		"DDB": "203",
-		"LPR": "75"
+		"LPR": "75",
+		"reigns": [
+			{
+				"r_ryholt": "1694",
+				"r_turin": "3–4y ..."
+			}
+		]
 	},
 	{
 		"no": "146",
@@ -2890,7 +3931,6 @@
 		"name": "Salitis",
 		"dynasty": "15",
 		"order": "1",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2901,7 +3941,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "Several attempts has been made to identify Salitis with an archaeologically attested ruler, but his hieroglyphic name(s) remains unidentified.",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "147",
@@ -2909,7 +3950,6 @@
 		"name": "Beon",
 		"dynasty": "15",
 		"order": "74",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2920,7 +3960,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "Several attempts has been made to identify <em>Beon</em> or <em>Bnon</em> with an archaeologically attested ruler, but his hieroglyphic name(s) remains unidentified, and the name <gr>Βηών/Βνῶν</gr> can not be linked to an actual royal name.<br />The Greek letter <gr>β</gr> is also used in Greek for the number 2, written as <gr>β′</gr>. The original note in Manetho may have shown that the second king (i.e. <gr>β′</gr>) was “without name” (i.e. <gr>β′</gr> + <gr>νώνυμος</gr>, or <i>2 + nonymos</i>, ), indicating that the king's name was unknown. Perhaps a copy of the Epitome was made when the shorthand <gr>νών</gr> had become the norm, or the copyist made a careless dittographical error and corrupted the text into <gr>Βνῶν</gr> instead of <gr>β′ + νώνυμος</gr>?<button popovertarget=\"pop01\">1</button><div id=\"pop01\" popover><p>1</p> Sligtlhy adapted from the ingeniously proposal in<br /><b>Bieke Mahieu.</b> 2023. The Identification and Sequence of the Hyksos Kings in Dynasty 15. <i>Studien zur Altägyptischen Kultur</i> 52: 194f.</div>",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "148",
@@ -2928,7 +3969,6 @@
 		"name": "Apachnas",
 		"dynasty": "15",
 		"order": "72",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -2939,7 +3979,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "Several attempts has been made to identify Apachnas with an archaeologically attested ruler, but his hieroglyphic name(s) remains unidentified.",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "149",
@@ -2947,7 +3988,6 @@
 		"name": "Khyan",
 		"dynasty": "15",
 		"order": "3",
-
 		"reg_start": "1621",
 		"reg_slut": "1581",
 		"reign": "",
@@ -2964,7 +4004,12 @@
 		"G18": "135–137",
 		"VON": "114–115",
 		"DDB": "194–196",
-		"LPR": "82"
+		"LPR": "82",
+		"reigns": [
+			{
+				"r_ryholt": "1621–1581"
+			}
+		]
 	},
 	{
 		"no": "150",
@@ -2972,7 +4017,6 @@
 		"name": "Apepi",
 		"dynasty": "15",
 		"order": "4",
-
 		"reg_start": "1581",
 		"reg_slut": "1541",
 		"reign": "",
@@ -2987,7 +4031,15 @@
 		"G18": "139–143",
 		"VON": "114–115",
 		"DDB": "58–60",
-		"LPR": "82"
+		"LPR": "82",
+		"reigns": [
+			{
+				"r_hornung": "1575–1540",
+				"r_shaw": "c. 1555",
+				"r_dodson": "1585–1545",
+				"r_ryholt": "1581–1541"
+			}
+		]
 	},
 	{
 		"no": "151",
@@ -2995,7 +4047,6 @@
 		"name": "Khamudy",
 		"dynasty": "15",
 		"order": "5",
-
 		"reg_start": "1541",
 		"reg_slut": "1540",
 		"reign": "",
@@ -3008,7 +4059,13 @@
 		"description": null,
 		"VON": "114–115",
 		"DDB": "174–175",
-		"LPR": "82"
+		"LPR": "82",
+		"reigns": [
+			{
+				"r_dodson": "1545–1535",
+				"r_ryholt": "1541–1540"
+			}
+		]
 	},
 	{
 		"no": "152",
@@ -3016,7 +4073,6 @@
 		"name": "Anather",
 		"dynasty": "36",
 		"order": "1",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3030,7 +4086,8 @@
 		"bibliography": "<b>Ryholt, K.</b> (1997). <em>The Political Situation in Egypt during the Second Intermediate Period.</em> 121–122",
 		"annan_dynasti": "12-16",
 		"VON": "116–117",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "153",
@@ -3038,7 +4095,6 @@
 		"name": "Djehuty",
 		"dynasty": "16",
 		"order": "2",
-
 		"reg_start": "1649",
 		"reg_slut": "1648",
 		"reign": "",
@@ -3053,7 +4109,13 @@
 		"G18": "85",
 		"VON": "126–127",
 		"DDB": "90–91",
-		"LPR": "83"
+		"LPR": "83",
+		"reigns": [
+			{
+				"r_ryholt": "1648–1645",
+				"r_turin": "3 years"
+			}
+		]
 	},
 	{
 		"no": "154",
@@ -3061,7 +4123,6 @@
 		"name": "Sobekhotep VIII",
 		"dynasty": "16",
 		"order": "3",
-
 		"reg_start": "1645",
 		"reg_slut": "1629",
 		"reign": "",
@@ -3075,7 +4136,13 @@
 		"G18": "78",
 		"VON": "104–105",
 		"DDB": "454–455",
-		"LPR": "83"
+		"LPR": "83",
+		"reigns": [
+			{
+				"r_ryholt": "1645–1629",
+				"r_turin": "16 years"
+			}
+		]
 	},
 	{
 		"no": "155",
@@ -3083,7 +4150,6 @@
 		"name": "Neferhotep III",
 		"dynasty": "16",
 		"order": "4",
-
 		"reg_start": "1629",
 		"reg_slut": "1629",
 		"reign": "",
@@ -3097,7 +4163,13 @@
 		"description": null,
 		"VON": "102–103",
 		"DDB": "256–257",
-		"LPR": "84"
+		"LPR": "84",
+		"reigns": [
+			{
+				"r_ryholt": "1629–1628",
+				"r_turin": "1 year"
+			}
+		]
 	},
 	{
 		"no": "156",
@@ -3105,7 +4177,6 @@
 		"name": "Mentuhotepi",
 		"dynasty": "16",
 		"order": "5",
-
 		"reg_start": "1628",
 		"reg_slut": "1627",
 		"reign": "",
@@ -3119,7 +4190,13 @@
 		"description": null,
 		"VON": "126–127",
 		"DDB": "233–234",
-		"LPR": "84"
+		"LPR": "84",
+		"reigns": [
+			{
+				"r_ryholt": "1628–1627",
+				"r_turin": "1 year"
+			}
+		]
 	},
 	{
 		"no": "157",
@@ -3127,7 +4204,6 @@
 		"name": "Nebirau I",
 		"dynasty": "16",
 		"order": "6",
-
 		"reg_start": "1627",
 		"reg_slut": "1601",
 		"reign": "",
@@ -3142,7 +4218,13 @@
 		"G18": "78",
 		"VON": "126–127",
 		"DDB": "241–242",
-		"LPR": "84"
+		"LPR": "84",
+		"reigns": [
+			{
+				"r_ryholt": "1627–1601",
+				"r_turin": "26 years"
+			}
+		]
 	},
 	{
 		"no": "158",
@@ -3150,7 +4232,6 @@
 		"name": "Nebirau II",
 		"dynasty": "16",
 		"order": "7",
-
 		"reg_start": null,
 		"reg_slut": "1601",
 		"reign": "",
@@ -3164,7 +4245,12 @@
 		"G18": "79",
 		"VON": "126–127",
 		"DDB": "242–243",
-		"LPR": "84–85"
+		"LPR": "84–85",
+		"reigns": [
+			{
+				"r_ryholt": "1601"
+			}
+		]
 	},
 	{
 		"no": "159",
@@ -3172,7 +4258,6 @@
 		"name": "Semenenra",
 		"dynasty": "16",
 		"order": "8",
-
 		"reg_start": "1601",
 		"reg_slut": "1600",
 		"reign": "",
@@ -3185,7 +4270,12 @@
 		"description": null,
 		"VON": "126–127",
 		"DDB": "375",
-		"LPR": "85"
+		"LPR": "85",
+		"reigns": [
+			{
+				"r_ryholt": "1601–1600"
+			}
+		]
 	},
 	{
 		"no": "160",
@@ -3193,7 +4283,6 @@
 		"name": "Bebiankh",
 		"dynasty": "16",
 		"order": "9",
-
 		"reg_start": "1600",
 		"reg_slut": "1588",
 		"reign": "",
@@ -3207,7 +4296,13 @@
 		"description": "Bebiankh's throne name is found on the Karnak king list number 27, as well as on the Turin Canon 11.8, where he is noted for a reign of 12 years. His throne and birth names are present on a fragmented stela found at Gebel Zeit near the Red Sea.",
 		"VON": "126–127",
 		"DDB": "69–70",
-		"LPR": "85"
+		"LPR": "85",
+		"reigns": [
+			{
+				"r_ryholt": "1600–1588",
+				"r_turin": "12 years"
+			}
+		]
 	},
 	{
 		"no": "161",
@@ -3215,7 +4310,6 @@
 		"name": "Sekhemra Shedwaset",
 		"dynasty": "16",
 		"order": "10",
-
 		"reg_start": null,
 		"reg_slut": "1588",
 		"reign": "",
@@ -3228,7 +4322,12 @@
 		"description": "This king is only known from the Turin Canon. There are no other finds that holds his name.",
 		"VON": "128–129",
 		"DDB": "372",
-		"LPR": "85"
+		"LPR": "85",
+		"reigns": [
+			{
+				"r_ryholt": "1588"
+			}
+		]
 	},
 	{
 		"no": "162",
@@ -3236,7 +4335,6 @@
 		"name": "Dedumose I",
 		"dynasty": "16",
 		"order": "11",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3250,7 +4348,8 @@
 		"description": null,
 		"VON": "100–101",
 		"DDB": "75–76",
-		"LPR": "85–86"
+		"LPR": "85–86",
+		"reigns": [{}]
 	},
 	{
 		"no": "163",
@@ -3258,7 +4357,6 @@
 		"name": "Dedumose II",
 		"dynasty": "16",
 		"order": "12",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3273,7 +4371,8 @@
 		"G18": "50–51",
 		"VON": "100–101",
 		"DDB": "76–77",
-		"LPR": "86"
+		"LPR": "86",
+		"reigns": [{}]
 	},
 	{
 		"no": "164",
@@ -3281,7 +4380,6 @@
 		"name": "Mentuemsaf",
 		"dynasty": "16",
 		"order": "13",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3296,7 +4394,8 @@
 		"G18": "53",
 		"VON": "102–103",
 		"DDB": null,
-		"LPR": "86"
+		"LPR": "86",
+		"reigns": [{}]
 	},
 	{
 		"no": "165",
@@ -3304,7 +4403,6 @@
 		"name": "Mentuhotep VI",
 		"dynasty": "16",
 		"order": "14",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3319,7 +4417,8 @@
 		"G18": "247",
 		"VON": "102–103",
 		"DDB": "232–233",
-		"LPR": "86"
+		"LPR": "86",
+		"reigns": [{}]
 	},
 	{
 		"no": "166",
@@ -3327,7 +4426,6 @@
 		"name": "Senusret IV",
 		"dynasty": "16",
 		"order": "15",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3342,7 +4440,8 @@
 		"G18": "66–67",
 		"VON": "102–103",
 		"DDB": "401–402",
-		"LPR": "86"
+		"LPR": "86",
+		"reigns": [{}]
 	},
 	{
 		"no": "167",
@@ -3350,7 +4449,6 @@
 		"name": "Rahotep",
 		"dynasty": "17",
 		"order": "1",
-
 		"reg_start": "1580",
 		"reg_slut": "1576",
 		"reign": "",
@@ -3365,7 +4463,12 @@
 		"G18": "88–89",
 		"VON": "124–125",
 		"DDB": "341–343",
-		"LPR": "89"
+		"LPR": "89",
+		"reigns": [
+			{
+				"r_ryholt": "1580–1576"
+			}
+		]
 	},
 	{
 		"no": "168",
@@ -3373,7 +4476,6 @@
 		"name": "Sobekemsaf I",
 		"dynasty": "17",
 		"order": "2",
-
 		"reg_start": "1576",
 		"reg_slut": "1573",
 		"reign": "",
@@ -3388,7 +4490,12 @@
 		"G18": "74–78",
 		"VON": "128–129",
 		"DDB": "440–441",
-		"LPR": "89"
+		"LPR": "89",
+		"reigns": [
+			{
+				"r_ryholt": "1576–1573"
+			}
+		]
 	},
 	{
 		"no": "169",
@@ -3396,7 +4503,6 @@
 		"name": "Sobekemsaf II",
 		"dynasty": "17",
 		"order": "3",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3411,7 +4517,12 @@
 		"G18": "71–73",
 		"VON": "128–129",
 		"DDB": "438–440",
-		"LPR": "90"
+		"LPR": "90",
+		"reigns": [
+			{
+				"r_ryholt": "1566–1559"
+			}
+		]
 	},
 	{
 		"no": "170",
@@ -3419,7 +4530,6 @@
 		"name": "Intef V",
 		"dynasty": "17",
 		"order": "4",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3434,7 +4544,12 @@
 		"G17": "219–221",
 		"VON": "128–129",
 		"DDB": "150–151",
-		"LPR": "89–90"
+		"LPR": "89–90",
+		"reigns": [
+			{
+				"r_ryholt": "1573–1571"
+			}
+		]
 	},
 	{
 		"no": "171",
@@ -3442,7 +4557,6 @@
 		"name": "Intef VI",
 		"dynasty": "17",
 		"order": "5",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3457,7 +4571,12 @@
 		"G17": "238–242, 246",
 		"VON": "124–125",
 		"DDB": "151–153",
-		"LPR": "90"
+		"LPR": "90",
+		"reigns": [
+			{
+				"r_ryholt": "1571–1566"
+			}
+		]
 	},
 	{
 		"no": "172",
@@ -3465,7 +4584,6 @@
 		"name": "Intef VII",
 		"dynasty": "17",
 		"order": "6",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -3479,7 +4597,12 @@
 		"description": "Ruled Upper Egypt from Thebes during the late Second Intermediate Period. The short reign suggests that he met a violent end, perhaps even the final spark that started the war with the Fifteenth Dynasty.",
 		"VON": "128–129",
 		"DDB": "153–155",
-		"LPR": "90"
+		"LPR": "90",
+		"reigns": [
+			{
+				"r_ryholt": "1568"
+			}
+		]
 	},
 	{
 		"no": "173",
@@ -3487,7 +4610,6 @@
 		"name": "Senakhtenra",
 		"dynasty": "17",
 		"order": "7",
-
 		"reg_start": "1559",
 		"reg_slut": "1558",
 		"reign": "",
@@ -3502,7 +4624,12 @@
 		"G18": "168–169",
 		"VON": "128–129",
 		"DDB": "380–381",
-		"LPR": "91"
+		"LPR": "91",
+		"reigns": [
+			{
+				"r_ryholt": "1559–1558"
+			}
+		]
 	},
 	{
 		"no": "174",
@@ -3510,7 +4637,6 @@
 		"name": "Seqenenra",
 		"dynasty": "17",
 		"order": "8",
-
 		"reg_start": "1558",
 		"reg_slut": "1554",
 		"reign": "",
@@ -3525,7 +4651,14 @@
 		"G18": "156–161",
 		"VON": "128–131",
 		"DDB": "402–405",
-		"LPR": "91"
+		"LPR": "91",
+		"reigns": [
+			{
+				"r_dodson": "1558–1554",
+				"r_franke": "?–1545",
+				"r_ryholt": "1558–1554"
+			}
+		]
 	},
 	{
 		"no": "175",
@@ -3533,7 +4666,6 @@
 		"name": "Kamose",
 		"dynasty": "17",
 		"order": "9",
-
 		"reg_start": "1555",
 		"reg_slut": "1550",
 		"reign": "",
@@ -3548,7 +4680,16 @@
 		"G18": "165–167",
 		"VON": "130–131",
 		"DDB": "162–165",
-		"LPR": "91"
+		"LPR": "91",
+		"reigns": [
+			{
+				"r_hornung": "?–1540",
+				"r_shaw": "1555–1550",
+				"r_redford": "1571–1569",
+				"r_dodson": "1553–1549",
+				"r_ryholt": "1554–1549"
+			}
+		]
 	},
 	{
 		"no": "176",
@@ -3556,7 +4697,6 @@
 		"name": "Ahmose I",
 		"dynasty": "18",
 		"order": "1",
-
 		"reg_start": "1550",
 		"reg_slut": "1525",
 		"reign": "",
@@ -3571,7 +4711,23 @@
 		"G18": "175–196",
 		"VON": "132–133",
 		"DDB": "9–11",
-		"LPR": "95–96"
+		"LPR": "95–96",
+		"reigns": [
+			{
+				"r_hornung": "1539–1515",
+				"r_beckerath": "1550–1525",
+				"r_shaw": "1550–1525",
+				"r_redford": "1569–1545",
+				"r_dodson": "1549–1524",
+				"r_malek": "1540–1525",
+				"r_arnold": "1550–1525",
+				"r_grimal": "1552–1526",
+				"r_eusebius": "25 years",
+				"r_josephus": "25y 4m",
+				"r_jerome": "25 years",
+				"r_highestyear": "Year 22"
+			}
+		]
 	},
 	{
 		"no": "177",
@@ -3579,7 +4735,6 @@
 		"name": "Amenhotep I",
 		"dynasty": "18",
 		"order": "2",
-
 		"reg_start": "1541",
 		"reg_slut": "1520",
 		"reign": "",
@@ -3594,7 +4749,24 @@
 		"G18": "197–212",
 		"VON": "132–133",
 		"DDB": "36–39",
-		"LPR": "96"
+		"LPR": "96",
+		"reigns": [
+			{
+				"r_hornung": "1514–1494",
+				"r_beckerath": "1525–1504",
+				"r_shaw": "1525–1504",
+				"r_redford": "1545–1525",
+				"r_dodson": "1524–1503",
+				"r_malek": "1525–1504",
+				"r_arnold": "1525–1504",
+				"r_grimal": "1526–1506",
+				"r_africanus": "24 years",
+				"r_eusebius": "21 years",
+				"r_josephus": "20y 7m",
+				"r_jerome": "21 years",
+				"r_highestyear": "Year 21"
+			}
+		]
 	},
 	{
 		"no": "178",
@@ -3602,7 +4774,6 @@
 		"name": "Thutmose I",
 		"dynasty": "18",
 		"order": "3",
-
 		"reg_start": "1520",
 		"reg_slut": "1492",
 		"reign": "",
@@ -3617,7 +4788,24 @@
 		"G18": "212–227",
 		"VON": "132–135",
 		"DDB": "463–467",
-		"LPR": "96–97"
+		"LPR": "96–97",
+		"reigns": [
+			{
+				"r_hornung": "1493–1483",
+				"r_beckerath": "1504–1492",
+				"r_shaw": "1504–1492",
+				"r_redford": "1525–1516",
+				"r_dodson": "1503–1491",
+				"r_malek": "1504–1492",
+				"r_arnold": "1504–1492",
+				"r_grimal": "1506–1493",
+				"r_africanus": "13 years",
+				"r_eusebius": "12 years",
+				"r_josephus": "12y 9m",
+				"r_jerome": "12 years",
+				"r_highestyear": "Year 8/9"
+			}
+		]
 	},
 	{
 		"no": "179",
@@ -3625,7 +4813,6 @@
 		"name": "Thutmose II",
 		"dynasty": "18",
 		"order": "4",
-
 		"reg_start": "1492",
 		"reg_slut": "1479",
 		"reign": "",
@@ -3640,7 +4827,24 @@
 		"G18": "227–236",
 		"VON": "134–135",
 		"DDB": "467–469",
-		"LPR": "97–98"
+		"LPR": "97–98",
+		"reigns": [
+			{
+				"r_hornung": "1482–1480",
+				"r_beckerath": "1492–1479",
+				"r_shaw": "1492–1479",
+				"r_redford": "1516–1504",
+				"r_dodson": "1491–1479",
+				"r_malek": "1492–1479",
+				"r_arnold": "1492–1479",
+				"r_grimal": "1493–1479",
+				"r_africanus": "13 years",
+				"r_eusebius": "13 years",
+				"r_josephus": "13 years",
+				"r_jerome": "13 years",
+				"r_highestyear": "Year 1"
+			}
+		]
 	},
 	{
 		"no": "180",
@@ -3648,7 +4852,6 @@
 		"name": "Hatshepsut",
 		"dynasty": "18",
 		"order": "5",
-
 		"reg_start": "1473",
 		"reg_slut": "1458",
 		"reign": "",
@@ -3665,7 +4868,22 @@
 		"DDB": "104–110",
 		"LPR": "98",
 		"bild": null,
-		"bildtext": "Statue of Hatshepsut in Rijksmuseum van Oudheden, Leiden, The Netherlands"
+		"bildtext": "Statue of Hatshepsut in Rijksmuseum van Oudheden, Leiden, The Netherlands",
+		"reigns": [
+			{
+				"r_hornung": "1479–1458",
+				"r_beckerath": "1479–1458",
+				"r_shaw": "1473–1458",
+				"r_redford": "1502–1482",
+				"r_dodson": "1472–1457",
+				"r_malek": "1479–1457",
+				"r_arnold": "1473–1458",
+				"r_grimal": "1478–1458",
+				"r_africanus": "22 years",
+				"r_josephus": "21y 9m",
+				"r_highestyear": "Year 20"
+			}
+		]
 	},
 	{
 		"no": "181",
@@ -3673,7 +4891,6 @@
 		"name": "Thutmose III",
 		"dynasty": "18",
 		"order": "6",
-
 		"reg_start": "1479",
 		"reg_slut": "1425",
 		"reign": "",
@@ -3690,7 +4907,24 @@
 		"DDB": "470–474",
 		"LPR": "98–100",
 		"bild": null,
-		"bildtext": "Statue of Thutmose III from Wien Kunsthistorisches Museum (ÄS70)"
+		"bildtext": "Statue of Thutmose III from Wien Kunsthistorisches Museum (ÄS70)",
+		"reigns": [
+			{
+				"r_hornung": "1479–1425",
+				"r_beckerath": "1479–1425",
+				"r_shaw": "1479–1425",
+				"r_redford": "1504–1452",
+				"r_dodson": "1479–1424",
+				"r_malek": "1479–1425",
+				"r_arnold": "1479–1425",
+				"r_grimal": "1479–1425",
+				"r_africanus": "26 years",
+				"r_eusebius": "26 years",
+				"r_josephus": "25y 10m",
+				"r_jerome": "26 years",
+				"r_highestyear": "Year 54"
+			}
+		]
 	},
 	{
 		"no": "182",
@@ -3698,7 +4932,6 @@
 		"name": "Amenhotep II",
 		"dynasty": "18",
 		"order": "7",
-
 		"reg_start": "1425",
 		"reg_slut": "1400",
 		"reign": "",
@@ -3713,7 +4946,24 @@
 		"G18": "276–290",
 		"VON": "138–139",
 		"DDB": "40–44",
-		"LPR": "100–101"
+		"LPR": "100–101",
+		"reigns": [
+			{
+				"r_hornung": "1425–1400",
+				"r_beckerath": "1428–1397",
+				"r_shaw": "1427–1400",
+				"r_redford": "1454–1419",
+				"r_dodson": "1424–1398",
+				"r_malek": "1427–1401",
+				"r_arnold": "1427–1401",
+				"r_grimal": "1425–1401",
+				"r_africanus": "31 years",
+				"r_eusebius": "31 years",
+				"r_josephus": "30y 10m",
+				"r_jerome": "31 years",
+				"r_highestyear": "Year 26"
+			}
+		]
 	},
 	{
 		"no": "183",
@@ -3721,7 +4971,6 @@
 		"name": "Thutmose IV",
 		"dynasty": "18",
 		"order": "8",
-
 		"reg_start": "1400",
 		"reg_slut": "1390",
 		"reign": "",
@@ -3736,7 +4985,24 @@
 		"G18": "290–305",
 		"VON": "138–141",
 		"DDB": "474–477",
-		"LPR": "101–102"
+		"LPR": "101–102",
+		"reigns": [
+			{
+				"r_hornung": "1400–1390",
+				"r_beckerath": "1397–1388",
+				"r_shaw": "1400–1390",
+				"r_redford": "1419–1410",
+				"r_dodson": "1398–1388",
+				"r_malek": "1401–1391",
+				"r_arnold": "1401–1391",
+				"r_grimal": "1401–1390",
+				"r_africanus": "9 years",
+				"r_eusebius": "9 years",
+				"r_josephus": "9y 8m",
+				"r_jerome": "9 years",
+				"r_highestyear": "Year 8"
+			}
+		]
 	},
 	{
 		"no": "184",
@@ -3744,7 +5010,6 @@
 		"name": "Amenhotep III",
 		"dynasty": "18",
 		"order": "9",
-
 		"reg_start": "1390",
 		"reg_slut": "1352",
 		"reign": "",
@@ -3759,7 +5024,24 @@
 		"G18": "306–342",
 		"VON": "140–143",
 		"DDB": "44–49",
-		"LPR": "102–104"
+		"LPR": "102–104",
+		"reigns": [
+			{
+				"r_hornung": "1390–1353",
+				"r_beckerath": "1392–1354",
+				"r_shaw": "1390–1352",
+				"r_redford": "1410–1372",
+				"r_dodson": "1388–1348",
+				"r_malek": "1391–1353",
+				"r_arnold": "1391–1353",
+				"r_grimal": "1390–1352",
+				"r_africanus": "37 years",
+				"r_eusebius": "36 years",
+				"r_josephus": "36y 5m",
+				"r_jerome": "38 years",
+				"r_highestyear": "Year 38"
+			}
+		]
 	},
 	{
 		"no": "185",
@@ -3767,7 +5049,6 @@
 		"name": "Amenhotep IV",
 		"dynasty": "18",
 		"order": "10",
-
 		"reg_start": "1352",
 		"reg_slut": "1334",
 		"reign": "",
@@ -3784,7 +5065,22 @@
 		"DDB": "13–18",
 		"LPR": "104–105",
 		"bild": null,
-		"bildtext": "Drawing of Amenhotep IV<br>from Denkmäler III 295"
+		"bildtext": "Drawing of Amenhotep IV<br>from Denkmäler III 295",
+		"reigns": [
+			{
+				"r_hornung": "1353–1336",
+				"r_beckerath": "1355–1337",
+				"r_shaw": "1352–1336",
+				"r_redford": "1372–1355",
+				"r_dodson": "1360–1343",
+				"r_malek": "1353–1337",
+				"r_arnold": "1364–1348",
+				"r_grimal": "1352–1338",
+				"r_josephus": "12y 5m",
+				"r_jerome": "16 years",
+				"r_highestyear": "Year 17"
+			}
+		]
 	},
 	{
 		"no": "186",
@@ -3792,7 +5088,6 @@
 		"name": "Neferneferuaten",
 		"dynasty": "18",
 		"order": "11",
-
 		"reg_start": "1334",
 		"reg_slut": "1332",
 		"reign": "",
@@ -3808,7 +5103,17 @@
 		"DDB": "273–275",
 		"LPR": "105",
 		"bild": null,
-		"bildtext": "Berlin bust of Nefertiti"
+		"bildtext": "Berlin bust of Nefertiti",
+		"reigns": [
+			{
+				"r_hornung": "1334–?",
+				"r_dodson": "1346–1343",
+				"r_africanus": "12 years",
+				"r_eusebius": "12 years",
+				"r_josephus": "12y 1m",
+				"r_jerome": "12 years"
+			}
+		]
 	},
 	{
 		"no": "187",
@@ -3816,7 +5121,6 @@
 		"name": "Smenkhkara",
 		"dynasty": "18",
 		"order": "12",
-
 		"reg_start": "1332",
 		"reg_slut": null,
 		"reign": "",
@@ -3831,7 +5135,19 @@
 		"G18": "362–364",
 		"VON": "144–145",
 		"DDB": "435–436",
-		"LPR": "105"
+		"LPR": "105",
+		"reigns": [
+			{
+				"r_hornung": "1336–1334",
+				"r_beckerath": "1338–1335",
+				"r_shaw": "1338–1336",
+				"r_redford": "1355",
+				"r_dodson": "1346",
+				"r_malek": "1338–1336",
+				"r_grimal": "1338–1336",
+				"r_josephus": "12y 3m"
+			}
+		]
 	},
 	{
 		"no": "188",
@@ -3839,7 +5155,6 @@
 		"name": "Tutankhamun",
 		"dynasty": "18",
 		"order": "13",
-
 		"reg_start": "1332",
 		"reg_slut": "1323",
 		"reign": "",
@@ -3855,7 +5170,23 @@
 		"G18": "365–373",
 		"VON": "144–145",
 		"DDB": "479–481",
-		"LPR": "106"
+		"LPR": "106",
+		"reigns": [
+			{
+				"r_hornung": "?–1324",
+				"r_beckerath": "1335–1325",
+				"r_shaw": "1336–1327",
+				"r_redford": "1355–1346",
+				"r_dodson": "1343–1333",
+				"r_malek": "1336–1327",
+				"r_arnold": "1348–1338",
+				"r_grimal": "1336–1327",
+				"r_africanus": "6 years",
+				"r_josephus": "9 years",
+				"r_jerome": "9 years",
+				"r_highestyear": "Year 10"
+			}
+		]
 	},
 	{
 		"no": "189",
@@ -3863,7 +5194,6 @@
 		"name": "Ay",
 		"dynasty": "18",
 		"order": "14",
-
 		"reg_start": "1322",
 		"reg_slut": "1320",
 		"reign": "",
@@ -3878,7 +5208,20 @@
 		"G18": "374–380",
 		"VON": "146–147",
 		"DDB": "62–65",
-		"LPR": "106–107"
+		"LPR": "106–107",
+		"reigns": [
+			{
+				"r_hornung": "1323–1320",
+				"r_beckerath": "1325–1321",
+				"r_shaw": "1327–1323",
+				"r_redford": "1346–1343",
+				"r_dodson": "1333–1328",
+				"r_malek": "1327–1323",
+				"r_arnold": "1338–1335",
+				"r_grimal": "1327–1323",
+				"r_highestyear": "Year 4"
+			}
+		]
 	},
 	{
 		"no": "190",
@@ -3886,7 +5229,6 @@
 		"name": "Horemheb",
 		"dynasty": "18",
 		"order": "15",
-
 		"reg_start": "1320",
 		"reg_slut": "1292",
 		"reign": "",
@@ -3903,7 +5245,24 @@
 		"DDB": "115–118",
 		"LPR": "107",
 		"bild": null,
-		"bildtext": "Drawing of Horemheb<br>from Denkmäler III 296"
+		"bildtext": "Drawing of Horemheb<br>from Denkmäler III 296",
+		"reigns": [
+			{
+				"r_hornung": "1319–1292",
+				"r_beckerath": "1321–1294",
+				"r_shaw": "1323–1295",
+				"r_redford": "1343–1315",
+				"r_dodson": "1328–1298",
+				"r_malek": "1323–1295",
+				"r_arnold": "1335–1308",
+				"r_grimal": "1323–1295",
+				"r_africanus": "5 years",
+				"r_eusebius": "5 years",
+				"r_josephus": "4y 1m",
+				"r_jerome": "5 years",
+				"r_highestyear": "Year 27"
+			}
+		]
 	},
 	{
 		"no": "191",
@@ -3911,7 +5270,6 @@
 		"name": "Ramesses I",
 		"dynasty": "19",
 		"order": "1",
-
 		"reg_start": "1292",
 		"reg_slut": "1290",
 		"reign": "",
@@ -3927,7 +5285,21 @@
 		"G19": "2–9",
 		"VON": "148–149",
 		"DDB": "305–307",
-		"LPR": "109"
+		"LPR": "109",
+		"reigns": [
+			{
+				"r_hornung": "1292–1291",
+				"r_beckerath": "1292–1290",
+				"r_shaw": "1295–1294",
+				"r_redford": "1315–1314",
+				"r_dodson": "1298–1296",
+				"r_malek": "1295–1294",
+				"r_arnold": "1307–1306",
+				"r_grimal": "1295–1294",
+				"r_josephus": "1y 4m",
+				"r_highestyear": "Year 2"
+			}
+		]
 	},
 	{
 		"no": "192",
@@ -3935,7 +5307,6 @@
 		"name": "Seti I",
 		"dynasty": "19",
 		"order": "2",
-
 		"reg_start": "1290",
 		"reg_slut": "1279",
 		"reign": "",
@@ -3953,7 +5324,24 @@
 		"DDB": "409–413",
 		"LPR": "109–114",
 		"bild": null,
-		"bildtext": "Drawing of Seti I<br> from the mortuary Temple"
+		"bildtext": "Drawing of Seti I<br> from the mortuary Temple",
+		"reigns": [
+			{
+				"r_hornung": "1290–1279",
+				"r_beckerath": "1290–1279",
+				"r_shaw": "1294–1279",
+				"r_redford": "1314–1304",
+				"r_dodson": "1296–1279",
+				"r_malek": "1294–1279",
+				"r_arnold": "1306–1290",
+				"r_grimal": "1294–1279",
+				"r_africanus": "51 years",
+				"r_eusebius": "55 years",
+				"r_josephus": "59 years",
+				"r_jerome": "55 years",
+				"r_highestyear": "Year 11"
+			}
+		]
 	},
 	{
 		"no": "193",
@@ -3961,7 +5349,6 @@
 		"name": "Ramesses II",
 		"dynasty": "19",
 		"order": "3",
-
 		"reg_start": "1279",
 		"reg_slut": "1213",
 		"reign": "",
@@ -3977,7 +5364,24 @@
 		"G19": "33–113",
 		"VON": "152–157",
 		"DDB": "308–312",
-		"LPR": "114–120"
+		"LPR": "114–120",
+		"reigns": [
+			{
+				"r_hornung": "1279–1213",
+				"r_beckerath": "1279–1213",
+				"r_shaw": "1279–1213",
+				"r_redford": "1304–1237",
+				"r_dodson": "1279–1212",
+				"r_malek": "1279–1213",
+				"r_arnold": "1290–1224",
+				"r_grimal": "1279–1212",
+				"r_africanus": "61 years",
+				"r_eusebius": "66 years",
+				"r_josephus": "66y 2m",
+				"r_jerome": "66 years",
+				"r_highestyear": "Year 67"
+			}
+		]
 	},
 	{
 		"no": "194",
@@ -3985,7 +5389,6 @@
 		"name": "Merenptah",
 		"dynasty": "19",
 		"order": "4",
-
 		"reg_start": "1213",
 		"reg_slut": "1203",
 		"reign": "",
@@ -4001,7 +5404,23 @@
 		"G19": "113–126",
 		"VON": "156–159",
 		"DDB": "205–208",
-		"LPR": "120–122"
+		"LPR": "120–122",
+		"reigns": [
+			{
+				"r_hornung": "1213–1203",
+				"r_beckerath": "1213–1203",
+				"r_shaw": "1213–1203",
+				"r_redford": "1237–1226",
+				"r_dodson": "1212–1201",
+				"r_malek": "1213–1203",
+				"r_arnold": "1224–1214",
+				"r_grimal": "1212–1202",
+				"r_africanus": "20 years",
+				"r_eusebius": "40 years",
+				"r_jerome": "40 years",
+				"r_highestyear": "Year 10"
+			}
+		]
 	},
 	{
 		"no": "195",
@@ -4009,7 +5428,6 @@
 		"name": "Seti II",
 		"dynasty": "19",
 		"order": "5",
-
 		"reg_start": "1203",
 		"reg_slut": "1200",
 		"reign": "",
@@ -4025,7 +5443,20 @@
 		"G19": "130–139",
 		"VON": "158–161",
 		"DDB": "414–416",
-		"LPR": "122–123"
+		"LPR": "122–123",
+		"reigns": [
+			{
+				"r_hornung": "1202–1198",
+				"r_beckerath": "1200–1194",
+				"r_shaw": "1200–1194",
+				"r_redford": "1221–1215",
+				"r_dodson": "1201–1195",
+				"r_malek": "1200–1194",
+				"r_arnold": "1214–1204",
+				"r_grimal": "1202–1196",
+				"r_highestyear": "Year 6"
+			}
+		]
 	},
 	{
 		"no": "196",
@@ -4033,7 +5464,6 @@
 		"name": "Amenmesse",
 		"dynasty": "19",
 		"order": "6",
-
 		"reg_start": "1203",
 		"reg_slut": "1197",
 		"reign": "",
@@ -4049,7 +5479,21 @@
 		"G19": "127–130",
 		"VON": "158–159",
 		"DDB": "50–52",
-		"LPR": "123–124"
+		"LPR": "123–124",
+		"reigns": [
+			{
+				"r_hornung": "1202–1200",
+				"r_beckerath": "1203–1200",
+				"r_redford": "1226–1221",
+				"r_dodson": "1200–1196",
+				"r_malek": "1203–1200",
+				"r_grimal": "1202–1199",
+				"r_africanus": "5 years",
+				"r_eusebius": "26 years",
+				"r_jerome": "26 years",
+				"r_highestyear": "Year 4"
+			}
+		]
 	},
 	{
 		"no": "197",
@@ -4057,7 +5501,6 @@
 		"name": "Siptah",
 		"dynasty": "19",
 		"order": "7",
-
 		"reg_start": "1197",
 		"reg_slut": "1191",
 		"reign": "",
@@ -4072,7 +5515,20 @@
 		"G19": "140–145",
 		"VON": "160–163",
 		"DDB": "431–434",
-		"LPR": "124"
+		"LPR": "124",
+		"reigns": [
+			{
+				"r_hornung": "1197–1193",
+				"r_beckerath": "1194–1186",
+				"r_shaw": "1194–1188",
+				"r_redford": "1215–1209",
+				"r_dodson": "1195–1189",
+				"r_malek": "1194–1188",
+				"r_arnold": "1204–1198",
+				"r_grimal": "1196–1190",
+				"r_highestyear": "Year 7"
+			}
+		]
 	},
 	{
 		"no": "198",
@@ -4080,7 +5536,6 @@
 		"name": "Tausret",
 		"dynasty": "19",
 		"order": "8",
-
 		"reg_start": "1191",
 		"reg_slut": "1190",
 		"reign": "",
@@ -4095,7 +5550,21 @@
 		"G19": "145–148",
 		"VON": "162–163",
 		"DDB": "458–460",
-		"LPR": "125"
+		"LPR": "125",
+		"reigns": [
+			{
+				"r_hornung": "1192–1191",
+				"r_beckerath": "1186–1185",
+				"r_shaw": "1188–1186",
+				"r_redford": "1209–1201",
+				"r_dodson": "1189–1187",
+				"r_malek": "1188–1186",
+				"r_arnold": "1198–1196",
+				"r_grimal": "1196–1188",
+				"r_manetho": "7 years",
+				"r_highestyear": "Year 8"
+			}
+		]
 	},
 	{
 		"no": "199",
@@ -4103,7 +5572,6 @@
 		"name": "Setnakht",
 		"dynasty": "20",
 		"order": "1",
-
 		"reg_start": "1190",
 		"reg_slut": "1186",
 		"reign": "",
@@ -4119,7 +5587,20 @@
 		"G19": "152–156",
 		"VON": "164–165",
 		"DDB": "407–409",
-		"LPR": "126–127"
+		"LPR": "126–127",
+		"reigns": [
+			{
+				"r_hornung": "1190–1188",
+				"r_beckerath": "1186–1183",
+				"r_shaw": "1186–1184",
+				"r_redford": "1200–1198",
+				"r_dodson": "1187–1185",
+				"r_malek": "1186–1184",
+				"r_arnold": "1196–1194",
+				"r_grimal": "1188–1186",
+				"r_highestyear": "Year 3-4"
+			}
+		]
 	},
 	{
 		"no": "200",
@@ -4127,7 +5608,6 @@
 		"name": "Ramesses III",
 		"dynasty": "20",
 		"order": "2",
-
 		"reg_start": "1186",
 		"reg_slut": "1155",
 		"reign": "",
@@ -4143,7 +5623,20 @@
 		"G19": "156–178",
 		"VON": "164–167",
 		"DDB": "312–316",
-		"LPR": "127–130"
+		"LPR": "127–130",
+		"reigns": [
+			{
+				"r_hornung": "1187–1157",
+				"r_beckerath": "1183–1152",
+				"r_shaw": "1184–1153",
+				"r_redford": "1198–1166",
+				"r_dodson": "1185–1153",
+				"r_malek": "1184–1153",
+				"r_arnold": "1194–1163",
+				"r_grimal": "1186–1154",
+				"r_highestyear": "Year 32"
+			}
+		]
 	},
 	{
 		"no": "201",
@@ -4151,7 +5644,6 @@
 		"name": "Ramesses IV",
 		"dynasty": "20",
 		"order": "3",
-
 		"reg_start": "1155",
 		"reg_slut": "1149",
 		"reign": "",
@@ -4167,7 +5659,20 @@
 		"G19": "178–190",
 		"VON": "166–169",
 		"DDB": "317–321",
-		"LPR": "130"
+		"LPR": "130",
+		"reigns": [
+			{
+				"r_hornung": "1156–1150",
+				"r_beckerath": "1152–1145",
+				"r_shaw": "1153–1147",
+				"r_redford": "1166–1160",
+				"r_dodson": "1153–1146",
+				"r_malek": "1153–1147",
+				"r_arnold": "1163–1156",
+				"r_grimal": "1154–1148",
+				"r_highestyear": "Year 7"
+			}
+		]
 	},
 	{
 		"no": "202",
@@ -4175,7 +5680,6 @@
 		"name": "Ramesses V",
 		"dynasty": "20",
 		"order": "4",
-
 		"reg_start": "1149",
 		"reg_slut": "1145",
 		"reign": "",
@@ -4191,7 +5695,20 @@
 		"G19": "191–194",
 		"VON": "168–169",
 		"DDB": "321–323",
-		"LPR": "131"
+		"LPR": "131",
+		"reigns": [
+			{
+				"r_hornung": "1149–1146",
+				"r_beckerath": "1145–1142",
+				"r_shaw": "1147–1143",
+				"r_redford": "1160–1156",
+				"r_dodson": "1146–1141",
+				"r_malek": "1147–1143",
+				"r_arnold": "1156–1151",
+				"r_grimal": "1148–1144",
+				"r_highestyear": "Year 4"
+			}
+		]
 	},
 	{
 		"no": "203",
@@ -4199,7 +5716,6 @@
 		"name": "Ramesses VI",
 		"dynasty": "20",
 		"order": "5",
-
 		"reg_start": "1145",
 		"reg_slut": "1137",
 		"reign": "",
@@ -4215,7 +5731,20 @@
 		"G19": "194–202",
 		"VON": "170–171",
 		"DDB": "323–326",
-		"LPR": "131"
+		"LPR": "131",
+		"reigns": [
+			{
+				"r_hornung": "1145–1139",
+				"r_beckerath": "1142–1134",
+				"r_shaw": "1143–1136",
+				"r_redford": "1156–1149",
+				"r_dodson": "1141–1133",
+				"r_malek": "1143–1136",
+				"r_arnold": "1151–1143",
+				"r_grimal": "1144–1136",
+				"r_highestyear": "Year 8"
+			}
+		]
 	},
 	{
 		"no": "204",
@@ -4223,7 +5752,6 @@
 		"name": "Ramesses VII",
 		"dynasty": "20",
 		"order": "6",
-
 		"reg_start": "1137",
 		"reg_slut": "1130",
 		"reign": "",
@@ -4239,7 +5767,20 @@
 		"G19": "202–204",
 		"VON": "170–173",
 		"DDB": "326–328",
-		"LPR": "132"
+		"LPR": "132",
+		"reigns": [
+			{
+				"r_hornung": "1138–1131",
+				"r_beckerath": "1134–1126",
+				"r_shaw": "1136–1129",
+				"r_redford": "1149–1141",
+				"r_dodson": "1133–1125",
+				"r_malek": "1136–1129",
+				"r_arnold": "1143–1136",
+				"r_grimal": "1136–1128",
+				"r_highestyear": "Year 8"
+			}
+		]
 	},
 	{
 		"no": "205",
@@ -4247,7 +5788,6 @@
 		"name": "Ramesses VIII",
 		"dynasty": "20",
 		"order": "7",
-
 		"reg_start": "1130",
 		"reg_slut": "1129",
 		"reign": "",
@@ -4263,7 +5803,20 @@
 		"G19": "205–206",
 		"VON": "172–173",
 		"DDB": "328–329",
-		"LPR": "132–133"
+		"LPR": "132–133",
+		"reigns": [
+			{
+				"r_hornung": "1130",
+				"r_beckerath": "1126–1125",
+				"r_shaw": "1129–1126",
+				"r_redford": "1141–1139",
+				"r_dodson": "1125–1123",
+				"r_malek": "1129–1126",
+				"r_arnold": "1136–1131",
+				"r_grimal": "1128–1125",
+				"r_highestyear": "Year 1"
+			}
+		]
 	},
 	{
 		"no": "206",
@@ -4271,7 +5824,6 @@
 		"name": "Ramesses IX",
 		"dynasty": "20",
 		"order": "8",
-
 		"reg_start": "1129",
 		"reg_slut": "1111",
 		"reign": "",
@@ -4287,7 +5839,20 @@
 		"G19": "206–216",
 		"VON": "172–173",
 		"DDB": "330–332",
-		"LPR": "133"
+		"LPR": "133",
+		"reigns": [
+			{
+				"r_hornung": "1129–1111",
+				"r_beckerath": "1125–1107",
+				"r_shaw": "1126–1108",
+				"r_redford": "1139–1120",
+				"r_dodson": "1123–1104",
+				"r_malek": "1126–1108",
+				"r_arnold": "1131–1112",
+				"r_grimal": "1125–1107",
+				"r_highestyear": "Year 19"
+			}
+		]
 	},
 	{
 		"no": "207",
@@ -4295,7 +5860,6 @@
 		"name": "Ramesses X",
 		"dynasty": "20",
 		"order": "9",
-
 		"reg_start": "1111",
 		"reg_slut": "1107",
 		"reign": "",
@@ -4311,7 +5875,20 @@
 		"G19": "216–219",
 		"VON": "174–175",
 		"DDB": "333",
-		"LPR": "134"
+		"LPR": "134",
+		"reigns": [
+			{
+				"r_hornung": "1110–1107",
+				"r_beckerath": "1107–1103",
+				"r_shaw": "1108–1099",
+				"r_redford": "1120–1111",
+				"r_dodson": "1104–1094",
+				"r_malek": "1108–1099",
+				"r_arnold": "1112–1100",
+				"r_grimal": "1107–1098",
+				"r_highestyear": "Year 3"
+			}
+		]
 	},
 	{
 		"no": "208",
@@ -4319,7 +5896,6 @@
 		"name": "Ramesses XI",
 		"dynasty": "20",
 		"order": "10",
-
 		"reg_start": "1107",
 		"reg_slut": "1077",
 		"reign": "",
@@ -4335,7 +5911,20 @@
 		"G19": "219–224",
 		"VON": "174–175",
 		"DDB": "334–336",
-		"LPR": "134–135"
+		"LPR": "134–135",
+		"reigns": [
+			{
+				"r_hornung": "1106–1077",
+				"r_beckerath": "1103–1070",
+				"r_shaw": "1099–1069",
+				"r_redford": "1111–1081",
+				"r_dodson": "1094–1064",
+				"r_malek": "1099–1069",
+				"r_arnold": "1100–1070",
+				"r_grimal": "1098–1069",
+				"r_highestyear": "Year 28"
+			}
+		]
 	},
 	{
 		"no": "209",
@@ -4343,7 +5932,6 @@
 		"name": "Smendes I",
 		"dynasty": "21",
 		"order": "1",
-
 		"reg_start": "1077",
 		"reg_slut": "1051",
 		"reign": "",
@@ -4359,7 +5947,17 @@
 		"G19": "287–288",
 		"VON": "178–179",
 		"DDB": null,
-		"LPR": "138"
+		"LPR": "138",
+		"reigns": [
+			{
+				"r_hornung": "1076–1052",
+				"r_beckerath": "1070–1044",
+				"r_shaw": "1069–1043",
+				"r_redford": "1081–1055",
+				"r_dodson": "1064–1038",
+				"r_manetho": "26 years"
+			}
+		]
 	},
 	{
 		"no": "210",
@@ -4367,7 +5965,6 @@
 		"name": "Amenemnesut",
 		"dynasty": "21",
 		"order": "2",
-
 		"reg_start": "1051",
 		"reg_slut": "1047",
 		"reign": "",
@@ -4381,7 +5978,17 @@
 		"description": "The origin of Amenemnesut is unclear, likely a son of Smendes I and older brother of Psusennes I. His reign was short, he was probably already old when he became Pharaoh.",
 		"VON": "178–179",
 		"DDB": null,
-		"LPR": "139"
+		"LPR": "139",
+		"reigns": [
+			{
+				"r_hornung": "1005–1002",
+				"r_beckerath": "1044–1040",
+				"r_shaw": "1043–1039",
+				"r_redford": "1004–1000",
+				"r_dodson": "1038–1034",
+				"r_manetho": "4 years"
+			}
+		]
 	},
 	{
 		"no": "211",
@@ -4389,7 +5996,6 @@
 		"name": "Psusennes I",
 		"dynasty": "21",
 		"order": "3",
-
 		"reg_start": "1047",
 		"reg_slut": "1001",
 		"reign": "",
@@ -4405,7 +6011,19 @@
 		"G19": "289–291",
 		"VON": "178–179",
 		"DDB": null,
-		"LPR": "139–140"
+		"LPR": "139–140",
+		"reigns": [
+			{
+				"r_hornung": "1051–1006",
+				"r_beckerath": "1044–994",
+				"r_shaw": "1039–991",
+				"r_redford": "1055–1004",
+				"r_dodson": "1034–981",
+				"r_africanus": "46 years",
+				"r_eusebius": "41 years",
+				"r_jerome": "41 years"
+			}
+		]
 	},
 	{
 		"no": "212",
@@ -4413,7 +6031,6 @@
 		"name": "Amenemope",
 		"dynasty": "21",
 		"order": "4",
-
 		"reg_start": "1101",
 		"reg_slut": "992",
 		"reign": "",
@@ -4429,7 +6046,16 @@
 		"G19": "292–293",
 		"VON": "180–181",
 		"DDB": null,
-		"LPR": "140"
+		"LPR": "140",
+		"reigns": [
+			{
+				"r_hornung": "1002–993",
+				"r_beckerath": "996–985",
+				"r_shaw": "993–984",
+				"r_dodson": "984–974",
+				"r_manetho": "9 years"
+			}
+		]
 	},
 	{
 		"no": "213",
@@ -4437,7 +6063,6 @@
 		"name": "Osochor",
 		"dynasty": "21",
 		"order": "5",
-
 		"reg_start": "992",
 		"reg_slut": "986",
 		"reign": "",
@@ -4451,7 +6076,17 @@
 		"description": "Osorkon, an ancient Meshwesh Libyan name, was Hellenised as Osochor in Manetho. His reign is completely unknown, except to herald the coming of the Libyan Twenty-second Dynasty. He is often referred to as <i>Osorkon the Elder</i> to distinguish him from the four Osorkons of the next dynasty, who had long since been assigned Roman numerals.",
 		"G19": "399–400",
 		"VON": "180–181",
-		"LPR": "140"
+		"LPR": "140",
+		"reigns": [
+			{
+				"r_hornung": "992–987",
+				"r_beckerath": "985–979",
+				"r_shaw": "984–978",
+				"r_redford": "990–984",
+				"r_dodson": "974–968",
+				"r_manetho": "6 years"
+			}
+		]
 	},
 	{
 		"no": "214",
@@ -4459,7 +6094,6 @@
 		"name": "Siamun",
 		"dynasty": "21",
 		"order": "6",
-
 		"reg_start": "986",
 		"reg_slut": "967",
 		"reign": "",
@@ -4475,7 +6109,18 @@
 		"G19": "294–298",
 		"VON": "180–181",
 		"DDB": null,
-		"LPR": "141"
+		"LPR": "141",
+		"reigns": [
+			{
+				"r_hornung": "986–968",
+				"r_beckerath": "979–960",
+				"r_shaw": "978–959",
+				"r_redford": "984–965",
+				"r_dodson": "968–948",
+				"r_manetho": "9 years",
+				"r_highestyear": "17 years"
+			}
+		]
 	},
 	{
 		"no": "215",
@@ -4483,7 +6128,6 @@
 		"name": "Psusennes II",
 		"dynasty": "21",
 		"order": "7",
-
 		"reg_start": "967",
 		"reg_slut": "943",
 		"reign": "",
@@ -4499,7 +6143,19 @@
 		"G19": "301–302",
 		"VON": "180–181",
 		"DDB": null,
-		"LPR": "141"
+		"LPR": "141",
+		"reigns": [
+			{
+				"r_hornung": "967–944",
+				"r_beckerath": "960–946",
+				"r_shaw": "959–945",
+				"r_redford": "965–931",
+				"r_dodson": "945–940",
+				"r_africanus": "30 years",
+				"r_eusebius": "35 years",
+				"r_jerome": "35 years"
+			}
+		]
 	},
 	{
 		"no": "216",
@@ -4507,7 +6163,6 @@
 		"name": "Shoshenq I",
 		"dynasty": "22",
 		"order": "1",
-
 		"reg_start": "943",
 		"reg_slut": "922",
 		"reign": "",
@@ -4523,7 +6178,16 @@
 		"G19": "307–324",
 		"VON": "184–185",
 		"DDB": null,
-		"LPR": "145"
+		"LPR": "145",
+		"reigns": [
+			{
+				"r_hornung": "943–923",
+				"r_beckerath": "946–925",
+				"r_redford": "931–910",
+				"r_dodson": "948–927",
+				"r_manetho": "21 years"
+			}
+		]
 	},
 	{
 		"no": "217",
@@ -4531,7 +6195,6 @@
 		"name": "Osorkon I",
 		"dynasty": "22",
 		"order": "2",
-
 		"reg_start": "922",
 		"reg_slut": "887",
 		"reign": "",
@@ -4547,7 +6210,16 @@
 		"G19": "324–332",
 		"VON": "184–185",
 		"DDB": null,
-		"LPR": "145–146"
+		"LPR": "145–146",
+		"reigns": [
+			{
+				"r_hornung": "922–888",
+				"r_beckerath": "925–890",
+				"r_redford": "910–896",
+				"r_dodson": "927–892",
+				"r_manetho": "15 years"
+			}
+		]
 	},
 	{
 		"no": "218",
@@ -4555,7 +6227,6 @@
 		"name": "Shoshenq II",
 		"dynasty": "22",
 		"order": "3",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4569,7 +6240,12 @@
 		"description": null,
 		"VON": "186–187",
 		"DDB": null,
-		"LPR": "146"
+		"LPR": "146",
+		"reigns": [
+			{
+				"r_dodson": "895"
+			}
+		]
 	},
 	{
 		"no": "219",
@@ -4577,7 +6253,6 @@
 		"name": "Takelot I",
 		"dynasty": "22",
 		"order": "5",
-
 		"reg_start": "885",
 		"reg_slut": "872",
 		"reign": "",
@@ -4591,7 +6266,16 @@
 		"description": null,
 		"VON": "186–187",
 		"DDB": null,
-		"LPR": "147"
+		"LPR": "147",
+		"reigns": [
+			{
+				"r_hornung": "887–874",
+				"r_beckerath": "890–877",
+				"r_redford": "896–873",
+				"r_dodson": "892–877",
+				"r_manetho": "13 years"
+			}
+		]
 	},
 	{
 		"no": "220",
@@ -4599,7 +6283,6 @@
 		"name": "Shoshenq IIb",
 		"dynasty": "22",
 		"order": "4",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4612,7 +6295,12 @@
 		"image": "",
 		"description": null,
 		"DDB": null,
-		"LPR": "146"
+		"LPR": "146",
+		"reigns": [
+			{
+				"r_consensus": "885–872"
+			}
+		]
 	},
 	{
 		"no": "221",
@@ -4620,7 +6308,6 @@
 		"name": "Osorkon II",
 		"dynasty": "22",
 		"order": "6",
-
 		"reg_start": "872",
 		"reg_slut": "837",
 		"reign": "",
@@ -4636,7 +6323,13 @@
 		"G19": "335–347",
 		"VON": "186–187",
 		"DDB": null,
-		"LPR": "147–148"
+		"LPR": "147–148",
+		"reigns": [
+			{
+				"r_consensus": "872–837",
+				"r_dodson": "877–838"
+			}
+		]
 	},
 	{
 		"no": "222",
@@ -4644,7 +6337,6 @@
 		"name": "Shoshenq III",
 		"dynasty": "22",
 		"order": "7",
-
 		"reg_start": "837",
 		"reg_slut": "798",
 		"reign": "",
@@ -4660,7 +6352,13 @@
 		"G19": "361–368",
 		"VON": "188–189",
 		"DDB": null,
-		"LPR": "149–150"
+		"LPR": "149–150",
+		"reigns": [
+			{
+				"r_consensus": "837–798",
+				"r_dodson": "838–798"
+			}
+		]
 	},
 	{
 		"no": "223",
@@ -4668,7 +6366,6 @@
 		"name": "Pami",
 		"dynasty": "22",
 		"order": "9",
-
 		"reg_start": "785",
 		"reg_slut": "778",
 		"reign": "",
@@ -4684,7 +6381,13 @@
 		"G19": "370–373",
 		"VON": "190–191",
 		"DDB": null,
-		"LPR": "151"
+		"LPR": "151",
+		"reigns": [
+			{
+				"r_consensus": "785–778",
+				"r_dodson": "786–780"
+			}
+		]
 	},
 	{
 		"no": "224",
@@ -4692,7 +6395,6 @@
 		"name": "Shoshenq V",
 		"dynasty": "22",
 		"order": "10",
-
 		"reg_start": "778",
 		"reg_slut": "740",
 		"reign": "",
@@ -4708,7 +6410,13 @@
 		"G19": "373–375",
 		"VON": "190–191",
 		"DDB": null,
-		"LPR": "151"
+		"LPR": "151",
+		"reigns": [
+			{
+				"r_consensus": "778–740",
+				"r_dodson": "780–743"
+			}
+		]
 	},
 	{
 		"no": "225",
@@ -4716,7 +6424,6 @@
 		"name": "Pedubast II",
 		"dynasty": "22",
 		"order": "11",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4730,7 +6437,12 @@
 		"description": null,
 		"VON": "200–201",
 		"DDB": null,
-		"LPR": "156–157"
+		"LPR": "156–157",
+		"reigns": [
+			{
+				"r_dodson": "743–733"
+			}
+		]
 	},
 	{
 		"no": "226",
@@ -4738,7 +6450,6 @@
 		"name": "Osorkon IV",
 		"dynasty": "22",
 		"order": "12",
-
 		"reg_start": "740",
 		"reg_slut": "720",
 		"reign": "",
@@ -4754,7 +6465,13 @@
 		"G19": "399",
 		"VON": "200–201",
 		"DDB": null,
-		"LPR": "152"
+		"LPR": "152",
+		"reigns": [
+			{
+				"r_consensus": "740–720",
+				"r_dodson": "733–715"
+			}
+		]
 	},
 	{
 		"no": "227",
@@ -4762,7 +6479,6 @@
 		"name": "Harsiese A",
 		"dynasty": "36",
 		"order": "2",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4780,7 +6496,13 @@
 		"G19": "348–350",
 		"VON": "196–197",
 		"DDB": null,
-		"LPR": "152"
+		"LPR": "152",
+		"reigns": [
+			{
+				"r_consensus": "880–860",
+				"r_dodson": "867–857"
+			}
+		]
 	},
 	{
 		"no": "228",
@@ -4788,7 +6510,6 @@
 		"name": "Takelot II",
 		"dynasty": "23",
 		"order": "1",
-
 		"reg_start": "840",
 		"reg_slut": "815",
 		"reign": "",
@@ -4804,7 +6525,13 @@
 		"G19": "351–360",
 		"VON": "192–193",
 		"DDB": null,
-		"LPR": "149"
+		"LPR": "149",
+		"reigns": [
+			{
+				"r_consensus": "840–815",
+				"r_dodson": "841–815"
+			}
+		]
 	},
 	{
 		"no": "229",
@@ -4812,7 +6539,6 @@
 		"name": "Pedubast I",
 		"dynasty": "23",
 		"order": "2",
-
 		"reg_start": "829",
 		"reg_slut": "804",
 		"reign": "",
@@ -4828,7 +6554,13 @@
 		"G19": "378–380",
 		"VON": "192–193",
 		"DDB": null,
-		"LPR": "153"
+		"LPR": "153",
+		"reigns": [
+			{
+				"r_consensus": "829–804",
+				"r_dodson": "830–805"
+			}
+		]
 	},
 	{
 		"no": "230",
@@ -4836,7 +6568,6 @@
 		"name": "Iuput I",
 		"dynasty": "23",
 		"order": "3",
-
 		"reg_start": "829",
 		"reg_slut": "804",
 		"reign": "",
@@ -4851,7 +6582,13 @@
 		"G19": "381–382",
 		"VON": "192–193",
 		"DDB": null,
-		"LPR": "153–154"
+		"LPR": "153–154",
+		"reigns": [
+			{
+				"r_consensus": "829–804",
+				"r_dodson": "815–813"
+			}
+		]
 	},
 	{
 		"no": "231",
@@ -4859,7 +6596,6 @@
 		"name": "Shoshenq VI",
 		"dynasty": "23",
 		"order": "4",
-
 		"reg_start": "804",
 		"reg_slut": "798",
 		"reign": "",
@@ -4872,7 +6608,13 @@
 		"description": null,
 		"VON": "192–193",
 		"DDB": null,
-		"LPR": "154"
+		"LPR": "154",
+		"reigns": [
+			{
+				"r_consensus": "804–798",
+				"r_dodson": "805–796"
+			}
+		]
 	},
 	{
 		"no": "232",
@@ -4880,7 +6622,6 @@
 		"name": "Osorkon III",
 		"dynasty": "23",
 		"order": "5",
-
 		"reg_start": "798",
 		"reg_slut": "769",
 		"reign": "",
@@ -4895,7 +6636,13 @@
 		"G19": "382–389",
 		"VON": "194–195",
 		"DDB": null,
-		"LPR": "154"
+		"LPR": "154",
+		"reigns": [
+			{
+				"r_consensus": "798–769",
+				"r_dodson": "796–769"
+			}
+		]
 	},
 	{
 		"no": "233",
@@ -4903,7 +6650,6 @@
 		"name": "Takelot III",
 		"dynasty": "23",
 		"order": "6",
-
 		"reg_start": "774",
 		"reg_slut": "759",
 		"reign": "",
@@ -4918,7 +6664,13 @@
 		"G19": "389–391",
 		"VON": "194–195",
 		"DDB": null,
-		"LPR": "155"
+		"LPR": "155",
+		"reigns": [
+			{
+				"r_consensus": "774–759",
+				"r_dodson": "774–759"
+			}
+		]
 	},
 	{
 		"no": "234",
@@ -4926,7 +6678,6 @@
 		"name": "Rudamun",
 		"dynasty": "23",
 		"order": "7",
-
 		"reg_start": "759",
 		"reg_slut": "755",
 		"reign": "",
@@ -4941,7 +6692,13 @@
 		"G19": "392–394",
 		"VON": "196–197",
 		"DDB": null,
-		"LPR": "155"
+		"LPR": "155",
+		"reigns": [
+			{
+				"r_consensus": "759–755",
+				"r_dodson": "759–739"
+			}
+		]
 	},
 	{
 		"no": "235",
@@ -4949,7 +6706,6 @@
 		"name": "Ini II",
 		"dynasty": "36",
 		"order": "3",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4964,7 +6720,12 @@
 		"bibliography": null,
 		"annan_dynasti": "23",
 		"VON": "196–197",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_dodson": "739–734"
+			}
+		]
 	},
 	{
 		"no": "236",
@@ -4972,7 +6733,6 @@
 		"name": "Peftjauawybast",
 		"dynasty": "36",
 		"order": "4",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -4990,7 +6750,12 @@
 		"G19": "400–401",
 		"VON": "204–205",
 		"DDB": null,
-		"LPR": "157"
+		"LPR": "157",
+		"reigns": [
+			{
+				"r_dodson": "734–724"
+			}
+		]
 	},
 	{
 		"no": "237",
@@ -4998,7 +6763,6 @@
 		"name": "Tafnakht",
 		"dynasty": "24",
 		"order": "1",
-
 		"reg_start": "732",
 		"reg_slut": "725",
 		"reign": "",
@@ -5013,7 +6777,12 @@
 		"G19": "407–409",
 		"VON": "202–203",
 		"DDB": null,
-		"LPR": "158–159"
+		"LPR": "158–159",
+		"reigns": [
+			{
+				"r_dodson": "735–727"
+			}
+		]
 	},
 	{
 		"no": "238",
@@ -5021,7 +6790,6 @@
 		"name": "Bakenrenef",
 		"dynasty": "24",
 		"order": "2",
-
 		"reg_start": "725",
 		"reg_slut": "720",
 		"reign": "",
@@ -5036,7 +6804,12 @@
 		"G19": "410–412",
 		"VON": "202–203",
 		"DDB": null,
-		"LPR": "159"
+		"LPR": "159",
+		"reigns": [
+			{
+				"r_dodson": "727–721"
+			}
+		]
 	},
 	{
 		"no": "239",
@@ -5044,7 +6817,6 @@
 		"name": "Piye",
 		"dynasty": "25",
 		"order": "1",
-
 		"reg_start": "752",
 		"reg_slut": "721",
 		"reign": "",
@@ -5060,7 +6832,18 @@
 		"G21": null,
 		"VON": "206–207",
 		"DDB": null,
-		"LPR": "160–162"
+		"LPR": "160–162",
+		"reigns": [
+			{
+				"r_hornung": "753–723",
+				"r_beckerath": "746–713",
+				"r_shaw": "747–716",
+				"r_redford": "735–712",
+				"r_dodson": "752–717",
+				"r_arnold": "747–716",
+				"r_grimal": "747–716"
+			}
+		]
 	},
 	{
 		"no": "240",
@@ -5068,7 +6851,6 @@
 		"name": "Shabaka",
 		"dynasty": "25",
 		"order": "2",
-
 		"reg_start": "721",
 		"reg_slut": "707",
 		"reign": "",
@@ -5084,7 +6866,21 @@
 		"G21": null,
 		"VON": "206–207",
 		"DDB": null,
-		"LPR": "162"
+		"LPR": "162",
+		"reigns": [
+			{
+				"r_hornung": "722–707",
+				"r_beckerath": "713–698",
+				"r_shaw": "716–702",
+				"r_redford": "712–698",
+				"r_dodson": "721–707",
+				"r_arnold": "716–702",
+				"r_grimal": "716–702",
+				"r_africanus": "8 years",
+				"r_eusebius": "12 years",
+				"r_jerome": "12 years"
+			}
+		]
 	},
 	{
 		"no": "241",
@@ -5092,7 +6888,6 @@
 		"name": "Shebitko",
 		"dynasty": "25",
 		"order": "3",
-
 		"reg_start": "707",
 		"reg_slut": "690",
 		"reign": "",
@@ -5108,7 +6903,21 @@
 		"G21": null,
 		"VON": "208–209",
 		"DDB": null,
-		"LPR": "162–163"
+		"LPR": "162–163",
+		"reigns": [
+			{
+				"r_hornung": "706–690",
+				"r_beckerath": "698–690",
+				"r_shaw": "702–690",
+				"r_redford": "705–690",
+				"r_dodson": "707–690",
+				"r_arnold": "702–690",
+				"r_grimal": "702–690",
+				"r_africanus": "14 years",
+				"r_eusebius": "12 years",
+				"r_jerome": "12 years"
+			}
+		]
 	},
 	{
 		"no": "242",
@@ -5116,7 +6925,6 @@
 		"name": "Taharqa",
 		"dynasty": "25",
 		"order": "4",
-
 		"reg_start": "690",
 		"reg_slut": "664",
 		"reign": "",
@@ -5132,7 +6940,16 @@
 		"G21": null,
 		"VON": "208–209",
 		"DDB": null,
-		"LPR": "163"
+		"LPR": "163",
+		"reigns": [
+			{
+				"r_consensus": "690–664",
+				"r_dodson": "690–664",
+				"r_africanus": "18 years",
+				"r_eusebius": "20 years",
+				"r_jerome": "20 years"
+			}
+		]
 	},
 	{
 		"no": "243",
@@ -5140,7 +6957,6 @@
 		"name": "Tenutamen",
 		"dynasty": "25",
 		"order": "5",
-
 		"reg_start": "664",
 		"reg_slut": "656",
 		"reign": "",
@@ -5156,7 +6972,15 @@
 		"G21": null,
 		"VON": "210–211",
 		"DDB": null,
-		"LPR": "163"
+		"LPR": "163",
+		"reigns": [
+			{
+				"r_hornung": "664–655",
+				"r_beckerath": "664–655",
+				"r_redford": "664–656",
+				"r_dodson": "664–656"
+			}
+		]
 	},
 	{
 		"no": "244",
@@ -5164,7 +6988,6 @@
 		"name": "Necho I",
 		"dynasty": "26",
 		"order": "1",
-
 		"reg_start": "672",
 		"reg_slut": "664",
 		"reign": "",
@@ -5176,7 +6999,13 @@
 		"image": "",
 		"description": null,
 		"VON": "212–213",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_shaw": "672–664",
+				"r_eusebius": "8 years"
+			}
+		]
 	},
 	{
 		"no": "245",
@@ -5184,7 +7013,6 @@
 		"name": "Psamtik I",
 		"dynasty": "26",
 		"order": "2",
-
 		"reg_start": "664",
 		"reg_slut": "610",
 		"reign": "",
@@ -5200,7 +7028,16 @@
 		"G21": null,
 		"VON": "214–215",
 		"DDB": null,
-		"LPR": "165"
+		"LPR": "165",
+		"reigns": [
+			{
+				"r_consensus": "664–610",
+				"r_dodson": "664–610",
+				"r_africanus": "54 years",
+				"r_eusebius": "45 years",
+				"r_jerome": "44 years"
+			}
+		]
 	},
 	{
 		"no": "246",
@@ -5208,7 +7045,6 @@
 		"name": "Necho II",
 		"dynasty": "26",
 		"order": "3",
-
 		"reg_start": "610",
 		"reg_slut": "595",
 		"reign": "",
@@ -5224,7 +7060,16 @@
 		"G21": null,
 		"VON": "216–217",
 		"DDB": null,
-		"LPR": "165"
+		"LPR": "165",
+		"reigns": [
+			{
+				"r_consensus": "610–595",
+				"r_dodson": "610–595",
+				"r_africanus": "6 years",
+				"r_eusebius": "3 years",
+				"r_jerome": "6 years"
+			}
+		]
 	},
 	{
 		"no": "247",
@@ -5232,7 +7077,6 @@
 		"name": "Psamtik II",
 		"dynasty": "26",
 		"order": "4",
-
 		"reg_start": "595",
 		"reg_slut": "589",
 		"reign": "",
@@ -5248,7 +7092,16 @@
 		"G21": null,
 		"VON": "216–217",
 		"DDB": null,
-		"LPR": "165–166"
+		"LPR": "165–166",
+		"reigns": [
+			{
+				"r_consensus": "595–589",
+				"r_dodson": "595–589",
+				"r_africanus": "6 years",
+				"r_eusebius": "17 years",
+				"r_jerome": "12 years"
+			}
+		]
 	},
 	{
 		"no": "248",
@@ -5256,7 +7109,6 @@
 		"name": "Apries",
 		"dynasty": "26",
 		"order": "5",
-
 		"reg_start": "589",
 		"reg_slut": "570",
 		"reign": "",
@@ -5272,7 +7124,16 @@
 		"G21": null,
 		"VON": "216–217",
 		"DDB": null,
-		"LPR": "166"
+		"LPR": "166",
+		"reigns": [
+			{
+				"r_consensus": "589–570",
+				"r_dodson": "589–570",
+				"r_africanus": "19 years",
+				"r_eusebius": "25 years",
+				"r_jerome": "30 years"
+			}
+		]
 	},
 	{
 		"no": "249",
@@ -5280,7 +7141,6 @@
 		"name": "Amasis",
 		"dynasty": "26",
 		"order": "6",
-
 		"reg_start": "570",
 		"reg_slut": "526",
 		"reign": "",
@@ -5296,7 +7156,16 @@
 		"G21": null,
 		"VON": "216–217",
 		"DDB": null,
-		"LPR": "166"
+		"LPR": "166",
+		"reigns": [
+			{
+				"r_consensus": "570–526",
+				"r_dodson": "570–526",
+				"r_africanus": "44 years",
+				"r_eusebius": "42 years",
+				"r_jerome": "42 years"
+			}
+		]
 	},
 	{
 		"no": "250",
@@ -5304,7 +7173,6 @@
 		"name": "Psamtik III",
 		"dynasty": "26",
 		"order": "7",
-
 		"reg_start": "526",
 		"reg_slut": "525",
 		"reign": "",
@@ -5320,7 +7188,13 @@
 		"G21": null,
 		"VON": "218–219",
 		"DDB": null,
-		"LPR": "167"
+		"LPR": "167",
+		"reigns": [
+			{
+				"r_consensus": "526–525",
+				"r_dodson": "526–525"
+			}
+		]
 	},
 	{
 		"no": "251",
@@ -5328,7 +7202,6 @@
 		"name": "Cambyses II",
 		"dynasty": "27",
 		"order": "1",
-
 		"reg_start": "525",
 		"reg_slut": "522",
 		"reign": "",
@@ -5344,7 +7217,15 @@
 		"G21": null,
 		"VON": "220–221",
 		"DDB": null,
-		"LPR": "167–168"
+		"LPR": "167–168",
+		"reigns": [
+			{
+				"r_consensus": "525–522",
+				"r_dodson": "525–522",
+				"r_africanus": "6 years",
+				"r_eusebius": "3 years"
+			}
+		]
 	},
 	{
 		"no": "252",
@@ -5352,7 +7233,6 @@
 		"name": "Pedubast III",
 		"dynasty": "36",
 		"order": "5",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -5366,7 +7246,8 @@
 		"description": "A native pharaoh, probably from the old royal Saite line, who attempted to seize power from the Persian invaders around 520 BC. Excavations in 2015 at the Dakhla Oasis suggest that Petubastis may have had his royal residence there, far from the Nile valley which was under Persian control",
 		"bibliography": "Kaper, Olaf E. (2015). <em>Petubastis IV in the Dakhla Oasis: New Evidence about an Early Rebellion against Persian Rule and Its Suppression in Political Memory</em>, in Silverman, Jason M.; Waerzeggers, Caroline (eds.). Political memory in and after the Persian empire. pp. 125–149.",
 		"annan_dynasti": "27",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "253",
@@ -5374,7 +7255,6 @@
 		"name": "Darius I",
 		"dynasty": "27",
 		"order": "2",
-
 		"reg_start": "522",
 		"reg_slut": "486",
 		"reign": "",
@@ -5390,7 +7270,16 @@
 		"G21": null,
 		"VON": "220–221",
 		"DDB": null,
-		"LPR": "168"
+		"LPR": "168",
+		"reigns": [
+			{
+				"r_hornung": "521–486",
+				"r_beckerath": "522–486",
+				"r_shaw": "522–486",
+				"r_redford": "521–486",
+				"r_dodson": "521–486"
+			}
+		]
 	},
 	{
 		"no": "254",
@@ -5398,7 +7287,6 @@
 		"name": "Psamtik IV",
 		"dynasty": "36",
 		"order": "6",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -5411,7 +7299,8 @@
 		"description": null,
 		"bibliography": null,
 		"annan_dynasti": "27",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "255",
@@ -5419,7 +7308,6 @@
 		"name": "Xerxes I",
 		"dynasty": "27",
 		"order": "3",
-
 		"reg_start": "486",
 		"reg_slut": "465",
 		"reign": "",
@@ -5434,7 +7322,17 @@
 		"G21": null,
 		"VON": "220–221",
 		"DDB": null,
-		"LPR": "168"
+		"LPR": "168",
+		"reigns": [
+			{
+				"r_hornung": "486–466",
+				"r_beckerath": "486–465",
+				"r_shaw": "486–465",
+				"r_redford": "486–466",
+				"r_dodson": "486–465",
+				"r_manetho": "21 years"
+			}
+		]
 	},
 	{
 		"no": "256",
@@ -5442,7 +7340,6 @@
 		"name": "Artaxerxes I",
 		"dynasty": "27",
 		"order": "4",
-
 		"reg_start": "465",
 		"reg_slut": "424",
 		"reign": "",
@@ -5457,7 +7354,15 @@
 		"G21": null,
 		"VON": "220–221",
 		"DDB": null,
-		"LPR": "168"
+		"LPR": "168",
+		"reigns": [
+			{
+				"r_consensus": "465–424",
+				"r_dodson": "465–424",
+				"r_africanus": "41 years",
+				"r_eusebius": "40 years"
+			}
+		]
 	},
 	{
 		"no": "257",
@@ -5465,7 +7370,6 @@
 		"name": "Inaros",
 		"dynasty": "36",
 		"order": "7",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -5478,7 +7382,8 @@
 		"description": null,
 		"bibliography": null,
 		"annan_dynasti": "27",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "258",
@@ -5486,7 +7391,6 @@
 		"name": "Darius II",
 		"dynasty": "27",
 		"order": "5",
-
 		"reg_start": "424",
 		"reg_slut": "405",
 		"reign": "",
@@ -5498,7 +7402,13 @@
 		"image": "",
 		"description": null,
 		"VON": "221",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "424–405",
+				"r_dodson": "423–405"
+			}
+		]
 	},
 	{
 		"no": "259",
@@ -5506,7 +7416,6 @@
 		"name": "Artaxerxes II",
 		"dynasty": "27",
 		"order": "6",
-
 		"reg_start": "405",
 		"reg_slut": "404",
 		"reign": "",
@@ -5518,7 +7427,13 @@
 		"image": "",
 		"description": null,
 		"VON": "221",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_beckerath": "405–401",
+				"r_shaw": "405–359"
+			}
+		]
 	},
 	{
 		"no": "260",
@@ -5526,7 +7441,6 @@
 		"name": "Amyrtaeus",
 		"dynasty": "28",
 		"order": "1",
-
 		"reg_start": "404",
 		"reg_slut": "399",
 		"reign": "",
@@ -5541,7 +7455,17 @@
 		"G21": null,
 		"VON": "222–223",
 		"DDB": null,
-		"LPR": "169"
+		"LPR": "169",
+		"reigns": [
+			{
+				"r_hornung": "404–399",
+				"r_beckerath": "405–399",
+				"r_shaw": "404–399",
+				"r_redford": "405–399",
+				"r_dodson": "404–399",
+				"r_manetho": "6 years"
+			}
+		]
 	},
 	{
 		"no": "261",
@@ -5549,7 +7473,6 @@
 		"name": "Neferites I",
 		"dynasty": "29",
 		"order": "1",
-
 		"reg_start": "398",
 		"reg_slut": "393",
 		"reign": "",
@@ -5565,7 +7488,14 @@
 		"G21": null,
 		"VON": "224–225",
 		"DDB": null,
-		"LPR": "170"
+		"LPR": "170",
+		"reigns": [
+			{
+				"r_consensus": "399–393",
+				"r_dodson": "399–393",
+				"r_manetho": "6 years"
+			}
+		]
 	},
 	{
 		"no": "262",
@@ -5573,7 +7503,6 @@
 		"name": "Akoris",
 		"dynasty": "29",
 		"order": "2",
-
 		"reg_start": "393",
 		"reg_slut": "380",
 		"reign": "",
@@ -5589,7 +7518,15 @@
 		"G21": null,
 		"VON": "224–225",
 		"DDB": null,
-		"LPR": "170–171"
+		"LPR": "170–171",
+		"reigns": [
+			{
+				"r_consensus": "393–380",
+				"r_redford": "392–380",
+				"r_dodson": "393–380",
+				"r_manetho": "13 years"
+			}
+		]
 	},
 	{
 		"no": "263",
@@ -5597,7 +7534,6 @@
 		"name": "Psammuthis",
 		"dynasty": "29",
 		"order": "3",
-
 		"reg_start": "393",
 		"reg_slut": "392",
 		"reign": "",
@@ -5613,7 +7549,14 @@
 		"G21": null,
 		"VON": "224–225",
 		"DDB": null,
-		"LPR": "170"
+		"LPR": "170",
+		"reigns": [
+			{
+				"r_consensus": "393",
+				"r_redford": "392",
+				"r_manetho": "1 year"
+			}
+		]
 	},
 	{
 		"no": "264",
@@ -5621,7 +7564,6 @@
 		"name": "Neferites II",
 		"dynasty": "29",
 		"order": "4",
-
 		"reg_start": "380",
 		"reg_slut": null,
 		"reign": "",
@@ -5635,7 +7577,14 @@
 		"bibliography": "<br>* \"The Demotic Chronicle.\" Papyrus Bibliothèque nationale de France no. 215, recto II/3",
 		"annan_dynasti": null,
 		"DDB": null,
-		"LPR": "171"
+		"LPR": "171",
+		"reigns": [
+			{
+				"r_consensus": "380",
+				"r_dodson": "380",
+				"r_manetho": "4 months"
+			}
+		]
 	},
 	{
 		"no": "265",
@@ -5643,7 +7592,6 @@
 		"name": "Muthis",
 		"dynasty": "29",
 		"order": "5",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -5654,7 +7602,12 @@
 		"meta2": "",
 		"image": "",
 		"description": "Only <a href=\"/kinglists/eusebius\">Eusebius</a> makes reference to <b>Muthis</b>, there are no contemporary traces. The name is clearly hellenized and probably the result of the corrupted epitome used by Eusebius. A summation describing the chaos at the end of the dynasty was likely misunderstood by the copyist, resulting in Muthis from <em>Psammuthis</em>.",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_eusebius": "1 year"
+			}
+		]
 	},
 	{
 		"no": "266",
@@ -5662,7 +7615,6 @@
 		"name": "Nectanebo I",
 		"dynasty": "30",
 		"order": "1",
-
 		"reg_start": "380",
 		"reg_slut": "362",
 		"reign": "",
@@ -5678,7 +7630,18 @@
 		"G21": null,
 		"VON": "226–227",
 		"DDB": null,
-		"LPR": "171–172"
+		"LPR": "171–172",
+		"reigns": [
+			{
+				"r_hornung": "380–362",
+				"r_beckerath": "380–362",
+				"r_shaw": "380–362",
+				"r_redford": "380–363",
+				"r_dodson": "380–362",
+				"r_africanus": "18 years",
+				"r_eusebius": "10 years"
+			}
+		]
 	},
 	{
 		"no": "267",
@@ -5686,7 +7649,6 @@
 		"name": "Djedhor Teos I",
 		"dynasty": "30",
 		"order": "2",
-
 		"reg_start": "362",
 		"reg_slut": "360",
 		"reign": "",
@@ -5702,7 +7664,17 @@
 		"G21": null,
 		"VON": "226–227",
 		"DDB": null,
-		"LPR": "172"
+		"LPR": "172",
+		"reigns": [
+			{
+				"r_hornung": "365–360",
+				"r_beckerath": "362–360",
+				"r_shaw": "362–360",
+				"r_redford": "362–361",
+				"r_dodson": "365–360",
+				"r_manetho": "2 years"
+			}
+		]
 	},
 	{
 		"no": "268",
@@ -5710,7 +7682,6 @@
 		"name": "Nectanebo II",
 		"dynasty": "30",
 		"order": "3",
-
 		"reg_start": "360",
 		"reg_slut": "343",
 		"reign": "",
@@ -5726,7 +7697,18 @@
 		"G21": null,
 		"VON": "228–229",
 		"DDB": null,
-		"LPR": "172–173"
+		"LPR": "172–173",
+		"reigns": [
+			{
+				"r_hornung": "360–343",
+				"r_beckerath": "360–342",
+				"r_shaw": "360–343",
+				"r_redford": "360–343",
+				"r_dodson": "360–342",
+				"r_africanus": "18 years",
+				"r_eusebius": "8 years"
+			}
+		]
 	},
 	{
 		"no": "269",
@@ -5734,7 +7716,6 @@
 		"name": "Artaxerxes III",
 		"dynasty": "31",
 		"order": "1",
-
 		"reg_start": "343",
 		"reg_slut": "338",
 		"reign": "",
@@ -5749,7 +7730,17 @@
 		"annan_dynasti": null,
 		"VON": "231",
 		"DDB": null,
-		"LPR": "173"
+		"LPR": "173",
+		"reigns": [
+			{
+				"r_hornung": "343–338",
+				"r_beckerath": "342–337",
+				"r_shaw": "343–338",
+				"r_redford": "343–338",
+				"r_dodson": "342–338",
+				"r_manetho": "2 years"
+			}
+		]
 	},
 	{
 		"no": "270",
@@ -5757,7 +7748,6 @@
 		"name": "Arses",
 		"dynasty": "31",
 		"order": "2",
-
 		"reg_start": "338",
 		"reg_slut": "336",
 		"reign": "",
@@ -5770,7 +7760,18 @@
 		"description": null,
 		"VON": "231",
 		"DDB": null,
-		"LPR": "173"
+		"LPR": "173",
+		"reigns": [
+			{
+				"r_hornung": "338–336",
+				"r_beckerath": "337–335",
+				"r_shaw": "338–336",
+				"r_redford": "338–336",
+				"r_dodson": "338–336",
+				"r_africanus": "3 years",
+				"r_eusebius": "4 years"
+			}
+		]
 	},
 	{
 		"no": "271",
@@ -5778,7 +7779,6 @@
 		"name": "Darius III",
 		"dynasty": "31",
 		"order": "3",
-
 		"reg_start": "336",
 		"reg_slut": "332",
 		"reign": "",
@@ -5791,7 +7791,18 @@
 		"description": null,
 		"VON": "230–231",
 		"DDB": null,
-		"LPR": "173"
+		"LPR": "173",
+		"reigns": [
+			{
+				"r_hornung": "335–332",
+				"r_beckerath": "335–332",
+				"r_shaw": "336–332",
+				"r_redford": "335–332",
+				"r_dodson": "335–332",
+				"r_africanus": "4 years",
+				"r_eusebius": "6 years"
+			}
+		]
 	},
 	{
 		"no": "272",
@@ -5799,7 +7810,6 @@
 		"name": "Alexander the Great",
 		"dynasty": "32",
 		"order": "1",
-
 		"reg_start": "332",
 		"reg_slut": "323",
 		"reign": "",
@@ -5817,7 +7827,13 @@
 		"G21": null,
 		"VON": "232–233",
 		"DDB": null,
-		"LPR": "175–176"
+		"LPR": "175–176",
+		"reigns": [
+			{
+				"r_consensus": "332–323",
+				"r_dodson": "332–323"
+			}
+		]
 	},
 	{
 		"no": "273",
@@ -5825,7 +7841,6 @@
 		"name": "Philip III Arrhidaeus",
 		"dynasty": "32",
 		"order": "2",
-
 		"reg_start": "323",
 		"reg_slut": "317",
 		"reign": "",
@@ -5841,7 +7856,15 @@
 		"G21": null,
 		"VON": "232–233",
 		"DDB": null,
-		"LPR": "176"
+		"LPR": "176",
+		"reigns": [
+			{
+				"r_beckerath": "323–316",
+				"r_shaw": "323–317",
+				"r_redford": "323–316",
+				"r_dodson": "323–317"
+			}
+		]
 	},
 	{
 		"no": "274",
@@ -5849,7 +7872,6 @@
 		"name": "Alexander IV",
 		"dynasty": "32",
 		"order": "3",
-
 		"reg_start": "317",
 		"reg_slut": "309",
 		"reign": "",
@@ -5865,7 +7887,15 @@
 		"G21": null,
 		"VON": "232–233",
 		"DDB": null,
-		"LPR": "176"
+		"LPR": "176",
+		"reigns": [
+			{
+				"r_beckerath": "316–310",
+				"r_shaw": "317–310",
+				"r_redford": "316–305",
+				"r_dodson": "317–310"
+			}
+		]
 	},
 	{
 		"no": "275",
@@ -5873,7 +7903,6 @@
 		"name": "Ptolemy I",
 		"dynasty": "33",
 		"order": "1",
-
 		"reg_start": "306",
 		"reg_slut": "285",
 		"reign": "",
@@ -5889,7 +7918,15 @@
 		"G21": null,
 		"VON": "234–235",
 		"DDB": null,
-		"LPR": "178"
+		"LPR": "178",
+		"reigns": [
+			{
+				"r_beckerath": "304–282",
+				"r_shaw": "305–285",
+				"r_redford": "305–282",
+				"r_dodson": "310–282"
+			}
+		]
 	},
 	{
 		"no": "276",
@@ -5897,7 +7934,6 @@
 		"name": "Ptolemy II",
 		"dynasty": "33",
 		"order": "2",
-
 		"reg_start": "284",
 		"reg_slut": "246",
 		"reign": "",
@@ -5913,7 +7949,12 @@
 		"G21": null,
 		"VON": "234–235",
 		"DDB": null,
-		"LPR": "178–179"
+		"LPR": "178–179",
+		"reigns": [
+			{
+				"r_consensus": "284–246"
+			}
+		]
 	},
 	{
 		"no": "277",
@@ -5921,7 +7962,6 @@
 		"name": "Ptolemy III",
 		"dynasty": "33",
 		"order": "3",
-
 		"reg_start": "246",
 		"reg_slut": "222",
 		"reign": "",
@@ -5936,7 +7976,15 @@
 		"G21": null,
 		"VON": "234–237",
 		"DDB": null,
-		"LPR": "179–180"
+		"LPR": "179–180",
+		"reigns": [
+			{
+				"r_beckerath": "246–221",
+				"r_shaw": "246–221",
+				"r_redford": "246–222",
+				"r_dodson": "246–222"
+			}
+		]
 	},
 	{
 		"no": "278",
@@ -5944,7 +7992,6 @@
 		"name": "Ptolemy IV",
 		"dynasty": "33",
 		"order": "4",
-
 		"reg_start": "222",
 		"reg_slut": "204",
 		"reign": "",
@@ -5959,7 +8006,15 @@
 		"G21": null,
 		"VON": "236–237",
 		"DDB": null,
-		"LPR": "180"
+		"LPR": "180",
+		"reigns": [
+			{
+				"r_beckerath": "221–205",
+				"r_shaw": "221–205",
+				"r_redford": "222–205",
+				"r_dodson": "222–205"
+			}
+		]
 	},
 	{
 		"no": "279",
@@ -5967,7 +8022,6 @@
 		"name": "Ptolemy V",
 		"dynasty": "33",
 		"order": "5",
-
 		"reg_start": "204",
 		"reg_slut": "180",
 		"reign": "",
@@ -5982,7 +8036,15 @@
 		"G21": null,
 		"VON": "236–239",
 		"DDB": null,
-		"LPR": "181"
+		"LPR": "181",
+		"reigns": [
+			{
+				"r_beckerath": "205–180",
+				"r_shaw": "205–180",
+				"r_redford": "204–180",
+				"r_dodson": "205–180"
+			}
+		]
 	},
 	{
 		"no": "280",
@@ -5990,7 +8052,6 @@
 		"name": "Ptolemy VI",
 		"dynasty": "33",
 		"order": "6",
-
 		"reg_start": "180",
 		"reg_slut": "145",
 		"reign": "",
@@ -6005,7 +8066,15 @@
 		"G21": null,
 		"VON": "238–239",
 		"DDB": null,
-		"LPR": "182"
+		"LPR": "182",
+		"reigns": [
+			{
+				"r_beckerath": "180–145",
+				"r_shaw": "180–145",
+				"r_redford": "180–145",
+				"r_dodson": "180–146"
+			}
+		]
 	},
 	{
 		"no": "281",
@@ -6013,7 +8082,6 @@
 		"name": "Ptolemy VII",
 		"dynasty": "33",
 		"order": "7",
-
 		"reg_start": "145",
 		"reg_slut": "145",
 		"reign": "",
@@ -6026,7 +8094,13 @@
 		"description": null,
 		"VON": "238–239",
 		"DDB": null,
-		"LPR": "182"
+		"LPR": "182",
+		"reigns": [
+			{
+				"r_shaw": "145",
+				"r_redford": "145–144"
+			}
+		]
 	},
 	{
 		"no": "282",
@@ -6034,7 +8108,6 @@
 		"name": "Ptolemy VIII",
 		"dynasty": "33",
 		"order": "8",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "169–164, 144–132, 126–116",
@@ -6049,7 +8122,15 @@
 		"G21": null,
 		"VON": "240–241",
 		"DDB": null,
-		"LPR": "182–183"
+		"LPR": "182–183",
+		"reigns": [
+			{
+				"r_beckerath": "170–116",
+				"r_shaw": "170–116",
+				"r_redford": "145–116",
+				"r_dodson": "170–116"
+			}
+		]
 	},
 	{
 		"no": "283",
@@ -6057,7 +8138,6 @@
 		"name": "Ptolemy IX",
 		"dynasty": "33",
 		"order": "9",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "116–110, 109–107, 88–81",
@@ -6072,7 +8152,13 @@
 		"G21": null,
 		"VON": "240–243",
 		"DDB": null,
-		"LPR": "183–185"
+		"LPR": "183–185",
+		"reigns": [
+			{
+				"r_consensus": "116–107",
+				"r_dodson": "116–107"
+			}
+		]
 	},
 	{
 		"no": "284",
@@ -6080,7 +8166,6 @@
 		"name": "Ptolemy X",
 		"dynasty": "33",
 		"order": "10",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "110–109, 107–88",
@@ -6095,7 +8180,15 @@
 		"G21": null,
 		"VON": "242–243",
 		"DDB": null,
-		"LPR": "185–186"
+		"LPR": "185–186",
+		"reigns": [
+			{
+				"r_beckerath": "107–88",
+				"r_shaw": "107–88",
+				"r_redford": "107–88",
+				"r_dodson": "110–88"
+			}
+		]
 	},
 	{
 		"no": "285",
@@ -6103,7 +8196,6 @@
 		"name": "Ptolemy XI",
 		"dynasty": "33",
 		"order": "11",
-
 		"reg_start": "80",
 		"reg_slut": "80",
 		"reign": "",
@@ -6115,7 +8207,14 @@
 		"image": "",
 		"description": null,
 		"DDB": null,
-		"LPR": "186"
+		"LPR": "186",
+		"reigns": [
+			{
+				"r_shaw": "80",
+				"r_redford": "80",
+				"r_dodson": "80"
+			}
+		]
 	},
 	{
 		"no": "286",
@@ -6123,7 +8222,6 @@
 		"name": "Ptolemy XII",
 		"dynasty": "33",
 		"order": "12",
-
 		"reg_start": "80",
 		"reg_slut": "58",
 		"reign": "",
@@ -6138,7 +8236,13 @@
 		"G21": null,
 		"VON": "244–245",
 		"DDB": null,
-		"LPR": "186–187"
+		"LPR": "186–187",
+		"reigns": [
+			{
+				"r_consensus": "80–51",
+				"r_dodson": "80–58"
+			}
+		]
 	},
 	{
 		"no": "287",
@@ -6146,7 +8250,6 @@
 		"name": "Ptolemy XIII",
 		"dynasty": "33",
 		"order": "13",
-
 		"reg_start": "51",
 		"reg_slut": "47",
 		"reign": "",
@@ -6159,7 +8262,13 @@
 		"description": null,
 		"VON": "246–247",
 		"DDB": null,
-		"LPR": "188"
+		"LPR": "188",
+		"reigns": [
+			{
+				"r_consensus": "51–47",
+				"r_dodson": "51–47"
+			}
+		]
 	},
 	{
 		"no": "288",
@@ -6167,7 +8276,6 @@
 		"name": "Ptolemy XIV",
 		"dynasty": "33",
 		"order": "14",
-
 		"reg_start": "47",
 		"reg_slut": "44",
 		"reign": "",
@@ -6180,7 +8288,13 @@
 		"description": null,
 		"VON": "246–247",
 		"DDB": null,
-		"LPR": "188"
+		"LPR": "188",
+		"reigns": [
+			{
+				"r_consensus": "47–44",
+				"r_dodson": "47–44"
+			}
+		]
 	},
 	{
 		"no": "289",
@@ -6188,7 +8302,6 @@
 		"name": "Cleopatra VII",
 		"dynasty": "33",
 		"order": "15",
-
 		"reg_start": "51",
 		"reg_slut": "30",
 		"reign": "",
@@ -6205,7 +8318,14 @@
 		"DDB": null,
 		"LPR": "187–188",
 		"bild": "kleo.webp",
-		"bildtext": null
+		"bildtext": null,
+		"reigns": [
+			{
+				"r_shaw": "51–30",
+				"r_redford": "51–31",
+				"r_dodson": "51–30"
+			}
+		]
 	},
 	{
 		"no": "290",
@@ -6213,7 +8333,6 @@
 		"name": "Ptolemy XV",
 		"dynasty": "33",
 		"order": "16",
-
 		"reg_start": "44",
 		"reg_slut": "30",
 		"reign": "",
@@ -6228,7 +8347,14 @@
 		"G21": null,
 		"VON": "246–247",
 		"DDB": null,
-		"LPR": "188"
+		"LPR": "188",
+		"reigns": [
+			{
+				"r_shaw": "44–30",
+				"r_redford": "44–31",
+				"r_dodson": "41–30"
+			}
+		]
 	},
 	{
 		"no": "291",
@@ -6236,7 +8362,6 @@
 		"name": "Augustus",
 		"dynasty": "34",
 		"order": "1",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "27 BC–14 AD",
@@ -6250,7 +8375,12 @@
 		"G20": null,
 		"G21": "3–26",
 		"VON": "248–249",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "27 BCE–14 CE"
+			}
+		]
 	},
 	{
 		"no": "292",
@@ -6258,7 +8388,6 @@
 		"name": "Tiberius",
 		"dynasty": "34",
 		"order": "2",
-
 		"reg_start": "14",
 		"reg_slut": "37",
 		"reign": "",
@@ -6272,7 +8401,12 @@
 		"G20": null,
 		"G21": "26–41",
 		"VON": "252–253",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "14–37"
+			}
+		]
 	},
 	{
 		"no": "293",
@@ -6280,7 +8414,6 @@
 		"name": "Caligula",
 		"dynasty": "34",
 		"order": "3",
-
 		"reg_start": "37",
 		"reg_slut": "41",
 		"reign": "",
@@ -6294,7 +8427,12 @@
 		"G20": null,
 		"G21": "41–47",
 		"VON": "252–253",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "37–41"
+			}
+		]
 	},
 	{
 		"no": "294",
@@ -6302,7 +8440,6 @@
 		"name": "Claudius",
 		"dynasty": "34",
 		"order": "4",
-
 		"reg_start": "41",
 		"reg_slut": "54",
 		"reign": "",
@@ -6316,7 +8453,12 @@
 		"G20": null,
 		"G21": "47–62",
 		"VON": "254–255",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "41–54"
+			}
+		]
 	},
 	{
 		"no": "295",
@@ -6324,7 +8466,6 @@
 		"name": "Nero",
 		"dynasty": "34",
 		"order": "5",
-
 		"reg_start": "54",
 		"reg_slut": "68",
 		"reign": "",
@@ -6338,7 +8479,12 @@
 		"G20": null,
 		"G21": "62–74",
 		"VON": "254–255",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "54–68"
+			}
+		]
 	},
 	{
 		"no": "296",
@@ -6346,7 +8492,6 @@
 		"name": "Galba",
 		"dynasty": "34",
 		"order": "6",
-
 		"reg_start": "68",
 		"reg_slut": "69",
 		"reign": "",
@@ -6360,7 +8505,12 @@
 		"G20": null,
 		"G21": "74–76",
 		"VON": "254–255",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "68–69"
+			}
+		]
 	},
 	{
 		"no": "297",
@@ -6368,7 +8518,6 @@
 		"name": "Otho",
 		"dynasty": "34",
 		"order": "7",
-
 		"reg_start": null,
 		"reg_slut": "69",
 		"reign": "",
@@ -6382,7 +8531,12 @@
 		"G20": null,
 		"G21": "76–77",
 		"VON": "256–257",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "69"
+			}
+		]
 	},
 	{
 		"no": "298",
@@ -6390,7 +8544,6 @@
 		"name": "Vespasianus",
 		"dynasty": "34",
 		"order": "8",
-
 		"reg_start": "69",
 		"reg_slut": "79",
 		"reign": "",
@@ -6404,7 +8557,12 @@
 		"G20": null,
 		"G21": "78–85",
 		"VON": "256–257",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "69–79"
+			}
+		]
 	},
 	{
 		"no": "299",
@@ -6412,7 +8570,6 @@
 		"name": "Titus",
 		"dynasty": "34",
 		"order": "9",
-
 		"reg_start": "79",
 		"reg_slut": "81",
 		"reign": "",
@@ -6426,7 +8583,12 @@
 		"G20": null,
 		"G21": "86–89",
 		"VON": "256–257",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "79–81"
+			}
+		]
 	},
 	{
 		"no": "300",
@@ -6434,7 +8596,6 @@
 		"name": "Domitianus",
 		"dynasty": "34",
 		"order": "10",
-
 		"reg_start": "81",
 		"reg_slut": "96",
 		"reign": "",
@@ -6448,7 +8609,12 @@
 		"G20": null,
 		"G21": "89–101",
 		"VON": "256–257",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "81–96"
+			}
+		]
 	},
 	{
 		"no": "301",
@@ -6456,7 +8622,6 @@
 		"name": "Nerva",
 		"dynasty": "34",
 		"order": "11",
-
 		"reg_start": "96",
 		"reg_slut": "98",
 		"reign": "",
@@ -6470,7 +8635,12 @@
 		"G20": null,
 		"G21": "101–103",
 		"VON": "256–257",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "96–98"
+			}
+		]
 	},
 	{
 		"no": "302",
@@ -6478,7 +8648,6 @@
 		"name": "Trajanus",
 		"dynasty": "34",
 		"order": "12",
-
 		"reg_start": "98",
 		"reg_slut": "117",
 		"reign": "",
@@ -6492,7 +8661,12 @@
 		"G20": null,
 		"G21": "103–120",
 		"VON": "258–259",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "98–117"
+			}
+		]
 	},
 	{
 		"no": "303",
@@ -6500,7 +8674,6 @@
 		"name": "Hadrianus",
 		"dynasty": "34",
 		"order": "13",
-
 		"reg_start": "117",
 		"reg_slut": "138",
 		"reign": "",
@@ -6514,7 +8687,12 @@
 		"G20": null,
 		"G21": "120–135",
 		"VON": "258–261",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "117–138"
+			}
+		]
 	},
 	{
 		"no": "304",
@@ -6522,7 +8700,6 @@
 		"name": "Antoninus Pius",
 		"dynasty": "34",
 		"order": "14",
-
 		"reg_start": "138",
 		"reg_slut": "161",
 		"reign": "",
@@ -6536,7 +8713,12 @@
 		"G20": null,
 		"G21": "135–148",
 		"VON": "260–261",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "138–161"
+			}
+		]
 	},
 	{
 		"no": "305",
@@ -6544,7 +8726,6 @@
 		"name": "Marcus Aurelius",
 		"dynasty": "34",
 		"order": "15",
-
 		"reg_start": "161",
 		"reg_slut": "180",
 		"reign": "",
@@ -6558,7 +8739,12 @@
 		"G20": null,
 		"G21": "150–166",
 		"VON": "262–263",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "161–180"
+			}
+		]
 	},
 	{
 		"no": "306",
@@ -6566,7 +8752,6 @@
 		"name": "Lucius Verus",
 		"dynasty": "34",
 		"order": "16",
-
 		"reg_start": "161",
 		"reg_slut": "169",
 		"reign": "",
@@ -6580,7 +8765,12 @@
 		"G20": null,
 		"G21": "149-150",
 		"VON": "262–263",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "161–169"
+			}
+		]
 	},
 	{
 		"no": "307",
@@ -6588,7 +8778,6 @@
 		"name": "Commodus",
 		"dynasty": "34",
 		"order": "17",
-
 		"reg_start": "177",
 		"reg_slut": "192",
 		"reign": "",
@@ -6602,7 +8791,12 @@
 		"G20": null,
 		"G21": "166–177",
 		"VON": "262–263",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "177–192"
+			}
+		]
 	},
 	{
 		"no": "308",
@@ -6610,7 +8804,6 @@
 		"name": "Septimius Severus",
 		"dynasty": "34",
 		"order": "18",
-
 		"reg_start": "193",
 		"reg_slut": "211",
 		"reign": "",
@@ -6624,7 +8817,12 @@
 		"G20": null,
 		"G21": "180–198",
 		"VON": "262–263",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "193–211"
+			}
+		]
 	},
 	{
 		"no": "309",
@@ -6632,7 +8830,6 @@
 		"name": "Caracalla",
 		"dynasty": "34",
 		"order": "19",
-
 		"reg_start": "217",
 		"reg_slut": "218",
 		"reign": "",
@@ -6646,7 +8843,12 @@
 		"G20": null,
 		"G21": "198–209",
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "198–217"
+			}
+		]
 	},
 	{
 		"no": "310",
@@ -6654,7 +8856,6 @@
 		"name": "Geta",
 		"dynasty": "34",
 		"order": "20",
-
 		"reg_start": "217",
 		"reg_slut": "218",
 		"reign": "",
@@ -6668,7 +8869,12 @@
 		"G20": null,
 		"G21": "209–210",
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "209–211"
+			}
+		]
 	},
 	{
 		"no": "311",
@@ -6676,7 +8882,6 @@
 		"name": "Macrinus",
 		"dynasty": "34",
 		"order": "21",
-
 		"reg_start": "244",
 		"reg_slut": "249",
 		"reign": "",
@@ -6690,7 +8895,12 @@
 		"G20": null,
 		"G21": "210–212",
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "217–218"
+			}
+		]
 	},
 	{
 		"no": "312",
@@ -6698,7 +8908,6 @@
 		"name": "Diadumenianus",
 		"dynasty": "34",
 		"order": "22",
-
 		"reg_start": "249",
 		"reg_slut": "251",
 		"reign": "",
@@ -6710,7 +8919,12 @@
 		"image": "",
 		"description": null,
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "217–218"
+			}
+		]
 	},
 	{
 		"no": "313",
@@ -6718,7 +8932,6 @@
 		"name": "Philippus Arabs",
 		"dynasty": "34",
 		"order": "23",
-
 		"reg_start": "253",
 		"reg_slut": "260",
 		"reign": "",
@@ -6732,7 +8945,12 @@
 		"G20": null,
 		"G21": "231–237",
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "244–249"
+			}
+		]
 	},
 	{
 		"no": "314",
@@ -6740,7 +8958,6 @@
 		"name": "Trajanus Decius",
 		"dynasty": "34",
 		"order": "24",
-
 		"reg_start": "276",
 		"reg_slut": "282",
 		"reign": "",
@@ -6754,7 +8971,12 @@
 		"G20": null,
 		"G21": "238–240",
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "249–251"
+			}
+		]
 	},
 	{
 		"no": "315",
@@ -6762,7 +8984,6 @@
 		"name": "Valerianus",
 		"dynasty": "34",
 		"order": "25",
-
 		"reg_start": "284",
 		"reg_slut": "305",
 		"reign": "",
@@ -6774,7 +8995,12 @@
 		"image": "",
 		"description": null,
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "253–260"
+			}
+		]
 	},
 	{
 		"no": "316",
@@ -6782,7 +9008,6 @@
 		"name": "Probus",
 		"dynasty": "34",
 		"order": "26",
-
 		"reg_start": "276",
 		"reg_slut": "282",
 		"reign": "",
@@ -6794,7 +9019,12 @@
 		"image": "",
 		"description": null,
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "276–282"
+			}
+		]
 	},
 	{
 		"no": "317",
@@ -6802,7 +9032,6 @@
 		"name": "Diocletianus",
 		"dynasty": "34",
 		"order": "27",
-
 		"reg_start": "284",
 		"reg_slut": "305",
 		"reign": "",
@@ -6814,7 +9043,12 @@
 		"image": "",
 		"description": null,
 		"VON": "264–265",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "284–305"
+			}
+		]
 	},
 	{
 		"no": "318",
@@ -6822,7 +9056,6 @@
 		"name": "Maximianus",
 		"dynasty": "34",
 		"order": "28",
-
 		"reg_start": "286",
 		"reg_slut": "305",
 		"reign": "",
@@ -6834,7 +9067,12 @@
 		"image": "",
 		"description": null,
 		"VON": "266–267",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "286–305"
+			}
+		]
 	},
 	{
 		"no": "319",
@@ -6842,7 +9080,6 @@
 		"name": "Galerius",
 		"dynasty": "34",
 		"order": "29",
-
 		"reg_start": "305",
 		"reg_slut": "311",
 		"reign": "",
@@ -6854,7 +9091,12 @@
 		"image": "",
 		"description": null,
 		"VON": "266–267",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "305–311"
+			}
+		]
 	},
 	{
 		"no": "320",
@@ -6862,7 +9104,6 @@
 		"name": "Maximinus Daia",
 		"dynasty": "34",
 		"order": "30",
-
 		"reg_start": "311",
 		"reg_slut": "313",
 		"reign": "",
@@ -6874,7 +9115,12 @@
 		"image": "",
 		"description": null,
 		"VON": "266–267",
-		"DDB": null
+		"DDB": null,
+		"reigns": [
+			{
+				"r_consensus": "311–313"
+			}
+		]
 	},
 	{
 		"no": "321",
@@ -6882,7 +9128,6 @@
 		"name": "Senebkay",
 		"dynasty": "35",
 		"order": "1",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6893,7 +9138,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "322",
@@ -6901,7 +9147,6 @@
 		"name": "Wepwawetemsaf",
 		"dynasty": "35",
 		"order": "2",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6912,7 +9157,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "323",
@@ -6920,7 +9166,6 @@
 		"name": "Pantjeny",
 		"dynasty": "35",
 		"order": "3",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6931,7 +9176,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "324",
@@ -6939,7 +9185,6 @@
 		"name": "Snaaib",
 		"dynasty": "35",
 		"order": "4",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6950,7 +9195,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "325",
@@ -6958,7 +9204,6 @@
 		"name": "Sekhemkara I",
 		"dynasty": "10",
 		"order": "70",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6969,7 +9214,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "326",
@@ -6977,7 +9223,6 @@
 		"name": "Wadjkara",
 		"dynasty": "10",
 		"order": "71",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -6988,7 +9233,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "488–489"
+		"DDB": "488–489",
+		"reigns": [{}]
 	},
 	{
 		"no": "327",
@@ -6996,7 +9242,6 @@
 		"name": "Ity",
 		"dynasty": "10",
 		"order": "72",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7007,7 +9252,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "157–158"
+		"DDB": "157–158",
+		"reigns": [{}]
 	},
 	{
 		"no": "328",
@@ -7015,7 +9261,6 @@
 		"name": "Imhotep",
 		"dynasty": "10",
 		"order": "73",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7026,7 +9271,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "133"
+		"DDB": "133",
+		"reigns": [{}]
 	},
 	{
 		"no": "329",
@@ -7034,7 +9280,6 @@
 		"name": "Hotep",
 		"dynasty": "10",
 		"order": "74",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7045,7 +9290,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "121–122"
+		"DDB": "121–122",
+		"reigns": [{}]
 	},
 	{
 		"no": "330",
@@ -7053,7 +9299,6 @@
 		"name": "Khui",
 		"dynasty": "10",
 		"order": "75",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7064,7 +9309,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "192"
+		"DDB": "192",
+		"reigns": [{}]
 	},
 	{
 		"no": "331",
@@ -7072,7 +9318,6 @@
 		"name": "Isu",
 		"dynasty": "10",
 		"order": "76",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7083,7 +9328,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "157"
+		"DDB": "157",
+		"reigns": [{}]
 	},
 	{
 		"no": "332",
@@ -7091,7 +9337,6 @@
 		"name": "Iytenu",
 		"dynasty": "10",
 		"order": "77",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7102,7 +9347,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "The name Iytjenu is only indirectly attested within a womans name, where it is written with a royal cartouche, which was only used for writing a king's name during this period.",
-		"DDB": "159–160"
+		"DDB": "159–160",
+		"reigns": [{}]
 	},
 	{
 		"no": "333",
@@ -7110,7 +9356,6 @@
 		"name": "Sekhaenra",
 		"dynasty": "13",
 		"order": "70",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7123,7 +9368,8 @@
 		"description": null,
 		"VON": "118–119",
 		"DDB": "361–362",
-		"LPR": "74"
+		"LPR": "74",
+		"reigns": [{}]
 	},
 	{
 		"no": "334",
@@ -7131,7 +9377,6 @@
 		"name": "Maara Sobekhotep",
 		"dynasty": "13",
 		"order": "71",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7143,7 +9388,8 @@
 		"image": "",
 		"description": null,
 		"VON": "104–105",
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "335",
@@ -7151,7 +9397,6 @@
 		"name": "Wazad",
 		"dynasty": "14",
 		"order": "75",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7164,7 +9409,8 @@
 		"description": null,
 		"VON": "120–121",
 		"DDB": "488–489",
-		"LPR": "80"
+		"LPR": "80",
+		"reigns": [{}]
 	},
 	{
 		"no": "336",
@@ -7172,7 +9418,6 @@
 		"name": "Sheneh",
 		"dynasty": "14",
 		"order": "76",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7184,7 +9429,8 @@
 		"image": "",
 		"description": null,
 		"DDB": "423",
-		"LPR": "79"
+		"LPR": "79",
+		"reigns": [{}]
 	},
 	{
 		"no": "337",
@@ -7192,7 +9438,6 @@
 		"name": "Aperanat",
 		"dynasty": "15",
 		"order": "70",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7205,7 +9450,8 @@
 		"description": null,
 		"VON": "116–117",
 		"DDB": "60–61",
-		"LPR": "82"
+		"LPR": "82",
+		"reigns": [{}]
 	},
 	{
 		"no": "338",
@@ -7213,7 +9459,6 @@
 		"name": "Semqen",
 		"dynasty": "15",
 		"order": "71",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7226,7 +9471,8 @@
 		"description": null,
 		"VON": "116–117",
 		"DDB": "378",
-		"LPR": "81"
+		"LPR": "81",
+		"reigns": [{}]
 	},
 	{
 		"no": "339",
@@ -7234,7 +9480,6 @@
 		"name": "Sakir-Har",
 		"dynasty": "15",
 		"order": "2",
-
 		"reg_start": "1621",
 		"reg_slut": null,
 		"reign": "",
@@ -7247,7 +9492,8 @@
 		"description": null,
 		"VON": "116–117",
 		"DDB": "346",
-		"LPR": "82"
+		"LPR": "82",
+		"reigns": [{}]
 	},
 	{
 		"no": "340",
@@ -7255,7 +9501,6 @@
 		"name": "Sharek",
 		"dynasty": "15",
 		"order": "73",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7266,7 +9511,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "420–421"
+		"DDB": "420–421",
+		"reigns": [{}]
 	},
 	{
 		"no": "341",
@@ -7274,7 +9520,6 @@
 		"name": "Pepi III",
 		"dynasty": "16",
 		"order": "70",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7286,7 +9531,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "342",
@@ -7294,7 +9540,6 @@
 		"name": "Nebmaatra",
 		"dynasty": "16",
 		"order": "71",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7305,7 +9550,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": "244"
+		"DDB": "244",
+		"reigns": [{}]
 	},
 	{
 		"no": "343",
@@ -7313,7 +9559,6 @@
 		"name": "Anetjerira",
 		"dynasty": "16",
 		"order": "72",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7324,7 +9569,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "344",
@@ -7332,7 +9578,6 @@
 		"name": "Meribra",
 		"dynasty": "16",
 		"order": "73",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7343,7 +9588,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "345",
@@ -7351,7 +9597,6 @@
 		"name": "Nubankhra",
 		"dynasty": "16",
 		"order": "74",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7362,7 +9607,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "346",
@@ -7370,7 +9616,6 @@
 		"name": "Nikara II",
 		"dynasty": "16",
 		"order": "75",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7381,7 +9626,8 @@
 		"meta2": "",
 		"image": "",
 		"description": null,
-		"DDB": null
+		"DDB": null,
+		"reigns": [{}]
 	},
 	{
 		"no": "347",
@@ -7389,7 +9635,6 @@
 		"name": "Mentuhotep V",
 		"dynasty": "13",
 		"order": "49",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7402,7 +9647,8 @@
 		"description": null,
 		"VON": "104–105",
 		"DDB": "231–232",
-		"LPR": "70"
+		"LPR": "70",
+		"reigns": [{}]
 	},
 	{
 		"no": "348",
@@ -7410,7 +9656,6 @@
 		"name": "Ibi",
 		"dynasty": "13",
 		"order": "51",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7423,7 +9668,8 @@
 		"description": null,
 		"VON": "100–101",
 		"DDB": "132–133",
-		"LPR": "71"
+		"LPR": "71",
+		"reigns": [{}]
 	},
 	{
 		"no": "349",
@@ -7431,7 +9677,6 @@
 		"name": "Hor II",
 		"dynasty": "13",
 		"order": "52",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7444,7 +9689,8 @@
 		"description": null,
 		"VON": "100–101",
 		"DDB": null,
-		"LPR": "71"
+		"LPR": "71",
+		"reigns": [{}]
 	},
 	{
 		"no": "350",
@@ -7452,7 +9698,6 @@
 		"name": "Se..kara",
 		"dynasty": "13",
 		"order": "53",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7465,7 +9710,8 @@
 		"description": null,
 		"VON": "100–101",
 		"DDB": "360–361",
-		"LPR": "71"
+		"LPR": "71",
+		"reigns": [{}]
 	},
 	{
 		"no": "351",
@@ -7473,7 +9719,6 @@
 		"name": "Sankhptahi",
 		"dynasty": "13",
 		"order": "54",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7486,7 +9731,8 @@
 		"description": null,
 		"VON": "106–107",
 		"DDB": "349",
-		"LPR": "71–72"
+		"LPR": "71–72",
+		"reigns": [{}]
 	},
 	{
 		"no": "352",
@@ -7494,7 +9740,6 @@
 		"name": "Senebmiu",
 		"dynasty": "13",
 		"order": "72",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7508,7 +9753,8 @@
 		"G18": "53–54",
 		"VON": "100–101",
 		"DDB": "381–382",
-		"LPR": "73"
+		"LPR": "73",
+		"reigns": [{}]
 	},
 	{
 		"no": "353",
@@ -7516,7 +9762,6 @@
 		"name": "Sewadjkara III",
 		"dynasty": "14",
 		"order": "11",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7530,7 +9775,12 @@
 		"G18": "58",
 		"VON": "108–109",
 		"DDB": "418",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "1y ..."
+			}
+		]
 	},
 	{
 		"no": "354",
@@ -7538,7 +9788,6 @@
 		"name": "Nebdjefara",
 		"dynasty": "14",
 		"order": "12",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7552,7 +9801,12 @@
 		"G18": "58",
 		"VON": "108–109",
 		"DDB": "239",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "1y ..."
+			}
+		]
 	},
 	{
 		"no": "355",
@@ -7560,7 +9814,6 @@
 		"name": "Webenra",
 		"dynasty": "14",
 		"order": "13",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7574,7 +9827,12 @@
 		"G18": "59",
 		"VON": "108–109",
 		"DDB": null,
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "0y ..."
+			}
+		]
 	},
 	{
 		"no": "356",
@@ -7582,7 +9840,6 @@
 		"name": "..webenra",
 		"dynasty": "14",
 		"order": "16",
-
 		"reg_start": null,
 		"reg_slut": "1690",
 		"reign": "",
@@ -7596,7 +9853,12 @@
 		"G18": "60",
 		"VON": "108–109",
 		"DDB": null,
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "0y 3m ?d"
+			}
+		]
 	},
 	{
 		"no": "357",
@@ -7604,7 +9866,6 @@
 		"name": "Awibra",
 		"dynasty": "14",
 		"order": "17",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7618,7 +9879,12 @@
 		"G18": "60",
 		"VON": "108–109",
 		"DDB": "61–62",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "... ?m 18d"
+			}
+		]
 	},
 	{
 		"no": "358",
@@ -7626,7 +9892,6 @@
 		"name": "Heribra",
 		"dynasty": "14",
 		"order": "18",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7640,7 +9905,12 @@
 		"G18": "60",
 		"VON": "108–109",
 		"DDB": "111–112",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "... 29d"
+			}
+		]
 	},
 	{
 		"no": "359",
@@ -7648,7 +9918,6 @@
 		"name": "Nebsenra",
 		"dynasty": "14",
 		"order": "19",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7662,7 +9931,12 @@
 		"G18": "61",
 		"VON": "108–109",
 		"DDB": "247–248",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [
+			{
+				"r_turin": "... 5m 20d"
+			}
+		]
 	},
 	{
 		"no": "360",
@@ -7670,7 +9944,6 @@
 		"name": "Sekheperenra",
 		"dynasty": "14",
 		"order": "22",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7684,7 +9957,12 @@
 		"G18": "61",
 		"VON": "110–111",
 		"DDB": "374",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [
+			{
+				"r_turin": "0y 2m 1-5d"
+			}
+		]
 	},
 	{
 		"no": "361",
@@ -7692,7 +9970,6 @@
 		"name": "Djedkherura",
 		"dynasty": "14",
 		"order": "23",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7706,7 +9983,12 @@
 		"G18": "62",
 		"VON": "110–111",
 		"DDB": "87–88",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [
+			{
+				"r_turin": "0y 2m 5d"
+			}
+		]
 	},
 	{
 		"no": "362",
@@ -7714,7 +9996,6 @@
 		"name": "Sankhibra II",
 		"dynasty": "14",
 		"order": "24",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7728,7 +10009,12 @@
 		"G18": "62",
 		"VON": "110–111",
 		"DDB": "353",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [
+			{
+				"r_turin": "... 19d"
+			}
+		]
 	},
 	{
 		"no": "363",
@@ -7736,7 +10022,6 @@
 		"name": "Hordjedef",
 		"dynasty": "4",
 		"order": "9",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7747,7 +10032,8 @@
 		"meta2": "",
 		"image": "",
 		"description": "Hordjedef was a son of Khufu and half-brother of pharaohs Radjedef and Khafra. His name is mentioned on an inscription in Wadi Hammamat, written after the names of Khufu, Radjedef and Khafra, preceding the name of another of his brothers, Baufra. There is no evidence that either Hordjedef or Baufra ruled as a pharaoh, even though only pharaohs' names were written in cartouches during the 4th dynasty. The name appears with an added Ra sign, which implies that the inscription was not contemporary, but inscribed later, likely during the Middle Kingdom.",
-		"DDB": "80–81"
+		"DDB": "80–81",
+		"reigns": [{}]
 	},
 	{
 		"no": "364",
@@ -7755,7 +10041,6 @@
 		"name": "..djefara",
 		"dynasty": "14",
 		"order": "15",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7769,7 +10054,8 @@
 		"G18": "59",
 		"VON": "108–109",
 		"DDB": "89–90",
-		"LPR": "76"
+		"LPR": "76",
+		"reigns": [{}]
 	},
 	{
 		"no": "365",
@@ -7777,7 +10063,6 @@
 		"name": "Shoshenq IV",
 		"dynasty": "22",
 		"order": "8",
-
 		"reg_start": "798",
 		"reg_slut": "785",
 		"reign": "",
@@ -7792,7 +10077,8 @@
 		"bibliography": null,
 		"annan_dynasti": "IV or V",
 		"DDB": null,
-		"LPR": "150"
+		"LPR": "150",
+		"reigns": [{}]
 	},
 	{
 		"no": "366",
@@ -7800,7 +10086,6 @@
 		"name": "Nefertum..ra",
 		"dynasty": "14",
 		"order": "25",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7814,7 +10099,8 @@
 		"G18": "62",
 		"VON": "110–111",
 		"DDB": "275",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [{}]
 	},
 	{
 		"no": "367",
@@ -7822,7 +10108,6 @@
 		"name": "Sekhem..ra",
 		"dynasty": "14",
 		"order": "26",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7836,7 +10121,8 @@
 		"G18": "62",
 		"VON": "110–111",
 		"DDB": null,
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [{}]
 	},
 	{
 		"no": "368",
@@ -7844,7 +10130,6 @@
 		"name": "Kakemura",
 		"dynasty": "14",
 		"order": "27",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7858,7 +10143,8 @@
 		"G18": "63",
 		"VON": "110–111",
 		"DDB": "161–162",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [{}]
 	},
 	{
 		"no": "369",
@@ -7866,7 +10152,6 @@
 		"name": "Neferibra",
 		"dynasty": "14",
 		"order": "28",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7880,7 +10165,8 @@
 		"G18": "63",
 		"VON": "110–111",
 		"DDB": "257–258",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [{}]
 	},
 	{
 		"no": "370",
@@ -7888,7 +10174,6 @@
 		"name": "I..ra",
 		"dynasty": "14",
 		"order": "29",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7902,7 +10187,8 @@
 		"G18": "63",
 		"VON": "110–111",
 		"DDB": "155",
-		"LPR": "77"
+		"LPR": "77",
+		"reigns": [{}]
 	},
 	{
 		"no": "371",
@@ -7910,7 +10196,6 @@
 		"name": "Khakara",
 		"dynasty": "14",
 		"order": "30",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7924,7 +10209,8 @@
 		"G18": "64",
 		"VON": "110–111",
 		"DDB": "172",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "372",
@@ -7932,7 +10218,6 @@
 		"name": "Akara",
 		"dynasty": "14",
 		"order": "31",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7946,7 +10231,8 @@
 		"G18": "64",
 		"VON": "110–111",
 		"DDB": "12",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "373",
@@ -7954,7 +10240,6 @@
 		"name": "Hapu",
 		"dynasty": "14",
 		"order": "32",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7968,7 +10253,8 @@
 		"G18": "64",
 		"VON": "110–111",
 		"DDB": "102–103",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "374",
@@ -7976,7 +10262,6 @@
 		"name": "Anati",
 		"dynasty": "14",
 		"order": "33",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -7989,7 +10274,8 @@
 		"description": null,
 		"VON": "110–111",
 		"DDB": "54",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "375",
@@ -7997,7 +10283,6 @@
 		"name": "Babnum",
 		"dynasty": "14",
 		"order": "34",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8010,7 +10295,8 @@
 		"description": null,
 		"VON": "110–111",
 		"DDB": "70–71",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "376",
@@ -8018,7 +10304,6 @@
 		"name": "Senefer..ra",
 		"dynasty": "14",
 		"order": "43",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8031,7 +10316,8 @@
 		"description": null,
 		"VON": "112–113",
 		"DDB": "385–386",
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "377",
@@ -8039,7 +10325,6 @@
 		"name": "Men..ra",
 		"dynasty": "14",
 		"order": "44",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8052,7 +10337,8 @@
 		"description": null,
 		"VON": "112–113",
 		"DDB": null,
-		"LPR": "78"
+		"LPR": "78",
+		"reigns": [{}]
 	},
 	{
 		"no": "378",
@@ -8060,7 +10346,6 @@
 		"name": "Djed..ra",
 		"dynasty": "14",
 		"order": "45",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8073,7 +10358,8 @@
 		"description": null,
 		"VON": "112–113",
 		"DDB": "88–89",
-		"LPR": "79"
+		"LPR": "79",
+		"reigns": [{}]
 	},
 	{
 		"no": "379",
@@ -8081,7 +10367,6 @@
 		"name": "Inek..",
 		"dynasty": "14",
 		"order": "49",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8095,7 +10380,8 @@
 		"G18": "69",
 		"VON": "120–121",
 		"DDB": "136–137",
-		"LPR": "79"
+		"LPR": "79",
+		"reigns": [{}]
 	},
 	{
 		"no": "380",
@@ -8103,7 +10389,6 @@
 		"name": "A..",
 		"dynasty": "14",
 		"order": "50",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8116,7 +10401,8 @@
 		"description": null,
 		"VON": "120–121",
 		"DDB": "4",
-		"LPR": "79"
+		"LPR": "79",
+		"reigns": [{}]
 	},
 	{
 		"no": "381",
@@ -8124,7 +10410,6 @@
 		"name": "Ap..",
 		"dynasty": "14",
 		"order": "51",
-
 		"reg_start": null,
 		"reg_slut": null,
 		"reign": "",
@@ -8138,7 +10423,8 @@
 		"G18": "69",
 		"VON": "120–121",
 		"DDB": "57",
-		"LPR": "79"
+		"LPR": "79",
+		"reigns": [{}]
 	},
 	{
 		"no": "888",

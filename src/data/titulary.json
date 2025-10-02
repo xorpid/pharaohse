@@ -1,0 +1,2648 @@
+[
+	{
+		"farao": 8,
+		"titel": 1,
+		"gname": "Narmer",
+		"glyph": "01-01-01"
+	},
+	{
+		"farao": 8,
+		"titel": 4,
+		"gname": "Meni*",
+		"glyph": "01-01-04"
+	},
+	{
+		"farao": 9,
+		"titel": 1,
+		"gname": "Aha",
+		"glyph": "01-02-03"
+	},
+	{
+		"farao": 9,
+		"titel": 4,
+		"gname": "Teti*",
+		"glyph": "01-02-02"
+	},
+	{
+		"farao": 10,
+		"titel": 1,
+		"gname": "Djer",
+		"glyph": "01-03-01"
+	},
+	{
+		"farao": 10,
+		"titel": 4,
+		"gname": "Iteti*",
+		"glyph": "01-03-02"
+	},
+	{
+		"farao": 11,
+		"titel": 1,
+		"gname": "Djet",
+		"glyph": "01-04-01"
+	},
+	{
+		"farao": 11,
+		"titel": 4,
+		"gname": "Ita*",
+		"glyph": "01-04-03"
+	},
+	{
+		"farao": 12,
+		"titel": 1,
+		"gname": "Den",
+		"glyph": "01-05-01"
+	},
+	{
+		"farao": 12,
+		"titel": 4,
+		"gname": "Sepati*",
+		"glyph": "01-05-02"
+	},
+	{
+		"farao": 13,
+		"titel": 1,
+		"gname": "Adjib",
+		"glyph": "01-06-01"
+	},
+	{
+		"farao": 13,
+		"titel": 4,
+		"gname": "Mery biap*",
+		"glyph": "01-06-03"
+	},
+	{
+		"farao": 14,
+		"titel": 1,
+		"gname": "Semer khet",
+		"glyph": "01-07-01"
+	},
+	{
+		"farao": 14,
+		"titel": 4,
+		"gname": "Semsu*",
+		"glyph": "01-07-02"
+	},
+	{
+		"farao": 15,
+		"titel": 1,
+		"gname": "Qa'a",
+		"glyph": "01-08-01"
+	},
+	{
+		"farao": 15,
+		"titel": 4,
+		"gname": "Qebeh*",
+		"glyph": "01-08-03"
+	},
+	{
+		"farao": 16,
+		"titel": 1,
+		"gname": "Hotep sekhemwy",
+		"glyph": "02-01-01"
+	},
+	{
+		"farao": 16,
+		"titel": 4,
+		"gname": "Bedjau*",
+		"glyph": "02-01-03"
+	},
+	{
+		"farao": 17,
+		"titel": 1,
+		"gname": "Neb Ra",
+		"glyph": "02-02-01"
+	},
+	{
+		"farao": 17,
+		"titel": 4,
+		"gname": "Kakau*",
+		"glyph": "02-02-03"
+	},
+	{
+		"farao": 18,
+		"titel": 1,
+		"gname": "Ni netjer",
+		"glyph": "02-03-01"
+	},
+	{
+		"farao": 18,
+		"titel": 4,
+		"gname": "Ba netjer*",
+		"glyph": "02-03-03"
+	},
+	{
+		"farao": 19,
+		"titel": 4,
+		"gname": "Wadjenes*",
+		"glyph": "02-04-01"
+	},
+	{
+		"farao": 20,
+		"titel": 4,
+		"gname": "Senedj*",
+		"glyph": "02-05-01"
+	},
+	{
+		"farao": 21,
+		"titel": 1,
+		"gname": "Sekhem ib",
+		"glyph": "02-06-01"
+	},
+	{
+		"farao": 21,
+		"titel": 1,
+		"gname": "Sekhem ib per en Maat",
+		"glyph": "02-06-02"
+	},
+	{
+		"farao": 22,
+		"titel": 1,
+		"gname": "<i>Seth</i> Per ib sen",
+		"glyph": "02-07-01"
+	},
+	{
+		"farao": 22,
+		"titel": 4,
+		"gname": "Per ib sen",
+		"glyph": "02-07-03"
+	},
+	{
+		"farao": 23,
+		"titel": 1,
+		"gname": "Snefer ka",
+		"glyph": "02-08-03"
+	},
+	{
+		"farao": 23,
+		"titel": 5,
+		"gname": "Nefer ka Ra*",
+		"glyph": "02-08-02"
+	},
+	{
+		"farao": 26,
+		"titel": 1,
+		"gname": "Kha sekhemwy",
+		"glyph": "02-11-01"
+	},
+	{
+		"farao": 26,
+		"titel": 4,
+		"gname": "Bebety*",
+		"glyph": "02-11-08"
+	},
+	{
+		"farao": 28,
+		"titel": 1,
+		"gname": "Netjery khet",
+		"glyph": "03-02-01"
+	},
+	{
+		"farao": 28,
+		"titel": 4,
+		"gname": "Djoser*",
+		"glyph": "03-02-05"
+	},
+	{
+		"farao": 29,
+		"titel": 1,
+		"gname": "Sekhem khet",
+		"glyph": "03-03-01"
+	},
+	{
+		"farao": 29,
+		"titel": 4,
+		"gname": "Teti*",
+		"glyph": "03-03-04"
+	},
+	{
+		"farao": 34,
+		"titel": 1,
+		"gname": "Kha ba",
+		"glyph": "03-08-01"
+	},
+	{
+		"farao": 35,
+		"titel": 1,
+		"gname": "Neb Maat",
+		"glyph": "04-01-01"
+	},
+	{
+		"farao": 35,
+		"titel": 4,
+		"gname": "Sneferu",
+		"glyph": "04-01-06"
+	},
+	{
+		"farao": 36,
+		"titel": 1,
+		"gname": "Medjedu",
+		"glyph": "04-02-01"
+	},
+	{
+		"farao": 36,
+		"titel": 4,
+		"gname": "Khufu",
+		"glyph": "04-02-08"
+	},
+	{
+		"farao": 37,
+		"titel": 1,
+		"gname": "Kheper",
+		"glyph": "04-03-01"
+	},
+	{
+		"farao": 37,
+		"titel": 4,
+		"gname": "Ra djedef",
+		"glyph": "04-03-04"
+	},
+	{
+		"farao": 38,
+		"titel": 1,
+		"gname": "User ib",
+		"glyph": "04-04-01"
+	},
+	{
+		"farao": 38,
+		"titel": 4,
+		"gname": "Khaf Ra",
+		"glyph": "04-04-07"
+	},
+	{
+		"farao": 40,
+		"titel": 1,
+		"gname": "Ka khet",
+		"glyph": "04-06-01"
+	},
+	{
+		"farao": 40,
+		"titel": 4,
+		"gname": "Men ka Ra",
+		"glyph": "04-06-08"
+	},
+	{
+		"farao": 41,
+		"titel": 1,
+		"gname": "Shepses khet",
+		"glyph": "04-07-01"
+	},
+	{
+		"farao": 41,
+		"titel": 4,
+		"gname": "Shepses kaf",
+		"glyph": "04-07-03"
+	},
+	{
+		"farao": 43,
+		"titel": 1,
+		"gname": "Iri Maat",
+		"glyph": "05-01-01"
+	},
+	{
+		"farao": 43,
+		"titel": 4,
+		"gname": "User kaf",
+		"glyph": "05-01-05"
+	},
+	{
+		"farao": 44,
+		"titel": 1,
+		"gname": "Neb khau",
+		"glyph": "05-02-01"
+	},
+	{
+		"farao": 44,
+		"titel": 4,
+		"gname": "Sahu Ra",
+		"glyph": "05-02-04"
+	},
+	{
+		"farao": 45,
+		"titel": 1,
+		"gname": "User khau",
+		"glyph": "05-03-01"
+	},
+	{
+		"farao": 45,
+		"titel": 4,
+		"gname": "Nefer ir ka Ra",
+		"glyph": "05-03-05"
+	},
+	{
+		"farao": 45,
+		"titel": 5,
+		"gname": "Kakai",
+		"glyph": "05-03-06"
+	},
+	{
+		"farao": 46,
+		"titel": 1,
+		"gname": "Sekhem khau",
+		"glyph": "05-04-01"
+	},
+	{
+		"farao": 46,
+		"titel": 4,
+		"gname": "Shepses ka Ra",
+		"glyph": "05-04-02"
+	},
+	{
+		"farao": 46,
+		"titel": 5,
+		"gname": "Netjer user",
+		"glyph": "05-04-03"
+	},
+	{
+		"farao": 47,
+		"titel": 1,
+		"gname": "Nefer khau",
+		"glyph": "05-05-01"
+	},
+	{
+		"farao": 47,
+		"titel": 4,
+		"gname": "Neferef Ra",
+		"glyph": "05-05-04"
+	},
+	{
+		"farao": 47,
+		"titel": 5,
+		"gname": "Isi",
+		"glyph": "05-05-06"
+	},
+	{
+		"farao": 48,
+		"titel": 1,
+		"gname": "Set ib tawy",
+		"glyph": "05-06-01"
+	},
+	{
+		"farao": 48,
+		"titel": 4,
+		"gname": "Ni user Ra",
+		"glyph": "05-06-04"
+	},
+	{
+		"farao": 48,
+		"titel": 5,
+		"gname": "Ini",
+		"glyph": "05-06-05"
+	},
+	{
+		"farao": 49,
+		"titel": 1,
+		"gname": "Men khau",
+		"glyph": "05-07-01"
+	},
+	{
+		"farao": 49,
+		"titel": 4,
+		"gname": "Men kau Hor",
+		"glyph": "05-07-04"
+	},
+	{
+		"farao": 49,
+		"titel": 5,
+		"gname": "Ikau",
+		"glyph": "05-07-07"
+	},
+	{
+		"farao": 50,
+		"titel": 1,
+		"gname": "Djed khau",
+		"glyph": "05-08-01"
+	},
+	{
+		"farao": 50,
+		"titel": 4,
+		"gname": "Djed ka Ra",
+		"glyph": "05-08-05"
+	},
+	{
+		"farao": 50,
+		"titel": 5,
+		"gname": "Isesi",
+		"glyph": "05-08-07"
+	},
+	{
+		"farao": 52,
+		"titel": 1,
+		"gname": "Sehotep tawy",
+		"glyph": "06-01-01"
+	},
+	{
+		"farao": 52,
+		"titel": 5,
+		"gname": "Teti",
+		"glyph": "06-01-04"
+	},
+	{
+		"farao": 54,
+		"titel": 1,
+		"gname": "Mery tawy",
+		"glyph": "06-03-01"
+	},
+	{
+		"farao": 54,
+		"titel": 4,
+		"gname": "Mery Ra",
+		"glyph": "06-03-04"
+	},
+	{
+		"farao": 54,
+		"titel": 5,
+		"gname": "Pepi",
+		"glyph": "06-03-06"
+	},
+	{
+		"farao": 55,
+		"titel": 1,
+		"gname": "Ankh khau",
+		"glyph": "06-04-01"
+	},
+	{
+		"farao": 55,
+		"titel": 4,
+		"gname": "Mer en Ra",
+		"glyph": "06-04-04"
+	},
+	{
+		"farao": 55,
+		"titel": 5,
+		"gname": "Nemty em saf",
+		"glyph": "06-04-06"
+	},
+	{
+		"farao": 56,
+		"titel": 1,
+		"gname": "Netjer khau",
+		"glyph": "06-05-01"
+	},
+	{
+		"farao": 56,
+		"titel": 4,
+		"gname": "Nefer ka Ra*",
+		"glyph": "06-05-05"
+	},
+	{
+		"farao": 56,
+		"titel": 5,
+		"gname": "Pepi",
+		"glyph": "06-05-06"
+	},
+	{
+		"farao": 73,
+		"titel": 1,
+		"gname": "Netjer bau",
+		"glyph": "08-16-02"
+	},
+	{
+		"farao": 73,
+		"titel": 4,
+		"gname": "Nefer kau Hor",
+		"glyph": "08-16-01"
+	},
+	{
+		"farao": 73,
+		"titel": 5,
+		"gname": "Khuwihapi",
+		"glyph": "08-16-03"
+	},
+	{
+		"farao": 75,
+		"titel": 1,
+		"gname": "Mer ib tawy",
+		"glyph": "09-01-01"
+	},
+	{
+		"farao": 75,
+		"titel": 4,
+		"gname": "Mer ib Ra",
+		"glyph": "09-01-06"
+	},
+	{
+		"farao": 75,
+		"titel": 5,
+		"gname": "Khety",
+		"glyph": "09-01-08"
+	},
+	{
+		"farao": 84,
+		"titel": 1,
+		"gname": "Wah ankh",
+		"glyph": "11-03-01"
+	},
+	{
+		"farao": 84,
+		"titel": 4,
+		"gname": "Sa Ra, Intef",
+		"glyph": "11-03-06"
+	},
+	{
+		"farao": 84,
+		"titel": 5,
+		"gname": "<i>Sa Ra</i> Intef aa",
+		"glyph": "11-03-02"
+	},
+	{
+		"farao": 86,
+		"titel": 1,
+		"gname": "Sema tawy",
+		"glyph": "11-05-01"
+	},
+	{
+		"farao": 86,
+		"titel": 4,
+		"gname": "Neb hapet Ra",
+		"glyph": "11-05-07"
+	},
+	{
+		"farao": 86,
+		"titel": 5,
+		"gname": "Mentuhotep",
+		"glyph": "11-05-12x"
+	},
+	{
+		"farao": 87,
+		"titel": 1,
+		"gname": "Sankh tawyf",
+		"glyph": "11-06-01"
+	},
+	{
+		"farao": 87,
+		"titel": 4,
+		"gname": "Sankh ka Ra",
+		"glyph": "11-06-05"
+	},
+	{
+		"farao": 87,
+		"titel": 5,
+		"gname": "Mentuhotep",
+		"glyph": "11-06-08"
+	},
+	{
+		"farao": 88,
+		"titel": 1,
+		"gname": "Neb tawy",
+		"glyph": "11-07-01"
+	},
+	{
+		"farao": 88,
+		"titel": 4,
+		"gname": "Neb tawy Ra",
+		"glyph": "11-07-04"
+	},
+	{
+		"farao": 88,
+		"titel": 5,
+		"gname": "Mentuhotep",
+		"glyph": "11-07-05"
+	},
+	{
+		"farao": 89,
+		"titel": 1,
+		"gname": "Wehem mesut",
+		"glyph": "12-01-02"
+	},
+	{
+		"farao": 89,
+		"titel": 4,
+		"gname": "Sehotep ib Ra",
+		"glyph": "12-01-06"
+	},
+	{
+		"farao": 89,
+		"titel": 5,
+		"gname": "Amenemhat",
+		"glyph": "12-01-14"
+	},
+	{
+		"farao": 90,
+		"titel": 1,
+		"gname": "Ankh mesut",
+		"glyph": "12-02-01"
+	},
+	{
+		"farao": 90,
+		"titel": 4,
+		"gname": "Kheper ka Ra",
+		"glyph": "12-02-05"
+	},
+	{
+		"farao": 90,
+		"titel": 5,
+		"gname": "Senusret",
+		"glyph": "12-02-06"
+	},
+	{
+		"farao": 91,
+		"titel": 1,
+		"gname": "Heken em Maat",
+		"glyph": "12-03-01"
+	},
+	{
+		"farao": 91,
+		"titel": 4,
+		"gname": "Nebu kau Ra",
+		"glyph": "12-03-05"
+	},
+	{
+		"farao": 91,
+		"titel": 5,
+		"gname": "Amenemhat",
+		"glyph": "12-03-06"
+	},
+	{
+		"farao": 92,
+		"titel": 1,
+		"gname": "Seshemu tawy",
+		"glyph": "12-04-01"
+	},
+	{
+		"farao": 92,
+		"titel": 4,
+		"gname": "Kha kheper Ra",
+		"glyph": "12-04-04"
+	},
+	{
+		"farao": 92,
+		"titel": 5,
+		"gname": "Senusret",
+		"glyph": "12-04-05"
+	},
+	{
+		"farao": 93,
+		"titel": 1,
+		"gname": "Netjer kheperu",
+		"glyph": "12-05-01"
+	},
+	{
+		"farao": 93,
+		"titel": 4,
+		"gname": "Kha kau Ra",
+		"glyph": "12-05-05"
+	},
+	{
+		"farao": 93,
+		"titel": 5,
+		"gname": "Senusret",
+		"glyph": "12-05-07"
+	},
+	{
+		"farao": 94,
+		"titel": 1,
+		"gname": "Aa bau",
+		"glyph": "12-06-01"
+	},
+	{
+		"farao": 94,
+		"titel": 4,
+		"gname": "Ni Maat Ra",
+		"glyph": "12-06-10"
+	},
+	{
+		"farao": 94,
+		"titel": 5,
+		"gname": "Amenemhat",
+		"glyph": "12-06-06"
+	},
+	{
+		"farao": 95,
+		"titel": 1,
+		"gname": "Kheper kheperu",
+		"glyph": "12-07-01"
+	},
+	{
+		"farao": 95,
+		"titel": 4,
+		"gname": "Maa kheru Ra",
+		"glyph": "12-07-04"
+	},
+	{
+		"farao": 95,
+		"titel": 5,
+		"gname": "Amenemhat",
+		"glyph": "12-07-05"
+	},
+	{
+		"farao": 96,
+		"titel": 1,
+		"gname": "Meryt Ra",
+		"glyph": "12-08-01"
+	},
+	{
+		"farao": 96,
+		"titel": 4,
+		"gname": "Sobek ka Ra",
+		"glyph": "12-08-04"
+	},
+	{
+		"farao": 96,
+		"titel": 5,
+		"gname": "Sobek neferu Ra",
+		"glyph": "12-08-05"
+	},
+	{
+		"farao": 97,
+		"titel": 1,
+		"gname": "Menekh..",
+		"glyph": "13-01-01"
+	},
+	{
+		"farao": 97,
+		"titel": 4,
+		"gname": "Sekhem Ra khu tawy",
+		"glyph": "13-01-03"
+	},
+	{
+		"farao": 97,
+		"titel": 5,
+		"gname": "Amenemhat sobek hotep",
+		"glyph": "13-01-04"
+	},
+	{
+		"farao": 98,
+		"titel": 1,
+		"gname": "Meh ib tawy",
+		"glyph": "13-02-01"
+	},
+	{
+		"farao": 98,
+		"titel": 4,
+		"gname": "Sekhem ka Ra",
+		"glyph": "13-02-03"
+	},
+	{
+		"farao": 98,
+		"titel": 5,
+		"gname": "Amenemhat Sonbef",
+		"glyph": "13-02-04"
+	},
+	{
+		"farao": 100,
+		"titel": 4,
+		"gname": "Sekhem ka Ra",
+		"glyph": "13-04-01"
+	},
+	{
+		"farao": 100,
+		"titel": 5,
+		"gname": "Amenemhat",
+		"glyph": "13-04-04"
+	},
+	{
+		"farao": 104,
+		"titel": 1,
+		"gname": "Seheru tawy",
+		"glyph": "13-08-01"
+	},
+	{
+		"farao": 104,
+		"titel": 4,
+		"gname": "Sankh ib Ra",
+		"glyph": "13-08-05"
+	},
+	{
+		"farao": 104,
+		"titel": 5,
+		"gname": "Ameny Intef Amenemhat",
+		"glyph": "13-08-07"
+	},
+	{
+		"farao": 109,
+		"titel": 1,
+		"gname": "Sema tawy",
+		"glyph": "13-13-01"
+	},
+	{
+		"farao": 109,
+		"titel": 4,
+		"gname": "Kha ankh Ra",
+		"glyph": "13-13-04"
+	},
+	{
+		"farao": 109,
+		"titel": 5,
+		"gname": "Sebek hotep",
+		"glyph": "13-13-06"
+	},
+	{
+		"farao": 111,
+		"titel": 1,
+		"gname": "Hotep ib tawy",
+		"glyph": "13-15-01"
+	},
+	{
+		"farao": 111,
+		"titel": 4,
+		"gname": "Aut ib Ra",
+		"glyph": "13-15-04"
+	},
+	{
+		"farao": 111,
+		"titel": 5,
+		"gname": "Hor",
+		"glyph": "13-15-06x"
+	},
+	{
+		"farao": 112,
+		"titel": 1,
+		"gname": "Kha bau",
+		"glyph": "13-16-05"
+	},
+	{
+		"farao": 112,
+		"titel": 4,
+		"gname": "Sekhem Ra khu tawy",
+		"glyph": "13-16-04"
+	},
+	{
+		"farao": 115,
+		"titel": 1,
+		"gname": "Hery tep tawy",
+		"glyph": "13-19-01"
+	},
+	{
+		"farao": 115,
+		"titel": 4,
+		"gname": "Sedjefa ka Ra",
+		"glyph": "13-19-04x"
+	},
+	{
+		"farao": 115,
+		"titel": 5,
+		"gname": "Kay Amenemhat",
+		"glyph": "13-19-06x"
+	},
+	{
+		"farao": 116,
+		"titel": 1,
+		"gname": "Sekhem netjeru",
+		"glyph": "13-20-01"
+	},
+	{
+		"farao": 116,
+		"titel": 4,
+		"gname": "Khu tawy Ra*",
+		"glyph": "13-20-04"
+	},
+	{
+		"farao": 116,
+		"titel": 5,
+		"gname": "Wegaf",
+		"glyph": "13-20-07"
+	},
+	{
+		"farao": 121,
+		"titel": 1,
+		"gname": "Khu tawy",
+		"glyph": "13-25-01"
+	},
+	{
+		"farao": 121,
+		"titel": 4,
+		"gname": "Sekhem Ra sewadj tawy",
+		"glyph": "13-25-06"
+	},
+	{
+		"farao": 121,
+		"titel": 5,
+		"gname": "Sobek hotep",
+		"glyph": "13-25-07"
+	},
+	{
+		"farao": 122,
+		"titel": 1,
+		"gname": "Gereg tawy",
+		"glyph": "13-26-01"
+	},
+	{
+		"farao": 122,
+		"titel": 4,
+		"gname": "Kha sekhem Ra",
+		"glyph": "13-26-05"
+	},
+	{
+		"farao": 122,
+		"titel": 5,
+		"gname": "Nefer hotep",
+		"glyph": "13-26-07"
+	},
+	{
+		"farao": 124,
+		"titel": 1,
+		"gname": "Ankh ib tawy",
+		"glyph": "13-28-01"
+	},
+	{
+		"farao": 124,
+		"titel": 4,
+		"gname": "Kha nefer Ra",
+		"glyph": "13-28-05"
+	},
+	{
+		"farao": 124,
+		"titel": 5,
+		"gname": "Sobek hotep",
+		"glyph": "13-28-07"
+	},
+	{
+		"farao": 127,
+		"titel": 4,
+		"gname": "Wah ib Ra",
+		"glyph": "13-31-01"
+	},
+	{
+		"farao": 127,
+		"titel": 5,
+		"gname": "Ib iau",
+		"glyph": "13-31-03"
+	},
+	{
+		"farao": 129,
+		"titel": 4,
+		"gname": "Mer hotep Ra",
+		"glyph": "13-33-02"
+	},
+	{
+		"farao": 129,
+		"titel": 5,
+		"gname": "Ini",
+		"glyph": "13-33-03"
+	},
+	{
+		"farao": 149,
+		"titel": 1,
+		"gname": "Ineq taw",
+		"glyph": "15-04-01"
+	},
+	{
+		"farao": 149,
+		"titel": 4,
+		"gname": "Seuser en Ra",
+		"glyph": "15-04-02"
+	},
+	{
+		"farao": 149,
+		"titel": 5,
+		"gname": "Khyan",
+		"glyph": "15-04-03"
+	},
+	{
+		"farao": 149,
+		"titel": 5,
+		"gname": "<i>Heqa khasut</i>, Khyan",
+		"glyph": "15-04-04"
+	},
+	{
+		"farao": 150,
+		"titel": 1,
+		"gname": "Sehotep tawy",
+		"glyph": "15-05-01"
+	},
+	{
+		"farao": 150,
+		"titel": 4,
+		"gname": "Neb khepesh Ra",
+		"glyph": "15-05-02"
+	},
+	{
+		"farao": 150,
+		"titel": 4,
+		"gname": "Aa qen en Ra",
+		"glyph": "15-05-03"
+	},
+	{
+		"farao": 150,
+		"titel": 4,
+		"gname": "Aa user Ra",
+		"glyph": "15-05-05"
+	},
+	{
+		"farao": 150,
+		"titel": 4,
+		"gname": "Aa user Ra",
+		"glyph": "15-05-04"
+	},
+	{
+		"farao": 150,
+		"titel": 4,
+		"gname": "<i>Heqa en hut Waret</i>, Aa user Ra",
+		"glyph": "15-05-06"
+	},
+	{
+		"farao": 150,
+		"titel": 5,
+		"gname": "Apopi",
+		"glyph": "15-05-07"
+	},
+	{
+		"farao": 150,
+		"titel": 5,
+		"gname": "Apopi",
+		"glyph": "15-05-08"
+	},
+	{
+		"farao": 150,
+		"titel": 5,
+		"gname": "Apopi",
+		"glyph": "15-05-09"
+	},
+	{
+		"farao": 150,
+		"titel": 5,
+		"gname": "Apopi",
+		"glyph": "15-05-10"
+	},
+	{
+		"farao": 151,
+		"titel": 4,
+		"gname": "Hotep ib Ra",
+		"glyph": "15-06-02"
+	},
+	{
+		"farao": 151,
+		"titel": 5,
+		"gname": "Khamudy",
+		"glyph": "15-06-01"
+	},
+	{
+		"farao": 153,
+		"titel": 1,
+		"gname": "Ity em nakhtu",
+		"glyph": "16-02-01"
+	},
+	{
+		"farao": 153,
+		"titel": 4,
+		"gname": "Sekhem Ra semen tawy",
+		"glyph": "16-02-03"
+	},
+	{
+		"farao": 153,
+		"titel": 5,
+		"gname": "Djehuty",
+		"glyph": "16-02-05"
+	},
+	{
+		"farao": 154,
+		"titel": 4,
+		"gname": "Sekhem Ra seuser tawy",
+		"glyph": "16-03-01"
+	},
+	{
+		"farao": 154,
+		"titel": 5,
+		"gname": "Sobek hotep",
+		"glyph": "16-03-03"
+	},
+	{
+		"farao": 155,
+		"titel": 1,
+		"gname": "Wadj khau",
+		"glyph": "16-04-02"
+	},
+	{
+		"farao": 155,
+		"titel": 4,
+		"gname": "Sekhem Ra sankh tawy",
+		"glyph": "16-04-05"
+	},
+	{
+		"farao": 155,
+		"titel": 5,
+		"gname": "Nefer hotep",
+		"glyph": "16-04-06"
+	},
+	{
+		"farao": 157,
+		"titel": 1,
+		"gname": "Sewadj tawy",
+		"glyph": "16-06-01"
+	},
+	{
+		"farao": 157,
+		"titel": 4,
+		"gname": "Sewadj en Ra",
+		"glyph": "16-06-04"
+	},
+	{
+		"farao": 157,
+		"titel": 5,
+		"gname": "Neb iry er au",
+		"glyph": "16-06-05"
+	},
+	{
+		"farao": 162,
+		"titel": 1,
+		"gname": "Wadj khau",
+		"glyph": "16-11-01"
+	},
+	{
+		"farao": 162,
+		"titel": 4,
+		"gname": "Djed hotep Ra",
+		"glyph": "16-11-04"
+	},
+	{
+		"farao": 162,
+		"titel": 5,
+		"gname": "Dedu mesu",
+		"glyph": "16-11-05"
+	},
+	{
+		"farao": 166,
+		"titel": 1,
+		"gname": "Wehem ankh",
+		"glyph": "16-15-01"
+	},
+	{
+		"farao": 166,
+		"titel": 4,
+		"gname": "Senefer ib Ra",
+		"glyph": "16-15-04"
+	},
+	{
+		"farao": 166,
+		"titel": 5,
+		"gname": "Senusret",
+		"glyph": "16-15-06"
+	},
+	{
+		"farao": 167,
+		"titel": 1,
+		"gname": "Wah ankh",
+		"glyph": "17-01-01"
+	},
+	{
+		"farao": 167,
+		"titel": 4,
+		"gname": "Sekhem Ra wah khau",
+		"glyph": "17-01-04"
+	},
+	{
+		"farao": 167,
+		"titel": 5,
+		"gname": "Ra hotep",
+		"glyph": "17-01-06"
+	},
+	{
+		"farao": 168,
+		"titel": 1,
+		"gname": "Hetep netjeru",
+		"glyph": "17-02-01"
+	},
+	{
+		"farao": 168,
+		"titel": 4,
+		"gname": "Sekhem Ra wadj khau",
+		"glyph": "17-02-04"
+	},
+	{
+		"farao": 168,
+		"titel": 5,
+		"gname": "Sobek em saf",
+		"glyph": "17-02-06"
+	},
+	{
+		"farao": 169,
+		"titel": 4,
+		"gname": "Sekhem Ra shed tawy",
+		"glyph": "17-03-01"
+	},
+	{
+		"farao": 169,
+		"titel": 5,
+		"gname": "Sobek em saf",
+		"glyph": "17-03-03"
+	},
+	{
+		"farao": 171,
+		"titel": 1,
+		"gname": "Nefer kheperu",
+		"glyph": "17-05-01"
+	},
+	{
+		"farao": 171,
+		"titel": 4,
+		"gname": "Nub kheper Ra",
+		"glyph": "17-05-05"
+	},
+	{
+		"farao": 171,
+		"titel": 5,
+		"gname": "Intef",
+		"glyph": "17-05-06"
+	},
+	{
+		"farao": 173,
+		"titel": 1,
+		"gname": "Mery Maat",
+		"glyph": "17-07-01"
+	},
+	{
+		"farao": 173,
+		"titel": 4,
+		"gname": "Senakht en Ra",
+		"glyph": "17-07-02"
+	},
+	{
+		"farao": 173,
+		"titel": 5,
+		"gname": "Iah mesu",
+		"glyph": "17-07-05"
+	},
+	{
+		"farao": 174,
+		"titel": 1,
+		"gname": "Kha em Waset",
+		"glyph": "17-08-01"
+	},
+	{
+		"farao": 174,
+		"titel": 4,
+		"gname": "Seqen en Ra",
+		"glyph": "17-08-02"
+	},
+	{
+		"farao": 174,
+		"titel": 5,
+		"gname": "Tao",
+		"glyph": "17-08-06"
+	},
+	{
+		"farao": 175,
+		"titel": 1,
+		"gname": "Kha her nesetef",
+		"glyph": "17-09-01"
+	},
+	{
+		"farao": 175,
+		"titel": 4,
+		"gname": "Wadj kheper Ra",
+		"glyph": "17-09-07"
+	},
+	{
+		"farao": 175,
+		"titel": 4,
+		"gname": "Wadj kheper Ra",
+		"glyph": "17-09-08"
+	},
+	{
+		"farao": 175,
+		"titel": 5,
+		"gname": "Ka mesu",
+		"glyph": "17-09-10"
+	},
+	{
+		"farao": 176,
+		"titel": 1,
+		"gname": "Aa kheperu",
+		"glyph": "18-01-01"
+	},
+	{
+		"farao": 176,
+		"titel": 4,
+		"gname": "Neb pehty Ra",
+		"glyph": "18-01-18"
+	},
+	{
+		"farao": 176,
+		"titel": 5,
+		"gname": "Iah mesu",
+		"glyph": "18-01-12"
+	},
+	{
+		"farao": 177,
+		"titel": 1,
+		"gname": "Kau waf tau",
+		"glyph": "18-02-01"
+	},
+	{
+		"farao": 177,
+		"titel": 4,
+		"gname": "Djoser ka Ra",
+		"glyph": "18-02-04"
+	},
+	{
+		"farao": 177,
+		"titel": 5,
+		"gname": "Amenhotep",
+		"glyph": "18-02-05"
+	},
+	{
+		"farao": 178,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat",
+		"glyph": "18-03-01"
+	},
+	{
+		"farao": 178,
+		"titel": 4,
+		"gname": "Aa kheper ka Ra",
+		"glyph": "18-03-22"
+	},
+	{
+		"farao": 178,
+		"titel": 5,
+		"gname": "Djehutimes",
+		"glyph": "18-03-05"
+	},
+	{
+		"farao": 179,
+		"titel": 1,
+		"gname": "Ka nakht user pehty",
+		"glyph": "18-04-01"
+	},
+	{
+		"farao": 179,
+		"titel": 4,
+		"gname": "Aa kheper en Ra",
+		"glyph": "18-04-04"
+	},
+	{
+		"farao": 179,
+		"titel": 5,
+		"gname": "Djehutimes",
+		"glyph": "18-04-05"
+	},
+	{
+		"farao": 180,
+		"titel": 1,
+		"gname": "Useret kau",
+		"glyph": "18-05-01"
+	},
+	{
+		"farao": 180,
+		"titel": 4,
+		"gname": "Maat ka Ra",
+		"glyph": "18-05-13"
+	},
+	{
+		"farao": 180,
+		"titel": 5,
+		"gname": "Khnemet Amun Hat shepsut",
+		"glyph": "18-05-05"
+	},
+	{
+		"farao": 181,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset",
+		"glyph": "18-06-01"
+	},
+	{
+		"farao": 181,
+		"titel": 4,
+		"gname": "Men kheper Ra",
+		"glyph": "18-06-04"
+	},
+	{
+		"farao": 181,
+		"titel": 5,
+		"gname": "Djehutimes",
+		"glyph": "18-06-05"
+	},
+	{
+		"farao": 182,
+		"titel": 1,
+		"gname": "Ka nakht wer pehty",
+		"glyph": "18-07-01"
+	},
+	{
+		"farao": 182,
+		"titel": 4,
+		"gname": "Aa kheperu Ra",
+		"glyph": "18-07-04"
+	},
+	{
+		"farao": 182,
+		"titel": 5,
+		"gname": "Amenhotep",
+		"glyph": "18-07-11"
+	},
+	{
+		"farao": 183,
+		"titel": 1,
+		"gname": "Ka nakht tut khau",
+		"glyph": "18-08-01"
+	},
+	{
+		"farao": 183,
+		"titel": 4,
+		"gname": "Men kheperu Ra",
+		"glyph": "18-08-04"
+	},
+	{
+		"farao": 183,
+		"titel": 5,
+		"gname": "Djehutimes",
+		"glyph": "18-08-05"
+	},
+	{
+		"farao": 184,
+		"titel": 1,
+		"gname": "Ka nakht kha em Maat",
+		"glyph": "18-09-01"
+	},
+	{
+		"farao": 184,
+		"titel": 4,
+		"gname": "Neb Maat Ra",
+		"glyph": "18-09-16"
+	},
+	{
+		"farao": 184,
+		"titel": 5,
+		"gname": "Amenhotep, <i>heqa Waset</i>",
+		"glyph": "18-09-05"
+	},
+	{
+		"farao": 185,
+		"titel": 1,
+		"gname": "Ka nakht mery Aten",
+		"glyph": "18-10-07"
+	},
+	{
+		"farao": 185,
+		"titel": 4,
+		"gname": "Nefer kheperu Ra, <i>wa en Ra</i>",
+		"glyph": "18-10-04"
+	},
+	{
+		"farao": 185,
+		"titel": 5,
+		"gname": "Akh en Aten",
+		"glyph": "18-10-06"
+	},
+	{
+		"farao": 188,
+		"titel": 1,
+		"gname": "Ka nakht tut mesut",
+		"glyph": "18-13-01"
+	},
+	{
+		"farao": 188,
+		"titel": 4,
+		"gname": "Neb kheperu Ra",
+		"glyph": "18-13-04"
+	},
+	{
+		"farao": 188,
+		"titel": 5,
+		"gname": "Tut ankh Amun",
+		"glyph": "18-13-12"
+	},
+	{
+		"farao": 189,
+		"titel": 1,
+		"gname": "Ka nakht tjehen khau",
+		"glyph": "18-14-01"
+	},
+	{
+		"farao": 189,
+		"titel": 4,
+		"gname": "Kheper kheperu Ra",
+		"glyph": "18-14-11"
+	},
+	{
+		"farao": 189,
+		"titel": 5,
+		"gname": "It netjer Ay",
+		"glyph": "18-14-05"
+	},
+	{
+		"farao": 190,
+		"titel": 1,
+		"gname": "Ka nakht seped sekheru",
+		"glyph": "18-15-01"
+	},
+	{
+		"farao": 190,
+		"titel": 4,
+		"gname": "Djoser kheperu Ra, <i>setep en Ra</i>",
+		"glyph": "18-15-04"
+	},
+	{
+		"farao": 190,
+		"titel": 5,
+		"gname": "Horemhab",
+		"glyph": "18-15-09"
+	},
+	{
+		"farao": 191,
+		"titel": 1,
+		"gname": "Ka nakht wadj nesyt",
+		"glyph": "19-01-01"
+	},
+	{
+		"farao": 191,
+		"titel": 4,
+		"gname": "Men pehty Ra",
+		"glyph": "19-01-07"
+	},
+	{
+		"farao": 191,
+		"titel": 5,
+		"gname": "Ramessu",
+		"glyph": "19-01-05"
+	},
+	{
+		"farao": 192,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset sankh tawy",
+		"glyph": "19-02-10"
+	},
+	{
+		"farao": 192,
+		"titel": 4,
+		"gname": "Men Maat Ra",
+		"glyph": "19-02-04"
+	},
+	{
+		"farao": 192,
+		"titel": 5,
+		"gname": "Seti, <i>mer en Ptah</i>",
+		"glyph": "19-02-66"
+	},
+	{
+		"farao": 193,
+		"titel": 1,
+		"gname": "Ka nakht mery Ra",
+		"glyph": "19-03-01"
+	},
+	{
+		"farao": 193,
+		"titel": 4,
+		"gname": "User Maat Ra,  <i>setep en Ra</i>",
+		"glyph": "19-03-04"
+	},
+	{
+		"farao": 193,
+		"titel": 5,
+		"gname": "Ramessu <i>mery Amun</i>",
+		"glyph": "19-03-05"
+	},
+	{
+		"farao": 194,
+		"titel": 1,
+		"gname": "Ka nakht ha em Maat",
+		"glyph": "19-04-01"
+	},
+	{
+		"farao": 194,
+		"titel": 4,
+		"gname": "Ba en Ra, <i>mery netjeru</i>",
+		"glyph": "19-04-04"
+	},
+	{
+		"farao": 194,
+		"titel": 5,
+		"gname": "Mer en Ptah, <i>hotep her Maat</i>",
+		"glyph": "19-04-05"
+	},
+	{
+		"farao": 195,
+		"titel": 1,
+		"gname": "Ka nakht wer pehty",
+		"glyph": "19-05-01"
+	},
+	{
+		"farao": 195,
+		"titel": 4,
+		"gname": "User kheperu Ra, <i>setep en Ra</i>",
+		"glyph": "19-05-09"
+	},
+	{
+		"farao": 195,
+		"titel": 5,
+		"gname": "Seti <i>mery en Ptah</i>",
+		"glyph": "19-05-17"
+	},
+	{
+		"farao": 196,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat semen tawy",
+		"glyph": "19-06-01"
+	},
+	{
+		"farao": 196,
+		"titel": 4,
+		"gname": "Men mi Ra, <i>setep en Ra</i>",
+		"glyph": "19-06-06"
+	},
+	{
+		"farao": 196,
+		"titel": 5,
+		"gname": "Amenmesse <i>heqa Waset</i>",
+		"glyph": "19-06-08"
+	},
+	{
+		"farao": 197,
+		"titel": 1,
+		"gname": "Ka nakht mery hapy, sankh ta neb em kaef Ra neb",
+		"glyph": "19-07-01"
+	},
+	{
+		"farao": 197,
+		"titel": 4,
+		"gname": "Sekha en Ra, <i>mery Amun</i>",
+		"glyph": "19-07-07"
+	},
+	{
+		"farao": 197,
+		"titel": 5,
+		"gname": "Ramessu si Ptah",
+		"glyph": "19-07-11"
+	},
+	{
+		"farao": 198,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat",
+		"glyph": "19-08-01"
+	},
+	{
+		"farao": 198,
+		"titel": 4,
+		"gname": "Sat Ra meryt en Amun",
+		"glyph": "19-08-05"
+	},
+	{
+		"farao": 198,
+		"titel": 5,
+		"gname": "Tausret",
+		"glyph": "19-08-10"
+	},
+	{
+		"farao": 199,
+		"titel": 1,
+		"gname": "Ka nakht wer pehty",
+		"glyph": "20-01-01"
+	},
+	{
+		"farao": 199,
+		"titel": 4,
+		"gname": "User khau Ra, <i>setep en Ra mery Amun</i>",
+		"glyph": "20-01-06"
+	},
+	{
+		"farao": 199,
+		"titel": 5,
+		"gname": "Set nakht(e), <i>merer Amun-Ra</i>",
+		"glyph": "20-01-14"
+	},
+	{
+		"farao": 200,
+		"titel": 1,
+		"gname": "Ka nakht aa nesyt",
+		"glyph": "20-02-01"
+	},
+	{
+		"farao": 200,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>mery Amun</i>",
+		"glyph": "20-02-22"
+	},
+	{
+		"farao": 200,
+		"titel": 5,
+		"gname": "Ramessu <i>heqa Iunu</i>",
+		"glyph": "20-02-25"
+	},
+	{
+		"farao": 201,
+		"titel": 1,
+		"gname": "Ka nakht ankh em Maat",
+		"glyph": "20-03-01"
+	},
+	{
+		"farao": 201,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Amun</i>",
+		"glyph": "20-03-05"
+	},
+	{
+		"farao": 201,
+		"titel": 5,
+		"gname": "Ramessu <i>heqa Maat mery Amun</i>",
+		"glyph": "20-03-17"
+	},
+	{
+		"farao": 202,
+		"titel": 1,
+		"gname": "Ka nakht men Maat",
+		"glyph": "20-04-01"
+	},
+	{
+		"farao": 202,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>sekheper en Ra</i>",
+		"glyph": "20-04-03"
+	},
+	{
+		"farao": 202,
+		"titel": 5,
+		"gname": "Ramessu <i>Amun her khepeshef mery Amun</i>",
+		"glyph": "20-04-08"
+	},
+	{
+		"farao": 203,
+		"titel": 1,
+		"gname": "Ka nakht aa nakhtu",
+		"glyph": "20-05-03"
+	},
+	{
+		"farao": 203,
+		"titel": 4,
+		"gname": "Neb Maat Ra, <i>mery Amun</i>",
+		"glyph": "20-05-10"
+	},
+	{
+		"farao": 203,
+		"titel": 5,
+		"gname": "Ramessu Amun her khepeshef <i>netjer heqa Iunu</i>",
+		"glyph": "20-05-14"
+	},
+	{
+		"farao": 204,
+		"titel": 1,
+		"gname": "Ka nakht an em nesu",
+		"glyph": "20-06-01"
+	},
+	{
+		"farao": 204,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Ra, mery Amun</i>",
+		"glyph": "20-06-08"
+	},
+	{
+		"farao": 204,
+		"titel": 5,
+		"gname": "Ramessu, <i>ity Amun, heqa netjer Iunu</i>",
+		"glyph": "20-06-12"
+	},
+	{
+		"farao": 205,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>akh en Amun</i>",
+		"glyph": "20-07-01"
+	},
+	{
+		"farao": 205,
+		"titel": 5,
+		"gname": "Ramessu, <i>Seth her khepeshef, mery Amun</i>",
+		"glyph": "20-07-04"
+	},
+	{
+		"farao": 206,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset",
+		"glyph": "20-08-01"
+	},
+	{
+		"farao": 206,
+		"titel": 4,
+		"gname": "Nefer ka Ra, <i>setep en Ra</i>",
+		"glyph": "20-08-04"
+	},
+	{
+		"farao": 206,
+		"titel": 5,
+		"gname": "Ramessu, <i>kha em Waset, mery Amun</i>",
+		"glyph": "20-08-07"
+	},
+	{
+		"farao": 207,
+		"titel": 1,
+		"gname": "Ka nakht sekha en Ra",
+		"glyph": "20-09-01"
+	},
+	{
+		"farao": 207,
+		"titel": 4,
+		"gname": "Kheper maat Ra, <i>setep en Ra</i>",
+		"glyph": "20-09-02"
+	},
+	{
+		"farao": 207,
+		"titel": 5,
+		"gname": "Ramessu, <i>Amun her khepeshef</i>",
+		"glyph": "20-09-04"
+	},
+	{
+		"farao": 208,
+		"titel": 1,
+		"gname": "Ka nakht mery Ra",
+		"glyph": "20-10-01"
+	},
+	{
+		"farao": 208,
+		"titel": 4,
+		"gname": "Men maat Ra, <i>setep en Ptah</i>",
+		"glyph": "20-10-04"
+	},
+	{
+		"farao": 208,
+		"titel": 5,
+		"gname": "Ramessu, <i>kha em Waset, mery Amun, netjer heqa Iunu</i>",
+		"glyph": "20-10-07"
+	},
+	{
+		"farao": 209,
+		"titel": 1,
+		"gname": "Ka nakht mery Ra seuser Amun khepeshef er seqa Maat<br>",
+		"glyph": "21-01-01"
+	},
+	{
+		"farao": 209,
+		"titel": 4,
+		"gname": "Hedj kheper Ra, <i>setep en Ra</i>",
+		"glyph": "21-01-04"
+	},
+	{
+		"farao": 209,
+		"titel": 5,
+		"gname": "Nisu ba-neb-djed <i>mery Amun</i>",
+		"glyph": "21-01-05"
+	},
+	{
+		"farao": 210,
+		"titel": 4,
+		"gname": "Nefer ka Ra <i>heqa Waset</i>",
+		"glyph": "21-02-01"
+	},
+	{
+		"farao": 210,
+		"titel": 5,
+		"gname": "Amen em nesu <i>mery Amun</i>",
+		"glyph": "21-02-03"
+	},
+	{
+		"farao": 211,
+		"titel": 1,
+		"gname": "Ka nakht em ded Amun, user fau, sekha em Waset<br>",
+		"glyph": "21-03-01"
+	},
+	{
+		"farao": 211,
+		"titel": 4,
+		"gname": "Aa kheper Ra, <i>setep en Amun</i>",
+		"glyph": "21-03-04"
+	},
+	{
+		"farao": 211,
+		"titel": 5,
+		"gname": "Pa seba kha en niut <i>mery Amun</i>",
+		"glyph": "21-03-08"
+	},
+	{
+		"farao": 212,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Amun</i>",
+		"glyph": "21-04-01"
+	},
+	{
+		"farao": 212,
+		"titel": 5,
+		"gname": "Amen em ipet",
+		"glyph": "21-04-03"
+	},
+	{
+		"farao": 214,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat",
+		"glyph": "21-06-02"
+	},
+	{
+		"farao": 214,
+		"titel": 4,
+		"gname": "Netjeri kheper Ra, <i>setep en Amun</i>",
+		"glyph": "21-06-03"
+	},
+	{
+		"farao": 214,
+		"titel": 5,
+		"gname": "Siamun",
+		"glyph": "21-06-04"
+	},
+	{
+		"farao": 215,
+		"titel": 4,
+		"gname": "Tit kheperu Ra, <i>setep en Ra</i>",
+		"glyph": "21-07-01"
+	},
+	{
+		"farao": 215,
+		"titel": 5,
+		"gname": "Pa seba kha en niut, <i>mery Amun</i>",
+		"glyph": "21-07-04"
+	},
+	{
+		"farao": 216,
+		"titel": 1,
+		"gname": "Ka nakht mery Ra, sekhaef em nesu er sema tawy",
+		"glyph": "22-01-01"
+	},
+	{
+		"farao": 216,
+		"titel": 4,
+		"gname": "Hedj kheper Ra <i>setep en Ra</i>",
+		"glyph": "22-01-07"
+	},
+	{
+		"farao": 216,
+		"titel": 5,
+		"gname": "Shesheneq <i>mery Amun</i>",
+		"glyph": "22-01-11"
+	},
+	{
+		"farao": 217,
+		"titel": 1,
+		"gname": "Ka nakht mery Ra redjen su Itemu her nesetef er gereg tawy",
+		"glyph": "22-02-09"
+	},
+	{
+		"farao": 217,
+		"titel": 4,
+		"gname": "Sekhem kheper Ra",
+		"glyph": "22-02-05"
+	},
+	{
+		"farao": 217,
+		"titel": 5,
+		"gname": "Userken <i>mery Amun</i>",
+		"glyph": "22-02-07"
+	},
+	{
+		"farao": 219,
+		"titel": 4,
+		"gname": "Hedj kheper Ra, <i>setep en Ra</i>",
+		"glyph": "22-05-01"
+	},
+	{
+		"farao": 219,
+		"titel": 5,
+		"gname": "Takelot <i>mery Amun</i>",
+		"glyph": "22-05-03"
+	},
+	{
+		"farao": 221,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat",
+		"glyph": "22-06-01"
+	},
+	{
+		"farao": 221,
+		"titel": 4,
+		"gname": "User Maat Ra <i>setep en Amun</i>",
+		"glyph": "22-06-17"
+	},
+	{
+		"farao": 221,
+		"titel": 5,
+		"gname": "Userken <i>sa Bastet mery Amun</i>",
+		"glyph": "22-06-23"
+	},
+	{
+		"farao": 222,
+		"titel": 1,
+		"gname": "Ka nakht mesut Ra",
+		"glyph": "22-07-01"
+	},
+	{
+		"farao": 222,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Ra</i>",
+		"glyph": "22-07-06"
+	},
+	{
+		"farao": 222,
+		"titel": 5,
+		"gname": "Shesheneq <i>mery Amun</i>",
+		"glyph": "22-07-13"
+	},
+	{
+		"farao": 223,
+		"titel": 4,
+		"gname": "User maat Ra, <i>setep en Amun</i>",
+		"glyph": "22-09-01"
+	},
+	{
+		"farao": 223,
+		"titel": 5,
+		"gname": "Pami <i>mery Amun</i>",
+		"glyph": "22-09-05"
+	},
+	{
+		"farao": 224,
+		"titel": 1,
+		"gname": "User pehty",
+		"glyph": "22-10-01"
+	},
+	{
+		"farao": 224,
+		"titel": 4,
+		"gname": "Aa kheper Ra",
+		"glyph": "22-10-04"
+	},
+	{
+		"farao": 224,
+		"titel": 5,
+		"gname": "Shoshenq",
+		"glyph": "22-10-10"
+	},
+	{
+		"farao": 225,
+		"titel": 4,
+		"gname": "User maat Ra, <i>setep en Amun</i>",
+		"glyph": "22-11-01"
+	},
+	{
+		"farao": 225,
+		"titel": 5,
+		"gname": "Padibastet <i>sa Bastet mery Amun</i>",
+		"glyph": "22-11-06"
+	},
+	{
+		"farao": 227,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset",
+		"glyph": "36-01-01"
+	},
+	{
+		"farao": 227,
+		"titel": 4,
+		"gname": "Hedj kheper Ra, <i>setep en Amun</i>",
+		"glyph": "36-01-02"
+	},
+	{
+		"farao": 227,
+		"titel": 5,
+		"gname": "Hor sa Aset <i>mery Amun</i>",
+		"glyph": "36-01-03"
+	},
+	{
+		"farao": 228,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset",
+		"glyph": "23-01-01"
+	},
+	{
+		"farao": 228,
+		"titel": 4,
+		"gname": "Hedj kheper Ra, <i>setep en Ra</i>",
+		"glyph": "23-01-02"
+	},
+	{
+		"farao": 228,
+		"titel": 5,
+		"gname": "Takelot",
+		"glyph": "23-01-04"
+	},
+	{
+		"farao": 229,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Amun</i>",
+		"glyph": "23-02-01"
+	},
+	{
+		"farao": 229,
+		"titel": 5,
+		"gname": "Padibastet, <i>mery Amun</i>",
+		"glyph": "23-02-03"
+	},
+	{
+		"farao": 232,
+		"titel": 1,
+		"gname": "Ka nakht kha em Waset",
+		"glyph": "23-05-01"
+	},
+	{
+		"farao": 232,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Amun</i>",
+		"glyph": "23-05-04"
+	},
+	{
+		"farao": 232,
+		"titel": 5,
+		"gname": "Userken, <i>si Aset, mery Amun</i>",
+		"glyph": "23-05-09"
+	},
+	{
+		"farao": 233,
+		"titel": 1,
+		"gname": "Wadj tawy",
+		"glyph": "23-06-01"
+	},
+	{
+		"farao": 233,
+		"titel": 4,
+		"gname": "User Maat Ra, <i>setep en Amun</i>",
+		"glyph": "23-06-04"
+	},
+	{
+		"farao": 233,
+		"titel": 5,
+		"gname": "Tekelet <i>si Aset, mery Amun</i>",
+		"glyph": "23-06-08"
+	},
+	{
+		"farao": 234,
+		"titel": 1,
+		"gname": "Neb maa kheru",
+		"glyph": "23-07-01"
+	},
+	{
+		"farao": 234,
+		"titel": 4,
+		"gname": "User Maat Ra",
+		"glyph": "23-07-03"
+	},
+	{
+		"farao": 234,
+		"titel": 5,
+		"gname": "Rudamun <i>mery Amun</i>",
+		"glyph": "23-07-05"
+	},
+	{
+		"farao": 235,
+		"titel": 1,
+		"gname": "Sema tawy",
+		"glyph": "36-02-01"
+	},
+	{
+		"farao": 235,
+		"titel": 4,
+		"gname": "Men kheper Ra",
+		"glyph": "36-02-04"
+	},
+	{
+		"farao": 235,
+		"titel": 5,
+		"gname": "za Ra, Iny",
+		"glyph": "36-02-05"
+	},
+	{
+		"farao": 236,
+		"titel": 4,
+		"gname": "Nerfer ka Ra",
+		"glyph": "36-03-01"
+	},
+	{
+		"farao": 236,
+		"titel": 5,
+		"gname": "Peftjauawybast",
+		"glyph": "36-03-05"
+	},
+	{
+		"farao": 237,
+		"titel": 1,
+		"gname": "Sia khet",
+		"glyph": "24-01-01"
+	},
+	{
+		"farao": 237,
+		"titel": 4,
+		"gname": "Shepses Ra",
+		"glyph": "24-01-04"
+	},
+	{
+		"farao": 237,
+		"titel": 5,
+		"gname": "Tayef nakht",
+		"glyph": "24-01-05"
+	},
+	{
+		"farao": 238,
+		"titel": 4,
+		"gname": "Wah ka Ra",
+		"glyph": "24-02-01"
+	},
+	{
+		"farao": 238,
+		"titel": 5,
+		"gname": "Bak en ren.ef",
+		"glyph": "24-02-02"
+	},
+	{
+		"farao": 239,
+		"titel": 1,
+		"gname": "Ka nakht kha em Nepet",
+		"glyph": "25-01-01"
+	},
+	{
+		"farao": 239,
+		"titel": 4,
+		"gname": "User maat Ra",
+		"glyph": "25-01-08"
+	},
+	{
+		"farao": 239,
+		"titel": 5,
+		"gname": "Piye",
+		"glyph": "25-01-11"
+	},
+	{
+		"farao": 240,
+		"titel": 1,
+		"gname": "Sebaq tawy",
+		"glyph": "25-02-01"
+	},
+	{
+		"farao": 240,
+		"titel": 4,
+		"gname": "Nefer ka Ra",
+		"glyph": "25-02-04"
+	},
+	{
+		"farao": 240,
+		"titel": 5,
+		"gname": "Sha ba ka",
+		"glyph": "25-02-07"
+	},
+	{
+		"farao": 241,
+		"titel": 1,
+		"gname": "Djed khau",
+		"glyph": "25-03-01"
+	},
+	{
+		"farao": 241,
+		"titel": 4,
+		"gname": "Djed kau Ra",
+		"glyph": "25-03-10"
+	},
+	{
+		"farao": 241,
+		"titel": 5,
+		"gname": "Sha ba ta ka",
+		"glyph": "25-03-12"
+	},
+	{
+		"farao": 242,
+		"titel": 1,
+		"gname": "Qa khau",
+		"glyph": "25-04-01"
+	},
+	{
+		"farao": 242,
+		"titel": 4,
+		"gname": "Khu nefertem Ra",
+		"glyph": "25-04-09"
+	},
+	{
+		"farao": 242,
+		"titel": 5,
+		"gname": "Taharqa",
+		"glyph": "25-04-12"
+	},
+	{
+		"farao": 243,
+		"titel": 1,
+		"gname": "Wah merut",
+		"glyph": "25-05-01"
+	},
+	{
+		"farao": 243,
+		"titel": 4,
+		"gname": "Ba ka Ra",
+		"glyph": "25-05-02"
+	},
+	{
+		"farao": 243,
+		"titel": 5,
+		"gname": "Ta net Amun",
+		"glyph": "25-05-03"
+	},
+	{
+		"farao": 245,
+		"titel": 1,
+		"gname": "Aa ib",
+		"glyph": "26-02-01"
+	},
+	{
+		"farao": 245,
+		"titel": 4,
+		"gname": "Wah ib Ra",
+		"glyph": "26-02-11"
+	},
+	{
+		"farao": 245,
+		"titel": 5,
+		"gname": "Psemtek",
+		"glyph": "26-02-13"
+	},
+	{
+		"farao": 246,
+		"titel": 1,
+		"gname": "Sia ib",
+		"glyph": "26-03-01"
+	},
+	{
+		"farao": 246,
+		"titel": 4,
+		"gname": "Wehem ib Ra",
+		"glyph": "26-03-07"
+	},
+	{
+		"farao": 246,
+		"titel": 5,
+		"gname": "Ni kau",
+		"glyph": "26-03-10"
+	},
+	{
+		"farao": 247,
+		"titel": 1,
+		"gname": "Menekh ib",
+		"glyph": "26-04-01"
+	},
+	{
+		"farao": 247,
+		"titel": 4,
+		"gname": "Nefer ib Ra",
+		"glyph": "26-04-05"
+	},
+	{
+		"farao": 247,
+		"titel": 5,
+		"gname": "Psemtek",
+		"glyph": "26-04-06"
+	},
+	{
+		"farao": 248,
+		"titel": 1,
+		"gname": "Wah ib",
+		"glyph": "26-05-01"
+	},
+	{
+		"farao": 248,
+		"titel": 4,
+		"gname": "Haa ib Ra",
+		"glyph": "26-05-06"
+	},
+	{
+		"farao": 248,
+		"titel": 5,
+		"gname": "Wah ib Ra",
+		"glyph": "26-05-07"
+	},
+	{
+		"farao": 249,
+		"titel": 1,
+		"gname": "Semen Maat",
+		"glyph": "26-06-01"
+	},
+	{
+		"farao": 249,
+		"titel": 4,
+		"gname": "Khnum ib Ra",
+		"glyph": "26-06-15"
+	},
+	{
+		"farao": 249,
+		"titel": 5,
+		"gname": "Iah mesu",
+		"glyph": "26-06-18"
+	},
+	{
+		"farao": 250,
+		"titel": 4,
+		"gname": "Ankh ka en Ra",
+		"glyph": "26-07-01"
+	},
+	{
+		"farao": 250,
+		"titel": 5,
+		"gname": "Psemtek",
+		"glyph": "26-07-03"
+	},
+	{
+		"farao": 252,
+		"titel": 1,
+		"gname": "Sementawy",
+		"glyph": null
+	},
+	{
+		"farao": 252,
+		"titel": 4,
+		"gname": "Seheru ib Ra",
+		"glyph": "27-02-01"
+	},
+	{
+		"farao": 252,
+		"titel": 5,
+		"gname": "Pa di bastet",
+		"glyph": "27-02-02"
+	},
+	{
+		"farao": 253,
+		"titel": 1,
+		"gname": "Menekh ib",
+		"glyph": "27-03-01"
+	},
+	{
+		"farao": 253,
+		"titel": 4,
+		"gname": "Setut Ra",
+		"glyph": "27-03-05"
+	},
+	{
+		"farao": 253,
+		"titel": 5,
+		"gname": "Deriush",
+		"glyph": "27-03-10"
+	},
+	{
+		"farao": 261,
+		"titel": 1,
+		"gname": "Aa ib",
+		"glyph": "29-01-01"
+	},
+	{
+		"farao": 261,
+		"titel": 4,
+		"gname": "Ba en Ra, <i>mery netjeru</i>",
+		"glyph": "29-01-03"
+	},
+	{
+		"farao": 261,
+		"titel": 5,
+		"gname": "Nef aa rud",
+		"glyph": "29-01-05"
+	},
+	{
+		"farao": 262,
+		"titel": 1,
+		"gname": "Aa ib mery tawy",
+		"glyph": "29-02-01"
+	},
+	{
+		"farao": 262,
+		"titel": 4,
+		"gname": "Khnum Maat Ra",
+		"glyph": "29-02-09"
+	},
+	{
+		"farao": 262,
+		"titel": 5,
+		"gname": "Hagar",
+		"glyph": "29-02-14"
+	},
+	{
+		"farao": 263,
+		"titel": 1,
+		"gname": "Aa pehty mar sepu",
+		"glyph": "29-03-01"
+	},
+	{
+		"farao": 263,
+		"titel": 4,
+		"gname": "User Ra, <i>setep en Ptah</i>",
+		"glyph": "29-03-03"
+	},
+	{
+		"farao": 263,
+		"titel": 5,
+		"gname": "Pa sheri en Mut",
+		"glyph": "29-03-05"
+	},
+	{
+		"farao": 266,
+		"titel": 1,
+		"gname": "Tjema a",
+		"glyph": "30-01-01"
+	},
+	{
+		"farao": 266,
+		"titel": 4,
+		"gname": "Kheper ka Ra",
+		"glyph": "30-01-14"
+	},
+	{
+		"farao": 266,
+		"titel": 5,
+		"gname": "Nakht nebef",
+		"glyph": "30-01-15"
+	},
+	{
+		"farao": 267,
+		"titel": 1,
+		"gname": "Kha em Maat seshem tawy",
+		"glyph": "30-02-01"
+	},
+	{
+		"farao": 267,
+		"titel": 4,
+		"gname": "Iri Maat en Ra",
+		"glyph": "30-02-05"
+	},
+	{
+		"farao": 267,
+		"titel": 5,
+		"gname": "Djed Hor, <i>setep en Inher</i>",
+		"glyph": "30-02-07"
+	},
+	{
+		"farao": 268,
+		"titel": 1,
+		"gname": "Mery tawy",
+		"glyph": "30-03-01"
+	},
+	{
+		"farao": 268,
+		"titel": 4,
+		"gname": "Senedjem ib Ra, <i>setep en Amun</i>",
+		"glyph": "30-03-10"
+	},
+	{
+		"farao": 268,
+		"titel": 5,
+		"gname": "Nakht Hor Hebit",
+		"glyph": "30-03-12"
+	},
+	{
+		"farao": 272,
+		"titel": 1,
+		"gname": "Mek Kemet",
+		"glyph": "32-01-01"
+	},
+	{
+		"farao": 272,
+		"titel": 4,
+		"gname": "Setep en Ra, <i>mery Amun</i>",
+		"glyph": "32-01-08"
+	},
+	{
+		"farao": 272,
+		"titel": 5,
+		"gname": "Aleksindres",
+		"glyph": "32-01-10"
+	},
+	{
+		"farao": 273,
+		"titel": 1,
+		"gname": "Ka nakht mery Maat",
+		"glyph": "32-02-01"
+	},
+	{
+		"farao": 273,
+		"titel": 4,
+		"gname": "Setep en Ra, <i>mery Amun</i>",
+		"glyph": "32-02-04"
+	},
+	{
+		"farao": 273,
+		"titel": 5,
+		"gname": "Phelepus",
+		"glyph": "32-02-07"
+	},
+	{
+		"farao": 274,
+		"titel": 1,
+		"gname": "Hunu user pehty",
+		"glyph": "32-03-01"
+	},
+	{
+		"farao": 274,
+		"titel": 4,
+		"gname": "Haa ib Ra, <i>setep en Amun</i>",
+		"glyph": "32-03-05"
+	},
+	{
+		"farao": 274,
+		"titel": 5,
+		"gname": "Aleksendres",
+		"glyph": "32-03-08"
+	},
+	{
+		"farao": 275,
+		"titel": 1,
+		"gname": "Wer pehti nesu qeny",
+		"glyph": "33-01-01"
+	},
+	{
+		"farao": 275,
+		"titel": 4,
+		"gname": "Setep en Ra <i>mery Amun</i>",
+		"glyph": "33-01-03"
+	},
+	{
+		"farao": 275,
+		"titel": 5,
+		"gname": "Ptolemys",
+		"glyph": "33-01-06"
+	},
+	{
+		"farao": 276,
+		"titel": 1,
+		"gname": "Hunu qeni",
+		"glyph": "33-02-01"
+	},
+	{
+		"farao": 276,
+		"titel": 4,
+		"gname": "User ka Ra, <i>mery Amun</i>",
+		"glyph": "33-02-12"
+	}
+]

@@ -2,6 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import pharaohs from "../../data/pharaohs.json";
 import hieroglyphs from "../../data/hieroglyphics.json";
+import dynasties from "../../data/dynasties.json";
+import titulary from "../../data/titulary.json";
 
 // Transliterate function
 function Translit(inn: string): string {
@@ -47,38 +49,157 @@ const title = pharaoh.name;
 const meta1 = pharaoh.meta1;
 const meta2 = pharaoh.meta2;
 const bild = pharaoh.image;
+// Compute a stable dynasty URL. dynasties.json contains most slugs (numeric and named).
+function getDynURL(dyn: string | number | undefined): string {
+	const raw = dyn == null ? "unplaced" : String(dyn);
+	// Direct match: some dynasties use numeric slugs ("1", "2", ...)
+	const bySlug = dynasties.find((d: any) => d.slug === raw);
+	if (bySlug) return `/dynasty/${bySlug.slug}`;
 
-const dynnr = "/dynasty/" + pharaoh.dynasty;
+	// Known special numeric codes that map to named slugs
+	const special: Record<string, string> = {
+		"0": "predynastic",
+		"32": "argead",
+		"33": "ptolemaic",
+		"34": "roman-pharaohs",
+		"35": "abydos",
+		"36": "unplaced-kings",
+	};
+	if (special[raw]) return `/dynasty/${special[raw]}`;
+
+	// Fallback: encode and use raw value (keeps link predictable)
+	return `/dynasty/${encodeURIComponent(raw)}`;
+}
+
+const dynURL = getDynURL(pharaoh.dynasty);
+
+// Map of reign field keys to friendly labels
+const reignLabels: Record<string, string> = {
+	r_consensus: "",
+	r_turin: "Turin King List",
+	r_hornung: "Hornung",
+	r_shaw: "Shaw",
+	r_redford: "Redford",
+	r_malek: "Malek",
+	r_beckerath: "von Beckerath",
+	r_baker: "Baker",
+	r_dodson: "Dodson",
+	r_arnold: "Arnold",
+	r_grimal: "Grimal",
+	r_lepsius: "Lepsius",
+	r_abydos: "Abydos Canon",
+	r_saqqara: "Saqqara Canon",
+	r_karnak: "Karnak Canon",
+	r_africanus: "Manetho (Africanus)",
+	r_eusebius: "Manetho (Eusebius)",
+	r_manetho: "Manetho",
+	r_josephus: "Josephus",
+	r_jerome: "Manetho (Jerome)",
+	r_highestyear: "Highest attestation",
+	// fallback: other r_... keys will be shown with stripped prefix and underscores replaced
+};
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	{/** Titulary lookup available to template rendering */}
+	{
+		(() => {
+			const myTitulary = titulary.filter((t) => Number(t.farao) === phNo);
+			function titularyBy(titelNum: number) {
+				return myTitulary.find((t) => Number(t.titel) === Number(titelNum));
+			}
+			// expose helpers via a symbol on the closure
+			(Astro as any).__titularyHelpers = { myTitulary, titularyBy };
+			return null;
+		})()
+	}
 	<!-- <h1 class="text-3xl font-bold pb-4">{pharaoh.name}</h1> -->
-	<p>Dynasty: <a href={dynnr}>{pharaoh.dynasty}</a></p>
+	<p>Dynasty: <a href={dynURL}>{pharaoh.dynasty}</a></p>
+
 	{pharaoh.reign && <p>{pharaoh.reign}</p>}
+	{
+		pharaoh.reigns && pharaoh.reigns.length > 0 && (
+			<section class="pl-4 pb-4 float-right">
+				{pharaoh.reigns.map((r) => {
+					return (
+						<div class="card p-1">
+							<div class="mb-2 text-xs border-b text-center">
+								Reign of <span class="font-semibold primary">{pharaoh.name}</span>
+							</div>
+							<div class="text-xs font-normal">
+								<table class="">
+									{Object.entries(r)
+										.filter(([k]) => k !== "id")
+										.map(([k, v]) => {
+											const label = reignLabels[k] ?? k.replace(/^r_/, "").replace(/_/g, " ");
+											return (
+												<>
+													<tr>
+														<td class="text-xs">{label}</td>
+														<td class="text-xs tabular-nums">{String(v)}</td>
+													</tr>
+												</>
+											);
+										})}
+								</table>
+							</div>
+						</div>
+					);
+				})}
+			</section>
+		)
+	}
 	{pharaoh.description && <article class="mt-4" set:html={pharaoh.description} />}
 
+	{/* Render titulary images + names (Horus=1, Throne/"Dual King"=4, Birth/Son of Ra=5) */}
+	{
+		(() => {
+			const myTitulary = titulary.filter((t) => Number(t.farao) === phNo);
+			const t1 = myTitulary.find((t) => Number(t.titel) === 1);
+			const t4 = myTitulary.find((t) => Number(t.titel) === 4);
+			const t5 = myTitulary.find((t) => Number(t.titel) === 5);
+			if (!t1 && !t4 && !t5) return null;
+			return (
+				<section class="mt-20 clear-both">
+					<h2 class="text-xl font-bold text-center mt-4">The Royal Titulary</h2>
+					<p class="mt-0 text-center pb-6">From the hieroglyphic records</p>
+					<div class="flex items-center justify-center gap-2 mb-2">
+						{t1 && <img src={`/svg/pharaoh/${t1.glyph}.svg`} alt={t1.gname} class="h-12 dark:invert" />}
+						{t4 && <img src="/svg/hiero/t_nesut.svg" alt="nesut" class="h-12 dark:invert pl-4" />}
+						{t4 && <img src={`/svg/pharaoh/${t4.glyph}.svg`} alt={t4.gname} class="h-12 dark:invert" />}
+						{t5 && <img src="/svg/hiero/t_sara.svg" alt="sa Ra" class="h-12 dark:invert pl-4" />}
+						{t5 && <img src={`/svg/pharaoh/${t5.glyph}.svg`} alt={t5.gname} class="h-12 dark:invert" />}
+					</div>
+					<div class="text-center space-y-1">
+						{t1 && <span class="font-light text-xs italic">Horus</span> <span>{t1.gname}&nbsp; &nbsp;</span>}
+						{t4 && <span class="font-light text-xs italic">Dual King</span> <span>{t4.gname}&nbsp; &nbsp;</span>}
+						{t5 && <span class="font-light text-xs italic">Son of Ra</span> <span>{t5.gname}</span>}
+					</div>
+				</section>
+			);
+		})()
+	}
 	{
 		Object.keys(glyphGroups).length > 0 && (
-			<section class="mt-8">
-				<h2 class="text-xl font-bold mb-4">Hieroglyphs</h2>
+			<section class="mt-8 clear-both">
 				{Object.entries(glyphGroups).map(([titel, glyphs]) => {
 					const titelMap = [
 						"", // 0 (unused)
-						"Horus", // 1
-						"Nebty", // 2
-						"Golden Falcon", // 3
-						"Prenomen", // 4
-						"Nomen", // 5
-						"none", // 6
-						"Throne & Nomen", // 7
-						"Autokrator", // 8
-						"Kaisaros", // 9
-						"Autokaisaros", // 10
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Horus</h2><img src="/svg/hiero/t_horus.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The oldest form of the name of a pharaoh, a falcon representing Horus is perched on the palace facade.</p></div>`, // 1
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Nebty</h2><img src="/svg/hiero/t_nebty.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nebty name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The “Two Ladies”, the <i>goddesses Nekhbet and Wadjet</i>, representing Upper and Lower Egypt respectively.</p></div>`, // 2
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Golden Horus</h2><img src="/svg/hiero/t_gold.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Golden Horus name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Horus perched on Gold, which was associated with eternity, but its meaning is disputed.</p></div>`, // 3
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Throne name</h2><img src="/svg/hiero/t_nesut.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Prenomen or throne name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Announced at the coronation and always written in a cartouche. The “official” name of the pharaoh. Also known as the <i>Prenomen</i>.</p></div>`, // 4
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Birth name</h2><img src="/svg/hiero/t_sara.svg" loading="lazy" class="h-20 dark:invert mx-auto" alt="Nomen or birth name"><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Personal name given at birth. Also known as the <i>Nomen</i>.</p></div>`, // 5
+						``, // 6
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Throne + Birth name</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">Combined Throne and Birth name.</p>`, // 7
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Autokrator</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek epithet <i class="font-semibold">Autokrator</i> is the equivalent of the Latin epithet <i class="font-semibold">Imperator</i> (Commander).<br>It was always written in the cartouche.</p></div>`, // 8
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title Kaisaros is the equivalent of the Latin title <i class="font-semibold">Caesar</i>.<br />It was always written in a cartouche.</p>`, // 9
+						`<div><h2 class="text-center pt-10 pb-2 text-4xl text-red-800 dark:text-amber-200">Autokrator & Kaisaros</h2><p class="w-2/3 mx-auto text-center color-2 text-sm/tight text-balance pb-8">The Greek title <i>Kaisaros</i> = the Latin title <i>Caesar</i>.<br>The Greek epithet <i>Autokrator</i> = the Latin <i>Imperator</i>.</p>`, // 10
 					];
 					const titelLabel = titelMap[Number(titel)] || titel;
 					return (
 						<div class="mb-6">
-							<h3 class="text-lg font-semibold mb-2"> {titelLabel}</h3>
+							<div set:html={titelLabel} />
 							<div class="grid gap-4">
 								{((glyphs as any[]) ?? []).map((g) => (
 									<div class="card">
@@ -123,6 +244,7 @@ const dynnr = "/dynasty/" + pharaoh.dynasty;
 		)
 	}
 </Layout>
+
 <style>
 	.hieroname {
 		font-size: var(--text-2xl);
