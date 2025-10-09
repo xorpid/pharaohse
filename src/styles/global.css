@@ -13,7 +13,7 @@
 	--font-mono: "Courier New", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Liberation Mono", "Consolas", "monospace";
 	--font-tlit: "Noto Serif", Cambria, serif;
 
-	--fontsize: 20px;
+	--fontsize: 18px;
 	--content-max-width: 960px;
 	--content-size: 60rem;
 	--content-padding-inline: clamp(1.125rem, 2.2vw + 0.52rem, 2.5rem);
@@ -36,9 +36,9 @@
 	--tx: var(--color-stone-800);
 	--dim: var(--color-stone-600);
 	--bright: var(--color-stone-950);
-	--link: var(--color-red-900);
-	--link-hover: var(--color-red-800);
-	--link-visited: var(--color-stone-500);
+	--link: var(--color-red-800);
+	--link-hover: var(--color-red-700);
+	--link-visited: var(--color-red-900);
 	--primary: var(--color-red-950);
 	--secondary: var(--color-rose-950);
 	--highlight: var(--color-orange-950);
@@ -49,17 +49,17 @@
 	--dark-bg-dark: var(--color-neutral-950);
 	--dark-tx: var(--color-neutral-200);
 	--dark-dim: var(--color-neutral-400);
-	--dark-bright: var(--color-neutral-100);
-	--dark-link: var(--color-sky-300);
-	--dark-link-hover: var(--color-sky-400);
+	--dark-bright: var(--color-neutral-50);
+	--dark-link: var(--color-amber-400);
+	--dark-link-hover: var(--color-amber-200);
 	--dark-link-visited: var(--color-neutral-400);
 	--dark-primary: var(--color-amber-100);
 	--dark-secondary: var(--color-amber-50);
 	--dark-highlight: var(--color-amber-700);
 	--dark-border: var(--color-neutral-700);
 	--dark-transliteration: var(--color-orange-300);
-	--dark-greek: var(--color-emerald-500);
-	--dark-armenian: var(--color-yellow-300);
+	--dark-greek: var(--color-emerald-600);
+	--dark-armenian: var(--color-yellow-400);
 }
 
 /* Add your own default base styles for specific HTML elements */
@@ -162,6 +162,7 @@
 	h2,
 	h3 {
 		padding-left: 0.25em;
+		font-family: var(--font-serif);
 	}
 	h1,
 	h2 {
@@ -225,6 +226,11 @@
 		letter-spacing: 0.08em;
 	}
 
+	.lead {
+		margin-inline: calc(var(--spacing) * 4);
+		padding-block: calc(var(--spacing) * 4);
+	}
+
 	.bg {
 		background-color: light-dark(var(--bg), var(--dark-bg));
 	}
@@ -234,11 +240,27 @@
 	.bg-dark {
 		background-color: light-dark(var(--bg-dark), var(--dark-bg-dark));
 	}
-	.text {
-		color: light-dark(var(--text), var(--dark-text));
+	.tx {
+		color: light-dark(var(--tx), var(--dark-tx));
 	}
-	.dim {
+	.dim,
+	.bibliography {
 		color: light-dark(var(--dim), var(--dark-dim));
+	}
+	figcaption {
+		text-align: center;
+		color: light-dark(var(--dim), var(--dark-dim));
+		&:hover {
+			color: light-dark(var(--tx), var(--dark-tx));
+		}
+		.figtitle {
+			font-weight: var(--font-weight-medium);
+			font-size: var(--text-lg);
+		}
+		.figauthor {
+			font-size: var(--text-sm);
+			font-weight: var(--font-weight-normal);
+		}
 	}
 	.primary {
 		color: light-dark(var(--primary), var(--dark-primary));
@@ -259,11 +281,6 @@
 	m {
 		/* missing */
 		color: --alpha(light-dark(var(--tx), var(--dark-tx)) / 0.75);
-	}
-
-	dim,
-	.dim {
-		color: var(--dimmed) !important;
 	}
 
 	:lang(grc),

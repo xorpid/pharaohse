@@ -3,10 +3,524 @@ import Layout from "../../layouts/Layout.astro";
 import authors from "../../data/authors.json";
 ---
 
-<Layout title="authors">
-	<h1 class="text-3xl font-bold mb-4">Authors</h1>
+<Layout title="The king lists of Manetho">
+	<section class="page-content">
+		<p class="lead">
+			In the early Ptolemaic Kingdom (3rd century BC), Manetho, an Egyptian priest from Sebennytos, wrote <gr>Αἰγυπτιακά</gr>, <i>Aigyptiaka</i>, or
+			“History of Egypt,” which serves as a foundational text for understanding the complex history of ancient Egypt.
+		</p>
 
-	<ul class="space-y-2">
+		<p class="pt-3">
+			Often Latinised as <i>Aegyptiaca</i>, it has been of great interest to historians since ancient times and has played a pivotal role in
+			establishing the chronology of ancient Egypt. The concept of dynasties–which groups together a succession of rulers on the basis of
+			family–originated with Aegyptiaca and remains in use today. It has been instrumental in dividing the lengthy history of Egypt into more
+			manageable periods.
+		</p>
+
+		<p>
+			The date of composition of <i>Aegyptiaca</i> is estimated to be between 300 and 250 BC. However, the absence of any contemporary records makes it
+			impossible to determine with certainty whether Manetho wrote it during the reign of Ptolemy I, Ptolemy II or Ptolemy III. The <i
+				>traditional dynasties of Manetho</i
+			> used in conjunction with the existing archaeological records, provide Egyptology with the basic chronology of ancient Egypt. Nevertheless, the
+			reliance on Manetho to reconstruct the Egyptian dynasties is inherently problematic, given that the original text was lost in antiquity and replaced
+			by summaries. It was <a href="/authors/syncellus">Syncellus</a>, in the ninth century, who identified the parallels, mainly in the works of <a
+				href="/authors/africanus">Africanus</a
+			> and <a href="/authors/eusebius">Eusebius</a>, and assembled excerpts from their work.<br />
+		</p>
+		<figure class="w-full md:w-1/2 float-right ml-5">
+			<a data-fancybox="mss" data-caption="Merton College MS 315 (folio 8v + 9r)" href="/images/mss315.jpg" title="Oxford, England">
+				<picture>
+					<img loading="lazy" src="/images/mss315.webp" alt="" />
+				</picture>
+				<figcaption>
+					<div class="figtitle">Eusebius’ Chronological Canons</div>
+					<div class="figauthor">Bodleian Merton College MS 315</div>
+				</figcaption>
+			</a>
+		</figure>
+		<p>
+			Scholars have long tried to reconcile Manetho's work with the archaeological evidence. While there are many points of agreement, it is clear
+			that his original account was significantly altered by the transcription of Egyptian names into their Greek equivalents. The accounts of
+			Africanus and Eusebius differ from those of <a href="/authors/josephus">Josephus</a>, who presented Manetho's text as a narrative over a century
+			earlier rather than just a list of kings. It is reasonable to assume that non-Egyptian copyists of epitomes in subsequent centuries would also
+			have struggled with the strange-looking Egyptian names. The chronological tables of Eusebius were preserved in <a href="/authors/jerome"
+				>Jerome's Chronicle</a
+			>, which was not mentioned by Syncellus.
+		</p>
+
+		<p>
+			Despite this, the importance of Manetho cannot be understated as it was&mdash;and to some extent still is&mdash;<i>the</i> primary source for the
+			<a href="/chronology">chronology</a> of the pharaohs. The names of Ptolemy and Cleopatra played a central role in the process of deciphering the
+			hieroglyphs, and one of the first things Champollion did after deciphering the hieroglyphs was to compare the now-readable names of the pharaohs
+			with those of Manetho.
+		</p>
+
+		<h2 class="text-center pt-5 pb-3 shine">The sources used by Manetho</h2>
+		<p>
+			The ancient Egyptian king-lists were inscribed on the walls of a sacred room, making offerings to celebrated ancestors. The purpose of these
+			lists was not to make a necessarily accurate chronological list of historical kings but to celebrate revered ancestors for religious or
+			political reasons. <a href="/pharaohs/Seti-I">Seti I</a> deliberately excluded Akhenaten, Tutankhamun and Hatshepsut from his king list at Abydos,
+			as their reigns were considered illegitimate or heretical, and they were to be erased from memory.
+		</p>
+		<p>
+			Manetho could not have based his history solely on the <a href="/kinglists/abydos-canon">Abydos</a> and <a href="/kinglists/karnak-canon"
+				>Karnak</a
+			> inscriptions, as these differ from one another and only contain the names of carefully selected kings. Therefore, they cannot be accurate chronological
+			records. His source was most likely something similar to the <a href="/kinglists/turin">Turin King List</a>, which contains detailed accounts
+			from the time of the gods up to the 3rd century BC. It seems that all kings, regardless of how briefly they reigned or how despised they were,
+			are included in this list.
+		</p>
+		<p>
+			Even the most ephemeral of kings is highly likely to have left behind records that could be discovered long after their time by a devoted priest
+			who knew where to look. Important documents were certainly copied repeatedly throughout the centuries. However, the vast expanse of time is not
+			kind to fragile papyrus records, which were susceptible to destruction by fire, flood and countless other forces.
+		</p>
+		<p>
+			<img src="/images/SCsmall.webp" class="block mx-auto sm:float-left pr-0 sm:pr-5" alt="" srcset="" />As a priest, Manetho would have had access
+			to virtually all of Egypt's written records. There were probably sources unknown to us, but the transcribed names were not consistently chosen
+			from the same type of name. The reason for this is unclear, but it is plausible that the original document contained multiple names for each
+			king, which would have caused confusion for a non-native epitomist who was unaware of this fact. In some cases, transcription is possible; in
+			others, consonants switched places for unknown reasons, perhaps due to transcription errors by the epitomists.
+		</p>
+		<p>
+			Many of the names of the pharaohs, as recorded by Manetho, are still in use today and were favoured until the discovery and corroboration of the
+			original king lists. Using the original names of the pharaohs is still a relatively new practice.
+		</p>
+
+		<!-- MARK: Epitomes
+-->
+		<h2 class="text-center pt-5 pb-3 shine">Epitomes</h2>
+		<p>
+			An <em>epitome</em> is a condensed version of a larger work, highlighting selected key points, passages, or arguments while omitting less relevant
+			sections. Often created by or at the behest of the original author, epitomes were used for specific purposes, such as providing quick access to information
+			or to tailor content to potential readers. However, they often raise concerns about fidelity to the original, as the choice of what to include or
+			omit could lead to misrepresentation or distortion.
+		</p>
+		<p>
+			Copyists played a significant role in creating epitomes, selecting details they deemed important and discarding others. Misunderstanding the
+			source could result in omitting crucial elements or introducing errors. Sometimes, additional material from other sources was incorporated to
+			align with the copyist's intentions.
+		</p>
+		<p>
+			In antiquity, epitomes were popular due to the cost-effective reproduction process, where texts could be read aloud to multiple scribes
+			transcribing simultaneously. However, this method risked errors accumulating over generations of manuscripts unless strict quality checks were
+			applied, which was both difficult and uncommon.
+		</p>
+		<p>
+			It is unclear whether Manetho himself created an epitome of Aegyptiaca. In the centuries after his time, Jewish historians took great interest
+			in due to its relevance to their ancestral ties with Egypt—such as Abraham, Joseph, Moses, and the Exodus. They aimed to use Egyptian traditions
+			to support the origins and antiquity of the Jewish people. However, they encountered an unfavorable claim in Aegyptiaca suggesting that the Jews
+			descended from lepers. Jewish apologists likely created their own epitome of Aegyptiaca, reshaping the text to highlight their history in a more
+			favorable light while removing or modifying parts they found unfavorable. This, of course, altered Manetho's original text and the result may be
+			seen in Josephus' treatise <i>Contra Apion</i> I (§§227-230):
+		</p>
+
+		<blockquote class="text-justify max-w-prose mx-auto">
+			<mid>227</mid> The first person on whom I shall dwell in my discussion I employed a little earlier also as a witness to our antiquity.<br /><mid
+				>228</mid
+			> That is Manetho, who undertook to translate the history of Egypt from the sacred writings, and says first that our ancestors came against Egypt
+			in very large numbers and ruled the inhabitants, then himself admits that at a later date again they were thrown out, occupied present-day Judea,
+			founded Jerusalem, and built the sanctuary. Up to this point he followed the records.<br /><mid>229</mid> But then, giving himself license by saying
+			he would record myths and rumors about the Judeans, he inserted implausible stories, in the desire to mix up with us a crowd of Egyptian lepers and
+			people who for other diseases had been, he says, condemned to exile from Egypt.<br /><mid>230</mid> Having put forward a king Amenophis, a made-up
+			name and hence not daring to fix the duration of his reign (although he accurately appends dates to the other kings), he connects him with certain
+			myths, no doubt forgetting that he had recorded the exodus of the shepherds to Jerusalem as taking place years earlier.
+		</blockquote>
+
+		<p>
+			The extent of the narrative in <i>Aegyptiaca</i> is uncertain, while it is possible that it was simply a brief list of kings with a few comments
+			where needed, the excerpt by Josephus suggests that it was more substantial.
+		</p>
+
+		<!-- MARK: Transm.
+-->
+		<h2 class="text-center pt-5 pb-3 shine">Transmission of Manetho</h2>
+		<p>
+			The surviving text of Manetho’s Aegyptiaca can only be traced back to <i>The Chronicle</i> by Syncellus, written around 808-810. Multiple copies
+			of the original Chronicle have survived. It was not until <u>Manuscript A</u> was discovered around 1600 and published by Scaliger in 1606 that Syncellus’s
+			Chronicle became known. It is worth noting that Scaliger only included selected passages. After almost five decades, Jacob Goar published the first
+			all-inclusive edition of Syncellus in 1652. While <u>Manuscript B</u> was discovered shortly afterwards, it remained undisclosed and unpublished
+			for many years. In 1829, Dindorf utilised this second manuscript to rectify readings in Goar’s edition. Until the publication of the Mosshammer edition
+			in 1983, it was deemed the standard edition.<br />A and B are complete copies and share a common ancestor. Although few incomplete copies of
+			Syncellus exist, A and B are the only ones containing the texts of Manetho (through Africanus and Eusebius).
+		</p>
+		<p>
+			It seems clear that following the introduction of <i>Aegyptiaca</i>, an epitome was composed of extracts from the dynasties of kings, with
+			additions and alterations to make it fit with Jewish chronology. It should also be noted that the epitome(s) were not produced by the author but
+			rather by persons who could indiscriminately alter, add or remove things to them in order to advance their own interests. In all likelihood,
+			numerous quite different copies of Aegyptiaca circulated in the centuries after Manetho. Epitomists may have attempted to preserve the spirit of
+			the original, but as with all secondary sources, a different bias may be introduced, along with the addition of details or anecdotes not present
+			in the original. It also works in the other direction, as important facts may have been changed or omitted, whether by design or error, or both.
+		</p>
+		<p>
+			In antiquity, authors wrote all their books by hand. Each text was a unique original, and if someone wanted to read it, they either borrowed it
+			or had a copy made by a scribe. Written works did not spread particularly quickly; however, the educated, literate class was relatively small,
+			and only a few copies were needed to be written for the work to become well-known by the elite. A significant number of works were epitomised,
+			which entailed the creation of a brief summary of the original that often included extracts from the original text The skill of the scribe
+			writing the epitome could influence the intended meaning and impact of the original text.
+		</p>
+		<p>
+			It is a well-established fact that each copy of a handwritten document introduces errors through various means, whether intentional or
+			unintentional. Human error represents a significant factor contributing to the potential corruption of handwritten manuscripts. Scribes, who
+			were responsible for copying texts in ancient times, were highly skilled individuals. However, they were not immune to mistakes, and their
+			linguistic skills varied, especially in relation to the nuances of foreign languages, which could be problematic and cause their own
+			corruptions.
+		</p>
+		<p>
+			It is therefore crucial for scholars engaged in textual criticism, a field that aims to reconstruct the most accurate version of a text by
+			comparing different manuscript copies and identifying variations, to understand the potential for human error. This process helps researchers
+			discern the original wording and meaning of a text despite the inevitable errors introduced by scribes throughout history. It is also important
+			to remember that each copy introduced more corruption of the original.
+		</p>
+
+		<p>
+			It seems reasonable to assume that there must have been several exemplars of Aegyptiaca in circulation during antiquity, as evidenced by the
+			variations observed in the sources below. It is impossible to ascertain to what extent these epitomes included the original text.
+		</p>
+		<p>
+			Simplified, here’s how Aegyptiaca reached us (Fig. 1):<br /><br />
+		</p>
+		<div class="pb-20 text-center">
+			<img class="block mx-auto dark:invert" src="/svg/2024Manetho.svg" alt="Transmission of Aegyptiaca of Manetho" />
+			<p class="text-sm font-sans mt-10">Fig 1. Transmission of <i>Aegyptiaca</i>. Dashed borders = lost manuscript.</p>
+		</div>
+
+		<p>
+			The information provided for each <a href="/authors/manetho">dynasty</a> will take into account all the different sources. Timekeeping in the ancient
+			world was confounded by the fact that each city-state employed its own calendar for when a year begin. Since there was no single calendar in use,
+			events were primarily dated by the regnal year of the locally reigning monarch.
+		</p>
+		<p class="pb-5">
+			Lists of kings and the number of years they reigned were certainly circulated, but kings did not always ascend to the throne on January 1st, and
+			records might be emended or corrupted in numerous ways. As a result, any reckoning based on regnal years was likely to be inaccurate, perhaps
+			significantly so, as errors accumulated.
+		</p>
+		<!-- Aegyptiaka = 275 BC -->
+		<dl>
+			<dt>
+				<b class="dark:text-shark-100">Manetho</b> &mdash; <span class="font-sans">275 BCE <small>+/- 30 years</small></span>
+			</dt>
+			<dd>
+				Manetho flourished in the time of <a href="/pharaohs/Ptolemy-I">Ptolemy I</a> (305–282 BC), <a href="/pharaohs/Ptolemy-II">Ptolemy II</a> (285–246
+				BC), or <a href="/pharaohs/Ptolemy-III">Ptolemy III</a> (246–222). The original Aegyptiaca <a href="/papyrus">papyrus</a> was lost in antiquity
+				and we can only guess at its full contents. There are clues from other authors, but they all wrote several centuries later and had to rely on abridged
+				versions of the original text, called epitomes. There is no way of judging what information was copied and what was left out by the epitome author.
+				It is even possible that Manetho himself made an epitome of his original, a common practice in antiquity.<br /><br />
+				Africanus and Eusebius say that Aegyptiaca was written in three volumes - but this could easily have been for the epitome version. Josephus does
+				not give a number of volumes. The original Aegyptiaca may have been 10 or 20 volumes for all we know.<br /><br />
+				In the subsequent centuries, Aegyptiaca was replaced by Epitomes (summaries) from rivalling advocates of Jewish, Egyptian, and Greek history, that
+				saw each side trying to establish the truth&mdash;according to their point of view. It is unclear and impossible to assess to what extent the epitomes
+				preserved <a href="/authors/manetho">Manetho’s original writing</a>. Whether by intention or by accident, each subsequent copy undoubtedly
+				introduced some corruption of the original, whether by scribal errors, outright alterations, or other mutilations made in order to advance one
+				of the many conflicting agendas. It is apparent that none of the authors whose works have survived had access to the original Aegyptiaca, only
+				epitomes.<br /><br />
+				Furthermore, as only excerpts from the epitomes survive from the ancient historians, we have only indirect knowledge of Aegyptiaca, and chances
+				are that errors multiplied with each successive copy, as seen by the discrepancies in the extracts referenced by later authors. This means that
+				the names we know from Africanus and others are probably very different from Manetho’s original in many cases.<br />
+				<br />
+				&nbsp; <strong>Vol. 1</strong> &nbsp; <i>Dynasties 1-11</i> : Reign of the gods and spirits to the historical kings.<br />
+				&nbsp; <strong>Vol. 2</strong> &nbsp; <i>Dynasties 12–19</i> : From the Middle Kingdom to the New Kingdom.<br />
+				&nbsp; <strong>Vol. 3</strong> &nbsp; <i>Dynasties 20-31</i> : From the collapse of the New Kingdom to Alexander the Great.<br />
+				<br />
+				The transcription of Egyptian names into Greek would be problematic for a non-native Egyptian copyist, who would also find Manetho’s headings and
+				summaries exceedingly confusing because some of them included not only multiple kings with the same name but perhaps also coregencies and even
+				the&ndash;at the time&ndash;unseemly mention of queens.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Josephus</b> &mdash; <span class="font-sans">four centuries after Manetho <small>(c. 95 CE)</small></span>
+			</dt>
+			<dd>
+				The oldest surviving mention of Manetho comes from <a href="/authors/josephus">Flavius Josephus</a> writing in the last decade of the first century.
+				In the <i>Antiquities of the Jews</i>, and <i>Against Apion</i> he quotes from “the Egyptian born Manetho who translated Egyptian history from
+				the priestly writings.” He acknowledged that he used an epitome of Aegyptiaca, and his excerpt suggest that Aegyptiaca was, at least in part, composed
+				as a narrative rather than just a list of dynastic kings with occasionally inserted anecdotes or events. Furthermore, Josephus makes no mention
+				of any dynastic divisions. He identifies only 25 pharaohs, most of them from the New Kingdom, but notably, this encompasses two queens.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Africanus</b> &mdash; <span class="font-sans">five centuries after Manetho <small>(c. 220 CE)</small></span>
+			</dt>
+			<dd>
+				<a href="/authors/africanus">Julius Africanus</a> (c. 160–240 CE) was an early Greek Christian historian. He wrote <i>Chronographiai</i>, a
+				history of the world in five volumes; from the birth of the Adam to his own time. The original has not survived, it is only known in
+				fragments, primarily excerpts preserved by Eusebius and Syncellus.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Eusebius</b> &mdash; <span class="font-sans">six centuries after Manetho <small>(c. 325 CE)</small></span>
+			</dt>
+			<dd>
+				<a href="/authors/eusebius">Eusebius of Caesarea</a> (c. 260–339 CE), was an early Greek Christian historian influenced by Africanus. He wrote
+				his <i>Chronicle</i> c. 310 CE, which is a two-volume “Universal History” from the birth of Abraham up his own time. The original volumes in Greek
+				are lost, but quotations preserved by later authors makes it possible to reconstruct most of it.<br /><br />The first volume, <em
+					>The Chronography</em
+				>, is only preserved as an Armenian translation of the original Greek text. It begins with an introduction, then briefly describes how various
+				ancient Mediterranean civilisations kept time, and includes lists of their rulers. The information is excerpted, with occasional comment and
+				criticism, from a variety of sources. There are chronological regnal lists of the Chaldeans, Assyrians, Medes, Persians, Lydians, Hebrews,
+				Egyptians, Athenians, Argives, Sicyonians, Lacedaemonians, Corinthians, Thessalians, Macedonians, and Romans.<br /><br />The second volume, <em
+					>the Chronological Canons</em
+				>, revolutionised the study of history. Using the relatively new codex medium, Eusebius divided up the two-page spread of the facing pages in
+				vertical columns. He labeled the leftmost section ‘Kings of …’ (whichever empire was in power at the time), and the rightmost section ‘Kings
+				of the Egyptians’. When new powers arose, he added an extra column to accommodate them; when they disappeared, the column vanished as well.
+				When a king took the throne, his name was recorded on a separate line, and then listed each year of his reign on successive lines with enough
+				space for additional information if needed. <br /><br />An updated Latin translation of <i>the Canons</i> known as <i
+					>the Chronicle of Jerome</i
+				> was created by <a href="/authors/jerome">Jerome of Stridon</a> around 382. The purpose of the work as a whole was partly to make clear the greater
+				antiquity of Hebrew history relative to most others. Jerome's Latin translation proved popular and quickly became the widely accepted chronographic
+				standard.
+				<br /><br />
+				Eusebius does not begin the Chronological Canons with the first king of Egypt, but rather with the year <a
+					href="https://en.wikipedia.org/wiki/Abraham"
+					target="_blank">Abraham</a
+				> was born, which he places exactly at the start of the Theban Sixteenth Dynasty. While his predecessors attempted to calculate the date of creation,
+				Eusebius regarded Abraham to be the most ancient figure whose chronology could be established with reasonable certainty. To prove the greater antiquity
+				of Hebrew history, he needed to link information from Jewish and Greek sources, to be able to synchronise chronological details about kings and
+				events from different kingdoms. This new innovation of Eusebius, made it easy to compare who was in power where at any given time. We can never
+				confirm the accuracy of chronological events so long ago, but at least we have a starting point and can try to fill in the gaps.
+				<br /><br />
+				He collected information from a wide range of authors who did not use a common chronographic system. Among the sources used, we find Eratosthenes
+				of Cyrene, Apollodorus of Alexandria, Castor of Rhodes, Porphyry of Tyre, Sextus Julius Africanus, Clement of Alexandria, Tatian, and an unidentified
+				Olympiad chronicle, but also the Bible, the Canon of Kings, and of course, Manetho.
+
+				<!-- https://www.ccel.org/ccel/pearse/morefathers/files/jerome_chronicle_00_eintro.htm -->
+				<p class="text-center pt-10 pb-5 text-lg">
+					<i>The Chronicle of Jerome</i> manuscripts
+				</p>
+
+				<ul class="w-full mx-auto px-10">
+					<li class="border-t border-b border-stone-700 dark:border-shark-600">
+						<b class="dark:text-sky-400 text-xl">O</b> &nbsp; <a href="https://tinyurl.com/Bodleian226" target="_blank" class="italic font-normal"
+							>Oxford Bodleian Lat. Auct. T. II. 26</a
+						>
+						<p class="pl-10">
+							<span class="uppercase text-[90%] font-sans">Fifth century</span> &mdash; written in a late fifth-century Italian uncial; <i>f</i>. 1-32
+							supply the beginning of the work in a fifteenth-century hand.
+						</p>
+					</li>
+					<li class="border-b border-stone-700 dark:border-shark-600">
+						<b class="dark:text-sky-400 text-xl">S</b> &nbsp; Floriacensis fragments
+						<p class="pl-10">
+							<span class="uppercase text-[90%] font-sans">Fifth century</span> &mdash; Three fragments of an Italian uncial manuscript which was still
+							intact in the ninth century at the Fleury Abbey near Orleans in France.<br />
+							&nbsp; (i) &nbsp; &nbsp;&nbsp; 6 pages in <i>Leiden Vossius Lat. Q 110A</i>.<br />
+							<!-- https://catalogue.leidenuniv.nl/discovery/fulldisplay?docid=alma990037162520302711&context=L&vid=31UKB_LEU:UBL_V1&lang=en -->
+							&nbsp; (ii) &nbsp;&nbsp; &nbsp;14 pages of <a
+								href="https://gallica.bnf.fr/ark:/12148/btv1b525072333"
+								target="_blank"
+								class="italic font-normal">Paris Bibliothèque Nationale Lat. 6400 B</a
+							>.<br />
+							&nbsp; (iii) &nbsp;&nbsp; 2 pages of <a
+								href="https://digi.vatlib.it/view/MSS_Reg.lat.1709.pt.B"
+								target="_blank"
+								class="italic font-normal">Vatican Reg. Lat. 1709 B</a
+							> (<i>fol.</i> 34-35).
+						</p>
+					</li>
+					<li class="border-b border-stone-700 dark:border-shark-600">
+						<b class="dark:text-sky-400 text-xl">B</b> &nbsp; <a
+							href="http://www.e-codices.unifr.ch/en/list/one/bbb/0219"
+							target="_blank"
+							class="italic font-normal">Bern 219</a
+						>
+						<p class="pl-10">
+							<span class="uppercase text-[90%] font-sans">Ninth century</span>. Complete <i>Chronicle</i> and well preserved, possibly written at the
+							famous Benedictine library at Fleury Abbey near Orléans.
+						</p>
+					</li>
+					<li class="border-b border-stone-700 dark:border-shark-600">
+						<b class="dark:text-sky-400 text-xl">A</b> &nbsp; <a
+							href="http://initiale.irht.cnrs.fr/codex/7920"
+							target="_blank font-normal"
+							class="italic font-normal">Amandinus Valentianus 495</a
+						>
+						<p class="pl-10">
+							<span class="font-sans uppercase text-[90%]">Seventh century</span>. Uncial. Complete copy from the monastery of Saint-Amand Abbey near
+							Valenciennes in northern France. Descendant of <b class="text-violet-700 dark:text-sky-400">S</b>.
+						</p>
+					</li>
+					<li class="mt-5">
+						<b class="dark:text-sky-400">O</b> and <b class="dark:text-sky-400">S</b> were likely copied from the same manuscript. There are currently
+						more than a hundred manuscripts of the <i>Chronicle of Jerome</i>, many also include the chronicles of medieval continuators:<br />
+
+						<p class="pl-10 pt-5">
+							<i>Berlin Staatsbibliothek Phillipps 1829</i> and <i>1872</i><br />
+							London <a href="https://tinyurl.com/mss16974" target="_blank" class="italic font-normal">British Library MS Add. 16974</a><br />
+							<a href="http://hdl.handle.net/1887.1/item:1678556" target="_blank" class="italic font-normal">Leiden Scaliger 14</a><br />
+							<i>Leiden Vossius Lat. Q 110</i> (Petavianus)<br />
+							<i>Lucca Biblioteca Capitolare Feliniana 490</i><br />
+							Oxford <a href="https://tinyurl.com/merton315" target="_blank" class="italic font-normal">Merton College 315</a> - (transl. <a
+								href="https://www.tertullian.org/fathers/jerome_chronicle_02_part1.htm"
+								class="italic font-normal"
+								target="_blank">pt 1</a
+							> &nbsp; <a href="https://www.tertullian.org/fathers/jerome_chronicle_03_part2.htm" target="_blank" class="italic font-normal">pt 2</a
+							>)<br />
+							<a href="https://gallica.bnf.fr/ark:/12148/btv1b10038618m" target="_blank" class="italic font-normal"
+								>Paris Bibliothèque Nationale Lat. 4858</a
+							>, <a href="https://gallica.bnf.fr/ark:/12148/btv1b90684566" target="_blank" class="italic font-normal">4859</a>, <a
+								href="https://gallica.bnf.fr/ark:/12148/btv1b10721203n"
+								target="_blank"
+								class="italic font-normal">4860</a
+							>, and <a href="https://gallica.bnf.fr/ark:/12148/btv1b9067716d" class="italic font-normal" target="_blank">4870</a><br />
+						</p>
+					</li>
+				</ul>
+			</dd>
+
+			<!-- http://www.mirabileweb.it/title/chronica-title/16499 -->
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Syncellus</b> &mdash; <span class="font-sans">more than 1,000 years after Manetho (c. 810 CE)</span>
+			</dt>
+			<dd>
+				<i>Selected Chronography</i>, a <abbr title="A chronicle is a historical record of events presented in chronological order">chronicle</abbr> written
+				by Byzantine <a href="/authors/syncellus">George Syncellus</a>, is the primary source of our knowledge of the contents of Aegyptiaca, thanks
+				to Syncellus' preserved excerpts from Africanus and Eusebius' chronicles. The original manuscript of Syncellus has been lost, and only later
+				copies remain.<br /><br />The chronicle itself was unknown until <u>Manuscript A</u> was discovered around 1600, and published by Scaliger in 1606.
+				Scaliger only included selected passages, but in 1652 the first complete edition of Syncellus was published by Jacob Goar. A few years later, the
+				superior <u>Manuscript B</u> was discovered, but remained unknown and unpublished until 1829, when Dindorf used this second manuscript to correct
+				readings in Goar’s edition.
+
+				<dl class="pb-7 px-10">
+					<dt class="pt-8">
+						<b class="dark:text-sky-400 !text-xl">A</b> - <a href="https://gallica.bnf.fr/ark:/12148/btv1b10723005g" target="_blank"
+							>Codex Parisinus Bibl. Nat. Gr. 1711</a
+						>
+					</dt>
+					<dd>
+						<span class="uppercase text-[90%] font-mono">11th century</span> &mdash; Pages 1-230 &mdash; Contain the entire work of George Syncellus, with
+						one leaf lost. The copyist wrote in very small letters, with many abridgements, so that the forty-one lines on each page contained as much
+						text as two pages of another codex, or five pages of the original family of books containing the latter part. the scribe worked hastily, distinguishing
+						little between the prescriptions and the text, paying little attention to orthographical matters, often omitting words and lines, but infrequently
+						restoring them in the margin, frequently misreading the readings and seldom correcting them. The damage is so painful that, apart from this
+						codex and its signature, no manuscript book of the entire work exists almost intact
+					</dd>
+					<dt class="pt-8">
+						<b class="dark:text-sky-400 !text-xl">B</b> - <a href="https://gallica.bnf.fr/ark:/12148/btv1b10722002s" target="_blank"
+							>Codex Parisinus Bibl. Nat. Gr. 1764</a
+						>
+					</dt>
+					<dd>
+						<span class="uppercase font-mono text-[90%]">11th century</span> &mdash; Pages 1-143 &mdash; Written at about the same time, or perhaps a little
+						before codex A, this book was drawn up in the same place, from the same copy, and this codex is far superior because of the reliability of
+						the transcription, in orthographic matters, sometimes in the order of writing, but especially in the chronography. With twenty-nine lines,
+						the page is not as congested as in codex A. The prescriptions, especially those that prescribe the years of the world, stand on their own line
+						in capital characters, occasionally marked by red ink, and occasionally written in big calligraphic letters.
+					</dd>
+				</dl>
+
+				<p>
+					While there are a few other incomplete copies of Syncellus’ chronicle, only MSS A and MSS B contain the texts of Manetho. Syncellus also
+					presented information about <i>the Old Chronicle</i> and <i>the Book of Sothis</i>.
+				</p>
+			</dd>
+		</dl>
+
+		<h2 class="text-center pt-16 pb-3 shine">Pseudo-Manetho</h2>
+		<p>
+			<i>Pseudo-Manetho</i> is a term used to describe manuscripts that are claimed to be written by Manetho but are actually forgeries created by subsequent
+			authors who used Manetho's name to attempt to give forgery credibility.
+		</p>
+		<dl>
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Old Chronicle</b> &mdash; <span class="text-base font-sans">eight (?) centuries after Manetho (c. 400)</span>
+			</dt>
+			<dd>
+				Syncellus: “Now, among the Egyptians there is current an old chronography, by which indeed, I believe, Manetho has been led into error. In 30
+				dynasties with 113 generations, it comprises an immense period of time [not the same as Manetho gives] in 36,525 years, dealing first with the <i
+					>Aeritae</i
+				>, next with the <i>Mestraei</i>, and thirdly with the <i>Egyptians</i>.” <small
+					>[All three merely refers to Egypt at different times. The actual total is 36,347 years.]</small
+				>
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Book of Sothis</b> &mdash; <span class="text-base font-sans">eight centuries after Manetho (c. 400)</span>
+			</dt>
+			<dd>
+				Also called the Sothic Cycle, Syncellus attributed it to Manetho but it is most likely a forgery used/composed by <a
+					href="https://en.wikipedia.org/wiki/Panodorus_of_Alexandria"
+					target="_blank"
+					title="External link">Panodorus of Alexandria</a
+				>. The sequence of kings is clearly not presented in chronological order.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Eratosthenes</b> &mdash; <span class="text-base font-sans">c. 50 years after Manetho</span>
+			</dt>
+			<dd>
+				According to Syncellus, <a href="https://en.wikipedia.org/wiki/Apollodorus_of_Athens" target="_blank" title="External link"
+					>Apollodoros of Athens</a
+				> (second century BC) recorded a list of 38 Theban kings taken from
+				<a href="/authors/eratosthenes">Eratosthenes of Cyrene</a> (third century BC), Chief Librarian at the Library of Alexandria from 240 BC. However,
+				<i>both authors are considered pseudonymous,</i> i.e. written by someone else, using their names to lend authority to the list. Some names can
+				also be found in Manetho and Herodotus, but some have no resemblance to other known lists indicating that the list was corrupted by an intermediary,
+				or invented.
+			</dd>
+		</dl>
+
+		<h2 class="text-center pt-16 pb-3 shine">Fragmentary comments</h2>
+		<p>Often attributed to include fragments of Manetho, but most are short isolated passages, often unrelated to Aegyptiaca content.</p>
+		<dl>
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Plutarch</b> &mdash; <span class="font-sans">three centuries after Manetho <small>(c. 70-85? AD)</small></span>
+			</dt>
+			<dd>
+				<a href="https://en.wikipedia.org/wiki/Plutarch" target="_blank">Plutarch</a> references Manetho multiple times in <i>Isis and Osiris</i>;
+				however, it is unlikely that the source was Aegyptiaca, but rather another work by Manetho. Plutarch visited Alexandria and Egypt to complete
+				his education, and although it is unknown when he wrote the essay, it is generally thought to have been after his visit to Egypt.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Excerpta Latina Barbari</b> &mdash; <span class="text-base font-sans"
+					>eight centuries after Manetho (c. 500)</span
+				>
+			</dt>
+			<dd>
+				This little chronicle was probably written in Greek around 500 AD and later translated into Latin by the eponymous 'barbarian', who had only a
+				rudimentary knowledge of both languages. The only kings of Egypt mentioned are those of the Ptolemaic Dynasty &ndash; which were not included
+				by Manetho.
+			</dd>
+
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Malalas</b> &mdash; <span class="text-base font-sans">nine centuries after Manetho (c. 550)</span>
+			</dt>
+			<dd>
+				Drawing on Eusebius and other compilers, <em>Ioannes Malalas</em>, a Byzantine chronicler from Antioch, wrote a <i>Chronographia</i> in 18 books.
+				He mentions Manetho in two places: <i>These ancient reigns of early Egyptian kings are recorded by Manetho...</i> and <i
+					>the ancient reigns in Egypt before King Naracho were set forth by the wise Manetho, as has already been mentioned.</i
+				> Malalas presented precisely nothing from Manetho, he just referenced his work.
+			</dd>
+		</dl>
+
+		<h2 class="text-center pt-16 pb-3 shine">After Manetho</h2>
+		<p>
+			The pharaohs that ruled after the conquest by Alexander the Great, are not mentioned by Manetho. As Syncellus put it more than a thousand years
+			after Manetho:
+		</p>
+		<blockquote>
+			Extending up to the time of Ochos and Nektanebo, Manetho's outline of the thirty-one dynasties of Egypt encompassed a period of 1050 years for
+			his third book. But the sequence of years after this is taken from Greek historians. There are fifteen Macedonian kings.
+		</blockquote>
+
+		<h2 class="text-center pt-16 pb-3 shine">Other authors</h2>
+
+		<p>Often attributed to include fragments of Manetho, but most are short isolated passages, often unrelated to Aegyptiaca content.</p>
+		<dl>
+			<dt class="mt-10">
+				<b class="dark:text-shark-100">Herodotus</b> &mdash; <span class="font-sans"
+					>two centuries <i>before</i> Manetho <small>(c. 450 BC)</small></span
+				>
+			</dt>
+			<dd>
+				<a href="/authors/herodotus">Herodotus of Halicarnassus</a>, known as the <i>'Father of History'</i>, visited Egypt during the First Persian
+				domination. His work, <em>The Histories</em>, recounts some of Egypt's history, but also includes legends and embellished anecdotes. While it
+				is rich in details about Egyptian culture, the names of the kings are very sparse, and the chronological order is evidently incorrect.
+			</dd>
+		</dl>
+	</section>
+
+	<ul class="space-y-2 mt-20">
 		{
 			authors.map((p) => (
 				<li>

@@ -1,14 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import kinglists from "../../data/kinglists.json";
-
 import abydos from "../../data/kl_abydos.json";
 import saqqara from "../../data/kl_saqqara.json";
 import karnak from "../../data/kl_karnak.json";
 import ramesseum from "../../data/kl_ramesseum.json";
 import marseille from "../../data/kl_marseille.json";
 import medinet from "../../data/kl_medinet.json";
-//import turin from "../../data/kl_turin.json";
+import kings from "../../data/pharaohs.json";
 
 export async function getStaticPaths() {
 	return kinglists.map((p) => ({
@@ -43,7 +42,6 @@ const kinglistData = {
 	marseille: marseille,
 	"ramesseum-canon": ramesseum,
 	"medinet-habu-canon": medinet,
-	//turin: turin,
 };
 
 const { kinglist } = Astro.props;
@@ -78,12 +76,13 @@ try {
 } catch (e) {
 	// fallback to JSON intro if Markdown is missing
 }
+
+// Debugging: Log data to verify
+console.log("Kinglist items:", items);
+console.log("Pharaohs:", kings);
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
-	<!-- <h1 class="text-3xl font-bold">{kinglist.name}</h1> -->
-	<p class="text-lg">{kinglist.period}</p>
-
 	{
 		hasMarkdown && IntroComponent && (
 			<article class="mt-4">
@@ -95,18 +94,25 @@ try {
 		items.length > 0 && (
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
 				{items.map((item) => (
-					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-2">
-						{item.bild && <img src={`/svg/${svgFolder}/${item.bild}.svg`} alt={item.namn} class=" h-20 dark:invert object-contain" />}
-						<div class="font-bold text-xl" set:html={item.namn} />
-						{item.meaning && <div class="text-sm">{item.meaning}</div>}
-						{item.tlit && <div class="text-sm tlit">{Translit(item.tlit)}</div>}
-						{/* 						{item.mdc && (
-							<div class="text-sm">
-								<span class="font-semibold">MDC:</span> {item.mdc}
-							</div>
-						)}
- */}{" "}
-						{item.nr && <div class="text-xs">No: {item.nr}</div>}
+					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-2 text-center">
+						{item.bild && <img src={`/svg/${svgFolder}/${item.bild}.svg`} alt={item.namn} class="h-20 dark:invert object-contain" />}
+						<div class="font-bold font-serif text-2xl tracking-wide" set:html={item.namn} />
+						{item.tlit && <div class="tlit">{Translit(item.tlit)}</div>}
+						{item.meaning && <div class="">{item.meaning}</div>}
+						<div class="flex justify-between">
+							{item.nr && <div class="font-mono">No: {item.nr}</div>}
+							{item.farao !== undefined && (
+								<div class="">
+									{(() => {
+										if (item.farao === 0) {
+											return <span>Unknown</span>;
+										}
+										const pharaoh = kings.find((pharaoh) => Number(pharaoh.no) === item.farao);
+										return pharaoh ? <a href={`/pharaohs/${pharaoh.slug}`}>{pharaoh.name}</a> : null;
+									})()}
+								</div>
+							)}
+						</div>
 					</div>
 				))}
 			</div>

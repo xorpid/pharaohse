@@ -4969,7 +4969,6 @@
 		"translation": "Who has united the will of the Two Lands",
 		"source": "Coptos decree R (Cairo Museum JE 41894)<br>URK, I, 304",
 		"beckerath": "70-71, b:H",
-		"baker": 260,
 		"updated": "2016-05-25 13:44:19"
 	},
 	{
@@ -30323,9 +30322,9 @@
 		"mdc": "ini-ti-E23-i-i-Ar-M8A",
 		"tlit": "driwS",
 		"translation": "Darius",
-		"source": "Davies, <i>The Temple of Hibis in el Khargeh Oasis</i> (1953), III, pl. 9, passim",
+		"source": "Davies, <i>The Temple of Hibis in el Khargeh Oasis</i> (1953), III, pl. 9, passim<br>Statue of Darius I, National Museum of Iran, Tehran: inv. no 4112",
 		"beckerath": "220-221, 2:E6",
-		"updated": "2016-06-10 18:54:06"
+		"updated": "2025-10-05 10:53:06"
 	},
 	{
 		"id": 1629,
@@ -36985,7 +36984,6 @@
 		"farao": 322,
 		"titel": 5,
 		"parent": 2,
-
 		"ordning": 3,
 		"hiero": "35-02-03",
 		"name": "Wepwawet em saf",
@@ -37000,7 +36998,6 @@
 		"farao": 323,
 		"titel": 4,
 		"parent": 1,
-
 		"ordning": 1,
 		"hiero": "35-03-01",
 		"name": "Sekhem Ra khu tawy",
@@ -37016,13 +37013,12 @@
 		"farao": 323,
 		"titel": 5,
 		"parent": 2,
-
 		"ordning": 2,
 		"hiero": "35-03-02",
 		"name": "Pantjeny",
 		"mdc": "p:n-T:n-T14-G41",
 		"tlit": "p(A)-n-Tnj",
-		"translation": "Pantjeny &#40;&quot;The man of Thinis&quot;&#41;",
+		"translation": "Pantjeny (“The man of Thinis”)",
 		"source": "Stela in British Museum, EA 630<br>Petrie, <i>Abydos</i>, II, plate 31 (upper right); 32 (2)",
 		"beckerath": "88-89, 3:E",
 		"updated": "2016-06-02 21:25:25"
@@ -37032,45 +37028,45 @@
 		"farao": 324,
 		"titel": 1,
 		"parent": 1,
-
 		"ordning": 1,
 		"hiero": "35-04-01",
 		"name": "Sewadj tawy",
 		"mdc": "s-wAD-(N16:N16)",
 		"tlit": "swAD-tAwj",
-		"source": "Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
+		"translation": "Who has made the Two Lands flourish",
+		"source": "Abydos Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
 		"beckerath": "104-105, j:H",
-		"updated": "2016-06-02 21:38:58"
+		"updated": "2025-10-02 21:38:58"
 	},
 	{
 		"id": 597,
 		"farao": 324,
 		"titel": 4,
 		"parent": 2,
-
 		"ordning": 2,
 		"hiero": "35-04-02",
 		"name": "Men khau Ra",
 		"mdc": "ra-mn:n-xa-a:Z2",
 		"tlit": "mn-xaw-ra",
-		"source": "Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
+		"translation": "The established one is (like) the appearances of Ra",
+		"source": "Abydos Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
 		"beckerath": "104-105, j:T",
-		"updated": "2016-06-02 21:38:58"
+		"updated": "2025-10-02 21:38:58"
 	},
 	{
 		"id": 598,
 		"farao": 324,
 		"titel": 5,
 		"parent": 3,
-
 		"ordning": 3,
 		"hiero": "35-04-03",
 		"name": "Snaa ib",
 		"mdc": "Y4-Y1:ib*Z1",
 		"tlit": "snaa-jb",
-		"source": "Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
+		"translation": "The soother (lit. “who has made the heart smooth”)",
+		"source": "Abydos Stela of Snaaib (Cairo Museum, CG 20517)<br>Mariette, <i>Abydos</i> (1880), II, pl. 27 (right)",
 		"beckerath": "104-105, j:E1",
-		"updated": "2016-06-02 21:38:58"
+		"updated": "2025-10-02 21:38:58"
 	},
 	{
 		"id": 267,

@@ -98,12 +98,12 @@ const { obelisk } = Astro.props;
 		}
 	</div>
 	{/* Sources at the bottom */}
-	<div class="mt-4 pt-4 border-t border-stone-200 dark:border-neutral-700">
+	<div class="mt-4 pt-4 border-t bordercolor">
 		{
 			Array.from({ length: 8 }, (_, i) => {
 				const srcKey = `src${i + 1}`;
 				const src = obelisk[srcKey];
-				return src ? <div class="text-xs text-gray-500 dark:text-gray-400 mb-1" set:html={src} /> : null;
+				return src ? <div class="text-xs bibliography leading-tight mb-1" set:html={src} /> : null;
 			})
 		}
 	</div>
