@@ -130,6 +130,7 @@
 		td {
 			font-size: var(--text-sm);
 			padding-inline: 0.5rem;
+			padding-block: 0.25rem;
 			/* vertical-align: top; */
 			border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
 		}
