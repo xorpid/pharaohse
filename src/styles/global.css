@@ -60,6 +60,8 @@
 	--dark-transliteration: var(--color-orange-300);
 	--dark-greek: var(--color-emerald-400);
 	--dark-armenian: var(--color-yellow-400);
+
+	--aspect-book: 2 / 3;
 }
 
 /* Add your own default base styles for specific HTML elements */
@@ -183,7 +185,7 @@
 		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
 		border-left: 14px solid light-dark(var(--highlight), var(--dark-highlight));
 		font-size: 90%;
-		font-style: normal;
+		font-style: italic;
 		font-weight: 400;
 		line-height: var(--leading-snug);
 		max-width: 60ch;
@@ -313,6 +315,7 @@
 		font-size: var(--text-sm);
 		box-shadow: 2px 2px 8px #00000082;
 	}
+	/* /dynasty/*.md */
 	.dynruta {
 		font-family: var(--font-sans);
 		position: relative;
@@ -347,6 +350,10 @@
 			li {
 				padding-block: 0.25rem;
 				border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
+			}
+			.total {
+				list-style-type: none !important;
+				font-weight: var(--font-weight-semibold);
 			}
 		}
 	}
@@ -424,6 +431,7 @@
 	}
 	mid {
 		font-size: var(--text-xs);
+		font-style: normal;
 		color: light-dark(var(--primary), var(--dark-primary));
 		vertical-align: 5%;
 		padding-inline: 0.5ch;

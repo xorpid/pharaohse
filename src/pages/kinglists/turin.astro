@@ -1,30 +1,157 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import turinData from "../../data/kl_turin.json";
-
-const cols = Array.from(new Set(turinData.map((item) => item.col))).sort((a, b) => a - b);
-const pageParam = Astro.url.searchParams.get("page");
-const page = pageParam ? Number(pageParam) : 1;
-const currentCol = cols[page - 1] ?? cols[0];
-//const rows = turinData.filter((item) => item.col === currentCol);
+import Layout from "@/layouts/Layout.astro";
+const showcasesData = [
+	{
+		title: "The history",
+		body: "A detailed history of the papyrus.",
+		bild: "/images/TurinKinglist-history.webp",
+		url: "/kinglists/turin-history",
+	},
+	{
+		title: "The content",
+		body: "A look at what is in the king list.",
+		bild: "/images/TurinKinglist-content.webp",
+		url: "/kinglists/turin-contents",
+	},
+	{
+		title: "Column 1",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col01-pharaohSE.webp",
+		url: "/kinglists/turin/column-1",
+	},
+	{
+		title: "Column 2",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col02-pharaohSE.webp",
+		url: "/kinglists/turin/column-2",
+	},
+	{
+		title: "Column 3",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col03-pharaohSE.webp",
+		url: "/kinglists/turin/column-3",
+	},
+	{
+		title: "Column 4",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col04-pharaohSE.webp",
+		url: "/kinglists/turin/column-4",
+	},
+	{
+		title: "Column 5",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col05-pharaohSE.webp",
+		url: "/kinglists/turin/column-5",
+	},
+	{
+		title: "Column 6",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col06-pharaohSE.webp",
+		url: "/kinglists/turin/column-6",
+	},
+	{
+		title: "Column 7",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col07-pharaohSE.webp",
+		url: "/kinglists/turin/column-7",
+	},
+	{
+		title: "Column 8",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col08-pharaohSE.webp",
+		url: "/kinglists/turin/column-8",
+	},
+	{
+		title: "Column 9",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col09-pharaohSE.webp",
+		url: "/kinglists/turin/column-9",
+	},
+	{
+		title: "Column 10",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col10-pharaohSE.webp",
+		url: "/kinglists/turin/column-10",
+	},
+	{
+		title: "Column 11",
+		body: "Row-by-row examination",
+		bild: "/images/TurinKinglist-col11-pharaohSE.webp",
+		url: "/kinglists/turin/column-11",
+	},
+	{
+		title: "The fragments",
+		body: "The damaged pieces of the papyrus.",
+		bild: "/images/TurinKinglist-unplaced-fragments.webp",
+		url: "/kinglists/turin-fragments",
+	},
+	{
+		title: "The vorlage",
+		body: "The king list's direct ancestor",
+		bild: "/images/libraryvorlage.webp",
+		url: "/kinglists/turin-vorlage",
+	},
+	{
+		title: "The recto",
+		body: "The other side of the papyrus",
+		bild: "/images/libraryrecto.webp",
+		url: "/kinglists/turin-recto",
+	},
+	{
+		title: "The Gallery",
+		body: "Illustrations, photos and facsimiles.",
+		bild: "/images/CvdGeest.webp",
+		url: "/kinglists/turin-gallery",
+	},
+	{
+		title: "The Library",
+		body: "Relevant books and articles",
+		bild: "/images/librarybookes.webp",
+		url: "/kinglists/turin/library",
+	},
+];
 ---
 
-<Layout title="Turin Kinglist">
-	<h1 class="text-3xl font-bold mb-6">Turin Kinglist</h1>
-
-	<nav class="text-center">
-		Column navigation
-		<div class="mb-4 flex flex-wrap gap-2 w-fit mx-auto">
-			{
-				cols.map((col, idx) => (
-					<a
-						href={`/kinglists/turin/column-${idx + 1}`}
-						class={`px-3 py-1 rounded ${currentCol === col ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-stone-700 dark:text-white"}`}
-					>
-						{col}
-					</a>
-				))
-			}
-		</div>
-	</nav>
+<Layout
+	title="Turin King List"
+	meta1="An ancient papyrus roll written in Hieratic contains the longest known chronological list of Egyptian pharaohs."
+	meta2="Egyptian chronology,Turin papyrus,hieratic,king list,pharaohs"
+	bild="/images/pharaohse-turin.webp"
+>
+	<div class="pb-8">
+		<p>
+			The most comprehensive ancient list of Egyptian pharaohs can be found in the so-called
+			<em>Royal Canon of Turin</em>, a poorly preserved hieratic papyrus roll from the reign of Ramesses II. It is also known as the <em
+				>Turin King List</em
+			>, and is without a doubt the most significant king list of Ancient Egypt and was uncovered in 1824 by Jean-Francois Champollion in the Egyptian
+			Museum in Turin, Italy. Two-thirds of the papyrus is lost, having been broken into hundreds of tiny pieces during handling and transport to
+			Italy after its discovery around 1820.
+		</p>
+		<p>
+			The papyrus underwent a modern reconstruction in the summer of 2022, with only minor adjustmentsa and additions made as most of the fragments
+			are already in the correct positions. As of February 2024, no publication of the reconstruction has yet been announced. We have waited for
+			decades, so a few months or years more is nothing...
+		</p>
+	</div>
+	<div class="grid gap-8 grid-cols-1 sm:grid-cols-3 text-center">
+		{
+			showcasesData.map((showcase) => (
+				<div class="item">
+					<div class="relative">
+						<a href={showcase.url}>
+							<img
+								class="w-full aspect-square rounded-t-xl hover:saturate-150 hover:brightness-125 transition duration-300"
+								src={showcase.bild}
+								alt={showcase.body}
+							/>
+						</a>
+						<div class="absolute bottom-0 left-0 w-full p-0 bg-black/50 text-white">
+							<p class="text-3xl font-bold my-2">{showcase.title}</p>
+							<p class="mt-0 text-sm">{showcase.body}</p>
+						</div>
+					</div>
+				</div>
+			))
+		}
+	</div><!-- turin-grid END -->
 </Layout>

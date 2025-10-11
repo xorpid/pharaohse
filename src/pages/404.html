@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ooops!</title>
+	<style>
+		:root {
+			--opacity: 0.5;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body {
+			height: 100%;
+			width: 100vw;
+			background-color: #880808;
+			color: white;
+		}
+
+		.grid {
+			display: grid;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			font-size: 8vw;
+			font-weight: black;
+			padding-bottom: 2rem;
+			text-shadow: 0 2px 15px #222;
+		}
+
+		h2 {
+			font-size: 4vw;
+			font-weight: black;
+			padding-bottom: 1rem;
+			color: whitesmoke;
+			text-decoration: none;
+		}
+
+		p {
+			font-size: 2vw;
+			padding-bottom: 1rem;
+		}
+
+		img {
+			width: 25vw;
+			max-width: 100%;
+			padding-inline: 2rem;
+			filter: contrast(0%) brightness(0%);
+		}
+
+		img:hover,
+		img:focus {
+			filter: invert(100%) brightness(100%) contrast(100%);
+		}
+
+		button {
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+		}
+
+		button:hover {
+			cursor: pointer;
+		}
+
+		a {
+			border: none;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="grid">
+		<div class="item">
+			<h1>Ooops!</h1>
+			<p>Something went wrong</p>
+			<a href="/" onclick="history.go(-1)">
+				<img src=" /svg/hand.svg" alt="Error 404: Something went wrong hieroglyphs" />
+				<h2>RETURN</h2>
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const title = "Royal Canon Library";
+const t = "Royal Canon Library ";
+var ut = "";
+var meta1 = "A collection of important books and articles concerning the Turin king list, all translated to English and freely available.";
+var meta2 = "Turin Canon,research,egyptology,journals,rare books,rare journals,translated";
+const bild = "/images/fp-pharaoh.webp";
+
+const { id } = Astro.props; /* id from [dyn].astro, ie dynasty number */
+import bok from "@/data/boksida.json";
+var reign, aka, f, furl, foo;
+var x = 0;
+const books = new Array();
+var slug, link, titel, author, journal, year, num;
+
+for (let i = 0; i < bok.length; i++) {
+	x++;
+	slug = bok[i].slug;
+	titel = bok[i].title;
+	author = bok[i].forfattare;
+	journal = bok[i].journal;
+	num = bok[i].issue;
+	year = bok[i].year;
+	/* push all to an array */
+	books.push({
+		url: `/kinglists/turin/library/books/${slug}`,
+		vad: titel,
+		vem: author,
+		var: journal,
+		nr: num,
+		nar: year,
+	});
+}
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<div>
+		<p class="lead">
+			This is a collection of important books and articles on the <a href="/ancient-egypt/kinglist/turin">Turin King List</a> written since its discovery
+			in 1824.
+		</p>
+
+		<p>
+			Some of the often hard-to-find key works of earlier scholars were composed in French, Italian, and German. The language barrier poses a
+			challenge for researchers of the king list, who often need to have the texts translated. This issue can be resolved as all the texts are <em
+				>now available in English.</em
+			>
+		</p>
+		<p class="pb-10">
+			The translations were performed using online tools. I have some knowledge of German and French, which helped with the spotty Italian
+			translations. They were manually entered in the spring/summer of 2016 and are available for free. Any errors are unintentional. It is
+			recommended to consult the original text, preferably a physical copy of the book or article, as the digital world is more prone to errors and
+			corruption.
+		</p>
+	</div>
+	<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+		{
+			books.map((nu) => (
+				<div class="bokruta aspect-book">
+					<a title={nu.titel} href={nu.url} class="sepia-50 cursor-pointer">
+						<button class="w-full h-full grid grid-template-rows place-content-around p-3 cursor-pointer tx dark:tx-dark">
+							<>
+								<div class="font-bold text-lg/6">{nu.vad}</div>
+							</>
+							<>
+								<div class="text-base">{nu.vem}</div>
+							</>
+							<div class="font-normal text-sm">{nu.var && nu.var + " " + nu.nr}</div>
+							<>
+								<div class="text-lg">{nu.nar}</div>
+							</>
+						</button>
+					</a>
+				</div>
+			))
+		}
+	</div>
+</Layout>
+<style>
+	.bokruta {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 500ms;
+		border-width: 4px;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+		background-color: #3f281580;
+		border-color: #624935;
+		/* color: #624935; */
+	}
+	.bokruta:hover {
+		background-color: #75492480;
+	}
+</style>

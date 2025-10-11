@@ -1,0 +1,14 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const title = "Royal Canon Library";
+const t = "Royal Canon Library ";
+var ut = "";
+var meta1 = "A collection of important books and articles concerning the Turin king list, all translated to English and freely available.";
+var meta2 = "Turin Canon,research,egyptology,journals,rare books,rare journals,translated";
+const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<div set:html={ut} />
+</Layout>

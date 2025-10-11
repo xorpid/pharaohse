@@ -1,7 +1,7 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
-import turinData from "../../../data/kl_turin.json";
-import faraos from "../../../data/pharaohs.json";
+import Layout from "@/layouts/Layout.astro";
+import turinData from "@/data/kl_turin.json";
+import faraos from "@/data/pharaohs.json";
 export async function getStaticPaths() {
 	const cols = Array.from(new Set(turinData.map((item) => item.col))).sort((a, b) => a - b);
 	return cols.map((col) => ({
@@ -14,10 +14,11 @@ const { col, cols } = Astro.props;
 const colStr = typeof col === "string" ? col : String(col);
 const colNum = Number(colStr.replace("column-", ""));
 const rows = turinData.filter((item) => item.col === colNum);
+const pagetitle = `Turin King List: Column ${colNum}`;
+const meta1 = `The Turin King List, an ancient papyrus roll, contains the longest known sequence of Egyptian pharaohs. This is the contens of column ${colNum}.`;
 ---
 
-<Layout title="Turin Kinglist">
-	<!-- <h1 class="text-3xl font-bold mb-6">Turin Kinglist</h1> -->
+<Layout title={pagetitle} meta1={meta1} meta2="" bild="">
 	<nav class="text-center my-10">
 		Column navigation
 		<div class="mb-4 flex flex-wrap gap-2 w-fit mx-auto">

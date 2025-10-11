@@ -1,0 +1,1732 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const fotnoter = [
+	"Based on the palaeographical similarities with other papyri from the same period. See Ryholt, <i>Political Situation</i>, 9.",
+	"i.e. 7.4 onwards, which ironically contain most of the preserved names of the king list.",
+	"Cerny, <i>Paper,</i> 8f.",
+	'Bridget Leach and William John Tait, "Papyrus," in <i>Ancient Egyptian Materials and Technology</i> (Cambridge: 2000), 236f.',
+	"Cerny, <i>Paper,</i> 16f.",
+	"Gardiner, <i>Royal Canon</i>, 19–20.",
+	"Cerny, <i>Paper,</i> 19.",
+	"Ryholt, <i>Political Situation</i>, 9.",
+	"Cerny, <i>Paper,</i> 11.",
+	'Ryholt, "Turin King-list", 138.',
+	"ibid.",
+	"Möller, <i>Hieratiche Paläographie</i> 2",
+	"Out of curiosity I compared and verified 99% of the writing, sign-by-sign, with Möller’s <i>Hieratiche Paläographie</i>. The last percent consist of small traces that are best left to the professionals that are able to understand and interpret the remaining signs.",
+	"Farina, <i>Papiro dei Re</i>, 13f.",
+	'Rolf Krauss, <i>Papyrus Ebers</i>, 75-96. Depuydt, "Ebers Calendar", 61ff.',
+	"Ryholt, <i>Turin king-list</i>, 140.",
+	"Number arrived at by adding the thirty-nine rows in Section A.",
+	"Number arrived at by adding the thirteen rows in Section B. Including a possible lacuna notation of ten kings (5.7), would bring the total to twenty-three.",
+	"The last king of Section B is Neferirkara (5.13)",
+	"The missing numbers after the hundred-sign is a possible fit by adding the lacuna to the total.",
+	"There are fifty-two lines in Sections A+B (39+13). If there was a lacuna notation in (5.7) indicating ten lost kings, the total would be sixty-two.",
+	"Schneider, <i>Chronology</i>, 174",
+	"Adler and Tuffin, <i>Synkellos</i>, 84.",
+	"id. 85f.",
+	"Waddell, <i>Manetho</i>, 2-19.",
+	'Gardiner sign G7, "Falcon on a standard".',
+	"i.e. Sobekhotep II (7.15) and Neferhotep I (7.25), see Ryholt, <i>Turin King-list</i>, 144, §18.",
+	"Allen, <i>Middle Egyptian</i>, 108.",
+	"Ryholt, <i>Turin King-list</i>, 146 (§24).",
+	"Helck, <i>Untersuchungen</i>, 14ff.",
+	"Ryholt, <i>Political Situation</i>, 11.",
+	'Hans Goedicke, "King HwDfA?", <i>JEA</i> 42 (1956): 50-53',
+	"Ryholt, <i>Political Situation</i>, 27.",
+	"Meaning <i>the forefather</i> or <i>the ancestor.</i>",
+	"Ryholt, <i>The Turin king-list</i>, 151.",
+	'Ryholt, <i>Political Situation,</i> 9 writes: "The end of the papyrus seems to have been deliberately cut off in ancient times. The sharp edge along fr. 127 and 163, as well as the fact that the edge is slightly diagonal rather than parallel with the vertical fibres, suggests that the papyrus was cut rather than torn or accidentally fragmented.".',
+	"Farina, <i>Papiro</i>, 11.",
+	"Ryholt, <i>Turin King-list</i>, 136 n. 10.",
+	'origin: <a href="https://collezionepapiri.museoegizio.it/en-GB/material/Cat_1874/" target="_blank">Museo Egizio</a>.',
+	"Orcurti, <i>Catalogo illustrato</i>, 129-30.",
+	"Fabretti, <i>Catalogo generale</i>, 239.",
+];
+---
+
+<Layout
+	title="Turin King List: Contents"
+	meta1="An ancient papyrus roll written in Hieratic contains the longest known chronological list of Egyptian pharaohs."
+	meta2="Egyptian chronology,Turin papyrus,hieratic,king list,pharaohs"
+	bild="/images/pharaohse-turin.webp"
+>
+	<p class="lead">
+		The fragmented nature of the Turin king list papyrus makes a precise interpretation difficult. It necessitates a careful analysis of the papyrus's
+		physical state as well as all of its contents, especially the king list, but both sides are looked at.
+	</p>
+
+	<div>
+		<h2>Origin and purpose</h2>
+		<p>
+			As with most papyri, the provenance of this papyrus roll is uncertain, but indirect evidence point to the Theban necropolis as the likely place
+			of discovery. It is a distinct possibility that it was found in the tomb of a scribe, as the papyrus was reused. However, it is basically just
+			guesswork.
+		</p>
+		<p>
+			The original document contained a tax-register written sometime during the reign of Ramesses II (1279–1213 BCE), or one of his close successors.<button
+				popovertarget="pop1">1</button
+			> When this tax-record became obsolete, the blank back side was used to add the king list, most likely while the papyrus was still relatively new,
+			though a few years to a decade later cannot be ruled out. It contains the records of every Egyptian king with his exact position in chronological
+			order, from the gods to the mortal kings.
+		</p>
+		<p>
+			The Turin King List is often referred to as a canon, but that designation implies a selection based on doctrine, which would have suppressed or
+			omitted kings considered illegitimate. The inscribed king lists of Abydos, Saqqara, and Karnak deliberately excluded several rulers and should
+			be classified as canons.
+		</p>
+
+		<p>
+			The Turin King List, on the other hand, is a chronological list of kings, with no indications of excluded or suppressed kings. The length of
+			their reigns is included, which is absent from all the other lists, and the chronological order seems to be reliable in most cases. <i
+				>The Royal Canon of Turin</i
+			> is undoubtedly a more memorable moniker than
+			<i>the Turin King List</i>, however, accuracy is of importance, which is why this website prefer to use <b>the Turin King List</b>.
+		</p>
+
+		<p>
+			We can safely assume the reign of Ramesses II as the original date of creation, but this does not necessarily mean the list included any of the
+			kings of the New Kingdom. Early in the Eighteenth Dynasty, the administration likely needed a chronological record of the kingdom for political
+			and/or religious reasons. By associating himself with well-known ancestors, the king asserted and legitimized his right to rule the Two Lands.
+		</p>
+	</div>
+
+	<div class="py-10">
+		<h2>Dating the papyrus</h2>
+		<figure class="float-right pl-3">
+			<img src="/images/T-Ramesses2recto.png" alt="Ramesses II on the recto" />
+			<figcaption class="text-sm text-center py-2">Ramesses II, recto (fr. 10+11)</figcaption>
+		</figure>
+		<p>
+			There is no preserved date written on the papyrus roll, neither on the tax-register (<i>recto</i>), nor on the king-list (<i>verso</i>). The
+			recto mentions an <i>“Inspector of the wells of Ramesses Meryamun,”</i> an official during the reign of Ramesses II, indicating that the tax-register
+			was created either during his reign, or possibly shortly afterward, as the office could have persisted for a few years during the remaining Nineteenth
+			Dynasty. It cannot be determined whether the content of the king list was updated to include any of the New Kingdom kings, or simply was a copy of
+			an even older list. The king-list comes to an end in the section that records the kings of the Late Second Intermediate Period (SIP), the last fully
+			preserved name is Sekhemra Shedwaset, <i>“the Might of Ra which rescues Thebes,”</i> an otherwise unattested Theban king, ruling late in the SIP.
+		</p>
+		<p>
+			Orthographically, the hieratic text also suggests a Nineteenth Dynasty origin, but until carbon dating of the papyrus is performed, we can only
+			estimate a date of creation to sometime during the reign of Ramesses II (c. 1279&mdash;1213 BC), making the papyrus more than 3200 years old.
+		</p>
+
+		<p>
+			Following the death of Queen Neferusobek (died 1802 BC), the last ruler of the Twelfth Dynasty, the chronology for the next several centuries is
+			sparse, chaotic and confusing, which is why the period is dubbed the SIP. The lack of contemporary records make any specific theory as to the
+			cause highly speculative, but the number of competing dynasties support a weakening of the central government. The records from Manetho show
+			that his records too were a corrupted mess.
+		</p>
+
+		<div class="py-10">
+			<table>
+				<tr class="border-b text-left"><th>Dyn.</th><th>Africanus</th><th>Eusebius</th></tr>
+				<caption class="text-center py-2 text-sm">Table 1: Dynasties 13 to 18 in Manetho</caption>
+				<tr>
+					<td>13</td>
+					<td>60 kings of <i>Diospolis</i>, <small>453 years</small></td>
+					<td>60 kings of <i>Diospolis</i>, <small>453 years</small></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>76 kings of <i>Xois</i>, <small>184 years</small></td>
+					<td>76 kings of <i>Xois</i>, <small>184 years</small></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>6 Hyksos, <small>284 years</small></td>
+					<td>Kings of <i>Diospolis</i>, <small>250 years</small></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>32 Hyksos, <small>518 years</small></td>
+					<td>5 kings of <i>Thebes</i>, <small>190 years</small></td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>43 Hyksos and 43 kings of <i>Thebes</i>, <small>151 years</small></td>
+					<td>4 Hyksos of <i>Memphis</i>, <small>103 years</small></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>16 kings of <i>Thebes</i>, <small>263 years</small></td>
+					<td>14 kings of <i>Thebes</i>, <small>348 years</small></td>
+				</tr>
+				<tfoot>
+					<tr class="fet">
+						<td>Tot.</td>
+						<td>276 kings</td>
+						<td>159 + <i>x</i> kings.</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<p>
+			This is a clear indication that not even the Egyptians themselves had a clear picture of the events that took place during these troubled times.
+			The records that survived were not always complete, nor fully preserved, making it all but impossible to get a clear picture, which is
+			understandable as the timespan is not mere decades but centuries. Furthermore, Manetho is also susceptible to translation and transcription
+			errors by the non-native epitomists, that could not be expected to correctly interpret the strange and foreign names. The Turin king list
+			preserve a total of 138 kings<button popovertarget="pop2">2</button> after the Twelfth Dynasty, but we are left in the dark as to where it ended.
+		</p>
+	</div>
+
+	<div>
+		<h2 class="py-5">Physical characteristics</h2>
+		<p>
+			To determine the physical properties of the papyrus roll, careful consideration of the joins and patches is necessary to assure the position of
+			the columns according to established research. A full-size papyrus roll during the New Kingdom usually consisted of up to twenty sheets,<button
+				popovertarget="pop3">3</button
+			> aligned with the right edge of one sheet overlapping the left of the next, joined together by adding an adhesive starch paste, and flattening the
+			joins with a mallet.<button popovertarget="pop4">4</button><br />
+			The papyrus is roughly 43 cm in height, corresponding to a full-sized roll,<button popovertarget="pop5">5</button> and measure about 169 cm in length,
+			or about six and a half joined sheets (see Table 2), for an total area of 7267 cm<sup>2</sup>. The placed fragments amount to an area of 2116 cm<sup
+				>2</sup
+			>, or only about 29% of the original papyrus, not including the fragments Gardiner marked <i>&quot;doubtful and useless&quot;</i>.<button
+				popovertarget="pop6">6</button
+			>
+		</p>
+
+		<p>
+			Obviously, single sheets of papyri would be troublesome to use and handle in many ways, especially storage. So to create a larger writing
+			surface, a number of sheets were pasted together, or “joined.” The joins can be easily seen, and from the size and position of the fragments, it
+			is obvious that two are missing; one to the right of column 3, and one to the right of column 11. With six joins, we can determine that the
+			complete roll consisted of seven sheets, each about 265 mm wide, for a total width of about 1855 mm. The alignment of the fragments is not
+			perfect in all cases, as small variations naturally occurr, such as stretching one part only on the vertical axis, but another only on the
+			horizontal, while yet another will be stretched on both, or none.
+		</p>
+
+		<div class="py-5">
+			<div class="">
+				<div class="text-center">
+					<figure>
+						<figcaption class="text-sm text-center py-2">Figure 1: The sheets and joins of the tax-register</figcaption><img
+							loading="lazy"
+							class="w-full dark:invert"
+							src="/images/TheSheets-r1.png"
+							alt="Figure 1: Location of the joins in the Turin King List"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<p>
+			When produced, the papyrus roll was rolled up with sheet 7 as the innermost sheet, only exposing the rightmost part of sheet 1. It was probably
+			fastened A narrow strip of papyrus was most likely added along the right edge of Sheet 1 to strengthen it, protecting the exposed outer part of
+			the roll from tearing when unrolled, but this also made it thicker.<button popovertarget="pop7">7</button>
+		</p>
+		<p>
+			When the tax-register had served its purpose, instead of discarding it, the blank verso was reused for the kinglist. This process of reusing
+			papyri was probably done regularly and entailed little more than trimming and rerolling the papyrus. It would also be natural to remove the
+			thicker part since it would likely had suffered from wear by constant handling, and as it would become the innermost sheet for the king list, it
+			would naturally resist being rolled up. It definitely would seem prudent to remove this section to create a structurally sound refurbished
+			papyrus roll. It is also entirely possible that this section was cut off to be reused once the kinglist had served its purpose.<button
+				popovertarget="pop8">8</button
+			>
+		</p>
+
+		<div class="py-5">
+			<div>
+				<div class="text-center">
+					<figure>
+						<figcaption class="text-sm text-center py-2">Figure 2: The trimmed tax-register</figcaption><img
+							loading="lazy"
+							class="w-full dark:invert"
+							src="/images/TheSheets-r2.png"
+							alt="Figure 2: The trimmed tax-register"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<p>
+			The ancient Egyptians did not roll papyri around bone or wooden sticks like the Romans did.<button popovertarget="pop9">9</button> With the papyrus
+			roll ready for use, it was turned over horizontally, and rolled back with the tax-register on the outside and the blank side ready for use on the
+			inside. Rerolling was not good for the integrity of the papyrus as it had already settled with the horizontal fibres on the inside, but it probably
+			mattered little to the scribe as it was not intended to be kept in the archives. The trimming of the sheet meant that it lost approximately 130-150
+			mm; shortening the papyrus roll to approximately 1705 mm.
+		</p>
+
+		<div class="py-5">
+			<div class="">
+				<div class="text-center">
+					<figure>
+						<figcaption class="text-sm text-center py-2">Figure 3: the Turin King List</figcaption><img
+							loading="lazy"
+							class="w-full dark:invert"
+							src="/images/TheSheets-vs.png"
+							alt="Figure 3: The sheets of the Turin King List"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<p>
+			The king list is written from right to left beginning with column 1 on Sheet 7, and the trimmed part of Sheet 1 at the end of column 11. The
+			papyrus starts with a blank margin, 11 cm wide, after which the hieratic writing begins, from the right, to the left.
+		</p>
+
+		<div class="py-10">
+			<div>
+				<table>
+					<caption class="text-center text-sm py-3">Table 2: Papyrus sheets of the Turin King List</caption>
+					<tr class="border-b"><th>Sheet</th><th>Join</th><th>Remarks</th></tr>
+					<tr><td>7</td><td>-</td><td>Columns 1–2. Wide right margin.</td></tr>
+					<tr><td>6</td><td>[6]</td><td>Columns 2–3.</td></tr>
+					<tr><td>5</td><td>5</td><td>Columns 3–5.</td></tr>
+					<tr><td>4</td><td>4</td><td>Columns 5–6.</td></tr>
+					<tr><td>3</td><td>3</td><td>Columns 7–8.</td></tr>
+					<tr><td>2</td><td>2</td><td>Columns 9–10.</td></tr>
+					<tr><td>1</td><td>[1]</td><td>Column 11. (trimmed)</td></tr>
+				</table>
+			</div>
+			<div class="pt-10 pb-5">
+				<div class="text-center">
+					<figure>
+						<figcaption class="text-sm text-center py-2">
+							This is a possible way of preparing the already used papyrus for the king list on its back.
+						</figcaption><img
+							loading="lazy"
+							class="w-fit mx-auto"
+							src="/images/T-rectoverso.jpg"
+							alt="Figure 4: Preparing the papyrus for the king-list"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sek">
+		<h2>Patches</h2>
+		<p>
+			The upper half of the papyrus suffered damage while rolled up, as is evident by a series of holes at an interval of 16 cm, about 4 cm from the
+			top edge.<button popovertarget="pop10">10</button> The cause of the damage is most likely from some sharp object perforating the papyrus. The holes
+			were repaired before the papyrus was ever used, and were not marked on the lithographs of Lepsius or Wilkinson.<button popovertarget="pop11"
+				>11</button
+			> The eight patches were first marked by Gardiner. The position and size of Patch number 4 is approximated, since it is lost.
+		</p>
+
+		<div class="py-8">
+			<div class="text-center">
+				<figure class="font-sans text-sm">
+					<figcaption class="text-sm text-center py-2">Figure 5: Location of the patches</figcaption><img
+						loading="lazy"
+						class="w-full bg-light"
+						src="/images/T-patches.webp"
+						alt="Figure 5: Location of the patches in the Turin King List"
+					/>
+				</figure>
+			</div>
+		</div>
+
+		<div class="py-10">
+			<table>
+				<caption class="text-center text-sm py-3">Table 3: Location of patches (right to left)</caption>
+				<tr class="border-b"><th>Patch</th><th>Column</th><th>Size (mm)</th><th>Gap to next (mm)</th></tr>
+				<tr><td>1</td><td>2.1–2.6</td><td>35 x 75</td><td>148</td></tr>
+				<tr><td>2</td><td>3.2–3.6</td><td>31 x 68</td><td>114</td></tr>
+				<tr><td>3</td><td>4.2–4.6</td><td>25 x 56</td><td>316 <i>(158)</i></td></tr>
+				<tr><td><i>4</i></td><td><i>5.4–5.8</i></td><td><i>&ndash;</i></td><td><i>158</i></td></tr>
+				<tr><td>5</td><td>6.3–6.6</td><td>29 x 48</td><td>136</td></tr>
+				<tr><td>6</td><td>7.1–7.7</td><td>23 x 91</td><td>127</td></tr>
+				<tr><td>7</td><td>8.2–8.8</td><td>33 x 91</td><td>138</td></tr>
+				<tr><td>8</td><td>9.3–9.9</td><td>19 x 82</td><td>181</td></tr>
+				<tr><td>9</td><td>11.5–11.9</td><td>27 x 77</td><td>–</td></tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>The hieratic</h2>
+		<p>
+			The paleography indicates that the signs are similar to those found in other documents from the late Nineteenth or early Twentieth Dynasties,
+			and it is evident that the papyrus was not produced by a single hand, but rather by a number of copyists. An indispensable source for
+			transcribing hieratic is the <i>Hieratiche Paläographie</i>,<button popovertarget="pop12">12</button> especially volume 2 which concentrates on the
+			hieratic of the New Kingdom. The transcription of the hieratic script is obviously best left to experienced palaeologists who can distinguish and
+			interpret the smallest traces and nuances in the script. Gardiner’s transcription is, as expected, correct, with emendations and clarifications by
+			Ryholt.<button popovertarget="pop13">13</button> The orthography of the names is mostly correct, but a few names were damaged or erroneously copied.
+			The transcription made by Gardiner is as expected, very good, only a few very minor corrections have been suggested by later studies.
+		</p>
+		<p>
+			The hieratic text consists of 24–31 horizontal lines written in eleven columns, from right to left. The columns are 8–17 cm wide; with a line
+			spacing of about 5 mm, but in columns 2 and 11, it is almost zero.<button popovertarget="pop14">14</button> The first 2&frac12; columns list gods,
+			demigods, and spirits; the remaining 8&frac12;, the historical kings.
+		</p>
+		<p>
+			Roman numerals have been used ever since the facsimiles by Lepsius, but to avoid confusion with the new reconstructions, plain numbers are used.
+			To distinguish text in the papyrus, each column and row of the papyrus is numbered and put in parenthesis, except when used in a table. For
+			example, (4.7) refers to column 4, row 7, which was written as IV 7 in older works.
+		</p>
+		<p>
+			The historical kings begin with Meni (3.10) and occupy the rest of the papyrus. The number of lines increases as the papyrus nears the end, as
+			the scribe needed to compact the writing to be able to fit all the remaining kings onto the papyrus. The list of kings ends in column 11 with
+			partial names of unidentifiable late Second Intermediate Period kings.
+		</p>
+
+		<div class="py-10">
+			<table>
+				<caption class="py-3 text-sm">Table 4: Number of columns and rows in the Turin King List</caption>
+				<tr class="border-b">
+					<th>Column</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th>
+				</tr>
+				<tr>
+					<td><b>Rows</b></td><td>25</td><td>26</td><td>25</td><td>26</td><td>26</td><td>25</td><td>28</td><td>29</td><td>30</td><td>30</td><td>31</td
+					>
+				</tr>
+			</table>
+		</div>
+		<p>
+			It can be safely assumed that the king list was preceded with some sort of introduction describing the nature of its content, probably including
+			the date and name of the scribe, but unfortunately, the first column is almost entirely lost. The structural similarity (gods &rArr; spirits
+			&rArr; mortal kings) with the king lists of Manetho was noted already by Champollion and attempts to reconcile the two has been attempted ever
+			since.
+		</p>
+	</div>
+
+	<div class="sek">
+		<h2>Ditto marks and rubra</h2>
+		<p>
+			Writing the same text over and over is tedious and unnecessary, the scribes of Egypt had long since learned to use ditto marks for repeating
+			words or sentences. A hieratic ditto mark simply consists of a dot,<button popovertarget="pop15">15</button> and was used in the king list to replace
+			three texts: The name of each king is followed by the text <i>“he acted in kingship”</i> which was only written out at the top of a column, and ditto
+			marks were used below that for the repeating text. Ditto marks were also used for the signs for <i>months,</i> and <i>days</i>, but never for <i
+				>years</i
+			>. Numbers were always written out in full.
+		</p>
+		<p>The full formula for an entry reads:</p>
+		<p>
+			<img loading="lazy" class="w-5/6 h-auto dark:invert" src="/svg/T-ditto1.svg" alt="He acted in kingship x years, y months, z days" /><br />
+			Dual King <b>Name</b>. He acted in kingship <b>x</b> years, <b>y</b> months and
+			<b>z</b> days.<button popovertarget="pop16">16</button><br />
+			<span class="tlit">nsw-bit <b>Name</b> ir.n=f m nswyt rnpt <b>x</b> &#42786;bd <b>y</b> hrw <b>z</b></span>
+		</p>
+
+		<p>Using ditto marks, the same line looks like this:</p>
+		<p class="pb-3">
+			<img
+				loading="lazy"
+				class="w-5/6 h-auto dark:invert"
+				src="/svg/T-ditto2.svg"
+				alt="He acted in kingship x years, y months, z days using ditto marks"
+			/>
+		</p>
+		<p>
+			Most likely the source used for the king list was a half-size papyrus since the top rows of columns 4 and 9 contain ditto marks. This means that
+			the scribe made a sign-by-sign copy of the original, not caring that the ditto marks were out of sync with the topmost row, nor that the
+			kingship formula occurs at irregular intervals within the columns.
+		</p>
+
+		<p>The list of kings contains a total of 31 rows with ditto-marks.</p>
+		<p>
+			Red ink (Latin: <i>Rubra</i>) was used to highlight some words on rows concerning the historical kings, except 1.21 which belong to the section
+			of gods. The only royal title that is written in red ink is for Djoser, doubtless due to his good reputation in later times. Red ink was also
+			used on the unplaced Fr. 4.
+		</p>
+
+		<div class="py-3">
+			<div class="col-10">
+				<div class="text-center">
+					<figure>
+						<figcaption class="text-sm text-center py-2">Figure 6: Red ink in the king list</figcaption><img
+							loading="lazy"
+							class="w-full bg-zinc-700/50"
+							src="/images/T-rubra.webp"
+							alt="Figure 6: Red ink in the Royal Canon of Turin"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Headings and summations</h2>
+		<p>
+			There are six headings and ten summations in the king list, which divide it into five sections. The first four summations suggest that different
+			sources were used to gather the data, rather than any historical division by the Egyptians themselves. To them the line of kings was
+			uninterrupted. However, the dynastic divisions were likely invented during the Ptolemaic Dynasty a millennia later, as Manetho divided the
+			periods covered in the papyrus into nineteen dynasties. Furthermore, the two Intermediate Periods are modern definitions of the breakdown of the
+			Old and the Middle Kingdoms.
+		</p>
+		<p>
+			The dynasties of Egypt as we know them were clearly not defined by the time of the New Kingdom, it seems to be a later invention during the
+			Ptolemaic Period. The headings and summations divide the papyrus into sections similar to the dynasties of Manetho, however, there are only
+			eleven clear divisions, or dynasties, not nineteen as would be expected. By the time of Manetho, the list of kings had evolved and been divided
+			into better defined periods.
+		</p>
+		<p>
+			Most numbers found in the king list, follow after the name of a specific king, detailing the length of his reign. Numbers are also found in
+			summations, but not in headings. The numbers in summations specify the number of kings, the length that particular group of kings reigned, and
+			totals calculated where multiple groupings are summed up. The reliability of the totals in the summations is impossible to assess, as no section
+			of the papyrus preserves all the individual reign-lengths.
+		</p>
+		<p>
+			The papyrus is arranged into two parts: mythological and historical kings. The mythological part can further be divided into three sections:
+			gods, demigods, and spirits, as per Manetho. The historical part is a sequence of kings that are arranged chronologically, with headings and
+			summations at irregular intervals. The headings provide the name of the founder, after which each king is listed, followed by a summation that
+			calculates the number of kings and the duration of their reigns.
+		</p>
+		<p>
+			The headings and summations divide the papyrus into sections similar to the dynasties of Manetho, however, there are only eleven clear divisions
+			or dynasties, not nineteen as would be expected.
+		</p>
+		<p>
+			The historical king list can be divided into six sections, each starting with a heading, naming the founder and from where the kings ruled.
+			Following this is a sequential list of kings and their reign length, one per line, and lastly, a summation of the section, where the duration
+			and the number of kings are calculated. There are only six headings, but ten summations, some of which obviously have no corresponding heading,
+			effectively yielding ten distinct periods (see Table 5.)
+		</p>
+		<p>
+			It is tempting to equate those ten periods with the dynasties of Manetho, and while there are general similarities, dynasties 1–10 appears as
+			one heading and four summations in the papyrus. However, better-defined dynasties had likely appeared in the tradition by the time of Manetho, a
+			millennium later.
+		</p>
+
+		<div class="py-3">
+			<div>
+				<table>
+					<caption class="text-sm py-3">Table 5: Sections of the papyrus</caption>
+					<tr class="border-b"
+						><th>&sect;</th><th class="text-left">Description</th><th class="text-left">Begin</th><th class="text-left">End</th><th class="text-left"
+							>Kings</th
+						></tr
+					>
+
+					<tr class="border-b bordercolor"
+						><td class="text-center">&ndash;</td><td>Gods, demigods and spirits</td><td>1.1</td><td>3.9</td><td>&ndash;</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H1</td><td><strong>Heading of Dynasty 1&ndash;10</strong></td><td>3.10</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_section text-center">a</td><td>&nbsp; Dynasty 1&ndash;5</td><td>3.11</td><td>4.25</td><td>39</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S1</td><td>&nbsp; Summation of Dynasty 1&ndash;5</td><td>4.26</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_section text-center">b</td><td>&nbsp; Dynasty 6&ndash;8</td><td>5.1</td><td>5.13</td><td>13</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S2</td><td>&nbsp; Summation of Dynasty 6&ndash;8</td><td>5.14</td><td>5.17</td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_section text-center">c</td><td>&nbsp; Dynasty 9&ndash;10</td><td>5.18</td><td>6.9</td><td>18</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S3</td><td>&nbsp; Summation of Dynasty 9&ndash;10</td><td>6.10</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H2</td><td><strong>Heading of Dynasty 11</strong></td><td>6.11</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"><td class="_section text-center">d</td><td>&nbsp; Dynasty 11</td><td>6.12</td><td>6.17</td><td>6</td></tr>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S4</td><td>&nbsp; Summation of Dynasty 11</td><td>6.18</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H3</td><td><strong>Heading of Dynasty 12</strong></td><td>6.19</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"><td class="_section text-center">e</td><td>&nbsp; Dynasty 12</td><td>6.20</td><td>7.2</td><td>8</td></tr>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S5</td><td>&nbsp; Summation of Dynasty 12</td><td>7.3</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H4</td><td><strong>Heading of Dynasty 13&ndash;14</strong></td><td>7.4</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"><td class="_section text-center">f</td><td>&nbsp; Dynasty 13</td><td>7.5</td><td>8.28</td><td>52</td></tr>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S6</td><td>&nbsp; <i>Summation of Dynasty 13</i></td><td>8.29</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"><td class="_section text-center">g</td><td>&nbsp; Dynasty 14</td><td>9.1</td><td>10.20</td><td>50</td></tr>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S7</td><td>&nbsp; Summation of Dynasty 14</td><td>10.21</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H5</td><td><strong>Heading of Dynasty 15</strong></td><td>10.22</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"><td class="_section text-center">h</td><td>&nbsp; Dynasty 15</td><td>10.23</td><td>10.28</td><td>6</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S8</td><td>&nbsp; Summation of Dynasty 15</td><td>10.29</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_heading text-center">H6</td><td><strong>Heading of Dynasty 16</strong></td><td>10.30</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_section text-center">i</td><td>&nbsp; Dynasty 16</td><td>10.31</td><td>11.14</td><td>15</td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_summation text-center">S9</td><td>&nbsp; Summation of Dynasty 16</td><td>11.15</td><td></td><td></td></tr
+					>
+					<tr class="border-b bordercolor"
+						><td class="_section text-center">j</td><td>&nbsp; Unidentified (Abydos?) Dynasty</td><td>11.16</td><td>11.31</td><td>16</td></tr
+					>
+					<tr class="border-t"><td colspan="4" class="text-right"><b>Total number of kings &nbsp;</b></td><td><b>223</b></td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="mx-auto w-11/12">
+		<h2 class="pb-10">Headings and Summations details</h2>
+		<p>
+			The designations above is only to help distinguish the natural divisions of the the kings into sections that can then in turn be further
+			detailed below. The mythological section preceding the mortal kings is disregarded for obvious reasons.
+		</p>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 1</b> (3.10)</p>
+			<p class="px-2">
+				The details of the first ten dynasties of historical kings. This is evident as there are three summations between the first and second
+				headings. Only the name of Meni is preserved in the heading, the rest is lost. During the New Kingdom, the first ten dynasties were seemingly
+				considered one continuous period, subdivided into three distinct phases, perhaps due to imperfect or lacking records. The further division
+				into five dynasties happened later, probably during the Ptolemaic Period.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>a</b> (3.11&ndash;4.25)</p>
+			<p class="px-2">
+				A continuous lineage of thirty-nine kings of the First through Fifth Dynasties (Meni to Unas.) Many of the names are orthographically
+				incorrect or outright lost due to the poor state of the papyrus. Total preserved reigns: 313 years, 2 months, 5 days.
+			</p>
+			<div class="p-5">
+				<ul class="columns-3 lg:columns-4 text-base">
+					<li>1. Meni</li><li>2. Ity</li><li>3. <i>lost</i></li><li>4. ...tiu</li><li>5. Qenty</li><li>6. Merigeregipen</li>
+					<li>7. Semsem</li><li>8. ...beh</li><li>9. Bau...</li><li>10. ...kau</li><li>11. ...netjer</li><li>
+						12. <i>lost</i>
+					</li>
+					<li>13. Senedj</li><li>14. Aaka</li><li>15. Neferkasokar</li><li>16. Hudjefa</li><li>17. Bebti</li><li>18. Nebka</li>
+					<li>19. Djoserit</li><li>20. Djoserti</li><li>21. ...djefa</li><li>22. Hu....</li><li>23. Snoferu</li><li>
+						24. <i>lost</i>
+					</li><li>25. <i>lost</i></li><li>26. Kha...</li><li>
+						27. <i>lost</i>
+					</li><li>28. <i>lost</i></li><li>29. <i>lost</i></li><li>
+						30. <i>lost</i>
+					</li><li>31. ...kaf</li><li>32. <i>lost</i></li><li>
+						33. <i>lost</i>
+					</li><li>34. <i>lost</i></li><li>35. <i>lost</i></li><li>
+						36. <i>lost</i>
+					</li><li>37. Menkauhor</li><li>38. Djedu</li><li>39. Unis</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 1 (4.26)</p>
+			<p class="px-2">
+				Summation of the First through Fifth Dynasties; 39 kings<button popovertarget="pop17">17</button> from Meni to Unas, amounting to x years. Summation
+				2 contain the sum for all previous reigns (955 years, 15 days), but also the reign length of the 13 kings following Unas (181 years, 6 months,
+				3 days + a 6-year lacuna). Subtracting these, the reign length of the first five dynasties comes to 768 years (an average reign of ~20 years).
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>b</b> (5.1&ndash;5.13)</p>
+			<p class="px-2">
+				A continuous lineage of 13 kings of the Sixth to Eight Dynasties (Teti to Neferirkara.) It is notable that there is no indication of a
+				dynastic break after the Sixth Dynasty, the kings simply continue. Total preserved reigns: 165 years, 5 months, 23 days (164 years, 17 months,
+				23 days).
+			</p>
+			<div class="p-5">
+				<ul class="columns-2 lg:columns-3 text-base">
+					<li>1. <i>lost</i></li><li>2. <i>lost</i></li><li>3. <i>lost</i></li><li>4. <i>lost</i></li><li>
+						5. <i>lost</i>
+					</li><li>6. <i>lost</i></li><li>7. Netiqerty</li><li>8. Neferka Khered Seneb</li><li>9. Nefer</li><li>10. Ibi</li><li>
+						11. <i>lost</i>
+					</li><li>12. <i>lost</i></li><li>13. <i>lost</i></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 2 (5.14&ndash;5.17)</p>
+			<p class="px-2">
+				Summation of the Sixth through Eight Dynasties; [13] kings<button popovertarget="pop18">18</button> until [Neferirkara],<button
+					popovertarget="pop19">19</button
+				> amounting to 181 years, 6 months and 3 days, and a lacuna of 6 years. Total: [13] kings for 1[87 years, 6 months, and 3 days.]<button
+					popovertarget="pop20">20</button
+				> The lacuna notation suggests the wsf in 5.7 was in fact the source. Summation continues with the First through Eight Dynasties; [52]<button
+					popovertarget="pop21">21</button
+				> kings of the house of Meni, for [949 years] and 15 days, and a lacuna of 6 years. Total: [52] kings for 955 years and 1[5] days.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>c</b> (5.18&ndash;6.9)</p>
+			<p class="p-2">A continuous lineage of 18 kings of the Ninth and Tenth Dynasties, unfortunately most are lost. Total preserved reigns: None.</p>
+			<div class="px-5">
+				<ul class="columns-3 lg:columns-4 text-base">
+					<li>1. <i>lost</i></li><li>2. <i>lost</i></li><li>3. Neferkara</li><li>4. Khety</li><li>5. Senen...</li><li>
+						6. <i>lost</i> Neferkara
+					</li><li>7. Mer... Khety</li><li>8. Shed...y</li><li>9. H...</li><li>
+						10. <i>lost</i>
+					</li><li>11. <i>lost</i></li><li>
+						12. <i>lost</i>
+					</li><li>13. <i>lost</i></li><li>14. <i>lost</i></li><li>
+						15. <i>lost</i>
+					</li><li>16. <i>lost</i></li><li>17. <i>lost</i></li><li>
+						18. <i>lost</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 3 (6.10)</p>
+			<p class="px-2">Summation of the Ninth and Tenth Dynasties, however, only the initial signs remain, any dates are lost in lacuna.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 2</b> (6.11)</p>
+			<p class="px-2">Written in red ink, only the initial signs of “the kings of...” remain, the rest is lost.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>d</b> (6.12&ndash;6.17)</p>
+			<p class="px-2">The seven kings of the Eleventh Dynasty, from Mentuhotep I to Mentuhotep III. Total preserved reigns: 120 years.</p>
+			<div class="p-5">
+				<ul class="columns-2 text-base">
+					<li>1. <i>lost</i></li><li>2. <i>lost</i></li><li>3. <i>lost</i></li><li>4. <i>lost</i></li><li>
+						5. <i>lost</i>
+					</li><li>6. Nebhapetra</li><li>7. Sankhkara</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 4 (6.18)</p>
+			<p class="px-2">
+				Total: 6 kings for 1[36 years and a lacuna of] 7 years. Total: 143 [years.] The seven-year lacuna probably belong to the last king of the
+				dynasty, Mentuhotep IV. The number of years must be 136 as we know the total (143), and the lacuna (7).
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 3</b> (6.19)</p>
+			<p class="px-2">Heading for the Twelfth Dynasty of which only the middle portion “Kings of the residence Itj-tawy” remain.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>e</b> (6.20&ndash;7.2)</p>
+			<p class="px-2">
+				Eight kings of the Twelfth Dynasty. Total preserved reigns: 206 years, 2 months, 21 days (literally: 205 years, 13 months, 51 days).
+			</p>
+			<div class="p-5">
+				<ul class="columns-2 text-base">
+					<li>1. ...pib(ra)</li>
+					<li>2. ...ka(ra)</li>
+					<li>3. <i>lost</i></li><li>4. <i>lost</i></li>
+					<li>5. <i>lost</i></li>
+					<li>6. <i>lost</i></li>
+					<li>7. Maakherura</li>
+					<li>8. Neferusobekra</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 5 (7.3)</p>
+			<p class="px-2">Summation of the Twelfth Dynasty. Total: 8 kings of Itj-tawy for 213 years, 1 month, and 17 days.</p>
+			<div class="p-5">
+				<table>
+					<caption class="text-sm py-3">Table 6. Reigns of the Twelfth Dynasty<button popovertarget="pop22">22</button></caption>
+					<tr class="border-b-2 text-left"
+						><th>King</th><th>Coregency</th><th>High<br />Year</th><th>Turin king list</th><th>Africanus</th><th>Eusebius</th></tr
+					>
+					<tr><td>Amenemhat I</td><td>10</td><td>30</td><td>29</td><td>–</td><td>–</td></tr>
+					<tr><td>Senusret I</td><td>2–3</td><td>45</td><td>45</td><td>46</td><td>46</td></tr>
+					<tr><td>Amenemhat II</td><td>3</td><td>35</td><td>30 + x</td><td>38</td><td>38</td></tr>
+					<tr><td>Senusret II</td><td>–</td><td>8/9</td><td>19</td><td>48</td><td>48</td></tr>
+					<tr><td>Senusret III</td><td>20</td><td>39</td><td>30 + x</td><td>8</td><td>8</td></tr>
+					<tr
+						><td>Amenemhat III</td><td>1</td><td>46</td><td>40 + x</td><td>8</td><td class="" rowspan="3"
+							>42 years<br />for the last<br />three kings</td
+						>
+					</tr>
+					<tr><td>Amenemhat IV</td><td>–</td><td>10</td><td>9 y, 3 m, 27 d</td><td>8</td></tr>
+					<tr class="bbd"><td>Sobekneferu</td><td>–</td><td>3</td><td>3 y, 10 m, 24 d</td><td>4</td></tr>
+					<tr class="border-t-2"><td>Total</td><td>36–37</td><td>217</td><td>205 y, 13 m, 51 d</td><td>160</td><td>182</td></tr>
+				</table>
+			</div>
+			<p class="px-3">
+				The 217 years total of the highest attested years from the archaeological record, does not account for the known 36 years of coregencies,
+				which would only yield a total reign of about 181 years for the entire dynasty. According to Africanus, the dynasty ruled for 160 years,<button
+					popovertarget="pop23">23</button
+				> while Eusebius allotted 182 years,<button popovertarget="pop24">24</button> though both only counted seven kings. There is a king Ammenemes mentioned
+				in the epitomes, between the Eleventh and Twelfth Dynasties, with a reign of 16 years. The name and position indicate that it is a corrupted record
+				of Amenemhat I, perhaps misinterpreting <i>wsf 6</i> as 16.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 4</b> (7.4)</p>
+			<p class="px-2">
+				Kings who came after the children (?) of The Dual King, [Sehote]pibra, may he live, prosper and be healthy.<br /><br />
+				Heading for the Thirteenth Dynasty, and possibly also for the Fourteenth. The two dynasties combine for 101 names, which is roughly 45% of all
+				the names of the mortal kings present in the papyrus.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>f</b> (7.5&ndash;8.27)</p>
+			<p class="px-2">
+				Fifty-two kings of the Thirteenth Dynasty. Total preserved reigns: 77 years, 7 months, 1 day (73 years, 47 months, 241 days).
+			</p>
+			<div class="p-5">
+				<ul class="columns-3 lg:columns-4 text-base">
+					<li>1. Khutawyra</li><li>2. Sekhemkara</li><li>3. Amenhemhet(ra)</li><li>4. Sehotepibra</li><li>5. Iufni</li><li>6. Sankhibra</li><li>
+						7. Semenkara
+					</li><li>8. Sehotepibra</li><li>9. Sewadjkara</li><li>10. Nedjemibra</li><li>11. Sobek(hote)p</li><li>12. Ren...neb</li><li>
+						13. Awtibra
+					</li><li>14. Sedjefa...kara</li><li>15. Sekhemra Khutawy Sobekhotep</li><li>16. User...kara Khendjer</li><li>
+						17. ...ka(ra) Imyremeshaw
+					</li><li>18. ...ka</li><li>19. ...ibra Seth</li><li>20. Sekhemkara ... Sobekhotep</li><li>21. Kha...ra Neferhotep</li><li>
+						22. Sihathor
+					</li><li>23. Kha...neferra Sobekhotep</li><li>
+						24. <i>lost</i>
+					</li><li>25. Khahotepra</li><li>26. Wahibra Jaib</li><li>27. Merneferra</li><li>28. Merhotepra</li><li>29. Sankhenra Sewadjtu</li><li>
+						30. Mersekhemra Ined
+					</li><li>31. Sewadjkara Hori</li><li>32. Merka... Sobek(hotep)</li><li>
+						33. <i>lost</i>
+					</li><li>34. <i>lost</i></li><li>35. <i>lost</i></li><li>
+						36. <i>lost</i>
+					</li><li>37. <i>lost</i></li><li>38. <i>lost</i></li><li>
+						39. <i>lost</i>
+					</li><li>40. Mer...ra</li><li>41. Merkheperra</li><li>42. Merka(ra)</li><li>43. <i>lost</i></li><li>
+						44. <i>lost</i>
+					</li><li>
+						45. <i>lost</i>
+					</li><li>46. ...mes</li><li>47. ...maatra Ibi</li><li>48. ...webenra Hor</li><li>49. ...kara</li><li>50. ...enra</li><li>51. ...ra</li><li>
+						52. ...enra
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 6 (8.29)</p>
+			<p class="px-2">Only a small section of the text remains, the rest is lost. There is no heading for the kings of the Fourteenth Dynasty.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>g</b> (9.1&ndash;10.20)</p>
+			<p class="px-2">Fifty kings of the Fourteenth Dynasty. Total preserved reigns: 18 years, 8 months, 3 days (17 years, 15 months, 153 days).</p>
+			<div class="p-5">
+				<ul class="columns-3 lg:columns-4 text-base">
+					<li>1. Nehesy</li><li>2. Khatira</li><li>3. Nebfautra</li><li>4. Sehabra</li><li>5. Merdjefara</li><li>6. Sewadjkara</li><li>
+						7. Nebdjefara
+					</li><li>8. Webenra</li><li>
+						9. <i>lost</i>
+					</li><li>10. ...djefara</li><li>11. ...benra</li><li>12. Awtibra</li><li>13. Heribra</li><li>14. Nebsenra</li><li>15. ...ra</li><li>
+						16. Sekheperenra
+					</li><li>17. Djedkherura</li><li>18. Sankhibra</li><li>19. Nefertum....ra</li><li>20. Sekhem...ra</li><li>21. Kakemura</li><li>
+						22. Neferibra
+					</li><li>23. I...ra</li><li>24. Khakara</li><li>25. Aakara</li><li>26. Semenenra Hapu</li><li>27. Djedkara Nebnati</li><li>
+						28. ...kara Bebnum
+					</li><li>
+						29. <i>lost</i>
+					</li><li>
+						30. <i>lost</i>
+					</li><li>31. <i>lost</i></li><li>32. <i>lost</i></li><li>33. <i>lost</i></li><li>
+						34. <i>lost</i>
+					</li><li>35. <i>lost</i></li><li>36. <i>lost</i></li><li>37. Senefer...ra</li><li>38. Men...ra</li><li>39. Djed...</li><li>
+						40. <i>lost</i>
+					</li><li>41. <i>lost</i></li><li>42. <i>lost</i></li><li>43. Inek...</li><li>44. Ineb...</li><li>45. Ip...</li><li>
+						46. <i>lost</i>
+					</li><li>47. <i>lost</i></li><li>48. <i>lost</i></li><li>
+						49. <i>lost</i>
+					</li><li>50. <i>lost</i></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 7 (10.21)</p>
+			<p class="px-2">Only a small section of the text remains, the rest is lost.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 5</b> (10.22)</p>
+			<p class="px-2">
+				Possibly contained a heading for the Hyksos Fifteenth Dynasty, as the previous row hold part of a summation, but it is by no means certain.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>h</b> (10.23&ndash;10.28)</p>
+			<p class="px-2">
+				Six kings of the Hyksos Fifteenth Dynasty, of which only a partial name of the last king remain. Total preserved reigns: 40 years.
+			</p>
+			<div class="p-5">
+				<ul class="columns-3 text-base">
+					<li>1. <i>lost</i></li><li>2. <i>lost</i></li><li>
+						3. <i>lost</i>
+					</li><li>4. <i>lost</i></li><li>5. <i>lost</i></li><li>6. Khamudy</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 8 (10.29)</p>
+			<p class="px-2">Total: 6 foreign kings reigned for 100 + x years</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_heading px-3 py-1 rounded-lg"><b>Heading 6</b> (10.30)</p>
+			<p class="px-2">Lost in lacuna.</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>i</b> (10.31&ndash;11.14)</p>
+			<p class="px-2">
+				Fifteen kings of the Sixteenth Dynasty. It is clear that the record of the first king of the Sixteenth Dynasty is lost in lacuna. From the
+				emended fifteen kings in the summation of the dynasty (11.15) it is clear that one missing king must have been present in 10.30, adding to the
+				14 kings present (11.1-14). Total preserved reigns: 62 years.
+			</p>
+			<div class="p-5">
+				<ul class="columns-3 text-base">
+					<li>1. <i>lost</i></li><li>2. Sekhem...ra</li><li>3. Sekhemra</li><li>4. Sekhemra S...</li><li>5. Se...enra</li><li>6. Nebiriawra</li><li>
+						7. Nebitawra
+					</li><li>8. Semenenra</li><li>9. Seuserra</li><li>10. Sekhemra Shedwaset</li><li>
+						11. <i>lost</i>
+					</li><li>
+						12. <i>lost</i>
+					</li><li>13. <i>lost</i></li><li>14. <i>lost</i></li><li>
+						15. <i>lost</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_summation px-3 py-1 rounded-lg">Summation 9 (11.15)</p>
+			<p class="px-2">
+				5 kings ...<br />The number is clearly a 5, but seeing as there are exactly 15 rows between Heading 6 and this row, the number should be
+				emended as 15.
+			</p>
+		</div>
+
+		<div class="mt-10 mb-5">
+			<p class="_section px-3 py-1 rounded-lg">Section <b>j</b> (11.16&ndash;11.31)</p>
+			<p class="px-2">Sixteen kings of an unidentified Dynasty, perhaps the short-lived Abydos Dynasty. Total preserved reigns: 14 years.</p>
+			<div class="p-5">
+				<ul class="columns-3 lg:columns-4 text-base">
+					<li>1. User...ra</li><li>2. User...</li><li>
+						3. <i>lost</i>
+					</li><li>4. <i>lost</i></li><li>5. <i>lost</i></li><li>
+						6. <i>lost</i>
+					</li><li>7. <i>lost</i></li><li>8. <i>lost</i></li><li>
+						9. <i>lost</i>
+					</li><li>10. <i>lost</i></li><li>11. ...hebra</li><li>
+						12. <i>lost</i>
+					</li><li>13. <i>lost</i></li><li>14. <i>lost</i></li><li>
+						15. <i>lost</i>
+					</li><li>16. ...enra</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Details about the kings</h2>
+		<p>
+			Only a few fragments remain of the mythological section of the papyrus, presumably detailing gods, demigods, and spirits. The mythological kings
+			mentioned by Manetho<button popovertarget="pop25">25</button> were likely present at the beginning of the papyrus, as the names of Gods are found
+			in the first column, probably describing the Great Ennead. Most of this section is sadly almost entirely lost.
+		</p>
+		<p>
+			The historical kings begin with Meni of the First Dynasty, and continue to the end of the Second Intermediate Period, where the papyrus is in
+			tatters, and only a few small fragments survive. While there are no information about the gender in the king list, Manetho explicitly refers to
+			several female rulers, meaning there must have existed some sort of traditional lists where the gender was included. Only one female ruler has
+			been identified in the king list, Sobekneferu (7.2), but with no indication of gender.
+		</p>
+
+		<p>
+			On each line, the title <tlit>nsw-bit</tlit> (<i>the Dual King</i>, or <i>The King of Upper and Lower Egypt</i>) precedes the king’s prenomen
+			enclosed in a cartouche, followed by the divine determinative,<button popovertarget="pop26">26</button>
+			indicating their divinity. It remains unknown why the recorded names in the New Kingdom king lists are not always the expected prenomen. The early
+			dynasties use of the nebty name is understandable, as the kings of that period did not use prenomina, as is the scribe adding the nomen into the
+			cartouche of kings with the same prenomen, presumably to distinguish them from each other. This inconsistency is also present in Manetho, where most
+			recorded names use the Greek form of the prenomen, but a few use the nomen instead. There is evidence of hypercorrection of the royal names over
+			time, that is, by adding the ubiquitous divine <i>-ra</i> to their name. The variations of the recorded names in the king list can be found in Table
+			7.
+		</p>
+		<p>
+			The recording of the names of the kings is inconsistent throughout the papyrus, likely due to gathering information from multiple sources (see
+			0). There is no mention of concurrent dynasties, coregency, ethnicity, gender, reputation, or any other secondary criterion. The only exceptions
+			are two kings of the Thirteenth Dynasty that include the names of their fathers.<button popovertarget="pop27">27</button>
+		</p>
+
+		<p>
+			The G7-sign <img loading="lazy" class="inline h-8 dark:invert" src="/svg/G7.svg" alt="Gardiner’s G7-sign" />
+			<i>“Horus/falcon on a standard”</i>, is a determinative/logogram for ’king’ or ’god,’ and often placed within the cartouche to emphasize a royal
+			name, but also immediately adjacent behind the cartouche.
+		</p>
+
+		<div class="py-10">
+			<div class="px-5">
+				<table>
+					<caption class="text-sm py-3">Table 7: Variations of the kings name</caption>
+					<tr class="border-b border-t border-zinc-500">
+						<td><img loading="lazy" class="my-5 h-14 dark:invert" src="/svg/T-detail1.svg" alt="Cartouche: (prenomen)" /></td>
+						<td><i>Prenomen</i> in a cartouche<br />Passim</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td><img loading="lazy" class="my-5 h-14 dark:invert" src="/svg/T-detail2.svg" alt="Cartouche: (nomen)" /></td>
+						<td><i>Nomen</i> in a cartouche<br />5.10, 5.21, 7.2, 7.7, 7.9, 7.15-16, 9.1, 9.10, 9.13-15, 11.5-6</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td><img loading="lazy" class="my-5 h-14 dark:invert" src="/svg/T-detail3.svg" alt="Cartouche (prenomen + nomen)" /></td>
+						<td><i>Prenomen</i> and <i>nomen</i> in the same cartouche<br />7.19, 7.20, 7.23-25, 7.28, 8.2, 8.5-6</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td><img loading="lazy" class="my-5 h-14 dark:invert" src="/svg/T-detail4.svg" alt="Cartouche: (prenomen) (nomen)" /></td>
+						<td><i>Prenomen</i> and <i>nomen</i> in their own cartouches<br />5.23, 8.7-8</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td><img loading="lazy" class="my-5 h-14 dark:invert" src="/svg/T-detail5.svg" alt="Cartouche: (prenomen) nomen" /></td>
+						<td><i>Prenomen</i> in a cartouche, <i>nomen</i> no cartouche<br />5.7-8, 7.21-22, 8.22-23, 9.25?, 9.26-28</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<p>The king’s name was followed by a formula indicating the reign length.</p>
+		<img loading="lazy" class="mt-5 h-14 dark:invert" src="/svg/irnfmnswt.svg" alt="Hieroglyphics: ir n.f m nsyt" /><br />
+		<p>
+			<tlit>ir.n=f m nsw.yt</tlit><br />
+			<i>“he acted in kingship”</i>
+		</p>
+		<p>
+			This formula followed immediately after a kings name, followed by the length of reign, near the end of each row, like a spreadsheet. These
+			numbers were arranged in columns, leaving empty space between the king’s name and the reign. Despite the lack of ditto-marks, this is a clear
+			indication that the formula was implied, but not written.
+		</p>
+
+		<h3 class="py-10">Number of kings</h3>
+		<p>
+			Determining the number of kings found on the papyrus, we first find the total number of lines in columns 3–11, which is 250 (see Table 8.)
+			Discarding the ten rows of the spirits in 3.1–9, and the empty 3.14, 240 lines remain. The headings and summations of the dynasties account for
+			another 18 lines, subtracting these, the total number of remaining lines, or kings, is 223. The names of 97 kings are lost or consist only of a
+			single sign or traces, leaving 73 partial names, and only 53 complete names.
+		</p>
+		<p>
+			There are 76 kings listed before the eight of the Twelfth Dynasty, followed by 139 of the Second Intermediate Period, totalling 223 kings, not
+			accounting for names that were lost in lacuna notations.
+		</p>
+
+		<div class="py-10">
+			<table>
+				<caption class="text-sm py-3">Table 8: Counting the kings</caption>
+				<tr class="border-b border-zinc-500 dark:border-zinc-400">
+					<th class="text-left">Column</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th
+						>11</th
+					><th>Total</th>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Rows</td><td>25</td><td>26</td><td>25</td><td>26</td><td>26</td><td>25</td><td>28</td><td>29</td><td>30</td><td>31</td
+					><td>31</td><td>302</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Complete names</td><td>&nbsp;</td><td>&nbsp;</td><td>4</td><td>5</td><td>7</td><td>1</td><td>10</td><td>7</td><td
+						>15</td
+					><td>0</td><td>4</td><td>53</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Partial names</td><td>&nbsp;</td><td>&nbsp;</td><td>8</td><td>7</td><td>4</td><td>3</td><td>15</td><td>9</td><td
+						>11</td
+					><td>7</td><td>9</td><td>73</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Lost names</td><td>&nbsp;</td><td>&nbsp;</td><td>2</td><td>13</td><td>11</td><td>17</td><td>1</td><td>12</td><td>4</td
+					><td>20</td><td>17</td><td>97</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Kings</td><td>&nbsp;</td><td>&nbsp;</td><td>14</td><td>25</td><td>22</td><td>21</td><td>26</td><td>28</td><td>30</td
+					><td>27</td><td>30</td><td>223</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Heading rows</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>0</td
+					><td>2</td><td>0</td><td>6</td>
+				</tr>
+				<tr class="odd:bg-zinc-100 even:bg-zinc-200 odd:dark:bg-zinc-900 even:dark:bg-zinc-950 h-10">
+					<td class="text-left">Summation rows</td><td>&nbsp;</td><td>&nbsp;</td><td>0</td><td>1</td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td
+					><td>2</td><td>1</td><td>12</td>
+				</tr>
+				<tr class="border-t border-zinc-500 dark:border-zinc-400">
+					<td class="text-left">Total</td><td>&nbsp;</td><td>&nbsp;</td><td>15</td><td>26</td><td>26</td><td>25</td><td>28</td><td>29</td><td>30</td
+					><td>31</td><td>31</td><td>241</td>
+				</tr>
+			</table>
+		</div>
+
+		<p>
+			Accounting for the 61 rows that does not concern the dynastic kings, we have the rows of column 1 (25) and 2 (26), plus the first nine of column
+			3. The blank 3.14 that is a long row from column 2 still needs to be counted here, bringing the number of excluded rows to 61. Adding the 241
+			rows of table 8 above, we arrive at 302&mdash;the total number of rows.
+		</p>
+
+		<h3 class="py-10">Length of reign and age at death</h3>
+		<p>
+			The length of reign is recorded in two ways: years, months, and days, or round years alone. The variation is due to the sources used to collect
+			the information. In the modern studies, the cursive hieratic has been read as these variants: <img
+				loading="lazy"
+				class="inline dark:invert h-5"
+				src="/svg/rnpt2.svg"
+				alt="variants of rnpt in the Royal Canon of Turin"
+			/> , probably due to the cursive nature of hieratic, or a careless scribe.<br />
+			To be consistent, the ligature is presumed to be <img
+				loading="lazy"
+				class="inline dark:invert h-5"
+				src="/svg/rnpt1.svg"
+				alt="rnpt Hsb (regnal years)"
+			/> &nbsp;<tlit>rnpt-&#7717;sb</tlit> (<i>regnal years</i>).<button popovertarget="pop28">28</button> The older interpretations
+			<tlit>&#7717;&#42786;t-sp</tlit> and <tlit>rnpt-sp</tlit> are no longer regarded as correct, but the matter is not entirely settled.
+		</p>
+
+		<p>The ages of the early kings (3.11–4.5) are recorded after their reign lengths, by the formula:</p>
+		<img loading="lazy" class="inline dark:invert h-8 my-3" src="/svg/aha.svg" alt="Royal Canon of Turin: ‘in his lifetime’ formula" /><br />
+		His lifetime<br />
+		<tlit>&#42788;&#7717;&#42786;=f m &#42788;n&#7723;</tlit><br /><br />
+
+		<p>
+			This formula was likely derived from <b>Source A</b>, detailing kings of the first two dynasties only. There are no indications that the other
+			sources held this information. However, the ages should be viewed with due scepticism, as they seem uncommonly high for the times.
+		</p>
+
+		<div class="py-10">
+			<div class="px-5">
+				<table>
+					<caption class="text-sm py-3">Table 9: Preserved ages in the Turin King List.</caption>
+					<tr class="text-left border-b-2 border-zinc-500"><th>Position</th><th>King</th><th>His lifetime (age)</th></tr>
+					<tr><td>3.11-16</td><td>Lost</td><td>Lost</td></tr>
+					<tr><td>3.17</td><td>Adjib</td><td>74 years</td></tr>
+					<tr><td>3.18</td><td>Semerkhet</td><td>72 years</td></tr>
+					<tr><td>3.19</td><td>Qa’a</td><td>63 years</td></tr>
+					<tr><td>3.20</td><td>Hotepsekhemwy</td><td>95 years</td></tr>
+					<tr><td>3.21</td><td>Nebka</td><td>Blank</td></tr>
+					<tr><td>3.22</td><td>Ninetjer</td><td>95 years</td></tr>
+					<tr><td>3.23</td><td>Wadjenes</td><td>70 years</td></tr>
+					<tr><td>3.24</td><td>Senedj</td><td>54 years</td></tr>
+					<tr><td>3.25</td><td>Sneferka</td><td>70 years</td></tr>
+					<tr><td>4.1</td><td>Neferkasokar</td><td>10-30 + x years</td></tr>
+					<tr><td>4.2</td><td>Hudjefa I</td><td>34 years</td></tr>
+					<tr><td>4.3</td><td>Khasekhemwy</td><td>40 + x years</td></tr>
+				</table>
+			</div>
+		</div>
+
+		<h3 class="py-10">Reign lengths and totals</h3>
+		<p>
+			As can be expected, it is impossible to assess the credibility of the reigns attributed in the papyrus. The quality of the sources used to
+			compile the reigns are unknown, and as a result, the reliability of the numbers is impossible to quantify. The uncertainty of the reign-lengths
+			of even well-attested kings makes assessing the numbers an impossible task. A mathematical error produced at any time during the multiple
+			sources, and their copies, could have remained undetected, and impossible to correct.
+		</p>
+
+		<p>
+			Most figures found in the king list, follow after the name of a specific king, detailing the length of his reign. Numbers are also found in
+			summations, but not in headings. The numbers in summations specify the number of kings, the length that particular group of kings reigned, and
+			totals calculated where multiple groupings are summed up. The reliability of the totals in the summations is impossible to assess, as no section
+			of the papyrus preserves all the individual reign-lengths. The total for the individual reign-lengths is calculated in Table 10 below.
+		</p>
+
+		<div class="py-10">
+			<div>
+				<table>
+					<caption class="text-sm py-3">Table 10: The summations and reigns</caption>
+					<tr class="p-5 text-center border-b border-zinc-500">
+						<th>&sect;</th>
+						<th class="leading-6">Preserved reigns<br /><small class="font-normal">(computed by adding reigns)</small></th>
+						<th class="border-x border-zinc-500">&sect;</th>
+						<th>Summations</th>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">a</td>
+						<td class="p-3">313 years, 2 months, 5 days</td>
+						<td class="border-x border-zinc-500 text-center _summation">S1</td>
+						<td class="p-3"><i>lacuna</i> 768 years: calculated by S3 minus S2 <small>(<i>cf.</i> Table 5 above)</small></td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">b</td>
+						<td class="p-3">165 years, 5 months, 23 days<br /><small>(164 years, 17 months, 23 days)</small></td>
+						<td class="border-x border-zinc-500 text-center _summation">S2</td>
+						<td class="p-3"
+							>181 years, 6 months, 3 days (+6 year lacuna)<br />949 years, 15 days (+6 year <i>lacuna</i>).<br />Total: 955 years, 1[5] days</td
+						>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">c</td>
+						<td class="p-3">None</td>
+						<td class="border-x border-zinc-500 text-center _summation">S3</td>
+						<td class="p-3">18 kings, <i>lacuna</i></td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">d</td>
+						<td class="align-middle">120 years</td>
+						<td class="border-x border-zinc-500 text-center _summation">S4</td>
+						<td class="p-3">6 kings, 136 years (+7 year <i>lacuna</i>)<br />Total: 143 years</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">e</td>
+						<td class="p-3">206 years, 1 months, 21 days<br /><small>(205 years, 13 months, 21 days)</small></td>
+						<td class="border-x border-zinc-500 text-center _summation">S5</td>
+						<td class="p-3">8 kings, 213 years, 1 month, 18 days</td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">f</td>
+						<td class="p-3">77 years, 7 months, 1 day<br /><small>(73 years, 47 months, 241 days)</small></td>
+						<td class="border-x border-zinc-500 text-center _summation">S6</td>
+						<td class="p-3"><i>lacuna</i></td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">g</td>
+						<td class="p-3">18 years, 8 months, 3 days<br /><small>(17 years, 15 months, 153 days)</small></td>
+						<td class="border-x border-zinc-500 text-center _summation">S7</td>
+						<td class="p-3"><i>lacuna</i></td>
+					</tr>
+					<tr class="border-b border-zinc-500">
+						<td class="p-3 _section text-center">h</td>
+						<td class="p-3">40 years</td>
+						<td class="border-x border-zinc-500 text-center _summation">S8</td>
+						<td class="p-3">6 kings, 100 + x years</td>
+					</tr>
+					<tr class="border-t border-zinc-500">
+						<td class="p-3 _section text-center">i</td>
+						<td class="p-3">62 years</td>
+						<td class="border-x border-zinc-500 text-center _summation">S9</td>
+						<td class="p-3">[1]5 kings, <i>lacuna</i></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Long lines</h2>
+		<p>
+			Several times the scribe miscalculated the length of entries so that they encroached the next column he would write. This forced the starting
+			point of the particular line to move to the left compared to the rest of the column. To separate the entries, he drew lines around the text that
+			infringed upon the new column, and then continued the writing of the new column. This is evident in at least four places (2.16/3.14, 5.16/6.15,
+			7.3/8.4, and 8.3/9.4,) and possibly also on framents 4 and 147.<button popovertarget="pop29">29</button>
+		</p>
+
+		<div class="py-10">
+			<div class="text-center">
+				<figure>
+					<figcaption class="text-sm text-center py-2">Figure 7: Long lines in the Turin King List</figcaption><a
+						data-fancybox="Fig7"
+						data-caption="Long lines in the Turin King List"
+						href="/images/T-LongLines.png"
+						><img loading="lazy" class="w-2/3 mx-auto zoomable" src="/images/T-LongLines.webp" alt="Figure 7: Long lines in the Turin King List" />
+					</a>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Damage and human error</h2>
+		<p>
+			The inconsistent details provided about the individual kings are more apparent in the older parts of the document. This is hardly surprising
+			since the ancient sources used must have survived conflicts, fire, flooding, and other hardships for up to a thousand years. The accuracy of
+			records from such a remote time would naturally be circumspect, and not entirely reliable. Over the millennia, sporadic copying errors would
+			undoubtedly have occurred, which would have permutated the original texts, causing some kings and information about their reigns to be lost.
+			Each subsequent copy also compounded the errors, and ultimately resulted in a somewhat inaccurate duplicate of a duplicate etc.
+		</p>
+		<p>
+			The age of Kakau (3.21) was left blank, perhaps by simple omission. The cartouche open is missing from the records of Sneferka (3.25), Nebka
+			(4.4), and Snoferu (4.9). The summation of Dynasty XVI (11.15) preserve the number of kings as 5, while there are 15 entries (10.31 to 11.14),
+			probably due to a scribal error.
+		</p>
+	</div>
+
+	<div class="sek">
+		<h2>Notation of lacuna</h2>
+		<p>
+			Several notations of <img
+				loading="lazy"
+				class="h-6 inline dark:invert"
+				src="/svg/wsf.svg"
+				alt="Lacuna notation in the Royal Canon of Turin (G41:G36)"
+			/> &ndash; <tlit>wsf</tlit> (meaning gap or ‘lacuna’) were present on a vorlage of the papyrus and used where a part of the source text was missing
+			or unreadable, including names, dates, or reigns.<button popovertarget="pop30">30</button> A lost lacuna notation for the missing ten kings found
+			in the Abydos Canon (41-50) is missing following Netiqerty (5.7), which is corroborated by the lacuna notations in summations 2 (5.15) and 3 (5.16).
+			The next immediate names are corrupted, <tlit>nfr-k&#42786; &#7830;rd-snb</tlit> (5.8), <tlit>nfr-k&#42786;</tlit> (5.9), and <tlit>nfr</tlit> (5.10)
+			which suggest that there was a larger lacuna in the sources, and the scribe did not realize that the lacuna notation included more than one king.
+		</p>
+		<p>
+			A lacuna notation, presumably for Mentuhotep IV, in the summation of the Eleventh Dynasty (6.18), can only mean that another notation is itself
+			lost in lacuna at the end of the entry for Mentuhotep III (6.17). The lacuna notation after <tlit>s&#7723;m-k&#42786;-r&#42788;</tlit> (7.6) account
+			for Nerikara, whose name is absent in the king list.<button popovertarget="pop31">31</button> There is a lacuna notation for the number of months
+			in the reigns of <tlit>&#42786;w-ib-r&#42788;</tlit> (9.12), and <tlit>sw-wsr-r&#42788;</tlit> (11.8). It is impossible to determine if the notation
+			after
+			<tlit>nb-sn-r&#42788;</tlit> (9.14) included one or more kings.
+		</p>
+
+		<div class="py-10">
+			<div class="col-8 text-center">
+				<figure>
+					<figcaption class="text-sm text-center py-2">Figure 8: Notations of lacuna in the king list.</figcaption><a
+						data-fancybox="Fig8"
+						data-caption="Lacuna notations in the Royal Canon of Turin"
+						href="/images/wsf-Notation-of-Lacuna.png"
+						><img
+							loading="lazy"
+							class="w-2/3 mx-auto zoomable"
+							src="/images/wsf-Notation-of-Lacuna.webp"
+							alt="Figure 8: Notations of lacuna in the Royal Canon of Turin"
+						/>
+					</a>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Corrupted names</h2>
+		<p>
+			The kings of the Archaic Period did not use a <i>nomen</i> or <i>prenomen</i>, which caused problems in later periods. The solution was to
+			assign new names to these ancient kings. The other New Kingdom king lists contain the same names, suggesting canonization at an earlier date,
+			however, none of these names is orthographically correct according to contemporary attestations. The changes range from slight to
+			unrecognizable. Toward the end of the Archaic Period kings, a lacuna is preserved in the name Hudjefa.<button popovertarget="pop32">32</button> The
+			scarce remains of the papyrus make in unclear to what extent corrupted names occurred, especially in the older parts.
+		</p>
+
+		<p>
+			Some signs were simply misread or erroneously copied by the scribe, resulting in a slightly corrupted name, as can be seen in several places.
+			For example, an O29-sign was incorrectly copied as a V30-sign in (9.27), resulting in the name Nebnati, which is a mistake for Anati. It is
+			unsurprising and quite expected that there would be several errors in such a long text. The scribe was rather careless at times; several names
+			have the sun-disc added after the cartouche open. This was likely done automatically as he wrote the <tlit>nsw-bit</tlit> title, and failed to notice
+			his error.<button popovertarget="pop33">33</button>
+		</p>
+
+		<p>
+			There is evidence to suggest that kings were interchanged on at least one and possibly two occasions. The highest attested year of Pepi I (<tlit
+				>mry-r&#42788;</tlit
+			>) is 25, and the highest year of Nemtyemsaf I (<tlit>mr.n-r&#42788;</tlit>) is 5. The names in (5.3) and (5.4) are lost, but the years are
+			recorded as 20 and 44 respectively, suggesting that the rows were interchanged. Both names use the signs <tlit>mr</tlit> and <tlit
+				>r&#42788;</tlit
+			>, and the kings were probably simply interchanged by the scribe.
+		</p>
+		<p>
+			Sobkhotep I (7.19) and Wegaf (7.5) would have been recorded more or less across from each other in adjacent columns in <i>Vorlage E</i>. Their
+			names share the elements <tlit>&#7717;w, t&#42786;wy</tlit> and <tlit>r&#42788;</tlit>, suggesting that the similar names may have been
+			interchanged by the scribe.
+		</p>
+
+		<p>
+			There is no evidence suggesting that any kings were deliberately omitted from the king list. Prehistoric kings might have been included among
+			the &quot;spirits&quot; preceding the historical kings, but since no names are preserved, it will remain unknown. Though there are no imaginary
+			kings, Mentuhotep I (6.12) did not adopt royal titles during his lifetime, these were awarded posthumously by his successors. Part of his
+			(severely damaged) name is preserved in the Karnak Canon (12), alongside the Horus name <tlit>tpy-&#42788;</tlit>.<button popovertarget="pop34"
+				>34</button
+			> Neferkasokar (4.1) is unlikely to be historical, as there are no contemporary attestations of his name. Whether the name is fictious, or a false
+			etymology of an unidentifiable name remain unknown.<button popovertarget="pop35">35</button>
+		</p>
+		<p>
+			As can be expected, it is impossible to assess the credibility of the reigns attributed in the papyrus. The quality of the sources used to
+			compile the reigns are unknown, and as a result, the reliability of the numbers is impossible to quantify. The uncertainty of the reign-lengths
+			of even well-attested kings makes assessing the numbers an impossible task. A mathematical error produced at any time during the multiple
+			sources, and their copies, could have remained undetected, and impossible to correct.
+		</p>
+	</div>
+
+	<div class="py-10">
+		<h2>A twelfth column?</h2>
+		<p>
+			Ryholt suggested that a twelfth column was removed in ancient times; presumably to reuse the blank recto side.<button popovertarget="pop36"
+				>36</button
+			> This is further corroborated by the fact that sheet 1 is less than half the width of the other papyrus sheets. However, as discussed earlier above,
+			the outer sheet of the papyrus roll was likely trimmed <i>before</i> being reused for the king list. It is uncertain whether the king list was a
+			direct copy of the information on an older papyrus that needed to be preserved or an updated version that included later kings not present in the
+			original.
+		</p>
+		<p>
+			The cut-off part, as per Ryholt, would presumably have held the names of the kings of the Seventeenth through Nineteenth dynasties. The exact
+			number is uncertain, probably about 25 (see Table 15, it is obviously unknown how many would have been present in a twelfth column.). Some kings
+			of the proposed Abydos Dynasty might also have been present, depending on the number of NK kings, and how elaborate the headings and summations
+			were. Adding these kings, or perhaps only some of them, the complete papyrus would have included some 330 rows with close to 250 kings.
+		</p>
+
+		<p>
+			The estimated number of rulers between the late Second Intermediate Period, from the Seventeenth through the New Kingdom is somewhat uncertain,
+			as we do not know the exact number of rulers. The number of kings depends on the Egyptologist consulted, ranging from 8 to 15 for the
+			Seventeenth Dynasty alone. Furthermore, the exact succession of the Late Amarna Period is still unclear, the exact number of rulers and their
+			positions remain uncertain.
+		</p>
+
+		<div>
+			<table>
+				<caption class="text-center pt-3 text-sm">Table 15: The rulers of the 17th through 19th Dynasties up to Ramesses II</caption>
+				<tr>
+					<th>Dynasty</th>
+					<th class="text-center">No.</th>
+					<th class="text-left">Rulers</th>
+				</tr>
+				<tr>
+					<td>XVII</td>
+					<td class="px-10">14</td>
+					<td class="text-left"
+						>Nebmaatra, Djehuty, Sobekhotep VIII, Senusret IV, Mentuhotep VII, Rahotep, Sobekemsaf I, Sobekemsaf II, Intef VI, Intef VII, Intef VIII,
+						Senakhtenra, Seqenenra, Kamose</td
+					>
+				</tr>
+				<tr>
+					<td>XVIII</td>
+					<td class="text-center">15</td>
+					<td class="text-left"
+						>Ahmose, Amenhotep I, Thutmose I, Thutmose II, Hatshepsut, Thutmose III, Amenhotep II, Thutmose IV, Amenhotep III, Amenhotep IV,
+						Neferneferuaten, Smenkhkara, Tutankhamun, Ay, Horemheb</td
+					>
+				</tr>
+				<tr class="bbt">
+					<td>XIX</td>
+					<td class="text-center">3</td>
+					<td class="text-left">Ramesses I, Seti I, Ramesses II</td>
+				</tr>
+				<tr class="border-t border-zinc-500">
+					<td>Sum</td>
+					<td class="text-center">32</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="py-10">
+		<h2>Current state of the papyrus</h2>
+		<p></p><figure class="float-right pl-3">
+			<img loading="lazy" class="w-" src="/images/T-museo.jpg" alt="The Royal Canon display at the Museo Egizio in Turin" />
+			<figcaption class="text-sm text-center py-2">Display case in Museo Egizio 2015</figcaption>
+		</figure>
+
+		<p>
+			Apart from the piece cut off in antiquity, the papyrus was presumably intact upon its discovery and only subsequently fell to pieces owing to
+			the rough handling. It now consists of more than 300 fragments. Seyffarth pasted the fragments onto <i>papier v&eacute;g&eacute;tal</i> in 1826,
+			but this was removed and remounted/reconstructed in 1930 by Hugo Ibscher and Farina also handled the fragments in the subsequent years.<button
+				popovertarget="pop37">37</button
+			> However, the papyrus suffered evident damage during this process, as can be seen when comparing it to the facsimiles of Lepsius and Wilkinson;
+			the photographs shows that numerous fragments were damaged along the edges and that many signs along the edges were lost in the process. This makes
+			the facsimiles that more important as they preserve signs that are lost today.
+		</p>
+		<p>
+			There are still a number of important fragments whose exact position has not been established, and numerous smaller fragments, mostly very
+			small, have never been published at all. Among the unpublished fragments are parts of royal names of both historical rulers and gods, figures
+			relating to reigns of kings, and parts of headings and summations.<button popovertarget="pop38">38</button>
+		</p>
+		<p>
+			In September 2019, the Museo Egizio made high-quality photographs of the papyrus available online.<button popovertarget="pop39">39</button> Unfortunately,
+			the photos only show the fragments as arranged by Farina (in three panels), and does <i>not</i> include Gardiner's unplaced fragments, nor any of
+			the unpublished ones. Hopefully, these will be added at a later date. Still, these photos (including the recto!) are an incredible improvement over
+			the previous photos published by Farina some 80 years ago.
+		</p>
+		<p>
+			In 2022, one of the foremost experts in papyrus restoration in the world, <i>Myriam Krutzsch</i> from the Egyptian Museum in Berlin, worked on the
+			King List for ten weeks in Turin, where she removed all traces of the previous glue and fabrics used to join the fragile parts together by Seyffarth
+			in 1826, and by Ibscher and Farina in the 1930s. The cleaning process showed that many of the numbered fragments were themselves made up of even
+			smaller fragments, revealing just how impressive and good Seyffarth's reconstruction of the fragments was.
+		</p>
+	</div>
+
+	<div>
+		<h2 class="py-5">Inventory number</h2>
+		<p>
+			The papyrus is descibed in two nineteenth century catalogues of the Museum, and was still considered to be the original document at the time.
+			The official Museum inventory number is <b>Cat. 1874</b>, from the 1882 catalogue, though it is often referred to as <b>pTurin 1874</b>.
+			<!-- RCGE 17467 (Registro Cronologico Generale d’Entrata) -->
+		</p>
+
+		<div class="grid grid-cols-2 gap-10 py-5">
+			<div class="col-span-2 md:col-span-1 border border-zinc-500 bg-zinc-50 dark:bg-zinc-950">
+				<div class="p-5">
+					<div class="pb-4 border-b text-center">
+						<span class="text-xl font-bold">Museum catalogue 1855.</span><button popovertarget="pop40">40</button>
+					</div>
+					<p class="pt-3">
+						Room A. <b>No. 1.</b> Chronological papyrus<small><br />(Frame hanging on the right side of the room.)</small><br /><br />It contains a
+						list of kings from the beginning of the Egyptian monarchy until the Nineteenth Dynasty, the era in which it seems to have been written. We
+						find the name of Ramesses in the midst of various accounting records on the backside. It is a great pity that it is in this state due to
+						carelessness by those who transported it to us from Egypt. The illustrious Seyffarth patiently established the order of the fragments, but
+						there are doubts about the arrangement by the patient German. However, even in the current state it greatly helps history through the
+						series of names written on the same fragments, by means of the numbers assigned to each reign, and the amounts placed at the end of each
+						dynasty. This shows that the system of Manetho was domestic.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-span-2 md:col-span-1 border border-zinc-500 bg-zinc-50 dark:bg-zinc-950">
+				<div class="p-5">
+					<div class="pb-4 border-b text-center">
+						<span class="font-bold text-xl">Museum catalogue 1882.</span><button popovertarget="pop41">41</button>
+					</div>
+					<p class="pt-3">
+						<b>No. 1874.</b> Hieratic opisthographic papyrus, composed of tiny fragments glued on blotting paper, 2.31 m wide, 0.46 tall. This papyrus,
+						called a royal chronology, written on both sides, contain on the recto a series of royal cartouches, starting from the divine dynasties until
+						the Nineteenth Dynasty; and on the verso, in the midst of accounting records, you find the cartouche of Ramesses II, which dates the papyrus.
+						The illustrious Seyffarth arranged it in its present state. Mr Lepsius published the recto of the papyrus in 1842 in his <i
+							>Auswahl der wichtigsten Urkunden des Aegyptischen Alterthums</i
+						>, and afterwards Mr. Wilkinson, recorded the verso (Orcurti, II 129, n. 1). - Upper floor, room I. n. 126.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- References div -->
+	<div class="references py-10 hidden print:block">
+		<h2>References</h2>
+		<ul id="referencesList" class="list-decimal columns-2 gap-20 text-sm list-inside">
+			<!-- References will be dynamically generated here -->
+		</ul>
+	</div>
+
+	{
+		fotnoter.map((item, index) => (
+			<div id={`pop${index + 1}`} popover>
+				<p>{index + 1}</p>&nbsp;
+				<span set:html={item} />
+			</div>
+		))
+	}
+
+	<h2 class="py-3">Bibliography</h2>
+	<ul class="text-sm leading-loose">
+		<li>
+			<strong>Adler, William, and Tuffin, Paul</strong>. <i>The Chronography of George Synkellos</i> Oxford: University Press, 2002.
+		</li>
+		<li>
+			<strong>Barta, Winfried</strong>. “Bemerkungen zur Rekonstruktion der Vorlage des Turiner Königspapyrus”, <i>Göttinger Miszellen</i> 64 (1983): 11–13.
+		</li>
+		<li>
+			<strong>Barucchi, Francesco</strong>. <i>Discorsi critici sopra la cronologia egizia</i> Turin: Stamperia Reale, 1844
+		</li>
+		<li>
+			<strong>Beckerath, J&uuml;rgen von</strong>. “Anmerkung zu zwei unbeachteten Fragmenten des Turiner Königspapyrus”, <i>Göttinger Miszellen</i> 168
+			(1999): 19–21
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Bemerkungen zum Turiner K&ouml;nigspapyrus und zu den Dynastien der ägyptischen Geschichte”, <i>SAK</i>
+			11 (1984): 49—58.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Die Chronologie der XII. Dynastie und das Problem der Behandlung gleichzeitiger Regierungen in der
+			ägyptischen Überlieferung”, <i>SAK</i> 4 (1976): 45-57
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Die Dynastie der Herakleopoliten (9./10. Dynastie)”, <i>ZÄS</i> 93 (1966): 13–20
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Some Remarks on Helck's ’Anmerkungen zum Turiner Königspapyrus’”, <i>JEA</i> 81 (1995): 225–27.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. <i>Untersuchungen zur politischen Geschichte der Zweiten Zwischenzeit in ägypten</i> Glückstadt: Augustin,
+			1964.
+		</li>
+		<li>
+			<strong>Ben-Tor, Daphna, Susan J. Allen and James P. Allen.</strong> “Seals and Kings”, <abbr
+				title="Bulletin of the American Schools of Oriental Research"
+				><i>BASOR</i>
+			</abbr> 315 (Aug., 1999): 47–74
+		</li>
+		<li>
+			<strong>Birch, Samuel</strong>. “Observations upon the hieratical canon of Egyptian kings at Turin”, <i
+				><abbr title="Transactions of the Royal Society of Literature">TRSL</abbr></i
+			>, S.2, Vol. 1 (1843): 203-8 <a title="" href="/pdf/Birch1843.pdf">&#10132;</a>
+		</li>
+		<li>
+			<strong>Brugsch, Heinrich</strong>. <i
+				>Histoire d’Égypte des les premiers de son existence jusqu’a not jours. Premi&egrave;re partie, l’Égypte sous les indgigénes.</i
+			> Leipzig: Hinrichs, 1859.
+		</li>
+		<li>
+			<strong>Bunsen, Christian C. J</strong>. <i>Aegyptens Stelle in der Weltgeschichte</i>. Vol. 1. Hamburg: Perthes, 1845. <a
+				title="Click to read!"
+				href="/pdf/Bunsen1845.pdf">&#10132;</a
+			>
+		</li>
+		<li>
+			<strong>&Ccaron;ern&yacute;, Jaroslav</strong>. <i>Paper and books in Ancient Egypt</i>. London: Lewis, 1952.
+		</li>
+		<li>
+			<strong>Champollion, Jean-Fran&ccedil;ois</strong>. <i>Précis du syst&egrave;me hiéroglyphique des anciens Égyptiens</i> Paris: Imprimerie Royale,
+			1824.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “XVI. Canon hiératique des dynasties égyptiennes”., <i>Papiers de J.Fr. Champollion</i>, vol. 16. BNF
+			NAF 20318 <a href="http://archivesetmanuscrits.bnf.fr/ark:/12148/cc66494/cd0e247" rel="noopener nofollow" target="_blank">&#10132;</a>
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Papyrus Égyptiens”, <i>Bulletin des sciences historiques, antiquités, philologie</i> 2 (1824): 297–303.
+			<a title="Français" href="pdf/Champollion1824FR.pdf">&#10132;</a>
+			<a title="English translation" href="/pdf/Champollion1824EN.pdf">&#10132;</a>
+		</li>
+		<li>
+			<strong>Champollion-Figeac, J. J.</strong>. “De la table manuelle des Rois et des dynasties d’Égypte ou papyrus royal de Turin”. <i
+				>Revue Archéologique</i
+			> 7.2 (1851): 397–402, 461–472, 589–599, 653–665. <a title="Français" href="/pdf/RAr7-1851FR.pdf">&#10132;</a>
+			<a title="English translation" href="pdf/RAr7-1851EN.pdf">&#10132;</a>
+		</li>
+		<li><strong>Dawson and Uphill</strong>. <i>Who was who in Egyptology</i>. London: EES, 1972</li>
+		<li>
+			<strong>Depuydt, Leo</strong>. “The Function of the Ebers Calendar Concordance”. <i>Orientalia</i> 65.2 (1996): 61-88.
+		</li>
+		<li>
+			<strong>Donatelli, Laura</strong>. “La prima proposta d’acquisto da parte dei Savoia della collezione egizia di Bernardino Drovetti”. <i
+				>Studi Piemontesi</i
+			> 52.2 (2016): 494.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Lettere e documenti di Bernardino Drovetti”. Turin: Accademia delle Scienze di Torino, 2011.
+		</li>
+		<li>
+			<strong>Edwards, I E. S</strong>. “The early dynastic period in Egypt”. <i>The Cambridge Ancient History.</i> Cambridge: 1971. 1-70.
+		</li>
+		<li>
+			<strong>Fabretti, Ariodante</strong>. <i>Il Museo di antichità della R. università di Torino: notizie</i>. Turin: Stamperia reale, 1872.
+		</li>
+		<li>
+			<strong>Fabretti, Ariodante, Francesco Rossi and Ridolfo Lanzone</strong>. <i
+				>Regio Museo di Torino, Catalogo generale dei Musei di Antichit&agrave;</i
+			>. Turin: 1882. <a title="Download/View" href="/pdf/RCT1881.pdf">&#10132;</a>
+		</li>
+		<li><strong>Farina, Giulio</strong>. <i>Il Papiro dei re, restaurato</i>. Rome: G. Bardi, 1938.</li>
+		<li>
+			<strong>Franke, Detlef</strong>. “Zur Chronologie des Mittleren Reiches (12.- 18. Dynastie). Teil 1: Die 12. Dynastie”, <i>Orientalia</i> 57 (1988):
+			113–138.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Zur Chronologie des Mittleren Reiches Teil II: Die sogenannte ’Zweite Zwischenzeit’ Altägyptens”, <i
+				>Orientalia</i
+			> 57 (1988): 245-274.
+		</li>
+		<li><strong>Gardiner, Alan H</strong>. <i>The Royal Canon of Turin</i>. Oxford: University Press, 1959.</li>
+		<li><strong>Goedicke, Hans</strong>. “King HwDfA?”, <i>JEA</i> 42 (1956): 50–53.</li>
+		<li><strong>Hartleben, Hermine</strong>. <i>Lettres de Champollion le jeune</i> Paris: 1909</li>
+		<li>
+			<strong>Helck, Wolfgang</strong>. “Anmerkungen zum Turiner K&ouml;nigspapyrus”. <abbr title="Studien zur Altägyptischen Kultur"><i>SAK</i></abbr
+			> 19 (1992): 151–216.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Untersuchungen zu Manetho und den ägyptischen Königslisten”. <abbr
+				title="Untersuchungen zur Geschichte und Altertumskunde aegyptens"><i>UGAA</i></abbr
+			> 18 (Berlin: 1956).
+		</li>
+		<li>
+			<strong>Hincks, Edward</strong>. “On the portion of the Turin book of kings which corresponds to the Sixth and Twelfth Dynasties of Manetho”, <i
+				>Transactions of the Royal Society of Literature</i
+			> 3 (1850): 128–50
+		</li>
+		<li><strong>Kitchen, Kenneth A</strong>. <i>Ramesside Inscriptions</i> II. Oxford: 1979, §288 (pp. 827–844)</li>
+		<li>
+			<strong>Krauss, Rolf</strong>. “Das Kalendarium Des Papyrus Ebers und Seine Chronologische Verwertbarkeit”, <i>Egypt and the Levant</i> 3 (1992):
+			75-96.
+		</li>
+		<li><strong>Lauth, Franz J</strong>. <i>Manetho und der Turiner Königspapyrus</i>. Munich: Wolf, 1865.</li>
+		<li>
+			<strong>Lepsius, Karl Richard</strong>. <i>Auswahl der wichtigsten Urkunden des aegyptischen Alterthums</i>. Leipzig: 1842
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Über die zwölfte Aegyptische Königsdynastie”. <i
+				>Abhandlungen Preussischen Akademie der Wissenschaften 1852</i
+			> (1853): 425–453
+		</li>
+		<li>
+			<strong>Lesueur, Jean Baptiste Cic&eacute;ron</strong>. <i>Chronologie des Rois d’Égypte</i> Paris: Impremerie Nationale, 1848.
+		</li>
+		<li>
+			<strong>M&aacute;lek, Jarom&iacute;r</strong>. “The Original Version of the Royal Canon of Turin”, <abbr title="Journal of Egyptian Archaeology"
+				><i>JEA</i>
+			</abbr> 68 (1982): 93-106.
+		</li>
+		<li>
+			<strong>Maspero, Gaston</strong>. <i>Histoire ancienne des peuples de l’orient classique</i>. Paris: 1895. <a
+				href="/pdf/Maspero1895.pdf"
+				aria-label="Download PDF-file of Maspero’s note.">&#10132;</a
+			>
+		</li>
+		<li><strong>Meyer, Eduard.</strong>. <i>Aegyptische Chronologie</i>. Berlin: 1904.</li>
+		<li><strong>M&ouml;ller, Georg</strong>. <i>Hieratiche Pal&auml;ographie</i>. Vol. 2. Osnabruck: 1927.</li>
+		<li>
+			<strong>Orcurti, Pier-Camillo</strong>. <i>Catalogo illustrato dei monumenti Egizo del R. Museo di Torino</i>. Turin: 1855. <a
+				title="Download/View"
+				href="/pdf/RCT1855.pdf">&#10132;</a
+			>
+		</li>
+		<li><strong>Redford, Donald B.</strong>. <i>Pharaonic King-lists, Annals and Day-books</i>. Mississauga: 1986.</li>
+		<li>
+			<strong>Roug&eacute;, Emmanuel de</strong>. “Recherches sur les monuments qu’on peut attribuer aux six premi&egrave;res dynasties de
+			Man&eacute;thon”. <i><abbr title="Mémoires de l’Institut national de France">MIE</abbr></i> 25.2 (1866): 225–376, pl. 3.
+		</li>
+		<li>
+			<strong>Ryholt, Kim</strong>. <i>The Political Situation in Egypt during the Second Intermediate Period</i>. Copenhagen: 1997.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “The Late Old Kingdom in the Turin King-list and the Identity of Nitocris”. <abbr
+				title="Zeitschrift für Ägyptische Sprache und Altertumskunde"><i>ZÄS</i></abbr
+			> 127 (2000): 87–100
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “The Turin King-list”, <abbr title="Ägypten und Levante"><i>AeUL</i></abbr> 14 (2004): 135–155.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “King Seneferka in the king-lists and his position in the early dynastic period”, <abbr
+				title=" Journal of Egyptian History"><i>JEH</i></abbr
+			> 1 (2008): 159–73.
+		</li>
+		<li>
+			<strong>Schneider, Thomas</strong>. “The Relative Chronology of the Middle Kingdom and the Hyksos Period (Dyns. 12–17)”, <i
+				>Ancient Egyptian Chronology</i
+			> 83 (2006): 168–196.
+		</li>
+		<li>
+			<strong>Seyffarth, Gustav</strong>. “Remarks upon an Egyptian History, in Egyptian Characters, in the Royal Museum at Turin”, <i
+				>The London Literary Gazette</i
+			>, No. 600. July 19, 1828. 457–59 <a title="Read now" href="/pdf/Seyffarth1828.pdf">&#10132;</a>
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. <i>Die Grunds&auml;tze der Mythologie und der alten Religionsgeschichte</i> Leipzig: Barth, 1843.
+		</li>
+		<li>
+			<strong>&mdash;&mdash;&mdash;</strong>. “Bibliotheca Aegyptiaca Manuscripta, 1826-1830”, <a
+				title="New York Art Resources Consortium"
+				href="https://library.nyarc.org/permalink/01NYA_INST/18jo0t1/alma991013110899707141"
+				target="_blank">&#10132;</a
+			> &nbsp;<a
+				title="New York Art Resources Consortium blog"
+				href="https://nyarc.org/blog/wilbour-library-collection-highlight-gustavus-seyffarth-and-his-obsession-with-hieroglyphs"
+				target="_blank">&#10132;</a
+			>
+		</li>
+		<li>
+			<strong>Seyffarth, Gustav, and Knortz, Karl</strong>. <i>The literary life of Gustavus Seyffarth</i>. New York: Steiger, 1886.
+		</li>
+		<li>
+			<strong>Vidua, Carlo</strong>. <i>Lettere del conte Carlo Vidua pubblicate da Cesare Balbo</i>. Vol. 2. Turin: G. Pomba, 1834
+		</li>
+		<li><strong>Waddell, W. G.</strong>. <i>Manetho</i>. Cambridge, Mass., 1940.</li>
+		<li><strong>Wiedemann, Alfred</strong>. <i>Aegyptische Geshichte</i>. Gotha: Perthes, 1884.</li>
+		<li><strong>Wilcken, Ulrich</strong>. “Recto oder Verso?”. <i>Hermes</i> 22 (1887): 487–492.</li>
+		<li>
+			<strong>Wilkinson, John Gardner</strong>. <i>The Fragments of the Hieratic Papyrus at Turin</i>. 2 Vols. 10 pl. London: Richards, 1851.
+		</li>
+		<li>
+			<strong>Winlock, Herbert E</strong>. <i>The rise and fall of the Middle Kingdom in Thebes</i>. New York: Macmillan, 1947.
+		</li>
+	</ul>
+	<p class="text-center py-3 tabular-nums">
+		<b>Note:</b><br />Many of the referenced books and journal articles above<br />are available <i>for free</i> in the <a
+			href="/ancient-egypt/kinglist/turin/library/">Reference Library</a
+		>.<br />
+	</p>
+</Layout>
+
+<style>
+	td {
+		--tw-numeric-spacing: tabular-nums;
+		font-variant-numeric: var(--tw-numeric-spacing);
+	}
+</style>

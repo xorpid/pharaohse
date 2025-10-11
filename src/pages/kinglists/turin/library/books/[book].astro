@@ -1,0 +1,345 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+export async function getStaticPaths() {
+	const pages = [
+		{
+			book: "1824-Champollion",
+			title: "“Papyrus Égyptiens”",
+			by: "Jean-François Champollion",
+			year: 1824,
+			m1: "Champollion's letters about the discovery of the Royal Canon in Turin 1824",
+			m2: "english translation,champollion,royal canon de turin,royal canon of turin,1824,hieratic",
+		},
+		{
+			book: "1826-Seyffarth",
+			title: "Seyffarth's letters from Turin, Italy in 1826",
+			by: "Gustav Seyffarth",
+			year: 1826,
+			m1: "Seyffarth letters from Italy 1826 about Turin",
+			m2: "english translation,seyffarth,turin,1826 letters,hieratic",
+		},
+		{
+			book: "1828-Seyffarth",
+			title: "Gustav Seyffarth's article in London Literary Gazette, July 19, 1828.",
+			by: "Gustav Seyffarth",
+			year: 1828,
+			m1: "“Remarks upon an Egyptian History, in Egyptian characters, in the Royal Museum at Turin”.",
+			m2: "Seyffarth,1828,London Literary Gazette,hieroglyps,decipher,champollion,hieratic",
+		},
+		{
+			book: "1832-Rosellini",
+			title: "Rosellini describes a hieratic papyrus from the Royal museum of Turin",
+			by: "Ippolito Rosellini",
+			year: 1832,
+			m1: "Rosellini's description of a hieratic papyrus from the Royal museum of Turin",
+			m2: "rosellini,champollion,canon,royal,hieroglyphs,decipher,hieratic",
+		},
+		{
+			book: "1842-Lepsius",
+			title: "Lepsius, “Auswahl der wichtigsten Urkunden des aegyptischen Alterthums”",
+			by: "Carl Richard Lepsius",
+			year: 1842,
+			m1: "Selection of the most important documents of Egyptian antiquity",
+			m2: "auswahl,lepsius,carl,karl,1842,plates,planches",
+		},
+		{
+			book: "1843-Birch",
+			title: "Observations upon the hieratical canon of Egyptian kings at Turin",
+			by: "Samuel Birch",
+			year: 1843,
+			m1: "Samuel Birch, “Observations upon the hieratical canon of Egyptian kings at Turin” from 1841 (Published 1843)",
+			m2: "Transactions of the Royal Society of Literature,trsl,birch,hieratic canon",
+		},
+		{
+			book: "1844-Barucchi",
+			title: "Barucchi 1844, Discorsi critici sopra la cronologia egizia.",
+			by: "Francesco Barucchi",
+			year: 1844,
+			m1: "English translation of Barucchi's “Critical remarks on Egyptian chronology”",
+			m2: "english translation,barucchi,1844",
+		},
+		{
+			book: "1845-Bunsen",
+			title: "Aegyptens Stelle in der Weltgeschichte",
+			by: "Christian C. J. Bunsen",
+			year: 1845,
+			m1: "Bunsen 1845. Egypt’s place in history: The Royal papyrus",
+			m2: "English translation,bunsen",
+		},
+		{
+			book: "1849-Mariette",
+			title: "Auguste Mariette, 1849. Revue Archéologique 6",
+			by: "Auguste Mariette",
+			year: 1849,
+			m1: "Note on a fragment of the Royal Papyrus and the Sixth Dynasty of Manetho.",
+			m2: "english translation,mariette,manetho",
+		},
+		{
+			book: "1850-Hincks",
+			title: "Edward Hincks, TRSL 1850, vol. 3",
+			by: "Edward Hincks",
+			year: 1850,
+			m1: "Edward Hincks about the Turin king list read before the Royal Society of Literature in 1846",
+			m2: "lecture,letters,trsl,royal society,1850",
+		},
+		{
+			book: "1850-dePresle",
+			title: "de Presle, Examen critique de la succession des dynasties égyptiennes, 1850",
+			by: "Wladimir Brunet de Presle",
+			year: 1850,
+			m1: "The Royal List in hieratic writing of the Turin Museum",
+			m2: "english translation",
+		},
+		{
+			book: "1851-Champollion-Figeac",
+			title: "Champollion-Figeac, The original fragments of the Royal Papyrus of Turin (1851)",
+			by: "Jacques Joseph Champollion-Figeac",
+			year: 1851,
+			m1: "The original fragments of the Royal Papyrus of Turin",
+			m2: "Revue Archéologique 7,rev arch 7,champollion,turin,canon,english translation,champollion-figeac",
+		},
+		{
+			book: "1851-Wilkinson",
+			title: "Wilkinson, The fragments of the hieratic papyrus at Turin, 1851",
+			by: "John Gardner Wilkinson",
+			year: 1851,
+			m1: "John Gardner Wilkinson. 1851. The fragments of the hieratic papyrus at Turin",
+			m2: "text of the book,text-wilkinson,turin,hieratic",
+		},
+		{
+			book: "1851-Hincks",
+			title: "Observations on the Turin Papyrus by Edward Hincks 1851",
+			by: "Edward Hincks",
+			year: 1851,
+			m1: "From Wilkinson's 1851 book “The fragments of the hieratic papyrus at Turin”",
+			m2: "hincks,turin,papyrus,article,book section",
+		},
+		{
+			book: "1853-Lepsius",
+			title: "Lepsius, About the Twelfth Dynasty of Egypt",
+			by: "Carl Richard Lepsius",
+			year: 1853,
+			m1: "from the German “Über die zwölfte Aegyptische Königsdynastie”",
+			m2: "english translation,lepsius,1853,twelfth dynasty",
+		},
+		{
+			book: "1855-Orcurti",
+			title: "Orcurti's Illustrated catalogue of the Egyptian Museum of Turin",
+			by: "Pietro Camillo Orcurti",
+			year: 1855,
+			m1: "English translation of “Catalogo illustrato dei monumenti Egizii del R. Museo di Torino” from 1855.",
+			m2: "english translation,illustrated catalogue,cat.,museum",
+		},
+		{
+			book: "1859-Brugsch",
+			title: "Brugsch's History of Egypt",
+			by: "Heinrich Brugsch",
+			year: 1859,
+			m1: "from French: Histoire d’Égypte des les premiers temps de son existence jusqu’a nos jour, 1859.",
+			m2: "english translation,brugsch,",
+		},
+		{
+			book: "1866-deRouge",
+			title: "Research on the first six dynasties of Manetho",
+			by: "Emmanuel de Rougé",
+			year: 1866,
+			m1: "from French: Recherches sur les monuments qu'on peut attribuer aux six premières dynasties de Manéthon, 1866.",
+			m2: "english translation,Vicomte de Rouge,Manetho",
+		},
+		{
+			book: "1882-Fabretti",
+			title: "General Catalogue of the Museum of Antiquities in Turin",
+			by: "Ariodante Fabretti, Francesco Rossi and Ridolfo Lanzone",
+			year: 1882,
+			m1: "from the 1882 Italian “Regio Museo di Torino, Catalogo generale dei Musei di Antichità”.",
+			m2: "english translation,general catalogue,cat.,turin",
+		},
+		{
+			book: "1884-Wiedemann",
+			title: "Wiedemann, Egyptian History",
+			by: "Alfred Wiedemann",
+			year: 1884,
+			m1: "Engish translation of Wiedemann, 1884, “Aegyptische Geschichte”",
+			m2: "english translation,1884",
+		},
+		{
+			book: "1886-Seyffarth",
+			title: "The origin of Manetho’s Egyptian History",
+			by: "Gustav Seyffarth",
+			year: 1886,
+			m1: "Short extract from Seyffarth's biography",
+			m2: "seyffarth,bio,biography,1886,new york,english",
+		},
+		{
+			book: "1887-Wilcken",
+			title: "Wilcken establish that the Turin king list is written on the verso.",
+			by: "Ulrich Wilcken",
+			year: 1887,
+			m1: "English translation of Wilcken “Recto Oder Verso?” from Hermes vol. 22 (1887)",
+			m2: "hermes 22,wilcken,verso,recto,papyrus",
+		},
+		{
+			book: "1895-Maspero",
+			title: "Short note about the papyrus by Gaston Maspero",
+			by: "Gaston Maspero",
+			year: 1895,
+			m1: "English translation of part of “Histoire ancienne des peuples de l’orient classique” from 1895.",
+			m2: "maspero,english translation",
+		},
+		{
+			book: "1904-Meyer",
+			title: "Eduard Meyer's Egyptian chronology",
+			by: "Eduard Meyer",
+			year: 1904,
+			m1: "English translation of the important “Aegyptische Chronologie” from 1904",
+			m2: "chronology,papyrus,meyer1904",
+		},
+		{
+			book: "1910-Pieper",
+			title: "The Origin of the Royal Papyrus of Turin",
+			by: "Max Pieper",
+			year: 1910,
+			m1: "English translation of “Die Herkunft des Turiner Königspapyrus” by Max Pieper, 1910",
+			m2: "English translation of German,pieper,papyrus,zäs 47",
+		},
+		{
+			book: "1921-Botti",
+			title: "The Drovetti collection of the Egyptian Museum in Turin",
+			by: "Giuseppe Botti",
+			year: 1921,
+			m1: "English translation of the 1921 article “La collezione Drovetti e i papyri del R. Museo Egizio in Torino”",
+			m2: "Rendiconti,Lincei,botti,giuseppe",
+		},
+		{
+			book: "1938-Farina",
+			title: "The Papyrus of Kings, restored",
+			by: "Giulio Farina",
+			year: 1938,
+			m1: "English translation of the 1938 book “Papiro dei re, restaurato” by Giulio Farina",
+			m2: "giulio farina,farina,papiro,1938",
+		},
+		{
+			book: "1956-Helck",
+			title: "Helck proposing a template for the Turin king list",
+			by: "Wolfgang Helck",
+			year: 1956,
+			m1: "English translation of a Wolfgang Helck article from “Untersuchungen zu Manetho und den Ägyptischen Königslisten”",
+			m2: "1956,untersuchungen,observations,vorlage",
+		},
+		{
+			book: "1956-Goedicke",
+			title: "King Hudjefa?",
+			by: "Hans Goedicke",
+			year: 1956,
+			m1: "Hans Goedicke examines King ḥwḏfꜢ.",
+			m2: "hudjefa i,hudjefa ii,hudlefa,missing,lost,hieroglyphs,ḏfꜢ",
+		},
+		{
+			book: "1962-Beckerath",
+			title: "The Date of the End of the Old Kingdom of Egypt",
+			by: "Jürgen von Beckerath",
+			year: 1962,
+			m1: "Jürgen von Beckerath article from JNES 21 (1962)",
+			m2: "Journal of Near Eastern Studies,beckerath,canon",
+		},
+		{
+			book: "1964-Beckerath",
+			title: "Studies on the political history of the Second Intermediate Period",
+			by: "Jürgen von Beckerath",
+			year: 1964,
+			m1: "English translation of some of von Beckerath's “Untersuchungen zur politische Geschichte der zweiten Zwischenzeit in Ägypten”",
+			m2: "1964,beckerath,article,ÄF,Ägyptologische Forschungen 23,ÄF23",
+		},
+		{
+			book: "1966-Beckerath",
+			title: "The Heracleopolitan Dynasty (9th/10th Dynasty)",
+			by: "Jürgen von Beckerath",
+			year: 1966,
+			m1: "English translation of von Beckerath's “Die Dynastie der Herakleopoliten (9./10. Dynastie)”",
+			m2: "1966,ZÄS 94,article",
+		},
+		{
+			book: "1982-Malek",
+			title: "The original version of the Royal Canon of Turin",
+			by: "Jaromir Malek",
+			year: 1982,
+			m1: "Jaromir Malek's 1982 article “The original version of the Royal Canon of Turin”",
+			m2: "article,malek,JEA68,JEA 68,1982",
+		},
+		{
+			book: "1984-Beckerath",
+			title: "Remarks on the Royal Papyrus and the dynasties of Egyptian History",
+			by: "Jürgen von Beckerath",
+			year: 1984,
+			m1: "English tranbslation of von Beckerath's “Bemerkungen zum Turiner Königspapyrus und zu den dynastien der Ägyptischen Geschichte”",
+			m2: "SAK11,SAK 11,1984,beckerath",
+		},
+		{
+			book: "1988-Franke-MK",
+			title: "Chronology of the Middle Kingdom (12th-18th Dynasties)",
+			by: "Detlef Franke",
+			year: 1988,
+			m1: "English translation of the original German article “Zur Chronologie des Mittleren Reiches (12.-18. Dynastie). Teil 1: Die 12. Dynastie.”",
+			m2: "Orientalia 57.3,",
+		},
+		{
+			book: "1988-Franke-SIP",
+			title: "The so-called ‘Second Intermediate Period’ of ancient Egypt",
+			by: "Detlef Franke",
+			year: 1988,
+			m1: "English translation of the original German article “Zur Chronologie des Mittleren Reiches Teil II: Die sogenannte ‘Zweite Zwischenzeit’ Altägyptens”",
+			m2: "Orientalia 57.3",
+		},
+		{
+			book: "1992-Helck",
+			title: "Notes on the Royal Papyrus of Turin",
+			by: "Wolfgang Helck",
+			year: 1992,
+			m1: "English translation of Helck's article “Anmerkungen zum Turiner Königspapyrus”",
+			m2: "1992,SAK19,SAK 19,helck,wolfgang,article",
+		},
+		{
+			book: "1995-Beckerath",
+			title: "Some Remarks on Helck’s “Anmerkungen zum Turiner Königspapyrus”.",
+			by: "Jürgen von Beckerath",
+			year: 1995,
+			m1: "von Beckerath commentary about Helck's 1992 article above",
+			m2: "beckerath reply,helck,article,JEA81,JEA 81",
+		},
+		{
+			book: "1997-Ryholt",
+			title: "Still in copyright.",
+			by: "Kim Ryholt",
+			year: 1997,
+			m1: "Incomplete",
+			m2: "1997,ryholt",
+		},
+	];
+	return pages.map(({ book, title, by, year, m1, m2 }) => {
+		return {
+			params: { book },
+			props: { title, by, year, m1, m2 },
+		};
+	});
+}
+
+const { book } = Astro.params;
+const { title, by, year, m1, m2 } = Astro.props;
+
+const bok = `/pdf/${book}.pdf`;
+const bild = "/images/librarybookes.webp";
+---
+
+<Layout title={title} meta1={m1} meta2={m2} bild={bild}>
+	<p class="py-7 leading-9">
+		<strong>{m1}</strong><br />
+		Published: {year}<br />
+		Author: {by}
+	</p>
+
+	<object data={bok} class="w-full min-h-[768px]" type="application/pdf">
+		<img loading="lazy" class="rounded-2xl w-[450px] mx-auto" src="/images/missing.webp" alt="For some reason the PDF-file did not load." />
+	</object>
+	<div class="hidden text-center py-5">or<br /><a href={bok}>Download {book}.pdf</a></div>
+</Layout>
