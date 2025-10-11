@@ -1,5 +1,11 @@
 ---
-// src/pages/dynasty/[id].astro
+// Define the expected shape of the markdown file's frontmatter
+interface Frontmatter {
+	title: string;
+	period: string;
+	description: string;
+}
+
 export async function getStaticPaths() {
 	const paths = [];
 	for (let i = 1; i <= 31; i++) {
@@ -9,14 +15,17 @@ export async function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-// Hardcoded or programmatically defined dynasty metadata
-const dynastyData = {
-	title: `Dynasty ${id}`,
-	period: `Period for Dynasty ${id}`, // Replace with actual data if needed
-	description: `Description for Dynasty ${id}.`, // Replace with actual data
+// Load markdown files with explicit typing
+const markdownFiles = import.meta.glob<{ frontmatter: Frontmatter }>("/src/dynasty/*.md", { eager: true });
+const dynasty = markdownFiles[`/src/dynasty/${id}.md`] || {
+	frontmatter: {
+		title: `Dynasty ${id}`,
+		period: `Period for Dynasty ${id}`,
+		description: `Description for Dynasty ${id}`,
+	},
 };
 ---
 
-<h1>{dynastyData.title}</h1>
-<p>{dynastyData.period}</p>
-<div>{dynastyData.description}</div>
+<h1>{dynasty.frontmatter.title}</h1>
+<p>{dynasty.frontmatter.period}</p>
+<div>{dynasty.frontmatter.description}</div>

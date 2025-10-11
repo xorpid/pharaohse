@@ -70,6 +70,16 @@
 		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
 	},
 	{
+		"slug": "jerome",
+		"name": "Jerome of Stridon",
+		"period": "c. 380 AD",
+		"meta1": "Pharaohs mentioned by Jerome",
+		"meta2": "Jerome, king list, Manetho",
+		"image": "/images/kinglist/jerome.jpg",
+		"intro": "",
+		"bibliography": []
+	},
+	{
 		"slug": "eratosthenes",
 		"name": "Eratosthenes",
 		"period": "c. 225 BC",

@@ -9,6 +9,7 @@ import syncellus from "@/data/kl_syncellus.json";
 import josephus from "@/data/kl_josephus.json";
 import eratosthenes from "@/data/kl_eratosthenes.json";
 import faraos from "@/data/pharaohs.json";
+import jerome from "@/data/kl_jerome.json";
 
 export async function getStaticPaths() {
 	return authors.map((p) => ({
@@ -26,6 +27,7 @@ const authorData = {
 	syncellus: syncellus,
 	josephus: josephus,
 	eratosthenes: eratosthenes,
+	jerome: jerome,
 };
 
 const { author } = Astro.props;
@@ -74,9 +76,9 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 	}
 
 	<section class="mt-8">
-		<h2 class="text-xl font-bold mb-4">Entries Grouped by Dynasty</h2>
 		{
 			dynKeys.map((dyn) => (
+				<h2 class="text-xl font-bold mb-4">Entries</h2>
 				<div class="mb-12">
 					{dyn !== "99" && <h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>}
 					<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">

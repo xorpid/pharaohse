@@ -58,7 +58,7 @@
 	--dark-highlight: var(--color-amber-700);
 	--dark-border: var(--color-neutral-700);
 	--dark-transliteration: var(--color-orange-300);
-	--dark-greek: var(--color-emerald-600);
+	--dark-greek: var(--color-emerald-400);
 	--dark-armenian: var(--color-yellow-400);
 }
 
@@ -122,6 +122,7 @@
 		font-size: var(--text-base);
 		border-collapse: collapse;
 		width: 100%;
+		margin-block: calc(var(--spacing) * 10);
 		th {
 			text-align: left;
 			border-bottom: 4px solid light-dark(var(--border), var(--dark-border));

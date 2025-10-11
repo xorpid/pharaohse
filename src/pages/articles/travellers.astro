@@ -8,23 +8,19 @@ let meta2 = "travelers,travellers,egypt";
 
 <Layout title={title} meta1={meta1} meta2={meta2}>
 	<section class="page-content">
-		<div class="container">
-			<div class="border-4 rounded-full border-amber-700 m-10 p-10 text-2xl font-sans bg-amber-400 text-black text-center">
-				<p class="font-bold text-2xl">Temporary page.</p>
-
-				<p class="italic text-xl">This page will likely be removed. Collecting from many sources, there will be plenty of ERRORS - for certain.</p>
-			</div>
+		<p class="container">
+			<p>Collection of information from many sources, still incomplete.</p>
 
 			<p>
 				<dl>
-					<dt>Strabo (1st century BCE)</dt>
+					<dt>Strabo (1st century BC)</dt>
 					<dd>
-						Greek geographer and historian who lived in the first century BCE., best known for his work "Geography," a 17-volume treatise that
+						Greek geographer and historian who lived in the first century BC., best known for his work "Geography," a 17-volume treatise that
 						describes the geography and culture of the known world at the time. In this work, Strabo included a detailed account of his travels to
-						Egypt, which he visited around 25 BCE. In his account of Egypt, Strabo wrote about the geography, history, and culture of the country. He
+						Egypt, which he visited around 25 BC. In his account of Egypt, Strabo wrote about the geography, history, and culture of the country. He
 						described the Nile River, the irrigation systems that sustained agriculture in the region, and the major cities and towns of ancient
 						Egypt. He also wrote about the customs, beliefs, and practices of the ancient Egyptians, including their religion, art, and social
-						structure. Strabo's account of Egypt is considered an important source of information about the country in the first century BCE. His
+						structure. Strabo's account of Egypt is considered an important source of information about the country in the first century BC. His
 						observations and descriptions provide valuable insights into the daily lives, beliefs, and practices of the ancient Egyptians and have
 						helped to shape our modern understanding of this civilization.
 						<br />
@@ -62,19 +58,24 @@ let meta2 = "travelers,travellers,egypt";
 					<dt>Anomymous Venetian traveller (1589)</dt>
 					<dd>
 						Visited Thebes.<br />
-						<a href="https://archive.org/details/Voyageurs-3/page/n19/mode/2up">archive.org</a>
-						<p>
-							14. <i>The Colossi of Thebes.</i> In the countryside, opposite Ochsur [Luxor], I saw a large expanse of land filled with ancient buildings;
-							among those which seduced my eyes two large colossi of mixed stone; I was not able to admire them up close, because the countryside is completely
-							submerged under water. This is why I only saw them from the bank of the Nile, which was a hundred paces or more away.
-						</p>
-						<p>
-							Apart from these two statues, there were quite a few monuments. Some Moors told me that it was another Ochsur, built opposite the other
-							and built by a brother of the one who had built the first, to compete with it. But it seems to me that he must have been inferior in
-							every respect. For among the things that I am going to describe to you, I have not seen a building that was of such great price, made of
-							such a large quantity of stones, and of such a large size. The better to prove it to you, I'll start on the next page...
-						</p>
-						<p></p>
+						Original account (Italian): <a href="https://archive.org/details/Voyageurs-3/page/n19/mode/2up" target="_blank"
+							>Voyages en Égypte 1589 1590 1591 (Archive.org)</a
+						><br />
+						English translation.
+						<blockquote>
+							<p>
+								14. <i>The Colossi of Thebes.</i> In the countryside, opposite Ochsur [Luxor], I saw a large expanse of land filled with ancient buildings;
+								among those which seduced my eyes two large colossi of mixed stone; I was not able to admire them up close, because the countryside is
+								completely submerged under water. This is why I only saw them from the bank of the Nile, which was a hundred paces or more away.
+							</p>
+							<p>
+								Apart from these two statues, there were quite a few monuments. Some Moors told me that it was another Ochsur, built opposite the
+								other and built by a brother of the one who had built the first, to compete with it. But it seems to me that he must have been
+								inferior in every respect. For among the things that I am going to describe to you, I have not seen a building that was of such great
+								price, made of such a large quantity of stones, and of such a large size. The better to prove it to you, I'll start on the next
+								page...
+							</p>
+						</blockquote>
 					</dd>
 
 					<dt>Granger (1680–1734)</dt>
@@ -202,7 +203,7 @@ let meta2 = "travelers,travellers,egypt";
 					<dd></dd>
 				</dl>
 			</p>
-		</div>
+		</p>
 	</section>
 </Layout>
 
@@ -210,8 +211,9 @@ let meta2 = "travelers,travellers,egypt";
 	dt {
 		padding-top: 1rem;
 		padding-bottom: 0.5rem;
-		font-weight: 700;
-		color: var(--text-1);
+		font-weight: var(--font-weight-light);
+		color: light-dark(var(--primary), var(--dark-primary));
+		font-size: var(--text-2xl);
 	}
 	dd {
 		padding-inline: 1rem;

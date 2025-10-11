@@ -1,13 +1,13 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import kinglists from "../../data/kinglists.json";
-import abydos from "../../data/kl_abydos.json";
-import saqqara from "../../data/kl_saqqara.json";
-import karnak from "../../data/kl_karnak.json";
-import ramesseum from "../../data/kl_ramesseum.json";
-import marseille from "../../data/kl_marseille.json";
-import medinet from "../../data/kl_medinet.json";
-import kings from "../../data/pharaohs.json";
+import Layout from "@/layouts/Layout.astro";
+import kinglists from "@/data/kinglists.json";
+import abydos from "@/data/kl_abydos.json";
+import saqqara from "@/data/kl_saqqara.json";
+import karnak from "@/data/kl_karnak.json";
+import ramesseum from "@/data/kl_ramesseum.json";
+import marseille from "@/data/kl_marseille.json";
+import medinet from "@/data/kl_medinet.json";
+import kings from "@/data/pharaohs.json";
 
 export async function getStaticPaths() {
 	return kinglists.map((p) => ({
