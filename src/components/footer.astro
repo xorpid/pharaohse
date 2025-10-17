@@ -13,31 +13,42 @@ import "@/styles/fancybox.css";
 	>
 
 	<script is:inline>
-		// Select elements
 		let butt = document.getElementById("toppen");
-		let header = document.querySelector("header"); // Adjust selector as needed for your header element
+		let header = document.querySelector("header");
 
-		// Single scroll event listener
-		window.addEventListener("scroll", () => {
-			// Handle button visibility
+		// Debounce function to limit scroll event frequency
+		function debounce(func, wait) {
+			let timeout;
+			return function executedFunction(...args) {
+				const later = () => {
+					clearTimeout(timeout);
+					func(...args);
+				};
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+			};
+		}
+
+		// Scroll event handler
+		const handleScroll = debounce(() => {
 			if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
 				butt.style.display = "block";
 			} else {
 				butt.style.display = "none";
 			}
 
-			// Toggle scrolled class on header
 			if (window.scrollY > 10) {
 				header.classList.add("scrolled");
 			} else {
 				header.classList.remove("scrolled");
 			}
-		});
+		}, 100); // Adjust delay (100ms) as needed
 
-		// When the user clicks on the button, scroll to the top of the document
+		window.addEventListener("scroll", handleScroll);
+
 		function topFunction() {
-			document.body.scrollTop = 0; // For Safari
-			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
 		}
 	</script>
 </div>

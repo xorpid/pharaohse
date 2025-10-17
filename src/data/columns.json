@@ -1,0 +1,60 @@
+[
+	{
+		"heading": "25 rows — Gods.",
+		"text": "An introduction (that is lost in lacuna) detailing the content and perhaps the purpose of the king list, including the date and perhaps even the name of the scribe. This is followed by the nine gods of the Great Ennead (1.12-20), and the summation (1.21-24).",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 1</caption><tr><th>Rows</th><th>Remarks</th></tr><tr><td>1–9</td><td><em>Lacuna</em> (Introduction)</td></tr><tr><td>10–11</td><td><em>Lacuna</em> (Heading for the Gods?)</td></tr><tr><td>12–20</td><td>Seven gods (1.14-1.20) with two lost in <em>lacuna</em>.</td></tr><tr><td>21–24</td><td>Summation for the Gods</td></tr></table></div>"
+	},
+
+	{
+		"heading": "26 rows — Gods and other divine beings.",
+		"text": "Fragments with the names of gods, demigods, and sacred animals. This column 2 is not present in Farina or Gardiner, but was reconstructed by Ryholt from fragments in column X. This column makes sense as it contains the names of divine beings, which would have been present in the early parts of the document. However, the writing is quite small and compact compared to columns 1 and 3, which contradict this position, which seems to fit better in columns 10 or 11. The patch on fr. 41 and 42 is consistent with a 'missing' patch that should be located in the vicinity of the proposed second column.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 2</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–7</td><td>Sacred animals?</td><td>7</td></tr><tr><td>8–11</td><td>Four gods</td><td>4</td></tr><tr><td>12</td><td colspan=\"2\"><em>Lacuna</em></td></tr><tr><td>13–18</td><td>Five names (of gods?)</td><td>5</td></tr><tr><td>19–20</td><td colspan=\"2\"><em>Lacuna</em></td></tr><tr><td>21–23</td><td>Three names (of gods)</td><td>3</td></tr><tr><td>24–26</td><td colspan=\"2\"><em>Lacuna</em></td></tr></table><,div>"
+	},
+	{
+		"heading": "25 rows — 14 kings.",
+		"text": "Twenty-five rows, the first nine describe spirits; the king list starts with a heading on the tenth row. This column is extra wide to accomodate the lifetime of the kings. The eight kings of the First Dynasty compare exactly with Manetho, but discrepancies begin to emerge starting with the kings of the Second Dynasty.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 3</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–9</td><td>Spirits/Demigods with Summation</td><td></td></tr><tr><td>10</td><td>Heading for First through Tenth dynasties(?)</td><td></td></tr><tr><td>11–19</td><td>First Dynasty</td><td>8</td></tr><tr><td>20–25</td><td>Second Dynasty</td><td>6</td></tr></table></div>"
+	},
+	{
+		"heading": "26 rows — 25 kings.",
+		"text": "Twenty-six continuous rows with the full or partial names of fourteen kings. At the bottom, there is a summation of dynasties I-V. The fragments in this column must be adjusted so that the written text is in alignment with the other columns. Older reconstructions fail to make certain that the text of column 4 start at the same vertical position as the other columns. The column is extra wide to accomodate the lifetime of the kings.<br><br>Curiously, the kings of the Fourth Dynasty in the Abydos king list holds six kings (20-25), Saqqara nine (43-35) and the Canon eight (4.9-16), indicating incompletely preserved records. Centuries later, scribes compiling Source B (third to sixth dynasties) of Vorlage A, accessed the archives and added the kings of the Fourth Dynasty. The discrepancy between the king lists is puzzling.",
+		"table": "<div class=\"mt-8\"><table class=\"tbl\"><caption class=\"text-center pt-3\">Overview of column 4</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–3</td><td>Second Dynasty (continued)</td><td>3</td></tr><tr><td>4–8</td><td>Third Dynasty</td><td>5</td></tr><tr><td>9–16</td><td>Fourth Dynasty</td><td>8</td></tr><tr><td>17–25</td><td>Fifth Dynasty</td><td>9</td></tr><tr><td>26</td><td>Summation for First through Fifth dynasties</td><td></td></tr></table></div>"
+	},
+	{
+		"heading": "26 rows — 22 kings.",
+		"text": "The fragments form twenty-six rows, but most of the names are missing, including all the kings of the Sixth Dynasty. After the four lines of summations for the previous dynasties, the list continues with the rulers of Herakleopolis. <!--Gardiner removed Fr. 133 + 135 from his column IV, but there is a perfect fibre match with fr. 18 to the right. Fr. 44 is shifted to the right to align vertically with the sheet-join. Also restored is fr. 40 from Gardiner’s unplaced fragments, and fr. 43 is moved one line up.  Gardiner removed fr. 48 + 36 from Seyffarth’s reconstruction, but the fibres correspond perfectly with fr. 47, and are in their correct position.-->",
+		"table": "<div class=\"mt-8\"><table class=\"tbl\"><caption class=\"text-center pt-3\">Overview of column 5</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–13</td><td>Sixth Dynasty</td><td>13</td></tr><tr><td>14–17</td><td>Summation for Sixth Dynasty</td><td></td></tr><tr><td>18–26</td><td>Ninth/Tenth dynasties</td><td>9</td></tr></table></div>"
+	},
+	{
+		"heading": "25 rows — 21 kings.",
+		"text": "From the poorly attested Herakleopolitian kings, leading up to the last kings of the Twelfth Dynasty. Only remnants of a few royal names are recorded on the few remaining fragments in this column.",
+		"table": "<div class=\"mt-8\"><table class=\"tbl\"><caption class=\"text-center pt-3\">Overview of column 6</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–9</td><td>Ninth/Tenth dynasties (continued)</td><td>9</td></tr><tr><td>10</td><td colspan=\"2\">Summation for Dynasty Ninth/Tenth</td></tr><tr><td>11</td><td colspan=\"2\">Heading for the Eleventh Dynasty</td></tr><tr><td>12–17</td><td>Eleventh Dynasty</td><td>6</td></tr><tr><td>18</td><td colspan=\"2\">Summation for the Eleventh Dynasty</td></tr><tr><td>19</td><td colspan=\"2\">Heading for Twelfth Dynasty</td></tr><tr><td>20–25</td><td>Twelfth Dynasty</td><td>6</td></tr></table></div>"
+	},
+
+	{
+		"heading": "28 rows — 26 kings.",
+		"text": "Twenty-eight rows with the names of twenty-six kings, covering the last kings of the Twelfth Dynasty leading into the Second Intermediate Period, and an abundance of kings.",
+		"table": "<div class=\"mt-8\"><table class=\"tbl\"><caption class=\"text-center pt-3\">Overview of column 7</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–2</td><td>Twelfth Dynasty (continued)</td><td>2</td></tr><tr><td>3</td><td colspan=\"2\">Summation for the Twelfth Dynasty</td></tr><tr><td>4</td><td colspan=\"2\">Heading for Thirteenth Dynasty</td></tr><tr><td>5–28</td><td>Thirteenth Dynasty</td><td>24</td></tr></table></div>"
+	},
+	{
+		"heading": "29 rows — 28 kings.",
+		"text": "Twenty-nine rows with the names of twenty-eight kings of the poorly attested kings of the Thirteenth Dynasty. The photos show that the facsimile of Ryholt is slightly incorrect, the fragments having been straightened and/or distorted. It is evident that the numbering towards the bottom of column 8 needs a slight adjustment, which moves the fragments of Ryholt’s row 20 down one row. This does not cause any fibre errors, rather it places the fragments in their correct position.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 8</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–28</td><td>Thirteenth Dynasty (continued)</td><td>28</td></tr><tr><td>29</td><td colspan=\"2\">Summation for the Thirteenth Dynasty</td></tr></table></div>"
+	},
+
+	{
+		"heading": "30 rows — 30 kings.",
+		"text": "Thirty rows with the names of thirty kings of the Fourteenth Dynasty. This dynasty was concurrent with the Thirteenth Dynasty.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 9</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–30</td><td>Fourteenth Dynasty</td><td>30</td></tr></table></div>"
+	},
+	{
+		"heading": "31 rows — 27 kings.",
+		"text": "Thirty-one rows with 27 kings bringing an end to the kings of the Fourteenth Dynasty. The invading Hyksos kings of the Fifteenth Dynasty are included, which confim that the list of kings was seemingly compiled without bias.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 10</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–3</td><td>Fourteenth Dynasty (continued)</td><td>3</td></tr><tr><td>4</td><td><em>Lacuna</em> (Fourteenth Dynasty)</td><td>1</td></tr><tr><td>5–15</td><td>Fourteenth Dynasty</td><td>11</td></tr><tr><td>16–20</td><td><em>Lacuna</em> (Fourteenth Dynasty)</td><td>5</td></tr><tr><td>21</td><td colspan=\"2\">Summation for the Fourteenth Dynasty</td></tr><tr><td>22</td><td colspan=\"2\"><em>Lacuna</em> (Heading Fifteenth Dynasty)</td></tr><tr><td>23–25</td><td><em>Lacuna</em> (Fifteenth Dynasty)</td><td>3</td></tr><tr><td>26–28</td><td>Fifteenth Dynasty</td><td>3</td></tr><tr><td>29</td><td colspan=\"2\">Summation for Fifteenth Dynasty</td></tr><tr><td>30</td><td colspan=\"2\">Heading for the Sixteenth Dynasty</td></tr><tr><td>31</td><td>Sixteenth Dynasty</td><td>1</td></tr></table></div>"
+	},
+	{
+		"heading": "An estimated 31 rows",
+		"text": "An estimated thirty-one rows with the names of the kings of the successive Sixteenth and Seventeenth Dynasties based at Thebes, explaining the lack of a heading following the summation in 11.15. The lower section is almost entirely missing, with only four partial names remaining, making any identification speculative and precarious.",
+		"table": "<div class=\"mt-8\"><table><caption class=\"text-center pt-3\">Overview of column 11</caption><tr><th>Rows</th><th>Remarks</th><th>Kings</th></tr><tr><td>1–14</td><td>Sixteenth Dynasty (continued)</td><td>14</td></tr><tr><td>15</td><td colspan=\"2\">Summation for Sixteenth Dynasty</td></tr><tr><td>16–17</td><td>Seventeenth Dynasty</td><td>2</td></tr><tr><td>18–24</td><td><em>Lacuna</em> (Seventeenth Dynasty)</td><td>7</td></tr><tr><td>25–31</td><td>Seventeenth Dynasty</td><td>7</td></tr></table></div>"
+	}
+]

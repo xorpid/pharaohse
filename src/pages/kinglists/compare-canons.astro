@@ -1,0 +1,760 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+let title = "New Kingdom king lists compared";
+let meta1 = "Comparing the names of the kings found in the New Kingdom Canons of Ancient Egypt";
+let meta2 = "kinglist,king list of ancient egypt,kemet,hieroglyphs,ancient egypt,karnak canon,abydos canon,saqqara canon,cartouches";
+const bild = "/images/pharaohse-kinglists.webp";
+---
+
+<Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
+	<section class="page-content">
+		<p class="lead">Direct comparisions of the kings found in the three main New Kingdom king lists.</p>
+
+		<p>
+			The Abydos and Saqqara lists contain two rows of cartouches organised with the names of the pharaohs inscribed in sequential order on a single
+			flat wall. The Karnak list contain 4 rows inscribed on three connected walls and the cartouches are <em>not</em> in sequential order. It is further
+			divided into a left and right part where the pharaohs face the same direction.
+		</p>
+
+		<ul class="p-3">
+			<li>
+				<a href="/kinglists/karnak-canon">Karnak Canon</a> &mdash; inscribed during the reign of <a href="/pharaohs/Thutmose-II">Thutmose II</a> (1493–1479
+				BC)
+			</li>
+			<li>
+				<a href="/kinglists/abydos-canon">Abydos Canon</a> &mdash; inscribed during the reign of <a href="/pharaohs/Seti-I">Seti I</a> (1290–1279 BC)
+			</li>
+			<li>
+				<a href="/kinglists/saqqara-canon">Saqqara Canon</a> &mdash; inscribed during the reign of <a href="/pharaohs/Ramesses-II">Ramesses II</a> (1279–1213
+				BC)
+			</li>
+		</ul>
+		<p class="pb-3">
+			Where there is no cartouche, the name is represented by a &mdash;. All three lists of kings were most likely compiled from a number of different
+			sources, some of which were undoubtedly hieratic writings on papyrus. Discrepancies in the names in the cartouches are probably due to
+			difficulties in reading the originals, which may have been corrupted or damaged in some way.
+		</p>
+		<div class="mt-10">
+			<div class="grid grid-cols-4 gap-y-10 divide-y divide-smoke-200 dark:divide-shark-800">
+				<div class="font-sans font-bold uppercase">Pharaoh</div>
+				<div class="font-sans font-bold uppercase">Abydos<br />Canon</div>
+				<div class="font-sans font-bold uppercase">Saqqara<br />Canon</div>
+				<div class="font-sans font-bold uppercase">Karnak<br />Canon</div>
+
+				<div>Narmer</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a01v.svg" class="svgV dark:invert" /><tlit>mni</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Aha</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a02v.svg" class="svgV dark:invert" /><tlit>tti</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Djer</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a03v.svg" class="svgV dark:invert" /><tlit>itti</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Wadj</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a04v.svg" class="svgV dark:invert" /><tlit>it&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Den</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a05v.svg" class="svgV dark:invert" /><tlit>sp&#42786;ti</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Anedjib</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a06v.svg" class="svgV dark:invert" /><tlit>mr-b&#42786;p</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s58v.svg" class="svgV dark:invert" /><tlit>mri-bi&#42786;pn</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Semerkhet</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a07v.svg" class="svgV dark:invert" /><tlit>smsw</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Qa'a</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a08v.svg" class="svgV dark:invert" /><tlit>&#7731;b&#7717;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s57v.svg" class="svgV dark:invert" /><tlit>&#7731;b&#7717;w</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Hotepsekhemwy</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a09v.svg" class="svgV dark:invert" /><tlit>b&#7695;&#42786;w</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s56v.svg" class="svgV dark:invert" /><tlit>n&#7791;r-b&#42786;w</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Nebra</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a10v.svg" class="svgV dark:invert" /><tlit>k&#42786;k&#42786;w</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s55v.svg" class="svgV dark:invert" /><tlit>k&#42786;k&#42786;w</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Ninetjer</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a11v.svg" class="svgV dark:invert" /><tlit>b&#42786;-n&#7791;r</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s54v.svg" class="svgV dark:invert" /><tlit>b&#42786;-n&#7791;rw</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Wadjnes</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a12v.svg" class="svgV dark:invert" /><tlit>w&#42786;&#7695;-ns</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s53v.svg" class="svgV dark:invert" /><tlit>w&#42786;&#7695;-ls</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Senedj</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a13v.svg" class="svgV dark:invert" /><tlit>sndi</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s52v.svg" class="svgV dark:invert" /><tlit>sn&#7695;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Neferkara</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s51v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Neferkasokar</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s50v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-zkr</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Hudjefa I</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s49v.svg" class="svgV dark:invert" /><tlit>//-&#7695;f&#42786;-//</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Khasekhemwy</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a14v.svg" class="svgV dark:invert" /><tlit>&#7695;&#42786;-&#7695;&#42786;-y</tlit>
+				</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s48v.svg" class="svgV dark:invert" /><tlit>bby</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Nebka</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a15v.svg" class="svgV dark:invert" /><tlit>nb-k&#42786;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Djoser</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a16v.svg" class="svgV dark:invert" /><tlit>&#7695;sr-s&#42786;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s47v.svg" class="svgV dark:invert" /><tlit>&#7695;sr</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Sekhemkhet</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a17v.svg" class="svgV dark:invert" /><tlit>tti</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s46v.svg" class="svgV dark:invert" /><tlit>&#7695;sr-tti</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Hudjefa II</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a18v.svg" class="svgV dark:invert" /><tlit>s&#7695;s</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s45v.svg" class="svgV dark:invert" /><tlit>nb-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>?</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a19v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k01v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+
+				<div>Huni</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s44v.svg" class="svgV dark:invert" /><tlit>&#7717;wni</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Sneferu</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a20v.svg" class="svgV dark:invert" /><tlit>snfrw</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s43v.svg" class="svgV dark:invert" /><tlit>snfrw</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k02v.svg" class="svgV dark:invert" /><tlit>snfrw</tlit></div>
+
+				<div>Khufu</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a21v.svg" class="svgV dark:invert" /><tlit>&#7723;fw</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s42v.svg" class="svgV dark:invert" /><tlit>&#7723;fw(f)</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Djedefra</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a22v.svg" class="svgV dark:invert" /><tlit>&#7695;d-f-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s41v.svg" class="svgV dark:invert" /><tlit>&#7695;d(w)-f-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Khafra</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a23v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-f-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s40v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;(w)-f-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Menkaura</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a24v.svg" class="svgV dark:invert" /><tlit>mn-k&#42786;w-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s39v.svg" class="svgV dark:invert" /></div>
+				<div>&mdash;</div>
+
+				<div>Shepseskaf</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a25v.svg" class="svgV dark:invert" /><tlit>&scaron;ps-k&#42786;f</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s38v.svg" class="svgV dark:invert" /></div>
+				<div>&mdash;</div>
+
+				<div>?</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s37v.svg" class="svgV dark:invert" /></div>
+				<div>&mdash;</div>
+
+				<div>?</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s36v.svg" class="svgV dark:invert" /></div>
+				<div>&mdash;</div>
+
+				<div>?</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s35v.svg" class="svgV dark:invert" /></div>
+				<div>&mdash;</div>
+
+				<div>Userkaf</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a26v.svg" class="svgV dark:invert" /><tlit>wsr-k&#42786;f</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s34v.svg" class="svgV dark:invert" /><tlit>wsr-k&#42786;f</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Sahura</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a27v.svg" class="svgV dark:invert" /><tlit>s&#42786;&#7717;.w-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s33v.svg" class="svgV dark:invert" /><tlit>s&#42786;&#7717;.w-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k03v.svg" class="svgV dark:invert" /><tlit>s&#42786;&#7717;.w-r&#42788;</tlit></div>
+
+				<div>Neferirkara</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a28v.svg" class="svgV dark:invert" /><tlit>k&#42786;-k&#42786;-i</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s32v.svg" class="svgV dark:invert" /><tlit>nfr-ir-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Shepseskara</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s31v.svg" class="svgV dark:invert" /><tlit>&scaron;ps-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Neferefra</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a29v.svg" class="svgV dark:invert" /><tlit>nfr-f-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s30v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-nfr-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Niuserra Ini</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a30v.svg" class="svgV dark:invert" /><tlit>ni-wsr-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k04v.svg" class="svgV dark:invert" /><tlit>ini</tlit></div>
+
+				<div>Menkauhor</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a31v.svg" class="svgV dark:invert" /><tlit>mn-k&#42786;w-&#7717;r</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s29v.svg" class="svgV dark:invert" /><tlit>mn-k&#42786;-&#7717;r</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Djedkara Isesi</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a32v.svg" class="svgV dark:invert" /><tlit>&#7695;d-k&#42786;-r&#42788;</tlit></div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s28v.svg" class="svgV dark:invert" /><tlit>m&#42786;&#42788;-k&#42786;-r&#42788;</tlit>
+				</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k05v.svg" class="svgV dark:invert" /><tlit>issi</tlit></div>
+
+				<div>Unas</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a33v.svg" class="svgV dark:invert" /><tlit>wn-i-s</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s27v.svg" class="svgV dark:invert" /><tlit>wn-i-s</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Teti</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a34v.svg" class="svgV dark:invert" /><tlit>tti</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s26v.svg" class="svgV dark:invert" /><tlit>tti</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k14v.svg" class="svgV dark:invert" /><tlit>tty</tlit></div>
+
+				<div>Userkara</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a35v.svg" class="svgV dark:invert" /><tlit>wsr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Pepi I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a36v.svg" class="svgV dark:invert" /><tlit>mr-y-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s25v.svg" class="svgV dark:invert" /><tlit>ppy</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k15v.svg" class="svgV dark:invert" /><tlit>ppy</tlit></div>
+
+				<div>Nemtiemsaf I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a37v.svg" class="svgV dark:invert" /><tlit>mr-n-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s24v.svg" class="svgV dark:invert" /><tlit>mr-n-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k16v.svg" class="svgV dark:invert" /><tlit>mr-n-r&#42788;</tlit></div>
+
+				<div>Pepi II</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a38v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s23v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Nemtiemsaf II</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a39v.svg" class="svgV dark:invert" /><tlit>mr-n-r&#42788; s&#42786;-m-s&#42786;-f</tlit>
+				</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Netjerikara</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a40v.svg" class="svgV dark:invert" /><tlit>n&#7791;r-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Menkara</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a41v.svg" class="svgV dark:invert" /><tlit>mn-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkara III</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a42v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkara Neby</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a43v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788; nby</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Djedkara Shemai</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a44v.svg" class="svgV dark:invert" /><tlit
+						>&#7695;d-k&#42786;-r&#42788; &scaron;m&#42786;i</tlit
+					>
+				</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkara Khendu</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a45v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788; &#7723;ndw</tlit>
+				</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Merenhor</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a46v.svg" class="svgV dark:invert" /><tlit>mr-n-ḥr</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkamin</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a47v.svg" class="svgV dark:invert" /><tlit>z-nfr-k&#42786;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Nikara</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a48v.svg" class="svgV dark:invert" /><tlit>ni-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkara Tereru</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a49v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788; tr-rw</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkahor</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a50v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-&#7717;r</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkara Pepiseneb</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a51v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;-r&#42788; ppy-snb</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkamin Anu</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a52v.svg" class="svgV dark:invert" /><tlit>z-nfr-k&#42786; &#42788;nw</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Qakara Ibi</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a53v.svg" class="svgV dark:invert" /><tlit>&#7731;&#42786;-k&#42786;w-r&#42788;</tlit>
+				</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkaura</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a54v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;w-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferkauhor</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a55v.svg" class="svgV dark:invert" /><tlit>nfr-k&#42786;w-&#7717;r</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Neferirkara II</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a56v.svg" class="svgV dark:invert" /><tlit>nfr-ir-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+
+				<div>Mentuhotep II</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a57v.svg" class="svgV dark:invert" /><tlit>nb-&#7717;&#42786;pt-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s13v.svg" class="svgV dark:invert" /><tlit>nb-&#7717;&#42786;pt-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k29v.svg" class="svgV dark:invert" /><tlit>nb-&#7717;&#42786;pt-r&#42788;</tlit></div>
+
+				<div>Mentuhotep III</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a58v.svg" class="svgV dark:invert" /><tlit>s-&#42788;n&#7723;-k&#42786;-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s14v.svg" class="svgV dark:invert" /><tlit>s-&#42788;n&#7723;-k&#42786;-r&#42788;</tlit>
+				</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k30v.svg" class="svgV dark:invert" /><tlit>s-nfr-k&#42786;-r&#42788;</tlit></div>
+
+				<div>Amenemhat I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a59v.svg" class="svgV dark:invert" /><tlit>s-&#7717;tp-ib-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s15v.svg" class="svgV dark:invert" /><tlit>s-&#7717;tp-ib-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k17v.svg" class="svgV dark:invert" /><tlit>s-&#7717;tp-ib-r&#42788;</tlit></div>
+
+				<div>Senusret I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a60v.svg" class="svgV dark:invert" /><tlit>&#7723;pr-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s16v.svg" class="svgV dark:invert" /><tlit>&#7723;pr-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k24v.svg" class="svgV dark:invert" /><tlit>&#7723;pr-k&#42786;-r&#42788;</tlit></div>
+
+				<div>Amenemhat II</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a61v.svg" class="svgV dark:invert" /><tlit>nbw-k&#42786;w-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s17v.svg" class="svgV dark:invert" /><tlit>nbw-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k18v.svg" class="svgV dark:invert" /><tlit>nbw-k&#42786;w-r&#42788;</tlit></div>
+
+				<div>Senusret II</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a62v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-&#7723;pr-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s18v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-&#7723;pr-r&#42788;</tlit>
+				</div>
+				<div>&mdash;</div>
+
+				<div>Senusret III</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a63v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-k&#42786;w-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s19v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-k&#42786;-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k32v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-k&#42786;-r&#42788;</tlit>
+				</div>
+
+				<div>Amenemhat III</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a64v.svg" class="svgV dark:invert" /><tlit>nj-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s20v.svg" class="svgV dark:invert" /><tlit>nj-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Amenemhat IV</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a65v.svg" class="svgV dark:invert" /><tlit>m&#42786;&#42788;-&#7723;rw-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s21v.svg" class="svgV dark:invert" /><tlit>m&#42786;&#42788;-&#7723;rw-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k21v.svg" class="svgV dark:invert" /><tlit>m&#42786;&#42788;-&#7723;rw-r&#42788;</tlit>
+				</div>
+
+				<div>Neferusobek</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s22v.svg" class="svgV dark:invert" /><tlit>sbk-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k22v.svg" class="svgV dark:invert" /><tlit>sbk-nfrw-r&#42788;</tlit></div>
+
+				<div>Wegaf</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k51v.svg" class="svgV dark:invert" /><tlit>&#7723;w-t&#42786;wi-r&#42788;</tlit></div>
+
+				<div>Sekhemra Khutawy</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k36v.svg" class="svgV dark:invert" /><tlit>s&#7723;m-r&#42788; &#7723;w-t&#42786;wi</tlit>
+				</div>
+
+				<div>Amenemhat V ???</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k37v.svg" class="svgV dark:invert" /><tlit>s-&#42788;n&#7723;-ib-r&#42788;</tlit></div>
+
+				<div>Neferhotep I</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k34v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-s&#7723;m-r&#42788;</tlit>
+				</div>
+
+				<div>Sobekhotep IV</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k33v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-nfr-r&#42788;</tlit></div>
+
+				<div>Sobekhotep V</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k46v.svg" class="svgV dark:invert" /><tlit>&#7723;&#42788;-&#7717;tp-r&#42788;</tlit>
+				</div>
+
+				<div>Sobekhotep VI Merhotepra</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k50v.svg" class="svgV dark:invert" /><tlit>mr-&#7717;tp-r&#42788;</tlit></div>
+
+				<div>Mersekhemra Ined</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k41v.svg" class="svgV dark:invert" /><tlit>mr-s&#7723;m-r&#42788;</tlit></div>
+
+				<div>Sobekhotep VII</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k42v.svg" class="svgV dark:invert" /><tlit>mr-k&#42786;w-r&#42788;</tlit></div>
+
+				<div>Senebmiu</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k49v.svg" class="svgV dark:invert" /><tlit>s-w&#42786;&#7717;-n-r&#42788;</tlit></div>
+
+				<div>Rahotep</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k48v.svg" class="svgV dark:invert" /><tlit>w&#42786;&#7717;-k&#42786;w-r&#42788;</tlit>
+				</div>
+
+				<div>Sobekemsaf I</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k54v.svg" class="svgV dark:invert" /><tlit
+						>s&#7723;m-w&#42786;&#7695;-k&#42786;w-r&#42788;</tlit
+					>
+				</div>
+
+				<div>Djehuty</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k08v.svg" class="svgV dark:invert" /><tlit>s&#7723;m-r&#42788; s-mn-t&#42786;wi</tlit>
+				</div>
+
+				<div>Sobekhotep VIII</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/k43v.svg" class="svgV dark:invert" /><tlit>s&#7723;m-r&#42788; s-wsr-t&#42786;wi</tlit>
+				</div>
+
+				<div>Nebirau</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k38v.svg" class="svgV dark:invert" /><tlit>s-w&#42786;&#7695;-n-r&#42788;</tlit></div>
+
+				<div>Bebiankh</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k27v.svg" class="svgV dark:invert" /><tlit>s-wsr-n-r&#42788;</tlit></div>
+
+				<div>Pharaoh</div>
+				<div>Abydos</div>
+				<div>Saqqara</div>
+				<div>Karnak</div>
+
+				<div>Intef VII</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k28v.svg" class="svgV dark:invert" /><tlit>nbw-&#7723;pr-r&#42788;</tlit></div>
+
+				<div>Senakhtenra Ahmose</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k26v.svg" class="svgV dark:invert" /><tlit>s-n&#7723;t-n-r&#42788;</tlit></div>
+
+				<div>Seqenenra</div>
+				<div>&mdash;</div>
+				<div>&mdash;</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/k25v.svg" class="svgV dark:invert" /><tlit>s-&#7731;n-n-r&#42788;</tlit></div>
+
+				<div>Ahmose</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a66v.svg" class="svgV dark:invert" /><tlit>nb-p&#7717;ti-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s12v.svg" class="svgV dark:invert" /><tlit>nb-p&#7717;t(i)-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Amenhotep I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a67v.svg" class="svgV dark:invert" /><tlit>&#7695;sr-k&#42786;-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s11v.svg" class="svgV dark:invert" /><tlit>&#7695;sr-k&#42786;-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Thutmose I</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a68v.svg" class="svgV dark:invert" /><tlit
+						>&#42788;&#42786;-&#7723;pr-k&#42786;-r&#42788;</tlit
+					>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s10v.svg" class="svgV dark:invert" /><tlit
+						>&#42788;&#42786;-&#7723;pr-k&#42786;-r&#42788;</tlit
+					>
+				</div>
+				<div>&mdash;</div>
+
+				<div>Thutmose II</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a69v.svg" class="svgV dark:invert" /><tlit>&#42788;&#42786;-&#7723;pr-n-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s09v.svg" class="svgV dark:invert" /><tlit>&#42788;&#42786;-&#7723;pr-n-r&#42788;</tlit>
+				</div>
+				<div>&mdash;</div>
+
+				<div>Thutmose III</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a70v.svg" class="svgV dark:invert" /><tlit>mn-&#7723;pr-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s08v.svg" class="svgV dark:invert" /><tlit>mn-&#7723;pr-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Amenhotep II</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a71v.svg" class="svgV dark:invert" /><tlit>&#42788;&#42786;-&#7723;prw-r&#42788;</tlit>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s07v.svg" class="svgV dark:invert" /><tlit>&#42788;&#42786;-&#7723;prw-r&#42788;</tlit>
+				</div>
+				<div>&mdash;</div>
+
+				<div>Thutmose IV</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a72v.svg" class="svgV dark:invert" /><tlit>mn-&#7723;prw-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s06v.svg" class="svgV dark:invert" /><tlit>mn-&#7723;prw-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Amenhotep III</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a73v.svg" class="svgV dark:invert" /><tlit>nb-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s05v.svg" class="svgV dark:invert" /><tlit>nb-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Horemhab</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/a74v.svg" class="svgV dark:invert" /><tlit
+						>&#7695;sr-&#7723;prw-r&#42788; stp-n-r&#42788;</tlit
+					>
+				</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s04v.svg" class="svgV dark:invert" /><tlit>&#7695;sr-wprw-r&#42788; stp-n-r&#42788;</tlit>
+				</div>
+				<div>&mdash;</div>
+
+				<div>Ramesses I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a75v.svg" class="svgV dark:invert" /><tlit>mn-p&#7717;ti-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s03v.svg" class="svgV dark:invert" /><tlit>mn-p&#7717;ti-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Seti I</div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/a76v.svg" class="svgV dark:invert" /><tlit>mn-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div><img loading="lazy" alt="cartouche" src="/svg/cmp/s02v.svg" class="svgV dark:invert" /><tlit>mn-m&#42786;&#42788;t-r&#42788;</tlit></div>
+				<div>&mdash;</div>
+
+				<div>Ramesses II</div>
+				<div>&mdash;</div>
+				<div>
+					<img loading="lazy" alt="cartouche" src="/svg/cmp/s01v.svg" class="svgV dark:invert" /><tlit
+						>wsr-m&#42786;&#42788;t-r&#42788; stp-n-r&#42788;</tlit
+					>
+				</div>
+				<div>&mdash;</div>
+			</div>
+		</div>
+
+		<h2 class="text-center py-20">Undetermined kings (Karnak)</h2>
+		<div class="flex flex-wrap gap-3">
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k06v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k07v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k09v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k10v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k11v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k12v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k13v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k19v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k20v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k23v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k31v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k35v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k39v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k40v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k44v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k45v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k52v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k53v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k55v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k56v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k57v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k58v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k59v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k60v.svg" class="svgV dark:invert" />
+			<img loading="lazy" alt="cartouche" src="/svg/cmp/k61v.svg" class="svgV dark:invert" />
+		</div>
+
+		<div class="py-10">
+			<h2 class="py-10">Selected Bibliography</h2>
+			<h3 class="shine">Abydos Canon</h3>
+			<ul id="biblio">
+				<li>
+					<b>Mariette, Auguste</b>:
+					<i>Abydos description des fouilles</i>, Vol 1, Plate 43 (Paris 1869)
+				</li>
+				<li>
+					<b>Duemichen, Johannes</b>:
+					<i>Historische inschriften altägyptischer denkmäler</i>, Vol 2, Plate XLV (Leipzig 1869)
+				</li>
+				<li>
+					<b>Kitchen, Kenneth A.</b>: <i>Ramesside Inscriptions</i>, Vol. I, pp. 176-179 (Oxford 1975)
+				</li>
+				<li>
+					<b>Porter and Moss</b>:
+					<i>The Topographical Bibliography of Ancient Egyptian hieroglyphic texts, reliefs, and paintings</i>, Vol. VI, 25 (229)-(230)
+				</li>
+			</ul>
+			<h3 class="shine pt-6">Karnak Canon</h3>
+			<ul id="biblio">
+				<li>
+					<b>Burton, James</b>: <i>Excerpta Hieroglyphica</i>, (Cairo 1825)
+				</li>
+				<li>
+					<b>Young, Thomas</b>: <i>Hieroglyphics</i>, Vol. 2, (London 1828) Plate 96 (copy from Burton)
+				</li>
+				<li>
+					<b>Wilkinson, J. G.</b>:
+					<i>Extracts from several Hieroglyphical Subjects found at Thebes, and other parts of Egypt</i>, (Malta 1830) Plate IV
+				</li>
+				<li>l'Illustration, Journal Universel, Vol. VII, p 244-245, (Paris 1846)</li>
+				<li>
+					<b>d'Avennes, Prisse</b>:
+					<i>Monuments Égyptiens, bas-reliefs, peintures, inscriptions, etc.</i>, (Paris 1847) Plate I
+				</li>
+				<li>
+					<b>Lepsius, Karl Richard</b>:
+					<i>Über die zwölfte Aegyptische Königsdynastie</i> in "APAW 1852" pp. 425-455, (Berlin 1853) Plate I
+				</li>
+				<li>
+					<b>Sethe, Kurt</b>: <i>Urkunden der 18. dynastie</i>, IV.8-198, p. 607-610 (Leipzig, 1906)
+				</li>
+			</ul>
+			<h3 class="shine pt-6">Saqqara Canon</h3>
+			<ul id="biblio">
+				<li>
+					<b>Mariette, Auguste</b>: <i>La table de Saqqarah</i> in Revue Archeologique, Vol 10, (Paris 1864) p. 169-186, Plate XVII
+				</li>
+				<li>
+					<b>Mariette, Auguste</b>:
+					<i>Monuments divers recueillis en Égypte et en Nubie</i>, (Paris 1872) Vol. II, Pl. 57b, 58, text Vol. I, p. 18-19
+				</li>
+				<li>
+					<b>Meyer, Eduard</b>: <i>Ägyptische Chronologie</i>, Plate 1, (Berlin 1904)
+				</li>
+				<li>
+					<b>Kitchen, Kenneth A.</b>: <i>Ramesside Inscriptions</i>, Vol. III, pp. 481-482 (Oxford 1980)
+				</li>
+			</ul>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.svgV {
+		margin-inline: auto;
+		width: calc(var(--spacing) * 16) /* 4rem = 64px */;
+		justify-items: start;
+	}
+	.grid div {
+		text-align: center;
+		padding: calc(var(--spacing) * 3);
+	}
+	.grid div:nth-child(4n + 1) {
+		text-align: left;
+	}
+</style>

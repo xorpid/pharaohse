@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import turinData from "@/data/kl_turin.json";
+import columns from "@/data/columns.json";
 import faraos from "@/data/pharaohs.json";
 export async function getStaticPaths() {
 	const cols = Array.from(new Set(turinData.map((item) => item.col))).sort((a, b) => a - b);
@@ -15,10 +16,33 @@ const colStr = typeof col === "string" ? col : String(col);
 const colNum = Number(colStr.replace("column-", ""));
 const rows = turinData.filter((item) => item.col === colNum);
 const pagetitle = `Turin King List: Column ${colNum}`;
-const meta1 = `The Turin King List, an ancient papyrus roll, contains the longest known sequence of Egyptian pharaohs. This is the contens of column ${colNum}.`;
+const meta1 = `The Turin King List, an ancient papyrus roll, contains the longest known sequence of Egyptian pharaohs. Detailed information with a full transcription and translation of the contents of column ${colNum}.`;
+const meta2 = `The royal canon of Turin,Turin king list,turin papyrus,turin king-list,egyptian chronology,column ${colNum}`;
+const column = columns[col - 1] || null;
+
+// Source and transliteration mappings
+const sourceMappings: Record<string, string> = {
+	"*MHP*": "Möller, <em>Hieratische Paläographie II</em>,",
+	"*GRC*": "Gardiner 1959: ",
+	"*RPS*": "Ryholt 1997: ",
+	"*LOK*": "Ryholt 2000: ",
+	"*TKL*": "Ryholt 2004: ",
+	"*FAR*": "Farina 1938: ",
+	"*HLK*": "Helck 1992: ",
+	"*UNT*": "Helck 1956: ",
+};
+const formatSource = (ref: string): string => {
+	let result = ref;
+	for (const [key, value] of Object.entries(sourceMappings)) {
+		result = result.replaceAll(key, value);
+	}
+	return `${result}<br>`;
+};
+// Source and transliteration mappings END
+
 ---
 
-<Layout title={pagetitle} meta1={meta1} meta2="" bild="">
+<Layout title={pagetitle} meta1={meta1} meta2={meta2} bild="">
 	<nav class="text-center my-10">
 		Column navigation
 		<div class="mb-4 flex flex-wrap gap-2 w-fit mx-auto">
@@ -26,7 +50,7 @@ const meta1 = `The Turin King List, an ancient papyrus roll, contains the longes
 				cols.map((c) => (
 					<a
 						href={`/kinglists/turin/column-${c}`}
-						class={`px-3 py-1 rounded ${c === colNum ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-stone-700 dark:text-white"}`}
+						class={`px-3 py-1 rounded ${c === colNum ? "bg-red-700 hover:bg-red-600 dark:bg-blue-500 hover:dark:bg-blue-600" : "bg-stone-300 dark:bg-neutral-700 text-white hover:bg-red-300 dark:hover:bg-green-600"}`}
 					>
 						{c}
 					</a>
@@ -34,39 +58,102 @@ const meta1 = `The Turin King List, an ancient papyrus roll, contains the longes
 			}
 		</div>
 	</nav>
-	<div class="grid grid-cols-1 gap-6 mb-8">
+
+	<div>
+		{column ? (
+		<div class="column">
+			<h2>{column.heading}</h2>
+			<p>{column.text}</p>
+			<div set:html={column.table} />
+		</div>
+		) : (
+		<p>No data available for column {col}.</p>
+		)}
+	</div>
+
+<div class="my-20"><img class="opacity-25 w-2/3 mx-auto" src="/svg/fl.svg" alt="fl" /></div>
+
+	<div class="grid grid-cols-1 gap-8 mb-8">
 		{
 			rows.map((item) => (
 				<div class="card">
-					<div class="font-bold text-lg mb-2">
-						Col {item.col}, Row {item.row}
+					<div class="font-semibold text-2xl mb-4 tabular-nums text-center">
+						Column {item.col}.{item.row}
 					</div>
-					<div>
-						<span class="font-semibold">Farao:</span>
-						{(() => {
-							const phEntry = faraos.find((ph) => String(ph.no) === String(item.farao));
-							if (phEntry) {
-								if (String(phEntry.no) === "888") {
-									return " ";
-								}
-								if (String(phEntry.no) === "999") {
-									return "—";
-								}
-								// Generate slug from name (kebab-case)
-								const slug = phEntry.name.replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "");
-								return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
-							} else {
-								return item.farao;
-							}
-						})()}
+
+					<div class="grid grid-cols-1 gap-2 justify-items-end pb-6">
+					{item.pic === "00-00" ? (
+							<img src={`/svg/turin/hiero-${item.pic}.svg`} alt="hieroglyphs of the hieratic text" class="h-12 dark:invert object-contain dark:hue-rotate-180" />
+							
+					) : item.pic === "NSW" ? (
+							<img src={`/svg/turin/${item.pic}.svg`} alt="hieroglyphs of the hieratic text" class="h-12 dark:invert object-contain dark:hue-rotate-180 dark:saturate-400" />
+					) : (
+							<img src={`/svg/turin/photo-${item.pic}.png`} alt="photo of the hieratic text" class="" />
+							<img src={`/svg/turin/trace-${item.pic}.png`} alt="facsimile of the hieratic text" class="" />
+							<img src={`/svg/turin/hiero-${item.pic}.svg`} alt="hieroglyphs of the hieratic text" class="h-12 dark:invert object-contain dark:hue-rotate-180 dark:saturate-400" />
+						)}
 					</div>
-					<div>
-						<span class="font-semibold">Translit:</span> <span class="tlit" set:html={item.tlit} />
+
+<div>
+	{(() => {
+		// Helper function to convert number to ordinal with superscript suffix
+		const getOrdinal = (n: number) => {
+			const s = ["th", "st", "nd", "rd"];
+			const v = n % 100;
+			const suffix = s[(v - 20) % 10] || s[v] || s[0];
+			return <>{n}<span class="ordinal text-xs">{suffix}</span></>;
+		};
+		
+		const phEntry = faraos.find((ph) => String(ph.no) === String(item.farao));
+		const t_nr = <span class="text-base"> ({getOrdinal(item.t_nr ?? 0)} king)</span>;
+
+		if (phEntry) {
+			if (String(phEntry.no) === "888") {
+				return " ";
+			}
+			if (String(phEntry.no) === "999") {
+				return "—";
+			}
+			// Generate slug from name (kebab-case)
+			const slug = phEntry.name.replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "");
+			return <>{<a href={`/pharaohs/${slug}`}>{phEntry.name}</a>} {t_nr}</>;
+		} else {
+			return item.farao;
+		}
+	})()}
+	<div class="grid grid-cols-2 py-4">
+		{item.GOD && (
+			<div><p class="font-semibold">Holy or divine being</p></div>
+		)}
+		{item.dynasty && (
+			<div><span class="text-sm pr-2">Dynasty:</span><span class="font-semibold"> {item.dynasty} </span></div>
+		)}
+		{item.G_col && (
+			<div><span class="text-sm pr-2">Gardiner:</span><span class="font-semibold"> {item.G_col}.{item.G_row} </span></div>
+		)}
+		{item.fragment && (
+			<div><span class="text-sm pr-2">Fragment no(s):</span><span class="font-semibold"> {item.fragment} </span></div>
+		)}
+	</div>
+
+
+
+</div>
+
+					{item.tlit && (
+					<div class="font-semibold">
+						<span class="hidden">Transliteration:</span> <span class="tlit" set:html={item.tlit} />
 					</div>
-					<div>
-						<span class="font-semibold">Transcription:</span> <span set:html={item.trans} />
+					)}
+
+					{item.trans && (
+					<div class="font-semibold">
+						<span class="hidden">Translation:</span> <span set:html={item.trans} />
 					</div>
-					<div class="mt-2 text-sm" set:html={item.descr ?? ""} />
+					)}
+
+					<div class="my-4" set:html={item.descr ?? ""} />
+
 				</div>
 			))
 		}
