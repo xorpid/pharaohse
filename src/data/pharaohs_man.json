@@ -1,0 +1,3758 @@
+[
+	{
+		"id": 1,
+		"ph": 8,
+		"author": 1,
+		"ch": "i, 1",
+		"greek": "Μηνης",
+		"tlit": "Menes",
+		"tscript": "Minis",
+		"reign": "62 years"
+	},
+	{
+		"id": 2,
+		"ph": 9,
+		"author": 1,
+		"ch": "i, 2",
+		"greek": "Aθωθις",
+		"tlit": "Athothis",
+		"tscript": "Athothis",
+		"reign": "57 years"
+	},
+	{
+		"id": 3,
+		"ph": 10,
+		"author": 1,
+		"ch": "i, 3",
+		"greek": "Κενκενης",
+		"tlit": "Kenkenes",
+		"tscript": "Kenkenis",
+		"reign": "31 years"
+	},
+	{
+		"id": 4,
+		"ph": 11,
+		"author": 1,
+		"ch": "i, 4",
+		"greek": "Ουενεφης",
+		"tlit": "Ouenephes",
+		"tscript": "Uenephis",
+		"reign": "23 years"
+	},
+	{
+		"id": 5,
+		"ph": 12,
+		"author": 1,
+		"ch": "i, 5",
+		"greek": "Ουσαφαιδoς",
+		"tlit": "Ousaphaidos",
+		"tscript": "Usaphaidus",
+		"reign": "20 years"
+	},
+	{
+		"id": 6,
+		"ph": 13,
+		"author": 1,
+		"ch": "i, 6",
+		"greek": "Μιεβιδoς",
+		"tlit": "Miebidos",
+		"tscript": "Miebidos",
+		"reign": "26 years"
+	},
+	{
+		"id": 7,
+		"ph": 14,
+		"author": 1,
+		"ch": "i, 7",
+		"greek": "Σεμεμψης",
+		"tlit": "Semempses",
+		"tscript": "Semempsis",
+		"reign": "18 years"
+	},
+	{
+		"id": 8,
+		"ph": 15,
+		"author": 1,
+		"ch": "i, 8",
+		"greek": "Βιηνεχης",
+		"tlit": "Bienekhes",
+		"tscript": "Vienekis",
+		"reign": "26 years"
+	},
+	{
+		"id": 9,
+		"ph": 16,
+		"author": 1,
+		"ch": "ii, 1",
+		"greek": "Βoηθoς",
+		"tlit": "Boethos",
+		"tscript": "Boithos",
+		"reign": "38 years"
+	},
+	{
+		"id": 10,
+		"ph": 17,
+		"author": 1,
+		"ch": "ii, 2",
+		"greek": "Καιεχως",
+		"tlit": "Kaiekhos",
+		"tscript": "Kaiechos",
+		"reign": "39 years"
+	},
+	{
+		"id": 11,
+		"ph": 18,
+		"author": 1,
+		"ch": "ii, 3",
+		"greek": "Βίνωθρις",
+		"tlit": "Binothris",
+		"tscript": "Binothris",
+		"reign": "47 years"
+	},
+	{
+		"id": 12,
+		"ph": 19,
+		"author": 1,
+		"ch": "ii, 4",
+		"greek": "Τλας",
+		"tlit": "Tlas",
+		"tscript": "Tlas",
+		"reign": "17 years"
+	},
+	{
+		"id": 13,
+		"ph": 20,
+		"author": 1,
+		"ch": "ii, 5",
+		"greek": "Σεθενης",
+		"tlit": "Sethenes",
+		"tscript": "Sethenes",
+		"reign": "41 years"
+	},
+	{
+		"id": 14,
+		"ph": 999,
+		"author": 1,
+		"ch": "ii, 6",
+		"greek": "Χαιρης",
+		"tlit": "Khaires",
+		"tscript": "Chaires",
+		"reign": "17 years"
+	},
+	{
+		"id": 15,
+		"ph": 24,
+		"author": 1,
+		"ch": "ii, 7",
+		"greek": "Nεφερχερης",
+		"tlit": "Nepherkheres",
+		"tscript": "Nephercheris",
+		"reign": "26 years"
+	},
+	{
+		"id": 16,
+		"ph": 25,
+		"author": 1,
+		"ch": "ii, 8",
+		"greek": "Σεσωχρις",
+		"tlit": "Sesokhris",
+		"tscript": "Sesochris",
+		"reign": "48 years"
+	},
+	{
+		"id": 17,
+		"ph": 26,
+		"author": 1,
+		"ch": "ii, 9",
+		"greek": "Χενερης",
+		"tlit": "Kheneres",
+		"tscript": "Cheneres",
+		"reign": "30 years"
+	},
+	{
+		"id": 18,
+		"ph": 27,
+		"author": 1,
+		"ch": "iii, 1",
+		"greek": "Nεχερoφης",
+		"tlit": "Nekherophes",
+		"tscript": "Necherophes",
+		"reign": "28 years"
+	},
+	{
+		"id": 19,
+		"ph": 28,
+		"author": 1,
+		"ch": "iii, 2",
+		"greek": "Toσoρθρoς",
+		"tlit": "Tosorthros",
+		"tscript": "Tosorthros",
+		"reign": "29 years"
+	},
+	{
+		"id": 20,
+		"ph": 29,
+		"author": 1,
+		"ch": "iii, 3",
+		"greek": "Tυρεις",
+		"tlit": "Tyreis",
+		"tscript": "Tyris",
+		"reign": "7 years"
+	},
+	{
+		"id": 21,
+		"ph": 31,
+		"author": 1,
+		"ch": "iii, 4",
+		"greek": "Mεσωχρις",
+		"tlit": "Mesokhris",
+		"tscript": "Mesochris",
+		"reign": "17 years"
+	},
+	{
+		"id": 22,
+		"ph": 999,
+		"author": 1,
+		"ch": "iii, 5",
+		"greek": "Σωυφις",
+		"tlit": "Souphis",
+		"tscript": "Soephis",
+		"reign": "16 years"
+	},
+	{
+		"id": 23,
+		"ph": 999,
+		"author": 1,
+		"ch": "iii, 6",
+		"greek": "Toσερτασις",
+		"tlit": "Tosertasis",
+		"tscript": "Tosertasis",
+		"reign": "19 years"
+	},
+	{
+		"id": 24,
+		"ph": 999,
+		"author": 1,
+		"ch": "iii, 7",
+		"greek": "Aχης",
+		"tlit": "Akhes",
+		"tscript": "Aches",
+		"reign": "42 years"
+	},
+	{
+		"id": 25,
+		"ph": 999,
+		"author": 1,
+		"ch": "iii, 8",
+		"greek": "Σηφoνρις",
+		"tlit": "Sephouris",
+		"tscript": "Sephuris",
+		"reign": "30 years"
+	},
+	{
+		"id": 26,
+		"ph": 999,
+		"author": 1,
+		"ch": "iii, 9",
+		"greek": "Kερφερης",
+		"tlit": "Kerpheres",
+		"tscript": "Cerpheres",
+		"reign": "26 years"
+	},
+	{
+		"id": 27,
+		"ph": 35,
+		"author": 1,
+		"ch": "iv, 1",
+		"greek": "Σωρις",
+		"tlit": "Soris",
+		"tscript": "Soris",
+		"reign": "29 years"
+	},
+	{
+		"id": 28,
+		"ph": 36,
+		"author": 1,
+		"ch": "iv, 2",
+		"greek": "Σoυφις",
+		"tlit": "Souphis",
+		"tscript": "Suphis",
+		"reign": "63 years"
+	},
+	{
+		"id": 29,
+		"ph": 38,
+		"author": 1,
+		"ch": "iv, 3",
+		"greek": "Σoυφις",
+		"tlit": "Souphis",
+		"tscript": "Suphis",
+		"reign": "66 years"
+	},
+	{
+		"id": 30,
+		"ph": 40,
+		"author": 1,
+		"ch": "iv, 4",
+		"greek": "Mενχερης",
+		"tlit": "Menkheres",
+		"tscript": "Mencheres",
+		"reign": "63 years"
+	},
+	{
+		"id": 31,
+		"ph": 37,
+		"author": 1,
+		"ch": "iv, 5",
+		"greek": "Ρατoισης",
+		"tlit": "Rhatoises",
+		"tscript": "Ratoises",
+		"reign": "25 years"
+	},
+	{
+		"id": 32,
+		"ph": 39,
+		"author": 1,
+		"ch": "iv, 6",
+		"greek": "Bιχερης",
+		"tlit": "Bikheres",
+		"tscript": "Bicheres",
+		"reign": "22 years"
+	},
+	{
+		"id": 33,
+		"ph": 41,
+		"author": 1,
+		"ch": "iv, 7",
+		"greek": "Σεβερχερης",
+		"tlit": "Seberkheres",
+		"tscript": "Sebercheres",
+		"reign": "7 years"
+	},
+	{
+		"id": 34,
+		"ph": 42,
+		"author": 1,
+		"ch": "iv, 8",
+		"greek": "Θαμφθις",
+		"tlit": "Thamphthis",
+		"tscript": "Thamphthis",
+		"reign": "9 years"
+	},
+	{
+		"id": 50,
+		"ph": 77,
+		"author": 1,
+		"ch": "ix, 1",
+		"greek": "Aχθoης",
+		"tlit": "Akhthoës",
+		"tscript": "Achthoes",
+		"reign": null
+	},
+	{
+		"id": 35,
+		"ph": 43,
+		"author": 1,
+		"ch": "v, 1",
+		"greek": "Ουσερχερης",
+		"tlit": "Ouserkheres",
+		"tscript": "Usercheres",
+		"reign": "28 years"
+	},
+	{
+		"id": 36,
+		"ph": 44,
+		"author": 1,
+		"ch": "v, 2",
+		"greek": "Σεφρης",
+		"tlit": "Sephres",
+		"tscript": "Sephres",
+		"reign": "13 years"
+	},
+	{
+		"id": 37,
+		"ph": 45,
+		"author": 1,
+		"ch": "v, 3",
+		"greek": "Νεφερχερης",
+		"tlit": "Nepherkheres",
+		"tscript": "Nephercheres",
+		"reign": "20 years"
+	},
+	{
+		"id": 38,
+		"ph": 46,
+		"author": 1,
+		"ch": "v, 4",
+		"greek": "Σισιρης",
+		"tlit": "Sisires",
+		"tscript": "Sisires",
+		"reign": "7 years"
+	},
+	{
+		"id": 39,
+		"ph": 47,
+		"author": 1,
+		"ch": "v, 5",
+		"greek": "Χερης",
+		"tlit": "Kheres",
+		"tscript": "Cheres",
+		"reign": "20 years"
+	},
+	{
+		"id": 40,
+		"ph": 48,
+		"author": 1,
+		"ch": "v, 6",
+		"greek": "Ραθουρης",
+		"tlit": "Rathoures",
+		"tscript": "Rathures",
+		"reign": "44 years"
+	},
+	{
+		"id": 41,
+		"ph": 49,
+		"author": 1,
+		"ch": "v, 7",
+		"greek": "Μενχερης",
+		"tlit": "Menkheres",
+		"tscript": "Mencheres",
+		"reign": "9 years"
+	},
+	{
+		"id": 42,
+		"ph": 50,
+		"author": 1,
+		"ch": "v, 8",
+		"greek": "Τανχερης",
+		"tlit": "Tankheres",
+		"tscript": "Tancheres",
+		"reign": "44 years"
+	},
+	{
+		"id": 43,
+		"ph": 51,
+		"author": 1,
+		"ch": "v, 9",
+		"greek": "Οννος",
+		"tlit": "Onnos",
+		"tscript": "Onnus",
+		"reign": "33 years"
+	},
+	{
+		"id": 44,
+		"ph": 52,
+		"author": 1,
+		"ch": "vi, 1",
+		"greek": "Οθοης",
+		"tlit": "Othoës",
+		"tscript": "Othoes",
+		"reign": null
+	},
+	{
+		"id": 45,
+		"ph": 54,
+		"author": 1,
+		"ch": "vi, 2",
+		"greek": "Φιος",
+		"tlit": "Phios",
+		"tscript": "Phius",
+		"reign": "53 years"
+	},
+	{
+		"id": 46,
+		"ph": 55,
+		"author": 1,
+		"ch": "vi, 3",
+		"greek": "Μεθουσουφις",
+		"tlit": "Methousouphis",
+		"tscript": "Methusuphis",
+		"reign": "7 years"
+	},
+	{
+		"id": 47,
+		"ph": 56,
+		"author": 1,
+		"ch": "vi, 4",
+		"greek": "Φιωψ",
+		"tlit": "Phiops",
+		"tscript": "Phiops",
+		"reign": "94 years"
+	},
+	{
+		"id": 48,
+		"ph": 57,
+		"author": 1,
+		"ch": "vi, 5",
+		"greek": "Μενφεσουφις",
+		"tlit": "Menthesouphis",
+		"tscript": "Menthesuphis",
+		"reign": "1 years"
+	},
+	{
+		"id": 49,
+		"ph": 58,
+		"author": 1,
+		"ch": "vi, 6",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitokris ♀",
+		"tscript": "Nitocris",
+		"reign": "12 years"
+	},
+	{
+		"id": 51,
+		"ph": 89,
+		"author": 1,
+		"ch": "xi, 1",
+		"greek": "Aμμενεμης",
+		"tlit": "Ammenemes",
+		"tscript": "Ammenemes",
+		"reign": "16 years"
+	},
+	{
+		"id": 52,
+		"ph": 90,
+		"author": 1,
+		"ch": "xii, 1",
+		"greek": "Σεσονχοσις",
+		"tlit": "Sesonkhosis",
+		"tscript": "Sesonchosis",
+		"reign": "46 years"
+	},
+	{
+		"id": 53,
+		"ph": 91,
+		"author": 1,
+		"ch": "xii, 2",
+		"greek": "Aμμανεμης",
+		"tlit": "Ammanemes",
+		"tscript": "Ammanemes",
+		"reign": "38 years"
+	},
+	{
+		"id": 54,
+		"ph": 93,
+		"author": 1,
+		"ch": "xii, 3",
+		"greek": "Σεσωστρις",
+		"tlit": "Sesostris",
+		"tscript": "Sesostris",
+		"reign": "48 years"
+	},
+	{
+		"id": 55,
+		"ph": 94,
+		"author": 1,
+		"ch": "xii, 4",
+		"greek": "Λαχαρης",
+		"tlit": "Lakhares",
+		"tscript": "Lachares",
+		"reign": "8 years"
+	},
+	{
+		"id": 56,
+		"ph": 999,
+		"author": 1,
+		"ch": "xii, 5",
+		"greek": "Aμμερης",
+		"tlit": "Ammeres",
+		"tscript": "Ammeres",
+		"reign": "8 years"
+	},
+	{
+		"id": 57,
+		"ph": 999,
+		"author": 1,
+		"ch": "xii, 6",
+		"greek": "Aμμενεμης",
+		"tlit": "Ammenemes",
+		"tscript": "Ammenemes",
+		"reign": "8 years"
+	},
+	{
+		"id": 58,
+		"ph": 96,
+		"author": 1,
+		"ch": "xii, 7",
+		"greek": "Σκεμιoφρις",
+		"tlit": "Skemiophris ♀",
+		"tscript": "Scemiophris",
+		"reign": "4 years"
+	},
+	{
+		"id": 81,
+		"ph": 192,
+		"author": 1,
+		"ch": "xix, 1",
+		"greek": "Σεθως",
+		"tlit": "Sethos",
+		"tscript": "Sethus",
+		"reign": "51 years"
+	},
+	{
+		"id": 82,
+		"ph": 193,
+		"author": 1,
+		"ch": "xix, 2",
+		"greek": "Ραψακης",
+		"tlit": "Rhapsakes",
+		"tscript": "Rapsaces",
+		"reign": "61 years"
+	},
+	{
+		"id": 83,
+		"ph": 194,
+		"author": 1,
+		"ch": "xix, 3",
+		"greek": "Aμενεφθης",
+		"tlit": "Amenephthes",
+		"tscript": "Amenephthes",
+		"reign": "20 years"
+	},
+	{
+		"id": 84,
+		"ph": 999,
+		"author": 1,
+		"ch": "xix, 4",
+		"greek": "Ραμεσσης",
+		"tlit": "Rhamesses",
+		"tscript": "Ramesses",
+		"reign": "60 years"
+	},
+	{
+		"id": 85,
+		"ph": 196,
+		"author": 1,
+		"ch": "xix, 5",
+		"greek": "Aμμενεμνης",
+		"tlit": "Ammenemnes",
+		"tscript": "Ammenemnes",
+		"reign": "5 years"
+	},
+	{
+		"id": 86,
+		"ph": 198,
+		"author": 1,
+		"ch": "xix, 6",
+		"greek": "Θουωρις",
+		"tlit": "Thouoris",
+		"tscript": "Thuris",
+		"reign": "7 years"
+	},
+	{
+		"id": 59,
+		"ph": 146,
+		"author": 1,
+		"ch": "xv, 1",
+		"greek": "Σαιτης",
+		"tlit": "Saites",
+		"tscript": "Saites",
+		"reign": "19 years"
+	},
+	{
+		"id": 60,
+		"ph": 147,
+		"author": 1,
+		"ch": "xv, 2",
+		"greek": "Βνων",
+		"tlit": "Bnon",
+		"tscript": "Bnon",
+		"reign": "44 years"
+	},
+	{
+		"id": 61,
+		"ph": 148,
+		"author": 1,
+		"ch": "xv, 3",
+		"greek": "Παχναν",
+		"tlit": "Pakhnan",
+		"tscript": "Pachnan",
+		"reign": "61 years"
+	},
+	{
+		"id": 62,
+		"ph": 149,
+		"author": 1,
+		"ch": "xv, 4",
+		"greek": "Στααν",
+		"tlit": "Staan",
+		"tscript": "Staan",
+		"reign": "50 years"
+	},
+	{
+		"id": 63,
+		"ph": 151,
+		"author": 1,
+		"ch": "xv, 5",
+		"greek": "Aρχλης",
+		"tlit": "Arkhles",
+		"tscript": "Archles",
+		"reign": "49 years"
+	},
+	{
+		"id": 64,
+		"ph": 150,
+		"author": 1,
+		"ch": "xv, 6",
+		"greek": "Aφοβις",
+		"tlit": "Aphobis",
+		"tscript": "Aphobis",
+		"reign": "61 years"
+	},
+	{
+		"id": 65,
+		"ph": 176,
+		"author": 1,
+		"ch": "xviii, 1",
+		"greek": "Aμως",
+		"tlit": "Amos",
+		"tscript": "Amos",
+		"reign": null
+	},
+	{
+		"id": 74,
+		"ph": 999,
+		"author": 1,
+		"ch": "xviii, 10",
+		"greek": "Αχερρης",
+		"tlit": "Akherres",
+		"tscript": "Acherres",
+		"reign": "32 years"
+	},
+	{
+		"id": 75,
+		"ph": 188,
+		"author": 1,
+		"ch": "xviii, 11",
+		"greek": "Ραθως",
+		"tlit": "Rhathos",
+		"tscript": "Rathos",
+		"reign": "6 years"
+	},
+	{
+		"id": 76,
+		"ph": 999,
+		"author": 1,
+		"ch": "xviii, 12",
+		"greek": "Χεβρης",
+		"tlit": "Khebres",
+		"tscript": "Chebres",
+		"reign": "12 years"
+	},
+	{
+		"id": 77,
+		"ph": 186,
+		"author": 1,
+		"ch": "xviii, 13",
+		"greek": "Aχερρης",
+		"tlit": "Akherres",
+		"tscript": "Acherres",
+		"reign": "12 years"
+	},
+	{
+		"id": 78,
+		"ph": 190,
+		"author": 1,
+		"ch": "xviii, 14",
+		"greek": "Aρμεσης",
+		"tlit": "Armesis",
+		"tscript": "Armeses",
+		"reign": "5 years"
+	},
+	{
+		"id": 79,
+		"ph": 999,
+		"author": 1,
+		"ch": "xviii, 15",
+		"greek": "Ραμεσσης",
+		"tlit": "Rhamesses",
+		"tscript": "Ramesses",
+		"reign": "1 year"
+	},
+	{
+		"id": 80,
+		"ph": 999,
+		"author": 1,
+		"ch": "xviii, 16",
+		"greek": "Αμενωφαθ",
+		"tlit": "Amenophath",
+		"tscript": "Amenophath",
+		"reign": "19 years"
+	},
+	{
+		"id": 66,
+		"ph": 179,
+		"author": 1,
+		"ch": "xviii, 2",
+		"greek": "Χεβρως",
+		"tlit": "Khebros",
+		"tscript": "Chebros",
+		"reign": "13 years"
+	},
+	{
+		"id": 67,
+		"ph": 177,
+		"author": 1,
+		"ch": "xviii, 3",
+		"greek": "Αμενωφθις",
+		"tlit": "Amenophthis",
+		"tscript": "Amenophthis",
+		"reign": "24 years"
+	},
+	{
+		"id": 68,
+		"ph": 180,
+		"author": 1,
+		"ch": "xviii, 4",
+		"greek": "Αμενσις",
+		"tlit": "Amensis",
+		"tscript": "Amensis",
+		"reign": "22 years"
+	},
+	{
+		"id": 69,
+		"ph": 178,
+		"author": 1,
+		"ch": "xviii, 5",
+		"greek": "Μισαφρις",
+		"tlit": "Misaphris",
+		"tscript": "Misaphris",
+		"reign": "13 years"
+	},
+	{
+		"id": 70,
+		"ph": 181,
+		"author": 1,
+		"ch": "xviii, 6",
+		"greek": "Μισφραγμουθωσις",
+		"tlit": "Misphragmouthosis",
+		"tscript": "Misphragmuthosis",
+		"reign": "26 years"
+	},
+	{
+		"id": 71,
+		"ph": 183,
+		"author": 1,
+		"ch": "xviii, 7",
+		"greek": "Τουθμωσις",
+		"tlit": "Touthmosis",
+		"tscript": "Tuthmosis",
+		"reign": "9 years"
+	},
+	{
+		"id": 72,
+		"ph": 182,
+		"author": 1,
+		"ch": "xviii, 8",
+		"greek": "Αμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "31 years"
+	},
+	{
+		"id": 73,
+		"ph": 184,
+		"author": 1,
+		"ch": "xviii, 9",
+		"greek": "Ωρος",
+		"tlit": "Oros",
+		"tscript": "Orus",
+		"reign": "37 years"
+	},
+	{
+		"id": 87,
+		"ph": 209,
+		"author": 1,
+		"ch": "xxi, 1",
+		"greek": "Σμενδης",
+		"tlit": "Smendes",
+		"tscript": "Smendes",
+		"reign": "26 years"
+	},
+	{
+		"id": 88,
+		"ph": 211,
+		"author": 1,
+		"ch": "xxi, 2",
+		"greek": "Ψουσεννης",
+		"tlit": "Psousennes",
+		"tscript": "Psusennes",
+		"reign": "46 years"
+	},
+	{
+		"id": 89,
+		"ph": 210,
+		"author": 1,
+		"ch": "xxi, 3",
+		"greek": "Νεφελχερης",
+		"tlit": "Nephelkheres",
+		"tscript": "Nephelcheres",
+		"reign": "4 years"
+	},
+	{
+		"id": 90,
+		"ph": 212,
+		"author": 1,
+		"ch": "xxi, 4",
+		"greek": "Aμενωφθίς",
+		"tlit": "Amenophthis",
+		"tscript": "Amenophthis",
+		"reign": "9 years"
+	},
+	{
+		"id": 91,
+		"ph": 213,
+		"author": 1,
+		"ch": "xxi, 5",
+		"greek": "Oσοχωρ",
+		"tlit": "Osokhor",
+		"tscript": "Osochor",
+		"reign": "6 years"
+	},
+	{
+		"id": 92,
+		"ph": 214,
+		"author": 1,
+		"ch": "xxi, 6",
+		"greek": "Ψιναχης",
+		"tlit": "Psinakhes",
+		"tscript": "Psinaches",
+		"reign": "9 years"
+	},
+	{
+		"id": 93,
+		"ph": 215,
+		"author": 1,
+		"ch": "xxi, 7",
+		"greek": "Ψουσεννης",
+		"tlit": "Psousennes",
+		"tscript": "Psusennes",
+		"reign": "30 years"
+	},
+	{
+		"id": 94,
+		"ph": 216,
+		"author": 1,
+		"ch": "xxii, 1",
+		"greek": "Σεσονχωσις",
+		"tlit": "Sesonkhosis",
+		"tscript": "Sesonchosis",
+		"reign": "21 years"
+	},
+	{
+		"id": 95,
+		"ph": 217,
+		"author": 1,
+		"ch": "xxii, 2",
+		"greek": "Oσορθων",
+		"tlit": "Osorthon",
+		"tscript": "Osorthon",
+		"reign": "15 years"
+	},
+	{
+		"id": 96,
+		"ph": 219,
+		"author": 1,
+		"ch": "xxii, 6",
+		"greek": "Τακελωθις",
+		"tlit": "Takelothis",
+		"tscript": "Tacelothis",
+		"reign": "13 years"
+	},
+	{
+		"id": 97,
+		"ph": 229,
+		"author": 1,
+		"ch": "xxiii, 1",
+		"greek": "Πετουβατης",
+		"tlit": "Petoubates",
+		"tscript": "Petubates",
+		"reign": "40 years"
+	},
+	{
+		"id": 98,
+		"ph": 232,
+		"author": 1,
+		"ch": "xxiii, 2",
+		"greek": "Oσορχω",
+		"tlit": "Osorkho",
+		"tscript": "Osorcho",
+		"reign": "8 years"
+	},
+	{
+		"id": 99,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxiii, 3",
+		"greek": "Ψαμμους",
+		"tlit": "Psammous",
+		"tscript": "Psammus",
+		"reign": "10 years"
+	},
+	{
+		"id": 100,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxiii, 4",
+		"greek": "Ζητ",
+		"tlit": "Zet",
+		"tscript": "Zet",
+		"reign": "31 years"
+	},
+	{
+		"id": 101,
+		"ph": 238,
+		"author": 1,
+		"ch": "xxiv, 1",
+		"greek": "Βοχχωρις",
+		"tlit": "Bokhkhoris",
+		"tscript": "Boccoris",
+		"reign": "6 years"
+	},
+	{
+		"id": 123,
+		"ph": 261,
+		"author": 1,
+		"ch": "xxix, 1",
+		"greek": "Νεφεριτης",
+		"tlit": "Nepherites",
+		"tscript": "Nepherites",
+		"reign": "6 years"
+	},
+	{
+		"id": 124,
+		"ph": 262,
+		"author": 1,
+		"ch": "xxix, 2",
+		"greek": "Aχωρις",
+		"tlit": "Akhoris",
+		"tscript": "Achoris",
+		"reign": "13 years"
+	},
+	{
+		"id": 125,
+		"ph": 263,
+		"author": 1,
+		"ch": "xxix, 3",
+		"greek": "Ψαμμουθις",
+		"tlit": "Psammouthis",
+		"tscript": "Psammuthis",
+		"reign": "1 year"
+	},
+	{
+		"id": 126,
+		"ph": 264,
+		"author": 1,
+		"ch": "xxix, 4",
+		"greek": "Νεφεριτης",
+		"tlit": "Nepherites",
+		"tscript": "Nepherites",
+		"reign": null
+	},
+	{
+		"id": 102,
+		"ph": 240,
+		"author": 1,
+		"ch": "xxv, 1",
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"tscript": "Sabacon",
+		"reign": "8 years"
+	},
+	{
+		"id": 103,
+		"ph": 241,
+		"author": 1,
+		"ch": "xxv, 2",
+		"greek": "Σεβιχως",
+		"tlit": "Sebikhos",
+		"tscript": "Sebichus",
+		"reign": "14 years"
+	},
+	{
+		"id": 104,
+		"ph": 242,
+		"author": 1,
+		"ch": "xxv, 3",
+		"greek": "Ταρκος",
+		"tlit": "Tarkos",
+		"tscript": "Tarcus",
+		"reign": "18 years"
+	},
+	{
+		"id": 105,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvi, 1",
+		"greek": "Στεφινατης",
+		"tlit": "Stephinates",
+		"tscript": "Stephinates",
+		"reign": "7 years"
+	},
+	{
+		"id": 106,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvi, 2",
+		"greek": "Νεχεψως",
+		"tlit": "Nechepsos",
+		"tscript": "Nechepsus",
+		"reign": "6 years"
+	},
+	{
+		"id": 107,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvi, 3",
+		"greek": "Νεχαω",
+		"tlit": "Nekhao",
+		"tscript": "Nechao",
+		"reign": "8 years"
+	},
+	{
+		"id": 108,
+		"ph": 245,
+		"author": 1,
+		"ch": "xxvi, 4",
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"tscript": "Psammetichus",
+		"reign": "54 years"
+	},
+	{
+		"id": 109,
+		"ph": 246,
+		"author": 1,
+		"ch": "xxvi, 5",
+		"greek": "Νεχαω",
+		"tlit": "Nechao",
+		"tscript": "Nechao II",
+		"reign": "6 years"
+	},
+	{
+		"id": 110,
+		"ph": 247,
+		"author": 1,
+		"ch": "xxvi, 6",
+		"greek": "Ψαμμουθις",
+		"tlit": "Psammouthis",
+		"tscript": "Psammuthis",
+		"reign": "6 years"
+	},
+	{
+		"id": 111,
+		"ph": 248,
+		"author": 1,
+		"ch": "xxvi, 7",
+		"greek": "Ουαφρις",
+		"tlit": "Ouaphris",
+		"tscript": "Uaphris",
+		"reign": "19 years"
+	},
+	{
+		"id": 112,
+		"ph": 249,
+		"author": 1,
+		"ch": "xxvi, 8",
+		"greek": "Aμωσις",
+		"tlit": "Amosis",
+		"tscript": "Amosis",
+		"reign": "44 years"
+	},
+	{
+		"id": 113,
+		"ph": 250,
+		"author": 1,
+		"ch": "xxvi, 9",
+		"greek": "Ψαμμεχεριτης",
+		"tlit": "Psammecherites",
+		"tscript": "Psammecherites",
+		"reign": null
+	},
+	{
+		"id": 114,
+		"ph": 251,
+		"author": 1,
+		"ch": "xxvii, 1",
+		"greek": "Καμβυσης",
+		"tlit": "Kambyses",
+		"tscript": "Cambyses",
+		"reign": "6 years"
+	},
+	{
+		"id": 115,
+		"ph": 253,
+		"author": 1,
+		"ch": "xxvii, 2",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "36 years"
+	},
+	{
+		"id": 116,
+		"ph": 255,
+		"author": 1,
+		"ch": "xxvii, 3",
+		"greek": "Ξερξης",
+		"tlit": "Xerxes",
+		"tscript": "Xerxes",
+		"reign": "21 years"
+	},
+	{
+		"id": 117,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvii, 4",
+		"greek": "Aρταβανος",
+		"tlit": "Artabanos",
+		"tscript": "Artabanus",
+		"reign": "7 months"
+	},
+	{
+		"id": 118,
+		"ph": 256,
+		"author": 1,
+		"ch": "xxvii, 5",
+		"greek": "Aρταξερξης",
+		"tlit": "Artaxerxes",
+		"tscript": "Artaxerxes",
+		"reign": "41 years"
+	},
+	{
+		"id": 119,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvii, 6",
+		"greek": "Ξερξης",
+		"tlit": "Xerxes",
+		"tscript": "Xerxes",
+		"reign": "2 months"
+	},
+	{
+		"id": 120,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvii, 7",
+		"greek": "Σογδιανος",
+		"tlit": "Sogdianos",
+		"tscript": "Sogdianus",
+		"reign": "7 months"
+	},
+	{
+		"id": 121,
+		"ph": 999,
+		"author": 1,
+		"ch": "xxvii, 8",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "19 years"
+	},
+	{
+		"id": 122,
+		"ph": 260,
+		"author": 1,
+		"ch": "xxviii, ",
+		"greek": "Aμυρτεος",
+		"tlit": "Amurteos",
+		"tscript": "Amyrteus",
+		"reign": "6 years"
+	},
+	{
+		"id": 127,
+		"ph": 266,
+		"author": 1,
+		"ch": "xxx, 1",
+		"greek": "Νεκτανέβης",
+		"tlit": "Nektanebes",
+		"tscript": "Nectanebes",
+		"reign": "18 years"
+	},
+	{
+		"id": 128,
+		"ph": 267,
+		"author": 1,
+		"ch": "xxx, 2",
+		"greek": "Τεως",
+		"tlit": "Teos",
+		"tscript": "Teos",
+		"reign": "2 years"
+	},
+	{
+		"id": 129,
+		"ph": 268,
+		"author": 1,
+		"ch": "xxx, 3",
+		"greek": "Νεκτανεβος",
+		"tlit": "Nektanebos",
+		"tscript": "Nectanebus",
+		"reign": "18 years"
+	},
+	{
+		"id": 130,
+		"ph": 269,
+		"author": 1,
+		"ch": "xxxi, 1",
+		"greek": "Ωχος",
+		"tlit": "Okhos",
+		"tscript": "Ochus",
+		"reign": "2 years"
+	},
+	{
+		"id": 131,
+		"ph": 270,
+		"author": 1,
+		"ch": "xxxi, 2",
+		"greek": "Aρσης",
+		"tlit": "Arses",
+		"tscript": "Arses",
+		"reign": "3 years"
+	},
+	{
+		"id": 132,
+		"ph": 271,
+		"author": 1,
+		"ch": "xxxi, 3",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "4 years"
+	},
+	{
+		"id": 164,
+		"ph": 8,
+		"author": 2,
+		"ch": "i, 1",
+		"greek": "Μηνης",
+		"tlit": "Menes",
+		"tscript": "Menes",
+		"reign": "30 years"
+	},
+	{
+		"id": 165,
+		"ph": 9,
+		"author": 2,
+		"ch": "i, 2",
+		"greek": "Aθωθις",
+		"tlit": "Athothis",
+		"tscript": "Athothis",
+		"reign": "27 years"
+	},
+	{
+		"id": 166,
+		"ph": 10,
+		"author": 2,
+		"ch": "i, 3",
+		"greek": "Κενκενης",
+		"tlit": "Kenkenes",
+		"tscript": "Cencenes",
+		"reign": "39 years"
+	},
+	{
+		"id": 167,
+		"ph": 11,
+		"author": 2,
+		"ch": "i, 4",
+		"greek": "Ουενεφης",
+		"tlit": "Ouenephes",
+		"tscript": "Uenephes",
+		"reign": "42 years"
+	},
+	{
+		"id": 168,
+		"ph": 12,
+		"author": 2,
+		"ch": "i, 5",
+		"greek": "Ουσαφαης",
+		"tlit": "Ousaphais",
+		"tscript": "Usaphais",
+		"reign": "20 years"
+	},
+	{
+		"id": 169,
+		"ph": 13,
+		"author": 2,
+		"ch": "i, 6",
+		"greek": "Nιεβαης",
+		"tlit": "Niebais",
+		"tscript": "Niebais",
+		"reign": "26 years"
+	},
+	{
+		"id": 170,
+		"ph": 14,
+		"author": 2,
+		"ch": "i, 7",
+		"greek": "Σεμεμψης",
+		"tlit": "Semempses",
+		"tscript": "Semempses",
+		"reign": "18 years"
+	},
+	{
+		"id": 171,
+		"ph": 15,
+		"author": 2,
+		"ch": "i, 8",
+		"greek": "Ουβιενθης",
+		"tlit": "Oubienthes",
+		"tscript": "Ubienthes",
+		"reign": "26 years"
+	},
+	{
+		"id": 172,
+		"ph": 16,
+		"author": 2,
+		"ch": "ii, 1",
+		"greek": "Βωχος",
+		"tlit": "Bokhos",
+		"tscript": "Bochus",
+		"reign": null
+	},
+	{
+		"id": 173,
+		"ph": 17,
+		"author": 2,
+		"ch": "ii, 2",
+		"greek": "Χωος",
+		"tlit": "Khoös",
+		"tscript": "Choos",
+		"reign": null
+	},
+	{
+		"id": 174,
+		"ph": 18,
+		"author": 2,
+		"ch": "ii, 3",
+		"greek": "Βίοφις",
+		"tlit": "Biophis",
+		"tscript": "Biophis",
+		"reign": null
+	},
+	{
+		"id": 175,
+		"ph": 999,
+		"author": 2,
+		"ch": "ii, 8",
+		"greek": "Σεσωχρις",
+		"tlit": "Sesokhris",
+		"tscript": "Sesochris",
+		"reign": "48 years"
+	},
+	{
+		"id": 176,
+		"ph": 26,
+		"author": 2,
+		"ch": "ii, 9",
+		"greek": "Χενερης",
+		"tlit": "Kheneres",
+		"tscript": "Cheneres",
+		"reign": "30 years"
+	},
+	{
+		"id": 177,
+		"ph": 27,
+		"author": 2,
+		"ch": "iii, 1",
+		"greek": "Νεχερωχις",
+		"tlit": "Nekherokhis",
+		"tscript": "Necherochis",
+		"reign": null
+	},
+	{
+		"id": 178,
+		"ph": 28,
+		"author": 2,
+		"ch": "iii, 2",
+		"greek": "Σεσορθος",
+		"tlit": "Sesorthos",
+		"tscript": "Sesorthos",
+		"reign": null
+	},
+	{
+		"id": 179,
+		"ph": 36,
+		"author": 2,
+		"ch": "iv, 3",
+		"greek": "Σoυφις",
+		"tlit": "Souphis",
+		"tscript": "Soyphis",
+		"reign": null
+	},
+	{
+		"id": 183,
+		"ph": 77,
+		"author": 2,
+		"ch": "ix, 1",
+		"greek": "Aχθoης",
+		"tlit": "Akhthoës",
+		"tscript": "Achthoes",
+		"reign": null
+	},
+	{
+		"id": 180,
+		"ph": 52,
+		"author": 2,
+		"ch": "v, 1",
+		"greek": "Οθoης",
+		"tlit": "Othoës",
+		"tscript": "Othoes",
+		"reign": null
+	},
+	{
+		"id": 181,
+		"ph": 56,
+		"author": 2,
+		"ch": "v, 4",
+		"greek": "Φιωψ",
+		"tlit": "Phiops",
+		"tscript": "Phiops",
+		"reign": "94 years"
+	},
+	{
+		"id": 182,
+		"ph": 58,
+		"author": 2,
+		"ch": "vi",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitokris",
+		"tscript": "Nitocris",
+		"reign": null
+	},
+	{
+		"id": 184,
+		"ph": 89,
+		"author": 2,
+		"ch": "xi",
+		"greek": "Aμμενεμης",
+		"tlit": "Ammenemes",
+		"tscript": "Ammenemes",
+		"reign": "16 years"
+	},
+	{
+		"id": 185,
+		"ph": 90,
+		"author": 2,
+		"ch": "xii, 1",
+		"greek": "Σεσονχοσις",
+		"tlit": "Sesonchosis",
+		"tscript": "Sesonchosis",
+		"reign": "46 years"
+	},
+	{
+		"id": 186,
+		"ph": 91,
+		"author": 2,
+		"ch": "xii, 2",
+		"greek": "Aμμανεμης",
+		"tlit": "Ammanemes",
+		"tscript": "Ammanemes",
+		"reign": "68 years"
+	},
+	{
+		"id": 187,
+		"ph": 93,
+		"author": 2,
+		"ch": "xii, 3",
+		"greek": "Σεσωστρις",
+		"tlit": "Sesostris",
+		"tscript": "Sesostris",
+		"reign": "48 years"
+	},
+	{
+		"id": 188,
+		"ph": 94,
+		"author": 2,
+		"ch": "xii, 4",
+		"greek": "Λαμαρις",
+		"tlit": "Lamaris",
+		"tscript": "Lamaris",
+		"reign": "8 years"
+	},
+	{
+		"id": 209,
+		"ph": 192,
+		"author": 2,
+		"ch": "xix, 1",
+		"greek": "Σεθως",
+		"tlit": "Sethos",
+		"tscript": "Sethus",
+		"reign": "55 years"
+	},
+	{
+		"id": 210,
+		"ph": 193,
+		"author": 2,
+		"ch": "xix, 2",
+		"greek": "Ραμψης",
+		"tlit": "Rhampses",
+		"tscript": "Rampses",
+		"reign": "66 years"
+	},
+	{
+		"id": 211,
+		"ph": 194,
+		"author": 2,
+		"ch": "xix, 3",
+		"greek": "Aμμενεφθίς",
+		"tlit": "Ammenephthis",
+		"tscript": "Ammenephthis",
+		"reign": "40 years"
+	},
+	{
+		"id": 212,
+		"ph": 196,
+		"author": 2,
+		"ch": "xix, 4",
+		"greek": "Aμμενεμης",
+		"tlit": "Ammenemes",
+		"tscript": "Ammenemes",
+		"reign": "26 years"
+	},
+	{
+		"id": 213,
+		"ph": 198,
+		"author": 2,
+		"ch": "xix, 5",
+		"greek": "Θουωρις",
+		"tlit": "Thouoris",
+		"tscript": "Thuris",
+		"reign": "7 years"
+	},
+	{
+		"id": 189,
+		"ph": 146,
+		"author": 2,
+		"ch": "xvii, 1",
+		"greek": "Σαιτης",
+		"tlit": "Saites",
+		"tscript": "Saites",
+		"reign": "19 years"
+	},
+	{
+		"id": 190,
+		"ph": 147,
+		"author": 2,
+		"ch": "xvii, 2",
+		"greek": "Βνων",
+		"tlit": "Bnon",
+		"tscript": "Bnon",
+		"reign": "40 years"
+	},
+	{
+		"id": 191,
+		"ph": 150,
+		"author": 2,
+		"ch": "xvii, 3",
+		"greek": "Aφωφις",
+		"tlit": "Aphophis",
+		"tscript": "Aphophis",
+		"reign": "14 years"
+	},
+	{
+		"id": 192,
+		"ph": 151,
+		"author": 2,
+		"ch": "xvii, 4",
+		"greek": "Aρχλης",
+		"tlit": "Arkhles",
+		"tscript": "Archles",
+		"reign": "30 years"
+	},
+	{
+		"id": 193,
+		"ph": 176,
+		"author": 2,
+		"ch": "xviii, 1",
+		"greek": "Aμωσις",
+		"tlit": "Amosis",
+		"tscript": "Amosis",
+		"reign": "25 years"
+	},
+	{
+		"id": 202,
+		"ph": 188,
+		"author": 2,
+		"ch": "xviii, 10",
+		"greek": "Aθωρις",
+		"tlit": "Athoris",
+		"tscript": "Athoris",
+		"reign": "39 years"
+	},
+	{
+		"id": 203,
+		"ph": 999,
+		"author": 2,
+		"ch": "xviii, 11",
+		"greek": "Χενχερης",
+		"tlit": "Khenkheres",
+		"tscript": "Chencheres",
+		"reign": "16 years"
+	},
+	{
+		"id": 204,
+		"ph": 999,
+		"author": 2,
+		"ch": "xviii, 12",
+		"greek": "Aχερρης",
+		"tlit": "Akherres",
+		"tscript": "Acherres",
+		"reign": "8 years"
+	},
+	{
+		"id": 205,
+		"ph": 999,
+		"author": 2,
+		"ch": "xviii, 13",
+		"greek": "Χερρης",
+		"tlit": "Kherres",
+		"tscript": "Cherres",
+		"reign": "15 years"
+	},
+	{
+		"id": 206,
+		"ph": 190,
+		"author": 2,
+		"ch": "xviii, 14",
+		"greek": "Aρμαις",
+		"tlit": "Armais",
+		"tscript": "Armais",
+		"reign": "5 years"
+	},
+	{
+		"id": 207,
+		"ph": 999,
+		"author": 2,
+		"ch": "xviii, 15",
+		"greek": "Ραμεσσης",
+		"tlit": "Rhamesses",
+		"tscript": "Ramesses",
+		"reign": "68 years"
+	},
+	{
+		"id": 208,
+		"ph": 999,
+		"author": 2,
+		"ch": "xviii, 16",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "40 years"
+	},
+	{
+		"id": 194,
+		"ph": 179,
+		"author": 2,
+		"ch": "xviii, 2",
+		"greek": "Χεβρων",
+		"tlit": "Khebron",
+		"tscript": "Chebron",
+		"reign": "13 years"
+	},
+	{
+		"id": 195,
+		"ph": 177,
+		"author": 2,
+		"ch": "xviii, 3",
+		"greek": "Aμμενωφίς",
+		"tlit": "Ammenophis",
+		"tscript": "Ammenophis",
+		"reign": "21 years"
+	},
+	{
+		"id": 196,
+		"ph": 178,
+		"author": 2,
+		"ch": "xviii, 4",
+		"greek": "Μιφρης",
+		"tlit": "Miphres",
+		"tscript": "Miphres",
+		"reign": "12 years"
+	},
+	{
+		"id": 197,
+		"ph": 181,
+		"author": 2,
+		"ch": "xviii, 5",
+		"greek": "Μισφραγμουθωσις",
+		"tlit": "Misphragmouthosis",
+		"tscript": "Misphragmuthosis",
+		"reign": "26 years"
+	},
+	{
+		"id": 198,
+		"ph": 183,
+		"author": 2,
+		"ch": "xviii, 6",
+		"greek": "Τουθμωσις",
+		"tlit": "Touthmosis",
+		"tscript": "Tuthmosis",
+		"reign": "9 years"
+	},
+	{
+		"id": 199,
+		"ph": 182,
+		"author": 2,
+		"ch": "xviii, 7",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "31 years"
+	},
+	{
+		"id": 200,
+		"ph": 184,
+		"author": 2,
+		"ch": "xviii, 8",
+		"greek": "Ωρος",
+		"tlit": "Oros",
+		"tscript": "Orus",
+		"reign": "36 years"
+	},
+	{
+		"id": 201,
+		"ph": 186,
+		"author": 2,
+		"ch": "xviii, 9",
+		"greek": "Aχενχερσης",
+		"tlit": "Akhenkherses",
+		"tscript": "Achencherses",
+		"reign": "12 years"
+	},
+	{
+		"id": 214,
+		"ph": 209,
+		"author": 2,
+		"ch": "xxi, 1",
+		"greek": "Σμενδις",
+		"tlit": "Smendis",
+		"tscript": "Smendis",
+		"reign": "26 years"
+	},
+	{
+		"id": 215,
+		"ph": 211,
+		"author": 2,
+		"ch": "xxi, 2",
+		"greek": "Ψουσεννης",
+		"tlit": "Psousennes",
+		"tscript": "Psusennes",
+		"reign": "41 years"
+	},
+	{
+		"id": 216,
+		"ph": 210,
+		"author": 2,
+		"ch": "xxi, 3",
+		"greek": "Νεφερχερης",
+		"tlit": "Nepherkheres",
+		"tscript": "Nephercheres",
+		"reign": "4 years"
+	},
+	{
+		"id": 217,
+		"ph": 212,
+		"author": 2,
+		"ch": "xxi, 4",
+		"greek": "Aμμενωφθις",
+		"tlit": "Ammenophthis",
+		"tscript": "Ammenophthis",
+		"reign": "9 years"
+	},
+	{
+		"id": 218,
+		"ph": 213,
+		"author": 2,
+		"ch": "xxi, 5",
+		"greek": "Oσοχωρ",
+		"tlit": "Osokhor",
+		"tscript": "Osochor",
+		"reign": "6 years"
+	},
+	{
+		"id": 219,
+		"ph": 214,
+		"author": 2,
+		"ch": "xxi, 6",
+		"greek": "Ψιναχης",
+		"tlit": "Psinakhes",
+		"tscript": "Psinaches",
+		"reign": "9 years"
+	},
+	{
+		"id": 220,
+		"ph": 215,
+		"author": 2,
+		"ch": "xxi, 7",
+		"greek": "Ψουσεννης",
+		"tlit": "Psousennes",
+		"tscript": "Psusennes",
+		"reign": "35 years"
+	},
+	{
+		"id": 221,
+		"ph": 216,
+		"author": 2,
+		"ch": "xxii, 1",
+		"greek": "Σεσονχωσις",
+		"tlit": "Sesonkhosis",
+		"tscript": "Sesonchosis",
+		"reign": "21 years"
+	},
+	{
+		"id": 222,
+		"ph": 217,
+		"author": 2,
+		"ch": "xxii, 2",
+		"greek": "Oσορθων",
+		"tlit": "Osorthon",
+		"tscript": "Osorthon",
+		"reign": "15 years"
+	},
+	{
+		"id": 223,
+		"ph": 219,
+		"author": 2,
+		"ch": "xxii, 3",
+		"greek": "Τακελωθις",
+		"tlit": "Takelothis",
+		"tscript": "Tacelothis",
+		"reign": "13 years"
+	},
+	{
+		"id": 224,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxiii, 1",
+		"greek": "Πετουβαστις",
+		"tlit": "Petoubastis",
+		"tscript": "Petubastis",
+		"reign": "25 years"
+	},
+	{
+		"id": 225,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxiii, 2",
+		"greek": "Oσορθων",
+		"tlit": "Osorthon",
+		"tscript": "Osorthon",
+		"reign": "9 years"
+	},
+	{
+		"id": 226,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxiii, 3",
+		"greek": "Ψαμμους",
+		"tlit": "Psammous",
+		"tscript": "Psammus",
+		"reign": "10 years"
+	},
+	{
+		"id": 227,
+		"ph": 238,
+		"author": 2,
+		"ch": "xxiv, 1",
+		"greek": "Βόχχωρις",
+		"tlit": "Bokhkhoris",
+		"tscript": "Boccoris",
+		"reign": "44 years"
+	},
+	{
+		"id": 249,
+		"ph": 261,
+		"author": 2,
+		"ch": "xxix, 1",
+		"greek": "Νεφεριτης",
+		"tlit": "Nepherites",
+		"tscript": "Nepherites",
+		"reign": "6 years"
+	},
+	{
+		"id": 250,
+		"ph": 262,
+		"author": 2,
+		"ch": "xxix, 2",
+		"greek": "Aχωρις",
+		"tlit": "Akhoris",
+		"tscript": "Achoris",
+		"reign": "13 years"
+	},
+	{
+		"id": 251,
+		"ph": 263,
+		"author": 2,
+		"ch": "xxix, 3",
+		"greek": "Ψαμμουθις",
+		"tlit": "Psammouthis",
+		"tscript": "Psammuthis",
+		"reign": "1 year"
+	},
+	{
+		"id": 252,
+		"ph": 264,
+		"author": 2,
+		"ch": "xxix, 4",
+		"greek": "Νεφεριτης",
+		"tlit": "Nepherites",
+		"tscript": "Nepherites",
+		"reign": "4 months"
+	},
+	{
+		"id": 253,
+		"ph": 265,
+		"author": 2,
+		"ch": "xxix, 5",
+		"greek": "Μουθις",
+		"tlit": "Mouthis",
+		"tscript": "Muthis",
+		"reign": "1 year"
+	},
+	{
+		"id": 228,
+		"ph": 240,
+		"author": 2,
+		"ch": "xxv, 1",
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"tscript": "Sabacon",
+		"reign": "12 years"
+	},
+	{
+		"id": 229,
+		"ph": 241,
+		"author": 2,
+		"ch": "xxv, 2",
+		"greek": "Σεβιχως",
+		"tlit": "Sebikhos",
+		"tscript": "Sebichos",
+		"reign": "12 years"
+	},
+	{
+		"id": 230,
+		"ph": 242,
+		"author": 2,
+		"ch": "xxv, 3",
+		"greek": "Ταρακος",
+		"tlit": "Tarakos",
+		"tscript": "Taracus",
+		"reign": "20 years"
+	},
+	{
+		"id": 231,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvi, 1",
+		"greek": "Aμμερις <small>Aιθιοψ</small>",
+		"tlit": "Ammeris <small>the Ethiopian</small>",
+		"tscript": "Ammeris",
+		"reign": "12 years"
+	},
+	{
+		"id": 232,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvi, 2",
+		"greek": "Στεφιναθις",
+		"tlit": "Stephinathis",
+		"tscript": "Stephinathis",
+		"reign": "7 years"
+	},
+	{
+		"id": 233,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvi, 3",
+		"greek": "Νεχεψως",
+		"tlit": "Nekhepsos",
+		"tscript": "Nechepsus",
+		"reign": "6 years"
+	},
+	{
+		"id": 234,
+		"ph": 244,
+		"author": 2,
+		"ch": "xxvi, 4",
+		"greek": "Νεχαω",
+		"tlit": "Nekhao",
+		"tscript": "Nechao",
+		"reign": "8 years"
+	},
+	{
+		"id": 235,
+		"ph": 245,
+		"author": 2,
+		"ch": "xxvi, 5",
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"tscript": "Psammetichus",
+		"reign": "45 years"
+	},
+	{
+		"id": 236,
+		"ph": 246,
+		"author": 2,
+		"ch": "xxvi, 6",
+		"greek": "Νεχαω",
+		"tlit": "Nekhao",
+		"tscript": "Nechao II",
+		"reign": "3 years"
+	},
+	{
+		"id": 237,
+		"ph": 247,
+		"author": 2,
+		"ch": "xxvi, 7",
+		"greek": "Ψαμμουθις",
+		"tlit": "Psammouthis",
+		"tscript": "Psammuthis II",
+		"reign": "17 years"
+	},
+	{
+		"id": 238,
+		"ph": 248,
+		"author": 2,
+		"ch": "xxvi, 8",
+		"greek": "Ουαφρις",
+		"tlit": "Ouaphris",
+		"tscript": "Uaphres",
+		"reign": "25 years"
+	},
+	{
+		"id": 239,
+		"ph": 249,
+		"author": 2,
+		"ch": "xxvi, 9",
+		"greek": "Aμωσις",
+		"tlit": "Amosis",
+		"tscript": "Amosis",
+		"reign": "42 years"
+	},
+	{
+		"id": 240,
+		"ph": 251,
+		"author": 2,
+		"ch": "xxvii, 1",
+		"greek": "Καμβυσης",
+		"tlit": "Kambyses",
+		"tscript": "Cambyses",
+		"reign": "3 years"
+	},
+	{
+		"id": 241,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvii, 2",
+		"greek": "Μαγοι",
+		"tlit": "Magoi <small>(Magians)</small>",
+		"tscript": "Magoe",
+		"reign": "7 months"
+	},
+	{
+		"id": 242,
+		"ph": 253,
+		"author": 2,
+		"ch": "xxvii, 3",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "36 years"
+	},
+	{
+		"id": 243,
+		"ph": 255,
+		"author": 2,
+		"ch": "xxvii, 4",
+		"greek": "Ξερξης",
+		"tlit": "Xerxes",
+		"tscript": "Xerxes",
+		"reign": "21 years"
+	},
+	{
+		"id": 244,
+		"ph": 256,
+		"author": 2,
+		"ch": "xxvii, 5",
+		"greek": "Aρταξερξης",
+		"tlit": "Artaxerxes",
+		"tscript": "Artaxerxes",
+		"reign": "40 years"
+	},
+	{
+		"id": 245,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvii, 6",
+		"greek": "Ξερξης",
+		"tlit": "Xerxes",
+		"tscript": "Xerxes II",
+		"reign": "2 months"
+	},
+	{
+		"id": 246,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvii, 7",
+		"greek": "Σογδιανος",
+		"tlit": "Sogdianos",
+		"tscript": "Sogdianus",
+		"reign": "7 months"
+	},
+	{
+		"id": 247,
+		"ph": 999,
+		"author": 2,
+		"ch": "xxvii, 8",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "19 years"
+	},
+	{
+		"id": 248,
+		"ph": 260,
+		"author": 2,
+		"ch": "xxviii, ",
+		"greek": "Aμυρταιος",
+		"tlit": "Amyrtaios",
+		"tscript": "Amyrtaeus",
+		"reign": "6 years"
+	},
+	{
+		"id": 254,
+		"ph": 266,
+		"author": 2,
+		"ch": "xxx, 1",
+		"greek": "Νεκτανεβης",
+		"tlit": "Nektanebes",
+		"tscript": "Nektanebes",
+		"reign": "10 years"
+	},
+	{
+		"id": 255,
+		"ph": 267,
+		"author": 2,
+		"ch": "xxx, 2",
+		"greek": "Τεως",
+		"tlit": "Teos",
+		"tscript": "Teos",
+		"reign": "2 years"
+	},
+	{
+		"id": 256,
+		"ph": 268,
+		"author": 2,
+		"ch": "xxx, 3",
+		"greek": "Νεκτανεβος",
+		"tlit": "Nektanebos",
+		"tscript": "Nektanebus",
+		"reign": "8 years"
+	},
+	{
+		"id": 257,
+		"ph": 269,
+		"author": 2,
+		"ch": "xxxi, 1",
+		"greek": "Ωχος",
+		"tlit": "Okhos",
+		"tscript": "Ochus",
+		"reign": "2 years"
+	},
+	{
+		"id": 258,
+		"ph": 270,
+		"author": 2,
+		"ch": "xxxi, 2",
+		"greek": "Aρσης",
+		"tlit": "Arses",
+		"tscript": "Arses",
+		"reign": "4 years"
+	},
+	{
+		"id": 259,
+		"ph": 271,
+		"author": 2,
+		"ch": "xxxi, 3",
+		"greek": "Δαρειος",
+		"tlit": "Dareios",
+		"tscript": "Darius",
+		"reign": "6 years"
+	},
+	{
+		"id": 325,
+		"ph": 238,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Bocchoris",
+		"reign": "44 years"
+	},
+	{
+		"id": 324,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Psammus",
+		"reign": "10 years"
+	},
+	{
+		"id": 323,
+		"ph": 232,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Osorthon",
+		"reign": "9 years"
+	},
+	{
+		"id": 321,
+		"ph": 219,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Tacelothis",
+		"reign": "13 years"
+	},
+	{
+		"id": 320,
+		"ph": 217,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Osorthon",
+		"reign": "15 years"
+	},
+	{
+		"id": 319,
+		"ph": 216,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Sesonchosis",
+		"reign": "21 years"
+	},
+	{
+		"id": 318,
+		"ph": 215,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Psusennes",
+		"reign": "35 years"
+	},
+	{
+		"id": 317,
+		"ph": 214,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Pinaches",
+		"reign": "9 years"
+	},
+	{
+		"id": 316,
+		"ph": 213,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Osochor",
+		"reign": "6 years"
+	},
+	{
+		"id": 315,
+		"ph": 212,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Ammenophthis",
+		"reign": "9 years"
+	},
+	{
+		"id": 326,
+		"ph": 240,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Sabacon Aethiops",
+		"reign": "12 years"
+	},
+	{
+		"id": 327,
+		"ph": 241,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Sebichus",
+		"reign": "12 years"
+	},
+	{
+		"id": 337,
+		"ph": 249,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Amasis",
+		"reign": "42 years"
+	},
+	{
+		"id": 336,
+		"ph": 248,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Vaphres",
+		"reign": "30 years"
+	},
+	{
+		"id": 335,
+		"ph": 247,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Psammites  also called Psammeticus",
+		"reign": "12 years"
+	},
+	{
+		"id": 334,
+		"ph": 246,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Nechao II  also called Nechepsos",
+		"reign": "6 years"
+	},
+	{
+		"id": 333,
+		"ph": 245,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Psammeticus",
+		"reign": "44 years"
+	},
+	{
+		"id": 332,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Nechao",
+		"reign": "8 years"
+	},
+	{
+		"id": 331,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Nechepsos",
+		"reign": "6 years"
+	},
+	{
+		"id": 330,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Stephinatis",
+		"reign": "7 years"
+	},
+	{
+		"id": 329,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Merres Aethiops",
+		"reign": "11 years"
+	},
+	{
+		"id": 328,
+		"ph": 242,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Tarachus Aethiops",
+		"reign": "20 years"
+	},
+	{
+		"id": 314,
+		"ph": 210,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Nephercheres",
+		"reign": "4 years"
+	},
+	{
+		"id": 291,
+		"ph": 176,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Amosis",
+		"reign": "25 years"
+	},
+	{
+		"id": 301,
+		"ph": 185,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Chenchres",
+		"reign": "16 years"
+	},
+	{
+		"id": 300,
+		"ph": 188,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Achoris",
+		"reign": "9 years"
+	},
+	{
+		"id": 299,
+		"ph": 186,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Achencheres",
+		"reign": "12 years"
+	},
+	{
+		"id": 298,
+		"ph": 184,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Orus",
+		"reign": "38 years"
+	},
+	{
+		"id": 297,
+		"ph": 182,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Ammenophis",
+		"reign": "31 years"
+	},
+	{
+		"id": 296,
+		"ph": 183,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Thmosis",
+		"reign": "9 years"
+	},
+	{
+		"id": 295,
+		"ph": 181,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Mispharmuthosis",
+		"reign": "26 years"
+	},
+	{
+		"id": 294,
+		"ph": 178,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Mephres",
+		"reign": "12 years"
+	},
+	{
+		"id": 293,
+		"ph": 177,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Amenophis",
+		"reign": "21 years"
+	},
+	{
+		"id": 292,
+		"ph": 179,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Chebron",
+		"reign": "13 years"
+	},
+	{
+		"id": 302,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Acherres",
+		"reign": "8 years"
+	},
+	{
+		"id": 303,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Cherres",
+		"reign": "15 years"
+	},
+	{
+		"id": 312,
+		"ph": 209,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Semendis",
+		"reign": "26 years"
+	},
+	{
+		"id": 308,
+		"ph": 193,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Ramses",
+		"reign": "66 years"
+	},
+	{
+		"id": 307,
+		"ph": 192,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Sethus",
+		"reign": "55 years"
+	},
+	{
+		"id": 306,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Menophis",
+		"reign": "40 years"
+	},
+	{
+		"id": 313,
+		"ph": 211,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Psusennes",
+		"reign": "41 years"
+	},
+	{
+		"id": 305,
+		"ph": 999,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Remesses  also called Aegyptus",
+		"reign": "68 years"
+	},
+	{
+		"id": 304,
+		"ph": 190,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Armais also called Danaus",
+		"reign": "5 years"
+	},
+	{
+		"id": 322,
+		"ph": 229,
+		"author": 3,
+		"ch": null,
+		"greek": null,
+		"tlit": null,
+		"tscript": "Petubastis",
+		"reign": "25 years"
+	},
+	{
+		"id": 309,
+		"ph": 194,
+		"author": 3,
+		"ch": "41",
+		"greek": null,
+		"tlit": null,
+		"tscript": "Ammenophis",
+		"reign": "40 years"
+	},
+	{
+		"id": 310,
+		"ph": 196,
+		"author": 3,
+		"ch": "43",
+		"greek": null,
+		"tlit": null,
+		"tscript": "Ammenes",
+		"reign": "26 years"
+	},
+	{
+		"id": 311,
+		"ph": 198,
+		"author": 3,
+		"ch": "45",
+		"greek": null,
+		"tlit": null,
+		"tscript": "Thuoris",
+		"reign": "7 years"
+	},
+	{
+		"id": 349,
+		"ph": 146,
+		"author": 4,
+		"ch": "77",
+		"greek": "Σαλιτις",
+		"tlit": "Salitis",
+		"tscript": "Salitis",
+		"reign": "13 years"
+	},
+	{
+		"id": 350,
+		"ph": 147,
+		"author": 4,
+		"ch": "80",
+		"greek": "Βηων",
+		"tlit": "Beon",
+		"tscript": "Beon",
+		"reign": "44 years"
+	},
+	{
+		"id": 351,
+		"ph": 148,
+		"author": 4,
+		"ch": "80",
+		"greek": "Aπαχνας",
+		"tlit": "Apakhnas",
+		"tscript": "Apachnas",
+		"reign": "36 years, 7 months"
+	},
+	{
+		"id": 352,
+		"ph": 150,
+		"author": 4,
+		"ch": "80",
+		"greek": "Aπωφις",
+		"tlit": "Apophis",
+		"tscript": "Apophis",
+		"reign": "61 years"
+	},
+	{
+		"id": 354,
+		"ph": 151,
+		"author": 4,
+		"ch": "81",
+		"greek": "Aσσις",
+		"tlit": "Assis",
+		"tscript": "Assis",
+		"reign": "49 years, 2 months"
+	},
+	{
+		"id": 353,
+		"ph": 149,
+		"author": 4,
+		"ch": "81",
+		"greek": "Iαννας",
+		"tlit": "Iannas",
+		"tscript": "Jannas",
+		"reign": "50 years, 1 month"
+	},
+	{
+		"id": 355,
+		"ph": 176,
+		"author": 4,
+		"ch": "94",
+		"greek": "Τεθμωσις",
+		"tlit": "Tethmosis",
+		"tscript": "Tethmosis",
+		"reign": "25 years, 4 months"
+	},
+	{
+		"id": 356,
+		"ph": 179,
+		"author": 4,
+		"ch": "95",
+		"greek": "Χεβρων",
+		"tlit": "Khebron",
+		"tscript": "Chebron",
+		"reign": "13 years"
+	},
+	{
+		"id": 357,
+		"ph": 177,
+		"author": 4,
+		"ch": "95",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "20 years, 7 months"
+	},
+	{
+		"id": 358,
+		"ph": 180,
+		"author": 4,
+		"ch": "95",
+		"greek": "Aμεσσης",
+		"tlit": "Amesses ♀",
+		"tscript": "Amesses ♀",
+		"reign": "21 years, 9 months"
+	},
+	{
+		"id": 359,
+		"ph": 178,
+		"author": 4,
+		"ch": "95",
+		"greek": "Μηφρης",
+		"tlit": "Mephres",
+		"tscript": "Mephres",
+		"reign": "12 years, 9 months"
+	},
+	{
+		"id": 365,
+		"ph": 188,
+		"author": 4,
+		"ch": "96",
+		"greek": "Pαθωτις",
+		"tlit": "Rhathotis",
+		"tscript": "Rathotis",
+		"reign": "9 years"
+	},
+	{
+		"id": 364,
+		"ph": 186,
+		"author": 4,
+		"ch": "96",
+		"greek": "Aκεγχερης",
+		"tlit": "Akenkheres ♀",
+		"tscript": "Acencheres ♀",
+		"reign": "12 years, 1 month"
+	},
+	{
+		"id": 363,
+		"ph": 184,
+		"author": 4,
+		"ch": "96",
+		"greek": "Ωρος",
+		"tlit": "Oros",
+		"tscript": "Orus",
+		"reign": "36 years, 5 months"
+	},
+	{
+		"id": 362,
+		"ph": 182,
+		"author": 4,
+		"ch": "96",
+		"greek": "Aμένωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "30 years, 10 months"
+	},
+	{
+		"id": 361,
+		"ph": 183,
+		"author": 4,
+		"ch": "96",
+		"greek": "Θμωσις",
+		"tlit": "Thmosis",
+		"tscript": "Thmosis",
+		"reign": "9 years, 8 months"
+	},
+	{
+		"id": 360,
+		"ph": 181,
+		"author": 4,
+		"ch": "96",
+		"greek": "Μηφραμουθωσις",
+		"tlit": "Mephramouthosis",
+		"tscript": "Mephramuthosis",
+		"reign": "25 years, 10 months"
+	},
+	{
+		"id": 372,
+		"ph": 192,
+		"author": 4,
+		"ch": "97",
+		"greek": "Σεθως",
+		"tlit": "Sethos",
+		"tscript": "Sethus",
+		"reign": "59 years"
+	},
+	{
+		"id": 371,
+		"ph": 999,
+		"author": 4,
+		"ch": "97",
+		"greek": "Aμενωφις",
+		"tlit": "Amenophis",
+		"tscript": "Amenophis",
+		"reign": "19 years, 6 months"
+	},
+	{
+		"id": 370,
+		"ph": 193,
+		"author": 4,
+		"ch": "97",
+		"greek": "Aρμεσσης Μιαμουν",
+		"tlit": "Armesses Miamun",
+		"tscript": "Armesses Miamun",
+		"reign": "66 years, 2 months"
+	},
+	{
+		"id": 369,
+		"ph": 191,
+		"author": 4,
+		"ch": "97",
+		"greek": "Pαμεσσης",
+		"tlit": "Rhamesses",
+		"tscript": "Ramesses",
+		"reign": "1 year, 4 months"
+	},
+	{
+		"id": 368,
+		"ph": 190,
+		"author": 4,
+		"ch": "97",
+		"greek": "Aρμαις",
+		"tlit": "Armais",
+		"tscript": "Armais",
+		"reign": "4 years, 1 month"
+	},
+	{
+		"id": 367,
+		"ph": 999,
+		"author": 4,
+		"ch": "97",
+		"greek": "Aκεγχηρης",
+		"tlit": "Akenkheres",
+		"tscript": "Acencheres",
+		"reign": "12 years, 3 months"
+	},
+	{
+		"id": 366,
+		"ph": 999,
+		"author": 4,
+		"ch": "97",
+		"greek": "Aκεγχηρης",
+		"tlit": "Akenkheres",
+		"tscript": "Acencheres",
+		"reign": "12 years, 5 months"
+	},
+	{
+		"id": 385,
+		"ph": 58,
+		"author": 5,
+		"ch": "100.2",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitokris",
+		"tscript": "Nitocris",
+		"reign": null
+	},
+	{
+		"id": 381,
+		"ph": 94,
+		"author": 5,
+		"ch": "101.1",
+		"greek": "Μοιριος",
+		"tlit": "Moerius",
+		"tscript": "Moerius",
+		"reign": null
+	},
+	{
+		"id": 392,
+		"ph": 93,
+		"author": 5,
+		"ch": "102.1",
+		"greek": "Σεσωστρις",
+		"tlit": "Sesostris",
+		"tscript": "Sesostris",
+		"reign": null
+	},
+	{
+		"id": 386,
+		"ph": 999,
+		"author": 5,
+		"ch": "111.1",
+		"greek": "Φερων",
+		"tlit": "Pheron",
+		"tscript": "Pheron",
+		"reign": null
+	},
+	{
+		"id": 387,
+		"ph": 999,
+		"author": 5,
+		"ch": "112.1",
+		"greek": "Πρωτεα",
+		"tlit": "Proteus",
+		"tscript": "Proteus",
+		"reign": null
+	},
+	{
+		"id": 390,
+		"ph": 200,
+		"author": 5,
+		"ch": "121.1",
+		"greek": "Pαμψινιτον",
+		"tlit": "Rhampsinitos",
+		"tscript": "Rhampsinitus",
+		"reign": null
+	},
+	{
+		"id": 379,
+		"ph": 36,
+		"author": 5,
+		"ch": "124",
+		"greek": "Χεοπα",
+		"tlit": "Kheops",
+		"tscript": "Cheops",
+		"reign": "50 years"
+	},
+	{
+		"id": 380,
+		"ph": 38,
+		"author": 5,
+		"ch": "127",
+		"greek": "Χεφρηνα",
+		"tlit": "Khephren",
+		"tscript": "Chephren",
+		"reign": "56 years"
+	},
+	{
+		"id": 382,
+		"ph": 40,
+		"author": 5,
+		"ch": "129",
+		"greek": "Μυκερινον",
+		"tlit": "Mycerinus",
+		"tscript": "Mycerinos",
+		"reign": null
+	},
+	{
+		"id": 378,
+		"ph": 999,
+		"author": 5,
+		"ch": "136.1",
+		"greek": "Aσυχιν",
+		"tlit": "Asukhis",
+		"tscript": "Asychis",
+		"reign": null
+	},
+	{
+		"id": 391,
+		"ph": 240,
+		"author": 5,
+		"ch": "137",
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"tscript": "Sabacon",
+		"reign": "50 years"
+	},
+	{
+		"id": 376,
+		"ph": 999,
+		"author": 5,
+		"ch": "137",
+		"greek": "Aνυσιν",
+		"tlit": "Anusis",
+		"tscript": "Anysis",
+		"reign": null
+	},
+	{
+		"id": 375,
+		"ph": 260,
+		"author": 5,
+		"ch": "140.2",
+		"greek": "Aμυρταιου",
+		"tlit": "Amurtaiou",
+		"tscript": "Amyrtaeus",
+		"reign": null
+	},
+	{
+		"id": 393,
+		"ph": 241,
+		"author": 5,
+		"ch": "141.1",
+		"greek": "Σεθων",
+		"tlit": "Sethos",
+		"tscript": "Sethus",
+		"reign": null
+	},
+	{
+		"id": 388,
+		"ph": 245,
+		"author": 5,
+		"ch": "151.2",
+		"greek": "Ψαμμητιχος",
+		"tlit": "Psammetikhos",
+		"tscript": "Psammetichus",
+		"reign": "54 years"
+	},
+	{
+		"id": 383,
+		"ph": 244,
+		"author": 5,
+		"ch": "152.1",
+		"greek": "Νεκων",
+		"tlit": "Necon",
+		"tscript": "Necon",
+		"reign": null
+	},
+	{
+		"id": 384,
+		"ph": 246,
+		"author": 5,
+		"ch": "158.1",
+		"greek": "Νεκως",
+		"tlit": "Necos",
+		"tscript": "Necos",
+		"reign": "16 years"
+	},
+	{
+		"id": 389,
+		"ph": 247,
+		"author": 5,
+		"ch": "159.3",
+		"greek": "Ψαμμι",
+		"tlit": "Psammi",
+		"tscript": "Psammis",
+		"reign": "6 years"
+	},
+	{
+		"id": 377,
+		"ph": 248,
+		"author": 5,
+		"ch": "161",
+		"greek": "Aπριης",
+		"tlit": "Apries",
+		"tscript": "Apries",
+		"reign": "25 years"
+	},
+	{
+		"id": 374,
+		"ph": 249,
+		"author": 5,
+		"ch": "172",
+		"greek": "Aμασις",
+		"tlit": "Amasis",
+		"tscript": "Amasis",
+		"reign": null
+	},
+	{
+		"id": 373,
+		"ph": 8,
+		"author": 5,
+		"ch": "99.2",
+		"greek": "Μινα",
+		"tlit": "Mina",
+		"tscript": "Mina",
+		"reign": null
+	},
+	{
+		"id": 394,
+		"ph": 8,
+		"author": 6,
+		"ch": "1.45.1/3",
+		"greek": "Μηναν / Μηνα",
+		"tlit": "Menan / Mena",
+		"tscript": "Menan / Mena",
+		"reign": null
+	},
+	{
+		"id": 395,
+		"ph": 237,
+		"author": 6,
+		"ch": "1.45.2",
+		"greek": "Τνεφαχθον",
+		"tlit": "Tnephachthon",
+		"tscript": "Tnephachthon",
+		"reign": null
+	},
+	{
+		"id": 397,
+		"ph": 193,
+		"author": 6,
+		"ch": "1.47.4",
+		"greek": "Οσυμανδυας",
+		"tlit": "Osymandyas",
+		"tscript": "Osymandyas",
+		"reign": null
+	},
+	{
+		"id": 399,
+		"ph": 94,
+		"author": 6,
+		"ch": "1.51.5",
+		"greek": "Μοιρις",
+		"tlit": "Moiris",
+		"tscript": "Moeris",
+		"reign": null
+	},
+	{
+		"id": 400,
+		"ph": 93,
+		"author": 6,
+		"ch": "1.53.1",
+		"greek": "Σεσοωσις",
+		"tlit": "Sesoösis",
+		"tscript": "Sesoosis",
+		"reign": "33 years"
+	},
+	{
+		"id": 406,
+		"ph": 200,
+		"author": 6,
+		"ch": "1.62.5",
+		"greek": "Pεμφις",
+		"tlit": "Rhemphis",
+		"tscript": "Rhemphis",
+		"reign": null
+	},
+	{
+		"id": 408,
+		"ph": 36,
+		"author": 6,
+		"ch": "1.63.2",
+		"greek": "Χεμμις",
+		"tlit": "Khemmis",
+		"tscript": "Chemmis",
+		"reign": "50 years"
+	},
+	{
+		"id": 409,
+		"ph": 38,
+		"author": 6,
+		"ch": "1.64.1",
+		"greek": "Κεφρην",
+		"tlit": "Kephren",
+		"tscript": "Cephren",
+		"reign": "56 years"
+	},
+	{
+		"id": 410,
+		"ph": 37,
+		"author": 6,
+		"ch": "1.64.1",
+		"greek": "Χαβρυην",
+		"tlit": "Khabryen",
+		"tscript": "Chabryen",
+		"reign": "56 years"
+	},
+	{
+		"id": 411,
+		"ph": 40,
+		"author": 6,
+		"ch": "1.64.6",
+		"greek": "Μυκερινος",
+		"tlit": "Mukerinos",
+		"tscript": "Mycerinus",
+		"reign": null
+	},
+	{
+		"id": 454,
+		"ph": 240,
+		"author": 6,
+		"ch": "1.65.2",
+		"greek": "Σαβακων",
+		"tlit": "Sabakon",
+		"tscript": "Sabaco",
+		"reign": null
+	},
+	{
+		"id": 413,
+		"ph": 248,
+		"author": 6,
+		"ch": "1.68.1",
+		"greek": "Aπριης",
+		"tlit": "Apries",
+		"tscript": "Apries",
+		"reign": null
+	},
+	{
+		"id": 414,
+		"ph": 249,
+		"author": 6,
+		"ch": "1.68.3",
+		"greek": "Aμασις",
+		"tlit": "Amasis",
+		"tscript": "Amasis",
+		"reign": "55 years"
+	},
+	{
+		"id": 415,
+		"ph": 267,
+		"author": 6,
+		"ch": "15.92.2",
+		"greek": "Ταχως",
+		"tlit": "Takhos",
+		"tscript": "Tachus",
+		"reign": null
+	},
+	{
+		"id": 416,
+		"ph": 8,
+		"author": 7,
+		"ch": "1",
+		"greek": "Μηνης",
+		"tlit": "Menes",
+		"tscript": "Menes",
+		"reign": "62 years"
+	},
+	{
+		"id": 425,
+		"ph": 999,
+		"author": 7,
+		"ch": "10",
+		"greek": "Aνωυφις",
+		"tlit": "Anouphis",
+		"tscript": "Anoyphis",
+		"reign": "20 years"
+	},
+	{
+		"id": 426,
+		"ph": 999,
+		"author": 7,
+		"ch": "11",
+		"greek": "Σίριος",
+		"tlit": "Sirios",
+		"tscript": "Sirius",
+		"reign": "18 years"
+	},
+	{
+		"id": 427,
+		"ph": 999,
+		"author": 7,
+		"ch": "12",
+		"greek": "Χνουβος η Γνευρος",
+		"tlit": "Khnoubos e Gneuros",
+		"tscript": "Chnubus Gneurus",
+		"reign": "12 years"
+	},
+	{
+		"id": 428,
+		"ph": 37,
+		"author": 7,
+		"ch": "13",
+		"greek": "Ραυωσις",
+		"tlit": "Rhauosis",
+		"tscript": "Rayosis",
+		"reign": "13 years"
+	},
+	{
+		"id": 429,
+		"ph": 39,
+		"author": 7,
+		"ch": "14",
+		"greek": "Βιυρης",
+		"tlit": "Biures",
+		"tscript": "Biyres",
+		"reign": "10 years"
+	},
+	{
+		"id": 430,
+		"ph": 36,
+		"author": 7,
+		"ch": "15",
+		"greek": "Σαωφις",
+		"tlit": "Saophis",
+		"tscript": "Saophis",
+		"reign": "29 years"
+	},
+	{
+		"id": 431,
+		"ph": 38,
+		"author": 7,
+		"ch": "16",
+		"greek": "Σαωφις β",
+		"tlit": "Saophis II",
+		"tscript": "Saophis II",
+		"reign": "27 years"
+	},
+	{
+		"id": 432,
+		"ph": 40,
+		"author": 7,
+		"ch": "17",
+		"greek": "Μοσχερως",
+		"tlit": "Moskheres",
+		"tscript": "Moscheres",
+		"reign": "31 years"
+	},
+	{
+		"id": 433,
+		"ph": 52,
+		"author": 7,
+		"ch": "18",
+		"greek": "Μοσθης",
+		"tlit": "Mosthes",
+		"tscript": "Mosthes",
+		"reign": "33 years"
+	},
+	{
+		"id": 434,
+		"ph": 54,
+		"author": 7,
+		"ch": "19",
+		"greek": "Παμμης Aρχουδης",
+		"tlit": "Pammes Arkhondes",
+		"tscript": "Pammes Archondes",
+		"reign": "35 years"
+	},
+	{
+		"id": 417,
+		"ph": 9,
+		"author": 7,
+		"ch": "2",
+		"greek": "Aθωθης",
+		"tlit": "Athothes",
+		"tscript": "Athothis",
+		"reign": "59 years"
+	},
+	{
+		"id": 435,
+		"ph": 56,
+		"author": 7,
+		"ch": "20",
+		"greek": "Aπαππους",
+		"tlit": "Apappous",
+		"tscript": "Apappus",
+		"reign": "100 years"
+	},
+	{
+		"id": 436,
+		"ph": 57,
+		"author": 7,
+		"ch": "21",
+		"greek": "Εχεσκοσοκαρας",
+		"tlit": "Ekheskosokaras",
+		"tscript": "Echescosocaras",
+		"reign": "1 year"
+	},
+	{
+		"id": 437,
+		"ph": 58,
+		"author": 7,
+		"ch": "22",
+		"greek": "Νιτωκρις",
+		"tlit": "Nitokris",
+		"tscript": "Nitocris",
+		"reign": "6 years"
+	},
+	{
+		"id": 438,
+		"ph": 999,
+		"author": 7,
+		"ch": "23",
+		"greek": "Μυρταιος Aμμωνοδοτος",
+		"tlit": "Myrtaios Ammonodotos",
+		"tscript": "Myrtaius Ammonodotus",
+		"reign": "22 years"
+	},
+	{
+		"id": 439,
+		"ph": 999,
+		"author": 7,
+		"ch": "24",
+		"greek": "Oυωσιμαρης",
+		"tlit": "Ouosimares",
+		"tscript": "Usimares",
+		"reign": "12 years"
+	},
+	{
+		"id": 440,
+		"ph": 999,
+		"author": 7,
+		"ch": "25",
+		"greek": "Σεθινιλος",
+		"tlit": "Sethinilos",
+		"tscript": "Sethinilus",
+		"reign": "8 years"
+	},
+	{
+		"id": 441,
+		"ph": 999,
+		"author": 7,
+		"ch": "26",
+		"greek": "Σεμφρουκρατης",
+		"tlit": "Semphroukrates",
+		"tscript": "Semphrucrates",
+		"reign": "18 years"
+	},
+	{
+		"id": 442,
+		"ph": 999,
+		"author": 7,
+		"ch": "27",
+		"greek": "Χουθηρ Ταυρος",
+		"tlit": "Khouther Tauros",
+		"tscript": "Chuther Taurus",
+		"reign": "7 years"
+	},
+	{
+		"id": 443,
+		"ph": 999,
+		"author": 7,
+		"ch": "28",
+		"greek": "Μευρης Φιλοσκορος",
+		"tlit": "Meures Philoskoros",
+		"tscript": "Meures Philoscorus",
+		"reign": "12 years"
+	},
+	{
+		"id": 444,
+		"ph": 999,
+		"author": 7,
+		"ch": "29",
+		"greek": "Χωμαεφαιστος",
+		"tlit": "Khomaephaestos",
+		"tscript": "Chomaephaestus",
+		"reign": "11 years"
+	},
+	{
+		"id": 418,
+		"ph": 10,
+		"author": 7,
+		"ch": "3",
+		"greek": "Aθωθης",
+		"tlit": "Athothes",
+		"tscript": "Athothis",
+		"reign": "32 years"
+	},
+	{
+		"id": 445,
+		"ph": 999,
+		"author": 7,
+		"ch": "30",
+		"greek": "Σοικουνιος",
+		"tlit": "Soikounios",
+		"tscript": "Soicunius",
+		"reign": "60 years"
+	},
+	{
+		"id": 446,
+		"ph": 999,
+		"author": 7,
+		"ch": "31",
+		"greek": "Πετεαθυρης",
+		"tlit": "Peteathyres",
+		"tscript": "Penteathyres",
+		"reign": "16 years"
+	},
+	{
+		"id": 447,
+		"ph": 89,
+		"author": 7,
+		"ch": "32",
+		"greek": "Σταμμενεμης α",
+		"tlit": "Stammenemes I",
+		"tscript": "Stammenemes I",
+		"reign": "26 years"
+	},
+	{
+		"id": 448,
+		"ph": 91,
+		"author": 7,
+		"ch": "33",
+		"greek": "Σταμμενεμης β",
+		"tlit": "Stammenemes II",
+		"tscript": "Stammenemes II",
+		"reign": "23 years"
+	},
+	{
+		"id": 449,
+		"ph": 93,
+		"author": 7,
+		"ch": "34",
+		"greek": "Σιστοσιχερμης",
+		"tlit": "Sistosikhermes",
+		"tscript": "Sistosichermes",
+		"reign": "55 years"
+	},
+	{
+		"id": 450,
+		"ph": 94,
+		"author": 7,
+		"ch": "35",
+		"greek": "Μαρης",
+		"tlit": "Mares",
+		"tscript": "Mares",
+		"reign": "43 years"
+	},
+	{
+		"id": 451,
+		"ph": 999,
+		"author": 7,
+		"ch": "36",
+		"greek": "Σιφθας",
+		"tlit": "Siphthas",
+		"tscript": "Siphthas",
+		"reign": "5 years"
+	},
+	{
+		"id": 452,
+		"ph": 999,
+		"author": 7,
+		"ch": "37",
+		"greek": "Φρουορω",
+		"tlit": "Phruoro",
+		"tscript": "Phruoro",
+		"reign": "5 years"
+	},
+	{
+		"id": 453,
+		"ph": 260,
+		"author": 7,
+		"ch": "38",
+		"greek": "Aμουθαρταιος",
+		"tlit": "Amouthartaios",
+		"tscript": "Amyrthartaeus",
+		"reign": "63 years"
+	},
+	{
+		"id": 419,
+		"ph": 13,
+		"author": 7,
+		"ch": "4",
+		"greek": "Μιαβιης",
+		"tlit": "Miabies",
+		"tscript": "Miabaes",
+		"reign": "19 years"
+	},
+	{
+		"id": 420,
+		"ph": 14,
+		"author": 7,
+		"ch": "5",
+		"greek": "Πεμφως",
+		"tlit": "Pemphos",
+		"tscript": "Pemphus",
+		"reign": "18 years"
+	},
+	{
+		"id": 421,
+		"ph": 999,
+		"author": 7,
+		"ch": "6",
+		"greek": "Μομχειρι",
+		"tlit": "Momkheiri",
+		"tscript": "Momcheiri",
+		"reign": "79 years"
+	},
+	{
+		"id": 422,
+		"ph": 17,
+		"author": 7,
+		"ch": "7",
+		"greek": "Στοιχος",
+		"tlit": "Stoikhos",
+		"tscript": "Stoechus",
+		"reign": "6 years"
+	},
+	{
+		"id": 423,
+		"ph": 999,
+		"author": 7,
+		"ch": "8",
+		"greek": "Γοσορμιης",
+		"tlit": "Gosormies",
+		"tscript": "Gosormies",
+		"reign": "30 years"
+	},
+	{
+		"id": 424,
+		"ph": 999,
+		"author": 7,
+		"ch": "9",
+		"greek": "Μαρης",
+		"tlit": "Mares",
+		"tscript": "Mares",
+		"reign": "26 years"
+	},
+	{
+		"id": 471,
+		"ph": 248,
+		"author": 8,
+		"ch": "Jeremiah 44:30",
+		"greek": "חָפְרַ֤ע",
+		"tlit": "ḥā-p̄ə-ra",
+		"tscript": "Hophra"
+	},
+	{
+		"id": 471,
+		"ph": 246,
+		"author": 8,
+		"ch": "2 Kings 23:29",
+		"greek": "נְכוֹ",
+		"tlit": "Neḵō",
+		"tscript": "Neco"
+	},
+	{
+		"id": 471,
+		"ph": 216,
+		"author": 8,
+		"ch": "1 Kings 11:40",
+		"greek": "שִׁישַׁק",
+		"tlit": "Šīšaq",
+		"tscript": "Shishak"
+	},
+	{
+		"id": 471,
+		"ph": 242,
+		"author": 8,
+		"ch": "2 Kings 19:9",
+		"greek": "תִּרְהָקָה",
+		"tlit": "Tīrhaqa",
+		"tscript": "Tirhaqa"
+	}
+]

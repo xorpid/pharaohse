@@ -4,6 +4,7 @@ import pharaohs from "@/data/pharaohs.json";
 import hieroglyphs from "@/data/hieroglyphics.json";
 import dynasties from "@/data/dynasties.json";
 import titulary from "@/data/titulary.json";
+import authors from "@data/pharaohs_man.json";
 
 // Transliterate function
 function Translit(inn: string): string {
@@ -110,6 +111,61 @@ let m1 =
 
 let m2 =
 	`pharaoh,hieroglyphs,hieroglyphics,pharaoh of Egypt,king of Egypt,Egyptian chronology,hieroglyphic titles,royal egyptian titles,titles of pharaoh,${pharaoh.name},hieroglyphs of ${pharaoh.name},pharaoh,hieroglyphs of ${pharaoh.name},royal titulary egypt,fivefold name,${pharaoh.aka}`;
+
+// Prepare matches from pharaohs_man (authors) where authors.ph == current pharaoh no
+const antiquityMatches = (authors ?? []).filter((a: any) => Number(a.ph) === phNo);
+
+// Map of author numeric codes to human-readable names
+const authorArray = [
+	0,
+	"Africanus",
+	"Eusebius",
+	"Jerome",
+	"Josephus",
+	"Herodotus",
+	"Diodorus",
+	"Eratosthenes",
+	"The Bible",
+];
+
+// Helper to render matched entries as an HTML table (used in template via set:html)
+function antiquityTableHtml(entries: any[]) {
+	if (!entries || entries.length === 0) return "";
+	const rows = entries
+		.map((e) => {
+			const authorName = authorArray[Number(e.author)] ?? (e.author ?? "");
+			const ch = e.ch ?? "";
+			const greek = e.greek ?? "";
+			const tscript = e.tscript ?? "";
+			const reign = e.reign ?? "";
+			return `
+				<tr>
+					<td class="px-2 py-1 align-top">${authorName} &nbsp; <sub>${ch}</sub></td>
+					<td class="px-2 py-1 align-top gr">${greek}</td>
+					<td class="px-2 py-1 align-top">${tscript}</td>
+					<td class="px-2 py-1 align-top">${reign || '&ndash;'}</td>
+				</tr>`;
+		})
+		.join("");
+
+	return `
+		<div class="overflow-x-auto">
+			<table class="w-full text-sm border-collapse">
+				<thead>
+					<tr class="text-left">
+						<th class="border-b pb-2">Author</th>
+						<th class="border-b pb-2">Greek</th>
+						<th class="border-b pb-2">Transcription</th>
+						<th class="border-b pb-2">Reign</th>
+					</tr>
+				</thead>
+				<tbody>
+					${rows}
+				</tbody>
+			</table>
+		</div>`;
+}
+
 
 ---
 
@@ -258,6 +314,20 @@ let m2 =
 			</section>
 		)
 	}
+
+{
+	(() => {
+		if (!antiquityMatches || antiquityMatches.length === 0) return null;
+		return (
+			<section class="my-8">
+				<h2 class="text-2xl font-semibold mb-2">The sources of antiquity</h2>
+				<p class="text-sm opacity-70 mb-2">From the writings of the historians and scholars of antiquity</p>
+				<div set:html={antiquityTableHtml(antiquityMatches)} />
+			</section>
+		);
+	})()
+}
+
 <!-- Bibliography -->
 {/** Render bibliography from pharaoh fields if present */}
 
