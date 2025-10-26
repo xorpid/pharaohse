@@ -1,11 +1,11 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 
 const title = "Bibliography";
 
 let meta1 = "Bibliography of Egyptology for pharaoh.se";
 let meta2 = "bibliography,egyptian king list,pharaohs,Manetho,Eusebius,Africanus,hieroglyphs,Egyptology bibliography,ancient egypt bibliography";
-const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
+const bild = "/images/fp-pharaoh.webp";
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
@@ -103,7 +103,7 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 		</li>
 		<li>
 			<b>Champollion, Jean-François.</b>, 1824. Papyrus Égyptien. Bulletin des sciences historiques, antiquités, philologie (2): 297-303. <a
-				href="/kinglist/turin/library/books/1824-Champollion"
+				href="/kinglists/turin/library/books/1824-Champollion"
 				title="English translation"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
 			>
 		</li>
@@ -136,7 +136,7 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 		<li>
 			<b>Champollion-Figeac, Jacques Joseph.</b>, 1851. De la table manuelle des Rois et des dynasties d’Égypte ou papyrus royal de Turin. <i
 				>Revue Archéologique</i
-			>, 7: 397–402, 461–472, 589–599, 653–665. <a href="/kinglist/turin/library/books/1851-Champollion-Figeacvol-11" title="English translation"
+			>, 7: 397–402, 461–472, 589–599, 653–665. <a href="/kinglists/turin/library/books/1851-Champollion-Figeac" title="English translation"
 				><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
 			>
 		</li>
@@ -179,13 +179,13 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 		<li><b>Emery.</b>, 1961. <i>Archaic Egypt</i></li>
 		<li>
 			<b>Fabretti, Ariodante, F. Rossi, and R. V. Lanzone.</b>, 1882. Regio Museo di Torino. Catalogo generale dei Musei di Antichità. Vol. 1. Turin:
-			239. <a href="/kinglist/turin/library/vol-17" title="English translation"
+			239. <a href="/kinglists/turin/library/books/1882-Fabretti" title="English translation"
 				><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
 			>
 		</li>
 		<li>
 			<b>Farina, Giulio.</b>, 1938. <i>Il Papiro dei re, restaurato</i>. Rome: G. Bardi. <a
-				href="/kinglist/turin/library/vol-24"
+				href="/kinglists/turin/library/books/1938-Farina"
 				title="English translation"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
 			>
 		</li>
@@ -214,18 +214,20 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 				<b>Hayes, W. C.</b>, 1990. <i>The Scepter of Egypt: From the Earliest Times to the End of the Middle Kingdom</i>. Vol. 1. New York
 			</li>
 			<li>
-				<b>Helck, Wolfgang.</b>, 1992. &quot;Anmerkungen zum Turiner Königspapyrus&quot;. Studien zur Altägyptischen Kultur 19: 151–216. <a
-					href="/kinglist/turin/library/vol-33"
-					title="English translation"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
-				>
+				<b>Helck, Wolfgang.</b>, 1992. &quot;Anmerkungen zum Turiner Königspapyrus&quot;. Studien zur Altägyptischen Kultur 19: 151–216.
 			</li>
 			<li>
 				<b>Helck, Wolfgang.</b>, 1956. Untersuchungen zu Manetho und den ägyptischen Königslisten. Berlin: Akademie-Verlag.
 			</li>
 			<li>
 				<b>Jacoby, Felix.</b> 1958. <i>Die Fragmente Der Griechischen Historiker.</i> Vol. 3C. Leiden: Brill. <a
-					href="https://tinyurl.com/FGrHist"
-					title="Read"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
+					href="https://archive.org/details/fgrhist-die-fragmente-der-griechischen-historiker-vols-1-8/FGHist%20Part%203c%2C%20vol%201%20nos%20608-708%20%28Ethnography%20Peoples%20-%20Egyptians%20to%20Getians%29/page/15/mode/2up"
+					title="Read"
+					><img
+						src="/svg/visit.svg"
+						alt="Visit external link: https://tinyurl.com/FGrHist"
+						class="inline h-4 opacity-50 transition-opacity duration-300 hover:opacity-100 dark:invert"
+					/></a
 				>
 			</li>
 			<li>
@@ -274,9 +276,8 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 				</li>
 				<li>
 					<b>Lepsius, Karl Richard.</b>, 1842. <i>Auswahl der wichtigsten Urkunden des aegyptischen Alterthums</i>. Leipzig. <a
-						href="/kinglist/turin/library/vol-36"
-						target="_blank"
-						title="View plates"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
+						href="/kinglists/turin/library/books/1842-Lepsius"
+						title="View plates"><img src="/svg/pdf.svg" alt="Read it" class="inline h-4" /></a
 					>
 				</li>
 				<li>
@@ -298,11 +299,7 @@ const bild = "https://pharaoh.se/images/fp-pharaoh.webp";
 					<b>Marucchi, Orazio.</b>, 1898. <i>Gli obelischi egiziani di Roma</i>
 				</li>
 				<li>
-					<b>Meyer, Eduard.</b>, 1904. <i>Ägyptische Chronologie</i>. Berlin: Verlag der Königl. Akademie der Wissenschaften. <a
-						href="/kinglist/turin/library/vol-22"
-						target="_blank"
-						title="English translation"><img src="/svg/pdf.svg" alt="Visit external link" class="inline h-4" /></a
-					>
+					<b>Meyer, Eduard.</b>, 1904. <i>Ägyptische Chronologie</i>. Berlin: Verlag der Königl. Akademie der Wissenschaften.
 				</li>
 				<li>
 					<b>M&ouml;ller, Georg.</b>, 1927. <i>Hieratiche Pal&auml;ographie</i>. 3 volumes. Osnabruck.

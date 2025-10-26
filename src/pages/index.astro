@@ -1,16 +1,19 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
 /* Sets the homepage name and meta */
 let title = "Homepage";
 let meta1 = "Description of the page";
 let meta2 = "keywords,comma,separated";
 const bild = "assets/";
+
+import packageJson from "../../package.json";
+const rawVersion = packageJson.dependencies?.tailwindcss || "Not installed";
+const tailwindVersion = rawVersion.replace(/^[~^]/, "");
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
 	<p>Restructuring back-end of website. Project initiated September 2025.</p>
-	<p>Using Astro 5 with Tailwindcss 4.</p>
+	<p class="tabular-nums">Using <b>{Astro.generator}</b> with Tailwindcss <b>{tailwindVersion}</b>.</p>
 
 	<h2 class="text-2xl font-bold mt-10 mb-4">Pages</h2>
 
@@ -21,16 +24,15 @@ const bild = "assets/";
 		<li><a href="/kinglists">Kinglists</a></li>
 		<li><a href="/authors">Authors</a></li>
 		<li><a href="/obelisks">Obelisks</a></li>
-		<li><a href="/chronology">Chronology</a></li>
-		<li><a href="/egyptology">Egyptology</a></li>
-		<li><a href="/hieratic">Hieratic</a></li>
-		<li><a href="/hieroglyphs">Hieroglyphs</a></li>
-		<li><a href="/book-series">book-series</a></li>
+		<li><a href="/articles/chronology">Chronology</a></li>
+		<li><a href="/articles/egyptology">Egyptology</a></li>
+		<li><a href="/articles/hieratic">Hieratic</a></li>
+		<li><a href="/articles/hieroglyphs">Hieroglyphs</a></li>
+		<li><a href="/articles/book-series">book-series</a></li>
 		<li><a href="/bibliography">bibliography</a></li>
-		<li><a href="/chronology">chronology</a></li>
 		<li><a href="/notes">notes</a></li>
-		<li><a href="/papyrus">papyrus</a></li>
-		<li><a href="/pyramids">pyramids</a></li>
+		<li><a href="/articles/papyrus">papyrus</a></li>
+		<li><a href="/articles/pyramids">pyramids</a></li>
 		<li><a href="/temples-and-monuments">temples-and-monuments</a></li>
 		<li><a href="/titles-and-epithets">titles-and-epithets</a></li>
 		<li><a href="/about">about</a></li>

@@ -1,10 +1,19 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import dynastys from "../../data/dynasties.json";
+import Layout from "@layouts/Layout.astro";
+import dynastys from "@data/dynasties.json";
 ---
 
-<Layout title="Dynasties">
-	<h1 class="text-3xl font-bold mb-4">Dynasties of Ancient Egypt</h1>
+<Layout title="Dynasties of Ancient Egypt">
+	<p>
+		The division of pharaohs into dynasties is generally considered to be an invention by the Egyptian priest Manetho. Whenever some discontinuity
+		ocurred, a new dynasty was assumed.
+	</p>
+	<p>
+		All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with multiple
+		kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact reign of each
+		pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful, chronological gaps,
+		deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of reigns.
+	</p>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
 		{

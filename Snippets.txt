@@ -1,5 +1,12 @@
 
 
+---------- UPDATE DEPS -------------
+npx @astrojs/upgrade --yes && npm install tailwindcss@latest @tailwindcss/vite@latest
+---------- CLEAN VERSION -----------
+npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lock.json; npm install tailwindcss@latest @tailwindcss/vite@latest; npm install
+------------------------------------
+
+
 <button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p></div>
 
 

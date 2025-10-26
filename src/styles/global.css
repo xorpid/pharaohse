@@ -36,9 +36,9 @@
 	--tx: var(--color-stone-800);
 	--dim: var(--color-stone-600);
 	--bright: var(--color-stone-950);
-	--link: var(--color-red-800);
-	--link-hover: var(--color-red-700);
-	--link-visited: var(--color-red-900);
+	--link: var(--color-red-700);
+	--link-hover: var(--color-red-900);
+	--link-visited: var(--color-pink-900);
 	--primary: var(--color-red-950);
 	--secondary: var(--color-rose-950);
 	--highlight: var(--color-orange-950);
@@ -52,7 +52,7 @@
 	--dark-bright: var(--color-neutral-50);
 	--dark-link: var(--color-amber-400);
 	--dark-link-hover: var(--color-amber-200);
-	--dark-link-visited: var(--color-neutral-400);
+	--dark-link-visited: var(--color-amber-100);
 	--dark-primary: var(--color-amber-100);
 	--dark-secondary: var(--color-amber-50);
 	--dark-highlight: var(--color-amber-700);
