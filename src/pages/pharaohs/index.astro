@@ -1,9 +1,9 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import pharaohs from "../../data/pharaohs.json";
-import dynasties from "../../data/dynasties.json";
+import Layout from "@layouts/Layout.astro";
+import pharaohs from "@data/pharaohs.json";
+import dynasties from "@data/dynasties.json";
 import { Image } from "astro:assets";
-import ph2 from "./public/images/ph2.webp";
+import ph2 from "@assets/ph2.webp";
 // Build dynasty grouping and ordering
 const specialChar: Record<string, string> = {
 	"32": "AR",

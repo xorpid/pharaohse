@@ -1,5 +1,6 @@
 ---
-// Define the expected shape of the markdown file's frontmatter
+import { getCollection, getEntry } from "astro:content";
+
 interface Frontmatter {
 	title: string;
 	period: string;
@@ -7,26 +8,21 @@ interface Frontmatter {
 }
 
 export async function getStaticPaths() {
-	const paths = [];
-	for (let i = 1; i <= 31; i++) {
-		paths.push({ params: { id: `${i}` } });
-	}
-	return paths;
+	const dynastyEntries = await getCollection("dynasty");
+	return dynastyEntries.map((entry) => ({
+		params: { id: entry.id.replace(".md", "") }, // Remove .md from file name
+	}));
 }
 
 const { id } = Astro.params;
-// Load markdown files with explicit typing
-const markdownFiles = import.meta.glob<{ frontmatter: Frontmatter }>("/src/dynasty/*.md", { eager: true });
-const dynasty = markdownFiles[`/src/dynasty/${id}.md`] || {
-	frontmatter: {
-		title: `Dynasty ${id}`,
-		period: `Period for Dynasty ${id}`,
-		description: `Description for Dynasty ${id}`,
-	},
+const entry = await getEntry("dynasty", `${id}.md`);
+const dynasty = entry?.data || {
+	title: `Dynasty ${id}`,
+	period: `Period for Dynasty ${id}`,
+	description: `Description for Dynasty ${id}`,
 };
-// Title etc from .md files |
 ---
 
-<h1>{dynasty.frontmatter.title}</h1>
-<p>{dynasty.frontmatter.period}</p>
-<div>{dynasty.frontmatter.description}</div>
+<h1>{dynasty.title}</h1>
+<p>{dynasty.period}</p>
+<div>{dynasty.description}</div>
