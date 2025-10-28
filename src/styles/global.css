@@ -46,6 +46,10 @@
 	--transliteration: var(--color-blue-900);
 	--greek: var(--color-emerald-800);
 	--armenian: var(--color-yellow-800);
+	--popover: var(--color-red-700);
+	--summ: var(--color-yellow-100);
+	--head: var(--color-blue-100);
+	--sect: var(--color-emerald-100);
 }
 .dark {
 	--bg-light: var(--color-neutral-800);
@@ -64,6 +68,10 @@
 	--transliteration: var(--color-orange-300);
 	--greek: var(--color-emerald-400);
 	--armenian: var(--color-yellow-400);
+	--popover: var(--color-emerald-500);
+	--summ: var(--color-yellow-800);
+	--head: var(--color-blue-900);
+	--sect: var(--color-emerald-900);
 }
 /* Add your own default base styles for specific HTML elements */
 @layer base {
@@ -383,12 +391,10 @@
 		border: 1px dashed var(--default-border);
 	}
 	[popovertarget] {
-		--pop: var(--color-red-700);
-		--pop-dark: var(--color-emerald-500);
 		cursor: pointer;
 		font-family: var(--font-sans);
 		vertical-align: super;
-		color: light-dark(var(--pop), var(--pop-dark));
+		color: var(--popover);
 		border-radius: 0.25rem;
 		margin-inline: 0.25ch;
 		padding-inline: 0.25ch;
@@ -407,8 +413,9 @@
 		max-width: clamp(20rem, 12.727rem + 36.36vw, 40rem);
 		height: fit-content;
 		padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3) calc(var(--spacing) * 4) calc(var(--spacing) * 3);
-		background: light-dark(var(--bg-light), var(--dark-bg-light));
-		border: solid 4px light-dark(var(--border), var(--dark-border));
+		background: var(--bg-light);
+		color: var(--tx);
+		border: solid 4px var(--border);
 		border-radius: 10px;
 		margin: auto;
 		font-size: 90%;
@@ -418,7 +425,7 @@
 	}
 	[popover] p {
 		margin-block: 0 calc(var(--spacing) * 2);
-		color: light-dark(var(--secondary), var(--dark-secondary));
+		color: var(--secondary);
 		font-weight: var(--font-weight-black);
 		font-size: var(--text-xl) !important;
 	}
@@ -427,8 +434,8 @@
 	}
 	[popovertarget]:hover,
 	[popovertarget]:focus {
-		color: light-dark(var(--text), var(--dark-text));
-		background-color: light-dark(var(--bg-dark), var(--dark-bg-dark));
+		color: var(--tx);
+		background-color: var(--bg-dark);
 		cursor: pointer;
 	}
 
@@ -451,7 +458,7 @@
 	mid {
 		font-size: var(--text-xs);
 		font-style: normal;
-		color: light-dark(var(--primary), var(--dark-primary));
+		color: var(--primary);
 		vertical-align: 5%;
 		padding-inline: 0.5ch;
 	}
@@ -468,12 +475,12 @@
 	.r,
 	r {
 		/* Red ink  */
-		color: light-dark(var(--color-red-600), var(--color-red-400));
+		color: var(--color-red-500);
 	}
 	.m,
 	m {
 		/* Missing ink  */
-		color: light-dark(var(--dim), var(--dark-dim));
+		color: var(--dim);
 		font-weight: var(--font-weight-light);
 	}
 }

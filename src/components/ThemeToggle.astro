@@ -1,32 +1,35 @@
 ---
-/*
-  Works with Astro 5 + Tailwind 4
-  Dark mode toggle with persistent localStorage + system preference.
-  To use: <ThemeToggle client:load />
-*/
+// src/components/ThemeToggle.astro
 ---
 
 <div class="relative inline-block">
+	<!-- 1. ICON BUTTON -->
 	<button
 		id="theme-btn"
-		class="flex items-center gap-2 px-3 py-2 text-xs font-medium rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+		class="flex h-6 w-6 items-center justify-center rounded-md bg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+		aria-label="Toggle theme"
+		title="Toggle theme"
 	>
-		<svg id="theme-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
-		<span id="theme-label" class="text-xs">System</span>
-		<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+		<svg id="theme-icon" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<!-- default = system -->
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
 		</svg>
 	</button>
 
+	<!-- 2. DROPDOWN -->
 	<div
-		id="dropdown"
-		class="absolute right-0 mt-2 w-fit bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 hidden z-10"
+		id="theme-dropdown"
+		class="absolute right-0 mt-2 w-fit rounded-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg hidden z-10"
 	>
 		<button
-			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="theme-option w-full flex items-center gap-3 px-2 py-1 text-left text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="light"
 		>
-			<svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="h-5 w-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -34,94 +37,112 @@
 					d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
 				></path>
 			</svg>
-			Light
+			<span>Light</span>
 		</button>
+
 		<button
-			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="theme-option w-full flex items-center gap-3 px-2 py-1 text-left text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="dark"
 		>
-			<svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
 					d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
 			</svg>
-			Dark
+			<span>Dark</span>
 		</button>
+
 		<button
-			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="theme-option w-full flex items-center gap-3 px-2 py-1 text-left text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="system"
 		>
-			<svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="h-5 w-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
 					d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
 			</svg>
-			System
+			<span>System</span>
 		</button>
 	</div>
 </div>
 
-<script is:inline>
-	document.addEventListener("DOMContentLoaded", () => {
+<script>
+	// @ts-check
+	/// <reference types="astro/client" />
+
+	const ICONS = {
+		light: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>`,
+		dark: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>`,
+		system: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>`,
+	};
+
+	function applyTheme(mode) {
 		const html = document.documentElement;
-		const btn = document.getElementById("theme-btn");
-		const dropdown = document.getElementById("dropdown");
-		const options = document.querySelectorAll("[data-mode]");
-		const label = document.getElementById("theme-label");
+		if (mode === "light") html.classList.remove("dark");
+		else if (mode === "dark") html.classList.add("dark");
+		else {
+			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+			html.classList.toggle("dark", prefersDark);
+		}
+	}
+
+	function setIcon(mode) {
 		const icon = document.getElementById("theme-icon");
+		if (icon) icon.innerHTML = ICONS[mode];
+	}
 
-		if (!btn || !dropdown || !label || !icon) return;
+	document.addEventListener("DOMContentLoaded", () => {
+		const btn = document.getElementById("theme-btn");
+		const dropdown = document.getElementById("theme-dropdown");
+		const options = document.querySelectorAll(".theme-option");
 
-		const icons = {
-			light:
-				'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>',
-			dark: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>',
-			system:
-				'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>',
-		};
+		if (!btn || !dropdown) return;
 
-		function applyTheme(mode) {
-			if (mode === "light") html.classList.remove("dark");
-			else if (mode === "dark") html.classList.add("dark");
-			else html.classList.toggle("dark", window.matchMedia("(prefers-color-scheme: dark)").matches);
-		}
-
-		function updateButton(mode) {
-			label.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
-			icon.innerHTML = icons[mode];
-		}
-
+		// ---- Load saved mode (default = system) ----
 		let currentMode = localStorage.getItem("themeMode") || "system";
-		updateButton(currentMode);
+		setIcon(currentMode);
 		applyTheme(currentMode);
 
+		// ---- Toggle dropdown ----
 		btn.addEventListener("click", (e) => {
 			e.stopPropagation();
 			dropdown.classList.toggle("hidden");
 		});
 
+		// ---- Close on outside click ----
 		document.addEventListener("click", (e) => {
-			if (!btn.contains(e.target) && !dropdown.contains(e.target)) dropdown.classList.add("hidden");
+			if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+				dropdown.classList.add("hidden");
+			}
 		});
 
+		// ---- Option click ----
 		options.forEach((opt) => {
 			opt.addEventListener("click", () => {
-				const newMode = opt.getAttribute("data-mode");
-				if (!newMode) return;
-				currentMode = newMode;
-				localStorage.setItem("themeMode", newMode);
-				updateButton(newMode);
-				applyTheme(newMode);
+				const mode = opt.dataset.mode;
+				if (!mode) return;
+
+				currentMode = mode;
+				localStorage.setItem("themeMode", mode);
+				setIcon(mode);
+				applyTheme(mode);
 				dropdown.classList.add("hidden");
 			});
 		});
 
+		// ---- React to OS changes when mode = system ----
 		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
-			if (currentMode === "system") applyTheme("system");
+			if (currentMode === "system") {
+				applyTheme("system");
+				setIcon("system");
+			}
 		});
 	});
 </script>

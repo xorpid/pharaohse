@@ -1,11 +1,11 @@
 ---
-import pharaohs from "@data/pharaohs.json";
 import ThemeToggle from "@/components/ThemeToggle.astro";
-const sitename = "Egypt";
 ---
 
-<header class="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-700">
-	<div class="bg-amber-400 text-2xl"><a href="/">Website Name</a></div>
-	<div class="relative">Meny TBD</div>
+<header
+	class="flex justify-between items-center p-6 bg sticky top-0 z-50 border-b-4 border-stone-500 dark:border-neutral-700 shadow-lg shadow-red-500/5 dark:shadow-sky-500/5"
+>
+	<div><a class="text-3xl font-serif" href="/">Website</a></div>
+	<div class="relative">Menu here?</div>
 	<ThemeToggle />
 </header>
