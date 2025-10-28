@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 /* Distinct characters:
 	O0 8B 1Iil 5S 2Z 6b 9g QG EF pqijr
 	“” ‘’
@@ -26,10 +26,10 @@
 	--fluid-3: clamp(2rem, 3.5vw, 3rem);
 	--fluid-4: clamp(2.5rem, 4vw, 3.5rem);
 
-	--transliteration: var(--color-blue-900);
-	--greek: var(--color-emerald-800);
-	--armenian: var(--color-yellow-800);
+	--aspect-book: 2 / 3;
+}
 
+:root {
 	--bg-light: var(--color-stone-50);
 	--bg: var(--color-stone-200);
 	--bg-dark: var(--color-stone-300);
@@ -43,27 +43,28 @@
 	--secondary: var(--color-rose-950);
 	--highlight: var(--color-orange-950);
 	--border: var(--color-stone-300);
-
-	--dark-bg-light: var(--color-neutral-800);
-	--dark-bg: var(--color-neutral-900);
-	--dark-bg-dark: var(--color-neutral-950);
-	--dark-tx: var(--color-neutral-200);
-	--dark-dim: var(--color-neutral-400);
-	--dark-bright: var(--color-neutral-50);
-	--dark-link: var(--color-amber-400);
-	--dark-link-hover: var(--color-amber-200);
-	--dark-link-visited: var(--color-amber-100);
-	--dark-primary: var(--color-amber-100);
-	--dark-secondary: var(--color-amber-50);
-	--dark-highlight: var(--color-amber-700);
-	--dark-border: var(--color-neutral-700);
-	--dark-transliteration: var(--color-orange-300);
-	--dark-greek: var(--color-emerald-400);
-	--dark-armenian: var(--color-yellow-400);
-
-	--aspect-book: 2 / 3;
+	--transliteration: var(--color-blue-900);
+	--greek: var(--color-emerald-800);
+	--armenian: var(--color-yellow-800);
 }
-
+.dark {
+	--bg-light: var(--color-neutral-800);
+	--bg: var(--color-neutral-900);
+	--bg-dark: var(--color-neutral-950);
+	--tx: var(--color-neutral-200);
+	--dim: var(--color-neutral-400);
+	--bright: var(--color-neutral-50);
+	--link: var(--color-amber-400);
+	--link-hover: var(--color-amber-200);
+	--link-visited: var(--color-amber-100);
+	--primary: var(--color-amber-100);
+	--secondary: var(--color-amber-50);
+	--highlight: var(--color-amber-700);
+	--border: var(--color-neutral-700);
+	--transliteration: var(--color-orange-300);
+	--greek: var(--color-emerald-400);
+	--armenian: var(--color-yellow-400);
+}
 /* Add your own default base styles for specific HTML elements */
 @layer base {
 	::selection {
@@ -83,21 +84,21 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
 		scroll-padding-top: calc(var(--header-height) + 1rem); /* anchor top fix */
-		background-color: light-dark(var(--bg), var(--dark-bg));
-		color: light-dark(var(--tx), var(--dark-tx));
+		background-color: var(--bg);
+		color: var(--tx);
 		scroll-padding-top: 60px; /* accounts for sticky header */
 		scroll-behavior: smooth;
 	}
 
 	a {
 		text-decoration: none;
-		color: light-dark(var(--link), var(--dark-link)) !important;
+		color: var(--link);
 	}
 	a:visited {
-		color: light-dark(var(--link-visited), var(--dark-link-visited)) !important;
+		color: var(--link-visited);
 	}
 	a:hover {
-		color: light-dark(var(--link-hover), var(--dark-link-hover)) !important;
+		color: var(--link-hover);
 	}
 
 	p {
@@ -127,7 +128,7 @@
 		margin-block: calc(var(--spacing) * 10);
 		th {
 			text-align: left;
-			border-bottom: 4px solid light-dark(var(--border), var(--dark-border));
+			border-bottom: 4px solid var(--border);
 			margin-bottom: 1rem;
 		}
 		td {
@@ -135,7 +136,7 @@
 			padding-inline: 0.5rem;
 			padding-block: 0.25rem;
 			/* vertical-align: top; */
-			border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
+			border-bottom: 1px solid var(--border);
 		}
 
 		caption-side: bottom;
@@ -154,13 +155,13 @@
 		font-size: var(--text-3xl);
 		font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
 		line-height: var(--text-3xl--line-height);
-		color: light-dark(var(--bright), var(--dark-bright));
+		color: var(--bright);
 	}
 
 	h3 {
 		font-size: var(--text-2xl);
 		line-height: var(--text-2xl--line-height);
-		color: light-dark(var(--bright), var(--dark-bright));
+		color: var(--bright);
 	}
 	h1,
 	h2,
@@ -177,13 +178,13 @@
 		cursor: help;
 		font-style: italic;
 		text-decoration-style: dotted;
-		color: light-dark(var(--secondary), var(--dark-secondary)) !important;
+		color: var(--secondary) !important;
 	}
 	blockquote {
 		quotes: "“" "”" "‘" "’";
-		color: light-dark(var(--dim), var(--dark-dim));
-		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
-		border-left: 14px solid light-dark(var(--highlight), var(--dark-highlight));
+		color: var(--dim);
+		background-color: var(--bg-light);
+		border-left: 14px solid var(--highlight);
 		font-size: 90%;
 		font-style: italic;
 		font-weight: 400;
@@ -215,7 +216,7 @@
 	}
 
 	.card {
-		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
+		background-color: var(--bg-light);
 		border-radius: var(--radius-lg);
 		padding: calc(var(--spacing) * 4) /* 1rem = 16px */;
 		box-shadow: var(--shadow-xl);
@@ -225,10 +226,7 @@
 	/* Turin stuff */
 	tlit,
 	.tlit {
-		--tlit-light: var(--color-sky-900);
-		--tlit-dark: var(--color-orange-300);
-
-		color: light-dark(var(--tlit-light), var(--tlit-dark));
+		color: var(--transliteration);
 		font-family: var(--font-tlit);
 		font-style: italic;
 		letter-spacing: 0.08em;
@@ -240,26 +238,26 @@
 	}
 
 	.bg {
-		background-color: light-dark(var(--bg), var(--dark-bg));
+		background-color: var(--bg);
 	}
 	.bg-light {
-		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
+		background-color: var(--bg-light);
 	}
 	.bg-dark {
-		background-color: light-dark(var(--bg-dark), var(--dark-bg-dark));
+		background-color: var(--bg-dark);
 	}
 	.tx {
-		color: light-dark(var(--tx), var(--dark-tx));
+		color: var(--tx);
 	}
 	.dim,
 	.bibliography {
-		color: light-dark(var(--dim), var(--dark-dim));
+		color: var(--dim);
 	}
 	figcaption {
 		text-align: center;
-		color: light-dark(var(--dim), var(--dark-dim));
+		color: var(--dim);
 		&:hover {
-			color: light-dark(var(--tx), var(--dark-tx));
+			color: var(--tx);
 		}
 		.figtitle {
 			font-weight: var(--font-weight-medium);
@@ -271,38 +269,38 @@
 		}
 	}
 	.primary {
-		color: light-dark(var(--primary), var(--dark-primary));
+		color: var(--primary);
 	}
 	.secondary {
-		color: light-dark(var(--secondary), var(--dark-secondary));
+		color: var(--secondary);
 	}
 	.highlight {
-		color: light-dark(var(--highlight), var(--dark-highlight));
+		color: var(--highlight);
 	}
 	.bordercolor {
-		border-color: light-dark(var(--border), var(--dark-border));
+		border-color: var(--border);
 	}
 	d {
 		/* dim */
-		color: --alpha(light-dark(var(--tx), var(--dark-tx)) / 0.5);
+		color: --alpha(var(--tx) / 0.5);
 	}
 	m {
 		/* missing */
-		color: --alpha(light-dark(var(--tx), var(--dark-tx)) / 0.75);
+		color: --alpha(var(--tx) / 0.75);
 	}
 
 	:lang(grc),
 	gr,
 	.gr {
 		font-family: var(--sans) !important;
-		color: light-dark(var(--greek), var(--dark-greek));
+		color: var(--greek);
 	}
 
 	:lang(xcl),
 	ar,
 	.ar {
 		font-family: var(--sans);
-		color: light-dark(var(--armenian), var(--dark-armenian));
+		color: var(--armenian);
 	}
 
 	#toppen {
@@ -327,9 +325,9 @@
 		margin-block: calc(var(--spacing) * 10);
 		padding: calc(var(--spacing) * 4);
 		border-radius: var(--radius-xl);
-		background-color: light-dark(var(--color-stone-100), var(--color-neutral-800));
-		border: 1px solid light-dark(var(--border), var(--dark-border));
-		box-shadow: 0 15px 15px -5px light-dark(var(--color-stone-700), var(--color-neutral-950));
+		background-color: var(--bg-light);
+		border: 1px solid var(--bordercolor);
+		box-shadow: 0 15px 15px -5px light-dark(var(--color-stone-500), var(--color-neutral-950));
 		a {
 			font-size: var(--text-sm);
 		}
@@ -341,7 +339,7 @@
 		display: grid;
 		h3 {
 			font-size: var(--text-sm);
-			color: light-dark(var(--dim), var(--dark-dim));
+			color: var(--dim);
 			line-height: var(--leading-snug);
 			padding-block: calc(var(--spacing) * 2);
 		}
@@ -353,7 +351,7 @@
 			list-style-position: inside;
 			li {
 				padding-block: 0.25rem;
-				border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
+				border-bottom: 1px solid var(--border);
 			}
 			.total {
 				list-style-type: none !important;
@@ -369,15 +367,15 @@
 	}
 	.according {
 		--tw-border-opacity: 1;
-		color: var(--default-color-1);
+		color: var(--highlight);
 		border-bottom-width: 1px;
-		border-color: rgb(var(--default-color-2) / var(--tw-border-opacity, 1));
+		border-color: var(--border);
 		text-align: center;
 		font-size: var(--text-xs);
 		line-height: 1.25rem;
 	}
 	.synk {
-		background: light-dark(var(--bg-light), var(--dark-bg-light));
+		background: var(--bg-light);
 		padding: calc(var(--spacing) * 2);
 		border-radius: calc(var(--spacing) * 2);
 		font-size: var(--text-xs);

@@ -1,14 +1,18 @@
 ---
-// src/components/ThemeToggle.astro
+/*
+  Works with Astro 5 + Tailwind 4
+  Dark mode toggle with persistent localStorage + system preference.
+  To use: <ThemeToggle client:load />
+*/
 ---
 
 <div class="relative inline-block">
 	<button
 		id="theme-btn"
-		class="flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+		class="flex items-center gap-2 px-3 py-2 text-xs font-medium rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
 	>
 		<svg id="theme-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
-		<span id="theme-label">System</span>
+		<span id="theme-label" class="text-xs">System</span>
 		<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
 		</svg>
@@ -16,10 +20,10 @@
 
 	<div
 		id="dropdown"
-		class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 hidden z-10"
+		class="absolute right-0 mt-2 w-fit bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 hidden z-10"
 	>
 		<button
-			class="w-full flex items-center gap-3 px-4 py-3 text-sm text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="light"
 		>
 			<svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,7 +37,7 @@
 			Light
 		</button>
 		<button
-			class="w-full flex items-center gap-3 px-4 py-3 text-sm text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="dark"
 		>
 			<svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +50,7 @@
 			Dark
 		</button>
 		<button
-			class="w-full flex items-center gap-3 px-4 py-3 text-sm text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+			class="w-full flex items-center gap-3 px-2 py-1 text-xs text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
 			data-mode="system"
 		>
 			<svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,36 +65,16 @@
 	</div>
 </div>
 
-<script>
-	// @ts-check — enables type checking
-	/// <reference types="astro/client" />
-
-	/**
-	 * @param {string} mode
-	 */
-	function applyTheme(mode) {
+<script is:inline>
+	document.addEventListener("DOMContentLoaded", () => {
 		const html = document.documentElement;
-		if (!html) return;
-
-		if (mode === "light") {
-			html.classList.remove("dark");
-		} else if (mode === "dark") {
-			html.classList.add("dark");
-		} else {
-			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-			html.classList.toggle("dark", prefersDark);
-		}
-	}
-
-	/**
-	 * @param {string} mode
-	 */
-	function updateButton(mode) {
+		const btn = document.getElementById("theme-btn");
+		const dropdown = document.getElementById("dropdown");
+		const options = document.querySelectorAll("[data-mode]");
 		const label = document.getElementById("theme-label");
 		const icon = document.getElementById("theme-icon");
-		if (!label || !icon) return;
 
-		label.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
+		if (!btn || !dropdown || !label || !icon) return;
 
 		const icons = {
 			light:
@@ -99,15 +83,17 @@
 			system:
 				'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>',
 		};
-		icon.innerHTML = icons[mode];
-	}
 
-	document.addEventListener("DOMContentLoaded", () => {
-		const btn = document.getElementById("theme-btn");
-		const dropdown = document.getElementById("dropdown");
-		const options = document.querySelectorAll("[data-mode]");
+		function applyTheme(mode) {
+			if (mode === "light") html.classList.remove("dark");
+			else if (mode === "dark") html.classList.add("dark");
+			else html.classList.toggle("dark", window.matchMedia("(prefers-color-scheme: dark)").matches);
+		}
 
-		if (!btn || !dropdown) return;
+		function updateButton(mode) {
+			label.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
+			icon.innerHTML = icons[mode];
+		}
 
 		let currentMode = localStorage.getItem("themeMode") || "system";
 		updateButton(currentMode);
@@ -119,28 +105,23 @@
 		});
 
 		document.addEventListener("click", (e) => {
-			if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
-				dropdown.classList.add("hidden");
-			}
+			if (!btn.contains(e.target) && !dropdown.contains(e.target)) dropdown.classList.add("hidden");
 		});
 
 		options.forEach((opt) => {
 			opt.addEventListener("click", () => {
 				const newMode = opt.getAttribute("data-mode");
-				if (newMode) {
-					currentMode = newMode;
-					localStorage.setItem("themeMode", newMode);
-					updateButton(newMode);
-					applyTheme(newMode);
-					dropdown.classList.add("hidden");
-				}
+				if (!newMode) return;
+				currentMode = newMode;
+				localStorage.setItem("themeMode", newMode);
+				updateButton(newMode);
+				applyTheme(newMode);
+				dropdown.classList.add("hidden");
 			});
 		});
 
 		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
-			if (currentMode === "system") {
-				applyTheme("system");
-			}
+			if (currentMode === "system") applyTheme("system");
 		});
 	});
 </script>

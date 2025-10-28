@@ -71,4 +71,13 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	/> -->
 	<link href={fonts} rel="stylesheet" />
 	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+	<script>
+		(function () {
+			const saved = localStorage.getItem("themeMode");
+			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+			if (saved === "dark" || (saved === null && prefersDark)) {
+				document.documentElement.classList.add("dark");
+			}
+		})();
+	</script>
 </head>

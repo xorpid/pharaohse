@@ -25,7 +25,7 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 
 <html lang="en">
 	<Head title={resolvedTitle} meta1={resolvedMeta1} meta2={resolvedMeta2} bild={resolvedBild} frontmatter={frontmatter} />
-	<body id="body">
+	<body class="bg-stone-200 dark:bg-neutral-900 text-stone-800 dark:text-neutral-200 transition-colors">
 		<Header />
 		<div class="max-w-4xl mx-auto px-4">
 			<h1 class="pagetitle" set:html={resolvedTitle} />
