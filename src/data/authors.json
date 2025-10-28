@@ -10,16 +10,6 @@
 		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
 	},
 	{
-		"slug": "manetho",
-		"name": "Manetho of Sebennytos",
-		"period": "c. 275 BC +/- 30 years",
-		"meta1": "Manetho",
-		"meta2": "Manetho, king list",
-		"image": "/images/kinglist/manetho.jpg",
-		"intro": "",
-		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
-	},
-	{
 		"slug": "africanus",
 		"name": "Julius Africanus",
 		"period": "c. 220 AD",

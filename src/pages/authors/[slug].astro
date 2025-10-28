@@ -1,15 +1,15 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import authors from "@/data/authors.json";
-import africanus from "@/data/kl_africanus.json";
-import eusebius from "@/data/kl_eusebius.json";
-import herodotus from "@/data/kl_herodotus.json";
-import diodorus from "@/data/kl_diodorus.json";
-import syncellus from "@/data/kl_syncellus.json";
-import josephus from "@/data/kl_josephus.json";
-import eratosthenes from "@/data/kl_eratosthenes.json";
-import faraos from "@/data/pharaohs.json";
-import jerome from "@/data/kl_jerome.json";
+import Layout from "@layouts/Layout.astro";
+import authors from "@data/authors.json";
+import africanus from "@data/kl_africanus.json";
+import eusebius from "@data/kl_eusebius.json";
+import herodotus from "@data/kl_herodotus.json";
+import diodorus from "@data/kl_diodorus.json";
+import syncellus from "@data/kl_syncellus.json";
+import josephus from "@data/kl_josephus.json";
+import eratosthenes from "@data/kl_eratosthenes.json";
+import faraos from "@data/pharaohs.json";
+import jerome from "@data/kl_jerome.json";
 
 export async function getStaticPaths() {
 	return authors.map((p) => ({
@@ -17,6 +17,17 @@ export async function getStaticPaths() {
 		props: { author: p },
 	}));
 }
+
+const visibleTables = [
+	{ name: "africanus", values: [true, true, true, true, true, true, false] },
+	{ name: "eusebius", values: [true, true, true, true, true, true, false] },
+	{ name: "herodotus", values: [false, true, true, true, true, false, false] },
+	{ name: "diodorus", values: [false, true, true, true, true, false, true] },
+	{ name: "syncellus", values: [true, true, true, true, true, true, true] },
+	{ name: "josephus", values: [false, true, true, true, true, true, false] },
+	{ name: "eratosthenes", values: [true, true, false, true, true, true, true] },
+	{ name: "jerome", values: [false, true, true, true, true, true, true] },
+];
 
 // Map slug to data array
 const authorData = {
@@ -29,8 +40,6 @@ const authorData = {
 	eratosthenes: eratosthenes,
 	jerome: jerome,
 };
-
-
 
 const { author } = Astro.props;
 const { slug } = Astro.params as { slug: keyof typeof authorData };
@@ -80,84 +89,94 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 	<section class="mt-8">
 		{
 			dynKeys.map((dyn) => (
-				<h2 class="text-xl font-bold mb-4">Entries</h2>
 				<div class="mb-12">
 					{dyn !== "99" && <h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>}
 					<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
 						<table class="min-w-full text-sm">
-							<thead class="border-b-2 mb-4">
-								<tr class="text-left">
-									<th>Order</th>
-									<th>Pharaoh</th>
-									<th>Chapter</th>
-									<th>Greek</th>
-									<th>Transliteration</th>
-									{/* <th>Transcription</th> */}
-									<th>Reign</th>
-									<th>Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								{dynGroups[dyn]
-									.slice()
-									.sort((a, b) => a.ordna - b.ordna)
-									.map((item) => (
-										<tr>
-											<td class="px-2 py-1">{item.ordna}</td>
-											<td class="px-2 py-1">
-												{(() => {
-													const phEntry = faraos.find((ph) => ph.no === String(item.ph));
-													if (phEntry) {
-														if (phEntry.no === "888") {
-															return " ";
-														}
-														if (phEntry.no === "999") {
-															return "—";
-														}
-														// Use slug from pharaohs.json if available, else generate from name
-														const slug =
-															phEntry.slug ||
-															phEntry.name
-																.toLowerCase()
-																.replace(/[^a-z0-9]+/g, "-")
-																.replace(/^-+|-+$/g, "");
-														return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
-													} else {
-														return item.ph;
-													}
-												})()}
-											</td>
-											<td class="px-2 py-1">{item.ch}</td>
-											<td class="px-2 py-1">
-												<span lang="grc">{item.greek}</span>
-											</td>
-											<td class="px-2 py-1">{item.tlit}</td>
-											{/* <td class="px-2 py-1">{item.tscript}</td> */}
-											<td class="px-2 py-1">{item.reign}</td>
-											<td class="px-2 py-1">{item.descr ?? ""}</td>
-										</tr>
-									))}
-							</tbody>
+							{(() => {
+								// Get visibility settings for current author
+								const currentAuthorSettings = visibleTables.find((t) => t.name === slug)?.values ?? [true, true, true, true, true, true, true];
+
+								return (
+									<>
+										<thead class="border-b-2 mb-4">
+											<tr class="text-left">
+												{currentAuthorSettings[0] && <th>#</th>}
+												{currentAuthorSettings[1] && <th>Pharaoh</th>}
+												{currentAuthorSettings[2] && <th />}
+												{currentAuthorSettings[3] && <th>Greek</th>}
+												{currentAuthorSettings[4] && <th>Transliteration</th>}
+												{currentAuthorSettings[5] && <th>Reign</th>}
+												{currentAuthorSettings[6] && <th>Description</th>}
+											</tr>
+										</thead>
+										<tbody>
+											{dynGroups[dyn]
+												.slice()
+												.sort((a, b) => a.ordna - b.ordna)
+												.map((item) => (
+													<tr>
+														{currentAuthorSettings[0] && <td class="px-2 py-1">{item.ordna}</td>}
+														{currentAuthorSettings[1] && (
+															<td class="px-2 py-1">
+																{(() => {
+																	const phEntry = faraos.find((ph) => ph.no === String(item.ph));
+																	if (phEntry) {
+																		if (phEntry.no === "888") {
+																			return " ";
+																		}
+																		if (phEntry.no === "999") {
+																			return "—";
+																		}
+																		// Use slug from pharaohs.json if available, else generate from name
+																		const slug =
+																			phEntry.slug ||
+																			phEntry.name
+																				.toLowerCase()
+																				.replace(/[^a-z0-9]+/g, "-")
+																				.replace(/^-+|-+$/g, "");
+																		return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
+																	} else {
+																		return item.ph;
+																	}
+																})()}
+															</td>
+														)}
+														{currentAuthorSettings[2] && <td class="px-2 py-1">{item.ch}</td>}
+														{currentAuthorSettings[3] && (
+															<td class="px-2 py-1">
+																<span lang="grc">{item.greek}</span>
+															</td>
+														)}
+														{currentAuthorSettings[4] && <td class="px-2 py-1">{item.tlit}</td>}
+														{currentAuthorSettings[5] && <td class="px-2 py-1">{item.reign}</td>}
+														{currentAuthorSettings[6] && <td class="px-2 py-1">{item.descr ?? ""}</td>}
+													</tr>
+												))}
+										</tbody>
+									</>
+								);
+							})()}
 						</table>
 					</div>
 				</div>
 			))
 		}
 	</section>
-
-	{
-		author.bibliography && author.bibliography.length > 0 && (
-			<section class="mt-12">
-				<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
-				<ul class="list-none list-inside space-y-2">
-					{author.bibliography.map((title) => (
-						<li>{title}</li>
-					))}
-				</ul>
-			</section>
-		)
-	}
 </Layout>
+
+{
+	author.bibliography && author.bibliography.length > 0 && (
+		<section class="mt-12">
+			<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
+			<ul class="list-none list-inside space-y-2">
+				{author.bibliography.map((title) => (
+					<li>{title}</li>
+				))}
+			</ul>
+		</section>
+	)
+}
 
 <style>
 	td {
