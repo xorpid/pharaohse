@@ -44,6 +44,17 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="generator" content={Astro.generator} />
 	<meta name="color-scheme" content="light dark" />
 	<title>{resolvedTitle} | {sajt}</title>
+
+	<script is:raw>
+		(function () {
+			const saved = localStorage.getItem("themeMode");
+			const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+			if (saved === "dark" || (saved === null && prefersDark)) {
+				document.documentElement.classList.add("dark");
+			}
+		})();
+	</script>
+
 	<!-- <ViewTransitions /> -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={resolvedTitle} />
@@ -71,13 +82,4 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	/> -->
 	<link href={fonts} rel="stylesheet" />
 	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
-	<script>
-		(function () {
-			const saved = localStorage.getItem("themeMode");
-			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-			if (saved === "dark" || (saved === null && prefersDark)) {
-				document.documentElement.classList.add("dark");
-			}
-		})();
-	</script>
 </head>
