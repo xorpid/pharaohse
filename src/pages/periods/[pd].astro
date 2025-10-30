@@ -1,6 +1,6 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import periods from "@/data/periods.json";
+import Layout from "@layouts/Layout.astro";
+import periods from "@data/periods.json";
 
 /******************************************** 
 You can opt-out of the default rendering 
@@ -71,7 +71,7 @@ export async function getStaticPaths() {
 }
 
 const { title, id } = Astro.props;
-const newInfo = `<p class="my-12 p-4 border rounded-xl text-sm shadow-2xl w-1/2 mx-auto leading-6 secondary bg-light dark:dark-bg-light text-center">The order of Egyptian pharaohs is always subject to change, as new discoveries may alter the accepted order. This applies to all Egyptian dynasties.</p><img class="opacity-25 my-6 w-2/3 mx-auto" src="/svg/fl.svg" alt="fl" />`;
+const newInfo = `<p class="my-12 p-4 border rounded-xl text-sm shadow-xl w-1/2 mx-auto leading-6 secondary bg-light dark:dark-bg-light text-center">The order of Egyptian pharaohs is always subject to change, as new discoveries may alter the accepted order. This applies to all Egyptian dynasties.</p><img class="opacity-25 my-6 w-2/3 mx-auto" src="/svg/fl.svg" alt="fl" />`;
 var t = " ";
 var tt = t + title;
 var ut: string, dyns: string, dynNr: number;
@@ -86,7 +86,7 @@ if (id == 1) {
 	ut = `<p>The Early Dynastic Period of Egypt immediately follows the unification of Lower and Upper Egypt c. 3100 BC. It is generally include the first two dynasties, lasting from the Protodynastic Period of Egypt until about 2686 BCE, or the beginning of the <a href="/periods/old-kingdom">Old Kingdom</a>.</p>
 		${newInfo}
 		<h2 class="text-center py-3">Predynastic kings</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 			<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 			<tr><td>1</td><td><a href="/pharaohs/Seka">Seka</a></td><td><em>Hsekiu</em></td><td></td></tr>
@@ -100,7 +100,7 @@ if (id == 1) {
 		</div>
 		
 		<h2 class="text-center py-3">Dynasty I</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Narmer">Narmer</a></td><td><em>Menes</em></td><td>2900–</td></tr>
@@ -115,7 +115,7 @@ if (id == 1) {
 		</div>
 		
 		<h2 class="text-center py-3">Dynasty II</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Hotepsekhemwy">Hotepsekhemwy</a></td><td><em>Hetepsekhemwy, Hotepsekhemui</em></td><td>2730–?</td></tr>
@@ -141,7 +141,7 @@ if (id == 2) {
 		</p>
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty III</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Nebka">Nebka</a></td><td><em>Hen Nekht (not in use anymore)</em></td><td></td></tr>
@@ -156,7 +156,7 @@ if (id == 2) {
 		</div>
 		
 		<h2 class="text-center py-3">Dynasty IV</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Sneferu">Sneferu</a></td><td><em>Snefru, Snofru</em></td><td>2543&ndash;2510</td></tr>
@@ -172,7 +172,7 @@ if (id == 2) {
 		</div>
 		
 		<h2 class="text-center py-3">Dynasty V</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Userkaf">Userkaf</a></td><td><em></em></td><td>2435&ndash;2429</td></tr>
@@ -186,7 +186,7 @@ if (id == 2) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty VI</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Teti">Teti</a></td><td><em></em></td><td>2305&ndash;2279</td></tr>
@@ -261,7 +261,7 @@ if (id == 3) {
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty VII</h2><div class="text-center pt-3 pb-1">There is no evidence of a seventh dynasty.</div><div class="text-center py-3 pb-5">Africanus wrote that 70 kings ruled for 70 days,<br>while Eusebius wrote that 5 kings of ruled for 75 days.</div>
 		<h2 class="text-center py-3">Dynasty VIII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Netjerikara">Netjerikara</a></td><td><em>Netjerikare, Nitocris</em></td><td></td></tr>
@@ -283,7 +283,7 @@ if (id == 3) {
 		<tr><td>17</td><td><a href="/pharaohs/Neferirkara-II">Neferirkara II</a></td><td><em>Neferirkare II</em></td><td></td></tr>
 		</table>
 		</div>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<h2 class="text-center py-3 col-12">Dynasty IX</h2>
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
@@ -296,7 +296,7 @@ if (id == 3) {
 		</div>
 
 		<h2 class="text-center py-3">Dynasty X</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Nebkaura-Khety-IV">Nebkaura Khety IV</a></td><td><em>Nebkaure Khety IV, Khety V</em></td><td>between 2160 and 2130</td></tr>
@@ -320,7 +320,7 @@ if (id == 4) {
 		<p>Around 1780 BCE, the immigrant Hyksos had amassed wealth and power in Lower Egypt, ultimately resulting in the <a href="/periods/second-intermediate-period">Second Intermediate Period</a>.</p>
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty XI</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead><tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Mentuhotep-I">Mentuhotep I</a></td><td><em>Mentuhotep-aa</em></td><td></td></tr>
 		<tr><td>2</td><td><a href="/pharaohs/Intef-I">Intef I</a></td><td><em>Antef I, Anjotef I, Inyotef I</em></td><td></td></tr>
@@ -333,7 +333,7 @@ if (id == 4) {
 		</div>
 
 		<h2 class="text-center py-3">Dynasty XII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Amenemhat-I">Amenemhat I</a></td><td><em>Amenemhet I</em></td><td>1939&ndash;1910</td></tr>
@@ -355,7 +355,7 @@ if (id == 5) {
 		<p>The Hyksos were driven out of Egypt by Ahmose I and the Two Lands united once again, marking the beginning of the <a href="/periods/new-kingdom">New Kingdom</a>.</p>
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty XIII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Sobekhotep-I">Sobekhotep I</a></td><td><em>Sekhemre Khutawy Sobekhotep</em></td><td>1803&ndash;1800</td></tr>
@@ -408,7 +408,7 @@ if (id == 5) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XIV</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Yakbim">Yakbim</a></td><td><em></em></td><td>1805&ndash;1780</td></tr>
@@ -454,7 +454,7 @@ if (id == 5) {
 		</div>
 		
 		<h2 class="text-center py-3">Dynasty XV</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Salitis">Salitis</a></td><td><em></em></td><td></td></tr>
@@ -470,7 +470,7 @@ if (id == 5) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XVI</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>2</td><td><a href="/pharaohs/Djehuty">Djehuty</a></td><td><em></em></td><td>1649&ndash;1648</td></tr>
@@ -496,7 +496,7 @@ if (id == 5) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XVII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Rahotep">Rahotep</a></td><td><em>Rehotep</em></td><td>1580&ndash;1576</td></tr>
@@ -511,7 +511,7 @@ if (id == 5) {
 		</table>
 		</div>
 		<h2 class="text-center py-3 col-12">Abydos or Thinite Dynasty</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Senebkay">Senebkay</a></td><td><em></em></td><td></td></tr>
@@ -529,7 +529,7 @@ if (id == 6) {
 		<p>Finally, the weak Ramesside pharaohs and a weak central government was destroyed when the powerful priests of Amun usurped the throne, ushering in the <a href="/periods/third-intermediate-period">Third Intermediate Period</a>.</p>
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty XVIII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Ahmose-I">Ahmose I</a></td><td><em>Amasis, Amosis</em></td><td>1550&ndash;1525</td></tr>
@@ -550,7 +550,7 @@ if (id == 6) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XIX</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Ramesses-I">Ramesses I</a></td><td><em>Ramses I</em></td><td>1292&ndash;1290</td></tr>
@@ -564,7 +564,7 @@ if (id == 6) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XX</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Setnakht">Setnakht</a></td><td><em>Setnakhte</em></td><td>1190&ndash;1186</td></tr>
@@ -588,7 +588,7 @@ if (id == 7) {
 		<p>After being weakened by the Assyrians in the preceding century, the Persian invasion in 525 BCE ended Egyptian rule the <a href="/periods/late-period">Late period</a>.</p>
 		${newInfo}
 		<h2 class="text-center py-3">Dynasty XXI</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Smendes-I">Smendes I</a></td><td><em></em></td><td>1077&ndash;1051</td></tr>
@@ -601,7 +601,7 @@ if (id == 7) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Shoshenq-I">Shoshenq I</a></td><td><em>Sheshonq I, Sheshonk I</em></td><td>943&ndash;922</td></tr>
@@ -619,7 +619,7 @@ if (id == 7) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXIII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Takelot-II">Takelot II</a></td><td><em></em></td><td>840&ndash;815</td></tr>
@@ -632,7 +632,7 @@ if (id == 7) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXIV</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Tafnakht">Tafnakht</a></td><td><em></em></td><td></td></tr>
@@ -646,7 +646,7 @@ if (id == 7) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXVI</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaoh/Necho-I">Necho I</a></td><td><em>Nekao I</em></td><td></td></tr>
@@ -666,7 +666,7 @@ if (id == 8) {
 		${newInfo}
 		<h2 class="text-center pt-3">Dynasty XXVII</h2>
 		<p class="text-lg text-center font-serif pb-3">First Persian satrapy</p>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Cambyses-II">Cambyses II</a></td><td></td><td>525&ndash;522</td></tr>
@@ -678,14 +678,14 @@ if (id == 8) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXVIII</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Amyrtaeus">Amyrtaeus</a></td><td></td><td>404&ndash;399</td></tr>
 		</table>
 		</div>
 		<h2 class="text-center py-3 col-12">Dynasty XXIX</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Neferites-I">Neferites I</a></td><td></td><td>398&ndash;393</td></tr>
@@ -696,7 +696,7 @@ if (id == 8) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Dynasty XXX</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Nectanebo-I">Nectanebo I</a></td><td></td><td>380&ndash;362</td></tr>
@@ -707,7 +707,7 @@ if (id == 8) {
 		<h3 class="mt-10 mb-20 text-center shine">Here ends the native Egyptian pharaohs.</h3>
 		<h2 class="text-center py-3">Dynasty XXXI</h2>
 		<p class="text-lg text-center font-serif pb-3">Second Persian satrapy</p>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Artaxerxes-III">Artaxerxes III</a></td><td></td><td>343&ndash;338</td></tr>
@@ -716,7 +716,7 @@ if (id == 8) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Argead Dynasty</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Alexander-the-Great">Alexander the Great</a></d><td></td><td>332&ndash;323</td></tr>
@@ -725,7 +725,7 @@ if (id == 8) {
 		</table>
 		</div>
 		<h2 class="text-center py-3">Ptolemaic Dynasty</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table><thead>
 		<tr><th>#</th><th>Pharaoh</th><th>Alternate names</th><th>Reign (BC)</th></tr></thead>
 		<tr><td>1</td><td><a href="/pharaohs/Ptolemy-I">Ptolemy I</a></td><td><em>Ptolemaios Soter</em></td><td>305&ndash;285</td></tr>
@@ -752,7 +752,7 @@ if (id == 8) {
 if (id == 9) {
 	ut = `Egypt became a province of the Roman Empire after <b>Octavian</b> (Augustus) defeated Cleopatra in 30 BCE. They are included here because locally, the Emperors continued the use of hieroglyphics for another 300 years, until it finally stopped as the knowledge was eventually lost.</p>
 		<h2 class="text-center py-3">Roman Emperors</h2>
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead>
 		<tr><th>#</th><th>Emperor</th><th>Latin names</th><th>Reign (CE)</th></tr></thead>
@@ -794,7 +794,7 @@ if (id == 10) {
 	ut = `
 		<p>History is full of fascinating mysteries, and ancient Egypt has its fair share. Among them are the unplaceable pharaohs - rulers whose reigns and identities remain shrouded in mystery. Whether controversial or completely unknown, archaeologists and historians alike tries to unlock their secrets.</p>
 		${newInfo}
-		<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+		<div class="relative my-10 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 		<table>
 		<thead><tr><th>#</th><th>King</th><th>Also known as</th><th>Remarks</th></tr></head>
 		<tr><td>1</td><td><a href="/pharaohs/Anather">Anather</a></td><td>-</td><td>Contemporary with Dynasty XII?</td></tr>

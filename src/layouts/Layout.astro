@@ -34,6 +34,7 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 			<div>
 				<article class="w-full px-4">
 					<slot />
+					<div id="references"><h2 class="py-3">References</h2></div>
 					<div class="py-10 my-5 print:hidden" aria-hidden="true">
 						<img
 							src="/svg/thoth.svg"
@@ -60,3 +61,83 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 		<Footer />
 	</body>
 </html>
+
+<script>
+	document.querySelectorAll("[popovertarget]").forEach((trigger) => {
+		const targetId = trigger.getAttribute("popovertarget");
+		const popover = document.getElementById(targetId);
+
+		if (!popover) return;
+
+		let timeout;
+
+		trigger.addEventListener("mouseenter", () => {
+			timeout = setTimeout(() => popover.showPopover(), 50);
+		});
+
+		trigger.addEventListener("mouseleave", () => {
+			clearTimeout(timeout);
+			popover.hidePopover();
+		});
+
+		// Optional: keep popover visible when hovering over it
+		popover.addEventListener("mouseenter", () => clearTimeout(timeout));
+		popover.addEventListener("mouseleave", () => popover.hidePopover());
+	});
+
+	// Aggregate popover contents into the #references container (if present)
+	// Behaviour: build an ordered list (<ol>) in #references, one <li> per unique popover id
+	// Removes a "<p>1</p>" when present so list numbering is handled by <ol>.
+	document.addEventListener("DOMContentLoaded", () => {
+		const referencesContainer = document.getElementById("references");
+		if (!referencesContainer) return;
+
+		// Create or reuse an ordered list for references
+		let ol = referencesContainer.querySelector("ol.references-list");
+		if (!ol) {
+			ol = document.createElement("ol");
+			ol.className = "references-list list-decimal ml-6 my-0 columns-2 gap-8 break-inside-avoid align-top text-xs leading-relaxed";
+			referencesContainer.appendChild(ol);
+		} else {
+			ol.innerHTML = "";
+		}
+
+		const added = new Set();
+		document.querySelectorAll("[popovertarget]").forEach((trigger) => {
+			const targetId = trigger.getAttribute("popovertarget");
+			if (!targetId || added.has(targetId)) return;
+			const popover = document.getElementById(targetId);
+			if (!popover) return;
+
+			// Parse popover content into a temporary element so we can remove a leading numeric <p>
+			const temp = document.createElement("div");
+			temp.innerHTML = popover.innerHTML || "";
+
+			const firstEl = temp.firstElementChild;
+			if (firstEl && firstEl.tagName.toLowerCase() === "p") {
+				const txt = (firstEl.textContent || "").trim();
+				if (/^\d+$/.test(txt)) {
+					// remove that numeric paragraph
+					temp.removeChild(firstEl);
+				}
+			}
+
+			const li = document.createElement("li");
+			li.className = "reference-item mb-2";
+			li.id = `ref-${targetId}`;
+			li.innerHTML = temp.innerHTML.trim();
+
+			ol.appendChild(li);
+			added.add(targetId);
+		});
+
+		// If nothing was added, remove the empty list and hide the references container
+		if (added.size === 0) {
+			if (ol && ol.parentNode) ol.remove();
+			referencesContainer.style.display = "none";
+		} else {
+			// ensure visible when there are references
+			referencesContainer.style.display = "";
+		}
+	});
+</script>

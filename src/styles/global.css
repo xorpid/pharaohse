@@ -44,7 +44,7 @@
 	--highlight: var(--color-orange-950);
 	--border: var(--color-stone-300);
 	--transliteration: var(--color-blue-900);
-	--greek: var(--color-emerald-800);
+	--greek: var(--color-fuchsia-900);
 	--armenian: var(--color-yellow-800);
 	--popover: var(--color-red-700);
 	--summ: var(--color-yellow-100);
@@ -66,7 +66,7 @@
 	--highlight: var(--color-amber-700);
 	--border: var(--color-neutral-700);
 	--transliteration: var(--color-orange-300);
-	--greek: var(--color-emerald-400);
+	--greek: var(--color-emerald-200);
 	--armenian: var(--color-yellow-400);
 	--popover: var(--color-emerald-500);
 	--summ: var(--color-yellow-800);
@@ -238,6 +238,7 @@
 		font-family: var(--font-tlit);
 		font-style: italic;
 		letter-spacing: 0.08em;
+		text-shadow: 0 0 10px --alpha(var(--transliteration) / 0.25), 0 0 20px --alpha(var(--transliteration) / 0.25);
 	}
 
 	.lead {
@@ -260,6 +261,14 @@
 	.dim,
 	.bibliography {
 		color: var(--dim);
+	}
+	#biblio {
+		color: var(--dim);
+		margin-block: calc(var(--spacing) * 4);
+		li {
+			line-height: var(--leading-normal);
+			margin-bottom: 0 !important;
+		}
 	}
 	figcaption {
 		text-align: center;
@@ -302,6 +311,7 @@
 	.gr {
 		font-family: var(--sans) !important;
 		color: var(--greek);
+		text-shadow: 0 0 10px --alpha(var(--greek) / 0.25), 0 0 15px --alpha(var(--greek) / 0.15);
 	}
 
 	:lang(xcl),
@@ -375,7 +385,7 @@
 	}
 	.according {
 		--tw-border-opacity: 1;
-		color: var(--highlight);
+		color: var(--primary);
 		border-bottom-width: 1px;
 		border-color: var(--border);
 		text-align: center;
@@ -409,6 +419,7 @@
 		/* color: --alpha(var(--color-lime-300) / 80%); */
 	}
 	[popover] {
+		position: fixed;
 		width: fit-content;
 		max-width: clamp(20rem, 12.727rem + 36.36vw, 40rem);
 		height: fit-content;
@@ -419,19 +430,19 @@
 		border-radius: 10px;
 		margin: auto;
 		font-size: 90%;
-		position: fixed;
 		inset: 0;
 		overflow: auto;
+		transform-origin: top center;
 	}
 	[popover] p {
 		margin-block: 0 calc(var(--spacing) * 2);
-		color: var(--secondary);
+		color: var(--popover);
 		font-weight: var(--font-weight-black);
 		font-size: var(--text-xl) !important;
 	}
-	[popover]::backdrop {
+	/* [popover]::backdrop {
 		background: #00000080;
-	}
+	} */
 	[popovertarget]:hover,
 	[popovertarget]:focus {
 		color: var(--tx);
@@ -442,7 +453,7 @@
 	[popover]:popover-open {
 		opacity: 1;
 		box-shadow: var(--shadow-3xl);
-		animation: show-popover 0.3s ease-out;
+		animation: show-popover 0.125s ease-out;
 		text-align: left;
 	}
 
