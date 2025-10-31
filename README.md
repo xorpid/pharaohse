@@ -1,110 +1,102 @@
+# Ancient Egypt Digital Archive
+
+A **modern, fast, and scholarly** web archive of **Ancient Egyptian history** — built with **Astro**, **TypeScript**, **Tailwind CSS**, and **Content Collections**.
+
+Explore **pharaohs**, **dynasties**, **king lists**, **periods**, **ancient authors**, and **academic resources** in a clean, accessible, and fully responsive interface.
+
+[Live Demo](#) | [Documentation](#) | [Contribute](#)
+
+---
+
+## Features
+
+- **Static Site Generation** – Blazing fast with Astro
+- **Dynamic Routes** – `[slug].astro`, `[id].md`, `[king].astro`
+- **Content Collections** – Type-safe Markdown & JSON
+- **Dark Mode** – Toggle with `localStorage`
+- **SEO Optimized** – Open Graph, JSON-LD, sitemap
+- **PDF & Media Library** – Books, SVGs, images
+- **Responsive Design** – Mobile-first with Tailwind
+- **Interactive Elements** – Filters, galleries, timelines
+
+---
+
 # Modernizing and optimizing the code
 
 Starting as a number of HTML pages, it slowly grew into a PHP site with a MySQL database.
-Over the years, this became too unwieldy, and evolved into spaghetti code.
+Over the years, this became too unwieldy, and evolved into a monstrosity of spaghetti code.
 After mucking about with many frameworks like Bootstrap and Foundation, it landed on Astro, which seems to be the best fit so far.
 However, the code is quite fragmented and it is starting to become unwieldy once again.
 
-This time I will be using AI to plan the structure to streamline and make it easy to maintain and update. As it stands, it is a mess when you need to update some things.
+It is not easy to maintain and updates are a pain. So, this is hopefully the solution. Who knows?
 
 # Project Structure
 
 ```
-
-“	&ldquo;		Left double quotation mark					Alt + 0147
-”	&rdquo;		Right double quotation mark					Alt + 0148
-
-‘	&lsquo;		Left single quotation mark					Alt + 0145
-’	&rsquo;		Right single quotation mark					Alt + 0146
-
-«	&laquo;		Double left angle quotation mark			Alt + 0174
-»	&raquo;		Double right-pointing angle quotation mark	Alt + 0175
-
-‹	&lsaquo;	Single left-pointing angle quotation mark	Alt + 0139
-›	&rsaquo;	Single right-pointing angle quotation mark	Alt + 0155
-```
-
-```
 root/
-├── public/								# Static assets
-│	├── favicon.png 					# Website favicon
-│	└── images/ 						# Images for pharaohs, artifacts, etc.
-├── src/								# Source code
-│	├── content.config.ts				# Content Collections config
-│	├── components/						# Reusable Astro components
-│	│	├── Footer.astro				# Footer with links and contact info
-│	│	└── Header.astro				# Rendering the navigation
-│	├── layouts/						# Page layouts
-│	│	└── Layout.astro				# Layout for pages
-│	├── pages/							# Routes (Astro pages)
-│	│	├── kinglists/					#
-│	│	│	└── [kinglist].astro		# Dynamic route for specific kinglist
-│	│	├── pharaohs/
-│	│	│	├── index.astro				# Pharaohs overview
-│	│	│	└── [pharaoh].astro			# Dynamic route for ALL pharaohs, 1 page each
-│	│	├── dynasty/					# Dynasties section
-│	│	│	└── 1.md					# markdown for each dynasty pages 1-30 etc
-│	│	├── resources/
-│	│	│	├── index.astro				# Resources overview
-│	│	│	├── glossary.astro			# Glossary of terms
-│	│	│	└── bibliography.astro		# Scholarly sources
-│	│	├── community/
-│	│	│	├── index.astro				# Community overview
-│	│	│	├── forum.astro				# Forum/messageboard?
-│	│	│	└── blog.astro				# Blog/articles
-│	│	├── index.astro					# Homepage
-│	│	├── about.astro					# About page
-│	│	├── dynasties.astro				# All the dynasties
-│	│	├── kinglists.astro				# Kinglists overview
-│	│	├── pharaohs.astro				# All the known pharaohs listed
-│	│	├── periods.astro				# Egyptian historical periods
-│	│	└── archaeology.astro			# Archaeological evidence
-│	├── scripts/						# JavaScript for interactivity
-│	│	└── scripts.js					# if needed
-│	└── styles/							# CSS/SCSS for styling
-│		 └── global.css					# Gallery styles
-├── astro.config.mjs					# Astro configuration
-├── package.json						# Node.js dependencies
-├── postcss.config.cjs					# PostCSS
-├── tsconfig.json						# TypeScript configuration (if used)
-└── README.md							# Project documentation
-```
-
-## Well well...
-
-```text
-
-Key Points to Prevent Duplicate URLs
-Pharaohs:
-Data: src/content/pharaohs/pharaohs.json contains all ~300 pharaohs, with fields like id, name, titles (Horus name, Nebty name, etc.), and more.
-
-Route: src/pages/pharaohs/[pharaoh].astro generates URLs (e.g., /pharaohs/khufu) by querying pharaohs.json via content collections.
-
-No .md Files: Since we’re using JSON, there are no individual khufu.md files, eliminating the risk of duplicate URLs.
-
-Dynamic Routes: The getStaticPaths function in [pharaoh].astro ensures each pharaoh gets exactly one URL based on the id field (e.g., khufu).
-
-Dynasties:
-Data: Markdown files like src/content/dynasties/dynasty_4.md store dynasty content.
-
-Route: src/pages/dynasties/[dynasty].astro generates URLs (e.g., /dynasties/4th-dynasty) using slugs from the Markdown files’ frontmatter or filenames.
-
-No Overlap: Dynasties have distinct URLs (e.g., /dynasties/4th-dynasty) separate from pharaohs (/pharaohs/khufu). No duplicate routes exist.
-
-Articles:
-Data: Markdown files like src/content/articles/women_pharaohs.md store blog content.
-
-Route: src/pages/community/blog.astro (or a dynamic [article].astro) renders articles with URLs like /community/blog/women-pharaohs.
-
-No Overlap: Articles are under /community/blog/, distinct from pharaohs and dynasties.
-
-Kinglists:
-Data: JSON files like src/content/kinglists/turin_kinglist.json.
-
-Route: src/pages/kinglists/[kinglist].astro generates URLs like /kinglists/turin.
-
-No Overlap: Kinglist URLs are unique and separate.
-
-
-
+├── public/									# Static assets (served as-is)
+│	├── favicon.png							# Website favicon
+│	├── pdf/								# PDF documents (books, articles)
+│	├── svg/								# Scalable vector graphics
+│	└── images/								# Images: pharaohs, artifacts, obelisks, etc.
+│
+├── src/									# Source code
+│	├── assets/								# Astro-optimized assets (images, fonts)
+│	│
+│	├── components/							# Reusable UI components
+│	│	├── footer.astro					# Site footer with links & contact
+│	│	├── Head.astro						# Shared <head> metadata & SEO
+│	│	├── ThemeToggle.astro				# Dark/light mode switch
+│	│	└── header.astro					# Navigation bar
+│	│
+│	├── data/								# JSON data files (obelisks, pharaohs, etc.)
+│	│
+│	├── layouts/							# Page templates
+│	│	└── Layout.astro					# Main layout wrapper for all pages
+│	│
+│	├── pages/								# Website routes (Astro + Markdown)
+│	│	├── articles/						# Scholarly articles & resources
+│	│	│	└── index.astro
+│	│	│
+│	│	├── authors/						# Ancient historians & Egyptologists
+│	│	│	├── [slug].astro				# Dynamic author page (e.g., `/authors/manetho`)
+│	│	│	└── index.astro					# List of all authors
+│	│	│
+│	│	├── dynasty/						# Egyptian dynasties
+│	│	│	├── [id].md						# Dynamic Markdown page per dynasty
+│	│	│	└── 1.md, 2.md…					# Individual dynasty pages (1–30+)
+│	│	│
+│	│	├── kinglists/						# Royal canon & king lists
+│	│	│	├── turin/						# Turin King List (papyrus)
+│	│	│	│	├── library/
+│	│	│	│	│	├── books/
+│	│	│	│	│	│	└── [book].astro	# Links to PDFs
+│	│	│	│	│	└── index.astro			# Bibliography
+│	│	│	│	└── [col].astro				# Column-specific views
+│	│	│	├── [slug].astro				# Specific king list (e.g., Abydos, Saqqara)
+│	│	│	└── index.astro					# Overview of all king lists
+│	│	│
+│	│	├── periods/						# Historical periods (OK, MK, NK, etc.)
+│	│	│	├── [pd].astro					# Dynamic period page
+│	│	│	└── index.astro					# All periods overview
+│	│	│
+│	│	├── pharaohs/						# Individual pharaoh profiles
+│	│	│	├── [king].astro				# Dynamic page per ruler (e.g., `/pharaohs/ramesses-ii`)
+│	│	│	└── index.astro					# Full list of pharaohs
+│	│	│
+│	│	├── index.astro						# Homepage
+│	│	├── dynasties.astro					# Complete dynasty timeline
+│	│	└── about.astro						# Project info & credits
+│	│
+│	├── styles/								# Global styles
+│	│	└── global.css						# Base CSS (resets, typography)
+│	│
+│	└── content.config.ts					# Astro Content Collections schema
+│
+├── astro.config.mjs						# Astro build & integration settings
+├── package.json							# Dependencies & scripts
+├── postcss.config.mjs						# PostCSS pipeline
+├── tsconfig.json							# TypeScript configuration
+├── tailwind.config.mjs						# Tailwind CSS design system
+└── README.md								# Project documentation
 ```

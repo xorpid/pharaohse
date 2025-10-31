@@ -1,34 +1,57 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import obelisks from "../data/obelisks.json";
+import farao from "../data/pharaohs.json";
+
 const title = "The Obelisks of Ancient Egypt";
-import Obelisk from "../components/Obelisk.astro";
-let meta1 = "Details about the various obelisks from Ancient Egypt inscribed with hieroglyphs";
-let meta2 = "Egyptian obelisks,inscribed obelisks,ancient obelisks";
+const meta1 = "Details about the various obelisks from Ancient Egypt inscribed with hieroglyphs";
+const meta2 = "Egyptian obelisks,inscribed obelisks,ancient obelisks";
 const bild = "/images/pharaohse-obelisks.webp";
+
+// Helper functions — NO TYPE ANNOTATIONS (Astro doesn't support them here)
+const getImageInfo = (obelisk: any, i: number) => {
+	const imgKey = `image${i + 1}`;
+	const altKey = `img${i + 1}text`;
+	const img = obelisk[imgKey];
+	const alt = obelisk[altKey] ?? obelisk.namn;
+
+	if (!img) return null;
+
+	const thumb = img.replace(/^(\d{2}-\d{2})\.jpg$/, "t$1.webp");
+	return { img, alt, thumb };
+};
+
+const getSource = (obelisk: any, i: number) => {
+	const srcKey = `src${i + 1}`;
+	return obelisk[srcKey] ?? null;
+};
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
 	<section class="page-content">
 		<div class="container">
-			<img src="/obelisks/KIU65535s.webp" class="w-[111px] float-right pl-5" alt="Ob" />
+			<img src="/obelisks/KIU65535s.webp" class="w-[111px] float-right pl-5" alt="Obelisk icon" />
+
 			<p>
-				Obelisks (from Ancient Greek <gr>ὀβελίσκος</gr> &nbsp;<small>obeliskos</small>), meaning "pointed pillar" are tall four-sided monuments with a
-				pyramid-like shape or pyramidion at the apex, quarried in one piece from a single stone. Obelisks were prominently placed in pairs at the
-				entrance of temples by the Ancient Egyptians. The ancient Egyptian name was Tekhenu. Several ancient Egyptian obelisks are known to have
-				survived, but are dispersed throughout the world, only a few remain in Egypt. The obelisks described here are only those inscribed with
-				hieroglyphs. The few ancient Egyptian uninscribed obelisks are not included; including the Vatican obelisk brought to Rome by Emperor
-				Caligula. Several fragments from broken obelisks remain, but since they are—at best—incomplete, are not included here.
+				Obelisks (from Ancient Greek <gr>ὀβελίσκος</gr>
+				<small>obeliskos</small>), meaning "pointed pillar" are tall four-sided monuments with a pyramid-like shape or pyramidion at the apex,
+				quarried in one piece from a single stone. Obelisks were prominently placed in pairs at the entrance of temples by the Ancient Egyptians. The
+				ancient Egyptian name was Tekhenu. Several ancient Egyptian obelisks are known to have survived, but are dispersed throughout the world, only
+				a few remain in Egypt. The obelisks described here are only those inscribed with hieroglyphs. The few ancient Egyptian uninscribed obelisks
+				are not included; including the Vatican obelisk brought to Rome by Emperor Caligula. Several fragments from broken obelisks remain, but since
+				they are—at best—incomplete, are not included here.
 			</p>
+
 			<p>
 				One of the most sacred sites in ancient Egypt was Heliopolis (<tlit>iwnw</tlit>, Iunu) located where the Nile divides into the many rivers
 				forming the Delta, and where it is believed that the gods <i>Ra</i> and <i>Atum</i> first appeared. At the center stood the Temple of the Sun.
-				Occupied since predynastic times and all through ancient Egypts history, this was the most sacred place in the land. The Greeks called it Heliopolis
+				Occupied since predynastic times and all through ancient Egypt's history, this was the most sacred place in the land. The Greeks called it Heliopolis
 				(city of the Sun) and it was much larger than the Karnak Temple Complex at Thebes, but far easier access to plunder of its treasured stone structures.
 				Of the 48 obelisks the Romans shipped back home, at least eight came directly from Heliopolis. According to the Greek historian Strabo, Heliopolis
 				was in ruins by 24 BC. Apart from a single obelisk, nothing of Heliopolis remain today as almost every single bit of masonry left was scavenged
 				as building material first for <i>Fustat</i> and then <i>Cairo</i>.
 			</p>
+
 			<p>
 				In Upper Egypt, the corresponding site was <em>Heliopolis of the South</em>, i.e. Thebes, the city of the god <i>Amun</i>. <a
 					href="/articles/hatshepsut-obelisk">Queen Hatshepsut's obelisk</a
@@ -36,37 +59,106 @@ const bild = "/images/pharaohse-obelisks.webp";
 				Some of these are reconstructed from fragments and not entirely complete.
 			</p>
 
-			<!--
-	
-	Ammianus Marcellinus, Roman Antiquities, Book XVII (17) [Rerum gestarum (Latin: lit. of things accomplished, ie. history)
-	https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/17*.html
-	
-Rerum gestarum 17.4 (By order of Constantius [Constantius II] Augustus an obelisk is set up at Rome in the Circus Maximus; also an account of obelisks and hieroglyphics.)
-
-	The translation of the first line, beginning on the South side, reads as follows:​
-	First Line: 
-		18 "The Sun speaks to King Ramestes. I have granted to thee that thou shouldst with joy rule over the whole earth, thou  p329 whom the Sun loveth — and power­ful Apollo, lover of truth, son of Heron, god-born, creator of the world, whom the Sun hath chosen, the doughty son of Mars, King Ramestes. Unto him the whole earth is made subject through his valour and boldness. King Ramastes, eternal child of the Sun."
-
-	Second Line.
-		19 "Mighty Apollo, seated upon truth, Lord of the Diadem, who hath gloriously honoured Egypt as his peculiar possession, who hath beautified Heliopolis, created the rest of the world, and adorned with manifold honours the Gods erected in Heliopolis — he whom the Sun loveth."
-
-	Third Line.
-		20 "Mighty Apollo, child of the sun, all-radiant, whom the Sun hath chosen and valiant Mars endowed; whose blessings shall endure forever; whom Ammon​24 loveth, as having filled his temple with the good fruits of the date palm; unto whom the Gods have given length of life. Apollo, mighty son of Heron, Ramestes,​25 king of the world, who hath preserved Egypt by conquering other nations; whom the Sun loveth; to whom the Gods have granted length of life; Lord of the world, Ramestes ever-living." 
-
-	West Side, Second Line.
-		21 "The Sun, great God, Lord of Heaven; I have granted to thee life hitherto unforeseen. Apollo the mighty, Lord incomparable of the Diadem, who hath set up statues of the Gods in this kingdom, ruler of Egypt, and he adorned Heliopolis just as he did the Sun himself, Ruler of Heaven; he finished a good work, child of the Sun, the king ever-living."
-
-	Third Line.
-		22 "The God Sun, Lord of Heaven, to Ramastes the king. I have granted to thee the rule and the authority over all men; whom Apollo, lover of truth, Lord of seasons, and Vulcan, father of the Gods, hath chosen for Mars. King all-gladdening, child of the Sun and beloved of the Sun."
-
-	East Side, First Line.
-
-		23 "The great God of Heliopolis, heavenly, mighty Apollo, son of Heron, whom the Sun hath loved, whom the Gods hath honoured, the ruler over all the earth, whom the Sun hath chosen, a king valiant for Mars, whom Ammon loveth, and he that is all-radiant, having set apart the king eternal"; and so on. 
-
- -->
-
 			<div class="grid my-10 gap-4">
-				{obelisks.map((obelisk) => <Obelisk obelisk={obelisk} />)}
+				{
+					obelisks.map((obelisk) => {
+						// Build images safely
+						const images = [];
+						for (let i = 0; i < 8; i++) {
+							const info = getImageInfo(obelisk, i);
+							if (info) images.push(info);
+						}
+
+						// Build sources safely
+						const sources = [];
+						for (let i = 0; i < 8; i++) {
+							const src = getSource(obelisk, i);
+							if (src) sources.push(src);
+						}
+
+						return (
+							<div class="card flex flex-col h-full p-4">
+								<div class="flex flex-row items-start mb-3 gap-4">
+									{obelisk.tumme && (
+										<img src={`/obelisks/${obelisk.tumme}`} alt={obelisk.namn} class="w-32 h-32 object-cover rounded mb-2 shrink-0" />
+									)}
+									<div class="flex-1">
+										<h2 class="text-lg font-bold mb-1">{obelisk.namn}</h2>
+
+										{obelisk.aka && (
+											<div class="text-sm">
+												<span class="font-semibold">Also known as:</span> {obelisk.aka}
+											</div>
+										)}
+
+										{obelisk.plats && (
+											<div class="text-sm mb-1">
+												<span class="font-semibold">Location:</span> {obelisk.plats}
+												{obelisk.GPSx && obelisk.GPSy && (
+													<a
+														href={`https://www.google.com/maps?q=${obelisk.GPSx},${obelisk.GPSy}`}
+														target="_blank"
+														rel="noopener"
+														class="text-red-600 text-xs mt-auto inline-block ml-1"
+													>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="1.5em"
+															height="1.5em"
+															viewBox="0 0 24 24"
+															class="inline align-middle fill-red-700 hover:fill-green-700 hover:scale-150 transition-all ease-in-out duration-300"
+														>
+															<path d="M12 12q.825 0 1.413-.588Q14 10.825 14 10t-.587-1.413Q12.825 8 12 8q-.825 0-1.412.587Q10 9.175 10 10q0 .825.588 1.412Q11.175 12 12 12Zm0 10q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Z" />
+														</svg>
+													</a>
+												)}
+											</div>
+										)}
+
+										{obelisk.provenance && (
+											<div class="text-sm">
+												<span class="font-semibold">Provenance:</span> {obelisk.provenance}
+											</div>
+										)}
+
+										{obelisk.height && (
+											<div class="text-sm">
+												<span class="font-semibold">Height:</span> {obelisk.height} m
+											</div>
+										)}
+
+										{obelisk.inscription && (
+											<div class="text-sm">
+												<span class="font-semibold">Inscription:</span> {obelisk.inscription}
+											</div>
+										)}
+									</div>
+								</div>
+
+								<div class="text-sm mb-2">{obelisk.description}</div>
+
+								{images.length > 0 && (
+									<div class="flex flex-wrap gap-4 justify-center my-2">
+										{images.map((item) => (
+											<a data-fancybox={obelisk.namn} data-caption={item.alt} href={`/obelisks/${item.img}`} target="_blank" rel="noopener">
+												<span class="hidden">image</span>
+												<img src={`/obelisks/${item.thumb}`} alt={item.alt} class="max-w-[120px] rounded shadow" loading="lazy" />
+											</a>
+										))}
+									</div>
+								)}
+
+								{sources.length > 0 && (
+									<div class="mt-4 pt-4 border-t bordercolor">
+										{sources.map((src) => (
+											<div class="text-xs bibliography leading-tight mb-1" set:html={src} />
+										))}
+									</div>
+								)}
+							</div>
+						);
+					})
+				}
 			</div>
 		</div>
 	</section>

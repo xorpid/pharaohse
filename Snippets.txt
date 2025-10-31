@@ -11,3 +11,27 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 
 
 
+	Ammianus Marcellinus, Roman Antiquities, Book XVII (17) [Rerum gestarum (Latin: lit. of things accomplished, ie. history)
+	https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/17*.html
+	
+Rerum gestarum 17.4 (By order of Constantius [Constantius II] Augustus an obelisk is set up at Rome in the Circus Maximus; also an account of obelisks and hieroglyphics.)
+
+	The translation of the first line, beginning on the South side, reads as follows:​
+	First Line: 
+		18 "The Sun speaks to King Ramestes. I have granted to thee that thou shouldst with joy rule over the whole earth, thou  p329 whom the Sun loveth — and power­ful Apollo, lover of truth, son of Heron, god-born, creator of the world, whom the Sun hath chosen, the doughty son of Mars, King Ramestes. Unto him the whole earth is made subject through his valour and boldness. King Ramastes, eternal child of the Sun."
+
+	Second Line.
+		19 "Mighty Apollo, seated upon truth, Lord of the Diadem, who hath gloriously honoured Egypt as his peculiar possession, who hath beautified Heliopolis, created the rest of the world, and adorned with manifold honours the Gods erected in Heliopolis — he whom the Sun loveth."
+
+	Third Line.
+		20 "Mighty Apollo, child of the sun, all-radiant, whom the Sun hath chosen and valiant Mars endowed; whose blessings shall endure forever; whom Ammon​24 loveth, as having filled his temple with the good fruits of the date palm; unto whom the Gods have given length of life. Apollo, mighty son of Heron, Ramestes,​25 king of the world, who hath preserved Egypt by conquering other nations; whom the Sun loveth; to whom the Gods have granted length of life; Lord of the world, Ramestes ever-living." 
+
+	West Side, Second Line.
+		21 "The Sun, great God, Lord of Heaven; I have granted to thee life hitherto unforeseen. Apollo the mighty, Lord incomparable of the Diadem, who hath set up statues of the Gods in this kingdom, ruler of Egypt, and he adorned Heliopolis just as he did the Sun himself, Ruler of Heaven; he finished a good work, child of the Sun, the king ever-living."
+
+	Third Line.
+		22 "The God Sun, Lord of Heaven, to Ramastes the king. I have granted to thee the rule and the authority over all men; whom Apollo, lover of truth, Lord of seasons, and Vulcan, father of the Gods, hath chosen for Mars. King all-gladdening, child of the Sun and beloved of the Sun."
+
+	East Side, First Line.
+
+		23 "The great God of Heliopolis, heavenly, mighty Apollo, son of Heron, whom the Sun hath loved, whom the Gods hath honoured, the ruler over all the earth, whom the Sun hath chosen, a king valiant for Mars, whom Ammon loveth, and he that is all-radiant, having set apart the king eternal"; and so on. 
