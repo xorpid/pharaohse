@@ -1,10 +1,13 @@
-# Ancient Egypt Digital Archive
+# Pharaoh.SE - refurbishing the old dog
 
 A **modern, fast, and scholarly** web archive of **Ancient Egyptian history** — built with **Astro**, **TypeScript**, **Tailwind CSS**, and **Content Collections**.
 
-Explore **pharaohs**, **dynasties**, **king lists**, **periods**, **ancient authors**, and **academic resources** in a clean, accessible, and fully responsive interface.
+The site started out as a number of HTML pages and slowly evolved into a PHP site with a MySQL database.
+Over the years, this became unwieldy and evolved into a monstrosity of spaghetti code.
+After experimenting with frameworks such as Bootstrap and Foundation for years, I finally found Astro.
+However, the code is a mess and needs to be rewritten from scratch. Like everyone else, I will gladly take assistance from the AIs with the more intricate coding. Old man brain hurts!
 
-[Live Demo](#) | [Documentation](#) | [Contribute](#)
+[Live Website](#) | [Contribute](#)
 
 ---
 
@@ -20,15 +23,6 @@ Explore **pharaohs**, **dynasties**, **king lists**, **periods**, **ancient auth
 - **Interactive Elements** – Filters, galleries, timelines
 
 ---
-
-# Modernizing and optimizing the code
-
-Starting as a number of HTML pages, it slowly grew into a PHP site with a MySQL database.
-Over the years, this became too unwieldy, and evolved into a monstrosity of spaghetti code.
-After mucking about with many frameworks like Bootstrap and Foundation, it landed on Astro, which seems to be the best fit so far.
-However, the code is quite fragmented and it is starting to become unwieldy once again.
-
-It is not easy to maintain and updates are a pain. So, this is hopefully the solution. Who knows?
 
 # Project Structure
 
@@ -100,3 +94,12 @@ root/
 ├── tailwind.config.mjs						# Tailwind CSS design system
 └── README.md								# Project documentation
 ```
+
+# TO DO's
+
+There are plenty of things that needs attention.
+
+- **Redirects** from old URLs to the new structure, old: `/pharaoh/Narmer` new: `/pharaohs/Narmer`.
+  There are **_many_** redirects that needs to be determined and fixed
+- Add more here
+- and here
