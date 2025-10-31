@@ -1,11 +1,27 @@
 ---
 import ThemeToggle from "@/components/ThemeToggle.astro";
+const { pathname } = Astro.url;
+const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dark:bg-gray-700" : "");
 ---
 
 <header
 	class="flex justify-between items-center p-6 bg sticky top-0 z-50 border-b-4 border-stone-500 dark:border-neutral-700 shadow-lg shadow-red-500/5 dark:shadow-sky-500/5"
 >
-	<div><a class="text-3xl font-serif" href="/">Website</a></div>
-	<div class="relative">Menu here?</div>
-	<ThemeToggle />
+	<nav class="container mx-auto flex justify-between items-center p-4">
+		<!-- Logo -->
+		<a href="/"><img src="/images/pharaohse.svg" class="logo" alt="" /></a>
+
+		<!-- Primary Menu -->
+		<ul class="hidden md:flex space-x-6">
+			<li aria-hidden="true" class="nav-item"><a href="/pharaohs" class="nav-link">Pharaohs</a></li>
+			<li aria-hidden="true" class="nav-item"><a href="/kinglists" class="nav-link">Kinglists</a></li>
+			<li aria-hidden="true" class="nav-item"><a href="/authors" class="nav-link">Manetho</a></li>
+			<li aria-hidden="true" class="nav-item"><a href="/about" class="nav-link">About</a></li>
+		</ul>
+		<ThemeToggle />
+	</nav>
 </header>
+
+<style>
+	--logo: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(1923%) hue-rotate(28deg) brightness(91%) contrast(101%);
+</style>

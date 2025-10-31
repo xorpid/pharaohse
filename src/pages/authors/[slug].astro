@@ -90,8 +90,8 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 		{
 			dynKeys.map((dyn) => (
 				<div class="mb-12">
-					{dyn !== "99" && <h3 class="text-lg font-bold mb-2">Dynasty {dyn}</h3>}
-					<div class="relative my-10 flex h-full w-full flex-col rounded-xl bg-[light-dark(var(--color-stone-100),var(--color-neutral-800))] text-[light-dark(var(--color-stone-700),var(--color-neutral-300))] p-4 font-sans shadow-md">
+					{dyn !== "99" && <h3 class="text-2xl font-bold mt-8 mb-2 text-center">Dynasty {dyn}</h3>}
+					<div class="relative my-4 mb-2 flex h-full w-full flex-col rounded-xl card p-4 font-sans shadow-md">
 						<table class="min-w-full text-sm">
 							{(() => {
 								// Get visibility settings for current author
@@ -162,21 +162,20 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 				</div>
 			))
 		}
+		{
+			author.bibliography && author.bibliography.length > 0 && (
+				<section class="mt-12">
+					<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
+					<ul class="list-none list-inside space-y-2">
+						{author.bibliography.map((title) => (
+							<li>{title}</li>
+						))}
+					</ul>
+				</section>
+			)
+		}
 	</section>
 </Layout>
-
-{
-	author.bibliography && author.bibliography.length > 0 && (
-		<section class="mt-12">
-			<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
-			<ul class="list-none list-inside space-y-2">
-				{author.bibliography.map((title) => (
-					<li>{title}</li>
-				))}
-			</ul>
-		</section>
-	)
-}
 
 <style>
 	td {

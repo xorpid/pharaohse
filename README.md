@@ -101,5 +101,7 @@ There are plenty of things that needs attention.
 
 - **Redirects** from old URLs to the new structure, old: `/pharaoh/Narmer` new: `/pharaohs/Narmer`.
   There are **_many_** redirects that needs to be determined and fixed
-- Add more here
-- and here
+- Navigation menu, type, links, logo in center? Hamburger? Hover?
+- Footer
+- Obelisks missing Pharaoh link, aka is weird
+- Dynasties page with 0 kings should not show the table but a text

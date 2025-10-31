@@ -7,7 +7,8 @@
 
 /* Global settings like color palette, spacing, typography, breakpoints, etc. */
 @theme {
-	--font-sans: "Instrument Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
+	--font-sans:
+		"Instrument Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
 		"Noto Sans", "sans-serif";
 	--font-serif: "Merriweather", "Harding", "ui-serif", "Cambria", "Georgia", "Times New Roman", "Times", "serif";
 	--font-mono: "Courier New", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Liberation Mono", "Consolas", "monospace";
@@ -50,6 +51,8 @@
 	--summ: var(--color-yellow-100);
 	--head: var(--color-blue-100);
 	--sect: var(--color-emerald-100);
+	--logo: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(1923%) hue-rotate(28deg) brightness(91%) contrast(101%);
+	--glow: #565757;
 }
 .dark {
 	--bg-light: var(--color-neutral-800);
@@ -63,7 +66,7 @@
 	--link-visited: var(--color-amber-100);
 	--primary: var(--color-amber-100);
 	--secondary: var(--color-amber-50);
-	--highlight: var(--color-amber-700);
+	--highlight: var(--color-yellow-400);
 	--border: var(--color-neutral-700);
 	--transliteration: var(--color-orange-300);
 	--greek: var(--color-emerald-200);
@@ -72,6 +75,8 @@
 	--summ: var(--color-yellow-800);
 	--head: var(--color-blue-900);
 	--sect: var(--color-emerald-900);
+	--logo: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(4114%) hue-rotate(328deg) brightness(102%) contrast(102%);
+	--glow: #c8c845;
 }
 /* Add your own default base styles for specific HTML elements */
 @layer base {
@@ -133,7 +138,7 @@
 		font-size: var(--text-base);
 		border-collapse: collapse;
 		width: 100%;
-		margin-block: calc(var(--spacing) * 10);
+		margin-block: calc(var(--spacing) * 5);
 		th {
 			text-align: left;
 			border-bottom: 4px solid var(--border);
@@ -228,7 +233,6 @@
 		border-radius: var(--radius-lg);
 		padding: calc(var(--spacing) * 4) /* 1rem = 16px */;
 		box-shadow: var(--shadow-xl);
-		/* border: 1px solid light-dark(var(--bg-dark), var(--dark-bg-dark)); */
 	}
 
 	/* Turin stuff */
@@ -238,7 +242,9 @@
 		font-family: var(--font-tlit);
 		font-style: italic;
 		letter-spacing: 0.08em;
-		text-shadow: 0 0 10px --alpha(var(--transliteration) / 0.25), 0 0 20px --alpha(var(--transliteration) / 0.25);
+		text-shadow:
+			0 0 10px --alpha(var(--transliteration) / 0.25),
+			0 0 20px --alpha(var(--transliteration) / 0.25);
 	}
 
 	.lead {
@@ -311,7 +317,9 @@
 	.gr {
 		font-family: var(--sans) !important;
 		color: var(--greek);
-		text-shadow: 0 0 10px --alpha(var(--greek) / 0.25), 0 0 15px --alpha(var(--greek) / 0.15);
+		text-shadow:
+			0 0 10px --alpha(var(--greek) / 0.25),
+			0 0 15px --alpha(var(--greek) / 0.15);
 	}
 
 	:lang(xcl),
@@ -493,5 +501,23 @@
 		/* Missing ink  */
 		color: var(--dim);
 		font-weight: var(--font-weight-light);
+	}
+	img.logo {
+		width: 200px;
+		height: auto;
+		transition: width 0.3s ease;
+		filter: var(--logo);
+	}
+
+	header.scrolled img.logo {
+		width: 240px;
+	}
+
+	:lang(cop) {
+		color: var(--highlight);
+		text-shadow: 0 0 4px var(--glow);
+	}
+	.dark :lang(cop) {
+		text-shadow: 0 0 6px var(--glow);
 	}
 }

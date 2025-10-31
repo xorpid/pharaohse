@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import obelisks from "../data/obelisks.json";
-import farao from "../data/pharaohs.json";
+import Layout from "@layouts/Layout.astro";
+import obelisks from "@data/obelisks.json";
+import farao from "@data/pharaohs.json";
 
 const title = "The Obelisks of Ancient Egypt";
 const meta1 = "Details about the various obelisks from Ancient Egypt inscribed with hieroglyphs";
@@ -135,7 +135,7 @@ const getSource = (obelisk: any, i: number) => {
 									</div>
 								</div>
 
-								<div class="text-sm mb-2">{obelisk.description}</div>
+								<div class="text-sm mb-2" set:html={obelisk.description} />
 
 								{images.length > 0 && (
 									<div class="flex flex-wrap gap-4 justify-center my-2">

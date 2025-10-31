@@ -1,7 +1,7 @@
 ---
 import "@/styles/global.css";
 import Head from "@/components/Head.astro";
-import pharaohs from "../data/pharaohs.json";
+import pharaohs from "@data/pharaohs.json";
 import Header from "@/components/header.astro";
 import Footer from "@/components/footer.astro";
 
@@ -65,11 +65,12 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 <script>
 	document.querySelectorAll("[popovertarget]").forEach((trigger) => {
 		const targetId = trigger.getAttribute("popovertarget");
+		if (!targetId) return;
 		const popover = document.getElementById(targetId);
 
 		if (!popover) return;
 
-		let timeout;
+		let timeout: ReturnType<typeof setTimeout> | undefined;
 
 		trigger.addEventListener("mouseenter", () => {
 			timeout = setTimeout(() => popover.showPopover(), 50);
@@ -96,7 +97,7 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 		let ol = referencesContainer.querySelector("ol.references-list");
 		if (!ol) {
 			ol = document.createElement("ol");
-			ol.className = "references-list list-decimal ml-6 my-0 columns-2 gap-8 break-inside-avoid align-top text-xs leading-relaxed";
+			ol.className = "references-list list-decimal ml-6 my-0 columns sm:columns-2 gap-8 break-inside-avoid align-top text-xs leading-relaxed";
 			referencesContainer.appendChild(ol);
 		} else {
 			ol.innerHTML = "";
