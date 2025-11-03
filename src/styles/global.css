@@ -261,6 +261,15 @@
 	.bg-dark {
 		background-color: var(--bg-dark);
 	}
+	.bg-primary {
+		background-color: var(--primary);
+	}
+	.bg-secondary {
+		background-color: var(--secondary);
+	}
+	.bg-highlight {
+		background-color: var(--highlight);
+	}
 	.tx {
 		color: var(--tx);
 	}
@@ -519,5 +528,18 @@
 	}
 	.dark :lang(cop) {
 		text-shadow: 0 0 6px var(--glow);
+	}
+	.g2 {
+		--g2: linear-gradient(180deg, #170b05 0%, #59311d 50%, #9a6a52 100%);
+		background-image: var(--g2);
+	}
+	.dot {
+		position: absolute;
+		background-color: var(--border);
+		width: calc(var(--spacing) * 5);
+		height: calc(var(--spacing) * 5);
+		border-radius: calc(infinity * 1px);
+		margin-top: calc(var(--spacing) * 1);
+		left: calc(var(--spacing) * -2.5) /* -0.625rem = -10px */;
 	}
 }

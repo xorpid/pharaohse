@@ -4,24 +4,115 @@ const { pathname } = Astro.url;
 const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dark:bg-gray-700" : "");
 ---
 
-<header
-	class="flex justify-between items-center p-6 bg sticky top-0 z-50 border-b-4 border-stone-500 dark:border-neutral-700 shadow-lg shadow-red-500/5 dark:shadow-sky-500/5"
->
-	<nav class="container mx-auto flex justify-between items-center p-4">
-		<!-- Logo -->
-		<a href="/"><img src="/images/pharaohse.svg" class="logo" alt="" /></a>
+<header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-red-500/5 dark:shadow-sky-500/5 bg">
+	<div class="container mx-auto flex items-center justify-between p-4">
+		<!-- Left: navigation -->
+		<nav class="flex-1">
+			<!-- desktop inline removed — hamburger will be used on all sizes -->
 
-		<!-- Primary Menu -->
-		<ul class="hidden md:flex space-x-6">
-			<li aria-hidden="true" class="nav-item"><a href="/pharaohs" class="nav-link">Pharaohs</a></li>
-			<li aria-hidden="true" class="nav-item"><a href="/kinglists" class="nav-link">Kinglists</a></li>
-			<li aria-hidden="true" class="nav-item"><a href="/authors" class="nav-link">Manetho</a></li>
-			<li aria-hidden="true" class="nav-item"><a href="/about" class="nav-link">About</a></li>
-		</ul>
-		<ThemeToggle />
-	</nav>
+			<!-- Mobile: hamburger -->
+			<button
+				id="nav-toggle"
+				aria-controls="mobile-nav"
+				aria-expanded="false"
+				class="inline-flex items-center p-2 rounded hover:bg-stone-100 dark:hover:bg-neutral-800"
+			>
+				<span class="sr-only">Open navigation</span>
+				<!-- simple hamburger icon -->
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg
+				>
+			</button>
+
+			<!-- Mobile off-canvas nav (hidden by default) -->
+			<div
+				id="mobile-nav"
+				class="fixed inset-y-0 left-0 w-full bg-light dark:bg-dark shadow-lg transform -translate-x-full transition-transform duration-200 ease-in-out z-50"
+			>
+				<div class="p-4 border-b border-stone-200 dark:border-neutral-800 flex items-center justify-between">
+					<strong class="font-semibold">Menu</strong>
+					<button id="nav-close" class="p-1 rounded hover:bg-stone-100 dark:hover:bg-neutral-800" aria-label="Close navigation">✕</button>
+				</div>
+				<ul class="p-4 flex flex-col gap-0">
+					<li class="border-b bordercolor"><a href="/" class={"block px-2 py-1 " + isActive("/")}>Home</a></li>
+					<li class="border-b bordercolor"><a href="/about" class={"block px-2 py-1 " + isActive("/about")}>About</a></li>
+					<li class="border-b bordercolor"><a href="/pharaohs" class={"block px-2 py-1 " + isActive("/pharaohs")}>Pharaohs</a></li>
+					<li class="border-b bordercolor"><a href="/dynasties" class={"block px-2 py-1 " + isActive("/dynasties")}>Dynasties</a></li>
+					<li class="border-b bordercolor"><a href="/articles" class={"block px-2 py-1 " + isActive("/articles")}>Articles</a></li>
+				</ul>
+			</div>
+
+			<!-- Overlay when nav open (subtle tint so page remains readable) -->
+			<div id="nav-overlay" class="fixed inset-0 bg-black/33 hidden z-40"></div>
+		</nav>
+
+		<!-- Center: logo -->
+		<div class="flex-none mx-auto">
+			<a href="/" aria-label="Pharaoh.SE home"><img src="/images/pharaohse.svg" class="h-10 mx-auto logo" alt="Pharaoh.SE" /></a>
+		</div>
+
+		<!-- Right: theme toggle -->
+		<div class="flex-1 text-right">
+			<ThemeToggle />
+		</div>
+	</div>
 </header>
 
 <style>
 	--logo: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(1923%) hue-rotate(28deg) brightness(91%) contrast(101%);
+
+	/* Responsive width for the off-canvas nav:
+			- default (mobile / <sm): full width
+			- md (>=768px): use up to 50% of viewport width
+			- lg (>=1024px): cap at 320px
+		*/
+	@media (min-width: 768px) {
+		#mobile-nav {
+			width: 50%;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		#mobile-nav {
+			width: 320px;
+		}
+	}
 </style>
+
+<script>
+	// Mobile nav toggle
+	document.addEventListener("DOMContentLoaded", () => {
+		const toggle = document.getElementById("nav-toggle");
+		const closeBtn = document.getElementById("nav-close");
+		const panel = document.getElementById("mobile-nav");
+		const overlay = document.getElementById("nav-overlay");
+		if (!toggle || !panel || !overlay) return;
+
+		function openNav() {
+			panel?.classList.remove("-translate-x-full");
+			panel?.classList.add("translate-x-0");
+			overlay?.classList.remove("hidden");
+			toggle?.setAttribute("aria-expanded", "true");
+		}
+
+		function closeNav() {
+			panel?.classList.add("-translate-x-full");
+			panel?.classList.remove("translate-x-0");
+			overlay?.classList.add("hidden");
+			toggle?.setAttribute("aria-expanded", "false");
+		}
+
+		toggle.addEventListener("click", () => {
+			const expanded = toggle.getAttribute("aria-expanded") === "true";
+			if (expanded) closeNav();
+			else openNav();
+		});
+
+		closeBtn?.addEventListener("click", closeNav);
+		overlay?.addEventListener("click", closeNav);
+		// Close on escape
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape") closeNav();
+		});
+	});
+</script>

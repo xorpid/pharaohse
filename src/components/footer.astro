@@ -1,9 +1,47 @@
 ---
 import "@/styles/fancybox.css";
+const nu = new Date().getFullYear();
+const v = "v. 5.0";
 ---
 
-<div class="min-h-32 bg-slate-950 h-12 p-8 mt-10 text-center text-2xl">
-	FOOTER TBD
+<footer class="g2 print:hidden bg-yellow-900 text-amber-50">
+	<div class="text-center font-sans container mx-auto pb-20 sm:pb-0">
+		<div class="flex flex-col gap-x-10 sm:flex-row flex-wrap items-center justify-center min-h-[320px]">
+			<a href="/" class=""
+				><img
+					src="/svg/palm.svg"
+					class="w-28 h-28 glow opacity-70 hover:opacity-100 align-middle"
+					loading="lazy"
+					title="To the start of Pharaoh.SE"
+					alt="Pharaoh.SE logo"
+				/></a
+			>
+
+			<div class="flex-1 max-w-fit text-sm text-softy pt-10">
+				<span class="text-xl font-semibold text-amber-200">PHARAOH.SE</span><br />Information provided <i>as is</i>.<br />
+				<span>&copy; 2011&ndash;{nu} Peter Lundstr&ouml;m | {v} </span><br /><br /><b>Always</b> verify the sources - AI replies too.<br />De omnibus
+				et machina dubitandum.<br />
+
+				<div class="mt-3 text-sm flex w-fit mx-auto">
+					<a rel="noopener nofollow" class="text-center" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+						<img src="/svg/by.svg" class="w-8 opacity-25 hover:opacity-75 mr-2" loading="lazy" alt="BY" /></a
+					>
+					<a rel="noopener nofollow" class="text-center" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+						<img src="/svg/cc.svg" class="w-8 opacity-25 hover:opacity-75 mr-2" loading="lazy" alt="CC" /></a
+					>
+					<img src="/svg/gh.svg" class="w-8 opacity-50 mr-2" loading="lazy" alt="Github" />
+					<img src="/svg/netlify.svg" class="w-8 opacity-50" loading="lazy" alt="Netlify" />
+				</div>
+				<p class="pb-10">
+					Creative Commons Attribution 4.0 License <br />
+					<a class="text-white" href="/privacy">Privacy policy</a>
+				</p>
+			</div>
+			<div class="flex-0 w-28 my-5 sm:my-0 shadow-lg text-sm self-center">
+				PHARAOH.SE<img src="/svg/qr.svg" class="aspect-square" loading="lazy" alt="QR" />
+			</div>
+		</div>
+	</div>
 	<script is:inline src="/scripts/fancybox.js"></script>
 	<button onclick="topFunction()" id="toppen" title="Go to top" class="print:hidden"
 		><svg class="inline print:hidden my-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -11,44 +49,44 @@ import "@/styles/fancybox.css";
 			></path></svg
 		> Back to top</button
 	>
+</footer>
 
-	<script is:inline>
-		let butt = document.getElementById("toppen");
-		let header = document.querySelector("header");
+<script is:inline>
+	let butt = document.getElementById("toppen");
+	let header = document.querySelector("header");
 
-		// Debounce function to limit scroll event frequency
-		function debounce(func, wait) {
-			let timeout;
-			return function executedFunction(...args) {
-				const later = () => {
-					clearTimeout(timeout);
-					func(...args);
-				};
+	// Debounce function to limit scroll event frequency
+	function debounce(func, wait) {
+		let timeout;
+		return function executedFunction(...args) {
+			const later = () => {
 				clearTimeout(timeout);
-				timeout = setTimeout(later, wait);
+				func(...args);
 			};
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+		};
+	}
+
+	// Scroll event handler
+	const handleScroll = debounce(() => {
+		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+			butt.style.display = "block";
+		} else {
+			butt.style.display = "none";
 		}
 
-		// Scroll event handler
-		const handleScroll = debounce(() => {
-			if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-				butt.style.display = "block";
-			} else {
-				butt.style.display = "none";
-			}
-
-			if (window.scrollY > 10) {
-				header.classList.add("scrolled");
-			} else {
-				header.classList.remove("scrolled");
-			}
-		}, 100); // Adjust delay (100ms) as needed
-
-		window.addEventListener("scroll", handleScroll);
-
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
+		if (window.scrollY > 10) {
+			header.classList.add("scrolled");
+		} else {
+			header.classList.remove("scrolled");
 		}
-	</script>
-</div>
+	}, 100); // Adjust delay (100ms) as needed
+
+	window.addEventListener("scroll", handleScroll);
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>

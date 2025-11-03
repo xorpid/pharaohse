@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+const title = "Privacy policy";
+const today = "November 2, 2025";
+let meta1 = "We do not track or share any information.";
+let meta2 = "privacy,cookies";
+---
+
+<Layout title="Privacy policy of Pharaoh.se">
+	<section class="page-content">
+		<div class="container max-w-prose mx-auto">
+			<p class="py-5 leading-10">
+				Last Updated: {today}<br />
+			</p>
+
+			<p>We are committed to your privacy. This website is designed to be as private as possible.</p>
+			<ul class="pl-4">
+				<li>We do not use any advertising trackers.</li>
+				<li>We do not use any analytics trackers (like Google Analytics).</li>
+				<li>We do not use cookies.</li>
+			</ul>
+
+			<p>
+				The hosting is provided by <a href="https://www.netlify.com/">Netlify</a>. Like all web servers, their servers automatically create logs when
+				you visit our site. These logs typically include your IP address, your browser type, and the pages you requested.
+			</p>
+
+			<Image src="/svg/hand.svg" class="svgC" loading="eager" alt="Privacy policy hand" width={1} height={1} />
+
+			<p>
+				AFAIK, Netlify does not use your IP address to identify you. This data is collected only for the purpose of website security (e.g., to block
+				malicious attacks) and for basic operational diagnostics. I do not have direct access to these logs and cannot use them to identify or track
+				individual users. For more information, please see <a href="https://www.netlify.com/privacy/" target="_blank">Netlify's Privacy Policy</a>.
+			</p>
+
+			<p>
+				No personal data other than what is described above is collected, but since I do not store ANY personal information, it cannot be accessed.
+			</p>
+
+			<style>
+				.svgC {
+					height: 350px;
+					width: 350px;
+					filter: drop-shadow(3px 3px 6px rgba(1, 1, 1, 0.33));
+					margin-inline: auto;
+				}
+				.shadow {
+					text-shadow: 1px 1px 2px rgb(1 1 1 / 0.6);
+				}
+				h2,
+				h3 {
+					line-height: 2;
+					font-weight: normal;
+				}
+			</style>
+		</div>
+	</section>
+</Layout>
