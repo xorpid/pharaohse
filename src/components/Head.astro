@@ -11,7 +11,7 @@ const canonical = website + Astro.url.pathname;
 const event = new Date();
 const jsonDate = event.toJSON();
 const schema = {
-	"@context": "http://schema.org",
+	"@context": "https://schema.org",
 	"@type": "Article",
 	name: resolvedTitle,
 	author: {
@@ -42,7 +42,7 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="description" content={meta1} />
 	<meta name="keywords" content={meta2} />
 	<meta name="generator" content={Astro.generator} />
-	<meta name="color-scheme" content="light dark" />
+	<meta name="color-scheme" content="dark light" />
 	<title>{resolvedTitle} | {sajt}</title>
 
 	<script is:raw>
@@ -55,19 +55,12 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 		})();
 	</script>
 
-	<!-- <ViewTransitions /> -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={resolvedTitle} />
 	<meta property="og:site_name" content={sajt} />
 	<meta property="og:description" content={meta1} />
 	<meta property="og:url" content={canonical} />
 	<meta property="og:image" content={bild} />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content={tweet} />
-	<meta name="twitter:creator" content={tweet} />
-	<meta name="twitter:title" content={resolvedTitle} />
-	<meta name="twitter:description" content={meta1} />
-	<meta name="twitter:image" content={bild} />
 	<meta name="author" content={author} />
 	<link rel="canonical" href={canonical} />
 	<link rel="sitemap" href="/sitemap-index.xml" />

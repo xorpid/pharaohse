@@ -17,6 +17,65 @@ import p6 from "@/assets/phse-hieroglyphs.webp";
 import p7 from "@/assets/phse-maps.webp";
 import p8 from "@/assets/phse-bookseries.webp";
 import marble from "@/assets/marble.webp";
+
+const items = [
+	{
+		title: "Pharaohs",
+		bild: p1,
+		alt: "Detail from Tomb of Prince Amunherkhopshef (QV55) with his father Ramesses III",
+		url: "/pharaohs",
+		text: "<em>The royal titulary</em> of the Egyptian pharaohs was the standard naming convention adopted by the kings of ancient Egypt. It symbolised their supremacy and sacred power, and were sometimes amended during the reign to signify an important event.",
+	},
+	{
+		title: "Turin",
+		bild: p2,
+		alt: "Detail from Turin King List",
+		url: "/kinglists/turin",
+		text: "This one-of-a-kind, heavily fragmented 3,300-year-old papyrus roll, also known as the <i>Royal Canon of Turin</i>, contains the most detailed chronological record of Egyptian pharaohs, forming the foundation of ancient Egyptian chronology.",
+	},
+	{
+		title: "Kinglists",
+		bild: p3,
+		alt: "Ancient Egyptian king lists",
+		url: "/kinglists",
+		text: "Royal lineages were established to honour revered ancestors and emphasise the reigning king's legitimacy as the latest in a long line of rulers dating back to the time of the gods. The purpose was not to provide an accurate historical or chronological account.",
+	},
+	{
+		title: "Monuments",
+		bild: p4,
+		alt: "Monuments and temples in Ancient Egypt",
+		url: "/temples-and-monuments",
+		text: "The ancient Egyptians built some of the world's most impressive and enduring monuments. The pyramids and beautifully decorated temples built by the pharaohs and dedicated to their gods are testament to their advanced engineering and artistic abilities.",
+	},
+	{
+		title: "Obelisks",
+		bild: p5,
+		alt: "Ancient Egyptian obelisks",
+		url: "/obelisks",
+		text: "These tall, four-sided monuments are carved from a single piece of stone and have a pyramid-like shape or pyramidion at the top. Obelisks were erected in pairs at the entrance to temples, bearing the name of the pharaoh who commissioned them, along with a short inscription or dedication.",
+	},
+	{
+		title: "Hieroglyphs",
+		bild: p6,
+		alt: "Hieroglyphs and ancient Egyptian language",
+		url: "/articles/hieroglyphs",
+		text: "Egyptian hieroglyphs were previously believed to be a mystical script comprising symbols representing ideas and concepts rather than a language. However, when interest in them was rekindled during the Renaissance, it became apparent that they were part of a forgotten language.",
+	},
+	/* 	{
+		title: "Cartography",
+		bild: p7,
+		alt: "Maps of ancient Egypt",
+		url: "/articles/maps",
+		text: "Maps of Egypt before the 1700s were notoriously unreliable and inaccurate. They often lacked features and were decorated with imaginary objects. Manuscripts describe places, but rarely include anything but the most rudimentary maps.",
+	},
+	{
+		title: "Egyptology books",
+		bild: p8,
+		alt: "Useful Egyptology books",
+		url: "/articles/book-series",
+		text: "After being left undisturbed for centuries or even millennia, many of the ancient sites were explored and documented by expeditions in the 1800s. Many of these historic sites can now only be visited through these time capsules.",
+	}, */
+];
 ---
 
 <Layout title={title} meta1={meta1} meta2={meta2} bild={bild}>
@@ -25,7 +84,7 @@ import marble from "@/assets/marble.webp";
 
 	<h2 class="text-2xl font-bold mt-10 mb-4">Pages</h2>
 
-	<ul class="columns-2">
+	<ul class="columns-4">
 		<li><a href="/pharaohs">Pharaohs</a></li>
 		<li><a href="/dynasties">Dynasties</a></li>
 		<li><a href="/periods/">Periods</a></li>
@@ -61,112 +120,18 @@ import marble from "@/assets/marble.webp";
 		<!-- MARK: Cards
 		-->
 		<div class="grid grid-cols-1 grid-rows-1 justify-center gap-x-4 gap-y-10 md:grid-cols-2">
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700 hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/pharaohs" class="nolinkcolor">
-					<Image src={p1} loading="eager" alt="Detail from Tomb of Prince Amunherkhopshef (QV55) with his father Ramesses III" class="rounded-t-lg" />
+			{
+				items.map((item, i) => (
+					<div class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700">
+						<a href={item.url} class="nolinkcolor">
+							<Image src={item.bild} loading={i < 2 ? "eager" : "lazy"} alt={item.alt} class="rounded-t-lg" />
 
-					<div class="text-2xl p-2 font-medium">Pharaohs</div>
-					<div class="text-sm p-2 tx">
-						<em>The royal titulary</em> of the Egyptian pharaohs was the standard naming convention adopted by the kings of ancient Egypt. It symbolised
-						their supremacy and sacred power, and were sometimes amended during the reign to signify an important event.
+							<div class="text-2xl p-2 font-medium">{item.title}</div>
+							<div class="text-sm p-2 tx" set:html={item.text} />
+						</a>
 					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/kinglist/turin" class="nolinkcolor">
-					<Image src={p2} loading="eager" alt="Detail from Turin King List" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Turin King List</div>
-					<div class="text-sm p-2 tx">
-						This one-of-a-kind, heavily fragmented 3,300-year-old papyrus roll, also known as the <i>Royal Canon of Turin</i>, contains the most
-						detailed chronological record of Egyptian pharaohs, forming the foundation of ancient Egyptian chronology.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/kinglists" class="nolinkcolor">
-					<Image src={p3} loading="eager" alt="Ancient Egyptian king lists" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">King Lists</div>
-					<div class="text-sm p-2 tx">
-						Royal lineages were established to honour revered ancestors and emphasise the reigning king's legitimacy as the latest in a long line of
-						rulers dating back to the time of the gods. The purpose was not to provide an accurate historical or chronological account.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/temples-and-monuments" class="nolinkcolor">
-					<Image src={p4} loading="eager" alt="Monuments and temples in Ancient Egypt" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Monuments</div>
-					<div class="text-sm p-2 tx">
-						The ancient Egyptians built some of the world's most impressive and enduring monuments. The pyramids and beautifully decorated temples
-						built by the pharaohs and dedicated to their gods are testament to their advanced engineering and artistic abilities.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/obelisks" class="nolinkcolor">
-					<Image src={p5} loading="lazy" alt="Ancient Egyptian obelisks" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Obelisks</div>
-					<div class="text-sm p-2 tx">
-						These tall, four-sided monuments are carved from a single piece of stone and have a pyramid-like shape or pyramidion at the top. Obelisks
-						were erected in pairs at the entrance to temples, bearing the name of the pharaoh who commissioned them, along with a short inscription or
-						dedication.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/hieroglyphs" class="nolinkcolor">
-					<Image src={p6} loading="lazy" alt="Hieroglyphs and ancient Egyptian language" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Hieroglyphs</div>
-					<div class="text-sm p-2 tx">
-						Egyptian hieroglyphs were previously believed to be a mystical script comprising symbols representing ideas and concepts rather than a
-						language. However, when interest in them was rekindled during the Renaissance, it became apparent that they were part of a forgotten
-						language.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/cartography" class="nolinkcolor">
-					<Image src={p7} loading="lazy" alt="Maps of ancient Egypt" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Cartography</div>
-					<div class="text-sm p-2 tx">
-						Maps of Egypt before the 1700s were notoriously unreliable and inaccurate. They often lacked features and were decorated with imaginary
-						objects. Manuscripts describe places, but rarely include anything but the most rudimentary maps.
-					</div>
-				</a>
-			</div>
-			<div
-				class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700"
-			>
-				<a href="/ancient-egypt/book-series" class="nolinkcolor">
-					<Image src={p8} loading="lazy" alt="Useful Egyptology books" class="rounded-t-lg" />
-
-					<div class="text-2xl p-2 font-medium">Egyptology books</div>
-					<div class="text-sm p-2 tx">
-						After being left undisturbed for centuries or even millennia, many of the ancient sites were explored and documented by expeditions in the
-						1800s. Many of these historic sites can now only be visited through these time capsules.
-					</div>
-				</a>
-			</div>
+				))
+			}
 		</div>
 
 		<div class="w-full py-10 lg:mx-auto">
@@ -184,11 +149,12 @@ import marble from "@/assets/marble.webp";
 				>. In antiquity, Greek historians who visited Egypt encountered the names of kings from that country which were unknown to them. They
 				attempted to approximate these names into Greek, but the resulting transcriptions were not entirely accurate, as might be expected.
 
-				<a href="/ancient-egypt/kinglist/manetho">Manetho</a>, an Egyptian priest who flourished in the first half of the third century BC, is the
-				principal source for the <a href="/ancient-egypt/chronology">chronology of ancient Egypt</a>. He composed <em>Aegyptiaca</em>, "The History of
-				Egypt," by combining material from the sacred temple archives with popular traditions, legends, and narratives. The majority of the names
-				currently in use for pharaohs originate from Manetho, or more specifically, from quotations preserved by historians writing several centuries
-				later. <a href="/ancient-egypt/kinglist/manetho-king-list">Manetho's dynasties</a> established the fundamental chronology of ancient Egypt.
+				<a href="/authors">Manetho</a>, an Egyptian priest who flourished in the first half of the third century BC, is the principal source for the <a
+					href="/articles/chronology">chronology of ancient Egypt</a
+				>. He composed <em>Aegyptiaca</em>, "The History of Egypt," by combining material from the sacred temple archives with popular traditions,
+				legends, and narratives. The majority of the names currently in use for pharaohs originate from Manetho, or more specifically, from quotations
+				preserved by historians writing several centuries later. <a href="/authors/africanus">Manetho's dynasties</a> established the fundamental chronology
+				of ancient Egypt.
 			</p>
 			<p>
 				It is inevitable that errors and corruption will occur in subsequent copies over the centuries. These may range from simple misunderstandings
@@ -207,11 +173,11 @@ import marble from "@/assets/marble.webp";
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 1450 BC</div>
 				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/karnak-canon" class="text-2xl">Karnak Canon</a>
+					<a href="/kinglists/karnak-canon" class="text-2xl">Karnak Canon</a>
 				</div>
 				<p>
-					This was originally created during the reign of <a href="/ancient-egypt/pharaoh/Thutmose-III">Thutmose III</a> for honouring celebrated ancestors
-					and was located in the south-west corner of the <i>Akh-Menu Hall</i> at the Great Temple at Karnak. On display at the Louvre in Paris.
+					This was originally created during the reign of <a href="/pharaohs/Thutmose-III">Thutmose III</a> for honouring celebrated ancestors and was
+					located in the south-west corner of the <i>Akh-Menu Hall</i> at the Great Temple at Karnak. On display at the Louvre in Paris.
 				</p>
 			</li>
 
@@ -219,7 +185,7 @@ import marble from "@/assets/marble.webp";
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 1280 BC</div>
 				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/abydos-canon" class="text-2xl">Abydos Canon</a>
+					<a href="/kinglists/abydos-canon" class="text-2xl">Abydos Canon</a>
 				</div>
 				<p>
 					A list of 76 pharaohs inscribed in the Hall of Kings in the <i>Mortuary Temple of Seti I</i> at Abydos, where selected ancestors were honoured.
@@ -231,7 +197,7 @@ import marble from "@/assets/marble.webp";
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 1225 BC</div>
 				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/turin" class="text-2xl">Turin King List</a>
+					<a href="/kinglists/turin" class="text-2xl">Turin King List</a>
 				</div>
 				<p>
 					An ancient chronological list of Egyptian pharaohs in a poorly preserved hieratic papyrus roll dating from the reign of Ramesses II. This
@@ -244,7 +210,7 @@ import marble from "@/assets/marble.webp";
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 450 BC</div>
 				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/herodotus" class="text-2xl">Herodotus of Halicarnassus</a>
+					<a href="/authors/herodotus" class="text-2xl">Herodotus of Halicarnassus</a>
 				</div>
 				<p>
 					The Greek historian Herodotus visited Egypt during the 27th Dynasty, when it was under Persian domination. His <em>Histories</em> is the earliest
@@ -258,7 +224,7 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 275 BC</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/manetho" class="text-2xl">Manetho of Sebennytos</a></div>
+				<div class="my-3"><a href="/authors" class="text-2xl">Manetho of Sebennytos</a></div>
 				<p>
 					The Egyptian priest Manetho wrote <em>Aegyptiaca</em>, also known as the ‘History of Egypt’, which covered all the pharaohs up to the time
 					of Alexander the Great's conquest. During the first centuries CE, knowledge of how to read hieroglyphs gradually declined and was completely
@@ -285,7 +251,7 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 95 AD</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/josephus" class="text-2xl">Josephus</a></div>
+				<div class="my-3"><a href="/authors/josephus" class="text-2xl">Josephus</a></div>
 				<p>
 					The Roman–Jewish historian and military leader <i>Flavius Josephus</i> (c. 37-100) mentions Manetho in <em>Antiquities of the Jews</em> and <em
 						>Against Apion</em
@@ -297,7 +263,7 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 200 AD</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/africanus" class="text-2xl">Africanus</a></div>
+				<div class="my-3"><a href="/authors/africanus" class="text-2xl">Africanus</a></div>
 				<p>
 					<i>Julius Africanus</i> (c. 160–240) was an early Christian historian. He wrote <em>Chronographiai</em>, a five-volume history of the world,
 					which covers the period from the creation of Adam to his own time. The original manuscript has not survived; only fragments remain,
@@ -308,19 +274,17 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 3rd-century</div>
-				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/syncellus" class="text-2xl">Ancient Chronicle</a> &nbsp;<i>(Pseudo-Manetho)</i>
-				</div>
+				<div class="text-2xl my-3">Ancient Chronicle &nbsp;<i class="text-sm">(Pseudo-Manetho)</i></div>
 				<p>
 					A forgery claiming to be an ancient Egyptian text called the <em>Old</em> or <em>Ancient Chronicle</em> was also circulated. It described 30
-					dynasties over 113 generations, spanning 36,525 years.
+					dynasties over 113 generations, spanning 36,525 years. See Syncellus below.
 				</p>
 			</li>
 
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 325 AD</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/eusebius" class="text-2xl">Eusebius</a></div>
+				<div class="my-3"><a href="/authors/eusebius" class="text-2xl">Eusebius</a></div>
 				<p>
 					<i>Eusebius of Caesarea</i> (c. 260–339) was an early Christian historian. Around 325, he penned <i>the Chronicle</i>, a two-volume
 					“Universal History” covering the period from the birth of Abraham to his own time. While the original Greek volumes are lost, quotations
@@ -333,7 +297,7 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 382 AD</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/jerome" class="text-2xl">Jerome</a></div>
+				<div class="my-3"><a href="/authors/jerome" class="text-2xl">Jerome</a></div>
 				<p>
 					An updated Latin translation of the second book of Eusebius’ (the Canons) known as the <em>Chronicle of Jerome</em> was created by Christian
 					priest and historian <i>Jerome of Stridon</i> around 382. Jerome updated or extended the timeline from where Eusebius left off, adding events
@@ -345,19 +309,17 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 4th century</div>
-				<div class="my-3">
-					<a href="/ancient-egypt/kinglist/syncellus" class="text-2xl">The Book of Sothis</a> &nbsp;<i title="Pop">(Pseudo-Manetho)</i>
-				</div>
+				<div class="text-2xl my-3">The Book of Sothis &nbsp;<i class="text-sm">(Pseudo-Manetho)</i></div>
 				<p>
 					Also called the Sothic Cycle, attributed to Manetho but most likely a forgery used/composed by Panodorus of Alexandria. The sequence of
-					kings is clearly not presented in chronological order.
+					kings is clearly not presented in chronological order. See Syncellus below.
 				</p>
 			</li>
 
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 4th century</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/eratosthenes" class="text-2xl">Eratosthenes</a>&nbsp;<i>(Pseudo-Eratosthenes)</i></div>
+				<div class="my-3"><a href="/authors/eratosthenes" class="text-2xl">Eratosthenes</a>&nbsp;<i>(Pseudo-Eratosthenes)</i></div>
 				<p>
 					A forgery trying to gain credibility by using the famous Eratosthenes. Some of the names listed are found in Manetho and Herodotus,
 					suggesting that there may be a common but corrupted source behind the list, but most names bear no resemblance to the names on other king
@@ -368,7 +330,7 @@ import marble from "@/assets/marble.webp";
 			<li class="mb-8 ml-6">
 				<div class="dot"></div>
 				<div class="font-semibold tracking-widest">c. 810 AD</div>
-				<div class="my-3"><a href="/ancient-egypt/kinglist/syncellus" class="text-2xl">Syncellus</a></div>
+				<div class="my-3"><a href="/authors/syncellus" class="text-2xl">Syncellus</a></div>
 				<p>
 					<em>Selected Chronography</em>, a chronicle written by the Byzantine priest George Syncellus, is the primary source of our knowledge of the
 					contents of <em>Aegyptiaca</em>, thanks to Syncellus’ preserved excerpts from Africanus and Eusebius’ chronicles. The original manuscript of
@@ -399,8 +361,8 @@ import marble from "@/assets/marble.webp";
 				<div class="font-semibold tracking-widest">1822-24</div>
 				<div class="text-2xl my-3">Hieroglyphs deciphered</div>
 				<p>
-					The discovery of the <a href="/ancient-egypt/curiosities/rosetta-stone">Rosetta Stone</a> in 1799 played an instrumental role in the decipherment
-					of the hieroglyphs. The hieroglyphs were still unreadable, but progress was being made. It contains the same text written in three scripts: <em
+					The discovery of the <a href="/articles/rosetta-stone">Rosetta Stone</a> in 1799 played an instrumental role in the decipherment of the hieroglyphs.
+					The hieroglyphs were still unreadable, but progress was being made. It contains the same text written in three scripts: <em
 						>hieroglyphic, Demotic</em
 					>, and <em>Greek</em>. Many scholars worked to solve the puzzle, slowly adding clues, until Jean François Champollion made a breakthrough in
 					1822. He used the Rosetta Stone inscriptions and his methodical study of demotic and hieratic from previous years to finally be able to

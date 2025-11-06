@@ -1,7 +1,7 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import obelisks from "@data/obelisks.json";
-import farao from "@data/pharaohs.json";
+import Layout from "../layouts/Layout.astro";
+import obelisks from "../data/obelisks.json";
+import farao from "../data/pharaohs.json";
 
 const title = "The Obelisks of Ancient Egypt";
 const meta1 = "Details about the various obelisks from Ancient Egypt inscribed with hieroglyphs";
@@ -85,6 +85,34 @@ const getSource = (obelisk: any, i: number) => {
 									<div class="flex-1">
 										<h2 class="text-lg font-bold mb-1">{obelisk.namn}</h2>
 
+										{(obelisk.pharaoh1 || obelisk.pharaoh2 || obelisk.pharaoh3) && (
+											<div class="text-sm mb-1">
+												<span class="font-semibold">
+													{[obelisk.pharaoh1, obelisk.pharaoh2, obelisk.pharaoh3].filter(Boolean).length > 1 ? "Pharaohs" : "Pharaoh"}:
+												</span>
+												{(() => {
+													const ids = [obelisk.pharaoh1, obelisk.pharaoh2, obelisk.pharaoh3].filter((x) => x != null && String(x) !== "");
+													return ids.map((id, idx) => {
+														const p = farao.find((ph) => String(ph.no) === String(id));
+														if (p) {
+															const url = `/pharaohs/${p.slug}`;
+															return (
+																<>
+																	<a href={url}>{p.name}</a>
+																	{idx < ids.length - 1 ? ", " : ""}
+																</>
+															);
+														}
+														return (
+															<>
+																{String(id)}
+																{idx < ids.length - 1 ? ", " : ""}
+															</>
+														);
+													});
+												})()}
+											</div>
+										)}
 										{obelisk.aka && (
 											<div class="text-sm">
 												<span class="font-semibold">Also known as:</span> {obelisk.aka}
@@ -142,7 +170,12 @@ const getSource = (obelisk: any, i: number) => {
 										{images.map((item) => (
 											<a data-fancybox={obelisk.namn} data-caption={item.alt} href={`/obelisks/${item.img}`} target="_blank" rel="noopener">
 												<span class="hidden">image</span>
-												<img src={`/obelisks/${item.thumb}`} alt={item.alt} class="max-w-[120px] rounded shadow" loading="lazy" />
+												<img
+													src={`/obelisks/${item.thumb}`}
+													alt={item.alt}
+													class="w-20 h-20 aspect-square object-cover rounded shadow"
+													loading="lazy"
+												/>
 											</a>
 										))}
 									</div>

@@ -102,6 +102,8 @@ There are plenty of things that needs attention.
 - **Redirects** from old URLs to the new structure, old: `/pharaoh/Narmer` new: `/pharaohs/Narmer`.
   There are **_many_** redirects that needs to be determined and fixed
 - Navigation menu, type, links, logo in center? Hamburger? Hover?
-- Footer
 - Obelisks missing Pharaoh link, aka is weird
 - Dynasties page with 0 kings should not show the table but a text
+- Turin: 0 on "farao": 0, not number but Summation. Maybe 0 for unknown? Check!
+- Turin: Moller numbers = kl_turin.json field "moller": "#–626–617" etc.
+- a[href$=".pdf"]::after {content: url(/images/pdf.svg);}

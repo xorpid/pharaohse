@@ -50,7 +50,7 @@ const formatSource = (ref: string): string => {
 				cols.map((c) => (
 					<a
 						href={`/kinglists/turin/column-${c}`}
-						class={`px-3 py-1 rounded ${c === colNum ? "bg-red-700 hover:bg-red-600 dark:bg-blue-500 hover:dark:bg-blue-600" : "bg-stone-300 dark:bg-neutral-700 text-white hover:bg-red-300 dark:hover:bg-green-600"}`}
+						class={`px-3 py-1 rounded ${c === colNum ? "tx bg-red-700 hover:bg-red-600 dark:bg-blue-500 hover:dark:bg-blue-600" : "bg-stone-400 dark:bg-neutral-700 text-white hover:bg-red-500 dark:hover:bg-green-600"}`}
 					>
 						{c}
 					</a>
@@ -154,6 +154,16 @@ const formatSource = (ref: string): string => {
 					</div>
 
 					<div class="my-4" set:html={item.descr ?? ""} />
+
+					{item.rec1_pic && (
+						<div class="my-4">
+							<p class="text-2xl text-center mb-0">Restoration</p>
+							<p class="text-center mt-0 mb-4 text-xs">{item.rec1_biblio}</p>
+							<img src={`\/svg\/turin\/hiero-${item.rec1_pic}.svg`} alt="reconstruction of the hieroglyphs of the hieratic text" class="h-12 dark:invert object-contain dark:hue-rotate-180 dark:saturate-400" />
+							
+							<div class="mt-2" set:html={item.rec1_text} />
+						</div>
+					)}
 
 					{(item.ac || item.sc || item.kc || item.afr || item.eus || item.her || item.era || item.oth) && (
 						<div class="my-4">
