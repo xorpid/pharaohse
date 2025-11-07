@@ -1,10 +1,12 @@
 ---
-import ThemeToggle from "@/components/ThemeToggle.astro";
+import Toggler from "@components/Toggler.astro";
+
+//import ThemeToggle from "@/components/ThemeToggle.astro";
 const { pathname } = Astro.url;
 const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dark:bg-gray-700" : "");
 ---
 
-<header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-red-500/5 dark:shadow-sky-500/5 bg">
+<header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-black/25 dark:shadow-black/50 bg">
 	<div class="container mx-auto flex items-center justify-between p-4">
 		<!-- Left: navigation -->
 		<nav class="flex-1">
@@ -48,12 +50,18 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 
 		<!-- Center: logo -->
 		<div class="flex-none mx-auto">
-			<a href="/" aria-label="Pharaoh.SE home"><img src="/images/pharaohse.svg" class="h-10 mx-auto logo" alt="Pharaoh.SE" /></a>
+			<a
+				href="/"
+				aria-label="Pharaoh.SE"
+				class="flex items-center gap-2 text-2xl text-black font-black dark:text-white hover:scale-110 transition-transform duration-200 ease-in-out"
+				><img src="/images/pharaohse-tut.webp" class="h-8" alt="Pharaoh.SE" />PHARAOH.SE</a
+			>
 		</div>
 
 		<!-- Right: theme toggle -->
 		<div class="flex-1 text-right">
-			<ThemeToggle />
+			<Toggler />
+			<!-- <ThemeToggle /> -->
 		</div>
 	</div>
 </header>

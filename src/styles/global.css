@@ -41,9 +41,10 @@
 	--link-hover: var(--color-red-900);
 	--link-visited: var(--color-pink-900);
 	--primary: var(--color-red-950);
-	--secondary: var(--color-rose-950);
+	--secondary: var(--color-rose-800);
 	--highlight: var(--color-orange-950);
 	--border: var(--color-stone-300);
+	--border-muted: var(--color-stone-200);
 	--transliteration: var(--color-blue-900);
 	--greek: var(--color-fuchsia-900);
 	--armenian: var(--color-yellow-800);
@@ -65,9 +66,10 @@
 	--link-hover: var(--color-amber-200);
 	--link-visited: var(--color-amber-100);
 	--primary: var(--color-amber-100);
-	--secondary: var(--color-amber-50);
+	--secondary: var(--color-yellow-200);
 	--highlight: var(--color-yellow-400);
 	--border: var(--color-neutral-700);
+	--border-muted: var(--color-neutral-800);
 	--transliteration: var(--color-orange-300);
 	--greek: var(--color-emerald-200);
 	--armenian: var(--color-yellow-400);

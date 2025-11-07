@@ -42,15 +42,29 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="description" content={meta1} />
 	<meta name="keywords" content={meta2} />
 	<meta name="generator" content={Astro.generator} />
-	<meta name="color-scheme" content="dark light" />
+	<meta name="color-scheme" content="light dark" />
 	<title>{resolvedTitle} | {sajt}</title>
 
-	<script is:raw>
+	<script is:inline>
+		// Robust theme initialization
 		(function () {
-			const saved = localStorage.getItem("themeMode");
-			const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-			if (saved === "dark" || (saved === null && prefersDark)) {
-				document.documentElement.classList.add("dark");
+			try {
+				// Check saved theme first
+				const savedTheme = localStorage.getItem("theme");
+				const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+				// Apply .dark class if saved theme is 'dark' or system is dark with no saved theme
+				if (savedTheme === "dark" || (!savedTheme && isSystemDark)) {
+					document.documentElement.classList.add("dark");
+				} else {
+					document.documentElement.classList.remove("dark");
+				}
+			} catch (e) {
+				console.warn("Theme init failed:", e);
+				// Fallback: respect system preference
+				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+					document.documentElement.classList.add("dark");
+				}
 			}
 		})();
 	</script>
