@@ -1,6 +1,5 @@
 ---
 import Toggler from "@components/Toggler.astro";
-
 //import ThemeToggle from "@/components/ThemeToggle.astro";
 const { pathname } = Astro.url;
 const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dark:bg-gray-700" : "");
@@ -17,7 +16,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 				id="nav-toggle"
 				aria-controls="mobile-nav"
 				aria-expanded="false"
-				class="inline-flex items-center p-2 rounded hover:bg-stone-100 dark:hover:bg-neutral-800"
+				class="inline-flex items-center p-2 rounded hover:bg-stone-100 dark:hover:bg-neutral-800 hover:cursor-pointer"
 			>
 				<span class="sr-only">Open navigation</span>
 				<!-- simple hamburger icon -->
@@ -33,14 +32,20 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			>
 				<div class="p-4 border-b border-stone-200 dark:border-neutral-800 flex items-center justify-between">
 					<strong class="font-semibold">Menu</strong>
-					<button id="nav-close" class="p-1 rounded hover:bg-stone-100 dark:hover:bg-neutral-800" aria-label="Close navigation">✕</button>
+					<button
+						id="nav-close"
+						class="p-1 rounded hover:bg-stone-100 dark:hover:bg-neutral-800 hover:cursor-pointer hover:text-emerald-400"
+						aria-label="Close navigation">✕</button
+					>
 				</div>
 				<ul class="p-4 flex flex-col gap-0">
-					<li class="border-b bordercolor"><a href="/" class={"block px-2 py-1 " + isActive("/")}>Home</a></li>
-					<li class="border-b bordercolor"><a href="/about" class={"block px-2 py-1 " + isActive("/about")}>About</a></li>
-					<li class="border-b bordercolor"><a href="/pharaohs" class={"block px-2 py-1 " + isActive("/pharaohs")}>Pharaohs</a></li>
-					<li class="border-b bordercolor"><a href="/dynasties" class={"block px-2 py-1 " + isActive("/dynasties")}>Dynasties</a></li>
-					<li class="border-b bordercolor"><a href="/articles" class={"block px-2 py-1 " + isActive("/articles")}>Articles</a></li>
+					<li class="border-b bordercolor hover:no-underline"><a href="/" class={"block px-2 py-1 hover:no-underline " + isActive("/")}>Home</a></li>
+					<li class="border-b bordercolor"><a href="/about" class={"block px-2 py-1 hover:no-underline " + isActive("/about")}>About</a></li>
+					<li class="border-b bordercolor"><a href="/pharaohs" class={"block px-2 py-1 hover:no-underline " + isActive("/pharaohs")}>Pharaohs</a></li>
+					<li class="border-b bordercolor">
+						<a href="/dynasties" class={"block px-2 py-1 hover:no-underline " + isActive("/dynasties")}>Dynasties</a>
+					</li>
+					<li class="border-b bordercolor"><a href="/articles" class={"block px-2 py-1 hover:no-underline " + isActive("/articles")}>Articles</a></li>
 				</ul>
 			</div>
 
@@ -53,7 +58,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			<a
 				href="/"
 				aria-label="Pharaoh.SE"
-				class="flex items-center gap-2 text-2xl text-black font-black dark:text-white hover:scale-110 transition-transform duration-200 ease-in-out"
+				class="flex items-center gap-2 text-2xl text-black font-black dark:text-white hover:scale-110 transition-transform duration-200 ease-in-out hover:no-underline"
 				><img src="/images/pharaohse-tut.webp" class="h-8" alt="Pharaoh.SE" />PHARAOH.SE</a
 			>
 		</div>
