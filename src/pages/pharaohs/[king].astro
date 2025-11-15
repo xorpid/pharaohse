@@ -50,33 +50,44 @@ const title = pharaoh.name;
 const meta1 = pharaoh.meta1;
 const meta2 = pharaoh.meta2;
 const bild = pharaoh.image;
+
 // Compute a stable dynasty URL. dynasties.json contains most slugs (numeric and named).
 function getDynURL(dyn: string | number | undefined): string {
-	const raw = dyn == null ? "unplaced" : String(dyn);
-	// Direct match: some dynasties use numeric slugs ("1", "2", ...)
-	const bySlug = dynasties.find((d: any) => d.slug === raw);
-	if (bySlug) return `/dynasty/${bySlug.slug}`;
+    const raw = dyn == null ? "unplaced" : String(dyn);
 
-	// Known special numeric codes that map to named slugs
-	const special: Record<string, string> = {
-		"0": "predynastic",
-		"32": "argead",
-		"33": "ptolemaic",
-		"34": "roman-pharaohs",
-		"35": "abydos",
-		"36": "unplaced-kings",
-	};
-	if (special[raw]) return `/dynasty/${special[raw]}`;
+    // Search through nested dynasties to find a matching slug
+    const bySlug = dynasties
+        .flatMap((d: any) => d.dynasties) // Flatten the nested dynasties arrays
+        .find((d: any) => d.slug === raw);
 
-	// Fallback: encode and use raw value (keeps link predictable)
-	return `/dynasty/${encodeURIComponent(raw)}`;
+    if (bySlug) return `/dynasty/${bySlug.slug}`;
+
+    // Known special numeric codes that map to named slugs
+    const special: Record<string, string> = {
+        "0": "predynastic",
+        "32": "argead",
+        "33": "ptolemaic",
+        "34": "roman-pharaohs",
+        "35": "abydos",
+        "36": "unplaced-kings",
+    };
+    if (special[raw]) return `/dynasty/${special[raw]}`;
+
+    // Fallback: encode and use raw value
+    return `/dynasty/${encodeURIComponent(raw)}`;
 }
-
 // Resolve the canonical dynasty slug (honours numeric special codes), then derive URL + name
 function resolveDynSlug(dyn: string | number | undefined): string {
     const raw = dyn == null ? "unplaced" : String(dyn);
-    const bySlug = dynasties.find((d: any) => d.slug === raw);
+
+    // Search through nested dynasties to find a matching slug
+    const bySlug = dynasties
+        .flatMap((d: any) => d.dynasties) // Flatten the nested dynasties arrays
+        .find((d: any) => d.slug === raw);
+
     if (bySlug) return bySlug.slug;
+
+    // Known special numeric codes that map to named slugs
     const special: Record<string, string> = {
         "0": "predynastic",
         "32": "argead",
@@ -86,13 +97,19 @@ function resolveDynSlug(dyn: string | number | undefined): string {
         "36": "unplaced-kings",
     };
     if (special[raw]) return special[raw];
+
+    // Fallback: return raw value
     return raw;
 }
 
 const dynSlug = resolveDynSlug(pharaoh.dynasty);
 const dynURL = `/dynasty/${dynSlug}`;
-const dynObj = dynasties.find((d: any) => d.slug === dynSlug);
+const dynObj = dynasties
+	.flatMap((p: any) => p.dynasties)   // extract all dynasty objects
+	.find((d: any) => d.slug === dynSlug);
 const dynName = dynObj ? dynObj.name : String(pharaoh.dynasty);
+
+
 
 // Helper: find a pharaoh object by its 'no' or slug
 function findPharaohByRef(ref: string | number | undefined) {

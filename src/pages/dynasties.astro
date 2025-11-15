@@ -1,33 +1,115 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import dynastys from "@data/dynasties.json";
+import dynasties from "@data/dynasties.json";
+
+// Interface for the JSON dynasty structure
+interface DynastyJSON {
+	slug: string;
+	char: string;
+	name: string;
+	period: string;
+	low: string;
+	middle: string;
+	high: string;
+	kings: string;
+	description: string;
+	meta1: string;
+	meta2: string;
+	image: string;
+}
+
+// Interface for the table data
+interface Dyn {
+	name: string;
+	low: string;
+	middle: string;
+	high: string;
+}
+
+// Interface for period grouping
+interface Period {
+	period: string;
+	dynasties: DynastyJSON[];
+}
+
+// Type the imported JSON as an array of Period
+const periods: Period[] = Array.isArray(dynasties) ? (dynasties as Period[]) : [];
 ---
 
 <Layout title="Dynasties of Ancient Egypt">
-	<p>
+	<p class="lead">
 		The division of pharaohs into dynasties is generally considered to be an invention by the Egyptian priest Manetho. Whenever some discontinuity
-		ocurred, a new dynasty was assumed.
+		occurred, a new dynasty was assumed.
 	</p>
 	<p>
 		All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with multiple
 		kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact reign of each
 		pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful, chronological gaps,
-		deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of reigns.
+		deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of reigns. Historians have
+		also found it difficult to determine the chronological order of the dynasties. There are three general approaches to date the history of ancient
+		Egypt.
 	</p>
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-		{
-			dynastys.map((p) => (
-				<div class="bg-white dark:bg-stone-800 shadow rounded-lg p-4 border border-gray-200 dark:border-stone-700 flex flex-col items-center">
-					<a href={`/dynasty/${p.slug}`} class="text-7xl font-bold mb-2 hover:no-underline">
-						{p.char}
-					</a>
-					<div class="text-base">{p.name}</div>
-					{p.period && <div class="text-sm text-gray-600 dark:text-gray-400 mb-1">{p.period}</div>}
-					<div class="text-sm">{p.kings}</div>
-					{/* {p.description && <div class="text-sm text-gray-700 dark:text-gray-300">{p.description}</div>} */}
-				</div>
-			))
-		}
-	</div>
+	<dl class="w-1/2 mx-auto border bordercolor p-4 bg-light rounded-2xl my-6 text-sm">
+		<dt class="font-bold">High Chronology</dt>
+		<dd class="pl-4 leading-snug">
+			The <i>traditional dates</i> are the initial chronological framework historians developed in trying to date the dynasties and pharaohs.
+		</dd>
+		<dt class="font-bold pt-3">Low Chronology</dt>
+		<dd class="pl-4 leading-snug">
+			A shorter timeline where events are placed closer to the present day, mainly due to new discoveries and evidence.
+		</dd>
+		<dt class="font-bold pt-3">Middle Chronology</dt>
+		<dd class="pl-4 leading-snug">This is a middle ground between the high and low chronologies, offering a compromise for dating events.</dd>
+	</dl>
+
+	<p>
+		Archaeological evidence provides a rough timeframe, while radiocarbon dating helps to narrow down the dates more precisely. Astronomical records
+		provide information about specific events that can be used as reference points to determine dates within a certain range. However, different
+		interpretations lead to conflicting conclusions about chronology and ongoing debates.
+	</p>
+
+	{
+		periods.length === 0 ? (
+			<p>Error: No dynasty data available. Please check the dynasties.json file.</p>
+		) : (
+			<table class="my-10 tabular-nums">
+				<thead>
+					<tr>
+						<th>Dynasty</th>
+						<th>Reign</th>
+						<th>High (BC)</th>
+						<th>Low (BC)</th>
+						<th>Middle (BC)</th>
+					</tr>
+				</thead>
+				<tbody>
+					{periods.map((period) => (
+						<>
+							<tr class="text-center font-semibold">
+								<td
+									colspan="5"
+									class="bg-linear-to-r from-stone-700/0 via-neutral-500/15 to-stone-700/0 dark:from-neutral-700/0 dark:via-neutral-400/10 dark:to-neutral-700/0 py-2"
+								>
+									{period.period}
+								</td>
+							</tr>
+							{period.dynasties.map((dynasty) => (
+								<tr>
+									<td>
+										<a href={`/dynasty/${dynasty.slug}`}>{dynasty.name || "Unknown Dynasty"}</a>
+									</td>
+									<td>{dynasty.kings || "N/A"}</td>
+									<td>{dynasty.high || "N/A"}</td>
+									<td>{dynasty.low || "N/A"}</td>
+									<td>{dynasty.middle || "N/A"}</td>
+								</tr>
+							))}
+						</>
+					))}
+				</tbody>
+			</table>
+		)
+	}
 </Layout>

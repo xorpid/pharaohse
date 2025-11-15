@@ -10,6 +10,26 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 <button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p></div>
 
 
+	<h3 class="flex items-center w-full">
+		<span class="grow bg-stone-300 dark:bg-neutral-700 rounded h-px"></span>
+		<span class="mx-4 text-sm font-sans font-medium">End</span>
+		<span class="grow bg-stone-300 dark:bg-neutral-700 rounded h-px"></span>
+	</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	Ammianus Marcellinus, Roman Antiquities, Book XVII (17) [Rerum gestarum (Latin: lit. of things accomplished, ie. history)
 	https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/17*.html

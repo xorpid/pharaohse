@@ -31,6 +31,7 @@
 }
 
 :root {
+	--bg-lit: --alpha(var(--color-stone-50) / 15%);
 	--bg-light: var(--color-stone-50);
 	--bg: var(--color-stone-200);
 	--bg-dark: var(--color-stone-300);
@@ -57,6 +58,7 @@
 	--glow: #565757;
 }
 .dark {
+	--bg-lit: --alpha(var(--color-neutral-700) / 15%);
 	--bg-light: var(--color-neutral-800);
 	--bg: var(--color-neutral-900);
 	--bg-dark: var(--color-neutral-950);
@@ -258,7 +260,7 @@
 	}
 
 	.lead {
-		margin-inline: calc(var(--spacing) * 4);
+		margin-inline: calc(var(--spacing) * 8);
 		padding-block: calc(var(--spacing) * 4);
 	}
 
@@ -280,6 +282,10 @@
 	.bg-highlight {
 		background-color: var(--highlight);
 	}
+	.bg-lit {
+		background-color: var(--bg-lit);
+	}
+
 	.tx {
 		color: var(--tx);
 	}
@@ -444,18 +450,21 @@
 		vertical-align: super;
 		color: var(--popover);
 		border-radius: 0.25rem;
-		/* margin-inline: 0.25ch; */
+		margin-inline: 0.25ch;
 		padding-inline: 0.25ch;
 		font-size: 75%;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 1rem;
+		background-color: var(--bg-light);
 	}
 	[popover]:popover-open {
 		opacity: 1;
 		box-shadow: var(--shadow-3xl);
-		/* color: --alpha(var(--color-lime-300) / 80%); */
+		text-align: left;
 	}
+
+	/* Not yet ready for anchor() or @position-try (2025-11-11) */
 	[popover] {
 		position: fixed;
 		width: fit-content;
@@ -479,29 +488,14 @@
 		font-size: var(--text-xl) !important;
 	}
 	[popover]::backdrop {
-		background: #000000c0;
+		background: #00000080;
+		pointer-events: none;
 	}
 	[popovertarget]:hover,
 	[popovertarget]:focus {
 		color: var(--tx);
 		background-color: var(--bg-dark);
 		cursor: pointer;
-	}
-
-	[popover]:popover-open {
-		opacity: 1;
-		box-shadow: var(--shadow-3xl);
-		animation: show-popover 0.25s ease-in-out;
-		text-align: left;
-	}
-
-	@keyframes show-popover {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
 	}
 
 	mid {
