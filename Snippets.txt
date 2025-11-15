@@ -17,6 +17,15 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 	</h3>
 
 
+<div class="max-w-sm mx-auto border rounded-t-xl my-4">
+  <div class="relative">
+      <img class="h-64 w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1738580428773-ac5ab22c5b80" alt="Random image">
+      <div class="absolute inset-0 flex items-end bottom-0 justify-center">
+          <div class="w-full text-white bg-black/40 text-center text-3xl font-bold text-shadow-lg/20 py-4">Monuments</div>
+      </div>
+  </div>
+  <p class="p-4 bg-yellow-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque reprehenderit facilis voluptatum architecto ducimus.</p>
+</div>
 
 
 

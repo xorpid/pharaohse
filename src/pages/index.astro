@@ -24,14 +24,14 @@ const items = [
 		bild: p1,
 		alt: "Detail from Tomb of Prince Amunherkhopshef (QV55) with his father Ramesses III",
 		url: "/pharaohs",
-		text: "<em>The royal titulary</em> of the Egyptian pharaohs was the standard naming convention adopted by the kings of ancient Egypt. It symbolised their supremacy and sacred power, and were sometimes amended during the reign to signify an important event.",
+		text: "<em>The royal titulary</em> of the Egyptian pharaohs was the standard naming convention adopted by the kings of ancient Egypt. It symbolised their supremacy and sacred power, and was written with hieroglyphs.",
 	},
 	{
-		title: "Turin",
+		title: "Turin King List",
 		bild: p2,
 		alt: "Detail from Turin King List",
 		url: "/kinglists/turin",
-		text: "This one-of-a-kind, heavily fragmented 3,300-year-old papyrus roll, also known as the <i>Royal Canon of Turin</i>, contains the most detailed chronological record of Egyptian pharaohs, forming the foundation of ancient Egyptian chronology.",
+		text: "This unique, heavily fragmented 3,300-year-old papyrus roll, also known as the <i>Royal Canon of Turin</i>, contains the most detailed chronological record of Egyptian pharaohs, forming the foundation of ancient Egyptian chronology.",
 	},
 	{
 		title: "Kinglists",
@@ -119,15 +119,18 @@ const items = [
 	<div class="z-10 grid grid-cols-1 gap-5 py-10">
 		<!-- MARK: Cards
 		-->
-		<div class="grid grid-cols-1 grid-rows-1 justify-center gap-x-4 gap-y-10 md:grid-cols-2">
+		<div class="grid grid-cols-1 grid-rows-1 justify-center gap-4 md:grid-cols-2">
 			{
 				items.map((item, i) => (
-					<div class="card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700">
+					<div class="max-w-xl mx-auto rounded-t-xl my-2 card transition duration-500 ease-in-out hover:contrast-125 hover:saturate-100 hover:shadow-3xl hover:bg-yellow-100/30 dark:hover:bg-neutral-700 p-0">
 						<a href={item.url} class="nolinkcolor">
-							<Image src={item.bild} loading={i < 2 ? "eager" : "lazy"} alt={item.alt} class="rounded-t-lg" />
-
-							<div class="text-2xl p-2 font-medium">{item.title}</div>
-							<div class="text-sm p-2 tx" set:html={item.text} />
+							<div class="relative">
+								<Image src={item.bild} loading={i < 2 ? "eager" : "lazy"} alt={item.alt} class="rounded-t-lg" />
+								<div class="absolute inset-0 flex items-end bottom-0 justify-center">
+									<div class="w-full text-white bg-black/40 text-center text-3xl font-bold text-shadow-lg/40 py-0">{item.title}</div>
+								</div>
+							</div>
+							<div class="text-sm p-4 tx" set:html={item.text} />
 						</a>
 					</div>
 				))
