@@ -28,40 +28,60 @@ However, the code is a mess and needs to be rewritten from scratch. Like everyon
 
 ```
 root/
-├── public/									# Static assets (served as-is)
+├── public/										# Static assets (served as-is)
 │	├── favicon.png							# Website favicon
-│	├── pdf/								# PDF documents (books, articles)
-│	├── svg/								# Scalable vector graphics
-│	└── images/								# Images: pharaohs, artifacts, obelisks, etc.
+│	├── pdf/										# PDF documents (books, articles)
+│	├── svg/										# Scalable vector graphics
+│	└── images/									# Images: pharaohs, artifacts, obelisks, etc.
 │
-├── src/									# Source code
-│	├── assets/								# Astro-optimized assets (images, fonts)
+├── dist/											# Generated project files
+│	└── sitemap-index.xml				# Sitemap
+│
+├── src/											# Source code
+│	├── assets/									# Astro-optimized assets (images, fonts)
 │	│
 │	├── components/							# Reusable UI components
 │	│	├── footer.astro					# Site footer with links & contact
 │	│	├── Head.astro						# Shared <head> metadata & SEO
-│	│	├── ThemeToggle.astro				# Dark/light mode switch
+│	│	├── ThemeToggle.astro			# Dark/light mode switch
 │	│	└── header.astro					# Navigation bar
 │	│
-│	├── data/								# JSON data files (obelisks, pharaohs, etc.)
+│	├── data/										# JSON data files (obelisks, pharaohs, etc.)
 │	│
-│	├── layouts/							# Page templates
+│	├── layouts/								# Page templates
 │	│	└── Layout.astro					# Main layout wrapper for all pages
 │	│
-│	├── pages/								# Website routes (Astro + Markdown)
-│	│	├── articles/						# Scholarly articles & resources
-│	│	│	└── index.astro
+│	├── pages/															# Website routes (Astro + Markdown)
+│	│	├── articles/													# Scholarly articles & resources
+│	│	│	├── battle-of-kadesh.astro					# Inscription and content
+│	│	│	├── book-series.astro								# Important Egyptology books, Lepsius, Champollion etc.
+│	│	│	├── cg.md														# General Catalogue (Cairo)
+│	│	│	├── chronology.astro								# About chronology and how it works
+│	│	│	├── dionysius.astro									# Archived page
+│	│	│	├── egyptology.astro								# General info
+│	│	│	├── hatshepsut-obelisk.astro				# Inscriptions etc.
+│	│	│	├── hieratic.astro									# Specific hieratic info
+│	│	│	├── hieroglyphs.astro								# Language and scripts
+│	│	│	├── historical-hall-berlin.astro		# Berlin Historical Hall (destroyed)
+│	│	│	├── papyrus.astro										# Papyrus manifacture etc.
+│	│	│	├── pyramids.astro									# Pyramids in Egypt
+│	│	│	├── rosetta-stone.astro							# Rosetta Stone
+│	│	│	├── scribes.astro										# Scribes
+│	│	│	├── temples.astro										# Temples and monuments
+│	│	│	├── titles.astro										# Titles and epithets
+│	│	│	├── travellers.astro								# Travellers to Egypt
+│	│	│	└── index.astro											# Dynamic page (e.g., links to `/articles/*`)
 │	│	│
-│	│	├── authors/						# Ancient historians & Egyptologists
+│	│	├── authors/							# Ancient historians & Egyptologists
 │	│	│	├── [slug].astro				# Dynamic author page (e.g., `/authors/manetho`)
 │	│	│	└── index.astro					# List of all authors
 │	│	│
-│	│	├── dynasty/						# Egyptian dynasties
-│	│	│	├── [id].md						# Dynamic Markdown page per dynasty
+│	│	├── dynasty/							# Egyptian dynasties
+│	│	│	├── [id].md							# Dynamic Markdown page per dynasty
 │	│	│	└── 1.md, 2.md…					# Individual dynasty pages (1–30+)
 │	│	│
 │	│	├── kinglists/						# Royal canon & king lists
-│	│	│	├── turin/						# Turin King List (papyrus)
+│	│	│	├── turin/							# Turin King List (papyrus)
 │	│	│	│	├── library/
 │	│	│	│	│	├── books/
 │	│	│	│	│	│	└── [book].astro	# Links to PDFs
@@ -70,29 +90,30 @@ root/
 │	│	│	├── [slug].astro				# Specific king list (e.g., Abydos, Saqqara)
 │	│	│	└── index.astro					# Overview of all king lists
 │	│	│
-│	│	├── periods/						# Historical periods (OK, MK, NK, etc.)
+│	│	├── periods/							# Historical periods (OK, MK, NK, etc.)
 │	│	│	├── [pd].astro					# Dynamic period page
 │	│	│	└── index.astro					# All periods overview
 │	│	│
-│	│	├── pharaohs/						# Individual pharaoh profiles
+│	│	├── pharaohs/							# Individual pharaoh profiles
 │	│	│	├── [king].astro				# Dynamic page per ruler (e.g., `/pharaohs/ramesses-ii`)
 │	│	│	└── index.astro					# Full list of pharaohs
 │	│	│
 │	│	├── index.astro						# Homepage
-│	│	├── dynasties.astro					# Complete dynasty timeline
+│	│	├── dynasties.astro				# Complete dynasty timeline
+│	│	├── bibliography.astro		# Bibliography
 │	│	└── about.astro						# Project info & credits
 │	│
-│	├── styles/								# Global styles
+│	├── styles/									# Global styles
 │	│	└── global.css						# Base CSS (resets, typography)
 │	│
-│	└── content.config.ts					# Astro Content Collections schema
+│	└── content.config.ts				# Astro Content Collections schema
 │
-├── astro.config.mjs						# Astro build & integration settings
+├── astro.config.mjs					# Astro build & integration settings
 ├── package.json							# Dependencies & scripts
-├── postcss.config.mjs						# PostCSS pipeline
+├── postcss.config.mjs				# PostCSS pipeline
 ├── tsconfig.json							# TypeScript configuration
-├── tailwind.config.mjs						# Tailwind CSS design system
-└── README.md								# Project documentation
+├── tailwind.config.mjs				# Tailwind CSS design system
+└── README.md									# Project documentation
 ```
 
 # TO DO's

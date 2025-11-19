@@ -86,10 +86,11 @@ for (const k of Object.keys(groups)) {
 			became dominant instead of the more correct "Ra". For example, the sun sign is written as <i>"Ra"</i> in Ramesses, but as <i>"Re"</i> in Neferkare.
 		</p>
 		<p>
-			<a href="/titles-and-epithets">The fivefold royal titulary</a> consisted of the <i>Horus</i>, <i>Nebty</i>, <i>Golden Horus</i>, <i>Throne</i>,
-			and <i>Birth names</i>. It established the king's authority and legitimacy and served as a mission statement for his reign. Many pharaohs are
-			known by only one or two of the five names, and many have yet to be assigned to the correct king. There are also several pharaohs whose names
-			have not yet been identified.
+			<a href="/articles/titles">The fivefold royal titulary</a> consisted of the <i>Horus</i>, <i>Nebty</i>, <i>Golden Horus</i>, <i>Throne</i>, and <i
+				>Birth names</i
+			>. It established the king's authority and legitimacy and served as a mission statement for his reign. Many pharaohs are known by only one or
+			two of the five names, and many have yet to be assigned to the correct king. There are also several pharaohs whose names have not yet been
+			identified.
 		</p>
 
 		<div class="">
@@ -109,10 +110,25 @@ for (const k of Object.keys(groups)) {
 		orderedDynChars.map((dchar) => {
 			const list = groups[dchar];
 			if (!list || list.length === 0) return null;
-			const d = dynastyByChar[dchar] ?? { name: dchar };
+
+			// Find the correct dynasty object that has this char
+			let dynastyObj = null;
+			for (const period of dynasties) {
+				dynastyObj = period.dynasties.find((dy: any) => String(dy.char) === dchar);
+				if (dynastyObj) break;
+			}
+
+			// Fallback if somehow not found (should never happen)
+			const d = dynastyObj || { name: dchar, slug: dchar.toLowerCase() };
+
 			return (
 				<section class="mb-8">
-					<h2 class="text-2xl font-semibold my-10 text-center secondary">{d.name}</h2>
+					<h2 class="text-2xl font-semibold my-10 text-center secondary">
+						<a href={`/dynasty/${d.slug}`} class="hover:underline underline-offset-4">
+							{d.name}
+						</a>
+					</h2>
+
 					<table class="w-full table-auto border-collapse">
 						<thead>
 							<tr class="text-left leading-4">
@@ -138,8 +154,8 @@ for (const k of Object.keys(groups)) {
 				</section>
 			);
 		})
-	}
-</Layout>
+	}</Layout
+>
 
 <style>
 	.pht {
