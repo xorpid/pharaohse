@@ -6,8 +6,15 @@ npx @astrojs/upgrade --yes && npm install tailwindcss@latest @tailwindcss/vite@l
 npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lock.json; npm install tailwindcss@latest @tailwindcss/vite@latest; npm install
 ------------------------------------
 
+’
+‘
+“
+”
 
-<button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p></div>
+<span class="footnote" data-note=""></span>
+
+
+<button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p>Reference text</div>
 
 
 	<h3 class="flex items-center w-full">

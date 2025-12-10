@@ -1,80 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-const fotnoter = [
-	`Champollion, Jean-François. 1824. ‘Papyrus Égyptiens historiques du musée Royal de Turin’. <i>Bulletin des sciences historiques, antiquités, philologie</i> 2: 297–303.`,
-	`Gardiner, <i>Royal Canon</i>, pl. VIII (col. VIII, line 5)`,
-	`Černý, Jaroslav. 1952. <i>Paper & Books in Ancient Egypt.</i> London: Lewis. 17.`,
-	`Wilcken, Ulrich. 1887. ‘Recto Oder Verso?’ <i>Hermes</i> 22: 487–92.`,
-	`Maspero, Gaston. 1895. <i>Histoire Ancienne Des Peuples de l’orient Classique.</i> Paris. 225, note 5.`,
-	`Winlock, Herbert E. 1947. <i>The Rise and Fall of the Middle Kingdom in Thebes.</i> New York: Macmillan. 4.`,
-	`Donatelli, Laura. 2016. ‘La Prima Proposta d’acquisto Da Parte Dei Savoia Della Collezione Egizia Di Bernardino Drovetti’. <i>Studi Piemontesi</i> 52 (2): 494.`,
-	`Dawson, Warren R., and Eric P. Uphill. 1972. <i>Who Was Who in Egyptology.</i> 2. Ed. London: Egypt Exploration Society. 90.`,
-	`Vidua, Carlo. 1834. <i>Lettere Del Conte Carlo Vidua Pubblicate Da Cesare Balbo.</i> Vol. 2. Turin: G. Pomba. Letter No. 41, August 7, 1820. 241f.`,
-	`The final price was 400,000 lire, 100,000 paid in cash and the remainder in yearly installments of 15,000 lire. cf. Donatelli, Laura. 2011. <i>Lettere e Documenti Di Bernardino Drovetti.</i> Accademia delle Scienze di Torino. A.5`,
-	`Fabretti, Ariodante. 1872. <i>Il Museo di antichità della R. università di Torino: notizie.</i> Turin: Stamperia reale. 13 n. 1. N.b. this clearly show the number 169, not 170.`,
-	`Charles X of France bought the second for 250,000 francs in 1827, now in the Louvre, and Lepsius bought the third for the Egyptian Museum of Berlin in 1836 for 30,000 francs. cf. Dawson and Uphill, <i>Who was who</i>, 90`,
-	`Champollion, Jean-François. 1824. <i>Précis Du Système Hiéroglyphique Des Anciens Égyptiens.</i> Paris: Imprimerie Royale.`,
-	`Champollion, "Papyrus Égyptiens", 297–303.`,
-	`Champollion, "Papyrus Égyptiens", 302. This was written for the Bulletin, cf. Hartleben, Hermine. 1909. ‘Lettres de Champollion le jeune’. <i>Bibliothèque Égyptologique</i> 30. Paris: Ernest Leroux. 87.`,
-	`Champollion, Jean-François. <i>Canon hiératique des dynasties égyptiennes</i>., Papiers de J.Fr. Champollion, vol. XVI. <a href="http://gallica.bnf.fr/ark:/12148/btv1b100853000" target="_blank">NAF 20318</a> (Gallica).`,
-	`Champollion-Figeac, Jacques Joseph. 1851. ‘De La Table Manuelle Des Rois et Des Dynasties d’Égypte Ou Papyrus Royal de Turin, de Ses Fragments Originaux, de Ses Copies Manuscrits Ou Imprimées, et de Ses Intreprétations’. <i>Revue Archéologique</i> 7 (2): 397–402, 461–72, 589–99, 653-65. Plate 149.`,
-	`Knortz, Karl. 1886. ‘Gustav Seyffarth, Eine Biographische Skizze’. In <i>The Literary Life Of Gustavus Seyffarth, An Autobiographical Sketch And Gustav Seyffarth, Eine Biographische Skizze.</i> New York: Steiger. 27. Letter of June 3, 1826`,
-	`Seyffarth, Gustav, and Karl Knortz. 1886. ‘The Literary Life of Gustavus Seyffarth.’ In <i>The Literary Life Of Gustavus Seyffarth, An Autobiographical Sketch And Gustav Seyffarth, Eine Biographische Skizze.</i> New York: Steiger. 20f.`,
-	`Wilkinson, John Gardner. 1851. <i>The Fragments of the Hieratic Papyrus at Turin.</i> Vol. 1. 2 vols. London: Richards. iv-v.`,
-	`Farina, Giulio. 1938. <i>Il Papiro dei re, restaurato.</i> Rome: G. Bardi. 8. Among those restored are the "erotic" papyrus (pTurin 55001)`,
-	`Consecutively numbered copies of inscriptions arranged in 14 unpublished volumes. The tracings of the Canon is in volume 7, containing numbers 6283–7828 and titled "Monumenta Aegyptiaca Taurinensia." Seyffarth, Gustav. Bibliotheca Aegyptiaca 1826-1830. The Wilbour Library of Egyptology, the Brooklyn Museum. For further details, see Gardiner, Royal Canon, 12.`,
-	`In a letter to his brother on July 29, 1826: "I have read his book and is convinced that he knows neither the monuments, hieroglyphs, or Coptic, and that his system is in direct opposition to the facts, and especially common sense." cf. Hartleben, <i>Lettres</i> I, 369`,
-	`Knortz, <i>‘Skizze’</i>, 43. Letter of Nov. 17, 1827.`,
-	`All the more eagerly he seized upon the important work [of Seyffarth, who was visiting Paris] sent to him on December 25, 1827, which immediately confirmed to him how disgracefully he had been deceived by San Quintino." cf. Hartleben, II, 126; Champollion-Figeac, <i>Table des Rois</i>, 468`,
-	`Champollion-Figeac, <i>Table des Rois</i>, 402f.`,
-	`Seyffarth, Gustav. 1843. <i>Die Grundsätze Der Mythologie Und Der Alten Religionsgeschichte.</i> Leipzig: Barth. 265.`,
-	`Seyffarth, <i>Literary life</i>, 21.`,
-	`Birch, Samuel. 1843. ‘Observations upon the Hieratical Canon of Egyptian Kings at Turin.’ <i>Transactions of the Royal Society of Literature</i> Series 2, vol. 1: 203-8`,
-	`Lepsius, <i>Über die zwölfte dynastie</i>, 441.`,
-	`Champollion-Figeac, <i>Table des Rois</i>, 402f.`,
-	`Champollion-Figeac, <i>Table des Rois</i>, 404.`,
-	`Lepsius, <i>Über die zwölfte dynastie</i>, 440ff; Bunsen, <i>Aegyptens Stelle</i>, 84.`,
-	`Lepsius, <i>Auswahl</i>, pls. 3-6`,
-	`Barucchi, <i>Discorsi</i>, 29-30`,
-	`Bunsen, <i>Aegyptens Stelle</i>.`,
-	`Hincks, TRSL 3, 128–150. Two narratives of his reading held at the Royal Society in 1846.`,
-	`Lesueur, <i>Chronologie</i>.`,
-	`Wilkinson, <i>Hieratic Papyrus</i>.`,
-	`Wilkinson, <i>Hieratic Papyrus</i>, 3f..`,
-	`Wilkinson, <i>Hieratic Papyrus</i>, 47-60.`,
-	`Ryholt, <i>Late Old Kingdom</i>, 88.`,
-	`Orcurti, <i>Catalogo</i>, 129f., 211-215.`,
-	`Brugsch, <i>Histoire</i>, Pl. 3 only in this edition.`,
-	`Lauth, <i>Manetho und der Turiner Königs-papyrus</i>.`,
-	`de Roug&eacute;, <i>Recherches</i>, 225–376, pl. 3.`,
-	`Wiedemann, <i>Aegyptische Geshichte</i>, 73–79.`,
-	`Meyer, <i>Aegyptische Chronologie</i>.`,
-	`Farina, <i>Papiro</i>, 11.`,
-	`Gardiner, <i>Royal Canon</i>, 11, 19-20`,
-	`Farina, <i>Papiro</i>, 10`,
-	`Farina, <i>Papiro</i>, 11`,
-	`Ryholt, <i>Turin King-list</i>, 136, note 10; The four frames with additional fragments are numbered Cat. 1874/002 through 005.`,
-	`Gardiner, <i>Royal Canon</i>`,
-	`Gardiner, <i>Royal Canon</i>, plate IX`,
-	`Kitchen, <i>Ramesside Inscriptions</i> II, §288, pp. 827–844.`,
-	`Beckerath, <i>End of the Old Kingdom</i>, 140-147<br>
-	Beckerath, <i>Untersuchungen</i>, 20-26.<br>
-	Beckerath, <i>Dynastie der Herakleopoliten</i>, 13-20<br>
-	Beckerath, <i>Chronologie</i>, 45-57.<br>
-	Beckerath, <i>Bemerkungen</i>, 49—58.<br>
-	Beckerath, <i>Some Remarks</i>, 225-227.<br>
-	Beckerath, <i>Anmerkung</i>, 19-21.`,
-	`Franke, <i>Zur Chronologie</i>, 113-138, 245-274.`,
-	`Málek, <i>Original Version</i>, 93-106.`,
-	`Barta, <i>Bemerkungen</i>, 11-13.`,
-	`Helck, <i>Anmerkungen</i>, 151–216.`,
-	`Ryholt, <i>Political Situation</i>, 25ff. Further clarified in Ryholt, <i>Turin King-list</i>, 136, Table 1.<br>
-	Ryholt, <i>Late Old Kingdom</i>, 87–100.<br>
-	Ryholt, <i>Turin King-list</i>, 135–155.<br>
-	Ryholt, <i>Seneferka</i>, 159–73.<br>`,
-	`Ryholt, <i>Political Situation</i>, 24ff.`,
-];
+// PDF directory path (files in public/ are served from root)
+const PDF_PATH = "/pdf/";
 ---
 
 <Layout
@@ -93,22 +21,23 @@ const fotnoter = [
 		often referred to as the
 		<span class="glows"><strong>Turin king list</strong></span>, or <span class="glows"><strong>the Royal Canon of Turin</strong></span>, originating
 		from Champollion’s 1824 description as <em>“un véritable tableau chronologique, un canon royal”</em>, a true chronological timeline, a royal
-		canon.<button popovertarget="pop1">1</button> The papyrus is in very poor shape, less than a third of it remains, having crumbled into hundreds of
-		tiny fragments by handling and during the transport to Italy, after its discovery around 1820. The king list is written on the back side of a Nineteenth
-		Dynasty discarded administrative papyrus in the 13th century BC, dating from the reign of <a href="/ancient-egypt/pharaoh/Ramesses-II"
-			>Ramesses II</a
-		>.
+		canon.<span
+			class="footnote"
+			data-note="Champollion, Jean-François. 1824. ‘Papyrus Égyptiens historiques du musée Royal de Turin’. <i>Bulletin des sciences historiques, antiquités, philologie</i> 2: 297–303."
+		></span> The papyrus is in very poor shape, less than a third of it remains, having crumbled into hundreds of tiny fragments by handling and during
+		the transport to Italy, after its discovery around 1820. The king list is written on the back side of a Nineteenth Dynasty discarded administrative
+		papyrus in the 13th century BC, dating from the reign of <a href="/ancient-egypt/pharaoh/Ramesses-II">Ramesses II</a>.
 	</p>
 	<p></p>
 	<p>
-		The intact papyrus would have contained the names of 223 kings. Of these, 126 are complete or partial, and the remaining 97 entirely lost in the
-		lacuna. Many of the preserved names does not appear inscribed on the <a href="/ancient-egypt/kinglist/abydos-canon">Abydos</a>, <a
-			href="/ancient-egypt/kinglist/saqqara-canon">Saqqara</a
-		>, or <a href="/ancient-egypt/kinglist/karnak-canon">Karnak</a> Canons from the New Kingdom. Despite its importance, we had to rely on traced facsimiles
-		from the 1840’s and 1850’s, which naturally contain a few minor errors. Only Farina’s low quality photos were available until the Egyptian Museum in
-		Turin released high quality photos in September of 2019. The papyrus has deteriorated, mainly due to to mounting and re-mounting, since the reconstruction
-		in 1826. However, the facsimiles offer us a glimpse of a better preserved king list, as several signs seen in the facsimiles, has been irretrievably
-		lost.
+		As far as can be determined, the intact papyrus would have contained the names of 223 kings. Of these, 126 are complete or partial, and the
+		remaining 97 entirely lost in the lacuna. Many of the preserved names does not appear inscribed on the <a
+			href="/ancient-egypt/kinglist/abydos-canon">Abydos</a
+		>, <a href="/ancient-egypt/kinglist/saqqara-canon">Saqqara</a>, or <a href="/ancient-egypt/kinglist/karnak-canon">Karnak</a> Canons from the New Kingdom.
+		Despite its importance, only low-quality photos by Farina and traced facsimiles from the 1840s and 1850s were available until the Egyptian Museum in
+		Turin <i>finally</i> released high-quality photos in September 2019. The papyrus has deteriorated, mainly due to to mounting and re-mounting, since
+		the reconstruction in 1826. However, the facsimiles offer us a glimpse of a better-preserved king list. Several signs seen in the facsimiles have since
+		been irretrievably lost, and the facsimiles naturally contains a few minor errors.
 	</p>
 
 	<div class="py-5">
@@ -116,6 +45,7 @@ const fotnoter = [
 			data-fancybox="TurinKL"
 			data-caption="<b>The Turin king list</b> (Royal Canon of Turin) — ( CC BY ) PHARAOH.SE 2020"
 			href="/images/Turinkinglist2020.png"
+			rel="noopener nofollow"
 			><img loading="lazy" class="w-full" src="/images/Turinkinglist2020.webp" alt="The Turin king list" />
 		</a>
 	</div>
@@ -138,31 +68,35 @@ const fotnoter = [
 		</p>
 		<p>
 			The Turin king list is an ancient Egyptian full-size papyrus roll written in hieratic, sadly it is in very poor shape, only one third of the
-			full papyrus remains. Its original use was as a tax-register dating to the reign of <a href="/ancient-egypt/pharaoh/Ramesses-II">Ramesses II</a>
+			full papyrus remains. Its original use was as a tax-register dating to the reign of <a href="/pharaohs/Ramesses-II">Ramesses II</a>
 			(1279–1213 BCE), evident from the text, <i>"Inspector of the wells of</i>&nbsp;<tlit>r&#42788;-msw-mry-imn</tlit>," i.e. an official during the
-			reign of Ramesses II.<button popovertarget="pop2">2</button> There is a slight possibility that same position still existed during the subsequent
-			reigns of <a href="/ancient-egypt/pharaoh/Merenptah">Merenptah</a> and
-			<a href="/ancient-egypt/pharaoh/Seti-II">Seti II</a>, providing an approximate date for the papyrus, somewhere in the 1275–1200 BCE range.
+			reign of Ramesses II.<span class="footnote" data-note="Gardiner, <i>Royal Canon</i>, pl. VIII (col. VIII, line 5)"></span> There is a slight possibility
+			that same position still existed during the subsequent reigns of <a href="/pharaohs/Merenptah">Merenptah</a> and
+			<a href="/pharaohs/Seti-II">Seti II</a>, providing an approximate date for the papyrus, somewhere in the 1275–1200 BCE range.
 		</p>
 		<p>
 			Rolls of papyrus were manufactured with the horizontal fibres on the inside, and the vertical fibres on the outside. The natural way to write on
-			papyri, was on the inside of the roll (i.e. along the horizontal fibres), which also served to protect the writing when it was rolled up.<button
-				popovertarget="pop3">3</button
-			> This side is called the <i>recto</i>, or front side.
+			papyri, was on the inside of the roll (i.e. along the horizontal fibres), which also served to protect the writing when it was rolled up.<span
+				class="footnote"
+				data-note="Černý, Jaroslav. 1952. <i>Paper & Books in Ancient Egypt.</i> London: Lewis. 17."></span> This side is called the <i>recto</i>, or
+			front side.
 		</p>
 		<p>
 			It was first assumed that the king list was the initial document, however, as the tax-register was written along the horizontal fibres, it
-			naturally must be the original.<button popovertarget="pop4">4</button> So, the tax-register is written on the <i>recto</i>, or front side, with
-			the king list on the <i>verso</i>, or back side. There is no indication as to when the king list was written, whether a few months, years, or
-			even decades later.
+			naturally must be the original.<span class="footnote" data-note="Wilcken, Ulrich. 1887. ‘Recto Oder Verso?’ <i>Hermes</i> 22: 487–92."></span> So,
+			the tax-register is written on the <i>recto</i>, or front side, with the king list on the <i>verso</i>, or back side. There is no indication as
+			to when the king list was written, whether a few months, years, or even decades later.
 		</p>
 	</div>
 
 	<h2 class="pt-3 pb-1">Discovery</h2>
 	<div class="">
 		<p>
-			The papyrus was likely intact when rediscovered in the late 1810s near Thebes in Egypt; however, the provenance is unknown. Being suddenly
-			exposed to the elements and being handled by human hands after thousands of years in isolation, caused the fragile papyrus to begin to crumble.
+			The papyrus was likely intact when rediscovered in the late 1810s near Thebes in Egypt; however, the provenance is unknown. Local tomb robbers
+			prospered as wealthy European travellers began spending money on artefacts. Even fragile papyrus rolls turned out to be valuable. However, there
+			was a lot of potential for damage given that the papyrus had been handled by the finder, intermediaries, the seller and the buyer. While the
+			papyrus rolls were certainly handled carefully, they were not handled with the same level of care as would be expected today. The papyrus roll
+			was already fragile, so being moved away from the dry conditions of southern Egypt and suddenly exposed to humidity was not good for it.
 			Bernardino Drovetti, the French Consul-General of Egypt at the time, acquired the papyrus sometime in the 1815–22 timeframe. Although it is
 			unknown if he acquired it himself, it is more likely that one of his agents did. The note by Maspero as to its discovery was likely based on
 			some accurate information.
@@ -175,7 +109,11 @@ const fotnoter = [
 				them in 1824.
 
 				<div class="text-right p-2">
-					<cite class="text-left">Gaston Maspero.<button popovertarget="pop5">5</button></cite>
+					<cite class="text-left"
+						>Gaston Maspero.<span
+							class="footnote"
+							data-note="Maspero, Gaston. 1895. <i>Histoire Ancienne Des Peuples de l’orient Classique.</i> Paris. 225, note 5."></span></cite
+					>
 				</div>
 			</blockquote>
 		</div>
@@ -187,17 +125,25 @@ const fotnoter = [
 				his waist, mounted his donkey, and proceeded to ride into town. The joggling which the jar got along the path was disastrous.
 
 				<div class="text-right p-2">
-					<cite class="text-left">Herbert Winlock.<button popovertarget="pop6">6</button></cite>
+					<cite class="text-left"
+						>Herbert Winlock.<span
+							class="footnote"
+							data-note="Winlock, Herbert E. 1947. <i>The Rise and Fall of the Middle Kingdom in Thebes.</i> New York: Macmillan. 4."></span></cite
+					>
 				</div>
 			</blockquote>
 		</div>
 
 		<p>
 			Drovetti clearly failed to note the importance of the papyrus, and simply stored it in a box together with many other papyri he acquired in
-			Egypt.<button popovertarget="pop7">7</button> As there is no clear provenance of the discovery, the archaeological context is irretrievably lost.
-			Drovetti and his agents amassed a huge collection of Egyptian artefacts, and textual papyri did not receive special care<button
-				popovertarget="pop8">8</button
-			>
+			Egypt.<span
+				class="footnote"
+				data-note="Donatelli, Laura. 2016. ‘La Prima Proposta d’acquisto Da Parte Dei Savoia Della Collezione Egizia Di Bernardino Drovetti’. <i>Studi Piemontesi</i> 52 (2): 494."
+			></span> As there is no clear provenance of the discovery, the archaeological context is irretrievably lost. Drovetti and his agents amassed a huge
+			collection of Egyptian artefacts, and textual papyri did not receive special care<span
+				class="footnote"
+				data-note="Dawson, Warren R., and Eric P. Uphill. 1972. <i>Who Was Who in Egyptology.</i> 2. Ed. London: Egypt Exploration Society. 90."
+			></span>
 			but were unceremoniously dumped together in a big box by the hundreds. It was, after all, only a papyrus without elaborate drawings of gods and kings.
 			As the European market in Egyptian artefacts was rapidly growing, it was to be sold to the highest bidder.
 		</p>
@@ -217,21 +163,29 @@ const fotnoter = [
 		</div>
 
 		<p>
-			Drovetti had the antiquities he acquired in Egypt shipped and stored in Livorno already in 1820,<button popovertarget="pop9">9</button> and after
+			Drovetti had the antiquities he acquired in Egypt shipped and stored in Livorno already in 1820,<span
+				class="footnote"
+				data-note="Vidua, Carlo. 1834. <i>Lettere Del Conte Carlo Vidua Pubblicate Da Cesare Balbo.</i> Vol. 2. Turin: G. Pomba. Letter No. 41, August 7, 1820. 241f."
+			></span>
 			France declined to buy his collection, he started negotiations with his native Piedmont. Victor Emmanuel I, the King of Sardinia, showed great interest
 			in the collection, but Drovetti’s asking price of 400,000 lire was an enormous sum for the small kingdom. The negotiations stalled when the king
-			abdicated in favour of his brother. Ultimately, Drovetti accepted the deal, and the king signed the purchase on January 24, 1824.<button
-				popovertarget="pop10">10</button
-			>
+			abdicated in favour of his brother. Ultimately, Drovetti accepted the deal, and the king signed the purchase on January 24, 1824.<span
+				class="footnote"
+				data-note="The final price was 400,000 lire, 100,000 paid in cash and the remainder in yearly installments of 15,000 lire. cf. Donatelli, Laura. 2011. <i>Lettere e Documenti Di Bernardino Drovetti.</i> Accademia delle Scienze di Torino. A.5"
+			></span>
 		</p>
 
 		<p>
-			The collection included 170 Egyptian papyri,<button popovertarget="pop11">11</button> and was only the first of three collections that he sold.<button
-				popovertarget="pop12">12</button
-			> Transported from storage in Livorno to Genua by sea, from there to Turin by wagons, it arrived in February of 1824. Housed in the Academy of Sciences
-			building, the collection was unpacked immediately and temporarily placed in rooms on the ground floor. The Drovetti collection de facto became the
-			Egyptian Museum of Turin, a detached section of the Museum of Antiquities. Formally inaugurated on June 10, 1824, the Museum was still undergoing
-			planning and construction, but not opened to the public until 1832.
+			The collection included 170 Egyptian papyri,<span
+				class="footnote"
+				data-note="Fabretti, Ariodante. 1872. <i>Il Museo di antichità della R. università di Torino: notizie.</i> Turin: Stamperia reale. 13 n. 1. N.b. this clearly show the number 169, not 170."
+			></span> and was only the first of three collections that he sold.<span
+				class="footnote"
+				data-note="Charles X of France bought the second for 250,000 francs in 1827, now in the Louvre, and Lepsius bought the third for the Egyptian Museum of Berlin in 1836 for 30,000 francs. cf. Dawson and Uphill, <i>Who was who</i>, 90"
+			></span> Transported from storage in Livorno to Genua by sea, from there to Turin by wagons, it arrived in February of 1824. Housed in the Academy
+			of Sciences building, the collection was unpacked immediately and temporarily placed in rooms on the ground floor. The Drovetti collection de facto
+			became the Egyptian Museum of Turin, a detached section of the Museum of Antiquities. Formally inaugurated on June 10, 1824, the Museum was still
+			undergoing planning and construction, but not opened to the public until 1832.
 		</p>
 	</div>
 
@@ -239,10 +193,13 @@ const fotnoter = [
 	<p>
 		Towards the end of 1823, the French scholar <b>Jean-François Champollion</b> completed his <i
 			>Summary of the hieroglyphic system of the ancient Egyptians</i
-		>,<button popovertarget="pop13">13</button> laying the foundation for the decipherment of the Egyptian hieroglyphs. His decipherment effort was being
-		hampered by inaccurate and unreliable transcriptions of the available hieroglyphic texts, which contained errors and omissions. To further the research,
-		it was imperative to obtain new error-free transcriptions of the texts held in the Egyptian collections throughout Europe, most of them in Italy. His
-		plan was to visit the collections and make exact copies himself.
+		>,<span
+			class="footnote"
+			data-note="Champollion, Jean-François. 1824. <i>Précis Du Système Hiéroglyphique Des Anciens Égyptiens.</i> Paris: Imprimerie Royale."></span> laying
+		the foundation for the decipherment of the Egyptian hieroglyphs. His decipherment effort was being hampered by inaccurate and unreliable transcriptions
+		of the available hieroglyphic texts, which contained errors and omissions. To further the research, it was imperative to obtain new error-free transcriptions
+		of the texts held in the Egyptian collections throughout Europe, most of them in Italy. His plan was to visit the collections and make exact copies
+		himself.
 	</p>
 	<p></p><figure class="float-left pr-5 pb-2">
 		<img loading="lazy" class="w-full" src="/images/Turin-Champollion.webp" alt="Champollion 1831" />
@@ -275,10 +232,10 @@ const fotnoter = [
 		keys to the museum, and of course this gave rise to new feuds as time went on.
 	</p>
 	<p>
-		In early November, after weeks of restless work, he also learned about a box of papyri scraps stashed away at the Palace.<button
-			popovertarget="pop14">14</button
-		> However, he insisted on seeing them all, down to the last shred, so it was agreed that they were to be laid out on a table for him to peruse the
-		next morning.
+		In early November, after weeks of restless work, he also learned about a box of papyri scraps stashed away at the Palace.<span
+			class="footnote"
+			data-note="Champollion, “Papyrus Égyptiens”, 297–303."></span> However, he insisted on seeing them all, down to the last shred, so it was agreed
+		that they were to be laid out on a table for him to peruse the next morning.
 	</p>
 	<p>On November 6th, he wrote:</p>
 
@@ -289,13 +246,19 @@ const fotnoter = [
 			of turning them to dust, I collected this or that piece of papyrus, which may be the last and only remains of the memory of a king who may have
 			lived in the immense palace of Karnak.
 			<br /><br />
-			I am convinced that these papyri belonged to the archives of a temple or other public depository. However, the most important of these, one whose
-			mutilation I will ceaselessly deplore, is a historical treasure, a chronological list, a true royal canon in hieratic writing, containing four times
-			as many dynasties as an intact Abydos Table. Most remarkable is that none of the names are in any way similar to those of the Abydos Table. It seems
-			equally certain to me that the remains of this historical Canon dates to no later than the Nineteenth Dynasty.
+			I am convinced that these papyri belonged to the archives of a temple or other public depository. The most important of these is a historical treasure:
+			a chronological list and true royal canon in hieratic writing. It contains four times as many dynasties as an intact <a
+				href="/kinglists/minor#abydos">Abydos Table</a
+			>, and its degradation is something I will never stop lamenting. Most remarkable is that none of the names are in any way similar to those of
+			the Abydos Table. I am equally certain that the remains of this historical canon date to no later than the Nineteenth Dynasty.
 
 			<div class="text-right p-2">
-				<cite class="text-left">Champollion's letter to his brother.<button popovertarget="pop15">15</button></cite>
+				<cite class="text-left"
+					>Champollion's letter to his brother.<span
+						class="footnote"
+						data-note="Champollion, “Papyrus Égyptiens”, 302. This was written for the Bulletin, cf. Hartleben, Hermine. 1909. ‘Lettres de Champollion le jeune’. <i>Bibliothèque Égyptologique</i> 30. Paris: Ernest Leroux. 87."
+					></span></cite
+				>
 			</div>
 		</blockquote>
 	</div>
@@ -306,10 +269,10 @@ const fotnoter = [
 	</p>
 	<blockquote>
 		“Finally, I have gathered from the remains of this royal canon, which is Manetho in hieratic writing, some 160–180 royal throne names; many are
-		intact, but many are – be it at the beginning or at the end – mutilated. A number follow the name, which will be a means of chronological
-		arrangement. The most striking result is undoubtedly evidence that the Egyptians, at a very remote time, counted nearly 200 reigns before the
-		Seventeenth Dynasty - since this text is found among archival remains that do not exceed past the Twentieth Dynasty; for in all these fragments
-		there is not a single cartouche similar to those of the Eighteenth, Nineteenth or subsequent dynasties.”
+		intact, but many are cut off at the beginning or end. A number follows the name, which will be a means of chronological arrangement. The most
+		striking result is undoubtedly the evidence that the Egyptians, at a very remote time, counted nearly 200 reigns before the Seventeenth Dynasty,
+		as this text was found among archival remains dating no further back than the Twentieth Dynasty. Not a single cartouche in these fragments is
+		similar to those of the Eighteenth, Nineteenth or subsequent dynasties.”
 	</blockquote>
 	<p>
 		Since the fragments could not even come close to forming a whole text, he concluded that only a small part of the papyrus was saved from
@@ -319,8 +282,10 @@ const fotnoter = [
 		>
 	</p>
 	<p>
-		Champollion made tracings of each fragment in a booklet,<button popovertarget="pop16">16</button> providing each with a unique Latin letter, ranging
-		from
+		Champollion made tracings of each fragment in a booklet,<span
+			class="footnote"
+			data-note="Champollion, Jean-François. <i>Canon hiératique des dynasties égyptiennes</i>., Papiers de J.Fr. Champollion, vol. XVI. NAF 20318. <a href=https://gallica.bnf.fr/ark:/12148/btv1b100853000 target=_blank>https://gallica.bnf.fr/ark:/12148/btv1b100853000</a>"
+		></span> providing each with a unique Latin letter, ranging from
 		<b>A</b> to <b>Z</b>, and when the alphabet ran out, continued from <b>Aa</b> to <b>Vv</b>. Only fragment <b>Uu</b> show the recto, and it is in fact
 		the same fragment as the already traced <b>Nn</b>, which <em>does</em> show the verso.
 	</p>
@@ -343,7 +308,10 @@ const fotnoter = [
 		Though the king list was an important discovery, he returned to work, copying as much of the collection as possible, all while expanding his
 		knowledge about the ancient Egyptian language. It should be noted that Champollion made no effort to reconstruct the papyrus, he just simply
 		copied the fragments he discovered. Neither did he publish the fragments or names he found, a task that was left to his brother Jacques-Joseph
-		Champollion-Figeac, some twenty years after Jean-François untimely death in 1832.<button popovertarget="pop17">17</button>
+		Champollion-Figeac, some twenty years after Jean-François untimely death in 1832.<span
+			class="footnote"
+			data-note="Champollion-Figeac, Jacques Joseph. 1851. ‘De La Table Manuelle Des Rois et Des Dynasties d’Égypte Ou Papyrus Royal de Turin, de Ses Fragments Originaux, de Ses Copies Manuscrits Ou Imprimées, et de Ses Intreprétations’. <i>Revue Archéologique</i> 7 (2): 397–402, 461–72, 589–99, 653-65. Plate 149."
+		></span>
 	</p>
 	<p>
 		For years rumours persisted that the jealous San-Quintino had secretly removed fragments. The rumours started after Seyffarth’s reconstruction in
@@ -420,8 +388,10 @@ const fotnoter = [
 		</p>
 
 		<p>
-			Seyffarth arrived in Turin in late May of 1826,<button popovertarget="pop18">18</button> and immediately began the restoration of the multitudes
-			of papyri in the Drovetti collection, among them the king list.
+			Seyffarth arrived in Turin in late May of 1826,<span
+				class="footnote"
+				data-note="Knortz, Karl. 1886. ‘Gustav Seyffarth, Eine Biographische Skizze’. In <i>The Literary Life Of Gustavus Seyffarth, An Autobiographical Sketch And Gustav Seyffarth, Eine Biographische Skizze.</i> New York: Steiger. 27. Letter of June 3, 1826"
+			></span> and immediately began the restoration of the multitudes of papyri in the Drovetti collection, among them the king list.
 		</p>
 
 		<p>
@@ -437,7 +407,12 @@ const fotnoter = [
 				thus obtained was eight feet long and one foot high.
 
 				<div class="text-right p-2">
-					<cite class="text-left">From Seyffarth’s autobiography.<button popovertarget="pop19">19</button></cite>
+					<cite class="text-left"
+						>From Seyffarth’s autobiography.<span
+							class="footnote"
+							data-note="Seyffarth, Gustav, and Karl Knortz. 1886. ‘The Literary Life of Gustavus Seyffarth.’ In <i>The Literary Life Of Gustavus Seyffarth, An Autobiographical Sketch And Gustav Seyffarth, Eine Biographische Skizze.</i> New York: Steiger. 20f."
+						></span></cite
+					>
 				</div>
 			</blockquote>
 		</div>
@@ -455,28 +430,41 @@ const fotnoter = [
 		</p>
 		<p>
 			Champollion claimed that San Quintino hid fragments from him, which was probably only an attempt to mitigate his hurt pride, when confronted
-			with Seyffarth’s superior arrangement.<button popovertarget="pop20">20</button> It is to Seyffarth’s merit that he did not try to restore the papyrus
-			according to his own beliefs about the hieroglyphic system, instead he took a scientific route by matching the fragments according to fibres, colour,
-			thickness, and writing. Seyffarth’s arrangement is exceptional, as subsequent reconstructions show that he positioned most of the fragments in their
-			correct position. In all he restored some fifteen papyri during his time at the Museum.<button popovertarget="pop21">21</button>
+			with Seyffarth’s superior arrangement.<span
+				class="footnote"
+				data-note="Wilkinson, John Gardner. 1851. <i>The Fragments of the Hieratic Papyrus at Turin.</i> Vol. 1. 2 vols. London: Richards. iv-v."
+			></span> It is to Seyffarth’s merit that he did not try to restore the papyrus according to his own beliefs about the hieroglyphic system, instead
+			he took a scientific route by matching the fragments according to fibres, colour, thickness, and writing. Seyffarth’s arrangement is exceptional,
+			as subsequent reconstructions show that he positioned most of the fragments in their correct position. In all he restored some fifteen papyri during
+			his time at the Museum.<span
+				class="footnote"
+				data-note="Farina, Giulio. 1938. <i>Il Papiro dei re, restaurato.</i> Rome: G. Bardi. 8. Among those restored are the erotic papyrus (pTurin 55001)"
+			></span>
 		</p>
 		<p>
 			When the arrangement was as complete as Seyffarth could make it, he glued the fragments together with blotting paper. Seyffarth did not publish
-			his restoration, but his unpublished tracings of the papyrus is in the archives of the Brooklyn Museum.<button popovertarget="pop22">22</button>
-			Champollion saw Seyffarth as a charlatan.<button popovertarget="pop23">23</button> His opinion of Seyffarth could explain why he did not trust in
-			his arrangement of the papyrus. Add to this that Seyffarth saw Champollion as The Enemy,<button popovertarget="pop24">24</button> and did his best
-			to discredit the Frenchman’s system to anyone that would listen.
+			his restoration, but his unpublished tracings of the papyrus is in the archives of the Brooklyn Museum.<span
+				class="footnote"
+				data-note="Consecutively numbered copies of inscriptions arranged in 14 unpublished volumes. The tracings of the Canon is in volume 7, containing numbers 6283–7828 and titled “Monumenta Aegyptiaca Taurinensia.” Seyffarth, Gustav. Bibliotheca Aegyptiaca 1826-1830. The Wilbour Library of Egyptology, the Brooklyn Museum. For further details, see Gardiner, Royal Canon, 12."
+			></span>
+			Champollion saw Seyffarth as a charlatan.<span
+				class="footnote"
+				data-note="In a letter to his brother on July 29, 1826: “I have read his book and is convinced that he knows neither the monuments, hieroglyphs, or Coptic, and that his system is in direct opposition to the facts, and especially common sense.” cf. Hartleben, <i>Lettres</i> I, 369"
+			></span> His opinion of Seyffarth could explain why he did not trust in his arrangement of the papyrus. Add to this that Seyffarth saw Champollion
+			as The Enemy,<span class="footnote" data-note="Knortz, <i>‘Skizze’</i>, 43. Letter of Nov. 17, 1827."></span> and did his best to discredit the Frenchman’s
+			system to anyone that would listen.
 		</p>
 		<p>
-			When Champollion saw Seyffarth’s arrangement of the papyrus, instead of acknowledging the accomplishment, he saw only conspiracy and deceit.<button
-				popovertarget="pop25">25</button
-			> So much that he accused San Quintino, who was cataloguing Drovetti’s collection at the Museum, of having hidden fragments from him, only to later
-			surrender them to Seyffarth. This claim was circulated in Champollion’s circle of friends, and his brother later reiterated the claim.<button
-				popovertarget="pop26">26</button
-			> Thought it should be noted that the Champollion-San Quintino feud was well known at the time, and the possibility cannot be entirely discarded.
-			San Quintino was making a detailed inventory of the collection for the Academy as it was being unpacked, and it would seem probable, even likely,
-			that after Champollion had examined the pile of papyri debris, his scrutiny resulted in him finding fragments that were neglected or missed by the
-			Frenchman.
+			When Champollion saw Seyffarth’s arrangement of the papyrus, instead of acknowledging the accomplishment, he saw only conspiracy and deceit.<span
+				class="footnote"
+				data-note="All the more eagerly he seized upon the important work [of Seyffarth, who was visiting Paris] sent to him on December 25, 1827, which immediately confirmed to him how disgracefully he had been deceived by San Quintino. cf. Hartleben, II, 126; Champollion-Figeac, <i>Table des Rois</i>, 468"
+			></span> So much that he accused San Quintino, who was cataloguing Drovetti’s collection at the Museum, of having hidden fragments from him, only
+			to later surrender them to Seyffarth. This claim was circulated in Champollion’s circle of friends, and his brother later reiterated the claim.<span
+				class="footnote"
+				data-note="Champollion-Figeac, <i>Table des Rois</i>, 402f."></span> Thought it should be noted that the Champollion-San Quintino feud was well
+			known at the time, and the possibility cannot be entirely discarded. San Quintino was making a detailed inventory of the collection for the Academy
+			as it was being unpacked, and it would seem probable, even likely, that after Champollion had examined the pile of papyri debris, his scrutiny resulted
+			in him finding fragments that were neglected or missed by the Frenchman.
 		</p>
 		<p>Champollion’s death in 1832 did not deter Seyffarth from writing an anecdote about the discovery of the papyrus:</p>
 
@@ -485,13 +473,20 @@ const fotnoter = [
 				Before me, Champollion had examined the same box of fragments and declared it completely useless, and out of ignorance and arrogance even had
 				half of it thrown into the privy during the absence of the Inspector, depriving the world of one of its most precious treasures.
 				<div class="text-right p-2">
-					<cite class="text-left">G. Seyffarth 1843.<button popovertarget="pop27">27</button></cite>
+					<cite class="text-left"
+						>G. Seyffarth 1843.<span
+							class="footnote"
+							data-note="Seyffarth, Gustav. 1843. <i>Die Grundsätze Der Mythologie Und Der Alten Religionsgeschichte.</i> Leipzig: Barth. 265."
+						></span></cite
+					>
 				</div>
 			</blockquote>
 		</div>
 
 		<p>
-			Seyffarth repeated this (likely invented) story of ill will towards Champollion in his autobiography.<button popovertarget="pop28">28</button>
+			Seyffarth repeated this (likely invented) story of ill will towards Champollion in his autobiography.<span
+				class="footnote"
+				data-note="Seyffarth, <i>Literary life</i>, 21."></span>
 			It is obvious that Seyffarth’s animosity towards the Frenchman did not end with Champollion’s death. The famous Champollion’s rejection of Seyfarth’s
 			arrangement led people to consider it with scepticism, if not outright scorn. The support for the Frenchman was almost universal, as he was after
 			all the expert on hieroglyphics, while the views of Seyffarth were incorrect. The rejection was exasperated by Champollion’s untimely death, which
@@ -501,9 +496,10 @@ const fotnoter = [
 		<p>
 			The polemic surrounding the arrangement of the papyrus lasted several years, but eventually scholars who took the time to examine the papyrus,
 			realised that the arrangement was indeed very good. The first account in more than a decade was by Samuel Birch of the antiquities department of
-			the British Museum, who held a presentation at the Royal Society detailing his analysis of the king list in November 1841.<button
-				popovertarget="pop29">29</button
-			>
+			the British Museum, who held a presentation at the Royal Society detailing his analysis of the king list in November 1841.<span
+				class="footnote"
+				data-note="Birch, Samuel. 1843. ‘Observations upon the Hieratical Canon of Egyptian Kings at Turin.’ <i>Transactions of the Royal Society of Literature</i> Series 2, vol. 1: 203-8"
+			></span>
 		</p>
 	</div>
 
@@ -511,37 +507,42 @@ const fotnoter = [
 
 	<p>
 		The pioneering German Egyptologist Karl Richard Lepsius visited Turin in December 1835, and made careful traces of both sides of Seyffarth’s
-		arrangement.<button popovertarget="pop30">30</button> While in Paris three years later, Lepsius obtained copies of Champollion’s isolated fragments,
-		courtesy of his brother. The following year, in London, Lepsius saw Samuel Birch’s copy of &Eacute;douard Dulaurier’s copy of Seyffarth.<button
-			popovertarget="pop31">31</button
-		> Lepsius also saw a manuscript of twelve pages that was stolen from Champollion by his pupil Salvolini who deviously claimed it as <em>his</em> work.<button
-			popovertarget="pop32">32</button
-		>
+		arrangement.<span class="footnote" data-note="Lepsius, <i>Über die zwölfte dynastie</i>, 441."></span> While in Paris three years later, Lepsius obtained
+		copies of Champollion’s isolated fragments, courtesy of his brother. The following year, in London, Lepsius saw Samuel Birch’s copy of &Eacute;douard
+		Dulaurier’s copy of Seyffarth.<span class="footnote" data-note="Champollion-Figeac, <i>Table des Rois</i>, 402f."></span> Lepsius also saw a manuscript
+		of twelve pages that was stolen from Champollion by his pupil Salvolini who deviously claimed it as <em>his</em> work.<span
+			class="footnote"
+			data-note="Champollion-Figeac, <i>Table des Rois</i>, 404."></span>
 	</p>
 
 	<p>
 		After noticing discrepancies between the different copies that was circulating among the scholars, he returned to Turin in 1841, to once and for
 		all establish that he indeed had an exact copy. He also wanted to verify that he had correctly identified the location in the papyrus of the
-		Twelfth Dynasty.<button popovertarget="pop33">33</button>
+		Twelfth Dynasty.<span class="footnote" data-note="Lepsius, <i>Über die zwölfte dynastie</i>, 440ff; Bunsen, <i>Aegyptens Stelle</i>, 84."></span>
 	</p>
 	<p></p><figure class="pt-0 float-left pr-3">
 		<img loading="lazy" class="img-fluid" src="/images/T-Lepsius.png" alt="" width="177" height="250" />
 		<figcaption class="text-sm text-center font-sans py-2">Detail (Lepsius)</figcaption>
 	</figure>
 	<p>
-		In 1842, Lepsius published <em>"A selection of important ancient Egyptian documents"</em>,<button popovertarget="pop34">34</button> with numbered fragments
-		from 1 to 164. Taking special care to present the papyrus as it was arranged by Seyffarth, without any corrections or amendments, he also chose to
-		omit the admittedly less important tax-register, and included no commentary at all, letting the facsimiles speak for themselves. These facsimiles are
-		still very important today, as the papyrus has since deteriorated further, from handling, mounting and remounting, and of course, time.
+		In 1842, Lepsius published <em>"A selection of important ancient Egyptian documents"</em>,<span
+			class="footnote"
+			data-note="Lepsius, <i>Auswahl</i>, pls. 3-6"></span> with numbered fragments from 1 to 164. Taking special care to present the papyrus as it was
+		arranged by Seyffarth, without any corrections or amendments, he also chose to omit the admittedly less important tax-register, and included no commentary
+		at all, letting the facsimiles speak for themselves. These facsimiles are still very important today, as the papyrus has since deteriorated further,
+		from handling, mounting and remounting, and of course, time.
 	</p>
 	<p>
 		The edition of Lepsius made the content of the papyrus available for scholars to study, and though still a touchy subject, studies slowly began to
 		appear. Wilkinson’s edition added to the credibility of Seyffarth’s arrangement, and finally broke the camels back. However, the studies were slow
 		in appearing and concerned themselves more with aligning the king list to fit with Manetho’s list of kings. The director of the Turin Museum at
-		the time, Francesco Barucchi, mentioned the king list only in passing in 1844.<button popovertarget="pop35">35</button> The following year, Christian
-		Bunsen, a German diplomat and scholar, looked into some of the details preserved in the king list.<button popovertarget="pop36">36</button> It was
-		not a very long or detailed study, but a good start nonetheless. In 1846, famed Assyrologist Edward Hincks examined the correspondence of the king
-		lists with Manetho, but again, it was not a very thorough investigation.<button popovertarget="pop37">37</button>
+		the time, Francesco Barucchi, mentioned the king list only in passing in 1844.<span class="footnote" data-note="Barucchi, <i>Discorsi</i>, 29-30."
+		></span> The following year, Christian Bunsen, a German diplomat and scholar, looked into some of the details preserved in the king list.<span
+			class="footnote"
+			data-note="Bunsen, <i>Aegyptens Stelle</i>."></span> It was not a very long or detailed study, but a good start nonetheless. In 1846, famed Assyrologist
+		Edward Hincks examined the correspondence of the king lists with Manetho, but again, it was not a very thorough investigation.<span
+			class="footnote"
+			data-note="Hincks, TRSL 3, 128–150. Two narratives of his reading held at the Royal Society in 1846."></span>
 	</p>
 
 	<p></p><figure class="pt-0 float-right pl-3">
@@ -549,33 +550,40 @@ const fotnoter = [
 		<figcaption class="text-sm text-center font-sans py-2">Detail (Lesueur)</figcaption>
 	</figure>
 	<p>
-		The French architect Jean-Baptiste Lesueur tried to make sense of the Manethonian tradition, by trying to reconcile the two in 1846.<button
-			popovertarget="pop38">38</button
-		> His facsimiles are identical copies of Lepsius, but with most of the smaller fragments left out. He attempted to complete the king list by finishing
-		partial signs, and adding whole lines of text in red ink, which are of course inaccurate. Ironically, his facsimiles does not include the signs that
-		were written in red ink on the papyrus.
+		The French architect Jean-Baptiste Lesueur tried to make sense of the Manethonian tradition, by trying to reconcile the two in 1846.<span
+			class="footnote"
+			data-note="Lesueur, <i>Chronologie</i>."></span> His facsimiles are identical copies of Lepsius, but with most of the smaller fragments left out.
+		He attempted to complete the king list by finishing partial signs, and adding whole lines of text in red ink, which are of course inaccurate. Ironically,
+		his facsimiles does not include the signs that were written in red ink on the papyrus.
 	</p>
 	<p>
 		Sir John Gardner Wilkinson, the Father of British Egyptology, visited the Turin Museum in 1849 and also made tracings of the hieratic on both
-		sides of the papyrus. His edition was published in 1851<button popovertarget="pop39">39</button> and is nearly identical to Lepsius’, whose edition
-		he happily praised as complete.<button popovertarget="pop40">40</button> There are only a few minor differences, but most importantly; Wilkinson also
-		included the tax-register on the reverse, which Lepsius had omitted. While Lepsius included no commentary, Wilkinson wrote a detailed description,
-		and included in a new, and more detailed examination of the papyrus by Hincks.<button popovertarget="pop41">41</button>
+		sides of the papyrus. His edition was published in 1851<span class="footnote" data-note="Wilkinson, <i>Hieratic Papyrus</i>."></span> and is nearly
+		identical to Lepsius’, whose edition he happily praised as complete.<span class="footnote" data-note="Wilkinson, <i>Hieratic Papyrus</i>, 3f."
+		></span> There are only a few minor differences, but most importantly; Wilkinson also included the tax-register on the reverse, which Lepsius had omitted.
+		While Lepsius included no commentary, Wilkinson wrote a detailed description, and included in a new, and more detailed examination of the papyrus by
+		Hincks.<span class="footnote" data-note="Wilkinson, <i>Hieratic Papyrus</i>, 47-60."></span>
 	</p>
 	<p>
 		It should be noted that the facsimiles of Lepsius and Wilkinson are not always accurate, but since they are not photographs, naturally a few minor
-		errors are to be expected.<button popovertarget="pop42">42</button> They are still very relevant, due to the much deteriorated state of the papyrus
-		today. The addition of Wilkinson’s edition seems to have added incentive for further study of the king list. The first catalogue of the Turin Museum
-		was produced in 1855 by Pietro Camillo Orcurti, who described the content of each column briefly.<button popovertarget="pop43">43</button> Four years
-		later, Heinrich Brugsch examined the names found in the king list, and included a plate with a transcription of the fragments from the Fourth to Twelfth
-		dynasties.<button popovertarget="pop44">44</button>
+		errors are to be expected.<span class="footnote" data-note="Ryholt, <i>Late Old Kingdom</i>, 88."></span> They are still very relevant, due to the
+		much deteriorated state of the papyrus today. The addition of Wilkinson’s edition seems to have added incentive for further study of the king list.
+		The first catalogue of the Turin Museum was produced in 1855 by Pietro Camillo Orcurti, who described the content of each column briefly.<span
+			class="footnote"
+			data-note="Orcurti, <i>Catalogo</i>, 129f., 211-215."></span> Four years later, Heinrich Brugsch examined the names found in the king list, and included
+		a plate with a transcription of the fragments from the Fourth to Twelfth dynasties.<span
+			class="footnote"
+			data-note="Brugsch, 1859. <i>Histoire de l'Égypte ancienne</i>, Pl. 3 only in this edition."></span>
 	</p>
 	<p>
-		Franz Joseph Lauth’s examination<button popovertarget="pop45">45</button> of Manethonian tradition included the king list in his handwritten book in
-		1865. The following year, Vicomte de Roug&eacute; researched the first six dynasties, utilizing the corresponding parts of the Turin king list.<button
-			popovertarget="pop46">46</button
-		> Alfred Wiedemann described the papyrus briefly in his Egyptian History in 1886,<button popovertarget="pop47">47</button> but the first real investigation
-		was performed by the historian Edouard Meyer in his &quot;Egyptian Chronology&quot; in 1904.<button popovertarget="pop48">48</button>
+		Franz Joseph Lauth’s examination of Manethonian tradition included the king list in his handwritten book in 1865.<span
+			class="footnote"
+			data-note="Lauth, <i>Manetho und der Turiner Königs-papyrus</i>."></span> The following year, Vicomte de Roug&eacute; researched the first six dynasties,
+		utilizing the corresponding parts of the Turin king list.<span class="footnote" data-note="de Rougé, <i>Recherches</i>, 225–376, pl. 3."></span> Alfred
+		Wiedemann described the papyrus briefly in his Egyptian History in 1886,<span
+			class="footnote"
+			data-note="Wiedemann, <i>Aegyptische Geshichte</i>, 73–79."></span> but the first real investigation was performed by the historian Edouard Meyer
+		in his &quot;Egyptian Chronology&quot; in 1904.<span class="footnote" data-note="Meyer, <i>Aegyptische Chronologie</i>."></span>
 	</p>
 
 	<h3 class="pt-8 pb-3">The 1930 restoration</h3>
@@ -586,31 +594,32 @@ const fotnoter = [
 	</figure>
 	<p>
 		When Giulio Farina took over as director of the Egyptian Museum in Turin in 1928, he had a workshop set up for the restoration of the papyri of
-		the Museum, and managed to bring in the papyrus conservation specialist Dr. Hugo Ibscher from Berlin in 1930.<button popovertarget="pop49"
-			>49</button
-		>
+		the Museum, and managed to bring in the papyrus conservation specialist Dr. Hugo Ibscher from Berlin in 1930.<span
+			class="footnote"
+			data-note="Farina, <i>Papiro</i>, 11."></span>
 		Ibscher detached the fragments from the blotting paper on which Seyffarth had glued them, and began the arduous task of re-examining and reassembly
 		of the papyrus. The mounting of the papyrus by Seyffarth remained untouched for more than a century, until Ibscher’s thorough examination resulted
-		in the removal of many fragments from Seyffarth’s arrangement that do not belong to this papyrus.<button popovertarget="pop50">50</button> The process
-		of removing the papyrus from the blotting paper caused damage along the edges and many minute signs or traces of signs were lost, making the facsimiles
-		of Lepsius and Wilkinson all that more valuable. To protect the papyrus, it was placed between two glass panes in three separate frames. While Ibscher
-		only worked on the restoration for a few weeks, the restoration was long and difficult, and was not completed until October of 1934.<button
-			popovertarget="pop51">51</button
-		>
+		in the removal of many fragments from Seyffarth’s arrangement that do not belong to this papyrus.<span
+			class="footnote"
+			data-note="Gardiner, <i>Royal Canon</i>, 11, 19-20"></span> The process of removing the papyrus from the blotting paper caused damage along the edges
+		and many minute signs or traces of signs were lost, making the facsimiles of Lepsius and Wilkinson all that more valuable. To protect the papyrus,
+		it was placed between two glass panes in three separate frames. While Ibscher only worked on the restoration for a few weeks, the restoration was long
+		and difficult, and was not completed until October of 1934.<span class="footnote" data-note="Farina, <i>Papiro</i>, 10"></span>
 	</p>
 	<p>
-		Farina examined every aspect of the papyrus for years, and rearranged and added a few fragments compared to Ibscher’s mounting.<button
-			popovertarget="pop52">52</button
-		> His photographs of the papyrus are unfortunately of rather poor quality. This edition contain the first complete hieroglyphic transcription of the
-		hieratic which is still valuable, but as additional research has proven, now mostly obsolete as fragments has been rearranged. All earlier studies
-		concentrated more on the chronological aspect than on the actual content of the king list, and only included parts of Lepsius or Wilkinsons facsimiles.
-		The new mounting introduced new fragments not present in Seyffarth’s arrangement. These fragments were left unnumbered, instead indicated as &quot;Fr.
-		?&quot; by Gardiner.
+		Farina examined every aspect of the papyrus for years, and rearranged and added a few fragments compared to Ibscher’s mounting.<span
+			class="footnote"
+			data-note="Farina, <i>Papiro</i>, 11"></span> His photographs of the papyrus are unfortunately of rather poor quality. This edition contain the first
+		complete hieroglyphic transcription of the hieratic which is still valuable, but as additional research has proven, now mostly obsolete as fragments
+		has been rearranged. All earlier studies concentrated more on the chronological aspect than on the actual content of the king list, and only included
+		parts of Lepsius or Wilkinsons facsimiles. The new mounting introduced new fragments not present in Seyffarth’s arrangement. These fragments were left
+		unnumbered, instead indicated as &quot;Fr. ?&quot; by Gardiner.
 	</p>
 	<p>
-		The Museum in Turin have four frames with mostly tiny unpublished fragments that could belong to the papyrus.<button popovertarget="pop53"
-			>53</button
-		>
+		The Museum in Turin have four frames with mostly tiny unpublished fragments that could belong to the papyrus.<span
+			class="footnote"
+			data-note="Ryholt, <i>Turin King-list</i>, 136, note 10; The four frames with additional fragments are numbered Cat. 1874/002 through 005."
+		></span>
 	</p>
 
 	<h3 class="pt-8 pb-3">Modern studies</h3>
@@ -626,20 +635,27 @@ const fotnoter = [
 	</figure>
 
 	<p>
-		Essential to any study of the king list, Gardiner’s <i>The Royal Canon of Turin</i><button popovertarget="pop54">54</button> contain detailed information
-		on the fragments and the transcribed hieroglyphic content of the papyrus, but no photographs or facsimiles of the hieratic. Gardiner examined the papyrus
-		several times, and a number of fragments were marked as unplaced as their positions could be established with certainty.<button
-			popovertarget="pop55">55</button
-		> There are no translations or commentaries, except short notes about the transcript. The position of a few fragments were changed compared to Farina,
-		but most remained in the same place Seyffarth had put them more than a century earlier. The full transcription can be found in Kitchen’s Ramesside
-		Inscriptions II.<button popovertarget="pop56">56</button>
+		Essential to any study of the king list, Gardiner’s <i>The Royal Canon of Turin</i><span class="footnote" data-note="Gardiner, <i>Royal Canon</i>"
+		></span> contain detailed information on the fragments and the transcribed hieroglyphic content of the papyrus, but no photographs or facsimiles of
+		the hieratic. Gardiner examined the papyrus several times, and a number of fragments were marked as unplaced as their positions could be established
+		with certainty.<span class="footnote" data-note="Gardiner, <i>Royal Canon</i>, plate IX"></span> There are no translations or commentaries, except
+		short notes about the transcript. The position of a few fragments were changed compared to Farina, but most remained in the same place Seyffarth had
+		put them more than a century earlier. The full transcription can be found in Kitchen’s Ramesside Inscriptions II.<span
+			class="footnote"
+			data-note="Kitchen, <i>Ramesside Inscriptions</i> II, §288, pp. 827–844."></span>
 	</p>
 	<p>
 		The studies after Gardiner have been scattered, since many Egyptologist saw the research as exhausted. There have been notes and comments by
-		J&uuml;rgen von Beckerath<button popovertarget="pop57">57</button>, Detlef Franke<button popovertarget="pop58">58</button>, Jarom&iacute;r
-		M&aacute;lek<button popovertarget="pop59">59</button>, Winfried Barta<button popovertarget="pop60">60</button>, Wolfgang Helck<button
-			popovertarget="pop61">61</button
-		>, and most recently, Kim Ryholt.<button popovertarget="pop62">62</button>
+		Jürgen von Beckerath<span
+			class="footnote"
+			data-note="Beckerath, <i>End of the Old Kingdom</i>, 40-147<br>Beckerath, <i>Untersuchungen</i>, 20-26.<br>Beckerath, <i>Dynastie der Herakleopoliten</i>, 13-20<br>Beckerath, <i>Chronologie</i>, 45-57.<br>Beckerath, <i>Bemerkungen</i>, 49—58.<br>Beckerath, <i>Some Remarks</i>, 225-227.<br>Beckerath, <i>Anmerkung</i>, 19-21."
+		></span>, Detlef Franke<span class="footnote" data-note="Franke, <i>Zur Chronologie</i>, 113-138, 245-274."></span>, Jarom&iacute;r M&aacute;lek<span
+			class="footnote"
+			data-note="Málek, <i>Original Version</i>, 93-106."></span>, Winfried Barta <span class="footnote" data-note="Barta, <i>Bemerkungen</i>, 11-13."
+		></span>, Wolfgang Helck<span class="footnote" data-note="Helck, <i>Anmerkungen</i>, 151–216."></span>, and most recently, Kim Ryholt.<span
+			class="footnote"
+			data-note="Ryholt, <i>Political Situation</i>, 25ff. Further clarified in Ryholt, <i>Turin King-list</i>, 136, Table 1.<br>Ryholt, <i>Late Old Kingdom</i>, 87–100.<br>Ryholt, <i>Turin King-list</i>, 135–155.<br>Ryholt, <i>Seneferka</i>, 159–73.<br>"
+		></span>
 	</p>
 	<p>
 		It is clear that further research is needed when you consider the 1997 study by Kim Ryholt. While concentrating on the Second Intermediate Period
@@ -652,10 +668,11 @@ const fotnoter = [
 		When Lepsius published the first edition of the papyrus in 1842, it was arranged in 12 columns marked by the Roman numerals I to XII. A hundred
 		years later, Farina and Ibscher reconstructed the papyrus into 11 columns, removing many fragments, but retaining the Roman numerals. Gardiner's
 		1959 transcription retained Farina's reconstruction with a few corrections. Ryholt proved that a completely new column of divinities must be
-		inserted between the older columns I and II, from fragments that had been placed incorrectly in the eariler reconstructions.<button
-			popovertarget="pop63">63</button
-		> Accordingly, column II is in fact the third column of the papyrus, and the fragments identified by Ryholt can be inserted between columns I and II.
-		The new column is numbered 2, which means that the remaining fragments of columns IX and X now form column 10. Ryholt numbered the columns like so:
+		inserted between the older columns I and II, from fragments that had been placed incorrectly in the eariler reconstructions.<span
+			class="footnote"
+			data-note="Ryholt, <i>Political Situation</i>, 24ff."></span> Accordingly, column II is in fact the third column of the papyrus, and the fragments
+		identified by Ryholt can be inserted between columns I and II. The new column is numbered 2, which means that the remaining fragments of columns IX
+		and X now form column 10. Ryholt numbered the columns like so:
 		<b>8/17</b>. These pages use the same system, but use a dot instead:<b> 8.17</b>.
 	</p>
 
@@ -693,18 +710,14 @@ const fotnoter = [
 
 	<h3 class="pt-8 pb-3">The 2022 restoration</h3>
 	<p>
-		In the summer of 2022, the papyrus was painstakingly cleaned of old glue and some of the fragments were rearranged. A new edition is expected to
-		be published in 2024, the 200th anniversary of the discovery.
+		In the summer of 2022, one of the foremost experts in papyrus restoration in the world, Myriam Krutzsch from the Egyptian Museum in Berlin, worked
+		on the papyrus for ten weeks in Turin. This included removing all traces of the previous glue and fabrics used to join the fragile parts together
+		by Seyffarth in 1826, and by Ibscher and Farina in the 1930s. The cleaning process showed that many of the numbered fragments were themselves made
+		up of even smaller fragments, revealing just how impressive and good Seyffarth's reconstruction of the fragments was. A new edition detailing the
+		king list is expected to be published in <span class="line-through" aria-hidden="true">2023</span>
+		<span class="line-through" aria-hidden="true">2024</span>
+		<span class="line-through" aria-hidden="true">2025</span> 2026.
 	</p>
-
-	{
-		fotnoter.map((item, index) => (
-			<div id={`pop${index + 1}`} popover>
-				<p>{index + 1}</p>&nbsp;
-				<span set:html={item} />
-			</div>
-		))
-	}
 
 	<h2 class="py-3">Bibliography</h2>
 	<ul id="biblio">
@@ -745,8 +758,8 @@ const fotnoter = [
 		<li>
 			<b>Birch, Samuel.</b>, 1843. Observations upon the hieratical canon of Egyptian kings at Turin. <i
 				><abbr title="Transactions of the Royal Society of Literature">TRSL</abbr></i
-			>, S.2, Vol. 1: 203-8 <a title="View or download PDF" target="_blank" href="/pdf/Birch1843.pdf"
-				><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+			>, S.2, Vol. 1: 203-8 <a title="View or download PDF" target="_blank" href={`${PDF_PATH}Birch1843.pdf`}
+				><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -757,7 +770,7 @@ const fotnoter = [
 		<li>
 			<b>Bunsen, Christian C. J.</b>, 1845. <i>Aegyptens Stelle in der Weltgeschichte</i>. Vol. 1. Hamburg: Perthes. <a
 				title="Click to read!"
-				href="/pdf/Bunsen1845.pdf"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+				href={`${PDF_PATH}Bunsen1845.pdf`}><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -771,26 +784,26 @@ const fotnoter = [
 				href="http://archivesetmanuscrits.bnf.fr/ark:/12148/cc66494/cd0e247"
 				rel="noopener nofollow"
 				title="External page, follow to visit"
-				target="_blank"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/visit.svg" alt="View PDF" /></a
+				target="_blank"><img loading="lazy" class="inline h-3 dark:invert" src="/svg/visit.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
 			<b>Champollion, Jean-François.</b>, 1824. Papyrus Égyptiens. <i>Bulletin des sciences historiques, antiquités, philologie</i> 2: 297–303. <a
 				title="Français"
-				href="pdf/Champollion1824FR.pdf"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+				href={`${PDF_PATH}Champollion1824FR.pdf`}><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
-			<a title="English translation" href="/pdf/Champollion1824EN.pdf"
-				><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+			<a title="English translation" href={`${PDF_PATH}Champollion1824EN.pdf`}
+				><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
 			<b>Champollion-Figeac, J. J.</b>, 1851. De la table manuelle des Rois et des dynasties d’Égypte ou papyrus royal de Turin. <i
 				>Revue Archéologique</i
-			> 7.2: 397–402, 461–472, 589–599, 653–665. <a title="Français" href="/pdf/RAr7-1851FR.pdf"
-				><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+			> 7.2: 397–402, 461–472, 589–599, 653–665. <a title="Français" href={`${PDF_PATH}RAr7-1851FR.pdf`}
+				><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
-			<a title="English translation" href="pdf/RAr7-1851EN.pdf"
-				><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+			<a title="English translation" href={`${PDF_PATH}RAr7-1851EN.pdf`}
+				><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -816,7 +829,7 @@ const fotnoter = [
 		<li>
 			<b>Fabretti, Ariodante, et. al.</b>, 1882. <i>Regio Museo di Torino, Catalogo generale dei Musei di Antichità</i>. Turin. <a
 				title="Download/View"
-				href="/pdf/RCT1881.pdf"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+				href={`${PDF_PATH}RCT1881.pdf`}><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -878,8 +891,8 @@ const fotnoter = [
 		</li>
 		<li>
 			<b>Maspero, Gaston.</b>, 1895. <i>Histoire ancienne des peuples de l’orient classique</i>. Paris. <a
-				href="/pdf/Maspero1895.pdf"
-				aria-label="Download PDF-file of Maspero’s note."><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+				href={`${PDF_PATH}Maspero1895.pdf`}
+				aria-label="Download PDF-file of Maspero’s note."><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -891,7 +904,7 @@ const fotnoter = [
 		<li>
 			<b>Orcurti, Pier-Camillo.</b>, 1855. <i>Catalogo illustrato dei monumenti Egizo del R. Museo di Torino</i>. Turin. <a
 				title="Download/View"
-				href="/pdf/RCT1855.pdf"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+				href={`${PDF_PATH}RCT1855.pdf`}><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -925,8 +938,8 @@ const fotnoter = [
 		<li>
 			<b>Seyffarth, Gustav.</b>, 1828. “Remarks upon an Egyptian History, in Egyptian Characters, in the Royal Museum at Turin”, <i
 				>The London Literary Gazette</i
-			>, No. 600. July 19, 1828: 457–59 <a title="Read now" href="/pdf/Seyffarth1828.pdf"
-				><img loading="lazy" class="inline h-4 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
+			>, No. 600. July 19, 1828: 457–59 <a title="Read now" href={`${PDF_PATH}Seyffarth1828.pdf`}
+				><img loading="lazy" class="inline h-3 dark:invert" src="/svg/eye.svg" alt="View PDF" /></a
 			>
 		</li>
 		<li>
@@ -936,11 +949,11 @@ const fotnoter = [
 			<b>Seyffarth, Gustav.</b> Bibliotheca Aegyptiaca Manuscripta, 1826-1830. Unpublished. <a
 				title="New York Art Resources Consortium"
 				href="https://library.nyarc.org/permalink/01NYA_INST/18jo0t1/alma991013110899707141"
-				target="_blank"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/visit.svg" alt="link to External page" /></a
+				target="_blank"><img loading="lazy" class="inline h-3 dark:invert" src="/svg/visit.svg" alt="link to External page" /></a
 			> &nbsp;<a
 				title="New York Art Resources Consortium blog"
 				href="https://nyarc.org/blog/wilbour-library-collection-highlight-gustavus-seyffarth-and-his-obsession-with-hieroglyphs"
-				target="_blank"><img loading="lazy" class="inline h-4 dark:invert" src="/svg/visit.svg" alt="link to External page" /></a
+				target="_blank"><img loading="lazy" class="inline h-3 dark:invert" src="/svg/visit.svg" alt="link to External page" /></a
 			>
 		</li>
 		<li>
@@ -968,7 +981,7 @@ const fotnoter = [
 	</ul>
 	<p class="text-center py-3">
 		<b>Note:</b><br />Many of the referenced books and journal articles above<br />are available <i>for free</i> in the <a
-			href="/ancient-egypt/kinglist/turin/library/">Reference Library</a
+			href="/kinglists/turin/library/">Reference Library</a
 		>.<br />
 	</p>
 </Layout>

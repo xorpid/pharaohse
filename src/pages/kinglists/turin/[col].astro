@@ -48,7 +48,7 @@ const formatSource = (ref: string): string => {
 		<div class="mb-4 flex flex-wrap gap-2 w-fit mx-auto">
 			{
 				cols.map((c) => (
-					<a
+					<a 
 						href={`/kinglists/turin/column-${c}`}
 						class={`px-3 py-1 rounded ${c === colNum ? "text-white bg-red-700 hover:bg-red-600 dark:bg-blue-500 hover:dark:bg-blue-600 hover:no-underline" : "bg-stone-400 dark:bg-neutral-700 text-white hover:bg-red-500 dark:hover:bg-green-600 hover:no-underline"}`}
 					>
@@ -76,7 +76,7 @@ const formatSource = (ref: string): string => {
 	<div class="grid grid-cols-1 gap-8 mb-8">
 		{
 			rows.map((item) => (
-				<div class="card">
+				<div class="card"><a id=`${item.row}` />
 					<div class="font-semibold text-2xl mb-4 tabular-nums text-center">
 						Column {item.col}.{item.row}
 					</div>

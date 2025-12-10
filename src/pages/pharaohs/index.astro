@@ -16,7 +16,7 @@ const specialChar: Record<string, string> = {
 
 // map dynasties.json by char for lookup of names
 const dynastyByChar: Record<string, any> = {};
-for (const d of dynasties) dynastyByChar[String(d.char)] = d;
+for (const d of dynasties as any) dynastyByChar[String(d.char)] = d;
 
 // group pharaohs by dynasty char
 const groups: Record<string, any[]> = {};

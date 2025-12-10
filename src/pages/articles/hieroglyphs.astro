@@ -231,7 +231,7 @@ const bild = "/images/pharaohse-hieroglyphs.webp";
 			</li>
 		</ul>
 		<p>
-			The <a href="/titles-and-epithets">titulary of the pharaohs</a> were almost never reused, but created specifically for each king upon ascension.
+			The <a href="/articles/titles">titulary of the pharaohs</a> were almost never reused, but created specifically for each king upon ascension.
 		</p>
 
 		<!-- MARK: Transliteration
@@ -250,9 +250,9 @@ const bild = "/images/pharaohse-hieroglyphs.webp";
 		<p>
 			Direct translation of hieroglyphs is not possible; first, they must be converted into alphabetic writing, a process known as <em
 				>transliteration</em
-			>, which employs letters not typically found on keyboards: &nbsp; <tlit
+			>, which employs letters not typically found on keyboards: &nbsp; <tlit class="text-lg"
 				>&#42786;&nbsp; &#42788;&nbsp; &#x1E25;&nbsp; &#x1E2B;&nbsp; &#x1E96;&nbsp; &#x161;&nbsp; &#x1E33;&nbsp; &#x1E6F;&nbsp;</tlit
-			> and &nbsp;<tlit>&#x1E0F;</tlit>.
+			> and &nbsp;<tlit class="text-lg">&#x1E0F;</tlit>.
 		</p>
 
 		<p>
@@ -263,15 +263,15 @@ const bild = "/images/pharaohse-hieroglyphs.webp";
 			<table class="w-fit mx-auto">
 				<tr class="border-t bordercolor">
 					<td class="px-4 py-1">Transliteration</td>
-					<td class="px-4 py-1"><tlit>&#42786;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#42788;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E25;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E2B;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E96;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x161;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E33;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E6F;</tlit></td>
-					<td class="px-4 py-1"><tlit>&#x1E0F;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#42786;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#42788;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E25;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E2B;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E96;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x161;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E33;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E6F;</tlit></td>
+					<td class="px-4 py-1 text-lg"><tlit>&#x1E0F;</tlit></td>
 				</tr>
 				<tr>
 					<td class="px-4 py-1">Manuel de Codage</td>
@@ -294,15 +294,12 @@ const bild = "/images/pharaohse-hieroglyphs.webp";
 				target="_blank">Sir Alan Gardiner</a
 			> in 1927, and is still in use today. Manuel de Codage incorporate Gardiner’s list to reference specific hieroglyphs.
 		</p>
-		<p>The hieroglyph for the sun, ⊙ (Ra) is designated as N5, part of Gardiner category N which relates to the sky, earth and water.</p>
+		<p>The hieroglyph for the sun, (Ra) is designated as N5, part of Gardiner category N which relates to the sky, earth and water.</p>
 		<p>
 			Hieroglyphs, unlike alphabetic scripts, can be placed above each other, or form groups of signs called ligatures. They can be written from left
 			to right, or right to left, or even vertically from the top. The reading direction always follow the direction the signs are facing, left or
 			right. Manuel de Codage also incorporates features to change size, orientation, colour and placement of signs. This is necessary to be able to
-			place the signs exactly in their correct position in relation to each other. Although Egyptian hieroglyphs were added to the <a
-				href="https://www.unicode.org/standard/standard.html"
-				target="_blank">Unicode Standard</a
-			> in 2009 and expanded in 2024; it does not allow for the positioning of individual glyphs.
+			place the signs exactly in their correct position in relation to each other.
 		</p>
 
 		<div class="py-3"></div><p><b>An example.</b></p>
@@ -355,6 +352,37 @@ const bild = "/images/pharaohse-hieroglyphs.webp";
 			signs. Furthermore, MdC allows text to be written with alphabetic characters, or using Gardiner’s sign list, or a mix of both (for example: <span
 				class="glows font-mono">&nbsp;i-Y5:n-R4:t*p&nbsp;</span
 			> is valid). Link to the documentation can be found below.
+		</p>
+
+		<p>
+			Egyptian hieroglyphs (for example: 𓇳 𓆣 𓂓 𓅃 𓀀 ) were added to the <a href="https://www.unicode.org/charts/" target="_blank">Unicode Standard</a> in
+			2009 and expanded in 2024. However, the signs are displayed sequentially and do not allow for the positioning of individual characters. Although
+			Unicode 17 introduced formatting controls that enable positioning, the process is still in that awkward <i
+				>“technically possible but practically painful”</i
+			> stage. More than 5,000 signs have been encoded and made available for use, I still have not managed to make the formatting controls work...<span
+				class="footnote"
+				data-note="... as of December 2025."></span>
+
+			<table class="my-10 w-sm mx-auto tabular-nums">
+				<tr><th>Name</th><th>Signs</th></tr>
+				<tr
+					><td><a href="https://www.unicode.org/charts/PDF/U13000.pdf" target="_blank">Egyptian Hieroglyphs</a></td><td class="text-right"
+						>1072
+					</td></tr
+				>
+				<tr
+					><td><a href="https://www.unicode.org/charts/PDF/U13430.pdf" target="_blank">Egyptian Hieroglyph Format Controls</a></td><td
+						class="text-right">38</td
+					></tr
+				>
+				<tr
+					><td><a href="https://www.unicode.org/charts/PDF/U13460.pdf" target="_blank">Hieroglyphs Extended-A</a></td><td class="text-right"
+						>3995
+					</td></tr
+				>
+				<tr><td class="border-t-2 border-b-0">TOTAL</td><td class="border-t-2 border-b-0 font-semibold text-right">5105</td></tr>
+				<caption>Table 1: Number of hieroglyphic signs in Unicode 17.0</caption>
+			</table>
 		</p>
 
 		<h2 class="pb-5 pt-10">Software</h2>

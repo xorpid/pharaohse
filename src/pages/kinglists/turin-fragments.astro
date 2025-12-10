@@ -1,5 +1,5 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="Turin King List: The Fragments" meta1="" meta2="fragments,turin king list,Egyptian chronology" bild="/images/pharaohse-vorlage.webp">
@@ -1171,18 +1171,18 @@ import Layout from "@/layouts/Layout.astro";
 		<p>
 			Gardiner’s examination discarded 25 fragments as belonging to other papyri, while 15 fragments were classified as useless or doubtful, and
 			another twelve as completely blank; they were not commented on further, and supposedly belong to the papyrus. Five fragments only contain
-			traces, while another five only hold the sign for year, or part of the king’s title. In all, Gardiner retained 102 numbered fragments[*] on his
-			plates, plus ten unnumbered fragments marked by question marks, added to Seyffarth’s original sheets by Ibscher or Farina.[*] These ten
-			unnumbered fragments are referenced by Gardiner’s position.
+			traces, while another five only hold the sign for year, or part of the king’s title. In all, Gardiner retained 102 numbered fragments on his
+			plates, plus ten unnumbered fragments marked by question marks, added to Seyffarth’s original sheets by Ibscher or Farina. These ten unnumbered
+			fragments are referenced by Gardiner’s position.
 		</p>
 
-		<p>
+		<!-- 		<p>
 			The museum have an unknown number of unpublished fragments with parts of royal names of both kings and gods, figures relating to the reigns, and
 			parts of headings and summations.
 			<br /><br />Determining possible positions for the unplaced fragments require an exhaustive examination looking for any fibre correspondence
 			with the already placed fragments. Until a full investigation of the fragments can be undertaken, progress is only possible in small increments.
 		</p>
-
+ -->
 		<div class="py-5">
 			<table class="tb my-10">
 				<caption class="text-center text-sm pt-5">Table 5. Gardiner’s unplaced fragments</caption>
@@ -1378,7 +1378,7 @@ import Layout from "@/layouts/Layout.astro";
 		font-style: italic;
 	}
 	.frgm {
-		background-color: light-dark(var(--bg-light), var(--dark-bg-light));
+		background-color: var(--bg-light);
 		border-radius: var(--radius-lg);
 		padding: calc(var(--spacing) * 4);
 		font-feature-settings: "tnum" 1;
@@ -1387,7 +1387,7 @@ import Layout from "@/layouts/Layout.astro";
 		font-size: var(--text-xl);
 		font-weight: var(--font-weight-semibold);
 		text-align: center;
-		border-bottom: 1px solid light-dark(var(--border), var(--dark-border));
+		border-bottom: 1px solid var(--border);
 		margin-bottom: calc(var(--spacing) * 2);
 	}
 </style>

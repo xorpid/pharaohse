@@ -8,8 +8,8 @@
 /* Global settings like color palette, spacing, typography, breakpoints, etc. */
 @theme {
 	--font-sans:
-		"Instrument Sans", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
-		"Noto Sans", "sans-serif";
+		"Inter", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans",
+		"sans-serif";
 	--font-serif: "Merriweather", "Harding", "ui-serif", "Cambria", "Georgia", "Times New Roman", "Times", "serif";
 	--font-mono: "Courier New", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Liberation Mono", "Consolas", "monospace";
 	--font-tlit: "Noto Serif", Cambria, serif;
@@ -31,6 +31,14 @@
 }
 
 :root {
+	font-feature-settings:
+		"liga" 1,
+		"calt" 1,
+		"ss01" 1,
+		"ss03" 1,
+		"cv01" 1,
+		"cv05" 1,
+		"cv08" 1;
 	--bg-lit: --alpha(var(--color-stone-50) / 15%);
 	--bg-light: var(--color-stone-50);
 	--bg: var(--color-stone-200);
@@ -42,7 +50,7 @@
 	--link-hover: var(--color-red-900);
 	--link-visited: var(--color-pink-900);
 	--link-underline: var(--color-red-600);
-	--primary: var(--color-red-950);
+	--primary: var(--color-orange-900);
 	--secondary: var(--color-rose-800);
 	--highlight: var(--color-orange-950);
 	--border: var(--color-stone-300);
@@ -69,7 +77,7 @@
 	--link-hover: var(--color-amber-200);
 	--link-visited: var(--color-amber-100);
 	--link-underline: var(--color-orange-600);
-	--primary: var(--color-amber-100);
+	--primary: var(--color-orange-200);
 	--secondary: var(--color-yellow-200);
 	--highlight: var(--color-yellow-400);
 	--border: var(--color-neutral-700);
@@ -78,6 +86,7 @@
 	--greek: var(--color-emerald-200);
 	--armenian: var(--color-yellow-400);
 	--popover: var(--color-emerald-500);
+	--popover: var(--color-yellow-50);
 	--summ: var(--color-yellow-800);
 	--head: var(--color-blue-900);
 	--sect: var(--color-emerald-900);
@@ -105,7 +114,7 @@
 		scroll-padding-top: calc(var(--header-height) + 1rem); /* anchor top fix */
 		background-color: var(--bg);
 		color: var(--tx);
-		scroll-padding-top: 60px; /* accounts for sticky header */
+		scroll-padding-top: 120px; /* accounts for sticky header */
 		scroll-behavior: smooth;
 	}
 
@@ -122,7 +131,12 @@
 		text-underline-offset: 1px;
 		text-decoration-color: var(--link-underline);
 	}
-
+	/* 	a[href$=".pdf"]::after {
+		content: url(/svg/pdf.svg);
+		vertical-align: middle;
+		font-size: 1em;
+	}
+ */
 	p {
 		display: block;
 		margin-top: 1em;
@@ -165,6 +179,8 @@
 		caption {
 			font-style: italic;
 			font-size: var(--text-xs);
+			padding-top: calc(var(--spacing) * 2);
+			color: var(--dim);
 		}
 	}
 
@@ -196,11 +212,18 @@
 		font-weight: bold;
 		margin-top: 1em;
 	}
+	h4 {
+		font-size: var(--text-base);
+		line-height: var(--text-sm--line-height);
+		margin-block: 2em;
+		font-weight: var(--font-weight-semibold);
+	}
+
 	abbr {
 		cursor: help;
 		font-style: italic;
 		text-decoration-style: dotted;
-		color: var(--secondary) !important;
+		color: var(--dim) !important;
 	}
 	blockquote {
 		quotes: "“" "”" "‘" "’";
@@ -218,6 +241,9 @@
 		border-radius: 0 calc(var(--spacing) * 3) calc(var(--spacing) * 3) 0;
 		box-shadow: var(--shadow-lg);
 		overflow: clip;
+	}
+	sup {
+		top: 0;
 	}
 	/* blockquote .text-right {
 		color: var(--default-color-2);
@@ -238,10 +264,12 @@
 	}
 
 	.card {
-		background-color: var(--bg-light);
+		background: var(--bg-light);
 		border-radius: var(--radius-lg);
 		padding: calc(var(--spacing) * 4) /* 1rem = 16px */;
-		box-shadow: var(--shadow-xl);
+		--shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
+		box-shadow: var(--shadow);
+		border: 1px solid var(--border);
 		a:hover {
 			text-decoration: none;
 		}
@@ -306,12 +334,19 @@
 	}
 	#biblio {
 		color: var(--dim);
+		font-size: var(--text-sm);
 		margin-block: calc(var(--spacing) * 4);
 		li {
 			line-height: var(--leading-normal);
 			margin-bottom: 0 !important;
 		}
+		b {
+			color: var(--tx);
+			font-variant: small-caps;
+			font-weight: normal;
+		}
 	}
+
 	figcaption {
 		text-align: center;
 		color: var(--dim);
@@ -437,12 +472,15 @@
 		line-height: 1.25rem;
 	}
 	.synk {
-		background: var(--bg-light);
+		margin: calc(var(--spacing) * 3);
+		background: var(--bg-lit);
 		padding: calc(var(--spacing) * 2);
 		border-radius: calc(var(--spacing) * 2);
 		font-size: var(--text-xs);
 		color: var(--default-color-2);
-		border: 1px dashed var(--default-border);
+		border: 1px solid var(--border-dim);
+		box-shadow: var(--shadow-md);
+		border-top: 1px solid var(--bg-light);
 	}
 	[popovertarget] {
 		cursor: pointer;
@@ -450,13 +488,14 @@
 		vertical-align: super;
 		color: var(--popover);
 		border-radius: 0.25rem;
-		margin-inline: 0.25ch;
-		padding-inline: 0.25ch;
-		font-size: 75%;
+		/* margin-inline: 0.25ch;
+		padding-inline: 0.25ch; */
+		font-size: 90%;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 1rem;
-		background-color: var(--bg-light);
+		font-feature-settings: "zero" 0;
+		/* background-color: var(--bg-light); */
 	}
 	[popover]:popover-open {
 		opacity: 1;
@@ -494,8 +533,66 @@
 	[popovertarget]:hover,
 	[popovertarget]:focus {
 		color: var(--tx);
-		background-color: var(--bg-dark);
+		/* background-color: var(--bg-dark); */
 		cursor: pointer;
+	}
+
+	/* Footnote styles */
+	/* 	span.footnote {
+		cursor: pointer;
+		user-select: none;
+		position: relative;
+	}
+
+	span.footnote sup.footnote-number {
+		font-size: 0.85em;
+		line-height: 0;
+		vertical-align: baseline;
+		position: relative;
+		top: -0.1em;
+		color: var(--link);
+		font-weight: 600;
+		text-decoration: none;
+		margin-left: 0.1em;
+	}
+
+	span.footnote:hover sup.footnote-number,
+	span.footnote:focus sup.footnote-number {
+		color: var(--link-hover);
+		text-decoration: underline;
+	}
+ */
+	/* 	.footsote-popover {
+		max-width: min(90vw, 400px);
+		padding: 1rem;
+		background: var(--bg-light);
+		border: solid 4px var(--border);
+		border-radius: 10px;
+		box-shadow:
+			0 4px 6px -1px rgba(0, 0, 0, 0.1),
+			0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		font-size: 0.875rem;
+		line-height: 1.5;
+		color: var(--tx);
+		z-index: 1000;
+	}
+
+	.dark .footnote-popover {
+		background: var(--bg-dark);
+		border-color: var(--dark-border);
+		box-shadow:
+			0 4px 6px -1px rgba(0, 0, 0, 0.3),
+			0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	}
+
+	.footnote-popover::backdrop {
+		background: rgba(0, 0, 0, 0.1);
+	}
+ */
+
+	.references-list .reference-item {
+		break-inside: avoid;
+		page-break-inside: avoid;
 	}
 
 	mid {
@@ -557,5 +654,45 @@
 		border-radius: calc(infinity * 1px);
 		margin-top: calc(var(--spacing) * 1);
 		left: calc(var(--spacing) * -2.5) /* -0.625rem = -10px */;
+	}
+	.footnote {
+		color: goldenrod;
+		padding-inline: 0.25ch;
+	}
+	.footnot-number {
+		color: var(--primary);
+		font-size: 24px !important;
+	}
+	.footnote::after {
+		content: "]";
+		font-weight: 400;
+		font-size: 80%;
+	}
+	.footnote::before {
+		content: "[";
+		font-weight: 400;
+		font-size: 80%;
+	}
+
+	/* articles/manetho1,2,3 */
+	.pagenum {
+		position: absolute;
+		top: auto;
+		right: +1.5em;
+		width: 70px;
+		text-align: right;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none;
+		font-variant: normal;
+		letter-spacing: normal;
+		font-size: small;
+		color: var(--primary);
+		hyphens: none;
+	}
+	.ref {
+		vertical-align: super;
+		font-size: x-small;
+		line-height: normal;
 	}
 }

@@ -1,8 +1,95 @@
 ---
 import Toggler from "@components/Toggler.astro";
-//import ThemeToggle from "@/components/ThemeToggle.astro";
+
 const { pathname } = Astro.url;
 const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dark:bg-gray-700" : "");
+
+type NavItem = {
+	href: string;
+	label: string;
+	children?: NavItem[];
+};
+
+const NAV_EXCLUDE = new Set(["404", "privacy", "sitemap", "_index"]);
+
+// Format label from path segment
+function formatLabel(segment: string): string {
+	return segment
+		.split("-")
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(" ");
+}
+
+// Build navigation structure from pages
+const navItems: NavItem[] = (() => {
+	const modules = import.meta.glob("../pages/**/*.{astro,md}", { eager: false });
+	const routeMap = new Map<string, Set<string>>(); // parent -> children
+
+	for (const filePath of Object.keys(modules)) {
+		const normalized = filePath.replace("../pages", "").replace(/\.(astro|md)$/, "");
+		if (!normalized) continue;
+
+		// Skip dynamic routes, hidden files, and excluded pages
+		if (normalized.includes("/_") || normalized.startsWith("/_")) continue;
+		if (/\[(.*?)\]/.test(normalized)) continue;
+
+		const segments = normalized.split("/").filter(Boolean);
+		if (segments.length === 0) continue;
+
+		const firstSegment = segments[0];
+		if (NAV_EXCLUDE.has(firstSegment)) continue;
+
+		// Handle index files
+		let route = normalized;
+		if (route === "/index" || route === "index") route = "/";
+		else if (route.endsWith("/index")) route = route.replace(/\/index$/, "");
+
+		if (!route.startsWith("/")) route = `/${route}`;
+		if (route === "") route = "/";
+
+		const depth = route === "/" ? 0 : route.split("/").filter(Boolean).length;
+
+		// Only process up to 2 levels
+		if (depth > 2) continue;
+
+		if (depth === 1) {
+			// Top-level page
+			if (!routeMap.has(route)) {
+				routeMap.set(route, new Set());
+			}
+		} else if (depth === 2) {
+			// Child page
+			const parent = `/${segments[0]}`;
+			if (!routeMap.has(parent)) {
+				routeMap.set(parent, new Set());
+			}
+			routeMap.get(parent)!.add(route);
+		}
+	}
+
+	// Convert to NavItem array
+	return Array.from(routeMap.entries())
+		.sort(([a], [b]) => {
+			if (a === "/") return -1;
+			if (b === "/") return 1;
+			return a.localeCompare(b);
+		})
+		.map(([href, children]) => {
+			const label = href === "/" ? "Home" : formatLabel(href.split("/").filter(Boolean).pop()!);
+			const childItems = Array.from(children)
+				.sort()
+				.map((childHref) => ({
+					href: childHref,
+					label: formatLabel(childHref.split("/").filter(Boolean).pop()!),
+				}));
+
+			return {
+				href,
+				label,
+				children: childItems.length > 0 ? childItems : undefined,
+			};
+		});
+})();
 ---
 
 <header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-black/25 dark:shadow-black/50 bg">
@@ -39,13 +126,44 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 					>
 				</div>
 				<ul class="p-4 flex flex-col gap-0">
-					<li class="border-b bordercolor hover:no-underline"><a href="/" class={"block px-2 py-1 hover:no-underline " + isActive("/")}>Home</a></li>
-					<li class="border-b bordercolor"><a href="/about" class={"block px-2 py-1 hover:no-underline " + isActive("/about")}>About</a></li>
-					<li class="border-b bordercolor"><a href="/pharaohs" class={"block px-2 py-1 hover:no-underline " + isActive("/pharaohs")}>Pharaohs</a></li>
-					<li class="border-b bordercolor">
-						<a href="/dynasties" class={"block px-2 py-1 hover:no-underline " + isActive("/dynasties")}>Dynasties</a>
-					</li>
-					<li class="border-b bordercolor"><a href="/articles" class={"block px-2 py-1 hover:no-underline " + isActive("/articles")}>Articles</a></li>
+					{
+						navItems.map((item) => (
+							<li class="border-b bordercolor text-xs">
+								{item.children ? (
+									<>
+										<div class="flex items-center justify-between">
+											<a href={item.href} class={"flex-1 block px-2 py-1 hover:no-underline " + isActive(item.href)}>
+												{item.label}
+											</a>
+											<button
+												class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
+												data-submenu-toggle
+												aria-expanded="false"
+												aria-label="Toggle submenu"
+											>
+												<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+												</svg>
+											</button>
+										</div>
+										<ul class="hidden pl-4 flex-col gap-0 submenu">
+											{item.children.map((child) => (
+												<li class="border-b bordercolor">
+													<a href={child.href} class={"block px-2 py-1 hover:no-underline " + isActive(child.href)}>
+														{child.label}
+													</a>
+												</li>
+											))}
+										</ul>
+									</>
+								) : (
+									<a href={item.href} class={"block px-2 py-1 hover:no-underline " + isActive(item.href)}>
+										{item.label}
+									</a>
+								)}
+							</li>
+						))
+					}
 				</ul>
 			</div>
 
@@ -126,6 +244,35 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 		// Close on escape
 		document.addEventListener("keydown", (e) => {
 			if (e.key === "Escape") closeNav();
+		});
+
+		// Submenu toggle
+		const submenuToggles = document.querySelectorAll("[data-submenu-toggle]");
+		submenuToggles.forEach((toggle) => {
+			toggle.addEventListener("click", (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+				const button = e.currentTarget as HTMLElement;
+				const parentDiv = button.closest("div");
+				const submenu = parentDiv?.nextElementSibling as HTMLElement;
+				const svg = button.querySelector("svg");
+
+				if (!submenu) return;
+
+				const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+				if (isExpanded) {
+					submenu.classList.add("hidden");
+					submenu.classList.remove("flex");
+					svg?.classList.remove("rotate-180");
+					button.setAttribute("aria-expanded", "false");
+				} else {
+					submenu.classList.remove("hidden");
+					submenu.classList.add("flex");
+					svg?.classList.add("rotate-180");
+					button.setAttribute("aria-expanded", "true");
+				}
+			});
 		});
 	});
 </script>

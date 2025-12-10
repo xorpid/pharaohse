@@ -59,7 +59,7 @@ const getSource = (obelisk: any, i: number) => {
 				Some of these are reconstructed from fragments and not entirely complete.
 			</p>
 
-			<div class="grid my-10 gap-4">
+			<div class="grid my-10 gap-10">
 				{
 					obelisks.map((obelisk) => {
 						// Build images safely
@@ -77,13 +77,13 @@ const getSource = (obelisk: any, i: number) => {
 						}
 
 						return (
-							<div class="card flex flex-col h-full p-4">
+							<div class="card flex flex-col h-full p-6">
 								<div class="flex flex-row items-start mb-3 gap-4">
 									{obelisk.tumme && (
-										<img src={`/obelisks/${obelisk.tumme}`} alt={obelisk.namn} class="w-32 h-32 object-cover rounded mb-2 shrink-0" />
+										<img src={`/obelisks/${obelisk.tumme}`} alt={obelisk.namn} class="w-32 h-48 object-cover rounded mb-2 shrink-0" />
 									)}
 									<div class="flex-1">
-										<h2 class="text-lg font-bold mb-1">{obelisk.namn}</h2>
+										<h2 class="text-2xl font-bold mb-1 pl-0">{obelisk.namn}</h2>
 
 										{(obelisk.pharaoh1 || obelisk.pharaoh2 || obelisk.pharaoh3) && (
 											<div class="text-sm mb-1">
@@ -151,7 +151,8 @@ const getSource = (obelisk: any, i: number) => {
 
 										{obelisk.height && (
 											<div class="text-sm">
-												<span class="font-semibold">Height:</span> {obelisk.height} m
+												<span class="font-semibold">Height:</span>
+												<span class="meter" data-m={obelisk.height} />
 											</div>
 										)}
 
@@ -196,3 +197,43 @@ const getSource = (obelisk: any, i: number) => {
 		</div>
 	</section>
 </Layout>
+
+<style>
+	.meter:empty::before {
+		content: "…";
+	}
+	.meter {
+		white-space: nowrap;
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const isUS = navigator.language === "en-US";
+		const elements = document.querySelectorAll(".meter[data-m]");
+
+		if (!isUS) {
+			const nf = new Intl.NumberFormat(navigator.language, {
+				maximumFractionDigits: 2,
+			});
+			elements.forEach((el) => {
+				const m = parseFloat((el as HTMLElement).dataset.m!);
+				el.textContent = nf.format(m) + " m";
+			});
+			return;
+		}
+
+		// en-US → display feet with 1 decimal
+		const M_TO_FT = 3.28084;
+		const nfUS = new Intl.NumberFormat("en-US", {
+			minimumFractionDigits: 1,
+			maximumFractionDigits: 1,
+		});
+
+		elements.forEach((el) => {
+			const m = parseFloat((el as HTMLElement).dataset.m!);
+			const feet = m * M_TO_FT;
+			el.textContent = nfUS.format(feet) + " ft";
+		});
+	});
+</script>

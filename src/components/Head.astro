@@ -30,10 +30,11 @@ const schema = {
 	},
 };
 
-const font1 = "family=Instrument+Sans:ital,wght@0,400..700;1,400..700";
+/* const font1 = "family=Instrument+Sans:ital,wght@0,400..700;1,400..700";
 const font2 = "family=Merriweather:opsz,wght@18..144,300..900";
 const font3 = "family=Noto+Serif:wght@100..900";
 const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` + font3 + `&display=swap`;
+ */
 ---
 
 <head>
@@ -80,13 +81,14 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<link rel="sitemap" href="/sitemap-index.xml" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
 
-	<!-- <link rel="stylesheet" href="/fonts/inter.css" /> -->
-	<!-- 	<link rel="preconnect" href="https://rsms.me/" />
-	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> -->
+	<link rel="stylesheet" href="/fonts/inter.css" />
+	<link rel="preconnect" href="https://rsms.me/" />
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<!-- https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Merriweather:opsz,wght@18..144,300..900&family=Noto+Serif:wght@100..900&display=swap
-	/> -->
-	<link href={fonts} rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Noto+Serif:wght@100..900&display=swap"
+		rel="stylesheet"
+	/>
 	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
 </head>

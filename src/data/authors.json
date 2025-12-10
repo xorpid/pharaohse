@@ -10,6 +10,26 @@
 		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
 	},
 	{
+		"slug": "manetho",
+		"name": "Manetho",
+		"period": "c. 275 BC",
+		"meta1": "Manetho",
+		"meta2": "Manetho, king list, Aegyptiaca",
+		"image": "/images/kinglist/manetho.jpg",
+		"intro": "",
+		"bibliography": ["BIBLIO HERE"]
+	},
+	{
+		"slug": "aegyptiaca",
+		"name": "Aegyptiaca by Manetho",
+		"period": "c. 275 BC",
+		"meta1": "Manetho",
+		"meta2": "Manetho, king list, Aegyptiaca",
+		"image": "/images/kinglist/manetho.jpg",
+		"intro": "",
+		"bibliography": ["BIBLIO HERE"]
+	},
+	{
 		"slug": "africanus",
 		"name": "Julius Africanus",
 		"period": "c. 220 AD",
@@ -47,7 +67,11 @@
 		"meta2": "Syncellus, king list, Manetho",
 		"image": "/images/kinglist/syncellus.jpg",
 		"intro": "",
-		"bibliography": ["Mariette, Auguste., 1869. Abydos, I. Paris: plate 43", "Dümichen, Johannes., 1869. inschriften, Vol II. Leipzig: plate XLV"]
+		"bibliography": [
+			"Adler, W. and Tuffin, P., 2002. The Chronography of George Synkellos. Oxford: 71-73, 135, 143, 146, 156, 178, 211, 218, 224, 231-2, 245, 257-8, 267-8, 277-8, 306-7.",
+			"Verbrugghe, G. P. and Wickersham. J. M., 1996. Berossos and Manetho. Ann Arbor: 125-127, 177-182",
+			"Waddell, W. G., 1964. Manetho. Cambridge, Mass.: 234-249."
+		]
 	},
 	{
 		"slug": "diodorus",
@@ -77,6 +101,14 @@
 		"meta2": "Eratosthenes, king list, forgery",
 		"image": "/images/kinglist/eratosthenes.jpg",
 		"intro": "",
-		"bibliography": []
+		"bibliography": [
+			"<b>Adler, W. and Tuffin, P.</b>, 2002. <i>The Chronography of George Synkellos.</i> Oxford: 128, 135–36, 143–44, 147–48, 156–57, 178–79, 211–12.",
+			"<b>Dindorf, L.</b> 1829. <i>Georgius Syncellus, Nicephorus Cp. Corpus Scriptorum Historiae Byzantinae</i>. 22-23.",
+			"<b>Gundacker, Roman.</b> “The Chronology of the Third and Fourth Dynasties according to Manetho’s Aegyptiaca”. <i>Harvard Egyptological Studies</i> 1 (2015), 76-199",
+			"<b>Meyer, Eduard.</b>, 1904. <i>Aegyptische Chronologie</i>. 99-103, (Berlin)",
+			"<b>Mosshammer, A. A.</b>, 1984. <i>Georgius Syncellus: Ecloga Chronographica.</i> Leipzig: 103, 109, 115-16, 118-19, 125, 143, 172.",
+			"<b>Müller, Karl.</b>, 1848. <i>Fragmenta Historicorum Graecorum</i>, Vol. 2. Paris: 512-616",
+			"<b>Waddell, W. G.</b>, 1964. <i>Manetho</i>. Cambridge, Mass.: 212-225."
+		]
 	}
 ]

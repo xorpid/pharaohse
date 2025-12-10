@@ -5,11 +5,21 @@
 		"period": "19th Dynasty",
 		"meta1": "Abydos Canon",
 		"meta2": "Abydos Canon, Abydos king list",
-		"image": "/images/kinglist/abydos.jpg",
+		"image": "/images/pharaohse-abydos.jpg",
 		"intro": "",
 		"bibliography": [
-			"Mariette, Auguste., 1869. Abydos description des fouilles, I. Paris: plate 43",
-			"Dümichen, Johannes., 1869. Historische inschriften altägyptischer Denkmäler, Vol II. Leipzig: plate XLV"
+			"<b>Mariette, Auguste.</b>, 1869. <i>Abydos description des fouilles</i>, I. Paris: plate 43",
+			"<b>Mariette, Auguste.</b>, 1878. <i>Voyage dans la Haute-Égypte</i>. Cairo/Paris: 62-70, plates 25-28",
+			"<b>Dümichen, Johannes.</b>, 1869. <i>Historische inschriften altägyptischer Denkmäler</i>, Vol II. Leipzig: plate XLV",
+			"<b>Frankfort, H., de Buck, A., & Gunn, B.</b>, 1933. <i>The Cenotaph of Seti I at Abydos</i>, 2 Volumes. London.",
+			"<b>Kitchen, Kenneth A.</b>, 1975. <i>Ramesside Inscriptions</i>, I. Oxford: 176-179, &sect;77 (iii).",
+			"<b>Kitchen, Kenneth A.</b>, 1993. <i>Ramesside Inscriptions. Translated and Annotated.</i>, Vol. 1. Oxford: 152ff.",
+			"<b>Kitchen, Kenneth A.</b>, 1993. <i>Ramesside Inscriptions. Translated and Annotated: Notes and Comments.</i>, Vol. 1. Oxford: 117ff.",
+			"<b>Porter and Moss.</b>, 1991. <i>The Topographical Bibliography</i>, VI. Oxford: 24-25 (229-230).",
+			"<b>Redford, D. B.</b>, 1986. <i>Pharaonic King Lists, Annals and Day Books</i>. Mississauga: 18-20.",
+			"<a target=\"_blank\" href=\"https://www.360cities.net/image/list-of-kings-temple-of-seti-1-abydos-egypt\" rel=\"noopener nofollow\">360 degree view</a> of the list, courtesy of 360cities.net",
+			"<a target=\"_blank\" href=\"https://sketchfab.com/3d-models/abydos-king-list-aad89bb7b54e41d6aa92bf89bc0f7f56\">3D model</a> by <abbr title=\"Cornwall and Isles of Scilly Maritime Archaeology Society\">CISMAS</abbr> at Sketchfab.",
+			"<a target=\"_blank\" href=\"https://sketchfab.com/3d-models/abydos-king-list-temple-of-seti-i-36665286f4514934afb9db2070eb4bbf\">3D model</a> by David Anderson at Sketchfab."
 		]
 	},
 	{
@@ -18,9 +28,26 @@
 		"period": "18th Dynasty",
 		"meta1": "Karnak Canon",
 		"meta2": "Karnak Canon, Karnak king list",
-		"image": "/images/kinglist/karnak.jpg",
+		"image": "/images/pharaohse-karnak.jpg",
 		"intro": "",
-		"bibliography": []
+		"bibliography": [
+			"Map with original location of the king list <a data-fancybox=\"img6\" data-caption=\"Map to Karnak king list\" href=\"/images/karnak-king-list-akh-menu.webp\" title=\"Click to view\"> <img loading=\"lazy\" src=\"/svg/i.svg\" class=\"inline dark:invert h-4 align-baseline\" alt=\"Karnak, Akh-menu (Festival Hall of Thutmosis III), room SF.5\" /></a>",
+			"<b>Burton, James.</b>, 1825. <i>Excerpta Hieroglyphica</i>. Cairo: plate 1.",
+			"<b>Young, Thomas.</b>, 1828. <i>Hieroglyphics</i>. London: Plate 96 (copy from Burton)",
+			"<b>Wilkinson, J. G.</b>, 1830. <i>Extracts from several Hieroglyphical Subjects found at Thebes, and other parts of Egypt</i>. Malta: Pl. IV",
+			"<b>Lepsius, Karl Richard.</b>, 1842. <i>Auswahl der wichtigsten urkunden des Aegyptische Alterthums</i>. Leipzig: pl. I",
+			"<b>d’Avennes, Prisse.</b>, 1845. Notice sur la salle des ancêtres de Thouthmès III au Temple de Karnak. <i>Revue archéologique</i> II: pl. 23, pp. 5-15",
+			"<b>l’Illustration, Journal Universel.</b>, 1846. Vol. VII. Paris: 244-245  <a href=\"/pdf/Illustration1846.pdf\" title=\"PDF link: Click to view/download\"><img loading=\"lazy\" src=\"/svg/pdf.svg\" class=\"inline h-4 align-baseline\" alt=\"PDF link\" /></a><small> (English tr.)</small>",
+			"<b>de Rouge, Emmanuel.</b>, June 1846. Examen de l&#39;ouvrage de M. Le Chevalier de Bunsen. <i>Annales de philosophie chr&eacute;tienne</i>, 78: 432-458. Plate 46 <a rel=\"noopener nofollow\" href=\"http://digi.ub.uni-heidelberg.de/diglit/rouge1847/0015\" target=\"_blank\" title=\"View plate: Click to view\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"inline dark:invert h-4 align-baseline\" alt=\"visit\" /></a>",
+			"<b>d’Avennes, Prisse.</b>, 1847. <i>Monuments Égyptiens, bas-reliefs, peintures, inscriptions, etc.</i>. Paris: Plate I",
+			"<b>Lepsius, Karl Richard.</b>, 1853. Über die zwölfte Aegyptische Königsdynastie, <i>APAW</i>, 1852. Berlin: 425-455, pl. 1",
+			"<b>Sethe, Kurt.</b>, 1906. <i>Urkunden der 18. dynastie</i> Abteilung IV, Band II, Heft 5-8. Leipzig: 607-610. <a rel=\"noopener nofollow\" href=\"http://archive.org/stream/urkundenderdyna01helcgoog#page/n409/mode/2up\" target=\"_blank\" title=\"External PDF link: Click to view\"><img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"inline dark:invert h-4 align-baseline\" alt=\"visit\" /></a>",
+			"<b>Porter, Bertha, &amp; Moss, Rosalind.</b>, 1972. <i>The Topographical Bibliography of Ancient Egyptian Hieroglyphic Texts, Statues, Reliefs and Paintings</i>, II<sup>2</sup>. Oxford: 112 [342].",
+			"<b>Grimal, Nicolas.</b>, 2010. Les ancêtres de Karnak. <abbr title=\"Comptes rendus des séances de l’Académie des Inscriptions et Belles-Lettres\">CRAIBL</abbr> 154.1, pp. 343-370  <a rel=\"noopener nofollow\" href=\"http://www.persee.fr/docAsPDF/crai_0065-0536_2010_num_154_1_92814.pdf\" target=\"_blank\" title=\"External PDF link: Click to view\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"inline dark:invert h-4 align-baseline\" alt=\"External link: Click to view\" /></a><small> (original)</small> <a href=\"/pdf/Grimal2010-ENG.pdf\" title=\"Click to view\"> <img loading=\"lazy\" src=\"/svg/pdf.svg\" class=\"inline h-4 align-baseline\" alt=\"External link: Click to view\" /></a><small> (English tr.)</small>",
+			"<b>Schwaller de Lubicz, René Adolphe</b>, 1982. <i>Les Temples de Karnak</i>. Pl. 187.",
+			"<a rel=\"noopener nofollow\" target=\"_blank\" href=\"http://sith.huma-num.fr/karnak/2134#EC1_SF5+-+Chapelle+des+Anc%C3%AAtres\">SITH (in French)</a> Detailed description (by Egyptologists) of SF-5 with hieroglyphs, bibliography etc.",
+			"The museum webpage at <a rel=\"noopener nofollow\" target=\"_blank\" href=\"https://collections.louvre.fr/en/ark:/53355/cl010035431\">The Louvre</a>."
+		]
 	},
 	{
 		"slug": "saqqara-canon",
@@ -28,9 +55,21 @@
 		"period": "19th Dynasty",
 		"meta1": "Saqqara Canon",
 		"meta2": "Saqqara Canon, Saqqara king list",
-		"image": "/images/kinglist/saqqara.jpg",
+		"image": "/images/pharaohse-saqqara.jpg",
 		"intro": "",
-		"bibliography": ["ENtry 1", "Entry 2"]
+		"bibliography": [
+			"<b>Mariette, A.</b>, 1860. Lettre de M. Aug. Mariette A M. le Vicomte De Rougé. <i>Revue Archeologique</i>, N.S. ii: 20-23 <a href=\"/pdf/RevArch1860ii.pdf\" target=\"_blank\"><img loading=\"lazy\" src=\"/svg/pdf.svg\" class=\"inline h-4 align-baseline\" alt=\"PDF link\" /></a>",
+			"<b>de Rougé, E.</b>, 1865. <i>Album photographique de la mission remplie en Égypte</i>. Paris: Photos 143-145",
+			"<b>de Rougé, E.</b>, 1866. <i>Recherches sur les Monuments Qu’on Peut Attribuer aux Six Premières Dynasties de Manéthon</i>. Paris: plate I",
+			"<b>Mariette, A.</b>, 1864. La table de Saqqarah. <i>Revue Archeologique</i>, 10. Paris: 169-186, Plate XVII ",
+			"<b>Mariette, A.</b>, 1872. <i>Monuments divers recueillis en Égypte et en Nubie</i>. Vol. II. Paris: pls. 57b, 58, text Vol. I, p. 18-19 ",
+			"<b>Meyer, E.</b>, 1904. <i>&Auml;gyptische Chronologie</i>. Berlin: plate 1.",
+			"<b>Kitchen, K. A.</b>, 1980. <i>Ramesside Inscriptions</i>, Vol. 3. Oxford: 481-82. (&sect;217, 3)",
+			"<b>Kitchen, K. A.</b>, 2000. <i>Ramesside Inscriptions. Translated and Annotated.</i>, Vol. 3. Oxford: 340-42",
+			"<b>Porter and Moss</b>, 1981. <i>Topographical Bibliography</i>, Vol. III, part 2. Oxford: 666",
+			"<b>Beckerath, J. von.</b>, 1997. <i>Chronologie des pharaonischen Aegypten</i>. Mainz: 216",
+			"<b>Devéria, T.</b> Squeezes in the Louvre, 6165"
+		]
 	},
 	{
 		"slug": "ramesseum-canon",
@@ -38,9 +77,20 @@
 		"period": "19th Dynasty",
 		"meta1": "Ramesseum Canon",
 		"meta2": "Ramesseum Canon, Ramesseum king list",
-		"image": "/images/kinglist/ramesseum.jpg",
+		"image": "/images/pharaohse-ramesseum.jpg",
 		"intro": "",
-		"bibliography": []
+		"bibliography": [
+			"<b>Diodorus.</b>, c. 30 BC. <i>Bibliotheca Historica</i>, I, paragraphs 47-49.",
+			"<b>Strabo</b>., c 23. <i>Geographica</i>, Book XVII: 43.",
+			"<b>Norden, F. L.</b>, 1755. <i>Voyage d'Egypte et de Nubie</i>. Copenhagen.",
+			"<b>Roberts, D.</b>, 1849. <i>Egypt, and Nubia</i>, 2 vol. London.",
+			"<b>Rosellini, I.</b>, 1844. <i>I monumenti dell'Egitto e della Nubia</i>. Vol 4.3 (culto). Pisa: pls 75-77",
+			"<b>Champollion, J. F.</b>, 1845. <i>Monuments de l’Égypte et de la Nubie</i>, II. Paris: 149bis &amp; 150.",
+			"<b>Lepsius, K. R.</b>, 1849. <i>Denkmaeler aus Aegypten und Aethiopien...</i>, III. Berlin: 162-164.",
+			"<b>Porter &amp; Moss.</b>, 1972. <i>Topographical Bibliography...</i>. II<sup>2</sup>. Oxford: 434 (10",
+			"<b>The Epigraphic Survey.</b>, 1940.  Medinet Habu, Volume IV <i>Feast of Min ceremonies of Ramesses II</i>. <i>OIP</i> 51. Chicago: 213",
+			"<b>Kitchen, K. A.</b>, 1983. <i>Ramesside Inscriptions</i>, V. Oxford: 205:9-11; 209:9-10"
+		]
 	},
 	{
 		"slug": "medinet-habu-canon",
@@ -48,9 +98,20 @@
 		"period": "20th Dynasty",
 		"meta1": "Medinet Habu Canon",
 		"meta2": "Medinet Habu Canon, Medinet Habu king list",
-		"image": "/images/kinglist/medinet.jpg",
+		"image": "/images/pharaohse-medinet.jpg",
 		"intro": "",
-		"bibliography": []
+		"bibliography": [
+			"<b>Vivant, Dominique.</b>, 1802. <i>Voyage dans la Basse et la Haute Égypte, pendant les campagnes du général Bonaparte</i>. Paris: plate 134.",
+			"<i><b>Description de l’Égypte</b></i>., 1809-. Vol. II, Planches: Antiquités. Paris: pl. 11",
+			"<b>Wilkinson, John Gardner.</b>, 1837. <i>The manners and customs of the ancient Egyptians</i>. London: Pl. 76.",
+			"<b>Rosellini, Ippolito.</b>, 1844. <i>I monumenti dell'Egitto e della Nubia</i>. Vol 4.3 <small>culto.</small>. Pisa: pls. 85-86",
+			"<b>Champollion, Jean François.</b>, 1845. <i>Monuments de l’Égypte et de la Nubie</i>. Vol. III. Paris: pls. 210-214",
+			"<b>Lepsius, Karl Richard.</b>, 1849. <i>Denkmaeler aus Aegypten und Aethiopien</i>, Vol. III. Berlin: pls. 212-213",
+			"<b>Porter &amp; Moss.</b>, 1972. <i>Topographical Bibliography</i>. II<sup>2</sup>. Oxford: 499-500 (nos. 96-98",
+			"<b>Gauthier, Henri.</b>, 1931. Les f&ecirc;tes du dieu Min. <i>Recherches d’archéologie, de philologie et d’histoire</i>, 2. Cairo.",
+			"<b>The Epigraphic Survey</b>., 1940. Medinet Habu, Volume IV <i>Festival Scenes of Ramesses III</i>. <i>OIP</i>, 51. Chicago: pls. 203 &amp; 206",
+			"<b>Kitchen, K. A.</b>, 1983. <i>Ramesside Inscriptions</i>, V. Oxford: 205:12-13, 209:11-12"
+		]
 	},
 	{
 		"slug": "marseille",
@@ -58,9 +119,15 @@
 		"period": "18th Dynasty",
 		"meta1": " Marseille table",
 		"meta2": " Marseille table,  Marseille table king list",
-		"image": "/images/kinglist/marseille.jpg",
+		"image": "/images/pharaohse-marseille.jpg",
 		"intro": "",
-		"bibliography": []
+		"bibliography": [
+			"<b>Brugsch, Heinrich.</b>, 1859. Beschreibung einer Altägyptischen Opfertafel, <i>Monatsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin 1858</i>. Berlin: 70-71. <a rel=\"noopener nofollow\" href=\"https://bit.ly/3O5zvWz\" target=\"_blank\" title=\"External link: Click to view\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"h-4 align-baseline dark:invert inline\" alt=\"External link: Click to view\" /></a>",
+			"<b>de Saulcy, Ernest.</b>, 1864. Étude sur la série des rois inscrits a la salle des Ancêtres de Thouthmès III, <i>Mémoires de l’Académie nationale de Metz</i>, S.2, Ed. 11.2. Metz: 301-309. <a rel=\"noopener nofollow\" href=\"https://gallica.bnf.fr/ark:/12148/bpt6k332465/f307.item\" target=\"_blank\" title=\"External link: Click to view\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"h-4 align-baseline dark:invert inline\" alt=\"External link: Click to view\" /></a>",
+			"<b>Porter and Moss.</b>, 1964. <i>Topographical Bibliography</i>, I, part 2. Oxford: 743. <small>Ken(hir)khopshef (a).</small>",
+			"Musée d’Archéologie Méditerranéenne: <a rel=\"noopener nofollow\" href=\"https://musees.marseille.fr/table-doffrandes-de-qenherkhepeshef\" target=\"_blank\" title=\"Visit museum webpage\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"h-4 align-baseline dark:invert inline\" alt=\"External link: Click to view\" /></a> (accessed February 2024)",
+			"<b>Redford, Donald B.</b>, 1986. <i>Pharaonic king-lists, annals and day-books</i>. Mississauga: 43."
+		]
 	},
 	{
 		"slug": "turin",
@@ -68,7 +135,7 @@
 		"period": "19th Dynasty",
 		"meta1": "Turin King List",
 		"meta2": "Turin King List, Royal Turin Canon, Turin king list",
-		"image": "/images/kinglist/turin.jpg",
+		"image": "/images/pharaohse-turin.jpg",
 		"intro": "",
 		"bibliography": []
 	}

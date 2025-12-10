@@ -94,12 +94,12 @@ try {
 		items.length > 0 && (
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
 				{items.map((item) => (
-					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-2 text-center">
+					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-1 text-center">
 						{item.bild && <img src={`/svg/${svgFolder}/${item.bild}.svg`} alt={item.namn} class="h-20 dark:invert object-contain" />}
 						<div class="font-bold font-serif text-2xl tracking-wide" set:html={item.namn} />
 						{item.tlit && <div class="tlit">{Translit(item.tlit)}</div>}
 						{item.meaning && <div class="">{item.meaning}</div>}
-						<div class="flex justify-between">
+						<div class="flex justify-between leading-2 mt-2">
 							{item.nr && <div class="font-mono">No: {item.nr}</div>}
 							{item.farao !== undefined && (
 								<div class="">
@@ -123,9 +123,9 @@ try {
 		kinglist.bibliography && kinglist.bibliography.length > 0 && (
 			<section class="mt-12">
 				<h2 class="text-2xl font-bold mb-4">Bibliography</h2>
-				<ul class="list-none list-inside space-y-2">
+				<ul class="list-none list-inside space-y-2" id="biblio">
 					{kinglist.bibliography.map((title) => (
-						<li>{title}</li>
+						<li set:html={title} />
 					))}
 				</ul>
 			</section>
