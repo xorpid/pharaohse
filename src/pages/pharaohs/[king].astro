@@ -498,7 +498,7 @@ function antiquityTableHtml(entries: any[]) {
 		return (
 			<section class="my-12">
 				<h2 class="text-3xl font-semibold mb-4 text-center">Bibliography</h2>
-				<ul class="list-none pl-6 text-sm leading-loose">
+				<ul class="list-none pl-6 text-sm leading-loose" id="biblio">
 					{entries.map(({ key, value }) => {
 						const prefix = fieldPrefixes[key as keyof typeof fieldPrefixes] || "";
 						// Build the raw HTML string for the <li> content (prefix + value only)

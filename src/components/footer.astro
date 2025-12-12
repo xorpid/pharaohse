@@ -4,10 +4,11 @@ const nu = new Date().getFullYear();
 const v = "v. 5.0";
 ---
 
-<footer class="g2 print:hidden bg-yellow-900 text-amber-50">
+<div class="line h-px"></div>
+<footer class="g3 print:hidden bg-dark text-stone-950 dark:text-amber-50">
 	<div class="text-center container mx-auto pb-20 sm:pb-0">
-		<div class="flex flex-col gap-x-10 sm:flex-row flex-wrap items-center justify-center min-h-80">
-			<a href="/" class=""
+		<div class="flex flex-col gap-x-10 sm:flex-row flex-wrap items-center justify-center min-h-60">
+			<!-- <a href="/" class=""
 				><img
 					src="/images/logg.webp"
 					class="w-40 h-40 opacity-70 hover:opacity-100 align-middle"
@@ -15,32 +16,18 @@ const v = "v. 5.0";
 					title="To the start of Pharaoh.SE"
 					alt="Pharaoh.SE"
 				/></a
-			>
-
+			> -->
 			<div class="flex-1 max-w-fit text-sm text-softy pt-10">
-				Also at <a href="https://pharaohse.netlify.app">pharaohse.netlify.app</a><br />
-				Information provided <i>as is</i>.<br />
-				<span>&copy; 2011&ndash;{nu} Peter Lundstr&ouml;m | {v} </span><br /><br /><b>Always</b> verify the sources - AI replies too.<br />De omnibus
-				et machina dubitandum.<br />
-
-				<div class="mt-3 text-sm flex w-fit mx-auto">
-					<a rel="noopener nofollow" class="text-center" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-						<img src="/svg/by.svg" class="w-8 opacity-25 hover:opacity-75 mr-2" loading="lazy" alt="BY" /></a
-					>
-					<a rel="noopener nofollow" class="text-center" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-						<img src="/svg/cc.svg" class="w-8 opacity-25 hover:opacity-75 mr-2" loading="lazy" alt="CC" /></a
-					>
-					<img src="/svg/gh.svg" class="w-8 opacity-50 mr-2" loading="lazy" alt="Github" />
-					<img src="/svg/netlify.svg" class="w-8 opacity-50" loading="lazy" alt="Netlify" />
-				</div>
-				<p class="pb-10">
+				<span>&copy; 2011&ndash;{nu} Peter Lundstr&ouml;m | {v} </span><br />
+				Website Mirror:<br /><a href="https://pharaohse.netlify.app">pharaohse.netlify.app</a><br />
+				<p class="pb-4">
 					Creative Commons Attribution 4.0 License <br />
-					<a class="text-white" href="/privacy">Privacy policy</a>
+					<a class="text-red-700 dark:text-white" href="/privacy">Privacy policy</a>
 				</p>
 			</div>
-			<div class="flex-0 w-28 my-5 sm:my-0 shadow-lg text-sm self-center">
+			<!-- <div class="flex-0 w-28 my-5 sm:my-0 shadow-lg text-sm self-center">
 				PHARAOH.SE<img src="/svg/qr.svg" class="aspect-square" loading="lazy" alt="QR" />
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<script is:inline src="/scripts/fancybox.js"></script>
@@ -91,3 +78,17 @@ const v = "v. 5.0";
 		document.documentElement.scrollTop = 0;
 	}
 </script>
+
+<style>
+	.line {
+		background: #2a7b9b;
+		background: linear-gradient(
+			90deg,
+			rgba(42, 123, 155, 0) 0%,
+			rgba(245, 165, 15, 0.15) 25%,
+			rgba(245, 165, 15, 1) 50%,
+			rgba(245, 165, 15, 0.15) 75%,
+			rgba(237, 221, 83, 0) 100%
+		);
+	}
+</style>

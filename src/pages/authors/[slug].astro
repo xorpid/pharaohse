@@ -92,73 +92,74 @@ const dynKeys = Object.keys(dynGroups).sort((a: string, b: string) => Number(a) 
 			dynKeys.map((dyn) => (
 				<div class="mb-12">
 					{dyn !== "99" && <h3 class="text-2xl font-bold mt-8 mb-2 text-center">Dynasty {dyn}</h3>}
+					<div class="tbl">
+						<table class="w-fit mx-auto text-sm min-w-lg">
+							{(() => {
+								// Get visibility settings for current author
+								const currentAuthorSettings = visibleTables.find((t) => t.name === slug)?.values ?? [true, true, true, true, true, true, true];
 
-					<table class="w-fit mx-auto my-10 text-sm">
-						{(() => {
-							// Get visibility settings for current author
-							const currentAuthorSettings = visibleTables.find((t) => t.name === slug)?.values ?? [true, true, true, true, true, true, true];
-
-							return (
-								<>
-									<thead class="border-b-2 mb-4">
-										<tr class="text-left">
-											{currentAuthorSettings[0] && <th>#</th>}
-											{currentAuthorSettings[1] && <th>Pharaoh</th>}
-											{currentAuthorSettings[2] && <th />}
-											{currentAuthorSettings[3] && <th>Greek</th>}
-											{currentAuthorSettings[4] && <th>Transliteration</th>}
-											{currentAuthorSettings[5] && <th>Reign</th>}
-											{currentAuthorSettings[6] && <th>Description</th>}
-										</tr>
-									</thead>
-									<tbody>
-										{dynGroups[dyn]
-											.slice()
-											.sort((a, b) => a.ordna - b.ordna)
-											.map((item) => (
-												<tr>
-													{currentAuthorSettings[0] && <td class="px-2 py-1">{item.ordna}</td>}
-													{currentAuthorSettings[1] && (
-														<td class="px-2 py-1">
-															{(() => {
-																const phEntry = faraos.find((ph) => ph.no === String(item.ph));
-																if (phEntry) {
-																	if (phEntry.no === "888") {
-																		return " ";
+								return (
+									<>
+										<thead class="border-b-2 mb-4">
+											<tr class="text-left">
+												{currentAuthorSettings[0] && <th>#</th>}
+												{currentAuthorSettings[1] && <th>Pharaoh</th>}
+												{currentAuthorSettings[2] && <th />}
+												{currentAuthorSettings[3] && <th>Greek</th>}
+												{currentAuthorSettings[4] && <th>Transliteration</th>}
+												{currentAuthorSettings[5] && <th>Reign</th>}
+												{currentAuthorSettings[6] && <th>Description</th>}
+											</tr>
+										</thead>
+										<tbody>
+											{dynGroups[dyn]
+												.slice()
+												.sort((a, b) => a.ordna - b.ordna)
+												.map((item) => (
+													<tr>
+														{currentAuthorSettings[0] && <td class="px-2 py-1">{item.ordna}</td>}
+														{currentAuthorSettings[1] && (
+															<td class="px-2 py-1">
+																{(() => {
+																	const phEntry = faraos.find((ph) => ph.no === String(item.ph));
+																	if (phEntry) {
+																		if (phEntry.no === "888") {
+																			return " ";
+																		}
+																		if (phEntry.no === "999") {
+																			return "—";
+																		}
+																		// Use slug from pharaohs.json if available, else generate from name
+																		const slug =
+																			phEntry.slug ||
+																			phEntry.name
+																				.toLowerCase()
+																				.replace(/[^a-z0-9]+/g, "-")
+																				.replace(/^-+|-+$/g, "");
+																		return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
+																	} else {
+																		return item.ph;
 																	}
-																	if (phEntry.no === "999") {
-																		return "—";
-																	}
-																	// Use slug from pharaohs.json if available, else generate from name
-																	const slug =
-																		phEntry.slug ||
-																		phEntry.name
-																			.toLowerCase()
-																			.replace(/[^a-z0-9]+/g, "-")
-																			.replace(/^-+|-+$/g, "");
-																	return <a href={`/pharaohs/${slug}`}>{phEntry.name}</a>;
-																} else {
-																	return item.ph;
-																}
-															})()}
-														</td>
-													)}
-													{currentAuthorSettings[2] && <td class="px-2 py-1">{item.ch}</td>}
-													{currentAuthorSettings[3] && (
-														<td class="px-2 py-1">
-															<span lang="grc">{item.greek}</span>
-														</td>
-													)}
-													{currentAuthorSettings[4] && <td class="px-2 py-1">{item.tlit}</td>}
-													{currentAuthorSettings[5] && <td class="px-2 py-1">{item.reign}</td>}
-													{currentAuthorSettings[6] && <td class="px-2 py-1">{item.descr ?? ""}</td>}
-												</tr>
-											))}
-									</tbody>
-								</>
-							);
-						})()}
-					</table>
+																})()}
+															</td>
+														)}
+														{currentAuthorSettings[2] && <td class="px-2 py-1">{item.ch}</td>}
+														{currentAuthorSettings[3] && (
+															<td class="px-2 py-1">
+																<span lang="grc">{item.greek}</span>
+															</td>
+														)}
+														{currentAuthorSettings[4] && <td class="px-2 py-1">{item.tlit}</td>}
+														{currentAuthorSettings[5] && <td class="px-2 py-1">{item.reign}</td>}
+														{currentAuthorSettings[6] && <td class="px-2 py-1">{item.descr ?? ""}</td>}
+													</tr>
+												))}
+										</tbody>
+									</>
+								);
+							})()}
+						</table>
+					</div>
 				</div>
 			))
 		}

@@ -12,11 +12,11 @@ import Layout from "@layouts/Layout.astro";
 				sake of completness:
 			</p>
 			<p class="pl-5">
-				<b>S<sup>1</sup>1</b> – No. 6804-6830<br />
-				<b>S<sup>1</sup>2</b> – No. 6831-6856<br />
-				<b>S<sup>1</sup>3</b> – No. 6857-6935<br />
-				<b>S<sup>2</sup></b> – Pasting of the 164 fragments by Seyffarth, as seen by Lepsius and Wilkinson.<br />
-				<b>S<sup>3</sup></b> – No. 6413.
+				S<sup class="align-super">1</sup>1 – No. 6804-6830<br />
+				S<sup class="align-super">1</sup>2 – No. 6831-6856<br />
+				S<sup class="align-super">1</sup>3 – No. 6857-6935<br />
+				S<sup class="align-super">2</sup> – Pasting of the 164 fragments by Seyffarth, as seen by Lepsius and Wilkinson.<br />
+				S<sup class="align-super">3</sup> – No. 6413.
 			</p>
 			<p>
 				The numbering scheme of the 164 numbered fragments of the Turin King List derives from Carl Richard Lepsius’ <em>Auswahl</em> in 1842. Giulio Farina
@@ -30,7 +30,7 @@ import Layout from "@layouts/Layout.astro";
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-base py-10">
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 1</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II</div><div>Champollion: Nn</div><div>Column 3.1-13</div>
@@ -38,7 +38,7 @@ import Layout from "@layouts/Layout.astro";
 				Farina removed the small top part of fr. 1 from where Seyffarth had originally placed it. There is not enough space at the top for another row,
 				so the small fragment was correctly removed, and no new position have been found.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 2</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Column 3.8</div>
@@ -48,7 +48,7 @@ import Layout from "@layouts/Layout.astro";
 				fr. 2 has been found, which is confirmed by the writing on the recto and verso, plus the fibres match perfectly. The new position is at the end
 				of 3.8, adding the text: <tlit>7 ꜤḥꜤw</tlit>, emending the text to: <i>13427 years, their lifetime...</i>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 3</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II 2</div><div></div><div>Column 3.6-7</div>
@@ -57,7 +57,7 @@ import Layout from "@layouts/Layout.astro";
 				the left side of fragment 3 is a perfect match. Despite Gardiner noting that Seyffarth’s placement was incorrect, Farina’s position is untenable,
 				and Seyffarth’s position is corroborated by a clear fibre correspondence as well as the text on both sides of the fragment.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 4</div>
 
 				<div class="pb-5 text-center">
@@ -69,21 +69,21 @@ import Layout from "@layouts/Layout.astro";
 				to be confirmed by the writing and matching fibres. The red signs are clearly a heading or summation, and the bracket surrounding the row below
 				shows that the end of the previous column is encroaching on the column.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 5</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Doubtful and useless</div><div></div><div>Unplaced</div>
 				</div>
 				One row with unreadable traces.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 6</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Doubtful and useless</div><div></div><div>Unplaced</div>
 				</div>
 				One row with unreadable traces.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 7</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Unplaced</div>
@@ -91,7 +91,7 @@ import Layout from "@layouts/Layout.astro";
 				Gardiner noted that the position is doubtful, but it most likely belong somewhere in columns 1&ndash;3. Seyffarth’s placement at the top and left
 				of fr. 1 was not mentioned by Gardiner. Farina moved the fragment to column 1 above and to the right of fr. 11.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 8</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Unplaced</div>
@@ -99,7 +99,7 @@ import Layout from "@layouts/Layout.astro";
 				Blank, with writing on the recto that aligns perfectly with fr. 10, as do the fibres.
 			</div>
 
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 9</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Column 1</div>
@@ -107,14 +107,14 @@ import Layout from "@layouts/Layout.astro";
 				The fibres confirms the position of fr. 8, 9, 10, 11, and 51. However, the fibre correspondence between fr. 9 and fr. 51 is somewhat uncertain,
 				and the colour of fr. 9 is slightly darker than its neighbours, indicating a possible mismatch.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 10</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Unplaced</div>
 				</div>
 				Blank, with writing on the recto that aligns perfectly with fr. 10 and 8, as do the fibres.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 11</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Column 1</div>
@@ -122,7 +122,7 @@ import Layout from "@layouts/Layout.astro";
 				Lepsius depicts this as a single continuous papyrus piece, as do the photo of Faraina, aand Gardiner’s facsimile. However, from the modern photos
 				it is clear that handling has frayed some of the edges of the fragment, effectively dividing it into multiple smaller parts.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 12</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Column 1</div>
@@ -131,49 +131,49 @@ import Layout from "@layouts/Layout.astro";
 				thin fragment with fr. 11. Farina noticed that Seyffarth had incorrectly placed the square part to the left of the first row of the thin fragment,
 				clear from there being no fibre match, while there is a horizontal match with fr. 51 to the right, and possibly a vertical match with fr. 11.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 13</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Unplaced</div>
 				</div>
 				One row, likely part of a large number, evident from the sublinear line
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 14</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Unplaced</div>
 				</div>
 				Three rows, one likely part of a long row with a large year number and ending with the month ligature <tlit>Ꜣbdw</tlit>.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 15</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Unplaced</div>
 				</div>
 				Two rows, one likely part of a long row with a large number.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 16</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Unplaced</div>
 				</div>
 				Two illegible rows with large space between row, indicating a possible empty row between them.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 17</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: III</div><div></div><div>Column 4.8</div>
 				</div>
 				Moved from Seyffarth’s placement to the right of fr. 18 to the bottom right side of fr. 18.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 18</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: III</div><div>Champollion: Ff, Gg, L</div><div>Column 4.1-14</div>
 				</div>
 				The leftmost part of this fragment was designated 18a by Gardiner, supposedly it had broken off since the remounting by Farina.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 19</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II</div><div></div><div>Column 3.24-25</div>
@@ -181,17 +181,17 @@ import Layout from "@layouts/Layout.astro";
 				This fragment was originally placed between fr. 18 and 20 by Seyffarth, but Wilkinson correctly placed it below fr. 20, a placement matched by
 				fibres, to which Farina eventually moved it.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 20</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II</div><div>Champollion: Dd, F (part)</div><div>Column 3.15-22</div>
 				</div>
 				Champollion fr. Dd joins below the two rows of fr. F.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 21</div>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 22</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: X</div><div>Champollion: U</div><div>Column 2</div>
@@ -199,7 +199,7 @@ import Layout from "@layouts/Layout.astro";
 				Fiber correspondence ensures the horizontal alignment of fr. 22 with fr. X/24-26. The two fragments can be vertically aligned with fr. 11 in col.
 				1.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 23</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II</div><div></div><div>Column 3</div>
@@ -207,50 +207,50 @@ import Layout from "@layouts/Layout.astro";
 				A join is clearly visible in the middle of the fragment and the placement above fr. 30 is secure. Even though Gardiner considered it as blank,
 				Lepsius’ facsimile shows traces of a single sign.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 24</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 25</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 26</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 27</div>Doubtful; only two rows with the year sign (rnpt)
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 28</div>Doubtful and useless
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 29</div>Gardiner note that the recto has a heading in red and that it probably belongs, but left it unplaced.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 30</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: II</div><div></div><div>Column 3.16-23</div>
 				</div>
 				The left side of the fragment has an obvious join between two papyri sheets.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 31</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: III</div><div>Champollion: L</div><div>Column 4.8-9</div>
 				</div>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 32</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: III</div><div></div><div>Column 4.5-14</div>
 				</div>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 33</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: III</div><div></div><div>Column 4.12-14</div>
 				</div>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 34</div>
 				<div class="pb-5">
 					<div>Gardiner: III</div><div>Champollion: Qq, Ll, Aa, Hh</div><div>Column 4.1-14</div>
@@ -258,10 +258,10 @@ import Layout from "@layouts/Layout.astro";
 				Seyffarth was able to produce fr. 34 from four fragments that Champollion discovered by establishing fibre matches to three fragments that the
 				Frenchman had not found.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 35</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 36</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Column 5.25-26</div>
@@ -270,17 +270,17 @@ import Layout from "@layouts/Layout.astro";
 				to fr. 48 in col. 5 as suggested by von Beckerath in 1966.
 			</div>
 
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 37</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 38</div>Gardiner did not place the fragment, but his concordance puts it in column III and notes only that the
 				verso is blank. Fibre correspondence and writing on the recto indicate that it belongs to the left of fr. 34 and above fr. 46.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 39</div>Gardiner: Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 40</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Column 10</div>
@@ -292,7 +292,7 @@ import Layout from "@layouts/Layout.astro";
 					fibre correspondence, although most of the fragment does seem to consist of a patch.</span
 				>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 41</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: IX</div><div></div><div>Column 2.1-6</div>
@@ -301,14 +301,14 @@ import Layout from "@layouts/Layout.astro";
 				Gardiner indicated that Farina's position cannot be correct. Ryholt suggested that there must have been another column with mythological information,
 				making Gardiner’s column II the third column. This column begins with fr. 41 at the top.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 42</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: IX</div><div></div><div>Column 2.5-6</div>
 				</div>
 				The location of the patch on fr. 41 + 42 can be estimated to be 17 cm to the right of the patch on fr. 1.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 43</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: IV</div><div></div><div>Column 5.7-10</div>
@@ -316,17 +316,17 @@ import Layout from "@layouts/Layout.astro";
 				This fragment has been moved up one row compared to Gardiner, who in turn moved it up two rows compared to Farina, who moved it one row up from
 				Seyffarth, which is corroborated by the fibres.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 44</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: IV</div><div></div><div>Column 5.14-17</div>
 				</div>
 				There is a clear fibre correspondence with fragments 61 and 63 to the left.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 45</div></div>
-			<div class="frgm"><div class="frno">Fragment 46</div></div>
-			<div class="frgm"><div class="frno">Fragment 47</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 45</div></div>
+			<div class="card"><div class="frno">Fragment 46</div></div>
+			<div class="card"><div class="frno">Fragment 47</div></div>
+			<div class="card">
 				<div class="frno">Fragment 48</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Column 5.22-26</div>
@@ -334,8 +334,8 @@ import Layout from "@layouts/Layout.astro";
 				Despite the fact that Seyffarth correctly put this fragment to the left of fr. 47, Farina erroneously eliminated it even though there is a clear
 				fibre correspondence.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 49</div>Blank</div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 49</div>Blank</div>
+			<div class="card">
 				<div class="frno">Fragment 50</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: Unplaced</div><div></div><div>Column 5 top?</div>
@@ -343,265 +343,265 @@ import Layout from "@layouts/Layout.astro";
 				Gardiner note that it is written on a patch, probably from the top of a column, but left it unplaced. Possibly to be placed to the left of fr.
 				18 where a patch is missing.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 51</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: I</div><div></div><div>Column 1</div>
 				</div>
 				The fibres confirms the position of fr. 8, 9, 10, 11, and 51. The fibre correspondence between Fr. 51 and fr. 9 is somewhat uncertain.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 52</div>Only traces on verso
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 53</div>No writing
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 54</div>No writing
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 55</div>No writing
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 56</div>Verso only a number
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 57</div>Verso only a number
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 58</div>No writing
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 59</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: IV-V</div><div>Champollion: Tt</div><div>Column 6</div>
 				</div>
 				stopped here
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 60</div>Only a part of the bee and the start of a cartouche. Not commented on otherwise by Gardiner.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 61</div></div>
-			<div class="frgm"><div class="frno">Fragment 62</div></div>
-			<div class="frgm"><div class="frno">Fragment 63</div></div>
-			<div class="frgm"><div class="frno">Fragment 64</div></div>
-			<div class="frgm"><div class="frno">Fragment 65</div>Blank</div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 61</div></div>
+			<div class="card"><div class="frno">Fragment 62</div></div>
+			<div class="card"><div class="frno">Fragment 63</div></div>
+			<div class="card"><div class="frno">Fragment 64</div></div>
+			<div class="card"><div class="frno">Fragment 65</div>Blank</div>
+			<div class="card">
 				<div class="frno">Fragment 66</div>
 				Left in place by Gardiner, but he notes that it does not belong where Farina placed it. <small>(Gardiner 1959: 17, X 21)</small>
 			</div>
-			<div class="frgm"><div class="frno">Fragment 67</div></div>
-			<div class="frgm"><div class="frno">Fragment 68</div>Blank</div>
-			<div class="frgm"><div class="frno">Fragment 69</div></div>
-			<div class="frgm"><div class="frno">Fragment 70</div></div>
-			<div class="frgm"><div class="frno">Fragment 71</div></div>
-			<div class="frgm"><div class="frno">Fragment 72</div></div>
-			<div class="frgm"><div class="frno">Fragment 73</div></div>
-			<div class="frgm"><div class="frno">Fragment 74</div></div>
-			<div class="frgm"><div class="frno">Fragment 75</div></div>
-			<div class="frgm"><div class="frno">Fragment 76</div></div>
-			<div class="frgm"><div class="frno">Fragment 77</div></div>
-			<div class="frgm"><div class="frno">Fragment 78</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 67</div></div>
+			<div class="card"><div class="frno">Fragment 68</div>Blank</div>
+			<div class="card"><div class="frno">Fragment 69</div></div>
+			<div class="card"><div class="frno">Fragment 70</div></div>
+			<div class="card"><div class="frno">Fragment 71</div></div>
+			<div class="card"><div class="frno">Fragment 72</div></div>
+			<div class="card"><div class="frno">Fragment 73</div></div>
+			<div class="card"><div class="frno">Fragment 74</div></div>
+			<div class="card"><div class="frno">Fragment 75</div></div>
+			<div class="card"><div class="frno">Fragment 76</div></div>
+			<div class="card"><div class="frno">Fragment 77</div></div>
+			<div class="card"><div class="frno">Fragment 78</div></div>
+			<div class="card">
 				<div class="frno">Fragment 79</div>
 				This fragment was published in Lepsius where it bridged fr. 78 and 79, but was removed by Farina, as the writing on the recto of the fragment made
 				the placement impossible. Ryholt suggested that the removed fragment could be placed in col. 9 or 10, but the position is uncertain with no mention
 				of a fibre match with any of the surrounding fragments. <small>(Ryholt 1997: 26)</small>
 			</div>
-			<div class="frgm"><div class="frno">Fragment 80</div></div>
-			<div class="frgm"><div class="frno">Fragment 81</div></div>
-			<div class="frgm"><div class="frno">Fragment 82</div></div>
-			<div class="frgm"><div class="frno">Fragment 83</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 80</div></div>
+			<div class="card"><div class="frno">Fragment 81</div></div>
+			<div class="card"><div class="frno">Fragment 82</div></div>
+			<div class="card"><div class="frno">Fragment 83</div></div>
+			<div class="card">
 				<div class="frno">Fragment 84</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: V</div><div></div><div>Column 6.16</div>
 				</div>
 				Horizontal fibre correspondence and sign matching with fr. 85 to the left.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 85</div>
 				<div class="pb-5 text-center">
 					<div>Gardiner: V</div><div></div><div>Column 6.14-17</div>
 				</div>
 				Horizontal fibre correspondence and sign matching with fr. 84 to the right and vertical correspondence with fr. 64 below.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 86</div></div>
-			<div class="frgm"><div class="frno">Fragment 87</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 86</div></div>
+			<div class="card"><div class="frno">Fragment 87</div></div>
+			<div class="card">
 				<div class="frno">Fragment 88</div>The vertical position in col. 7 is assured due to matching fibres, however, the position is uncertain, as
 				there is no immediate horizontal match. The placement is of little importance as the fragment only contain the royal titles. <small
 					>(Ryholt 1997: 23)</small
 				>
 			</div>
-			<div class="frgm"><div class="frno">Fragment 89</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 89</div></div>
+			<div class="card">
 				<div class="frno">Fragment 90</div>Unplaced. According to Wilkinson, fr. 90 can be aligned vertically with fr. 87 and 94.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 91</div>Does not belong.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 92</div>Blank</div>
-			<div class="frgm"><div class="frno">Fragment 93</div></div>
-			<div class="frgm"><div class="frno">Fragment 94</div></div>
-			<div class="frgm"><div class="frno">Fragment 95</div></div>
-			<div class="frgm"><div class="frno">Fragment 96</div></div>
-			<div class="frgm"><div class="frno">Fragment 97</div></div>
-			<div class="frgm"><div class="frno">Fragment 98</div></div>
-			<div class="frgm"><div class="frno">Fragment 99</div></div>
-			<div class="frgm"><div class="frno">Fragment 100</div></div>
-			<div class="frgm"><div class="frno">Fragment 101</div></div>
-			<div class="frgm"><div class="frno">Fragment 102</div></div>
-			<div class="frgm"><div class="frno">Fragment 103</div></div>
-			<div class="frgm"><div class="frno">Fragment 104</div></div>
-			<div class="frgm"><div class="frno">Fragment 105</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 92</div>Blank</div>
+			<div class="card"><div class="frno">Fragment 93</div></div>
+			<div class="card"><div class="frno">Fragment 94</div></div>
+			<div class="card"><div class="frno">Fragment 95</div></div>
+			<div class="card"><div class="frno">Fragment 96</div></div>
+			<div class="card"><div class="frno">Fragment 97</div></div>
+			<div class="card"><div class="frno">Fragment 98</div></div>
+			<div class="card"><div class="frno">Fragment 99</div></div>
+			<div class="card"><div class="frno">Fragment 100</div></div>
+			<div class="card"><div class="frno">Fragment 101</div></div>
+			<div class="card"><div class="frno">Fragment 102</div></div>
+			<div class="card"><div class="frno">Fragment 103</div></div>
+			<div class="card"><div class="frno">Fragment 104</div></div>
+			<div class="card"><div class="frno">Fragment 105</div></div>
+			<div class="card">
 				<div class="frno">Fragment 106</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 107</div>Two rows of the year ligature (rnpt).
 			</div>
-			<div class="frgm"><div class="frno">Fragment 108</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 108</div></div>
+			<div class="card">
 				<div class="frno">Fragment 109</div>Two rows of the year ligature (rnpt).
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 110</div>Partial number
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 111</div>Three rows with the year ligature (rnpt).
 			</div>
-			<div class="frgm"><div class="frno">Fragment 112</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 112</div></div>
+			<div class="card">
 				<div class="frno">Fragment 113</div>The year ligature only.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 114</div>Traces of numbers
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 115</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 116</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 117</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 118</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 119</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 120</div>Doubtful and useless
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 121</div>Useless traces only
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 122</div>
 				Placed in column 10 by Gardiner, it was left unplaced by Ryholt. The placement is of little importance as the fragment only contain the royal titles.
 				<small>(Ryholt 1997: 25)</small>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 123</div>
 				The small fragment at the top of fr. 123 was not present in Lepsius. It was added by Farina, and is also present in Gardiner. Ryholt joins fr.
 				123 with fr. 101 of col. 9, discarding the addition by Farina without comment. Fibre correspondence is unknown, it is unplaced.
 				<small>(cf. also Ryholt 1997: 25)</small>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 124</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 125</div>
 				After Ibscher and Farina changed the positions of fr. 125 and 127, a small part on the left side of fr. 125 remain. It is only a single vertical
 				stroke, but its fate has not been mentioned since.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 126</div></div>
-			<div class="frgm"><div class="frno">Fragment 127</div></div>
-			<div class="frgm"><div class="frno">Fragment 128</div>Blank</div>
-			<div class="frgm"><div class="frno">Fragment 129</div>Blank</div>
-			<div class="frgm"><div class="frno">Fragment 130</div></div>
-			<div class="frgm"><div class="frno">Fragment 131</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 126</div></div>
+			<div class="card"><div class="frno">Fragment 127</div></div>
+			<div class="card"><div class="frno">Fragment 128</div>Blank</div>
+			<div class="card"><div class="frno">Fragment 129</div>Blank</div>
+			<div class="card"><div class="frno">Fragment 130</div></div>
+			<div class="card"><div class="frno">Fragment 131</div></div>
+			<div class="card">
 				<div class="frno">Fragment 132</div>Does not belong.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 133</div></div>
-			<div class="frgm"><div class="frno">Fragment 134</div></div>
-			<div class="frgm"><div class="frno">Fragment 135</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 133</div></div>
+			<div class="card"><div class="frno">Fragment 134</div></div>
+			<div class="card"><div class="frno">Fragment 135</div></div>
+			<div class="card">
 				<div class="frno">Fragment 136</div>Two partial nsw-bit.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 137</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 138</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 139</div>Tiny trace only
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 140</div>Doubtful and useless
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 141</div>Contain the end of the title, and the opening cartouche and the initial signs of the name Ra...
 			</div>
-			<div class="frgm"><div class="frno">Fragment 142</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 142</div></div>
+			<div class="card">
 				<div class="frno">Fragment 143</div>Months and days belonging to some unknown reign.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 144</div>Doubtful</div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 144</div>Doubtful</div>
+			<div class="card">
 				<div class="frno">Fragment 145</div>Two partial nsw-bit.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 146</div>Doubtful and useless.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 147</div>
 				The fragment cannot join with fr. 150 as placed by Farina. <small>(Gardiner 1959: 17, IX 29)</small>
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 148</div>Does not belong.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 149</div>Blank</div>
-			<div class="frgm"><div class="frno">Fragment 150</div></div>
-			<div class="frgm"><div class="frno">Fragment 151</div></div>
-			<div class="frgm"><div class="frno">Fragment 152</div></div>
-			<div class="frgm">
+			<div class="card"><div class="frno">Fragment 149</div>Blank</div>
+			<div class="card"><div class="frno">Fragment 150</div></div>
+			<div class="card"><div class="frno">Fragment 151</div></div>
+			<div class="card"><div class="frno">Fragment 152</div></div>
+			<div class="card">
 				<div class="frno">Fragment 153</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 154</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 155</div>Two rows of the year sign (rnpt).
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 156</div>Numbers, might belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 157</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 158</div>Useless, very small
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 159</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 160</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 161</div>Does not belong.
 			</div>
-			<div class="frgm">
+			<div class="card">
 				<div class="frno">Fragment 162</div>Does not belong.
 			</div>
-			<div class="frgm"><div class="frno">Fragment 163</div></div>
-			<div class="frgm"><div class="frno">Fragment 164</div></div>
+			<div class="card"><div class="frno">Fragment 163</div></div>
+			<div class="card"><div class="frno">Fragment 164</div></div>
 		</div>
 
 		<div class="py-3">
@@ -628,45 +628,45 @@ import Layout from "@layouts/Layout.astro";
 	</div>
 
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-base py-10">
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 165</div>
 			<div class="pb-5 text-center"><div>Farina: V/7</div></div>
 			<b>6.7</b> &ndash; Small fragment, vertical fibre correspondence with fr. 61.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 166</div>
 			<div class="pb-5 text-center"><div>Farina: V/8</div></div>
 			<b>6.8</b> &ndash; Small fragment, vertical fibre correspondence with fr. 61.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 167</div>
 			<div class="pb-5 text-center">
 				<div>Farina: V/17-18</div>
 			</div>
 			<b>6.17-18</b> &ndash; Correctly placed, verifiable by both fibres and writing.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 168</div>
 			<div class="pb-5 text-center">
 				<div>Farina: VI/13</div>
 			</div>
 			<b>7.13</b> &ndash; This small fragment was correctly placed, evident by fibre correspondence.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 169</div>
 			<div class="pb-5 text-center">
 				<div>Farina: VI/16</div>
 			</div>
 			<b>7.16</b> &ndash; A tiny fragment joined to the right side of fr. 77. The horizontal fibre correspondence is questionable.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 170</div>
 			<div class="pb-5 text-center">
 				<div>Farina: VII/12</div>
 			</div>
 			<b>8.21</b> &ndash; Small fragment joined to the top of fr. 94 by Ibscher/Farina. It clearly belong, evident by the perfect matching fibres and writing.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 171</div>
 			<div class="pb-5 text-center">
 				<div>Farina: VII/20</div>
@@ -675,14 +675,14 @@ import Layout from "@layouts/Layout.astro";
 			81 since the bottom edge of fr. 81 ends in a patch. A visual inspection of fibres on the Museum photos seems to agree with Farina (placed VII/20
 			above to the left of fr. 87). There is a horizontal and vertical fibre correspondence with fr. 87, as per Farina.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 172</div>
 			<div class="pb-5 text-center">
 				<div>Farina: X/13</div>
 			</div>
 			<b>10.21</b> &ndash; Part of a summation, presumably the Fourteenth Dynasty.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 173</div>
 			<div class="pb-5 text-center">
 				<div>Farina: X/14-15</div>
@@ -690,14 +690,14 @@ import Layout from "@layouts/Layout.astro";
 			<b>Unplaced</b> &ndash; Judging from Farina’s placement, there can be no fibre correspondence to X/16-17, as the two fragments are placed in diagonal
 			positions to each other.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 174</div>
 			<div class="pb-5 text-center">
 				<div>Farina: X/16-17</div>
 			</div>
 			<b>10.26-27</b> &ndash; Records the incomplete reigns of two kings.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 175</div>
 			<div class="pb-5 text-center">
 				<div>Farina: X/20-21</div>
@@ -705,7 +705,7 @@ import Layout from "@layouts/Layout.astro";
 			<b>10.28-29</b> &ndash; The vertical position of fr. X/20-21 in col. 10 is verified by a horizontal fibre correspondence with fr. 123, but there
 			is no conclusive vertical fibre correspondence with fr. 112.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 176</div>
 			<div class="pb-5 text-center">
 				<div>Farina: X/24-26</div>
@@ -732,43 +732,43 @@ import Layout from "@layouts/Layout.astro";
 		</p>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-base py-10">
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 177</div>
 			<b>2.16(?)</b> Halfway below fr. 22 and halfway above fr 150.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 178</div>
 			<b>3.19a</b> To the left of fr. 20 at the end of row 3.19.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 179</div>
 			<b>3.19b</b> To the left of fr. 2022/2 at the end of row 3.19.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 180</div>
 			<b>4.5</b> Joins to the left of fr. 32.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 181</div>
 			<b>4.8-9</b> Joins in space between fr. 31 and fr. 32.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 182</div>
 			<b>5.14</b> Joins to right side of fr. 61 at the end of row 5.14.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 183</div>
 			<b>6.15</b> joins to left side of fr. 85. Tiny and blank.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 184</div>
 			<b>6.20</b> Left of fr. 64.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 185</div>
 			<b>7.8</b> joins left side of fr. 72.
 		</div>
-		<div class="frgm">
+		<div class="card">
 			<div class="frno">Fragment 186</div>
 			<b>9.22-24</b> to the left of fr. 103/104 and below fr. 69. Contains figures.
 		</div>
@@ -865,8 +865,8 @@ import Layout from "@layouts/Layout.astro";
 			G.
 		</p>
 
-		<table class="tb my-10 w-full">
-			<caption class="text-center pt-5 text-sm">Table 3: The fragments of Champollion</caption>
+		<table class="my-10 w-full">
+			<caption class="text-center pt-5 text-sm">Table 1: The fragments of Champollion</caption>
 			<tr class="text-left border-b">
 				<th>Ch.</th>
 				<th>Fragment</th>
@@ -1005,8 +1005,8 @@ import Layout from "@layouts/Layout.astro";
 			</tr>
 		</table>
 
-		<table class="tbl my-10 w-full">
-			<caption class="text-center pt-5 text-sm">Table 4: Fragment numbers corresponding with Champollion</caption>
+		<table class="my-10 w-full">
+			<caption class="text-center pt-5 text-sm">Table 2: Fragment numbers corresponding with Champollion</caption>
 			<tr class="text-left border-b">
 				<th>Fr.</th>
 				<th>Champollion</th>
@@ -1185,7 +1185,7 @@ import Layout from "@layouts/Layout.astro";
  -->
 		<div class="py-5">
 			<table class="tb my-10">
-				<caption class="text-center text-sm pt-5">Table 5. Gardiner’s unplaced fragments</caption>
+				<caption class="text-center text-sm pt-5">Table 3. Gardiner’s unplaced fragments</caption>
 				<tr>
 					<th>Remark</th>
 					<th>Fragments</th>

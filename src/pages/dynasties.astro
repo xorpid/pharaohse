@@ -74,42 +74,44 @@ const periods: Period[] = Array.isArray(dynasties) ? (dynasties as Period[]) : [
 		periods.length === 0 ? (
 			<p>Error: No dynasty data available. Please check the dynasties.json file.</p>
 		) : (
-			<table class="my-10 tabular-nums">
-				<thead>
-					<tr>
-						<th>Dynasty</th>
-						<th>Reign</th>
-						<th>High (BC)</th>
-						<th>Low (BC)</th>
-						<th>Middle (BC)</th>
-					</tr>
-				</thead>
-				<tbody>
-					{periods.map((period) => (
-						<>
-							<tr class="text-center font-semibold">
-								<td
-									colspan="5"
-									class="bg-linear-to-r from-stone-700/0 via-neutral-500/15 to-stone-700/0 dark:from-neutral-700/0 dark:via-neutral-400/10 dark:to-neutral-700/0 py-2"
-								>
-									{period.period}
-								</td>
-							</tr>
-							{period.dynasties.map((dynasty) => (
-								<tr>
-									<td>
-										<a href={`/dynasty/${dynasty.slug}`}>{dynasty.name || "Unknown Dynasty"}</a>
+			<div class="tbl">
+				<table class="tabular-nums">
+					<thead>
+						<tr>
+							<th>Dynasty</th>
+							<th>Reign</th>
+							<th>High (BC)</th>
+							<th>Low (BC)</th>
+							<th>Middle (BC)</th>
+						</tr>
+					</thead>
+					<tbody>
+						{periods.map((period) => (
+							<>
+								<tr class="text-center font-semibold">
+									<td
+										colspan="5"
+										class="bg-linear-to-r from-stone-700/0 via-neutral-500/15 to-stone-700/0 dark:from-neutral-700/0 dark:via-neutral-400/10 dark:to-neutral-700/0 py-2"
+									>
+										{period.period}
 									</td>
-									<td>{dynasty.kings || "N/A"}</td>
-									<td>{dynasty.high || "N/A"}</td>
-									<td>{dynasty.low || "N/A"}</td>
-									<td>{dynasty.middle || "N/A"}</td>
 								</tr>
-							))}
-						</>
-					))}
-				</tbody>
-			</table>
+								{period.dynasties.map((dynasty) => (
+									<tr>
+										<td>
+											<a href={`/dynasty/${dynasty.slug}`}>{dynasty.name || "Unknown Dynasty"}</a>
+										</td>
+										<td>{dynasty.kings || "N/A"}</td>
+										<td>{dynasty.high || "N/A"}</td>
+										<td>{dynasty.low || "N/A"}</td>
+										<td>{dynasty.middle || "N/A"}</td>
+									</tr>
+								))}
+							</>
+						))}
+					</tbody>
+				</table>
+			</div>
 		)
 	}
 </Layout>

@@ -40,11 +40,7 @@
 		"cv05" 1,
 		"cv08" 1;
 	--bg-lit: --alpha(var(--color-stone-50) / 15%);
-	--bg-light: var(--color-stone-50);
-	--bg: var(--color-stone-200);
-	--bg-dark: var(--color-stone-300);
-	--tx: var(--color-stone-800);
-	--dim: var(--color-stone-600);
+	/* 	--bg-light: var(--color-stone-50);--bg: var(--color-stone-200);--bg-dark: var(--color-stone-300);--tx: var(--color-stone-800);--dim: var(--color-stone-600); */
 	--bright: var(--color-stone-950);
 	--link: var(--color-red-700);
 	--link-hover: var(--color-red-900);
@@ -64,14 +60,18 @@
 	--sect: var(--color-emerald-300);
 	--logo: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(1923%) hue-rotate(28deg) brightness(91%) contrast(101%);
 	--glow: #565757;
+	--bg-dark: oklch(0.92 0 88);
+	--bg: oklch(0.96 0 88);
+	--bg-light: oklch(1 0 88);
+	--tx: oklch(0.15 0 88);
+	--dim: oklch(0.4 0 88);
+	/* --highlight: oklch(1 0 88); */
+	--border: oklch(0.6 0 88);
+	--border-muted: oklch(0.9 0 88);
 }
 .dark {
 	--bg-lit: --alpha(var(--color-neutral-700) / 15%);
-	--bg-light: var(--color-neutral-800);
-	--bg: var(--color-neutral-900);
-	--bg-dark: var(--color-neutral-950);
-	--tx: var(--color-neutral-200);
-	--dim: var(--color-neutral-400);
+	/* 	--bg-light: var(--color-neutral-800);--bg: var(--color-neutral-900);--bg-dark: var(--color-neutral-950);--tx: var(--color-neutral-200);--dim: var(--color-neutral-400); */
 	--bright: var(--color-neutral-50);
 	--link: var(--color-amber-400);
 	--link-hover: var(--color-amber-200);
@@ -86,12 +86,20 @@
 	--greek: var(--color-emerald-200);
 	--armenian: var(--color-yellow-400);
 	--popover: var(--color-emerald-500);
-	--popover: var(--color-yellow-50);
 	--summ: var(--color-yellow-800);
 	--head: var(--color-blue-900);
 	--sect: var(--color-emerald-900);
 	--logo: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(4114%) hue-rotate(328deg) brightness(102%) contrast(102%);
 	--glow: #c8c845;
+
+	--bg-dark: oklch(0.15 0 88);
+	--bg: oklch(0.2 0 88);
+	--bg-light: oklch(0.25 0 88);
+	--tx: oklch(0.86 0 88);
+	--dim: oklch(0.66 0 88);
+	/* --highlight: oklch(0.5 0 88); */
+	--border: oklch(0.4 0 88);
+	--border-muted: oklch(0.32 0 88);
 }
 /* Add your own default base styles for specific HTML elements */
 @layer base {
@@ -164,7 +172,7 @@
 		margin-block: calc(var(--spacing) * 5);
 		th {
 			text-align: left;
-			border-bottom: 4px solid var(--border);
+			border-bottom: 2px solid var(--border);
 			margin-bottom: 1rem;
 		}
 		td {
@@ -265,11 +273,11 @@
 
 	.card {
 		background: var(--bg-light);
-		border-radius: var(--radius-lg);
+		border-radius: var(--radius-2xl);
 		padding: calc(var(--spacing) * 4) /* 1rem = 16px */;
 		--shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
 		box-shadow: var(--shadow);
-		border: 1px solid var(--border);
+		border: 1px solid var(--border-muted);
 		a:hover {
 			text-decoration: none;
 		}
@@ -290,6 +298,20 @@
 	.lead {
 		margin-inline: calc(var(--spacing) * 8);
 		padding-block: calc(var(--spacing) * 4);
+	}
+
+	.tbl {
+		box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+		border-radius: 1.5rem;
+		width: fit-content;
+		min-width: var(--container-lg);
+		margin-inline: auto;
+		margin-block: calc(var(--spacing) * 10);
+		padding: calc(var(--spacing) * 4);
+		background-color: var(--bg-dark);
+		table {
+			margin-block: 0;
+		}
 	}
 
 	.bg {
@@ -694,5 +716,13 @@
 		vertical-align: super;
 		font-size: x-small;
 		line-height: normal;
+	}
+}
+@media print {
+	*,
+	*::before,
+	*::after {
+		box-shadow: none !important;
+		text-shadow: none !important;
 	}
 }
