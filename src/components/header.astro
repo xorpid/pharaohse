@@ -95,9 +95,9 @@ const navItems: NavItem[] = (() => {
 <header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-black/25 dark:shadow-black/50 bg">
 	<div class="container mx-auto flex items-center justify-between p-4">
 		<!-- Left: navigation -->
+		<!-- Left: navigation -->
 		<nav class="flex-1">
 			<!-- desktop inline removed — hamburger will be used on all sizes -->
-
 			<!-- Mobile: hamburger -->
 			<button
 				id="nav-toggle"
@@ -105,13 +105,12 @@ const navItems: NavItem[] = (() => {
 				aria-expanded="false"
 				class="inline-flex items-center p-2 rounded hover:bg-stone-100 dark:hover:bg-neutral-800 hover:cursor-pointer"
 			>
-				<span class="sr-only">Open navigation</span>
+				<span class="sr-only" data-astro-source-loc="108:27">Open navigation</span>
 				<!-- simple hamburger icon -->
-				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg
-				>
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
 			</button>
-
 			<!-- Mobile off-canvas nav (hidden by default) -->
 			<div
 				id="mobile-nav"
@@ -126,47 +125,185 @@ const navItems: NavItem[] = (() => {
 					>
 				</div>
 				<ul class="p-4 flex flex-col gap-0">
-					{
-						navItems.map((item) => (
-							<li class="border-b bordercolor text-xs">
-								{item.children ? (
-									<>
-										<div class="flex items-center justify-between">
-											<a href={item.href} class={"flex-1 block px-2 py-1 hover:no-underline " + isActive(item.href)}>
-												{item.label}
-											</a>
-											<button
-												class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
-												data-submenu-toggle
-												aria-expanded="false"
-												aria-label="Toggle submenu"
-											>
-												<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-												</svg>
-											</button>
-										</div>
-										<ul class="hidden pl-4 flex-col gap-0 submenu">
-											{item.children.map((child) => (
-												<li class="border-b bordercolor">
-													<a href={child.href} class={"block px-2 py-1 hover:no-underline " + isActive(child.href)}>
-														{child.label}
-													</a>
-												</li>
-											))}
-										</ul>
-									</>
-								) : (
-									<a href={item.href} class={"block px-2 py-1 hover:no-underline " + isActive(item.href)}>
-										{item.label}
-									</a>
-								)}
+					<li class="border-b bordercolor text-xs"><a href="/pharaohs" class="block px-2 py-1 hover:no-underline"> Pharaohs </a></li>
+					<li class="border-b bordercolor text-xs">
+						<div class="flex items-center justify-between">
+							<a href="/dynasties" class="flex-1 block px-2 py-1 hover:no-underline"> Dynasties </a>
+							<button
+								class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
+								data-submenu-toggle
+								aria-expanded="false"
+								aria-label="Toggle submenu"
+							>
+								<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+						</div>
+						<ul class="hidden pl-4 flex-row flex-wrap gap-0 submenu">
+							<li class="border-b bordercolor"><a href="/dynasty/1" class="block px-2 py-1 hover:no-underline"> 1 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/2" class="block px-2 py-1 hover:no-underline"> 2 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/3" class="block px-2 py-1 hover:no-underline"> 3 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/4" class="block px-2 py-1 hover:no-underline"> 4 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/5" class="block px-2 py-1 hover:no-underline"> 5 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/6" class="block px-2 py-1 hover:no-underline"> 6 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/7" class="block px-2 py-1 hover:no-underline"> 7 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/8" class="block px-2 py-1 hover:no-underline"> 8 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/9" class="block px-2 py-1 hover:no-underline"> 9 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/10" class="block px-2 py-1 hover:no-underline"> 10 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/11" class="block px-2 py-1 hover:no-underline"> 11 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/12" class="block px-2 py-1 hover:no-underline"> 12 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/13" class="block px-2 py-1 hover:no-underline"> 13 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/14" class="block px-2 py-1 hover:no-underline"> 14 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/15" class="block px-2 py-1 hover:no-underline"> 15 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/16" class="block px-2 py-1 hover:no-underline"> 16 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/17" class="block px-2 py-1 hover:no-underline"> 17 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/18" class="block px-2 py-1 hover:no-underline"> 18 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/19" class="block px-2 py-1 hover:no-underline"> 19 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/20" class="block px-2 py-1 hover:no-underline"> 20 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/21" class="block px-2 py-1 hover:no-underline"> 21 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/22" class="block px-2 py-1 hover:no-underline"> 22 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/23" class="block px-2 py-1 hover:no-underline"> 23 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/24" class="block px-2 py-1 hover:no-underline"> 24 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/25" class="block px-2 py-1 hover:no-underline"> 25 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/26" class="block px-2 py-1 hover:no-underline"> 26 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/27" class="block px-2 py-1 hover:no-underline"> 27 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/28" class="block px-2 py-1 hover:no-underline"> 28 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/29" class="block px-2 py-1 hover:no-underline"> 29 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/30" class="block px-2 py-1 hover:no-underline"> 30 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/31" class="block px-2 py-1 hover:no-underline"> 31 </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/abydos" class="block px-2 py-1 hover:no-underline"> Abydos </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/argead" class="block px-2 py-1 hover:no-underline"> Argead </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/predynastic" class="block px-2 py-1 hover:no-underline"> Predynastic </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/ptolemaic" class="block px-2 py-1 hover:no-underline"> Ptolemaic </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/roman-pharaohs" class="block px-2 py-1 hover:no-underline"> Roman Pharaohs </a></li>
+							<li class="border-b bordercolor"><a href="/dynasty/unplaced" class="block px-2 py-1 hover:no-underline"> Unplaced </a></li>
+							<li class="border-b bordercolor"><a href="/periods" class="block px-2 py-1 hover:no-underline"> Periods </a></li>
+						</ul>
+					</li>
+					<li class="border-b bordercolor text-xs">
+						<div class="flex items-center justify-between" data-astro-source-loc="134:58">
+							<a href="/kinglists" class="flex-1 block px-2 py-1 hover:no-underline"> Kinglists </a>
+							<button
+								class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
+								data-submenu-toggle
+								aria-expanded="false"
+								aria-label="Toggle submenu"
+							>
+								<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+						</div>
+						<ul class="hidden pl-4 flex-col gap-0 submenu">
+							<div class="flex items-center justify-between">
+								<a href="/kinglists/turin" class="flex-1 block px-2 py-1 hover:no-underline border-b bordercolor"> Turin King List</a>
+								<button
+									class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
+									data-submenu-toggle
+									aria-expanded="false"
+									aria-label="Toggle submenu"
+								>
+									<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</button>
+							</div>
+							<ul class="hidden pl-4 flex-col gap-0 submenu">
+								<li class="border-b bordercolor">
+									<a href="/kinglists/turin-contents" class="block px-2 py-1 hover:no-underline"> Turin Contents </a>
+								</li>
+								<li class="border-b bordercolor">
+									<a href="/kinglists/turin-fragments" class="block px-2 py-1 hover:no-underline"> Turin Fragments </a>
+								</li>
+								<li class="border-b bordercolor">
+									<a href="/kinglists/turin-gallery" class="block px-2 py-1 hover:no-underline"> Turin Gallery </a>
+								</li>
+								<li class="border-b bordercolor">
+									<a href="/kinglists/turin-history" class="block px-2 py-1 hover:no-underline"> Turin History </a>
+								</li>
+								<li class="border-b bordercolor"><a href="/kinglists/turin-recto" class="block px-2 py-1 hover:no-underline"> Turin Recto </a></li>
+								<li class="border-b bordercolor">
+									<a href="/kinglists/turin-vorlage" class="block px-2 py-1 hover:no-underline"> Turin Vorlage </a>
+								</li>
+							</ul>
+
+							<li class="border-b bordercolor"><a href="/kinglists/abydos-canon" class="block px-2 py-1 hover:no-underline"> Abydos Canon </a></li>
+							<li class="border-b bordercolor"><a href="/kinglists/saqqara-canon" class="block px-2 py-1 hover:no-underline"> Saqqara Canon </a></li>
+							<li class="border-b bordercolor"><a href="/kinglists/karnak-canon" class="block px-2 py-1 hover:no-underline"> Karnak Canon </a></li>
+							<li class="border-b bordercolor">
+								<a href="/kinglists/compare-canons" class="block px-2 py-1 hover:no-underline"> Compare Canons </a>
 							</li>
-						))
-					}
+							<li class="border-b bordercolor">
+								<a href="/kinglists/medinet-habu-canon" class="block px-2 py-1 hover:no-underline"> Medinet Habu Canon </a>
+							</li>
+							<li class="border-b bordercolor">
+								<a href="/kinglists/ramesseum-canon" class="block px-2 py-1 hover:no-underline"> Ramesseum Canon </a>
+							</li>
+							<li class="border-b bordercolor">
+								<a href="/kinglists/marseille" class="block px-2 py-1 hover:no-underline"> Table of Qenhirkhopshef </a>
+							</li>
+							<li class="border-b bordercolor"><a href="/kinglists/minor" class="block px-2 py-1 hover:no-underline"> Minor king lists</a></li>
+						</ul>
+					</li>
+					<li class="border-b bordercolor text-xs">
+						<a href="/authors" class="block px-2 py-1 hover:no-underline"> Manetho </a>
+					</li>
+					<li class="border-b bordercolor text-xs"><a href="/obelisks" class="block px-2 py-1 hover:no-underline"> Obelisks </a></li>
+
+					<li class="border-b bordercolor text-xs">
+						<div class="flex items-center justify-between">
+							<a href="/articles" class="flex-1 block px-2 py-1 hover:no-underline"> Articles </a>
+							<button
+								class="p-2 hover:bg-stone-100 dark:hover:bg-neutral-800 rounded"
+								data-submenu-toggle
+								aria-expanded="false"
+								aria-label="Toggle submenu"
+								data-astro-source-loc="143:13"
+							>
+								<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</button>
+						</div>
+						<ul class="hidden pl-4 flex-col gap-0 submenu">
+							<li class="border-b bordercolor"><a href="/articles/aegyptiaca" class="block px-2 py-1 hover:no-underline"> Aegyptiaca </a></li>
+							<li class="border-b bordercolor">
+								<a href="/articles/battle-of-kadesh" class="block px-2 py-1 hover:no-underline"> Battle Of Kadesh </a>
+							</li>
+							<li class="border-b bordercolor"><a href="/articles/book-series" class="block px-2 py-1 hover:no-underline"> Book Series </a></li>
+							<li class="border-b bordercolor"><a href="/articles/cartography" class="block px-2 py-1 hover:no-underline"> Cartography </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/cg" class="block px-2 py-1 hover:no-underline"> Cg </a></li> -->
+							<li class="border-b bordercolor"><a href="/articles/chronology" class="block px-2 py-1 hover:no-underline"> Chronology </a></li>
+							<li class="border-b bordercolor"><a href="/articles/dionysius" class="block px-2 py-1 hover:no-underline"> Dionysius </a></li>
+							<li class="border-b bordercolor"><a href="/articles/egyptology" class="block px-2 py-1 hover:no-underline"> Egyptology </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/h" class="block px-2 py-1 hover:no-underline"> H </a></li> -->
+							<li class="border-b bordercolor">
+								<a href="/articles/hatshepsut-obelisk" class="block px-2 py-1 hover:no-underline"> Hatshepsut Obelisk </a>
+							</li>
+							<li class="border-b bordercolor"><a href="/articles/hieratic" class="block px-2 py-1 hover:no-underline"> Hieratic </a></li>
+							<li class="border-b bordercolor"><a href="/articles/hieroglyphs" class="block px-2 py-1 hover:no-underline"> Hieroglyphs </a></li>
+							<li class="border-b bordercolor">
+								<a href="/articles/historical-hall-berlin" class="block px-2 py-1 hover:no-underline"> Historical Hall Berlin </a>
+							</li>
+							<li class="border-b bordercolor"><a href="/articles/manetho1" class="block px-2 py-1 hover:no-underline"> Manetho1 </a></li>
+							<li class="border-b bordercolor"><a href="/articles/manetho2" class="block px-2 py-1 hover:no-underline"> Manetho2 </a></li>
+							<li class="border-b bordercolor"><a href="/articles/manetho3" class="block px-2 py-1 hover:no-underline"> Manetho3 </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/notes" class="block px-2 py-1 hover:no-underline"> Notes </a></li> -->
+							<li class="border-b bordercolor"><a href="/articles/papyrus" class="block px-2 py-1 hover:no-underline"> Papyrus </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/pyramids" class="block px-2 py-1 hover:no-underline"> Pyramids </a></li> -->
+							<li class="border-b bordercolor"><a href="/articles/rosetta-stone" class="block px-2 py-1 hover:no-underline"> Rosetta Stone </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/scribes" class="block px-2 py-1 hover:no-underline"> Scribes </a></li> -->
+							<li class="border-b bordercolor"><a href="/articles/temples" class="block px-2 py-1 hover:no-underline"> Temples </a></li>
+							<li class="border-b bordercolor"><a href="/articles/titles" class="block px-2 py-1 hover:no-underline"> Titles </a></li>
+							<!-- <li class="border-b bordercolor"><a href="/articles/travellers" class="block px-2 py-1 hover:no-underline"> Travellers </a></li> -->
+						</ul>
+					</li>
+
+					<li class="border-b bordercolor text-xs"><a href="/bibliography" class="block px-2 py-1 hover:no-underline"> Bibliography </a></li>
+					<li class="border-b bordercolor text-xs"><a href="/about" class="block px-2 py-1 hover:no-underline"> About </a></li>
 				</ul>
 			</div>
-
 			<!-- Overlay when nav open (subtle tint so page remains readable) -->
 			<div id="nav-overlay" class="fixed inset-0 bg-black/33 hidden z-40"></div>
 		</nav>
