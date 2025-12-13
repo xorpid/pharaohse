@@ -28,7 +28,7 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 	<body class="transition-colors">
 		<Header />
 		<div class="max-w-4xl mx-auto px-4">
-			<h1 class="pagetitle" set:html={resolvedTitle} />
+			<h1 set:html={resolvedTitle} />
 		</div>
 		<div class="max-w-4xl mx-auto min-h-96">
 			<div>
