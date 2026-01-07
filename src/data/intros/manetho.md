@@ -21,8 +21,8 @@
 	formula: (Panodorus figure) &times; 365 / 29.5 = original Sothis figure.
 </p>
 
-<div class="overflow-x-auto">
-	<table class="tbl tabular-nums">
+<div class="overflow-x-auto tbl">
+	<table class="tabular-nums">
 		<caption class="text-sm pt-3">Table 1: Gods in the Book of Sothis</caption>
 		<thead>
 			<tr class="border-b text-left">
@@ -169,7 +169,7 @@
 	The <i>Ancient Chronicle</i>, apparently in circulation during the time of Syncellus, was partly based on Manetho, but was a forgery created in
 	the centuries before Syncellus. The mythological section mentions the gods:
 </p>
-<div class="overflow-x-auto">
+<div class="overflow-x-auto tbl">
 	<table class="tbl">
 		<caption class="text-sm pt-3">Table 2: Gods in the Ancient Chronicle</caption>
 		<thead>
@@ -239,7 +239,7 @@
 <div id="dyn01" class="py-10">
 	<h2 class="shine text-center">Dynasty 1</h2>
 	<p class="text-center pb-5">The First Dynasty of 8 kings.</p>
-	<div class="overflow-x-auto">
+	<div class="overflow-x-auto tbl">
 		<table class="man">
 			<caption class="text-sm pt-3">Table 3: The First Dynasty</caption>
 			<thead>
@@ -495,7 +495,7 @@
 		Africanus: The Second Dynasty of 9 kings of Thinis.<br />
 		Eusebius: The Second Dynasty of 9 kings.<br />
 	</p>
-	<div class="overflow-x-auto">
+	<div class="overflow-x-auto tbl">
 		<table class="man">
 			<caption class="text-sm pt-3">Table 4: The Second Dynasty</caption>
 			<thead>
@@ -692,7 +692,7 @@
 	<e>Armenian</e> The Third Dynasty of 8 kings of Memphis.
 </p>
 
-<div class="overflow-x-auto">
+<div class="overflow-x-auto tbl">
 	<table class="man">
 		<caption class="text-sm pt-3">Table 5: The Third Dynasty</caption>
 		<thead>
@@ -867,7 +867,7 @@
 	<e>Armenian</e> The Fourth Dynasty of 17 kings of Memphis from a different royal line.
 </p>
 
-<div class="overflow-x-auto">
+<div class="overflow-x-auto tbl">
 	<table class="man">
 		<caption class="text-sm pt-3">Table 6: The Fourth Dynasty</caption>
 		<thead>
@@ -1026,7 +1026,7 @@
 	<e>Armenian</e> The Fifth Dynasty of 31 kings of Elephantine.
 </p>
 
-<div class="overflow-x-auto">
+<div class="overflow-x-auto tbl">
 	<table class="man">
 		<caption class="text-sm pt-3">Table 7: The Fifth Dynasty</caption>
 		<thead>
@@ -1190,7 +1190,7 @@
 	<e>Eusebius</e> The Sixth Dynasty.<br />
 	<e>Armenian</e> The Sixth Dynasty.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 8: The Sixth Dynasty</caption>
 	<thead>
@@ -1292,7 +1292,7 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -1396,7 +1396,7 @@
 	<e>Eusebius</e> The Ninth Dynasty of 4 kings of Herakleopolis for 100 years.<br />
 	<e>Armenian</e> The Ninth Dynasty of 4 kings of Herakleopolis for 100 years.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 9: The Ninth Dynasty</caption>
 	<thead>
@@ -1423,7 +1423,7 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -1492,7 +1492,7 @@
 	<e>Eusebius</e> In succession to these <i>[Eleventh Dynasty kings]</i>, Ammenemes ruled for 16 years.<br />
 	<e>Armenian</e> In succession to these <i>[Eleventh Dynasty kings]</i>, Ammenemes ruled for 16 years.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 10: One king between(?) the Eleventh and Twelfth dynasties</caption>
 	<thead>
@@ -1519,7 +1519,7 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
 <div class="c py-5">
 	<p>
 		<e>Africanus</e> Total for the reigns of 192 kings, 2300 years 70 days.<br />
@@ -1540,7 +1540,7 @@
 		total from the dynasty headings is 2280.
 	</p>
 	<div class="overflow-x-auto">
-		<table class="tbl w-full text-center text-sm">
+		<table class="w-full text-center text-sm">
 			<caption class="text-sm pt-3">Table 10a: Number of kings per dynasty and total reigns</caption>
 
 <thead>
@@ -1756,7 +1756,7 @@
 	<e>Eusebius</e> The Twelfth Dynasty of 7 kings of Diospolis.<br />
 	<e>Armenian</e> The Twelfth Dynasty of 7 kings of Diospolis.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 11: The Twelfth Dynasty</caption>
 	<thead>
@@ -1867,7 +1867,7 @@
 		<tr><td colspan="4"> <sup>*</sup> The succeeding kings (i.e. the last three kings) ruled for 42 years.</td></tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -1903,7 +1903,7 @@
 		figures given for the Second Intermediate Period as a whole were likely due to a redactor not understanding the text. According to Africanus,
 		the SIP looks like this:
 	</p>
-	<p class="text-sm">
+	<p class="text-sm leading-7">
 		Dynasty <b>13</b>: 60 kings of Thebes for 453 years<br />
 		Dynasty <b>14</b>: 76 kings of Xois for 184 years<br />
 		Dynasty <b>15</b>: &nbsp;6 foreign kings for 284 years<br />
@@ -1925,7 +1925,7 @@
 <div id="dyn14">
 <h2 class="text-center shine">Dynasty 14</h2>
 
-<p class="text-center py-5">
+<p class="py-5">
 	<e>Africanus</e> The Fourteenth Dynasty of 76 kings of Xoïs for 184 years<br />
 	<e>Eusebius</e> The Fourteenth Dynasty of 76 kings of Xoïs for 184 years (another copy: 484 years).<br />
 	<e>Armenian</e> The Fourteenth Dynasty of 76 kings of Xoïs for 484 years.
@@ -1953,7 +1953,7 @@
 	<e>Eusebius</e> The Fifteenth Dynasty of kings of Diospolis for 250 years.<br />
 	<e>Armenian</e> The Fifteenth Dynasty of kings of Diospolis for 250 years.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 12: The Fifteenth Dynasty</caption>
 	<thead>
@@ -2036,7 +2036,7 @@
 		<tr><td colspan="4"></td></tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -2082,7 +2082,7 @@
 	<e>Eusebius</e> The Seventeenth Dynasty were <i>shepherds and brothers, foreign kings from Phoenicia</i>.<br />
 	<e>Armenian</e> The Seventeenth Dynasty were shepherds and brothers, Phoenician kings.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 13: The Seventeenth Dynasty</caption>
 	<thead>
@@ -2197,7 +2197,7 @@
 		>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -2213,7 +2213,10 @@
 </div><!-- #dyn17 -->
 
 <div id="sip">
-<h2 class="text-center">The Hyksos Dynasty</h2>
+<div class="remarksbox">
+	<h2 class="text-center">Hyksos Dynasty remarks</h2>
+<p><!-- See Waddell p 99 !!!! --><b>The Hyksos Dynasty.</b> Manetho’s epitomes definitely contained contradictory material, or at the very least a confusing narrative that the epitomist did not fully comprehend. While Josephus presents Manetho’s Hyksos in detail, the Africanus and Eusebius provide a jumble of kings and dynasties of different length and number, also revealing a pattern of transposition of both reigns and kings. Kings 3 and 4 are interchanged in the Armenian translation compared to Eusebius. Eusebius placed these kings in his 17th dynasty, while Africanus put them in his 15th. According to Eusebius, the Fifteenth Dynasty consisted of an unknown number of Theban kings, but did not supply any names or reigns, and his 17th dynasty were: foreign kings from Phoenicia who seized Memphis, 103 years. </p>
+
 <table class="man">
 	<caption class="text-sm pt-3">Table 14: The rearranged Hyksos Dynasty</caption>
 	<thead>
@@ -2312,15 +2315,6 @@
 		<tr><td colspan="4"></td></tr>
 	</tfoot>
 </table>
-
-<div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
-	<p>
-		<!-- See Waddell p 99 !!!! --> Manetho’s epitomes definitely contained contradictory material, or at the very least a confusing narrative that
-		the epitomist did not fully comprehend. While Josephus presents Manetho’s Hyksos in detail, the Africanus and Eusebius provide a jumble of kings
-		and dynasties of different length and number, also revealing a pattern of transposition of both reigns and kings. Kings 3 and 4 are interchanged
-		in the Armenian translation compared to Eusebius.
-	</p>
 </div>
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
 
@@ -2335,7 +2329,8 @@
 	<e>Armenian</e> The Eighteenth Dynasty of 14 kings of Diospolis.<br />
 	<e>Jerome</e> The Eighteenth Dynasty of kings of Diospolis.
 </p>
-<table class="tbl">
+<div class="tbl">
+<table class="overflow-x-auto">
 	<caption class="text-sm pt-3">Table 15: The Eighteenth Dynasty</caption>
 	<thead>
 		<tr>
@@ -2617,12 +2612,12 @@
 	<tfoot class="border-t border-dashed">
 		<tr>
 			<td class="text-sm" colspan="4"
-				><sup>*</sup> Josephus does not mention a division into dynasties. However, the sum of the individual reigns is 246 years (240 years + 72 months).</td
+				><sup>*</sup> Josephus does not mention a division into dynasties.<br />However, the sum of the individual reigns is 246 years (240 years + 72 months).</td
 			>
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -2642,6 +2637,7 @@
 			>Amesses</i
 		> and <i>Akenkheres</i> were actually Queens. All this, once again, suggest multiple and differing versions of Aegyptiaca.
 	</p>
+	<div class="tbl">
 	<table class="tb my-10 w-full text-sm">
 		<caption class="pt-3">Table 16: The Manethonian Eighteenth Dynasty<br /><small>(Josephus rounded to nearest year)</small></caption>
 		<thead>
@@ -2809,6 +2805,7 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 	<p>
 		Despite a few obvious errors, Manetho's versions provide a remarkable level of concordance given the multiple copies generated through
 		centuries of transmission. Most names have little resemblance to the names belonging to the rulers of the Eighteenth Dynasty. Attempts to
@@ -2833,8 +2830,8 @@
 	<e>Eusebius</e> The Nineteenth Dynasty of 5 kings of Diospolis.<br />
 	<e>Armenian</e> The Nineteenth Dynasty of 5 kings of Diospolis.
 </p>
-
-<table class="man">
+<div class="tbl">
+<table class="">
 	<caption class="text-sm pt-3">Table 17: The Nineteenth Dynasty</caption>
 	<thead>
 		<tr>
@@ -2935,9 +2932,8 @@
 			</td>
 		</tr>
 	</tfoot>
-
 </table>
-
+</div>
 <p class="pt-8">
 	<e>Africanus</e> In the above second book of Manetho, there is a total of 96 kings, ruling for 2121 years.<br />
 	<e>Eusebius</e> In the above second book of Manetho, there is a total of 92 kings, ruling for 1121 year<br />
@@ -2981,6 +2977,16 @@
 <h2 class="text-center">New Kingdom</h2>
 <p class="text-xl italic text-center">Supplementary side note<br /><span class="special">(not from Manetho)</span></p>
 
+<div class="remarksbox">
+	<h3 class="text-center">Remarks</h3>
+	<p>Draft. To be reworked.</p>
+	<p>
+		<!-- [Tetley p443] --> What appears here is that the total number of years from Manetho’s 18th and 19th Dynasties cover the same number of years
+		as the 18th, 19th, and 20th Dynasties known from contemporary sources. Manetho’s 18th Dynasty amounts to 393 years and the 19th Dynasty amounts
+		to 164 “proposed original” years, totaling 557 years.
+	</p>
+
+<div class="tbl">
 <table class="text-sm">
 	<caption class="text-sm pt-3">New Kingdom archaeological records</caption>
 	<tr><th class="text-center">Dynasty</th><th>Ruler</th><th>Low</th><th>High</th></tr>
@@ -3154,12 +3160,14 @@
 	</tr>
 	<tr class="border-t-2 border-zinc-900 dark:border-neutral-500">
 		<td class="text-center font-bold">TOTAL</td>
-		<td>434</td>
-		<td>486</td>
 		<td></td>
+		<td class="font-bold">434</td>
+		<td class="font-bold">486</td>
 	</tr>
 </table>
-
+</div>
+&nbsp;
+<div class="tbl">
 <table class="tb text-sm my-5">
 	<caption class="text-sm pt-3">The New Kingdom dynasties</caption>
 	<tr><th>Dynasty</th><th>Years</th><th>Remarks</th></tr>
@@ -3180,16 +3188,8 @@
 	</tr>
 	<tr><td>Total</td><td>477 years</td><td>484 years</td></tr>
 </table>
+</div>
 
-<div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
-	<p>Draft. To be reworked.</p>
-	<p>
-		<!-- [Tetley p443] --> What appears here is that the total number of years from Manetho’s 18th and 19th Dynasties cover the same number of years
-		as the 18th, 19th, and 20th Dynasties known from contemporary sources. Manetho’s 18th Dynasty amounts to 393 years and the 19th Dynasty amounts
-		to 164 “proposed original” years, totaling 557 years.
-	</p>
-	<p>c. 1550–1070</p>
 </div>
 
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
@@ -3204,7 +3204,7 @@
 	<e>Eusebius</e> The Twenty-first Dynasty of 7 kings of Tanis.<br />
 	<e>Armenian</e> The Twenty-first Dynasty of 7 kings of Tanis.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 18: The Twenty-first Dynasty</caption>
 	<thead>
@@ -3317,12 +3317,11 @@
 		</tr>
 	</tbody>
 	<tfoot><tr><td colspan="4"><sup>1</sup> The sum of the individual items comes to 114 years.</td></tr></tfoot>
-
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
-	<p>Incomplete. To be reworked/reviewed.</p>
+	<p>TBD.</p>
 </div>
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
 
@@ -3336,7 +3335,7 @@
 	<e>Eusebius</e> The Twenty-second Dynasty of 3 kings of Bubastis.<br />
 	<e>Armenian</e> The Twenty-second Dynasty of 3 kings of Bubastis.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 19: The Twenty-second Dynasty</caption>
 	<thead>
@@ -3411,12 +3410,11 @@
 		</tr>
 	</tbody>
 	<tfoot><tr><td colspan="4"><sup>1</sup> The sum of the individual items comes to 116 years.</td></tr></tfoot>
-
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
-	<p>Incomplete. To be reworked/reviewed.</p>
+	<p>TBD.</p>
 </div>
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
 
@@ -3430,7 +3428,7 @@
 	<e>Eusebius</e> The Twenty-third Dynasty of 3 kings of Tanis.<br />
 	<e>Armenian</e> The Twenty-third Dynasty of 3 kings of Tanis.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 20: The Twenty-third Dynasty</caption>
 	<thead>
@@ -3502,14 +3500,13 @@
 	<tfoot>
 		<tr>
 			<td colspan="4">
-				<sup>1</sup> The name Zet might be a contraction of <gr lang="grc">Ζητειται</gr> (&quot;there is a question&quot;), with the implication that
+				<sup>1</sup> The name Zet might be a contraction of <gr lang="grc">Ζητειται</gr> (&quot;there is a question&quot;),<br />with the implication that
 				the name is uncertain/unknown.
 			</td>
 		</tr>
 	</tfoot>
-
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -3530,7 +3527,7 @@
 	<e>Eusebius</e> The Twenty-fourth Dynasty.<br />
 	<e>Armenian</e> The Twenty-fourth Dynasty.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 21: The Twenty-fourth Dynasty</caption>
 	<thead>
@@ -3574,10 +3571,10 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
-	<p>Incomplete. To be reworked/reviewed.</p>
+	<p>TBD.</p>
 </div>
 
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
@@ -3592,7 +3589,7 @@
 	<e>Eusebius</e> The Twenty-fifth Dynasty of 3 Ethiopian kings.<br />
 	<e>Armenian</e> The Twenty-fifth Dynasty of 3 Ethiopian kings.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 22: The Twenty-fifth Dynasty</caption>
 	<thead>
@@ -3653,7 +3650,7 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -3674,7 +3671,7 @@
 	<e>Eusebius</e> The Twenty-sixth Dynasty of 9 kings of Sais.<br />
 	<e>Armenian</e> The Twenty-sixth Dynasty of 9 kings of Sais.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 23: The Twenty-sixth Dynasty</caption>
 	<thead>
@@ -3833,7 +3830,7 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
@@ -3853,7 +3850,7 @@
 	<e>Eusebius</e> The Twenty-seventh Dynasty of 8 Persian kings.<br />
 	<e>Armenian</e> The Twenty-seventh Dynasty of 8 Persian kings.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 24: The Twenty-seventh Dynasty</caption>
 	<thead>
@@ -3991,7 +3988,7 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>Strangely, Eusebius adds the Magi as a 7-month king, while Africanus adds Artabanos, also a 7-month king.</p>
@@ -4009,7 +4006,7 @@
 	<e>Eusebius</e> The Twenty-eighth Dynasty.<br />
 	<e>Armenian</e> The Twenty-eighth Dynasty.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 25: The Twenty-eighth Dynasty</caption>
 	<thead>
@@ -4036,10 +4033,10 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
-	<p>Incomplete. To be reworked/reviewed.</p>
+	<p>TBD.</p>
 </div>
 
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
@@ -4054,7 +4051,7 @@
 	<e>Eusebius</e> The Twenty-ninth Dynasty of 4 kings of Mendes.<br />
 	<e>Armenian</e> The Twenty-ninth Dynasty of 4 kings of Mendes.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 26: The Twenty-ninth Dynasty</caption>
 	<thead>
@@ -4144,7 +4141,7 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>Eusebius includes five kings, although only four are mentioned in the summary.</p>
@@ -4162,7 +4159,7 @@
 	<e>Eusebius</e> The Thirtieth Dynasty of 3 kings of Sebennytus.<br />
 	<e>Armenian</e> The Thirtieth Dynasty of 3 kings of Sebennytus.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 27: The Thirtieth Dynasty</caption>
 	<thead>
@@ -4223,7 +4220,7 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>Last indigenous kings.</p>
@@ -4241,7 +4238,7 @@
 	<e>Eusebius</e> The Thirty-first Dynasty of 3 Persian kings.<br />
 	<e>Armenian</e> The Thirty-first Dynasty of 3 Persian kings.
 </p>
-
+<div class="tbl">
 <table class="man">
 	<caption class="text-sm pt-3">Table 28: The Thirty-first Dynasty (Persian)</caption>
 	<thead>
@@ -4309,7 +4306,7 @@
 		</tr>
 	</tfoot>
 </table>
-
+</div>
 <div class="remarksbox">
 	<h3 class="text-center">Remarks</h3>
 	<p>
