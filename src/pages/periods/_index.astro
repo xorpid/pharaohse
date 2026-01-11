@@ -13,10 +13,17 @@ import dynasties from "@/data/dynasties.json";
 	<section class="page-content">
 		<div class="container">
 			<p class="lead">
-				Egypt derives its name from the Greek “Aigyptos”, Latin “Aegyptus”, a corruption of the ancient Egyptian <tlit>ḥwt-kꜢ-ptḥ</tlit>
-				<i>(Hakaptah)</i>. Originally one of Memphis’ many names, the Greeks adopted it as the name of the entire kingdom.
+				The division of pharaohs into dynasties is generally considered to be an invention by the Egyptian priest Manetho. Whenever some discontinuity
+				occurred, a new dynasty was assumed.
 			</p>
-
+			<p>
+				All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with
+				multiple kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact
+				reign of each pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful,
+				chronological gaps, deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of
+				reigns. Historians have also found it difficult to determine the chronological order of the dynasties. There are three general approaches to
+				date the history of ancient Egypt.
+			</p>
 			<p class="py-3">
 				Already in the ancient world, Egypt was seen as a mysterious land, renowned for its massive monuments, stylized art, and the distinct Gods
 				with animal heads. The mystical Egyptian religion taught that life on Earth was only one aspect of an eternal journey; the immortal soul was
@@ -60,17 +67,32 @@ import dynasties from "@/data/dynasties.json";
 				history of Egypt is the most comprehensive, but is only known by references to it made by subsequent writers.
 			</p>
 			<p>
-				All ancient Egyptian king lists have significant gaps in their text, or fail to provide a complete list of rulers. Add to this that some
-				dynasties overlapped, with more than one pharaohs of vying for supremacy at the same time, which leads to widely differing chronological
-				interpretations. Over the three thousand years the Kingdom lasted, determining the exact reign-by-reign is not an easy task. The
-				archaeological record is helpful at times—but it only goes so far—as chronological interpretations are not always straightforward. Omissions
-				of pharaohs for political and religious reasons abound, and conflicting information makes it all but impossible to determine the actual reign
-				duration and order.
+				All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with
+				multiple kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact
+				reign of each pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful,
+				chronological gaps, deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of
+				reigns. Historians have also found it difficult to determine the chronological order of the dynasties. There are three general approaches to
+				date the history of ancient Egypt.
 			</p>
 		</div>
 
+		<dl class="w-1/2 mx-auto border bordercolor p-4 bg-light rounded-2xl my-10 text-sm">
+			<dt class="font-bold">High Chronology</dt>
+			<dd class="pl-4 leading-snug">
+				The <i>traditional dates</i> are the initial chronological framework historians developed in trying to date the dynasties and pharaohs.
+			</dd>
+			<dt class="font-bold pt-3">Low Chronology</dt>
+			<dd class="pl-4 leading-snug">
+				A shorter timeline where events are placed closer to the present day, mainly due to new discoveries and evidence.
+			</dd>
+			<dt class="font-bold pt-3">Middle Chronology</dt>
+			<dd class="pl-4 leading-snug">This is a middle ground between the high and low chronologies, offering a compromise for dating events.</dd>
+		</dl>
+
+		<img src="/svg/fl.svg" class="fl" alt="End of section" />
+
 		<!-- https://en.wikipedia.org/wiki/Dynasties_of_ancient_Egypt -->
-		<h2 class="pt-20 pb-4 text-center">
+		<h2 class="pt-4 pb-4 text-center">
 			<a href="/periods/archaic">Archaic Period</a>
 		</h2>
 		<img src="/images/p02.webp" alt="Archaic Period of Egypt" srcset="" loading="lazy" />
@@ -88,25 +110,35 @@ import dynasties from "@/data/dynasties.json";
 		<!-- <p class="text-center pt-10">
 			<a href="/dynasty/predynastic">Early Dynastic Period</a>
 		</p> -->
-		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
 
+		<table class="mt-10 w-full mx-auto">
 			<tr>
-				<td><a href="/dynasty/1">Dynasty 1</a></td>
-				<td>8 kings for 250 years</td>
-				<td>3150–2900</td>
-				<td>Thinis</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/2">Dynasty 2</a></td>
-				<td>11 kings for 204 years</td>
-				<td>2880–2686</td>
-				<td>Thinis</td>
+				<td> <a href="/dynasty/predynastic">Predynastic Kings</a> </td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/1">First Dynasty</a> </td>
+				<td>8 kings (250 years)</td>
+				<td>3000–2800</td>
+				<td>3150–2920</td>
+				<td>3100–2890</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/2">Second Dynasty</a> </td>
+				<td>11 kings (204 years)</td>
+				<td>2730–2590</td>
+				<td>2920–2700</td>
+				<td>2890–2686</td>
 			</tr>
 		</table>
 
@@ -124,36 +156,40 @@ import dynasties from "@/data/dynasties.json";
 			of carving reliefs and painting the walls of temples and tombs.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
-
 			<tr>
-				<td><a href="/dynasty/3">Dynasty 3</a></td>
-				<td>8 kings for 73 years</td>
-				<td>2687–2613</td>
-				<td>Memphis</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/4">Dynasty 4</a></td>
-				<td>9 kings for 112 years</td>
+				<td> <a href="/dynasty/3">Third Dynasty</a> </td>
+				<td>8 kings (73 years)</td>
+				<td>2590–2540</td>
+				<td>2700–2630</td>
+				<td>2686–2613</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/4">Fourth Dynasty</a> </td>
+				<td>9 kings (112 years)</td>
+				<td>2540–2450</td>
+				<td>2630–2510</td>
 				<td>2613–2494</td>
-				<td>Memphis</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/5">Dynasty 5</a></td>
-				<td>9 kings for 149 years</td>
+				<td> <a href="/dynasty/5">Fifth Dynasty</a> </td>
+				<td>9 kings (149 years)</td>
+				<td>2450–2300</td>
+				<td>2510–2370</td>
 				<td>2494–2345</td>
-				<td>Memphis</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/6">Dynasty 6</a></td>
-				<td>6 kings for 164 years</td>
+				<td> <a href="/dynasty/6">Sixth Dynasty</a> </td>
+				<td>6 kings (164 years)</td>
+				<td>2300–2160</td>
+				<td>2370–2190</td>
 				<td>2345–2181</td>
-				<td>Memphis</td>
 			</tr>
 		</table>
 
@@ -169,33 +205,37 @@ import dynasties from "@/data/dynasties.json";
 			temples were vandalized and pillaged as the political chaos grew.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
-
 			<tr>
-				<td colspan="4" class="text-center"><a href="/dynasty/7">Dynasty 7</a> should be ignored or combined with the Eighth Dynasty.</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/8">Dynasty 8</a></td>
-				<td>17 kings for 21 years</td>
+				<td> <a href="/dynasty/7">Seventh Dynasty</a> </td>
+				<td colspan="4" class="text-center">Dynasty 7 should be ignored as a mistake from Manetho..</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/8">Eighth Dynasty</a> </td>
+				<td>17 kings (21 years)</td>
+				<td>2160–2140</td>
+				<td>2190–2165</td>
 				<td>2181–2160</td>
-				<td>Memphis</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/9">Dynasty 9</a></td>
-				<td>5 kings for 30 years</td>
-				<td>2160–2130</td>
-				<td>Herakleopolis</td>
+				<td> <a href="/dynasty/9">Ninth Dynasty</a> </td>
+				<td>5 kings (30 years)</td>
+				<td>2140–2000</td>
+				<td>2165–2040</td>
+				<td>2160–2025</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/10">Dynasty 10</a></td>
-				<td>10 kings for 91 years</td>
-				<td>2130–2040</td>
-				<td>Herakleopolis</td>
+				<td> <a href="/dynasty/10">Tenth Dynasty</a> </td>
+				<td>10 kings (91 years)</td>
+				<td>2140–2000</td>
+				<td>2165–2040</td>
+				<td>2160–2025</td>
 			</tr>
 		</table>
 
@@ -211,30 +251,26 @@ import dynasties from "@/data/dynasties.json";
 			rulers that ended the golden age of the Middle Kingdom.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
-
 			<tr>
-				<td><a href="/dynasty/11">Dynasty 11</a></td>
-				<td>7 kings for 139 years</td>
-				<td>2130–1991</td>
-				<td>Thebes</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/12">Dynasty 12</a></td>
-				<td>8 kings for 189 years</td>
-				<td>1991–1802</td>
-				<td>Itjtawy</td>
+				<td> <a href="/dynasty/11">Eleventh Dynasty</a> </td>
+				<td>9 kings (139 years)</td>
+				<td>2060–1950</td>
+				<td>2130–2000</td>
+				<td>2125–1985</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/13">Dynasty 13</a></td>
-				<td>c. 40-50 kings for 154 years</td>
-				<td>1803–1649</td>
-				<td>Itjtawy &amp; Thebes</td>
+				<td> <a href="/dynasty/12">Twelfth Dynasty</a> </td>
+				<td>8 kings (189 years)</td>
+				<td>1950–1750</td>
+				<td>2000–1780</td>
+				<td>1985–1773</td>
 			</tr>
 		</table>
 
@@ -248,41 +284,54 @@ import dynasties from "@/data/dynasties.json";
 			independence and set itself up as the Seventeenth Dynasty. This dynasty eventually drove the Hyksos back into Asia.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/14">Dynasty 14</a></td>
-				<td>c. 40-50 kings for 75 years</td>
+				<td> <a href="/dynasty/13">Thirteenth Dynasty</a> </td>
+				<td>50+ kings (154 years)</td>
+				<td>1750–1630</td>
+				<td>1780–1655</td>
+				<td>1773–1650</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/14">Fourteenth Dynasty</a> </td>
+				<td>50+ kings (75 years)</td>
+				<td>1700–1630</td>
+				<td>1730–1655</td>
 				<td>1725–1650</td>
-				<td>Avaris</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/15">Dynasty 15</a></td>
-				<td>10 <i>Hyksos</i> kings for 50 years</td>
-				<td>1650–1600</td>
-				<td>Avaris</td>
+				<td> <a href="/dynasty/15">Fifteenth Dynasty</a> </td>
+				<td>10 Hyksos kings (50 years)</td>
+				<td>1630–1530</td>
+				<td>1655–1555</td>
+				<td>1650–1550</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/16">Dynasty 16</a></td>
-				<td>20 kings for 67 years</td>
-				<td>1649–1582</td>
-				<td>Thebes or Avaris</td>
+				<td> <a href="/dynasty/16">Sixteenth Dynasty</a> </td>
+				<td>20 kings (67 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/abydos">Abydos(?)</a></td>
-				<td>16 kings for 50 years</td>
-				<td>1650–1600</td>
-				<td>Abydos</td>
+				<td> <a href="/dynasty/abydos">Abydos Dynasty</a> </td>
+				<td>16 kings (50 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/17">Dynasty 17</a></td>
-				<td>9 kings for 30 years</td>
-				<td>1580–1550</td>
-				<td>Thebes</td>
+				<td> <a href="/dynasty/17">Seventeenth Dynasty</a> </td>
+				<td>9 kings (30 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
 			</tr>
 		</table>
 
@@ -297,29 +346,33 @@ import dynasties from "@/data/dynasties.json";
 			territories that had been held in the Eighteenth Dynasty.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/18">Dynasty 18</a></td>
-				<td>15 kings for 258 years</td>
+				<td> <a href="/dynasty/18">Eighteenth Dynasty</a> </td>
+				<td>15 kings (258 years)</td>
+				<td>1530–1270</td>
+				<td>1555–1300</td>
 				<td>1550–1292</td>
-				<td>Thebes &amp; Amarna</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/19">Dynasty 19</a></td>
-				<td>8 kings for 103 years</td>
+				<td> <a href="/dynasty/19">Nineteenth Dynasty</a> </td>
+				<td>8 kings (103 years)</td>
+				<td>1270–1170</td>
+				<td>1300–1195</td>
 				<td>1292–1189</td>
-				<td>Thebes &amp; Memphis &amp; Pi-Ramesses</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/20">Dynasty 20</a></td>
-				<td>10 kings for 112 years</td>
+				<td> <a href="/dynasty/20">Twentieth Dynasty</a> </td>
+				<td>10 kings (112 years)</td>
+				<td>1170–1060</td>
+				<td>1195–1080</td>
 				<td>1189–1077</td>
-				<td>Pi-Ramesses</td>
 			</tr>
 		</table>
 
@@ -332,41 +385,47 @@ import dynasties from "@/data/dynasties.json";
 			Libyan descent.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/21">Dynasty 21</a></td>
-				<td>7 kings for 126 years</td>
-				<td>1069–943</td>
-				<td>Tanis</td>
+				<td> <a href="/dynasty/21">Twenty-first Dynasty</a> </td>
+				<td>7 kings (126 years)</td>
+				<td>1060–930</td>
+				<td>1080–950</td>
+				<td>1077–943</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/22">Dynasty 22</a></td>
-				<td>12 kings for 223 years</td>
+				<td> <a href="/dynasty/22">Twenty-second Dynasty</a> </td>
+				<td>12 kings (223 years)</td>
+				<td>930–710</td>
+				<td>950–730</td>
 				<td>943–720</td>
-				<td>Tanis &amp; Bubastis</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/23">Dynasty 23</a></td>
-				<td>7 kings for 109 years</td>
-				<td>837–728</td>
-				<td>Herakleopolis or Thebes</td>
+				<td> <a href="/dynasty/23">Twenty-third Dynasty</a> </td>
+				<td>7 kings (109 years)</td>
+				<td>820–710</td>
+				<td>840–725</td>
+				<td>837–720</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/24">Dynasty 24</a></td>
-				<td>2 kings for 12 years</td>
-				<td>732–723</td>
-				<td>Sais</td>
+				<td> <a href="/dynasty/24">Twenty-fourth Dynasty</a> </td>
+				<td>2 kings (12 years)</td>
+				<td>720–710</td>
+				<td>735–720</td>
+				<td>732–720</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/25">Dynasty 25</a></td>
-				<td>5 <i>Nubian</i> kings for 88 years</td>
+				<td> <a href="/dynasty/25">Twenty-fifth Dynasty</a> </td>
+				<td>5 Nubian kings (88 years)</td>
+				<td>730–650</td>
+				<td>750–660</td>
 				<td>744–656</td>
-				<td>Memphis &amp; Napata</td>
 			</tr>
 		</table>
 
@@ -376,54 +435,57 @@ import dynasties from "@/data/dynasties.json";
 		<img src="/images/p09.webp" alt="" srcset="" loading="lazy" />
 		<p>The Late Period refers to the last flowering of native Egyptian rulers, into Persian conquests.</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
-
 			<tr>
-				<td><a href="/dynasty/26">Dynasty 26</a></td>
-				<td>7 kings for 139 years</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/26">Twenty-sixth Dynasty</a> </td>
+				<td>7 kings (139 years)</td>
+				<td>660–520</td>
+				<td>670–530</td>
 				<td>664–525</td>
-				<td>Sais</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/27">Dynasty 27</a></td>
-				<td>6 <i>Persian</i> kings for 121 years</td>
+				<td> <a href="/dynasty/27">Twenty-seventh Dynasty</a> </td>
+				<td>6 Persian kings (121 years)</td>
+				<td>520–400</td>
+				<td>530–405</td>
 				<td>525–404</td>
-				<td>Babylon</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/28">Dynasty 28</a></td>
-				<td>1 king - 6 years</td>
-				<td>404–398</td>
-				<td>Sais</td>
+				<td> <a href="/dynasty/28">Twenty-eighth Dynasty</a> </td>
+				<td>1 king (6 years)</td>
+				<td>404–399</td>
+				<td>404–399</td>
+				<td>404–399</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/29">Dynasty 29</a></td>
-				<td>5 kings for 18 years</td>
+				<td> <a href="/dynasty/29">Twenty-ninth Dynasty</a> </td>
+				<td>5 kings (18 years)</td>
 				<td>398–380</td>
-				<td>Mendes</td>
+				<td>399–380</td>
+				<td>398–380</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/30">Dynasty 30</a></td>
-				<td>3 kings for 37 years</td>
+				<td> <a href="/dynasty/30">Thirtieth Dynasty</a> </td>
+				<td>3 kings (37 years)</td>
 				<td>380–343</td>
-				<td>Sebennytos</td>
+				<td>380–343</td>
+				<td>380–343</td>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/31">Dynasty 31</a></td>
-				<td>3 <i>Persian</i> kings for 11 years</td>
+				<td> <a href="/dynasty/31">Thirty-first Dynasty</a> </td>
+				<td>3 Persian kings (11 years)</td>
+				<td>340–332</td>
+				<td>345–332</td>
 				<td>343–332</td>
-				<td>Babylon</td>
 			</tr>
 		</table>
 
-		<h2 class="pt-20 pb-4 text-center">
-			<a href="/periods/old-kingdom">Old Kingdom</a>
-		</h2>
 		<h2 class="pt-20 pb-4 text-center">Hellenistic Period</h2>
 		<img src="/images/p10.webp" alt="" srcset="" loading="lazy" />
 		<p>
@@ -431,24 +493,26 @@ import dynasties from "@/data/dynasties.json";
 			Macedonians,) that continued the rule of Egypt with a pharaoh on the throne.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates (BC)</th>
-				<th>Seat/Capital</th>
-			</tr>
-
 			<tr>
-				<td><a href="/dynasty/argead">Argead</a></td>
-				<td>3 kings for 23 years</td>
-				<td>332–309</td>
-				<td>Memphis</td>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/ptolemaic">Ptolemaic</a></td>
-				<td>16 kings for 275 years</td>
+				<td> <a href="/dynasty/argead">Argead Dynasty</a> </td>
+				<td>3 kings (23 years)</td>
+				<td>332–305</td>
+				<td>332–305</td>
+				<td>332–305</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/ptolemaic">Ptolemaic Dynasty</a> </td>
+				<td>16 kings (275 years)</td>
 				<td>305–30</td>
-				<td>Alexandria</td>
+				<td>305–30</td>
+				<td>305–30</td>
 			</tr>
 		</table>
 
@@ -462,17 +526,19 @@ import dynasties from "@/data/dynasties.json";
 			it became part of the Rashidun Caliphate.
 		</p>
 		<table class="mt-10 w-full mx-auto">
-			<tr class="border-b text-left font-sans">
-				<th>Dynasty</th>
-				<th>Reigns</th>
-				<th>Dates</th>
-				<th>Seat/Capital</th>
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High</th>
+				<th class="font-semibold text-sm px-2">Low</th>
+				<th class="font-semibold text-sm px-2">Middle</th>
 			</tr>
 			<tr>
-				<td><a href="/dynasty/roman-pharaohs">Emperors</a></td>
-				<td>30 emperors for 343 years</td>
+				<td> <a href="/dynasty/roman-pharaohs">Roman Pharaohs</a> </td>
+				<td>30 emperors (343 years)</td>
 				<td>30 BC–313 AD</td>
-				<td>Rome</td>
+				<td>30 BC–313 AD</td>
+				<td>30 BC–313 AD</td>
 			</tr>
 		</table>
 
@@ -482,7 +548,9 @@ import dynasties from "@/data/dynasties.json";
 		<img src="/images/p12.webp" alt="" srcset="" loading="lazy" />
 		<p>
 			Pharaohs whose existence is in doubt or whose evidence makes it difficult to assign them to a certain dynasty. They may not have ruled at all,
-			or they may have merely had local authority in specific regions of the kingdom.
+			or they may have merely had local authority in specific regions of the kingdom. Due to this ambiguity, they are referred to as <a
+				href="/periods/unplaced-kings">unplaced kings</a
+			>.
 			<!-- See also <a href="/pharaohs/unplaced">Unplaced</a> -->
 		</p>
 	</section>

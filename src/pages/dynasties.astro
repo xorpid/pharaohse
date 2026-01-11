@@ -1,117 +1,568 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import dynastys from "@data/dynasties.json";
-import dynasties from "@data/dynasties.json";
-
-// Interface for the JSON dynasty structure
-interface DynastyJSON {
-	slug: string;
-	char: string;
-	name: string;
-	period: string;
-	low: string;
-	middle: string;
-	high: string;
-	kings: string;
-	description: string;
-	meta1: string;
-	meta2: string;
-	image: string;
-}
-
-// Interface for the table data
-interface Dyn {
-	name: string;
-	low: string;
-	middle: string;
-	high: string;
-}
-
-// Interface for period grouping
-interface Period {
-	period: string;
-	dynasties: DynastyJSON[];
-}
-
-// Type the imported JSON as an array of Period
-const periods: Period[] = Array.isArray(dynasties) ? (dynasties as Period[]) : [];
 ---
 
-<Layout title="Dynasties of Ancient Egypt">
-	<p class="lead">
-		The division of pharaohs into dynasties is generally considered to be an invention by the Egyptian priest Manetho. Whenever some discontinuity
-		occurred, a new dynasty was assumed.
-	</p>
-	<p>
-		All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with multiple
-		kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact reign of each
-		pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful, chronological gaps,
-		deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of reigns. Historians have
-		also found it difficult to determine the chronological order of the dynasties. There are three general approaches to date the history of ancient
-		Egypt.
-	</p>
+<Layout
+	title="Dynasties of Ancient Egypt"
+	meta1="The periods in the history of Ancient Egypt."
+	meta2="periods,dynasty,dynasties,egypt,old kingdom,New Kingdom,intermediate periods"
+	bild="/images/pharaohse-dynasties.webp"
+>
+	<section class="page-content">
+		<div class="container">
+			<p class="lead">
+				The division of pharaohs into dynasties is generally considered to be an invention by the Egyptian priest Manetho. Whenever some discontinuity
+				occurred, a new dynasty was assumed.
+			</p>
+			<p>
+				All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with
+				multiple kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact
+				reign of each pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful,
+				chronological gaps, deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of
+				reigns. Historians have also found it difficult to determine the chronological order of the dynasties. There are three general approaches to
+				date the history of ancient Egypt.
+			</p>
+			<p class="py-3">
+				Already in the ancient world, Egypt was seen as a mysterious land, renowned for its massive monuments, stylized art, and the distinct Gods
+				with animal heads. The mystical Egyptian religion taught that life on Earth was only one aspect of an eternal journey; the immortal soul was
+				only temporarily inhabiting a body on this physical plane. After death, one would face judgment by Osiris in the Hall of Judgement, where the
+				whole life of a person is judged by the scales of justice. The earthly remains of the deceased were deliberately mummified according to a
+				strict regiment to prepare the deceased body for afterlife. Royalty and nobility also had large tombs created for remains, with elaborate
+				spells written on the walls, to help with the journey.
+			</p>
 
-	<dl class="w-1/2 mx-auto border bordercolor p-4 bg-light rounded-2xl my-6 text-sm">
-		<dt class="font-bold">High Chronology</dt>
-		<dd class="pl-4 leading-snug">
-			The <i>traditional dates</i> are the initial chronological framework historians developed in trying to date the dynasties and pharaohs.
-		</dd>
-		<dt class="font-bold pt-3">Low Chronology</dt>
-		<dd class="pl-4 leading-snug">
-			A shorter timeline where events are placed closer to the present day, mainly due to new discoveries and evidence.
-		</dd>
-		<dt class="font-bold pt-3">Middle Chronology</dt>
-		<dd class="pl-4 leading-snug">This is a middle ground between the high and low chronologies, offering a compromise for dating events.</dd>
-	</dl>
+			<p>
+				The art style of Ancient Egypt is very distinctive, always depicting humans in profile, except for the torso, which is seen from the front.
+				This art was almost always accompanied by small symbols of animals, plants, and so on, which are actually a highly formalized script and
+				language known as <a href="/articles/hieroglyphs">hieroglyphs</a>. The details of the text on the monuments were finally revealed when the
+				hieroglyphs were deciphered in the early 17th century. Documents written on papyrus reveal information of daily life as well as mysteries
+				about the afterlife in ancient Egyptian religion, such as the Book of the Dead.
+			</p>
+			<p>
+				Since ancient times, Egypt has been divided into the fertile Nile Delta in the north and the Nile Valley in the south. The northern delta, or <i
+					>Lower Egypt</i
+				>, is flat and fertile, with black soil deposited by the Nile's annual flooding. The delta's numerous waterways made it ideal for agriculture
+				and trade, helping to create a unified economy. In contrast, <i>Upper Egypt</i> is more mountainous and much drier.
+			</p>
 
-	<p>
-		Archaeological evidence provides a rough timeframe, while radiocarbon dating helps to narrow down the dates more precisely. Astronomical records
-		provide information about specific events that can be used as reference points to determine dates within a certain range. However, different
-		interpretations lead to conflicting conclusions about chronology and ongoing debates.
-	</p>
+			<h2 class="pt-3">Unification</h2>
+			<p>
+				For a long time, scattered villages ruled their immediate surroundings and provided protection against intruders, but they were constantly at
+				odds with each other. This changed around 3000 BC, when the southern king Narmer established himself as the undisputed ruler of the south by
+				conquering the smaller territories. Having amassed a large army, he then conquered the north, uniting the two regions to form one kingdom and
+				establishing a centralised administration. This did not happen overnight, but over the next century, peace and stability brought prosperity on
+				an unprecedented scale and turned villages into cities. People all over the land began to identify as one people, united under one king and
+				enjoying the stability. The unification of the Two Lands was celebrated as a single event, and it is reasonable to question whether one king
+				actually united the kingdom, how this was achieved, and how long the process took. Although the mythical Menes is said to have unified Egypt,
+				attempts to equate him with a specific king are problematic due to a lack of contemporary evidence.
+			</p>
 
-	{
-		periods.length === 0 ? (
-			<p>Error: No dynasty data available. Please check the dynasties.json file.</p>
-		) : (
-			<div class="tbl">
-				<table class="tabular-nums">
-					<thead>
-						<tr>
-							<th>Dynasty</th>
-							<th>Reign</th>
-							<th>High (BC)</th>
-							<th>Low (BC)</th>
-							<th>Middle (BC)</th>
-						</tr>
-					</thead>
-					<tbody>
-						{periods.map((period) => (
-							<>
-								<tr class="text-center font-semibold">
-									<td
-										colspan="5"
-										class="bg-linear-to-r from-stone-700/0 via-neutral-500/15 to-stone-700/0 dark:from-neutral-700/0 dark:via-neutral-400/10 dark:to-neutral-700/0 py-2"
-									>
-										{period.period}
-									</td>
-								</tr>
-								{period.dynasties.map((dynasty) => (
-									<tr>
-										<td>
-											<a href={`/dynasty/${dynasty.slug}`}>{dynasty.name || "Unknown Dynasty"}</a>
-										</td>
-										<td>{dynasty.kings || "N/A"}</td>
-										<td>{dynasty.high || "N/A"}</td>
-										<td>{dynasty.low || "N/A"}</td>
-										<td>{dynasty.middle || "N/A"}</td>
-									</tr>
-								))}
-							</>
-						))}
-					</tbody>
-				</table>
-			</div>
-		)
-	}
+			<h2 class="pt-3">The Dynasties</h2>
+			<p>
+				In modern times, periods of political unrest or instability in ancient Egyptian history are referred to as <i>‘intermediate periods’</i>,
+				whereas stable times are regarded as <i>‘kingdoms’</i>. The division of pharaohs into dynasties is generally considered to be an invention by
+				the Egyptian priest Manetho. Whenever some discontinuity whether geographical, or genealogical ocurred, a new dynasty was assumed. Manetho’s
+				history of Egypt is the most comprehensive, but is only known by references to it made by subsequent writers.
+			</p>
+			<p>
+				All ancient Egyptian king lists have significant gaps in the text or are incomplete. Some dynasties were in power at the same time, with
+				multiple kings ruling concurrently, which makes chronological analysis difficult as the records are incredibly rare. Determining the exact
+				reign of each pharaoh over the three thousand years that the Kingdom lasted is not an easy task. While the archaeological record is helpful,
+				chronological gaps, deliberate omissions and conflicting information make it almost impossible to determine the actual duration and order of
+				reigns. Historians have also found it difficult to determine the chronological order of the dynasties. There are three general approaches to
+				date the history of ancient Egypt.
+			</p>
+		</div>
+
+		<dl class="w-1/2 mx-auto border bordercolor p-4 bg-light rounded-2xl my-10 text-sm">
+			<dt class="font-bold">High Chronology</dt>
+			<dd class="pl-4 leading-snug">
+				The <i>traditional dates</i> are the initial chronological framework historians developed in trying to date the dynasties and pharaohs.
+			</dd>
+			<dt class="font-bold pt-3">Low Chronology</dt>
+			<dd class="pl-4 leading-snug">
+				A shorter timeline where events are placed closer to the present day, mainly due to new discoveries and evidence.
+			</dd>
+			<dt class="font-bold pt-3">Middle Chronology</dt>
+			<dd class="pl-4 leading-snug">This is a middle ground between the high and low chronologies, offering a compromise for dating events.</dd>
+		</dl>
+
+		<img src="/svg/fl.svg" class="fl" alt="End of section" />
+
+		<!-- https://en.wikipedia.org/wiki/Dynasties_of_ancient_Egypt -->
+		<h2 class="pt-4 pb-4 text-center">
+			<a href="/periods/archaic">Archaic Period</a>
+		</h2>
+		<img src="/images/p02.webp" alt="Archaic Period of Egypt" srcset="" loading="lazy" />
+		<p>
+			The Archaic Period of Ancient Egypt is generally considered to span from about 3100 BC to 2686 BC, amd saw the development and refinement of
+			agriculture, metallurgy, and writing. The first hieroglyphs appeared during this time, and the first cities began to emerge in the Nile valley.
+			Local rulers gradually consolidated power by building up their military, expanding their territory, ultimately creating a centralised state. One
+			of the most important developments was the unification of Egypt under a single ruler.
+		</p>
+		<p>
+			The unification of Egypt, which is traditionally dated to 3100 BCE, marked the beginning of the Early Dynastic Period and the start of the
+			ancient Egyptian civilization. It is generally taken to include the First and Second Dynasties, lasting from the Protodynastic Period of Egypt
+			until about 2686 BC, or the beginning of the Old Kingdom.
+		</p>
+		<!-- <p class="text-center pt-10">
+			<a href="/dynasty/predynastic">Early Dynastic Period</a>
+		</p> -->
+
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/predynastic">Predynastic Kings</a> </td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/1">First Dynasty</a> </td>
+				<td>8 kings (250 years)</td>
+				<td>3000–2800</td>
+				<td>3150–2920</td>
+				<td>3100–2890</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/2">Second Dynasty</a> </td>
+				<td>11 kings (204 years)</td>
+				<td>2730–2590</td>
+				<td>2920–2700</td>
+				<td>2890–2686</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/old-kingdom">Old Kingdom</a>
+		</h2>
+		<img src="/images/p03.webp" alt="" srcset="" loading="lazy" />
+
+		<p>
+			The Old Kingdom marks a shift from small and simple monuments, to monumental large-scale building projects, like the pyramids. The period is
+			often referred to as the Age of the Pyramids, during which Egypt attained its first continuous period of internal security and prosperity.
+		</p>
+		<p>
+			Artists, architects and masons mastered techniques necessary to build monumental structures in stone, wood, and copper. They perfected the art
+			of carving reliefs and painting the walls of temples and tombs.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/3">Third Dynasty</a> </td>
+				<td>8 kings (73 years)</td>
+				<td>2590–2540</td>
+				<td>2700–2630</td>
+				<td>2686–2613</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/4">Fourth Dynasty</a> </td>
+				<td>9 kings (112 years)</td>
+				<td>2540–2450</td>
+				<td>2630–2510</td>
+				<td>2613–2494</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/5">Fifth Dynasty</a> </td>
+				<td>9 kings (149 years)</td>
+				<td>2450–2300</td>
+				<td>2510–2370</td>
+				<td>2494–2345</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/6">Sixth Dynasty</a> </td>
+				<td>6 kings (164 years)</td>
+				<td>2300–2160</td>
+				<td>2370–2190</td>
+				<td>2345–2181</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/first-intermediate-period">First Intermediate Period</a>
+		</h2>
+		<img src="/images/p04.webp" alt="" srcset="" loading="lazy" />
+
+		<p>
+			When Pepi II died, the centralised kingdom collapsed into what is called the First Intermediate Period. Pepi’s long reign had weakened the
+			central authority and with his death, the kingdom began to to buckle.<br />As different factions fought for supremacy, from powerful noble
+			families, to local nomarchs, the kingdom of the Two Lands collapsed, and was replaced by rulers that only controlled parts of the land. The
+			temples were vandalized and pillaged as the political chaos grew.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/7">Seventh Dynasty</a> </td>
+				<td colspan="4" class="text-center">Dynasty 7 should be ignored as a mistake from Manetho..</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/8">Eighth Dynasty</a> </td>
+				<td>17 kings (21 years)</td>
+				<td>2160–2140</td>
+				<td>2190–2165</td>
+				<td>2181–2160</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/9">Ninth Dynasty</a> </td>
+				<td>5 kings (30 years)</td>
+				<td>2140–2000</td>
+				<td>2165–2040</td>
+				<td>2160–2025</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/10">Tenth Dynasty</a> </td>
+				<td>10 kings (91 years)</td>
+				<td>2140–2000</td>
+				<td>2165–2040</td>
+				<td>2160–2025</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/middle-kingdom">Middle Kingdom</a>
+		</h2>
+		<img src="/images/p05.webp" alt="" srcset="" loading="lazy" />
+
+		<p>
+			The Two Lands were once again united when Mentuhotep II defeated the tenth dynasty of Heracleopolis. The Middle Kingdom expanded trade outside
+			the kingdom and consolidated pharaonic power by building defensive fortifications and kept a standing army ready for action.<br />The long reign
+			of Amenemhat III most likely weakened pharaonic power once again, as local rulers became powerful. This led to a series of weak and ephemeral
+			rulers that ended the golden age of the Middle Kingdom.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/11">Eleventh Dynasty</a> </td>
+				<td>9 kings (139 years)</td>
+				<td>2060–1950</td>
+				<td>2130–2000</td>
+				<td>2125–1985</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/12">Twelfth Dynasty</a> </td>
+				<td>8 kings (189 years)</td>
+				<td>1950–1750</td>
+				<td>2000–1780</td>
+				<td>1985–1773</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/second-intermediate-period">Second Intermediate Period</a>
+		</h2>
+		<img src="/images/p06.webp" alt="" srcset="" loading="lazy" />
+		<p>
+			The Second Intermediate Period was a period of disarray. It is best known as when the Hyksos, whose reign comprised the Fifteenth and Sixteenth
+			Dynasties, made their appearance in Egypt. Around the time Memphis fell to the Hyksos, the native Egyptian ruling house in Thebes declared its
+			independence and set itself up as the Seventeenth Dynasty. This dynasty eventually drove the Hyksos back into Asia.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/13">Thirteenth Dynasty</a> </td>
+				<td>50+ kings (154 years)</td>
+				<td>1750–1630</td>
+				<td>1780–1655</td>
+				<td>1773–1650</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/14">Fourteenth Dynasty</a> </td>
+				<td>50+ kings (75 years)</td>
+				<td>1700–1630</td>
+				<td>1730–1655</td>
+				<td>1725–1650</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/15">Fifteenth Dynasty</a> </td>
+				<td>10 Hyksos kings (50 years)</td>
+				<td>1630–1530</td>
+				<td>1655–1555</td>
+				<td>1650–1550</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/16">Sixteenth Dynasty</a> </td>
+				<td>20 kings (67 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/abydos">Abydos Dynasty</a> </td>
+				<td>16 kings (50 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/17">Seventeenth Dynasty</a> </td>
+				<td>9 kings (30 years)</td>
+				<td>1630–1550</td>
+				<td>1655–1585</td>
+				<td>1650–1580</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/new-kingdom">New Kingdom</a>
+		</h2>
+		<img src="/images/p07.webp" alt="" srcset="" loading="lazy" />
+		<p>
+			Through military dominance abroad, The New Kingdom saw Egypt\'s greatest territorial extent. It expanded far into Nubia in the south, and held
+			wide territories in the Near East. The Egyptians fought with Hittites. Two of the best known pharaohs of the New Kingdom are Akhenaten, whose
+			exclusive worship of the Aten is often interpreted as the first instance of monotheism, and Ramesses II, who attempted to recover the
+			territories that had been held in the Eighteenth Dynasty.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/18">Eighteenth Dynasty</a> </td>
+				<td>15 kings (258 years)</td>
+				<td>1530–1270</td>
+				<td>1555–1300</td>
+				<td>1550–1292</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/19">Nineteenth Dynasty</a> </td>
+				<td>8 kings (103 years)</td>
+				<td>1270–1170</td>
+				<td>1300–1195</td>
+				<td>1292–1189</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/20">Twentieth Dynasty</a> </td>
+				<td>10 kings (112 years)</td>
+				<td>1170–1060</td>
+				<td>1195–1080</td>
+				<td>1189–1077</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/third-intermediate-period">Third Intermediate Period</a>
+		</h2>
+		<img src="/images/p08.webp" alt="Third Intermediate Period" srcset="" loading="lazy" />
+		<p>
+			The Third Intermediate Period was marked by decline and political instability, dividing the state for much of the period. Most rulers were of
+			Libyan descent.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/21">Twenty-first Dynasty</a> </td>
+				<td>7 kings (126 years)</td>
+				<td>1060–930</td>
+				<td>1080–950</td>
+				<td>1077–943</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/22">Twenty-second Dynasty</a> </td>
+				<td>12 kings (223 years)</td>
+				<td>930–710</td>
+				<td>950–730</td>
+				<td>943–720</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/23">Twenty-third Dynasty</a> </td>
+				<td>7 kings (109 years)</td>
+				<td>820–710</td>
+				<td>840–725</td>
+				<td>837–720</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/24">Twenty-fourth Dynasty</a> </td>
+				<td>2 kings (12 years)</td>
+				<td>720–710</td>
+				<td>735–720</td>
+				<td>732–720</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/25">Twenty-fifth Dynasty</a> </td>
+				<td>5 Nubian kings (88 years)</td>
+				<td>730–650</td>
+				<td>750–660</td>
+				<td>744–656</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/late-period">Late Period</a>
+		</h2>
+		<img src="/images/p09.webp" alt="" srcset="" loading="lazy" />
+		<p>The Late Period refers to the last flowering of native Egyptian rulers, into Persian conquests.</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/26">Twenty-sixth Dynasty</a> </td>
+				<td>7 kings (139 years)</td>
+				<td>660–520</td>
+				<td>670–530</td>
+				<td>664–525</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/27">Twenty-seventh Dynasty</a> </td>
+				<td>6 Persian kings (121 years)</td>
+				<td>520–400</td>
+				<td>530–405</td>
+				<td>525–404</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/28">Twenty-eighth Dynasty</a> </td>
+				<td>1 king (6 years)</td>
+				<td>404–399</td>
+				<td>404–399</td>
+				<td>404–399</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/29">Twenty-ninth Dynasty</a> </td>
+				<td>5 kings (18 years)</td>
+				<td>398–380</td>
+				<td>399–380</td>
+				<td>398–380</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/30">Thirtieth Dynasty</a> </td>
+				<td>3 kings (37 years)</td>
+				<td>380–343</td>
+				<td>380–343</td>
+				<td>380–343</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/31">Thirty-first Dynasty</a> </td>
+				<td>3 Persian kings (11 years)</td>
+				<td>340–332</td>
+				<td>345–332</td>
+				<td>343–332</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">Hellenistic Period</h2>
+		<img src="/images/p10.webp" alt="" srcset="" loading="lazy" />
+		<p>
+			The Hellenistic Period most often included in the Late Period, and were the last dynasties (despite the fact that they were conquering
+			Macedonian Greeks,) that continued the rule of Egypt with a pharaoh on the throne.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High (BC)</th>
+				<th class="font-semibold text-sm px-2">Low (BC)</th>
+				<th class="font-semibold text-sm px-2">Middle (BC)</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/argead">Argead Dynasty</a> </td>
+				<td>3 kings (23 years)</td>
+				<td>332–305</td>
+				<td>332–305</td>
+				<td>332–305</td>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/ptolemaic">Ptolemaic Dynasty</a> </td>
+				<td>16 kings (275 years)</td>
+				<td>305–30</td>
+				<td>305–30</td>
+				<td>305–30</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/roman-emperors">Roman Province</a>
+		</h2>
+		<img src="/images/p11.webp" alt="" srcset="" loading="lazy" />
+		<p>
+			Finally, Egypt was made a Roman province, effectively ending the rule of the pharaohs. The use of hieroglyphs for the names of emperors
+			continued sporadically, but was finally abandoned in the early 4th century. Egypt ceased to be part of the Roman Empire permanently in 641, when
+			it became part of the Rashidun Caliphate.
+		</p>
+		<table class="mt-10 w-full mx-auto">
+			<tr>
+				<th class="font-semibold text-sm px-2">Dynasty</th>
+				<th class="font-semibold text-sm px-2">Reign</th>
+				<th class="font-semibold text-sm px-2">High</th>
+				<th class="font-semibold text-sm px-2">Low</th>
+				<th class="font-semibold text-sm px-2">Middle</th>
+			</tr>
+			<tr>
+				<td> <a href="/dynasty/roman-pharaohs">Roman Pharaohs</a> </td>
+				<td>30 emperors (343 years)</td>
+				<td>30 BC–313 AD</td>
+				<td>30 BC–313 AD</td>
+				<td>30 BC–313 AD</td>
+			</tr>
+		</table>
+
+		<h2 class="pt-20 pb-4 text-center">
+			<a href="/periods/unplaced-kings">Unplaced kings</a>
+		</h2>
+		<img src="/images/p12.webp" alt="" srcset="" loading="lazy" />
+		<p>
+			Pharaohs whose existence is in doubt or whose evidence makes it difficult to assign them to a certain dynasty. They may not have ruled at all,
+			or they may have merely had local authority in specific regions of the kingdom. Due to this ambiguity, they are referred to as <a
+				href="/periods/unplaced-kings">unplaced kings</a
+			>.
+			<!-- See also <a href="/pharaohs/unplaced">Unplaced</a> -->
+		</p>
+	</section>
+
+	<style>
+		td {
+			padding-block: 0.25rem;
+		}
+		img {
+			border-radius: 3rem 3rem 0 0;
+			max-width: 100%;
+			margin-block: 0 1rem;
+			outline: 8px solid #ffffff30;
+			outline-offset: -8px;
+		}
+	</style>
 </Layout>
