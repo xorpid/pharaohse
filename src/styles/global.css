@@ -58,7 +58,7 @@
 	--summ: var(--color-yellow-200);
 	--head: var(--color-blue-200);
 	--sect: var(--color-emerald-300);
-	--logo: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(1923%) hue-rotate(28deg) brightness(91%) contrast(101%);
+
 	--glow: #565757;
 	--bg-dark: oklch(0.92 0 88);
 	--bg: oklch(0.96 0 88);
@@ -89,7 +89,6 @@
 	--summ: var(--color-yellow-800);
 	--head: var(--color-blue-900);
 	--sect: var(--color-emerald-900);
-	--logo: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(4114%) hue-rotate(328deg) brightness(102%) contrast(102%);
 	--glow: #c8c845;
 
 	--bg-dark: oklch(0.15 0 88);

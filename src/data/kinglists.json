@@ -128,15 +128,5 @@
 			"Musée d’Archéologie Méditerranéenne: <a rel=\"noopener nofollow\" href=\"https://musees.marseille.fr/table-doffrandes-de-qenherkhepeshef\" target=\"_blank\" title=\"Visit museum webpage\"> <img loading=\"lazy\" src=\"/svg/visit.svg\" class=\"h-4 align-baseline dark:invert inline\" alt=\"External link: Click to view\" /></a> (accessed February 2024)",
 			"<b>Redford, Donald B.</b>, 1986. <i>Pharaonic king-lists, annals and day-books</i>. Mississauga: 43."
 		]
-	},
-	{
-		"slug": "turin",
-		"name": "Turin King List",
-		"period": "19th Dynasty",
-		"meta1": "Turin King List",
-		"meta2": "Turin King List, Royal Turin Canon, Turin king list",
-		"image": "/images/pharaohse-turin.jpg",
-		"intro": "",
-		"bibliography": []
 	}
 ]

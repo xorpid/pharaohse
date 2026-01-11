@@ -11,8 +11,11 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 “
 ”
 
-<span class="footnote" data-note=""></span>
+TODO
+/dynasties and /periods pages - basically the same, so needs to be merged into one page.
 
+
+<span class="footnote" data-note=""></span>
 
 <button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p>Reference text</div>
 
