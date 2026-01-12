@@ -68,6 +68,7 @@
 	/* --highlight: oklch(1 0 88); */
 	--border: oklch(0.6 0 88);
 	--border-muted: oklch(0.9 0 88);
+	--hoveritem: var(--color-stone-100);
 }
 .dark {
 	--bg-lit: --alpha(var(--color-neutral-700) / 15%);
@@ -99,6 +100,7 @@
 	/* --highlight: oklch(0.5 0 88); */
 	--border: oklch(0.4 0 88);
 	--border-muted: oklch(0.32 0 88);
+	--hoveritem: var(--color-neutral-700);
 }
 /* Add your own default base styles for specific HTML elements */
 @layer base {
@@ -723,6 +725,12 @@
 		vertical-align: super;
 		font-size: x-small;
 		line-height: normal;
+	}
+
+	/* Hamburger menu hover */
+	.hoveritem:hover {
+		background-color: var(--hoveritem);
+		cursor: pointer;
 	}
 }
 @media print {

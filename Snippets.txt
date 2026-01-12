@@ -12,7 +12,6 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 ”
 
 TODO
-/dynasties and /periods pages - basically the same, so needs to be merged into one page.
 
 
 <span class="footnote" data-note=""></span>
