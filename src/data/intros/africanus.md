@@ -1,5 +1,5 @@
 <p>
-	<a href="https://en.wikipedia.org/wiki/Julius_Africanus" target="_blank">Julius Africanus</a> (c.160 – c.240) was a Christian historian who wrote
+	<a href="https://grokipedia.com/page/Sextus_Julius_Africanus" target="_blank">Julius Africanus</a> (c.160 – c.240) was a Christian historian who wrote
 	a history of the world in five books called <i>Chronographiae</i>, from the creation of the world to 221 CE. The original has been lost, and no fragments have ever been found. Attempts to reconstruct the work relies entirely on later authors who quoted Africanus, primarily Eusebius. Syncellus preserves fragments of Africanus's work that are not found in Eusebius, and his versions of overlapping citations are not identical to those of Eusebius. This demonstrates that Syncellus had access to a different, more complete or parallel version of Africanus's work.
 </p>
 <p>

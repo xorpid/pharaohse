@@ -1,5 +1,5 @@
 <p>
-	<a href="https://en.wikipedia.org/wiki/Eusebius" target="_blank">Eusebius of Caesarea</a> (c. 263–339 CE) was a Roman priest and historian who
+	<a href="https://grokipedia.com/page/Eusebius" target="_blank">Eusebius of Caesarea</a> (c. 263–339 CE) was a Roman priest and historian who
 	wrote “Universal History” divided into two books. It is also called the <i>Chronicon</i> or, <i>The Chronicle</i> and was written in Greek.
 </p>
 <p>

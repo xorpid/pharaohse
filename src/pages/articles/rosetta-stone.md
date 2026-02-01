@@ -39,12 +39,12 @@ The inscription is comprised of three distinct parts, each inscribed in a differ
 For centuries it had been assumed that there were two distinct ancient Egyptian scripts, as told by the historians of antiquity.
 
 <div>
-	<a href="https://en.wikipedia.org/wiki/Herodotus" target="_blank">Herodotus</a> wrote in <i>Histories</i> 2.36 that
+	<a href="https://grokipedia.com/page/Herodotus" target="_blank">Herodotus</a> wrote in <i>Histories</i> 2.36 that
 	<blockquote>
 		“The Greeks write and calculate from left to right; the Egyptians do the opposite; yet they say that their way of writing is towards the right, and the Greek way towards the left. They [the Egyptians] use two kinds of writing; one is called sacred (<gr>ἱρὰ</gr>, <i>hira</i>), the other common (<gr>δημοτικὰ</gr>, <i>demotika</i>)”
 	</blockquote>
 	From those Greek words we have <i>hieratic</i> and <i>Demotic</i>. Four centuries later (c. 50 BC), <a
-		href="https://en.wikipedia.org/wiki/Diodorus_Siculus"
+		href="https://grokipedia.com/page/Diodorus_Siculus"
 		target="_blank">Diodorus</a
 	> echoed the same information in <i>Bibliotheka</i> 1.81: 
 	<blockquote>
@@ -62,7 +62,7 @@ For centuries it had been assumed that there were two distinct ancient Egyptian 
 [//]: # ("Αὐτίκα οἱ παρ' Αἰγυπτίοις παιδευόμενοι πρῶτον μὲν πάντων τὴν Αἰγυπτίων γραμμάτων μέθοδον ἐκμανθάνουσι, τὴν ἐπιστολογραφικὴν καλουμένην δευτέραν δὲ τὴν ἱερατικήν, ᾗ χρῶνται οἱ ἱερογραμματεῖς ὑστάτην δὲ καὶ τελευταίαν τὴν ἱερογλυφικήν, ἧς ἣ μέν ἐστι διὰ τῶν πρώτων στοιχείων κυριολογική, ἣ δὲ συμβολική. τῆς δὲ συμβολικῆς ἣ μὲν κυριολογεῖται κατὰ μίμησιν, ἣ δ' ὥσπερ τροπικῶς γράφεται, ἣ δὲ ἄντικρυς ἀλληγορεῖται κατά τινας αἰνιγμούς.")
 
 <div>
-	Around 200 AD, <a href="https://en.wikipedia.org/wiki/Clement_of_Alexandria" target="_blank">Clement of Alexandria</a> wrote about a <i>third script</i> in <i>Stromata</i> 5.4.20.3: 
+	Around 200 AD, <a href="https://grokipedia.com/page/Clement_of_Alexandria" target="_blank">Clement of Alexandria</a> wrote about a <i>third script</i> in <i>Stromata</i> 5.4.20.3: 
 	<blockquote>
 		“Now those instructed among the Egyptians learned first of all that style of the Egyptian letters which is called <em>Epistolographic</em>; and second, <em>the Hieratic</em>, which the sacred scribes practise; and finally, and last of all, <em>the Hieroglyphic</em>, of which one kind which is by the first elements is literal (Kyriologic), and the other Symbolic. Of the Symbolic, one kind speaks literally by imitation, and another writes as it were figuratively; and another is quite allegorical, using certain enigmas.”
 	</blockquote>

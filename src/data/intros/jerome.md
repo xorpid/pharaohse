@@ -1,7 +1,7 @@
 <section class="page-content">
 	<div class="container">
 		<p class="lead">
-			<a href="https://en.wikipedia.org/wiki/Jerome" target="_blank">Saint Jerome</a> (c. 347–420) <i>Eusebius Sophronius Hieronymus</i> was a Roman
+			<a href="https://grokipedia.com/page/Jerome" target="_blank">Saint Jerome</a> (c. 347–420) <i>Eusebius Sophronius Hieronymus</i> was a Roman
 			Christian priest and historian, perhaps most famous for translating the Bible into Latin (<i>the Vulgate</i>)
 		</p>
 		<p>

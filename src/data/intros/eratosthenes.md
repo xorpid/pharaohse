@@ -1,4 +1,4 @@
-<div class="lead">According to Syncellus, Apollodoros of Athens recorded a list of Theban kings taken from <a href="https://en.wikipedia.org/wiki/Eratosthenes" target="_blank">Eratosthenes of Cyrene</a>.</div>
+<div class="lead">According to Syncellus, Apollodoros of Athens recorded a list of Theban kings taken from <a href="https://grokipedia.com/page/Eratosthenes" target="_blank">Eratosthenes of Cyrene</a>.</div>
 
 <p class="pt-3">However, Apollodorus and Eratosthenes are considered to be <i>pseudonymous</i> authors, meaning that someone else wrote this list and used the names of two well known and respected authors to lend it an air of authority. Some of the names listed can be found in Manetho and Herodotus, suggesting there might be a common, but corrupted, source behind the list, as some of the names have no similarity whatsoever with other known lists. As a chronological list it is useless.<br><br>This list is included here only as a curiosity. In all likelyhood, Eratosthenes was <u>not</u> the author of this list.</p>
 <blockquote>
