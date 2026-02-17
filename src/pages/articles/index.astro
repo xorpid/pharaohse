@@ -157,14 +157,14 @@ const shorts = [
 			<div class="grid grid-cols-1 justify-items-stretch gap-5 md:grid-cols-2">
 				{
 					shorts.map((short) => (
-						<div class="card max-w-full rounded-lg text-1 default-bg-1 text-sm p-3 shadow flex flex-col">
+						<div class="card max-w-full text-sm p-3 flex flex-col">
 							<a href={short.url}>
 								<h5 class="mb-2 text-left text-2xl font-bold tracking-tight">{short.titel}</h5>
 							</a>
 							<p class="ptext" set:html={short.text} />
 							<a
 								href={short.url}
-								class="inline-flex items-center self-end rounded py-1 px-2 text-sm/relaxed bg-smoke-500 dark:bg-shark-600 text-white dark:text-shark-200 font-medium hover:bg-smoke-300 hover:dark:bg-shark-400 transition duration-300"
+								class="inline-flex items-center self-end py-1 px-2 text-sm/relaxed rounded font-medium transition duration-300 bg-stone-50 dark:bg-neutral-800 border border-neutral-500/30 hover:bg-white hover:dark:bg-neutral-700"
 							>
 								{short.buttonText}
 								<svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

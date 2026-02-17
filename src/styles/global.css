@@ -60,15 +60,25 @@
 	--sect: var(--color-emerald-300);
 
 	--glow: #565757;
+
 	--bg-dark: oklch(0.92 0 88);
 	--bg: oklch(0.96 0 88);
 	--bg-light: oklch(1 0 88);
+
+	--bg-dark: oklch(92% 0 264);
+	--bg: oklch(96% 0 264);
+	--bg-light: oklch(100% 0 264);
+
 	--tx: oklch(0.15 0 88);
 	--dim: oklch(0.4 0 88);
 	/* --highlight: oklch(1 0 88); */
 	--border: oklch(0.6 0 88);
 	--border-muted: oklch(0.9 0 88);
 	--hoveritem: var(--color-stone-100);
+
+	--shadow-s: inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
+	--shadow-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
+	--shadow-l: inset 0 1px 2px #ffffff70, 0 4px 6px #00000030, 0 6px 10px #00000015;
 }
 .dark {
 	--bg-lit: --alpha(var(--color-neutral-700) / 15%);
@@ -95,6 +105,11 @@
 	--bg-dark: oklch(0.15 0 88);
 	--bg: oklch(0.2 0 88);
 	--bg-light: oklch(0.25 0 88);
+
+	--bg-dark: oklch(10% 0 264);
+	--bg: oklch(20% 0 264);
+	--bg-light: oklch(30% 0 264);
+
 	--tx: oklch(0.86 0 88);
 	--dim: oklch(0.66 0 88);
 	/* --highlight: oklch(0.5 0 88); */
@@ -102,6 +117,11 @@
 	--border-muted: oklch(0.32 0 88);
 	--hoveritem: var(--color-neutral-700);
 }
+
+@view-transition {
+	navigation: auto;
+}
+
 /* Add your own default base styles for specific HTML elements */
 @layer base {
 	::selection {
@@ -121,7 +141,7 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.5s;
 		scroll-padding-top: calc(var(--header-height) + 1rem); /* anchor top fix */
-		background-color: var(--bg);
+		background-color: var(--bg-dark);
 		color: var(--tx);
 		scroll-padding-top: 120px; /* accounts for sticky header */
 		scroll-behavior: smooth;
@@ -283,8 +303,8 @@
 		border-radius: var(--radius-2xl);
 		padding: calc(var(--spacing) * 4) /* 1rem = 16px */;
 		--shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
-		box-shadow: var(--shadow);
-		border: 1px solid var(--border-muted);
+		box-shadow: var(--shadow-s);
+		/* border: 1px solid var(--border-muted); */
 		a:hover {
 			text-decoration: none;
 		}
@@ -307,7 +327,7 @@
 		padding-block: calc(var(--spacing) * 4);
 	}
 
-	.tbl {
+	.xxxtbl {
 		box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 		border-radius: 1.5rem;
 		width: fit-content;
@@ -345,6 +365,16 @@
 
 	.tx {
 		color: var(--tx);
+	}
+
+	.shadow-s {
+		box-shadow: var(--shadow-s);
+	}
+	.shadow-m {
+		box-shadow: var(--shadow-m);
+	}
+	.shadow-l {
+		box-shadow: var(--shadow-l);
 	}
 
 	.summ {
@@ -526,10 +556,12 @@
 		font-feature-settings: "zero" 0;
 		/* background-color: var(--bg-light); */
 	}
-	[popover]:popover-open {
+	[popover]:popover-open,
+	[popover][data-visible] {
 		opacity: 1;
 		box-shadow: var(--shadow-3xl);
 		text-align: left;
+		pointer-events: auto;
 	}
 
 	/* Not yet ready for anchor() or @position-try (2025-11-11) */
@@ -548,6 +580,10 @@
 		inset: 0;
 		overflow: auto;
 		transform-origin: top center;
+		/* hidden by default, will fade when :popover-open becomes true */
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 3.8s ease-in;
 	}
 	[popover] p {
 		margin-block: 0 calc(var(--spacing) * 2);

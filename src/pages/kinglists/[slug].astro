@@ -94,7 +94,7 @@ try {
 		items.length > 0 && (
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
 				{items.map((item) => (
-					<div class="bg-light text rounded-lg shadow-md p-4 flex flex-col gap-1 text-center">
+					<div class="bg-light text rounded-2xl shadow-m p-4 flex flex-col gap-1 text-center">
 						{item.bild && <img src={`/svg/${svgFolder}/${item.bild}.svg`} alt={item.namn} class="h-20 dark:invert object-contain" />}
 						<div class="font-bold font-serif text-2xl tracking-wide" set:html={item.namn} />
 						{item.tlit && <div class="tlit">{Translit(item.tlit)}</div>}

@@ -1,5 +1,5 @@
 ---
-/* import { ViewTransitions } from "astro:transitions"; */
+import { ClientRouter } from "astro:transitions"; /* Astro name for View-transitions */
 const { frontmatter } = Astro.props;
 const author = "Peter Lundström";
 const website = "https://pharaoh.se";
@@ -42,6 +42,7 @@ const fonts = `https://fonts.googleapis.com/css2?` + font1 + `&` + font2 + `&` +
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content={meta1} />
 	<meta name="keywords" content={meta2} />
+	<ClientRouter />
 	<meta name="generator" content={Astro.generator} />
 	<meta name="color-scheme" content="light dark" />
 	<title>{resolvedTitle} | {sajt}</title>
