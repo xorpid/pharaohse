@@ -64,16 +64,6 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 
 <script>
 	// Handle existing popovertarget pattern (for backward compatibility)
-
-	// Use data-visible attribute to control CSS transitions reliably
-	function openPopover(el) {
-		el.setAttribute("data-visible", "true");
-	}
-
-	function closePopover(el) {
-		el.removeAttribute("data-visible");
-	}
-
 	document.querySelectorAll("[popovertarget]").forEach((trigger) => {
 		const targetId = trigger.getAttribute("popovertarget");
 		if (!targetId) return;
@@ -84,17 +74,17 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 		let timeout: ReturnType<typeof setTimeout> | undefined;
 
 		trigger.addEventListener("mouseenter", () => {
-			timeout = setTimeout(() => openPopover(popover), 50);
+			timeout = setTimeout(() => popover.showPopover(), 50);
 		});
 
 		trigger.addEventListener("mouseleave", () => {
 			clearTimeout(timeout);
-			closePopover(popover);
+			popover.hidePopover();
 		});
 
 		// Optional: keep popover visible when hovering over it
 		popover.addEventListener("mouseenter", () => clearTimeout(timeout));
-		popover.addEventListener("mouseleave", () => closePopover(popover));
+		popover.addEventListener("mouseleave", () => popover.hidePopover());
 	});
 
 	// Handle new footnote system with data-note attribute
@@ -210,25 +200,25 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 			let timeout: ReturnType<typeof setTimeout> | undefined;
 
 			span.addEventListener("mouseenter", () => {
-				timeout = setTimeout(() => openPopover(popover), 50);
+				timeout = setTimeout(() => popover.showPopover(), 50);
 			});
 
 			span.addEventListener("mouseleave", () => {
 				clearTimeout(timeout);
-				closePopover(popover);
+				popover.hidePopover();
 			});
 
 			// Keep popover visible when hovering over it
 			popover.addEventListener("mouseenter", () => clearTimeout(timeout));
-			popover.addEventListener("mouseleave", () => closePopover(popover));
+			popover.addEventListener("mouseleave", () => popover.hidePopover());
 
 			// Add click handler to toggle popover
 			span.addEventListener("click", (e) => {
 				e.preventDefault();
-				if (popover.hasAttribute("data-visible")) {
-					closePopover(popover);
+				if (popover.matches(":popover-open")) {
+					popover.hidePopover();
 				} else {
-					openPopover(popover);
+					popover.showPopover();
 				}
 			});
 		});

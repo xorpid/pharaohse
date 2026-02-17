@@ -118,9 +118,9 @@
 	--hoveritem: var(--color-neutral-700);
 }
 
-@view-transition {
+/* @view-transition {
 	navigation: auto;
-}
+} */
 
 /* Add your own default base styles for specific HTML elements */
 @layer base {
