@@ -12,8 +12,8 @@ alt: "Ptolemaic Dynasty"
 ---
 
 <div class="dynruta float-right ml-4 mb-3 mt-4">
-	<div class="flex flex-col justify-center items-center [text-shadow:_0_1px_0_rgb(255_255_255_/_20%)]">
-		<div class="text-9xl font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Pt</div>
+	<div class="flex flex-col justify-center items-center [text-shadow:0_1px_0_rgb(255_255_255/20%)]">
+		<div class="text-9xl font-bold [text-shadow:0_1px_0_rgb(255_255_255/40%)]">Pt</div>
 		<div>Ptolemaic Dynasty</div>
 		<div>305 BC &mdash; 30 BC</div>
 		<div class="w-full flex justify-between"><a href="/dynasty/argead">Previous</a><a href="/dynasty/roman-pharaohs">Next</a></div>

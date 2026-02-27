@@ -6,12 +6,13 @@
 		class="italic"
 		title="The process of converting text from one writing system to another">transliterations</abbr
 	> of the kings' names. Assumes that you are familiar with the overview and <a href="/authors">history of Manetho</a>.
+This is basically a sort of reconstructed “Aegyptiaca”, primarily based on Manetho's sources, Africanus and Eusebius, but also includes relevant information from other authors from antiquity. The impressive work of modern palaeographers, Egyptologists and historians brings it all together.
 </p>
 
 <h2 class="text-center pb-3">Mythological kings</h2>
 <p>
 	Neither Africanus nor Eusebius preserve any names or dates for the mythological era. According to Syncellus, the <i>Book of Sothis</i> was written
-	by Manetho, though modern scholars consider it a much later forgery, used by Panodorus of Alexandria.
+	by Manetho, though modern scholars consider it a much later forgery, used by Panodorus of Alexandria.<span class="footnote" data-note="Adler & Tuffin, p. 71, note 3"></span>
 </p>
 <p>
 	The lists begin with a number of mythological kings that include Gods, demigods and spirits of the dead. The Gods reigned 11,985 years. The only
@@ -54,7 +55,7 @@
 				<td>Agathadaemon</td>
 				<td>700</td>
 				<td>56 <span class="diagonal-fractions">7/12</span></td>
-				<td>Good spirit?</td>
+				<td>Shu</td>
 			</tr>
 			<tr>
 				<td>4</td>

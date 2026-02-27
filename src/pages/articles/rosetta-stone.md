@@ -110,11 +110,8 @@ At the time of the discovery of the Rosetta Stone, a little-known script had rec
 
 ## Copies of the Decree
 
-Copies of the decree were erected in temples, two were inscribed on walls of the Philae temple of Isis, dated to Years 19 (186 BC) and 21 (184 BC).<button popovertarget="pop01">1</button> The inscriptions differed from those on the Rosetta Stone in that they added and omitted details, and they did not include the Greek text.
+Copies of the decree were erected in temples, two were inscribed on walls of the Philae temple of Isis, dated to Years 19 (186 BC) and 21 (184 BC).<span class="footnote" data-note="Located on the East side of the Birth House collonade. Subsequently, the decrees were overlaid with additional material, which was introduced by Ptolemy XIII Neos Dionysos. This included the partial blocking or removal of the original text. See Lepsius, <i>Denkmaeler</i> Hieroglyphs: IV 20. Demotic: IV 26-34. Porter and Moss, <i>Topographical Bibliography</i>, 6.228 (225-226)."></span> The inscriptions differed from those on the Rosetta Stone in that they added and omitted details, and they did not include the Greek text.
 
-<div id="pop01" popover>
-<p>1</p> Located on the East side of the Birth House collonade. Subsequently, the decrees were overlaid with additional material, which was introduced by Ptolemy XIII Neos Dionysos. This included the partial blocking or removal of the original text. See Lepsius, <i>Denkmaeler</i> Hieroglyphs: IV 20. Demotic: IV 26-34. Porter and Moss, <i>Topographical Bibliography</i>, 6.228 (225-226).
-</div>
 <figure class="mt-5 w-full">
 <a data-fancybox="philae" data-caption="Ptolemy V decree at Philae" href="/images/LD6-34.webp" title="Ptolemy V decree at Philae">
 <picture>

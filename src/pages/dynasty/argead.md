@@ -12,8 +12,8 @@ alt: "Argead Dynasty"
 ---
 
 <div class="dynruta float-right ml-4 mb-3 mt-4">
-	<div class="flex flex-col justify-center items-center [text-shadow:_0_1px_0_rgb(255_255_255_/_20%)]">
-		<div class="text-9xl font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">Ar</div>
+	<div class="flex flex-col justify-center items-center [text-shadow:0_1px_0_rgb(255_255_255/20%)]">
+		<div class="text-9xl font-bold [text-shadow:0_1px_0_rgb(255_255_255/40%)]">Ar</div>
 		<div>Argead Dynasty</div>
 		<div>332 BC &mdash; 310 BC</div>
 		<div class="w-full flex justify-between"><a href="/dynasty/31">Previous</a><a href="/dynasty/ptolemaic">Next</a></div>

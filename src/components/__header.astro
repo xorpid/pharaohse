@@ -8,7 +8,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 ---
 
 <header class="sticky top-0 z-50 border-b border-stone-500 dark:border-neutral-700 shadow-lg shadow-black/25 dark:shadow-black/50 bg">
-	<div class="container mx-auto flex items-center justify-between gap-x-4 gap-y-0">
+	<div class="container mx-auto flex items-center justify-between p-4">
 		<!-- Hidden checkbox -->
 		<input type="checkbox" id="mobile-menu" class="hidden" />
 
@@ -26,18 +26,14 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			</div>
 		</label>
 
-		<!-- logo -->
-		<div class="">
-			<a href="/" aria-label="Pharaoh.SE" class="flex items-center gap-2 text-2xl text-black font-black dark:text-white hover:no-underline"
-				><img src="/images/pharaohse-tut.webp" class="h-8" alt="Pharaoh.SE" />PHARAOH.SE</a
-			>
-		</div>
+		<!-- Logo -->
+		<h1 class="font-bold font-serif text-3xl">SITENAME</h1>
 
 		<!-- Single nav (desktop + mobile) -->
 		<nav class="main-nav">
-			<ul data-no-references>
+			<ul>
 				<li>
-					<button popovertarget="nav-pharaohs" type="button" class="align-middle font-semibold!">
+					<button popovertarget="nav-pharaohs" type="button">
 						Pharaohs
 						<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M19 9l-7 7-7-7"></path>
@@ -46,63 +42,44 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 					<div id="nav-pharaohs" popover>
 						<ul class="flex gap-12">
 							<li class="w-fit">
-								<a href="/pharaohs">Famous pharaohs</a>
+								<a href="#">Famous pharaohs</a>
 								<ul>
-									<li><a href="/pharaohs/Tutankhamun">Tutankhamun</a></li>
-									<li><a href="/pharaohs/Ramesses-II">Ramesses II</a></li>
-									<li><a href="/pharaohs/Khufu">Khufu</a></li>
-									<li><a href="/pharaohs/Narmer">Narmer</a></li>
-									<li><a href="/pharaohs/Cleopatra-VII">Cleopatra</a></li>
-									<li><a href="/pharaohs/Thutmose-III">Thutmose III</a></li>
-									<li><a href="/pharaohs/Amenhotep-III">Amenhotep III</a></li>
-									<li><a href="/pharaohs/Hatshepsut">Hatshepsut</a></li>
+									<li><a href="#">Tutankhamun</a></li>
+									<li><a href="#">Ramesses II</a></li>
+									<li><a href="#">Khufu</a></li>
+									<li><a href="#">Narmer</a></li>
+									<li><a href="#">Cleopatra</a></li>
+									<li><a href="#">Thutmose III</a></li>
+									<li><a href="#">Amenhotep III</a></li>
+									<li><a href="#">Hatshepsut</a></li>
 								</ul>
 							</li>
 							<li class="w-1/2 flex-1">
 								<a href="#">Dynasties</a>
 								<ul class="flex flex-row flex-wrap gap-x-4">
-									<li><a href="/dynasty/1">1</a></li><li><a href="/dynasty/2">2</a></li><li><a href="/dynasty/3">3</a></li><li>
-										<a href="/dynasty/4">4</a>
-									</li>
-									<li><a href="/dynasty/5">5</a></li><li><a href="/dynasty/6">6</a></li><li><a href="/dynasty/7">7</a></li><li>
-										<a href="/dynasty/8">8</a>
-									</li>
-									<li><a href="/dynasty/9">9</a></li><li><a href="/dynasty/10">10</a></li><li><a href="/dynasty/11">11</a></li><li>
-										<a href="/dynasty/12">12</a>
-									</li>
-									<li><a href="/dynasty/13">13</a></li><li><a href="/dynasty/14">14</a></li><li><a href="/dynasty/15">15</a></li><li>
-										<a href="/dynasty/16">16</a>
-									</li>
-									<li><a href="/dynasty/17">17</a></li><li><a href="/dynasty/18">18</a></li><li><a href="/dynasty/19">19</a></li><li>
-										<a href="/dynasty/20">20</a>
-									</li>
-									<li><a href="/dynasty/21">21</a></li><li><a href="/dynasty/22">22</a></li><li><a href="/dynasty/23">23</a></li><li>
-										<a href="/dynasty/24">24</a>
-									</li>
-									<li><a href="/dynasty/25">25</a></li><li><a href="/dynasty/26">26</a></li><li><a href="/dynasty/27">27</a></li><li>
-										<a href="/dynasty/28">28</a>
-									</li>
-									<li><a href="/dynasty/29">29</a></li><li><a href="/dynasty/30">30</a></li><li><a href="/dynasty/31">31</a></li>
-									<li><a href="/dynasty/abydos">Abydos</a></li><li><a href="/dynasty/argead">Argead</a></li><li>
-										<a href="/dynasty/predynastic">Predynastic</a>
-									</li>
-									<li><a href="/dynasty/ptolemaic">Ptolemaic Kingdom</a></li><li><a href="/dynasty/roman-pharaohs">Roman pharaohs</a></li><li>
-										<a href="/dynasty/unplaced">Unplaced kings</a>
-									</li>
+									<li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li>
+									<li><a href="#">5</a></li><li><a href="#">6</a></li><li><a href="#">7</a></li><li><a href="#">8</a></li>
+									<li><a href="#">9</a></li><li><a href="#">10</a></li><li><a href="#">11</a></li><li><a href="#">12</a></li>
+									<li><a href="#">13</a></li><li><a href="#">14</a></li><li><a href="#">15</a></li><li><a href="#">16</a></li>
+									<li><a href="#">17</a></li><li><a href="#">18</a></li><li><a href="#">19</a></li><li><a href="#">20</a></li>
+									<li><a href="#">21</a></li><li><a href="#">22</a></li><li><a href="#">23</a></li><li><a href="#">24</a></li>
+									<li><a href="#">25</a></li><li><a href="#">26</a></li><li><a href="#">27</a></li><li><a href="#">28</a></li>
+									<li><a href="#">29</a></li><li><a href="#">30</a></li><li><a href="#">31</a></li>
+									<li><a href="#">Abydos</a></li><li><a href="#">Argead</a></li><li><a href="#">Predynastic</a></li>
+									<li><a href="#">Ptolemaic Kingdom</a></li><li><a href="#">Roman pharaohs</a></li><li><a href="#">Unplaced kings</a></li>
 								</ul>
 							</li>
 							<li class="w-fit">
 								<a href="#">Periods</a>
 								<ul>
-									<li><a href="/periods/archaic">Archaic</a></li>
-									<li><a href="/periods/old-kingdom">Old Kingdom</a></li>
-									<li><a href="/periods/first-intermediate-period">First Intermediate Period</a></li>
-									<li><a href="/periods/middle-kingdom">Middle Kingdom</a></li>
-									<li><a href="/periods/second-intermediate-period">Second Intermediate Period</a></li>
-									<li><a href="/periods/new-kingdom">New Kingdom</a></li>
-									<li><a href="/periods/thurd-intermediate-period">Third Intermediate Period</a></li>
-									<li><a href="/periods/late-period">Late Period</a></li>
-									<li><a href="/periods/roman-emperors">Roman</a></li>
+									<li><a href="#">Old Kingdom</a></li>
+									<li><a href="#">First Intermediate Period</a></li>
+									<li><a href="#">Middle Kingdom</a></li>
+									<li><a href="#">Second Intermediate Period</a></li>
+									<li><a href="#">New Kingdom</a></li>
+									<li><a href="#">Third Intermediate Period</a></li>
+									<li><a href="#">Late Period</a></li>
+									<li><a href="#">Roman</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -110,7 +87,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 				</li>
 
 				<li>
-					<button popovertarget="nav-kinglists" type="button" class="align-middle font-semibold!">
+					<button popovertarget="nav-kinglists" type="button">
 						Kinglists
 						<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M19 9l-7 7-7-7"></path>
@@ -121,38 +98,37 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 							<li class="flex-1">
 								<a href="#">King lists</a>
 								<ul>
-									<li><a href="/kinglists/abydos-canon">Abydos Canon</a></li>
-									<li><a href="/kinglists/karnak-canon">Karnak Canon</a></li>
-									<li><a href="/kinglists/saqqara-canon">Saqqara Canon</a></li>
-									<li><a href="/kinglists/medinet-habu-canon">Medinet Habu Canon</a></li>
-									<li><a href="/kinglists/ramesseum-canon">Ramesseum Canon</a></li>
-									<li><a href="/kinglists/compare-canons">Compare Canons</a></li>
-									<li><a href="/kinglists/minor-kinglists">Minor</a></li>
+									<li><a href="#">Abydos Canon</a></li>
+									<li><a href="#">Karnak Canon</a></li>
+									<li><a href="#">Saqqara Canon</a></li>
+									<li><a href="#">Medinet Habu Canon</a></li>
+									<li><a href="#">Ramesseum Canon</a></li>
+									<li><a href="#">Compare Canons</a></li>
+									<li><a href="#">Minor</a></li>
 								</ul>
 							</li>
 							<li class="flex-1">
 								<a href="#">Turin King List</a>
 								<ul>
-									<li><a href="/kinglists/turin-contents">Contents</a></li>
-									<li><a href="/kinglists/turin">Columns</a></li>
-									<li><a href="/kinglists/turin-history">History</a></li>
-									<li><a href="/kinglists/turin-fragments">Fragments</a></li>
-									<li><a href="/kinglists/turin-recto">Recto</a></li>
-									<li><a href="/kinglists/turin-vorlage">Vorlage</a></li>
-									<li><a href="/kinglists/turin-gallery">Gallery</a></li>
-									<li><a href="/kinglists/turin/library">Library of PDFs</a></li>
+									<li><a href="#">Contents</a></li>
+									<li><a href="#">Columns</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Fragments</a></li>
+									<li><a href="#">Recto</a></li>
+									<li><a href="#">Gallery</a></li>
+									<li><a href="#">Library of PDFs</a></li>
 								</ul>
 							</li>
 							<li class="flex-1">
 								<a href="#">Classical authors</a>
 								<ul>
-									<li><a href="/authors/manetho">Manetho of Sebennytos</a></li>
-									<li><a href="/authors/africanus">Julius Africanus</a></li>
-									<li><a href="/authors/eusebius">Eusebius of Caesarea</a></li>
-									<li><a href="/authors/josephus">Josephus</a></li>
-									<li><a href="/authors/jerome">Jerome of Stridon</a></li>
-									<li><a href="/authors/syncellus">Syncellus</a></li>
-									<li><a href="/authors/compare-manetho">Comparing the lists</a></li>
+									<li><a href="#">Manetho of Sebennytos</a></li>
+									<li><a href="#">Julius Africanus</a></li>
+									<li><a href="#">Eusebius of Caesarea</a></li>
+									<li><a href="#">Josephus</a></li>
+									<li><a href="#">Jerome of Stridon</a></li>
+									<li><a href="#">Syncellus</a></li>
+									<li><a href="#">Comparing the lists</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -160,7 +136,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 				</li>
 
 				<li>
-					<button popovertarget="nav-articles" type="button" class="align-middle font-semibold!">
+					<button popovertarget="nav-articles" type="button">
 						Articles
 						<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M19 9l-7 7-7-7"></path>
@@ -171,23 +147,23 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 							<li class="flex-1">
 								<a href="#">Miscellaneous</a>
 								<ul>
-									<li><a href="/articles/egyptology">Egyptology</a></li>
-									<li><a href="/articles/cartography">Cartography</a></li>
-									<li><a href="/articles/hieroglyphs">Hieroglyphs</a></li>
-									<li><a href="/articles/chronology">Chronology</a></li>
-									<li><a href="/articles/">Languages & Scripts</a></li>
-									<li><a href="/articles/battle-of-kadesh">The Battle of Kadesh</a></li>
-									<li><a href="/articles/scribes">Scribes</a></li>
+									<li><a href="#">Egyptology</a></li>
+									<li><a href="#">Cartography</a></li>
+									<li><a href="#">Hieroglyphs</a></li>
+									<li><a href="#">Chronology</a></li>
+									<li><a href="#">Languages & Scripts</a></li>
+									<li><a href="#">The Battle of Kadesh</a></li>
+									<li><a href="#">Scribes</a></li>
 								</ul>
 							</li>
 							<li class="flex-1">
 								<a href="#">Places and objects</a>
 								<ul>
-									<li><a href="/articles/rosetta-stone">Rosetta Stone</a></li>
-									<li><a href="/articles/obelisks">Obelisks</a></li>
-									<li><a href="/articles/pyramids">Pyramids</a></li>
-									<li><a href="/articles/temples">Temples & Monuments</a></li>
-									<li><a href="/articles/papyrus">Papyrus</a></li>
+									<li><a href="#">Rosetta Stone</a></li>
+									<li><a href="#">Obelisks</a></li>
+									<li><a href="#">Pyramids</a></li>
+									<li><a href="#">Temples & Monuments</a></li>
+									<li><a href="#">Papyrus</a></li>
 									<li><a href="#"></a></li>
 									<li><a href="#"></a></li>
 								</ul>
@@ -195,28 +171,75 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 							<li class="flex-1">
 								<a href="#">References</a>
 								<ul>
-									<li><a href="/bibliography">Bibliography</a></li>
-									<li><a href="/articles/book-series">Important book series</a></li>
-									<li><a href="/articles/titles">Titles & epithets</a></li>
-									<li><a href="/articles/cg">Catalogue General</a></li>
+									<li><a href="#">Bibliography</a></li>
+									<li><a href="#">Important book series</a></li>
+									<li><a href="#">Titles & epithets</a></li>
+									<li><a href="#">Catalogue General</a></li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</li>
 
-				<li><a href="/about" class="font-semibold!">About</a></li>
+				<li><a href="#">About</a></li>
 			</ul>
 		</nav>
 
-		<!-- Right: theme toggle -->
-		<div class="flex-initial text-right">
-			<Toggler />
+		<!-- Theme toggle – fixed to show correct icon -->
+		<div class="flex items-center gap-4 ml-auto">
+			<button id="theme-toggle" class="p-2 text-[#556270] dark:text-slate-300 hover:bg-zinc-100 dark:hover:bg-slate-700 rounded-xl transition-all">
+				<!-- Sun – shown in light mode -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-6 h-6 sun dark:hidden"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2.25"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+					></path>
+				</svg>
+				<!-- Moon – shown in dark mode -->
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-6 h-6 moon hidden dark:block"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2.25"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+				</svg>
+			</button>
 		</div>
 	</div>
 </header>
 
-<script></script>
+<script>
+	const html = document.documentElement;
+	const toggleBtn = document.getElementById("theme-toggle");
+
+	// Force correct initial state (prevents stuck moon icon)
+	if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+		html.classList.add("dark");
+	} else {
+		html.classList.remove("dark"); // explicit light mode reset
+	}
+
+	if (toggleBtn) {
+		toggleBtn.addEventListener("click", () => {
+			html.classList.toggle("dark");
+			localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
+		});
+	}
+</script>
 
 <style>
 	:root {
@@ -226,13 +249,33 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 		--nav-popover-header-height: 2rem;
 	}
 
+	html.dark {
+		color-scheme: dark;
+	}
+	body {
+		background: #f3f3a3;
+	}
+	.dark body {
+		background: #0f172a;
+	}
+	main {
+		color: #f11827;
+	}
+	.dark main {
+		color: #f1f5f9;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
 	header {
 		position: sticky;
 		top: 0;
 		display: flex;
 		align-items: center;
 		gap: 2rem;
-		background: var(--header-bg);
+		background: white;
 		box-shadow: 3px 3px 3px -1px rgb(74 73 74 / 0.5);
 		height: var(--header-height);
 		padding: 0 1rem;
@@ -243,10 +286,12 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			color: #5b2c6f;
 			margin: 0;
 		}
+
 		nav.main-nav > ul {
+			--nav-text-color: #2c2e33;
 			display: flex;
 			align-items: center;
-			gap: calc(var(--spacing) * 1);
+			gap: 1.5rem;
 			list-style: none;
 			margin: 0;
 			padding-inline: 0.5rem;
@@ -258,6 +303,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 				gap: 0.25rem;
 				border: none;
 				background: none;
+				color: var(--nav-text-color);
 				cursor: pointer;
 				font-size: 1rem;
 				font-weight: bold;
@@ -267,8 +313,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 
 				&:focus,
 				&:hover {
-					background: var(--dim);
-					color: var(--tx-inverted);
+					background: lch(from var(--nav-text-color) 95 c h);
 				}
 			}
 
@@ -276,13 +321,6 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 				transform: rotate(180deg);
 			}
 		}
-	}
-
-	header [popover] {
-		max-width: 100%;
-		border-radius: 0;
-		border: none;
-		background-color: --alpha(var(--bg) / 0.88);
 	}
 
 	/* Curtain animation for popovers */
@@ -316,18 +354,38 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 	}
 
 	header nav.main-nav [popover] > ul.flex > li > a[href] {
-		color: var(--tx);
+		color: #3c6378;
 		font-weight: bold;
 		display: block;
 		margin-bottom: 0.75rem;
 	}
 
+	/* Dark mode */
+	.dark header {
+		background: #1e2937;
+		box-shadow: 3px 3px 3px -1px rgb(15 23 42 / 0.6);
+	}
+	.dark nav.main-nav > ul {
+		--nav-text-color: #e2e8f0;
+	}
+	.dark header nav.main-nav [popover] {
+		background: #1e2937;
+		color: #e2e8f0;
+		box-shadow: 3px 3px 3px -1px rgb(15 23 42 / 0.6);
+	}
+	.dark header nav.main-nav [popover] > ul.flex > li > a[href] {
+		color: #7dd3fc;
+	}
+
 	/* Hamburger button container */
 	header label.mobile-menu-btn {
-		background: var(--bg);
+		background: white;
 		padding: 0.375rem;
 		border-radius: 0.375rem;
 		cursor: pointer;
+	}
+	.dark header label.mobile-menu-btn {
+		background: #334155;
 	}
 
 	/* Static hamburger (no animation) */
@@ -388,7 +446,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: var(--bg);
+			background: white;
 			z-index: 40;
 			padding: 2rem 1.5rem;
 			overflow-y: auto;
@@ -412,11 +470,5 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 			width: 100%;
 			text-align: left;
 		}
-	}
-
-	header [popovertarget]::after,
-	header [popovertarget]::before {
-		content: unset;
-		padding-inline: unset;
 	}
 </style>

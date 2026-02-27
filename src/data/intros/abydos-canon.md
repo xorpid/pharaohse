@@ -23,7 +23,7 @@
 
 <p>Then a symmetrical list of cartouches, consisting of three rows of 38 cartouches. The names of ancestral kings occupy the first two rows, for a total of 76 kings. Each cartouche of a is preceded by “for king...” and followed by a seated king determinative. Importantly, above the names of the kings, a text runs the entire length of the 38 columns, which is the beginning offering formula for the deceased kings, read from the scroll by Prince Ramesses:</p>
 
-<blockquote>Making “an Offering which the king gives” (for) Ptah-Sokar-Osiris, Lord of the Shetayet-shrine, residing in the Temple of Menmaatra. Laying out offerings for the Dual Kings, by the Dual King, Lord of the Two Lands, Menmaatra, Son of Ra, Seti-Merenptah: a 1000 of bread, a 1000 of beer, a 1000 of oxen, a 1000 of fowl, a 1000 of incense, a 1000 of unguent, a 1000 of fine linen and cloth, a 1000 of wine, a 1000 of sacred offerings, by gift of King Menmaatra.<button popovertarget="pop01">1</button></blockquote>
+<blockquote>Making “an Offering which the king gives” (for) Ptah-Sokar-Osiris, Lord of the Shetayet-shrine, residing in the Temple of Menmaatra. Laying out offerings for the Dual Kings, by the Dual King, Lord of the Two Lands, Menmaatra, Son of Ra, Seti-Merenptah: a 1000 of bread, a 1000 of beer, a 1000 of oxen, a 1000 of fowl, a 1000 of incense, a 1000 of unguent, a 1000 of fine linen and cloth, a 1000 of wine, a 1000 of sacred offerings, by gift of King Menmaatra.<span class="footnote" data-note="Kitchen, Kenneth A. 1993. <i>RITA: Translations. Volume I.</i>, 152ff."></span></blockquote>
 
 <p>Below the ancestral kings, a third row, the Throne and Birth names of Seti I alternate, with 19 of each. These are preceded by the “By gift of ...” and then alternates between “King Menmaatra” followed by a seated king wearing the white crown of Upper Egypt, and “Son of Ra, Seti-Merenptah” followed by a seated king wearing the red crown of Lower Egypt.
 This part concludes the recitation by Ramesses for each king. This would make the repeating offering recitation for each of the 76 kings:</p>
@@ -32,5 +32,4 @@ This part concludes the recitation by Ramesses for each king. This would make th
 
 <p><i>The Abydos Canon</i> should not to be confused with the Abydos Table, or Tablet, which is a <a href="/kinglists/minor#abydos">king list of Ramesses II</a> discovered at the remains of his nearby temple, which imitated his father's king list.</p>
 
-<div id="pop01" popover><p>1</p>Kitchen, Kenneth A. 1993. <i>RITA: Translations. Volume I.</i>, 152ff.</div>
 <h2 class="mt-20 mb-10">Names in the king list</h2>

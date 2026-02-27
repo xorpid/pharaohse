@@ -19,6 +19,7 @@
 	--content-size: 60rem;
 	--content-padding-inline: clamp(1.125rem, 2.2vw + 0.52rem, 2.5rem);
 	--shadow-3xl: 0 25px 25px rgba(0, 0, 0, 0.75);
+	--footnote-size: calc(var(--fontsize) * 0.5);
 
 	--text-h1: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
 	--text-h2: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
@@ -42,10 +43,10 @@
 	--bg-lit: --alpha(var(--color-stone-50) / 15%);
 	/* 	--bg-light: var(--color-stone-50);--bg: var(--color-stone-200);--bg-dark: var(--color-stone-300);--tx: var(--color-stone-800);--dim: var(--color-stone-600); */
 	--bright: var(--color-stone-950);
-	--link: var(--color-red-700);
+	--link: var(--color-red-800);
 	--link-hover: var(--color-red-900);
-	--link-visited: var(--color-pink-900);
-	--link-underline: var(--color-red-600);
+	--link-visited: var(--color-red-950);
+	--link-underline: var(--color-black);
 	--primary: var(--color-orange-900);
 	--secondary: var(--color-rose-800);
 	--highlight: var(--color-orange-950);
@@ -54,10 +55,12 @@
 	--transliteration: var(--color-blue-900);
 	--greek: var(--color-fuchsia-900);
 	--armenian: var(--color-yellow-800);
-	--popover: var(--color-red-700);
+	--popover: var(--color-red-800);
 	--summ: var(--color-yellow-200);
 	--head: var(--color-blue-200);
 	--sect: var(--color-emerald-300);
+
+	--header-bg: var(--color-white);
 
 	--glow: #565757;
 
@@ -70,15 +73,19 @@
 	--bg-light: oklch(100% 0 264);
 
 	--tx: oklch(0.15 0 88);
+	--tx-inverted: oklch(0.85 0 88);
 	--dim: oklch(0.4 0 88);
 	/* --highlight: oklch(1 0 88); */
 	--border: oklch(0.6 0 88);
 	--border-muted: oklch(0.9 0 88);
+	--border-strong: oklch(0.95 0 88);
 	--hoveritem: var(--color-stone-100);
 
 	--shadow-s: inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
 	--shadow-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
 	--shadow-l: inset 0 1px 2px #ffffff70, 0 4px 6px #00000030, 0 6px 10px #00000015;
+
+	--backdrop: oklch(0% 0 0 / 0.5);
 }
 .dark {
 	--bg-lit: --alpha(var(--color-neutral-700) / 15%);
@@ -87,12 +94,11 @@
 	--link: var(--color-amber-400);
 	--link-hover: var(--color-amber-200);
 	--link-visited: var(--color-amber-100);
-	--link-underline: var(--color-orange-600);
+	--link-underline: var(--color-white);
 	--primary: var(--color-orange-200);
 	--secondary: var(--color-yellow-200);
 	--highlight: var(--color-yellow-400);
-	--border: var(--color-neutral-700);
-	--border-muted: var(--color-neutral-800);
+
 	--transliteration: var(--color-orange-300);
 	--greek: var(--color-emerald-200);
 	--armenian: var(--color-yellow-400);
@@ -100,6 +106,8 @@
 	--summ: var(--color-yellow-800);
 	--head: var(--color-blue-900);
 	--sect: var(--color-emerald-900);
+
+	--header-bg: var(--color-black);
 	--glow: #c8c845;
 
 	--bg-dark: oklch(0.15 0 88);
@@ -111,11 +119,15 @@
 	--bg-light: oklch(30% 0 264);
 
 	--tx: oklch(0.86 0 88);
+	--tx-inverted: oklch(0.15 0 88);
 	--dim: oklch(0.66 0 88);
 	/* --highlight: oklch(0.5 0 88); */
 	--border: oklch(0.4 0 88);
 	--border-muted: oklch(0.32 0 88);
+	--border-strong: oklch(0.45 0 88);
 	--hoveritem: var(--color-neutral-700);
+
+	--backdrop: oklch(0% 0 0 / 0.767);
 }
 
 /* @view-transition {
@@ -298,6 +310,9 @@
 		margin-inline: auto;
 	}
 
+	.small-caps {
+		font-variant: small-caps;
+	}
 	.card {
 		background: var(--bg-light);
 		border-radius: var(--radius-2xl);
@@ -545,21 +560,14 @@
 		cursor: pointer;
 		font-family: var(--font-sans);
 		vertical-align: super;
-		color: var(--popover);
 		border-radius: 0.25rem;
-		/* margin-inline: 0.25ch;
-		padding-inline: 0.25ch; */
-		font-size: var(--text-xs);
-		font-style: normal;
-		/* font-weight: 700; */
 		line-height: 1rem;
 		font-feature-settings: "zero" 0;
-		/* background-color: var(--bg-light); */
 	}
 	[popover]:popover-open,
 	[popover][data-visible] {
 		opacity: 1;
-		box-shadow: var(--shadow-3xl);
+		box-shadow: var(--shadow-s);
 		text-align: left;
 		pointer-events: auto;
 	}
@@ -570,20 +578,19 @@
 		width: fit-content;
 		max-width: clamp(20rem, 12.727rem + 36.36vw, 40rem);
 		height: fit-content;
-		padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3) calc(var(--spacing) * 4) calc(var(--spacing) * 3);
+		padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
 		background: var(--bg-light);
 		color: var(--tx);
-		border: solid 4px var(--border);
+		border: solid 2px var(--border-strong);
 		border-radius: 10px;
 		margin: auto;
-		font-size: 90%;
+		font-size: var(--text-sm);
 		inset: 0;
 		overflow: auto;
 		transform-origin: top center;
-		/* hidden by default, will fade when :popover-open becomes true */
 		opacity: 0;
 		pointer-events: none;
-		transition: opacity 3.8s ease-in;
+		/* transition: opacity 1.8s ease-in; */
 	}
 	[popover] p {
 		margin-block: 0 calc(var(--spacing) * 2);
@@ -592,7 +599,7 @@
 		font-size: var(--text-xl) !important;
 	}
 	[popover]::backdrop {
-		background: #00000080;
+		background: var(--backdrop);
 		pointer-events: none;
 	}
 	[popovertarget]:hover,
@@ -602,9 +609,17 @@
 		cursor: pointer;
 	}
 
+	.tooltip-position {
+		position-anchor: auto;
+		position-area: bottom right;
+		position-try-fallbacks: flip-block, flip-inline;
+	}
+
 	.footnote {
-		color: goldenrod;
-		padding-inline: 0.25ch;
+		color: var(--popover);
+		padding-inline: 0;
+		margin-inline: 0;
+		font-weight: var(--font-weight-semibold);
 	}
 	.footnot-number {
 		color: var(--primary);
@@ -613,68 +628,17 @@
 	.footnote::after,
 	[popovertarget]::after {
 		content: "]";
-		font-weight: 400;
-		font-size: 80%;
+		padding-inline: 0.1ch 0;
+		--footnote-size: 0.8rem;
+		font-size: var(--footnote-size);
 	}
 	.footnote::before,
 	[popovertarget]::before {
 		content: "[";
-		font-weight: 400;
-		font-size: 80%;
+		padding-inline: 0 0.1ch;
+		--footnote-size: 0.8rem;
+		font-size: var(--footnote-size);
 	}
-
-	/* Footnote styles */
-	/* 	span.footnote {
-		cursor: pointer;
-		user-select: none;
-		position: relative;
-	}
-
-	span.footnote sup.footnote-number {
-		font-size: 0.85em;
-		line-height: 0;
-		vertical-align: baseline;
-		position: relative;
-		top: -0.1em;
-		color: var(--link);
-		font-weight: 600;
-		text-decoration: none;
-		margin-left: 0.1em;
-	}
-
-	span.footnote:hover sup.footnote-number,
-	span.footnote:focus sup.footnote-number {
-		color: var(--link-hover);
-		text-decoration: underline;
-	}
- */
-	/* 	.footsote-popover {
-		max-width: min(90vw, 400px);
-		padding: 1rem;
-		background: var(--bg-light);
-		border: solid 4px var(--border);
-		border-radius: 10px;
-		box-shadow:
-			0 4px 6px -1px rgba(0, 0, 0, 0.1),
-			0 2px 4px -1px rgba(0, 0, 0, 0.06);
-		font-size: 0.875rem;
-		line-height: 1.5;
-		color: var(--tx);
-		z-index: 1000;
-	}
-
-	.dark .footnote-popover {
-		background: var(--bg-dark);
-		border-color: var(--dark-border);
-		box-shadow:
-			0 4px 6px -1px rgba(0, 0, 0, 0.3),
-			0 2px 4px -1px rgba(0, 0, 0, 0.2);
-	}
-
-	.footnote-popover::backdrop {
-		background: rgba(0, 0, 0, 0.1);
-	}
- */
 
 	.references-list .reference-item {
 		break-inside: avoid;
@@ -768,7 +732,89 @@
 		background-color: var(--hoveritem);
 		cursor: pointer;
 	}
+
+	.accordion {
+		max-width: 90%;
+		margin: 1em auto;
+	}
+
+	.accordion-input {
+		display: none; /* Hide the checkbox visually */
+	}
+
+	.accordion-label {
+		display: block;
+		cursor: pointer;
+		padding: var(--spacing) calc(var(--spacing) * 4);
+		background-color: --alpha(var(--bg-light) / 0.25);
+		font-weight: var(--font-weight-semibold);
+		border-radius: 6px;
+		user-select: none;
+		font-size: 1rem;
+		transition: background-color 0.3s;
+	}
+
+	.accordion-label:hover,
+	.accordion-label:focus {
+		background-color: --alpha(var(--bg-light) / 0.5);
+		outline: none;
+	}
+
+	.accordion-content {
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 1em;
+		background-color: var(--bg-light);
+		border-radius: 0 0 6px 6px;
+		transition:
+			max-height 0.35s ease,
+			padding 0.35s ease;
+		line-height: 1.4;
+	}
+
+	/* Show content when checked */
+	.accordion-input:checked ~ .accordion-content {
+		max-height: fit-content;
+		padding: 1em;
+	}
+
+	/* Plus/minus icon */
+	.accordion-label::after {
+		content: "+";
+		float: right;
+		font-weight: bold;
+		transition: transform 0.3s ease;
+		font-size: 1.3rem;
+		line-height: 1.4;
+	}
+
+	.accordion-input:checked + .accordion-label::after {
+		content: "-";
+	}
+
+	/* Responsive enhancements */
+	@media (max-width: 480px) {
+		.accordion-label {
+			font-size: 1rem;
+			padding: 0.75em 1em;
+		}
+
+		.accordion-content {
+			font-size: 0.95rem;
+			padding: 0 0.75em;
+		}
+
+		.accordion-input:checked ~ .accordion-content {
+			max-height: 400px;
+			padding: 0.75em 1em;
+		}
+
+		.accordion-label::after {
+			font-size: 1.2rem;
+		}
+	}
 }
+
 @media print {
 	*,
 	*::before,

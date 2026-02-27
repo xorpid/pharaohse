@@ -11,10 +11,21 @@ npx @astrojs/upgrade --yes; Remove-Item -Recurse -Force node_modules, package-lo
 “
 ”
 
-TODO
+&thinsp;
 
+
+<span class=\"footnote\" data-note=\"\"></span>
 
 <span class="footnote" data-note=""></span>
+
+<div class="accordion">
+	<input type="checkbox" id="fr1" class="accordion-input" />
+	<label for="fr1" class="accordion-label">Section 1 Title</label>
+	<div class="accordion-content">
+	</div>
+</div>
+
+
 
 <button popovertarget=\"pop\">1</button><div id=\"pop\" popover><p>1</p>Reference text</div>
 

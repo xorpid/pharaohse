@@ -12,8 +12,8 @@ alt: "Roman Pharaohs"
 ---
 
 <div class="dynruta float-right ml-4 mb-3 mt-4">
-	<div class="flex flex-col justify-center items-center [text-shadow:_0_1px_0_rgb(255_255_255_/_20%)]">
-		<div class="text-9xl font-bold [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">R</div>
+	<div class="flex flex-col justify-center items-center [text-shadow:0_1px_0_rgb(255_255_255/20%)]">
+		<div class="text-9xl font-bold [text-shadow:0_1px_0_rgb(255_255_255/40%)]">R</div>
 		<div>Roman Emperors</div>
 		<div>30 BC &mdash; 313 AD</div>
 		<div class="w-full flex justify-between"><a href="/dynasty/ptolemaic">Previous</a><a href="/dynasty/unplaced">Next</a></div>

@@ -1,158 +1,149 @@
 ---
+[//]: <> Triggered from /authors/[slug].astro
 ---
 
-<blockquote>
-	Since the periods of years of Egyptian history from Mestraim down to Nectanebo happen to be useful among those who are busied with researches into chronology, and since the chronologies taken from Manetho by ecclesiastical historians are set out with discrepancies concerning both the names and the amount of regnal years, and as to in whose reign Joseph was leader of Egypt and later Moses, who saw God, led the journey of Israel out of Egypt, I thought it necessary to select two of the most famous editions and set them out side-by-side. I mean the one by Africanus and the one of Eusebius, called son of Pamphilos. It is necessary and appropriate also to add Manetho’s report on Egypt, which seems to give a firmer historical foundation.<p class="text-right mb-0">Syncellus, c. 800 AD.</p>
-</blockquote>
+<p class="w-5/6 mx-auto p-8 my-20 border-4 head rounded">This is a reconstructed <a href="/authors/">Manetho's</a> “Aegyptiaca”, based on the information available to us. Although we will never be able to see the original text, the impressive work of palaeographers, Egyptologists and historians has shed much-needed light on many aspects of the surviving texts. This reconstruction is based primarily on Manetho's sources, Africanus and Eusebius, but the work of modern scholars is of course included where appropriate. <em>They did the actual legwork.</em><br><br>
+Comparision of the dynasties from <a href="/kinglists/africanus">Africanus</a> and <a href="/kinglists/eusebius"
+		>Eusebius</a
+	>, including the <i>Armenian translation</i>. Josephus and Jerome are also included where appropriate, as is relevant information from other ancient sources like Diodorus.</p>
 
-<h2 class="text-center">Book I</h2>
+> Since the periods of years of Egyptian history from Mestraim down to Nectanebo happen to be useful among those who are busied with researches into chronology, and since the chronologies taken from Manetho by ecclesiastical historians are set out with discrepancies concerning both the names and the amount of regnal years, and as to in whose reign Joseph was leader of Egypt and later Moses, who saw God, led the journey of Israel out of Egypt, I thought it necessary to select two of the most famous editions and set them out side-by-side. I mean the one by Africanus and the one of Eusebius, called son of Pamphilos. It is necessary and appropriate also to add Manetho’s report on Egypt, which seems to give a firmer historical foundation.<br><br>From the Egyptian records of Manetho, who wrote a three-volume work about the gods, demi-gods, spirits, and the mortal kings who ruled over the Egyptians, to the time of the Persian king Darius.<br><br><p class="text-right mb-0">Syncellus, c. 800 AD.</p>
 
-<h3 class="text-center pb-3">Mythological kings</h3>
+<h2 class="text-center pt-10">Book I</h2>
 
-<p class="text-justify" id="Fragment_1.1">
-	The first man (or god) in Egypt is Hephaestus,1</a> who is also renowned among the Egyptians as the discoverer of fire. His son, Helios (the Sun), was succeeded by Sôsis; then follow, in turn, Cronos, Osiris, Typhon, brother of Osiris, and lastly Orus, son of Osiris and Isis. These were the first to hold sway in Egypt. Thereafter, the kingship passed from one to another in unbroken succession down to Bydis (Bites) through 13,900 years.
+<h3 class="text-center pt-6 pb-3 text-xl font-serif small-caps">Dynasties of Gods, Demigods, and Spirits of the Dead.</h3>
+
+<p>
+	The first being among the Egyptians was Hephaestus,<span class="footnote" data-note="The Pre‑dynastic Period begins with a group of gods, 'consisting of the Great Ennead of Heliopolis in the form in which it was worshipped at Memphis; (T. E. Peet, Cambridge Ancient History, I p250). In the Turin King List (<a href='/kinglists/turin/column-1#12'>Column 1.12-1.20</a>) the Gods are in the order: [Ptah, Ra, Shu], Geb, Osiris, Set, Horus, Thoth, Ma’at, Har[oeris]..."></span> who discovered fire for them. He was succeeded by the Sun (Helios), who was succeeded by Sôsis; then follow, in turn, Cronos, Osiris, Typhon, brother of Osiris, and lastly Horus, son of Osiris and Isis. These were the first rulers of the Egyptians. Thereafter, the kingship passed from one to another until the time of Bydis (Bites)<span class="footnote" data-note="There is no Egyptian king named Bydis (or Bites). It might be a corruption of the Egyptian word <tlit>bity</tlit> 'king'."></span> through 13&thinsp;900 years. This [was calculated] as lunar years of 30 days each, for what we now call a month was called a year in those days.<span class="footnote" data-note="There is no evidence that the Egyptian year was ever equal to a month. This is "></span> 
 </p>
 
-<p class="text-justify" id="Fragment_1.2">
-	After the Gods, Demigods reigned for 1255 years, and again another line of kings held sway for 1817 years: then came thirty more kings of Memphis, reigning for 1790
-	years; and then again ten kings of This, reigning for 350 years.
+<p>
+	After the Gods, Demigods reigned for 1&thinsp;255 years, then another line of kings ruled for 1&thinsp;817 years. Then came 30 kings of Memphis, reigning for 1&thinsp;790 years; and then again ten kings of Thinis, reigning for 350 years. Then, for 5&thinsp;813 years, followed the rule of Spirits and Demigods.
+	This amounts to a total of 11&thinsp;000 years<span class="footnote" data-note="The exact total of the items is 11&thinsp;025 years."></span> - lunar years, that is, months. 
 </p>
 
-<p class="text-justify" id="Fragment_1.3">
-	There followed the rule of Spirits of the Dead and Demigods, for 5813 years.
-</p>
+<p>The Egyptians calculate a total of 24&thinsp;900<span class="footnote" data-note="A rounded number for 24&thinsp;925"></span> lunar years&mdash;2&thinsp;206 solar years&mdash;to the [rule of the] gods, demi-gods, and spirits. If you compare this with Hebrew chronology you will get almost the same figure. For among the Hebrews Aegyptus is called Mizraim, and he lived a long time after the flood. Because it was after the flood that Noah's son Ham became the father of Aegyptus, or Mizraim; and at the time of the dispersal of the peoples, he went to Egypt, as its first inhabitant. According to the Hebrews 2&thinsp;242 years elapsed from Adam to the flood.</p>
 
-<p class="text-justify" id="Fragment_1.4">
-	The total [of the last five groups] amounts to 11,000 years. 
-</p>
+<p>Be this as it may, the Egyptians still boast of their great antiquity before the flood. They say that they had gods, demi-gods, and spirits [as rulers in remote antiquity]. If we convert to months the years calculated by the Hebrews, we get over 20&thinsp;000 lunar years. So when we count the "years" from the first man [Adam] until Mizraim, the Hebrew calculation is approximately the same [as the Egyptian]. Mizraim was first among the Egyptians, and the first dynasty is presumed to descend from him.</p>
 
-<div class="overflow-x-auto px-8 mx-auto">
-	<table class="tabular-nums">
-		<caption class="text-sm pt-3">Table 1: Predynastic rulers</caption>
-		<thead>
-			<tr class="border-b text-left">
-				<th>&numero;</th>
-				<th>Name</th>
-				<th>Reign</th>
-				<th>Egyptian equivalent</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class="border-y dark:border-neutral-700">
-				<td>1</td>
-				<td>Hephaistos</td>
-				<td>&ndash;</td>
-				<td>Ptah</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Helios</td>
-				<td>&ndash;</td>
-				<td>Ra</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Sôsis</td>
-				<td>&ndash;</td>
-				<td>Sopdet</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>Kronos</td>
-				<td>&ndash;</td>
-				<td>Geb</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>Oriris</td>
-				<td>&ndash;</td>
-				<td>Oriris</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>Typhon</td>
-				<td>&ndash;</td>
-				<td>Set</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>Horus</td>
-				<td>&ndash;</td>
-				<td>Horus</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>Demigods</td>
-				<td>1255</td>
-				<td>&ndash;</td>
-			</tr>
-			<tr>
-				<td>9</td>
-				<td>Another line of kings</td>
-				<td>1817</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>10</td>
-				<td>30 kings of Memphis</td>
-				<td>1790</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>11</td>
-				<td>10 kings of This</td>
-				<td>350</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>12</td>
-				<td>Spirits of the Dead</td>
-				<td>5813</td>
-				<td>Amun</td>
-			</tr>
-			<tr class="border-t-2 dark:border-neutral-600">
-				<td class="text-center pt-2" colspan="2"><b>TOTAL</b></td>
-				<td><b>11,000&#8288;<span class="footnote" data-note="The correct total is 11,025 years."></span></b></td>
-				<td></td>
-			</tr>
-		</tbody>
-	</table>
+<p>Despite this, if the number of years seems excessive, we must examine the reasons for it. It is conceivable that there were many kings ruling in Egypt simultaneously. For they say that [kings from] Thinis, Memphis, Sais, Ethiopia and elsewhere ruled. It may be that these dynasties did not rule in succession to each other, as is the norm, but in different places at the same time. As a consequence of this, the total number [of kings] is very large. Let us leave this issue, however, and move on to the details of Egyptian chronology.</p>
+
+<div class="accordion">
+	<input type="checkbox" id="fr1" class="accordion-input" />
+	<label for="fr1" class="accordion-label">Commentary and Notes</label>
+	<div class="accordion-content">
+		<div class="overflow-x-auto px-8 mx-auto">
+			<table class="tabular-nums">
+				<caption class="text-sm pt-3">Table 1: Predynastic rulers</caption>
+				<thead>
+					<tr class="border-b text-left">
+						<th>&numero;</th>
+						<th>Name</th>
+						<th>Reign</th>
+						<th>Egyptian equivalent</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="border-y dark:border-neutral-700">
+						<td>1</td>
+						<td>Hephaistos</td>
+						<td>&ndash;</td>
+						<td>Ptah</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Helios</td>
+						<td>&ndash;</td>
+						<td>Ra</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Sôsis</td>
+						<td>&ndash;</td>
+						<td>Shu</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Kronos</td>
+						<td>&ndash;</td>
+						<td>Geb</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Oriris</td>
+						<td>&ndash;</td>
+						<td>Oriris</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Typhon</td>
+						<td>&ndash;</td>
+						<td>Set</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Horus</td>
+						<td>&ndash;</td>
+						<td>Horus</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Demigods</td>
+						<td>1255</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Another line of kings</td>
+						<td>1&thinsp;817</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>30 kings of Memphis</td>
+						<td>1&thinsp;790</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>10 kings of This</td>
+						<td>350</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>Spirits of the Dead</td>
+						<td>5&thinsp;813</td>
+						<td>Amun</td>
+					</tr>
+					<tr class="border-t-2 dark:border-neutral-600">
+						<td class="text-center pt-2" colspan="2"><b>TOTAL</b></td>
+						<td><b>11&thinsp;000&#8288;<span class="footnote" data-note="The correct total is 11&thinsp;025 years."></span></b></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="py-5">
+			The first column of the badly fragmented <a href="/kinglists/turin">Turin King List</a> contain seven of nine partial names of Gods: <i
+				>Geb, Osiris, Set, Horus, Thoth, Ma'at,</i
+			> and <i>Haroeris.</i> The partial total number of years reigned by the Gods is preserved as <i>x</i>7718 years, followed by a number of sacred
+			spirits. Then follows a second group of Gods, including Set, Thoth, and Horus. The mythological section of the king list concludes with two large
+			totals: 13&thinsp;420+<i>x</i> years, and 23&thinsp;200+<i>x</i> years.
+		</p>
+		<ul class="relative border-l border-stone-300 dark:border-neutral-700 w-full md:w-10/12 my-10">
+			<li class="mb-8 ml-4">
+				<div class="absolute w-3 h-3 bg-stone-300 rounded-full mt-1.5 -left-1.5 border border-stone-300 dark:border-neutral-800 dark:bg-neutral-700"></div>
+				<span class="text-lg font-light">Diodorus, <i>Bibliotheca Historica</i><small> (Diod. 1.44.1)</small></span>
+				<p class="pt-2 font-normal text-justify">
+				Some of them [the priests] told the story that at first gods and heroes ruled Egypt for a little less than 18&thinsp;000 years, the last of the gods to rule being Horus, the son of Isis; and mortals have been kings over their country, they say, for a little less than 5&thinsp;000 years down to the 180<sup>th</sup> Olympiad. The time when we visited Egypt the king was Ptolemy, who took the name the New Dionysus.<span class="footnote" data-note="That is, Ptolemy XII Neos Dionysos, commonly known as Auletes. The Olympiad narrows Diodorus visit to Egypt down to between 60 and 57 BC."></span>
+				</p>
+			</li>
+		</ul>
+	</div>
 </div>
 
-<p class="py-5">
-	The first column of the badly fragmented <a href="/ancient-egypt/kinglist/turin">Turin King List</a> contain seven of nine partial names of Gods: <i
-		>Geb, Osiris, Set, Horus, Thoth, Ma'at,</i
-	> and <i>Haroeris.</i> The partial total number of years reigned by the Gods is preserved as <i>x</i>7718 years, followed by a number of sacred
-	spirits. Then follows a second group of Gods, including Set, Thoth, and Horus. The mythological section of the king list concludes with two large
-	totals: 13420+<i>x</i> years, and 23200+<i>x</i> years.
-</p>
-
-<ul class="relative border-l border-stone-300 dark:border-neutral-700 w-full md:w-10/12 my-10">
-	<li class="mb-8 ml-4">
-		<div class="absolute w-3 h-3 bg-stone-300 rounded-full mt-1.5 -left-1.5 border border-stone-300 dark:border-neutral-800 dark:bg-neutral-700"></div>
-		<span class="text-lg font-semibold">Diodorus <small>(Diod. 1.44.1)</small></span>
-		<p class="pt-2 font-normal text-justify">
-			Some of them [the priests] give the story that at first gods and heroes ruled Egypt for a little less than 18,000 years, the last of the gods to rule being Horus, the son of Isis; and mortals have been kings over their country, they say, for a little less than 5,000 years down to the 180th Olympiad, the time when we visited Egypt and the king was Ptolemy, who took the name of The New Dionysus.<!--<a href="#" data-target="1">1</a> -->
-		</p>
-	</li>
-</ul>
-
-<h2 class="text-center pt-8 pb-5">Mortal kings</h2>
-<p>
-	Mortal kings are the historical rulers who ruled Egypt, while legendary or mythic kings are characters from folklore and mythology with symbolic
-	significance. Both types of kings play distinct roles in society and history, with one based on verifiable reality and the other on mythology and
-	legends.
-</p>
-<p>
-	Comparision of the dynasties of <a href="/ancient-egypt/kinglist/africanus">Africanus</a> and <a href="/ancient-egypt/kinglist/eusebius"
-		>Eusebius</a
-	>, including the <i>Armenian translation</i>. Josephus and Jerome are also included where appropriate. My comments or remarks are my attempt to
-	make sense of the clearly corrupted information provided by the ancients.
-</p>
-
-<hr class="h-px my-8 bg-stone-200 border-0 dark:bg-neutral-700" />
-
-<!---------------------------------------------------------------- -->
+<p>After the [period of] spirits and demi-gods, the First Dynasty appeared, consisting of 8 kings. The first and most noble of them was Menes. Beginning with him, we shall list the succession of kings from each generation.</p>
 
 <div id="dyn01" class="py-10">
 	<h2 class="shine text-center">Dynasty 1</h2>
@@ -369,7 +360,7 @@
 		</li>
 	</ul>
 	<div class="remarksbox">
-		<h3 class="text-center">Remarks</h3>
+		<h3 class="text-center">Commentary and Notes</h3>
 		<p>
 			The eight kings from the archaeological records of the First Dynasty align with Manetho and also with the Turin king list. The reigns of the
 			first four kings differ, while the last four are identical, suggesting corrupted information in one (or both?) of the epitomes used, unless
@@ -562,7 +553,7 @@
 		scarcity of evidence and information concerning this period is notably reflected by the divergent accounts found in various king lists.
 	</p>
 	<div class="remarksbox">
-		<h3 class="text-center">Remarks</h3>
+		<h3 class="text-center">Commentary and Notes</h3>
 		<p>
 			The nine kings are the same number as in the Turin king list, although the Abydos Canon only has six, while the Saqqara Canon has eight. The
 			individual reigns of Africanus add up to 302 years, while Eusebius’ total is 297. Interestingly, Africanus and Eusebius both summarise the
@@ -737,7 +728,7 @@
 </ul>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Eusebius only give details of two kings, noting that <i>“The remaining six kings achieved nothing worthy of mention”</i>, and the Armenian
 		version give no total for the first three dynasties. The nine kings of Manetho’s Third Dynasty does not agree with the archaeological record,
@@ -884,8 +875,8 @@
 			<tr class="border-b-2 border-zinc-700 dark:border-neutral-700">
 				<td colspan="2" class="text-center">Total for dynasties 1-4</td>
 				<td colspan="3">
-					<e>Africanus</e> 1046 years.<br />
-					<e>Eusebius</e> 1195 years.<br />
+					<e>Africanus</e> 1&thinsp;046 years.<br />
+					<e>Eusebius</e> 1&thinsp;195 years.<br />
 				</td>
 			</tr>
 		</tbody>
@@ -896,7 +887,7 @@
 </div>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The eight kings is the same number of kings present in the Turin king list, but the Abydos Canon only have six, while the Saqqara Canon gives
 		nine. This is a clear indication that the New Kingdom records of the first dynasties were corrupted, which would explain the confused records
@@ -904,8 +895,8 @@
 		years of MS A to 277, following MS B).
 	</p>
 	<p>
-		According to Africanus, the first four dynasties ruled for a total of 1046 years (253 + 302 + 214 + 277); however, the actual number for the
-		individual reigns is 1063 (263 + 302 + 214 + 284).
+		According to Africanus, the first four dynasties ruled for a total of 1&thinsp;046 years (253 + 302 + 214 + 277); however, the actual number for the
+		individual reigns is 1&thinsp;063 (263 + 302 + 214 + 284).
 	</p>
 </div>
 
@@ -1046,8 +1037,8 @@
 			<tr class="border-b border-dashed border-zinc-700 dark:border-neutral-700">
 				<td colspan="2" class="text-center">Total for dynasties 1-5</td>
 				<td colspan="2">
-					<e>Africanus</e> 1294 years.<br />
-					<e>Eusebius</e> 1295 years.<br />
+					<e>Africanus</e> 1&thinsp;294 years.<br />
+					<e>Eusebius</e> 1&thinsp;295 years.<br />
 				</td>
 			</tr>
 		</tbody>
@@ -1058,7 +1049,7 @@
 </div>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Eusebius’ fifth dynasty kings actually belong to the sixth, and Eusebius simply added 100 years for this dynasty in the total with the
 		previous dynasties. This suggests that the epitomist misread, misunderstood, or accidentally skipped to the subsequent dynasty while copying
@@ -1067,8 +1058,8 @@
 	<p>
 		The summation have 8 kings ruling for 248 years, however, this is contradicted by listing 9 kings – the same number of kings present in Turin
 		king list. The <i>Abydos-</i> and <i>Saqqara- canons</i> each contain 8 kings, albeit with differing names. The reign total sum amount to 218 years,
-		not 248 as stated. According to Africanus, the total sum for the kings of the First through Fifth dynasties amount to 1294 years (1046+248), however
-		the correct sum is 1281 (1063+218).
+		not 248 as stated. According to Africanus, the total sum for the kings of the First through Fifth dynasties amount to 1&thinsp;294 years (1&thinsp;046+248), however
+		the correct sum is 1&thinsp;281 (1&thinsp;063+218).
 	</p>
 	<p>These differences is a clear indication that even the New Kingdom sources were corrupted.</p>
 </div>
@@ -1173,8 +1164,8 @@
 		<tr class="border-b-2 border-zinc-700 dark:border-neutral-700">
 			<td colspan="2" class="text-center">Total for dynasties 1-6</td>
 			<td colspan="2">
-				<e>Africanus</e> 1497 years.<br />
-				<e>Eusebius</e> 1498 years.<br />
+				<e>Africanus</e> 1&thinsp;497 years.<br />
+				<e>Eusebius</e> 1&thinsp;498 years.<br />
 			</td>
 		</tr>
 	</tbody>
@@ -1189,7 +1180,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The sum of the individual reigns is 197, however, Phiops <i
 			>“whose reign began at the age of 6, ruled continuously up to his hundredth year”,</i
@@ -1198,8 +1189,8 @@
 		have 4. This further reinforce that the New Kingdom records were corrupted, or at the very least, incomplete.
 	</p>
 	<p>
-		According to Africanus, the total sum for the kings of the First through Sixth dynasties amount to 1497 years (1294+203), however the correct
-		sum is 1478 (1281+197). The summation for the same six dynasties in the Turin king list give a total of 955 years, and only 13 kings from Teti
+		According to Africanus, the total sum for the kings of the First through Sixth dynasties amount to 1&thinsp;497 years (1&thinsp;294+203), however the correct
+		sum is 1&thinsp;478 (1&thinsp;281+197). The summation for the same six dynasties in the Turin king list give a total of 955 years, and only 13 kings from Teti
 		to the Ninth Dynasty kings.
 	</p>
 	<p>
@@ -1240,7 +1231,7 @@
 </div>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The huge number of kings and dynasties for the First Intermediate Period suggest that a redactor of an Epitome misunderstood and distorted the
 		summation(s) for the rival kings of Memphis and Herakleopolis that followed the Sixth Dynasty. The scarce archaeological record seems to only
@@ -1265,16 +1256,16 @@
 <p class="text-center">No names, reigns, or other details about the kings.</p>
 
 <p class="text-center py-5">
-	<e>Africanus</e> Total for dynasties 1-8: 1639 years.<br />
-	<e>Eusebius</e> Total for dynasties 1-8: 1598 years.<br />
+	<e>Africanus</e> Total for dynasties 1-8: 1&thinsp;639 years.<br />
+	<e>Eusebius</e> Total for dynasties 1-8: 1&thinsp;598 years.<br />
 </p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
-		The preserved summation “together with the aforementioned years (1294), there are 1639 years for these eight dynasties” is incorrectly
-		calculated. The erroneous sum of Africanus for those eight dynasties comes to 1643 (1497+146), curiously 4 years more than the preserved
-		numbers, and ignores the Seventh Dynasty completely. Furthermore, the correct sum for the first eight dynasties come to 1630 (1484+146), more
+		The preserved summation “together with the aforementioned years (1&thinsp;294), there are 1&thinsp;639 years for these eight dynasties” is incorrectly
+		calculated. The erroneous sum of Africanus for those eight dynasties comes to 1&thinsp;643 (1&thinsp;497+146), curiously 4 years more than the preserved
+		numbers, and ignores the Seventh Dynasty completely. Furthermore, the correct sum for the first eight dynasties come to 1&thinsp;630 (1&thinsp;484+146), more
 		evidence of distorted records. Like the other summations for the FIP, the 27 kings recorded in the heading for this dynasty is probably
 		corrupted too.
 	</p>
@@ -1320,7 +1311,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The fact that two Herakleopolitan dynasties only contain the name of one king suggests a lacuna. There was probably some indication that the
 		records had been corrupted or lost, which the epitomists mistook for another dynasty. The difference in the number of kings and years between
@@ -1343,7 +1334,7 @@
 <p class="c py-5">No names, reigns, or other details about the kings.</p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		It seems likely that the epitomist(s) misunderstood the summation for the Herakleopolitan dynasty, and mistook it for a separate dynasty.
 		Africanus give 19 + 19 kings for the two dynasties, while Eusebius give 4 + 19 kings. The number of years also differ, and It stands to reason
@@ -1367,7 +1358,7 @@
 <p class="c py-5">No names, reigns, or other details about the kings.</p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The reason why this dynasty is stated to have 16 kings is unknown, possibly due to corrupted records, or incorrect copying of the original.
 		Note that Amenemhat also features the number 16 below. It is likely that the original records for the entire First Intermediate Period were
@@ -1417,22 +1408,22 @@
 
 <div class="c py-5">
 	<p>
-		<e>Africanus</e> Total for the reigns of 192 kings, 2300 years 70 days.<br />
-		<e>Eusebius</e> Total for the reigns of 192 kings, 2300 years 79 days.<br />
-		<e>Armenian</e> Total for the reigns of 192 kings, 2300 years.
+		<e>Africanus</e> Total for the reigns of 192 kings, 2&thinsp;300 years 70 days.<br />
+		<e>Eusebius</e> Total for the reigns of 192 kings, 2&thinsp;300 years 79 days.<br />
+		<e>Armenian</e> Total for the reigns of 192 kings, 2&thinsp;300 years.
 	</p>
 </div>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Sixteen kings ruling 43 years is clearly another error by the redactor of the epitome. Yet another indication is that Ammenemes was king
 		Ammenemes was not included in the Eleventh or Twelfth dynasties, but rather as an intermediary between the two. Africanus presents a summation
 		of Manetho’s first book at this point, stating that <span class="highlight"
-			>a total of 192 kings had ruled the kingdom for 2300 years and 70 days.</span
+			>a total of 192 kings had ruled the kingdom for 2&thinsp;300 years and 70 days.</span
 		> These numbers are problematic. If we add the number of kings recorded in each dynasty heading, including the 70 kings of the Seventh Dynasty,
-		the total is 200. If we count the individual kings recorded, the total is 201. The total sum of years for the individual kings is 2259, while the
-		total from the dynasty headings is 2280.
+		the total is 200. If we count the individual kings recorded, the total is 201. The total sum of years for the individual kings is 2&thinsp;259, while the
+		total from the dynasty headings is 2&thinsp;280.
 	</p>
 	<div class="overflow-x-auto">
 		<table class="tbl w-full text-center text-sm">
@@ -1495,10 +1486,10 @@
 		<td>4</td>
 		<td>8</td>
 		<td>277</td>
-		<td>1046</td>
+		<td>1&thinsp;046</td>
 		<td>17</td>
 		<td>448</td>
-		<td>1195</td>
+		<td>1&thinsp;195</td>
 		<td>17</td>
 		<td>448</td>
 	</tr>
@@ -1506,10 +1497,10 @@
 		<td>5</td>
 		<td>8</td>
 		<td>248</td>
-		<td>1294</td>
+		<td>1&thinsp;294</td>
 		<td>31</td>
 		<td>100</td>
-		<td>1295</td>
+		<td>1&thinsp;295</td>
 		<td>31</td>
 		<td>—</td>
 	</tr>
@@ -1517,10 +1508,10 @@
 		<td>6</td>
 		<td>6</td>
 		<td>203</td>
-		<td>1497</td>
+		<td>1&thinsp;497</td>
 		<td>—</td>
 		<td>203</td>
-		<td>1498</td>
+		<td>1&thinsp;498</td>
 		<td>—</td>
 		<td>203</td>
 	</tr>
@@ -1539,10 +1530,10 @@
 		<td>8</td>
 		<td>27</td>
 		<td>146</td>
-		<td>1639</td>
+		<td>1&thinsp;639</td>
 		<td>5</td>
 		<td>100</td>
-		<td>1598</td>
+		<td>1&thinsp;598</td>
 		<td>5</td>
 		<td>100</td>
 	</tr>
@@ -1550,10 +1541,10 @@
 		<td>9</td>
 		<td>19</td>
 		<td>409</td>
-		<td><i>2048</i></td>
+		<td><i>2&thinsp;048</i></td>
 		<td>4</td>
 		<td>100</td>
-		<td><i>1698</i></td>
+		<td><i>1&thinsp;698</i></td>
 		<td>4</td>
 		<td>100</td>
 	</tr>
@@ -1561,10 +1552,10 @@
 		<td>10</td>
 		<td>19</td>
 		<td>185</td>
-		<td><i>2233</i></td>
+		<td><i>2&thinsp;233</i></td>
 		<td>19</td>
 		<td>185</td>
-		<td><i>1883</i></td>
+		<td><i>1&thinsp;883</i></td>
 		<td>19</td>
 		<td>185</td>
 	</tr>
@@ -1572,10 +1563,10 @@
 		<td>11</td>
 		<td>16</td>
 		<td>43</td>
-		<td><i>2276</i></td>
+		<td><i>2&thinsp;276</i></td>
 		<td>16</td>
 		<td>43</td>
-		<td><i>1926</i></td>
+		<td><i>1&thinsp;926</i></td>
 		<td>16</td>
 		<td>43</td>
 	</tr>
@@ -1583,10 +1574,10 @@
 		<td>—</td>
 		<td>1</td>
 		<td>16</td>
-		<td><i>2292</i></td>
+		<td><i>2&thinsp;292</i></td>
 		<td>1</td>
 		<td>16</td>
-		<td><i>1942</i></td>
+		<td><i>1&thinsp;942</i></td>
 		<td>1</td>
 		<td>16</td>
 	</tr>
@@ -1594,23 +1585,23 @@
 		<td>Tot</td>
 		<td>192</td>
 		<td>—</td>
-		<td>2300</td>
+		<td>2&thinsp;300</td>
 		<td>192</td>
 		<td>—</td>
-		<td>2300</td>
+		<td>2&thinsp;300</td>
 		<td>192</td>
-		<td>2300</td>
+		<td>2&thinsp;300</td>
 	</tr>
 	<tr class="border-t-4 border-stone-700 dark:border-neutral-700">
 		<td>Sum</td>
 		<td>200</td>
-		<td>2292</td>
+		<td>2&thinsp;292</td>
 		<td></td>
 		<td>123</td>
-		<td>1942</td>
+		<td>1&thinsp;942</td>
 		<td></td>
 		<td>123</td>
-		<td>1922</td>
+		<td>1&thinsp;922</td>
 	</tr>
 </tbody>
 <tfoot>
@@ -1620,7 +1611,7 @@
 
 </div>
 <p>
-	According to modern Egyptology, some 90 kings reigned from the First through Eleventh dynasties (approximately 1100 years). The figures by
+	According to modern Egyptology, some 90 kings reigned from the First through Eleventh dynasties (approximately 1&thinsp;100 years). The figures by
 	Africanus for dynasties 7-10 are in all likelihood based on a misunderstanding of the text. It is clear that the Seventh Dynasty is a mistake.
 	The line of kings of Memphis continued rule past the Sixth Dynasty - this could be the 27 kings of Africanus’ Eighth Dynasty. According to
 	Africanus, the next two dynasties were Herakleopolitan, both with 19 kings. It seems probable that the redactor mistook the summation of the
@@ -1764,7 +1755,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		According to Africanus and Eusebius both, seven kings belong to Dynasty 12. While Africanus name all seven, Eusebius only name the first four.
 		This is a clear indication that the epitome used by Africanus was more complete. The summation of Eusebius also give a total of 245 years for
@@ -1792,7 +1783,7 @@
 <p class="c py-5">No names, reigns, or other details about the kings.</p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The 453 years figure for this dynasty is clearly excessive, probably a simple copying error, and should probably be emended down to 153. The
 		figures given for the Second Intermediate Period as a whole were likely due to a redactor not understanding the text. According to Africanus,
@@ -1829,7 +1820,7 @@
 <p class="c py-5">No names, reigns, or other details about the kings.</p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The figures for this dynasty by Eusebius are identical, though the Armenian version of Eusebius give 484 years for this dynasty, indicating
 		some sort of corruption or perhaps just a simple copying error. The lower figure seems more plausible.
@@ -1933,7 +1924,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Eusebius place these kings in his 17th dynasty. The the two dynasties were likely interchanged. Eusebius’ 17th dynasty: <i
 			>foreign kings from Phoenicia who seized Memphis</i
@@ -1959,7 +1950,7 @@
 <p class="c py-5">No names, reigns, or other details about the kings.</p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The large figure of years points to a misunderstanding of a summation by the copyist of the epitome, creating an extraneous dynasty in the
 		process.
@@ -2094,7 +2085,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		According to Josephus, the Hyksos kings preceded the Eighteenth Dynasty kings. The redactor of the epitome misunderstood the text by creating
 		two dynasties yet combining them into one, transferring of an identical number of kings to both. Comparing the description of this dynasty by
@@ -2209,7 +2200,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		<!-- See Waddell p 99 !!!! --> Manetho’s epitomes definitely contained contradictory material, or at the very least a confusing narrative that
 		the epitomist did not fully comprehend. While Josephus presents Manetho’s Hyksos in detail, the Africanus and Eusebius provide a jumble of kings
@@ -2519,7 +2510,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		The redactor(s) of the Epitome did not understand that not only had this dynasty four kings named <i>Amenhotep</i>, but also four kings named <i
 			>Thutmose</i
@@ -2834,16 +2825,16 @@
 </table>
 
 <p class="pt-8">
-	<e>Africanus</e> In the above second book of Manetho, there is a total of 96 kings, ruling for 2121 years.<br />
-	<e>Eusebius</e> In the above second book of Manetho, there is a total of 92 kings, ruling for 1121 year<br />
-	<e>Armenian</e> In the Second Book of Manetho there is a total of 92 kings, ruling for 2121 years.<br />
+	<e>Africanus</e> In the above second book of Manetho, there is a total of 96 kings, ruling for 2&thinsp;121 years.<br />
+	<e>Eusebius</e> In the above second book of Manetho, there is a total of 92 kings, ruling for 1&thinsp;121 year<br />
+	<e>Armenian</e> In the Second Book of Manetho there is a total of 92 kings, ruling for 2&thinsp;121 years.<br />
 </p>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
-		The confusion of the New Kingdom kings continues.<br />The sum of the individual dynasties of Africanus comes to 246 kings for 2221 years.<br
-		/>The sum of the individual dynasties of Eusebius comes to 171 kings for 1967 or 2272 years. Cf. Eus. 1.68.20, which has 2121 years.
+		The confusion of the New Kingdom kings continues.<br />The sum of the individual dynasties of Africanus comes to 246 kings for 2&thinsp;221 years.<br
+		/>The sum of the individual dynasties of Eusebius comes to 171 kings for 1&thinsp;967 or 2&thinsp;272 years. Cf. Eus. 1.68.20, which has 2&thinsp;121 years.
 	</p>
 </div>
 
@@ -2880,7 +2871,7 @@
 	<caption class="text-sm pt-3">New Kingdom archaeological records</caption>
 	<tr><th class="text-center">Dynasty</th><th>Ruler</th><th>Low</th><th>High</th></tr>
 	<tr>
-		<td class="text-center w-[100px] border-r border-smoke-700 dark:border-neutral-700 text-2xl" rowspan="15">18</td>
+		<td class="text-center w-25 border-r border-smoke-700 dark:border-neutral-700 text-2xl" rowspan="15">18</td>
 		<td>Ahmose I</td>
 		<td>22</td>
 		<td>25</td>
@@ -3077,7 +3068,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Draft. To be reworked.</p>
 	<p>
 		<!-- [Tetley p443] --> What appears here is that the total number of years from Manetho’s 18th and 19th Dynasties cover the same number of years
@@ -3216,7 +3207,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Incomplete. To be reworked/reviewed.</p>
 </div>
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
@@ -3310,7 +3301,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Incomplete. To be reworked/reviewed.</p>
 </div>
 <img src="/svg/fl.svg" class="fl" alt="End of section" />
@@ -3406,7 +3397,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Africanus notes that <i>“the first Olympiad festival was celebrated in the reign of Petubates”</i>, while it is absent from Eusebius. All
 		three versions point out that <i>“Osorthon was called Herkules by the Egyptians.”</i>
@@ -3471,7 +3462,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Incomplete. To be reworked/reviewed.</p>
 </div>
 
@@ -3550,7 +3541,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		All three versions agree that Sabakon took his predecessor Bakenrenef captive, and had him burned alive. Modern Egyptology argues that
 		Sebikhos preceded Sabakon, not the other way around.
@@ -3730,7 +3721,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		Eusebius has a different first king to Africanus, while Africanus's last king is different to Eusebius's. Otherwise the other kings match
 		well.
@@ -3888,7 +3879,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Strangely, Eusebius adds the Magi as a 7-month king, while Africanus adds Artabanos, also a 7-month king.</p>
 </div>
 
@@ -3933,7 +3924,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Incomplete. To be reworked/reviewed.</p>
 </div>
 
@@ -4041,7 +4032,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Eusebius includes five kings, although only four are mentioned in the summary.</p>
 </div>
 
@@ -4120,7 +4111,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>Last indigenous kings.</p>
 </div>
 
@@ -4189,7 +4180,7 @@
 		</tr>
 		<tr class="border-b-2 border-zinc-700 dark:border-neutral-700">
 			<td colspan="4">
-				<e>Africanus</e> Total of years in Book III., 1050 years.<sup>2</sup> Here ends the <i>History</i> of Manetho.<br />
+				<e>Africanus</e> Total of years in Book III., 1&thinsp;050 years.<sup>2</sup> Here ends the <i>History</i> of Manetho.<br />
 				<e>Eusebius</e> These are the contents of the Third Book of Manetho. Here ends the <i>History</i> of Manetho.<br />
 				<e>Armenian</e> These are the contents of the Third Book of Manetho.<br />
 			</td>
@@ -4206,7 +4197,7 @@
 </table>
 
 <div class="remarksbox">
-	<h3 class="text-center">Remarks</h3>
+	<h3 class="text-center">Commentary and Notes</h3>
 	<p>
 		This second Persian domination lasted only a handful of years and was ended by the bloodless conquest of Egypt by Alexander the Great in 331
 		BC, who killed Darius.
@@ -4268,7 +4259,9 @@
 	cite {
 		text-align: left !important;
 	}
-
+	sup:not(.footnote-number) {
+		vertical-align: super;
+	}
 	.man tfoot p + p {
 		--size: 0.1rem;
 	}

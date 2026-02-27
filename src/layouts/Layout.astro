@@ -25,7 +25,7 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 <html lang="en">
 	<Head title={resolvedTitle} meta1={resolvedMeta1} meta2={resolvedMeta2} bild={resolvedBild} frontmatter={frontmatter} />
 	<!-- <body class="bg-stone-200 dark:bg-neutral-900 text-stone-800 dark:text-neutral-200 transition-colors"> -->
-	<body>
+	<body id="content">
 		<Header />
 		<div class="max-w-4xl mx-auto px-4">
 			<h1 set:html={resolvedTitle} />
@@ -37,11 +37,11 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 					<div id="references"><h2 class="py-3">References</h2></div>
 					<div class="py-10 my-5 print:hidden" aria-hidden="true">
 						<img
-							src="/svg/thoth.svg"
+							src="/svg/eoh.svg"
 							loading="lazy"
 							class="mx-auto h-28 opacity-50 transition duration-300 hover:opacity-100"
-							alt="Thoth"
-							title="You have reached the end of the page. This is Thoth, the wise God of writing and hieroglyphs."
+							alt="Eye of Horus"
+							title="You have reached the end of the page."
 							srcset=""
 						/>
 						<p class="text-center uppercase font-sans text-xs pt-3">
@@ -63,170 +63,32 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 </html>
 
 <script>
-	// Handle existing popovertarget pattern (for backward compatibility)
-	document.querySelectorAll("[popovertarget]").forEach((trigger) => {
-		const targetId = trigger.getAttribute("popovertarget");
-		if (!targetId) return;
-		const popover = document.getElementById(targetId);
-
-		if (!popover) return;
-
-		let timeout: ReturnType<typeof setTimeout> | undefined;
-
-		trigger.addEventListener("mouseenter", () => {
-			timeout = setTimeout(() => popover.showPopover(), 50);
-		});
-
-		trigger.addEventListener("mouseleave", () => {
-			clearTimeout(timeout);
-			popover.hidePopover();
-		});
-
-		// Optional: keep popover visible when hovering over it
-		popover.addEventListener("mouseenter", () => clearTimeout(timeout));
-		popover.addEventListener("mouseleave", () => popover.hidePopover());
-	});
-
-	// Handle new footnote system with data-note attribute
 	document.addEventListener("DOMContentLoaded", () => {
 		const referencesContainer = document.getElementById("references");
 
-		// Find all footnote spans with data-note attribute
-		const footnoteSpans = document.querySelectorAll<HTMLElement>("span.footnote[data-note]");
+		// ✅ MAIN CONTENT ROOT (scopes everything)
+		const root = document.getElementById("content") || document;
 
-		if (footnoteSpans.length === 0) {
-			// If no footnotes, continue with existing popovertarget logic
-			if (referencesContainer) {
-				// Create or reuse an ordered list for references
-				let ol = referencesContainer.querySelector("ol.references-list");
-				if (!ol) {
-					ol = document.createElement("ol");
-					ol.className = "references-list list-decimal ml-6 my-0 columns sm:columns-2 gap-8 break-inside-avoid align-top text-xs leading-relaxed";
-					referencesContainer.appendChild(ol);
-				} else {
-					ol.innerHTML = "";
-				}
+		// ✅ Helper: exclude marked areas = add data-no-references to a html-tag
+		const isExcluded = (el: Element) => el.closest("[data-no-references]") !== null;
 
-				const added = new Set();
-				document.querySelectorAll("[popovertarget]").forEach((trigger) => {
-					const targetId = trigger.getAttribute("popovertarget");
-					if (!targetId || added.has(targetId)) return;
-					const popover = document.getElementById(targetId);
-					if (!popover) return;
+		/* =========================================================
+	   FOOTNOTE MODE
+	========================================================= */
 
-					// Parse popover content into a temporary element so we can remove a leading numeric <p>
-					const temp = document.createElement("div");
-					temp.innerHTML = popover.innerHTML || "";
+		const footnoteSpans = root.querySelectorAll("span.footnote[data-note]");
 
-					const firstEl = temp.firstElementChild;
-					if (firstEl && firstEl.tagName.toLowerCase() === "p") {
-						const txt = (firstEl.textContent || "").trim();
-						if (/^\d+$/.test(txt)) {
-							// remove that numeric paragraph
-							temp.removeChild(firstEl);
-						}
-					}
+		const validFootnotes = Array.from(footnoteSpans).filter((span) => !isExcluded(span));
 
-					const li = document.createElement("li");
-					li.className = "reference-item mb-2";
-					li.id = `ref-${targetId}`;
-					li.innerHTML = temp.innerHTML.trim();
+		/* =========================================================
+	   FALLBACK: popovertarget references
+	========================================================= */
 
-					ol.appendChild(li);
-					added.add(targetId);
-				});
+		if (validFootnotes.length === 0) {
+			if (!referencesContainer) return;
 
-				// If nothing was added, remove the empty list and hide the references container
-				if (added.size === 0) {
-					if (ol && ol.parentNode) ol.remove();
-					referencesContainer.style.display = "none";
-				} else {
-					// ensure visible when there are references
-					referencesContainer.style.display = "";
-				}
-			}
-			return;
-		}
-
-		// Process footnotes
-		let footnoteCounter = 0;
-		const footnoteMap = new Map<string, { number: number; note: string; span: HTMLElement; popover: HTMLElement }>();
-
-		footnoteSpans.forEach((span) => {
-			const note = span.getAttribute("data-note");
-			if (!note) return;
-
-			footnoteCounter++;
-			const footnoteId = span.getAttribute("data-footnote-id") || `footnote-${footnoteCounter}`;
-			const popoverId = `popover-${footnoteId}`;
-
-			// Create popover element if it doesn't exist
-			let popover = document.getElementById(popoverId) as HTMLElement;
-			if (!popover) {
-				popover = document.createElement("div");
-				popover.id = popoverId;
-				popover.setAttribute("popover", "manual");
-				popover.className = "footnote-popover";
-				popover.innerHTML = note;
-				// Append to body for proper popover positioning
-				document.body.appendChild(popover);
-			}
-
-			// Set up popover target
-			span.setAttribute("popovertarget", popoverId);
-
-			// Add ID to span for linking back from references
-			const spanId = `footnote-span-${footnoteId}`;
-			span.id = spanId;
-
-			// Find or create the sup element for the footnote number
-			let sup = span.querySelector("sup.footnote-number");
-			if (!sup) {
-				sup = document.createElement("sup");
-				sup.className = "footnote-number";
-				span.appendChild(sup);
-			}
-			sup.textContent = footnoteCounter.toString();
-
-			// Store footnote data
-			footnoteMap.set(footnoteId, {
-				number: footnoteCounter,
-				note: note,
-				span: span,
-				popover: popover,
-			});
-
-			// Set up hover behavior for popover
-			let timeout: ReturnType<typeof setTimeout> | undefined;
-
-			span.addEventListener("mouseenter", () => {
-				timeout = setTimeout(() => popover.showPopover(), 50);
-			});
-
-			span.addEventListener("mouseleave", () => {
-				clearTimeout(timeout);
-				popover.hidePopover();
-			});
-
-			// Keep popover visible when hovering over it
-			popover.addEventListener("mouseenter", () => clearTimeout(timeout));
-			popover.addEventListener("mouseleave", () => popover.hidePopover());
-
-			// Add click handler to toggle popover
-			span.addEventListener("click", (e) => {
-				e.preventDefault();
-				if (popover.matches(":popover-open")) {
-					popover.hidePopover();
-				} else {
-					popover.showPopover();
-				}
-			});
-		});
-
-		// Build references list
-		if (referencesContainer) {
-			// Create or reuse an ordered list for references
 			let ol = referencesContainer.querySelector("ol.references-list");
+
 			if (!ol) {
 				ol = document.createElement("ol");
 				ol.className = "references-list list-decimal ml-6 my-0 columns sm:columns-2 gap-8 break-inside-avoid align-top text-xs leading-relaxed";
@@ -235,31 +97,144 @@ const resolvedBild = frontmatter && frontmatter.image ? frontmatter.image : bild
 				ol.innerHTML = "";
 			}
 
-			// Add footnotes to references list in order of appearance
-			const sortedFootnotes = Array.from(footnoteMap.values()).sort((a, b) => a.number - b.number);
+			const added = new Set();
 
-			sortedFootnotes.forEach((footnote) => {
-				const li = document.createElement("li");
-				li.className = "reference-item mb-2";
-				li.id = `ref-${footnote.popover.id}`;
+			root.querySelectorAll("[popovertarget]").forEach((trigger) => {
+				if (isExcluded(trigger)) return;
 
-				// Set the content (allow HTML)
+				const targetId = trigger.getAttribute("popovertarget");
+				if (!targetId || added.has(targetId)) return;
+
+				const popover = document.getElementById(targetId);
+				if (!popover) return;
+
 				const temp = document.createElement("div");
-				temp.innerHTML = footnote.note;
-				// Append all children of temp to li
-				while (temp.firstChild) {
-					li.appendChild(temp.firstChild);
+				temp.innerHTML = popover.innerHTML || "";
+
+				const firstEl = temp.firstElementChild;
+				if (firstEl && firstEl.tagName.toLowerCase() === "p") {
+					const txt = (firstEl.textContent || "").trim();
+					if (/^\d+$/.test(txt)) temp.removeChild(firstEl);
 				}
 
+				const li = document.createElement("li");
+				li.className = "reference-item mb-2";
+				li.id = `ref-${targetId}`;
+				li.innerHTML = temp.innerHTML.trim();
+
 				ol.appendChild(li);
+				added.add(targetId);
 			});
 
-			// Show references section if there are footnotes
-			if (sortedFootnotes.length > 0) {
-				referencesContainer.style.display = "";
-			} else {
-				referencesContainer.style.display = "none";
-			}
+			referencesContainer.style.display = added.size === 0 ? "none" : "";
+
+			return;
 		}
+
+		/* =========================================================
+	   FOOTNOTE SYSTEM
+	========================================================= */
+
+		let footnoteCounter = 0;
+		const footnoteMap = new Map();
+
+		validFootnotes.forEach((span) => {
+			const note = span.getAttribute("data-note");
+			if (!note) return;
+
+			footnoteCounter++;
+
+			const footnoteId = span.getAttribute("data-footnote-id") || `footnote-${footnoteCounter}`;
+
+			const popoverId = `popover-${footnoteId}`;
+
+			let popover = document.getElementById(popoverId);
+
+			if (!popover) {
+				popover = document.createElement("div");
+				popover.id = popoverId;
+				popover.setAttribute("popover", "manual");
+				popover.className = "footnote-popover";
+				popover.innerHTML = note;
+				document.body.appendChild(popover);
+			}
+
+			span.setAttribute("popovertarget", popoverId);
+
+			const spanId = `footnote-span-${footnoteId}`;
+			span.id = spanId;
+
+			let sup = span.querySelector("sup.footnote-number");
+			if (!sup) {
+				sup = document.createElement("sup");
+				sup.className = "footnote-number";
+				span.appendChild(sup);
+			}
+
+			sup.textContent = footnoteCounter.toString();
+
+			footnoteMap.set(footnoteId, {
+				number: footnoteCounter,
+				note,
+				span,
+				popover,
+			});
+
+			const handleClickOutside = (e: MouseEvent) => {
+				if (!span.contains(e.target as Node) && !popover.contains(e.target as Node)) {
+					popover.hidePopover();
+					document.removeEventListener("click", handleClickOutside);
+				}
+			};
+
+			span.addEventListener("click", (e) => {
+				e.preventDefault();
+
+				if (popover.matches(":popover-open")) {
+					popover.hidePopover();
+					document.removeEventListener("click", handleClickOutside);
+				} else {
+					popover.showPopover();
+					setTimeout(() => {
+						document.addEventListener("click", handleClickOutside);
+					}, 0);
+				}
+			});
+		});
+
+		/* =========================================================
+	   BUILD REFERENCES LIST
+	========================================================= */
+
+		if (!referencesContainer) return;
+
+		let ol = referencesContainer.querySelector("ol.references-list");
+
+		if (!ol) {
+			ol = document.createElement("ol");
+			ol.className = "references-list list-decimal ml-6 my-0 columns sm:columns-2 gap-8 break-inside-avoid align-top text-xs leading-tight";
+			referencesContainer.appendChild(ol);
+		} else {
+			ol.innerHTML = "";
+		}
+
+		const sortedFootnotes = Array.from(footnoteMap.values()).sort((a, b) => a.number - b.number);
+
+		sortedFootnotes.forEach((footnote) => {
+			const li = document.createElement("li");
+			li.className = "reference-item mb-2";
+			li.id = `ref-${footnote.popover.id}`;
+
+			const temp = document.createElement("div");
+			temp.innerHTML = footnote.note;
+
+			while (temp.firstChild) {
+				li.appendChild(temp.firstChild);
+			}
+
+			ol.appendChild(li);
+		});
+
+		referencesContainer.style.display = sortedFootnotes.length > 0 ? "" : "none";
 	});
 </script>
