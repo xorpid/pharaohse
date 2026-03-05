@@ -12,4 +12,8 @@ export default defineConfig({
 	},
 	site: "https://pharaoh.se",
 	integrations: [sitemap()],
+	server: {
+		host: true, // This allows access from outside the VM
+		port: 4321, // ensure the port matches. **** Remove from LIVE *****
+	},
 });
