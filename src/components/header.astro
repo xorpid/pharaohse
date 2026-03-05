@@ -46,7 +46,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 					<div id="nav-pharaohs" popover>
 						<ul class="flex gap-12">
 							<li class="w-fit">
-								<a href="/pharaohs">Famous pharaohs</a>
+								<a href="/pharaohs" class="text-lg">Pharaohs</a>
 								<ul>
 									<li><a href="/pharaohs/Tutankhamun">Tutankhamun</a></li>
 									<li><a href="/pharaohs/Ramesses-II">Ramesses II</a></li>
@@ -59,7 +59,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 								</ul>
 							</li>
 							<li class="w-1/2 flex-1">
-								<a href="#">Dynasties</a>
+								<a href="/dynasties" class="text-lg">Dynasties</a>
 								<ul class="flex flex-row flex-wrap gap-x-4">
 									<li><a href="/dynasty/1">1</a></li><li><a href="/dynasty/2">2</a></li><li><a href="/dynasty/3">3</a></li><li>
 										<a href="/dynasty/4">4</a>
@@ -92,7 +92,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 								</ul>
 							</li>
 							<li class="w-fit">
-								<a href="#">Periods</a>
+								<a href="/periods" class="text-lg">Periods</a>
 								<ul>
 									<li><a href="/periods/archaic">Archaic</a></li>
 									<li><a href="/periods/old-kingdom">Old Kingdom</a></li>
@@ -119,7 +119,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 					<div id="nav-kinglists" popover>
 						<ul class="flex gap-12">
 							<li class="flex-1">
-								<a href="#">King lists</a>
+								<a href="/kinglists" class="text-lg">King lists</a>
 								<ul>
 									<li><a href="/kinglists/abydos-canon">Abydos Canon</a></li>
 									<li><a href="/kinglists/karnak-canon">Karnak Canon</a></li>
@@ -131,20 +131,20 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 								</ul>
 							</li>
 							<li class="flex-1">
-								<a href="#">Turin King List</a>
+								<span class="small-caps text-lg">turin king list</span>
 								<ul>
-									<li><a href="/kinglists/turin-contents">Contents</a></li>
-									<li><a href="/kinglists/turin">Columns</a></li>
-									<li><a href="/kinglists/turin-history">History</a></li>
-									<li><a href="/kinglists/turin-fragments">Fragments</a></li>
-									<li><a href="/kinglists/turin-recto">Recto</a></li>
-									<li><a href="/kinglists/turin-vorlage">Vorlage</a></li>
-									<li><a href="/kinglists/turin-gallery">Gallery</a></li>
+									<li><a href="/kinglists/turin">Overview</a></li>
+									<li><a href="/kinglists/turin-contents">Contents of the papyrus</a></li>
+									<li><a href="/kinglists/turin-history">History of the papyrus</a></li>
+									<li><a href="/kinglists/turin-fragments">The Fragments</a></li>
+									<li><a href="/kinglists/turin-recto">The Recto</a></li>
+									<li><a href="/kinglists/turin-vorlage">The Vorlage</a></li>
+									<li><a href="/kinglists/turin-gallery">Image Gallery</a></li>
 									<li><a href="/kinglists/turin/library">Library of PDFs</a></li>
 								</ul>
 							</li>
 							<li class="flex-1">
-								<a href="#">Classical authors</a>
+								<a href="/authors" class="text-lg">Classical authors</a>
 								<ul>
 									<li><a href="/authors/manetho">Manetho of Sebennytos</a></li>
 									<li><a href="/authors/africanus">Julius Africanus</a></li>
@@ -169,7 +169,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 					<div id="nav-articles" popover>
 						<ul class="flex gap-12">
 							<li class="flex-1">
-								<a href="#">Miscellaneous</a>
+								<a href="/articles">Articles</a>
 								<ul>
 									<li><a href="/articles/egyptology">Egyptology</a></li>
 									<li><a href="/articles/cartography">Cartography</a></li>
@@ -181,7 +181,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 								</ul>
 							</li>
 							<li class="flex-1">
-								<a href="#">Places and objects</a>
+								<span class="small-caps">places and objects</span>
 								<ul>
 									<li><a href="/articles/rosetta-stone">Rosetta Stone</a></li>
 									<li><a href="/articles/obelisks">Obelisks</a></li>
@@ -193,7 +193,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 								</ul>
 							</li>
 							<li class="flex-1">
-								<a href="#">References</a>
+								<span class="small-caps">references</span>
 								<ul>
 									<li><a href="/bibliography">Bibliography</a></li>
 									<li><a href="/articles/book-series">Important book series</a></li>
@@ -282,7 +282,7 @@ const isActive = (path: string) => (pathname.startsWith(path) ? "bg-gray-200 dar
 		max-width: 100%;
 		border-radius: 0;
 		border: none;
-		background-color: --alpha(var(--bg) / 0.88);
+		background-color: --alpha(var(--bg) / 0.95);
 	}
 
 	/* Curtain animation for popovers */
