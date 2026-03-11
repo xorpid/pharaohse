@@ -3,19 +3,19 @@
 	"type": "module",
 	"version": "1.0.3",
 	"scripts": {
-		"dev": "astro dev",
+		"dev": "astro dev --host",
 		"build": "astro build",
-		"preview": "astro preview",
+		"preview": "astro preview --host",
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.6",
-		"@astrojs/sitemap": "^3.7.0",
-		"@tailwindcss/vite": "^4.1.18",
-		"astro": "^5.17.1",
+		"@astrojs/check": "^0.9.7",
+		"@astrojs/sitemap": "^3.7.1",
+		"astro": "^6.0.2",
 		"typescript": "^5.9.3"
 	},
 	"devDependencies": {
-		"tailwindcss": "^4.1.18"
+		"@tailwindcss/vite": "^4.2.1",
+		"tailwindcss": "^4.2.1"
 	}
 }
