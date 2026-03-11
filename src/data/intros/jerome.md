@@ -7,7 +7,7 @@
 		<p>
 			<i>The Chronicle</i> was written around 380 in Constantinople, and is an incomplete Latin translation of the <i>chonological tables</i> of second
 			book of <a href="/authors/eusebius">Eusebius</a>’ Chronicon, which was written in Greek. Being written in Latin, it made the
-			chronology of the ancient world accessible to the Roman world, which helped it become popular and over the centuries many copies were made while the original Greek text was forgotten. The purpose of the work as a whole was partly to make clear the greater antiquity of Hebrew history relative to most others. Jerome's Latin translation proved popular and became the widely accepted chronographic standard. Many later authors took upon themselves to add their own updates of world history to the chronicle.
+			chronology of the ancient world accessible to the Roman world, which helped it become popular and over the centuries many copies were made while the original Greek text was forgotten. The purpose of the work as a whole was partly to make clear the greater antiquity of Hebrew history relative to most others. Jerome's Latin translation proved popular and became the widely accepted chronographic standard. Many later authors took upon themselves to add their own updates of world history to the chronicle. The Chronicle ends with the sixth consulship of Emperor Valens in 378, and it is likely that Jerome wrote the work to present it at the Roman synod of 382.
 		</p>
 		<h3 class="pt-14"><i>The Chronicle of Jerome</i> manuscripts</h3>
 		<p class="pb-10">These are the main manuscripts that preserve Jerome's tables, and how they can be traced to the original.</p>
@@ -64,8 +64,7 @@
 				</p>
 			</li>
 			<li class="mt-5">
-				<b class="dark:text-sky-400">O</b> and <b class="dark:text-sky-400">S</b> were likely copied from the same manuscript. There are currently more
-				than a hundred manuscripts of the <i>Chronicle of Jerome</i>, many also include the chronicles of medieval continuators:<br />
+				The text of <b class="dark:text-sky-400">O</b> is different enough from <b class="dark:text-sky-400">S</b> to show that it was not copied from it.<span class="footnote" data-note="Mosshammer. 1979. <i>The Chronicle of Eusebius</i>. p. 67."></span> There are currently more than a hundred manuscripts of the <i>Chronicle of Jerome</i>, many also include the chronicles of medieval continuators:<br />
 				<p class="pl-10 pt-5">
 					<i>Berlin Staatsbibliothek Phillipps 1829</i> and <i>1872</i><br />
 					London <a href="https://tinyurl.com/mss16974" target="_blank" class="italic font-normal">British Library MS Add. 16974</a><br />
